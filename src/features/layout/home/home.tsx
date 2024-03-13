@@ -15,6 +15,39 @@ export function HomeComponent() {
         }, 2500)
     }, [])
 
+    const placeholderContent = [
+        {
+            img: "/images/placeholder_photo.png",
+            title: "Web Design",
+            subTitle: "Rise above the noise",
+            link: "www.eltezza.com"
+        },
+        {
+            img: "/images/placeholder_photo.png",
+            title: "Web Design",
+            subTitle: "Rise above the noise",
+            link: "www.eltezza.com"
+        },
+        {
+            img: "/images/placeholder_photo.png",
+            title: "Web Design",
+            subTitle: "Rise above the noise",
+            link: "www.eltezza.com"
+        },
+        {
+            img: "/images/placeholder_photo.png",
+            title: "Web Design",
+            subTitle: "Rise above the noise",
+            link: "www.eltezza.com"
+        },
+        {
+            img: "/images/placeholder_photo.png",
+            title: "Web Design",
+            subTitle: "Rise above the noise",
+            link: "www.eltezza.com"
+        },
+    ]
+
     return (
         <div
             className={styles.homeContainer}
@@ -77,13 +110,7 @@ export function HomeComponent() {
                         >
                             <PagePortal
                                 title="design"
-                                content={[
-                                    "/images/placeholder_photo.png",
-                                    "/images/placeholder_photo.png",
-                                    "/images/placeholder_photo.png",
-                                    "/images/placeholder_photo.png",
-                                    "/images/placeholder_photo.png"
-                                ]}
+                                content={placeholderContent}
                                 tags={["Web Development", "Social Media", "Brand Design"]}
                                 color="--ez-orange"
                                 buttonVariant={ButtonVariant.homeOrange}
@@ -91,13 +118,7 @@ export function HomeComponent() {
                             <div className={styles.divider} />
                             <PagePortal
                                 title="creative"
-                                content={[
-                                    "/images/placeholder_photo.png",
-                                    "/images/placeholder_photo.png",
-                                    "/images/placeholder_photo.png",
-                                    "/images/placeholder_photo.png",
-                                    "/images/placeholder_photo.png"
-                                ]}
+                                content={placeholderContent}
                                 tags={["Advertising Imagery", "Marketing", "Promotional Videos"]}
                                 color="--adobe-purple"
                                 buttonVariant={ButtonVariant.homePurple}

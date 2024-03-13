@@ -7,7 +7,7 @@ import { Button, ButtonVariant } from "@/features/ui";
 
 interface PagePortalProps {
     title: string
-    content: Array<string>
+    content: Array<object>
     tags: Array<string>
     color: "--ez-orange" | "--adobe-purple"
     buttonVariant: ButtonVariant
