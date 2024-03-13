@@ -1,0 +1,23 @@
+.button {
+    width: auto;
+    font-size: 1.25rem;
+    padding: 20px 166px;
+    // font-family: var(--font-base);
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease-in-out;
+    white-space: nowrap;
+}
+
+.homeOrange {
+    color: #000;
+    background-color: var(--ez-orange);
+}
+
+.homePurple {
+    color: #fff;
+    background-color: var(--adobe-purple);
+}

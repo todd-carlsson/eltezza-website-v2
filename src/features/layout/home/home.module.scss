@@ -1,0 +1,100 @@
+.homeContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .orangeOrb {
+        width: 100vh;
+        height: 100vh;
+        background-color: var(--ez-orange);
+        border-radius: 50%;
+        filter: blur(139.8074951171875px);
+        opacity: 0.4;
+        position: absolute;
+        z-index: 1;
+        left: -20%;
+        top: 0;
+    }
+
+    .purpleOrb {
+        width: 100vh;
+        height: 100vh;
+        background-color: var(--adobe-purple);
+        border-radius: 50%;
+        filter: blur(139.8074951171875px);
+        opacity: 0.4;
+        position: absolute;
+        z-index: 1;
+        right: -20%;
+        top: 0;
+    }
+
+    .homeWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        z-index: 100;
+
+        .homeTitleContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: max-content;
+            position: absolute;
+
+            .homeTitle {
+                font-weight: 900;
+                font-size: 7.3rem;
+
+                .titleGradient {
+                    background: linear-gradient(90deg, #FF6947 81.19%, #5F34E0 100%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                }
+            }
+        }
+
+        .dualPageContainer {
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            .divider {
+                height: calc(100vh - 82px);
+                background-color: #fff;
+                width: 2px;
+                opacity: 0.5;
+            }
+
+            .pagePortalContainer {
+                width: calc(50vw - 2px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+
+                .pagePortalTitle {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: absolute;
+                    z-index: 2;
+
+                    .title {
+                        text-transform: uppercase;
+                        font-weight: 900;
+                        font-size: 6.625rem;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+}
