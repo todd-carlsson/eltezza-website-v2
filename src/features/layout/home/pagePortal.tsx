@@ -7,10 +7,17 @@ import { Button, ButtonVariant } from "@/features/ui";
 
 interface PagePortalProps {
     title: string
-    content: Array<object>
+    content: Array<PagePortalContent>
     tags: Array<string>
     color: "--ez-orange" | "--adobe-purple"
     buttonVariant: ButtonVariant
+}
+
+export type PagePortalContent = {
+    img: string
+    title: string
+    subTitle: string
+    link: string
 }
 
 export default function PagePortal({
@@ -45,9 +52,11 @@ export default function PagePortal({
                     </motion.div>}
             </AnimatePresence>
             {isHovered &&
+            <div className={styles.portalContent}>
                 <Link href={`/${title}`}>
                     <Button variant={buttonVariant}>Enter</Button>
                 </Link>
+            </div>
             }
         </div>
     )
