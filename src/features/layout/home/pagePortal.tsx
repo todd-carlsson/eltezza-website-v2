@@ -14,6 +14,7 @@ interface PagePortalProps {
 }
 
 export type PagePortalContent = {
+    id: string
     img: string
     title: string
     subTitle: string

@@ -39,20 +39,24 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    color: #fff;
 
     &:hover {
-        transform: scale(0.9);
+        transform: scale(0.95);
         box-shadow: 5px 5px 8px rgba(222, 222, 222, 0.362),
             10px 10px 8px rgba(152, 133, 133, 0.392),
             15px 15px 8px rgba(139, 154, 139, 0.303);
     }
 
-    border-radius: 20%;
+    border-radius: 7px;
     background: rgb(41, 40, 40);
-}
+    display: flex;
+    flex-direction: column;
 
-.carouselCard>img {
-    height: 80%;
-    width: 80%;
-    border-radius: 10%;
+    .carouselCardImg {
+        height: 80%;
+        width: 80%;
+        object-fit: cover;
+    }
 }
