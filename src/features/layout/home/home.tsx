@@ -18,35 +18,35 @@ export function HomeComponent() {
     const placeholderContent = [
         {
             id: "1",
-            img: "/images/placeholder_photo.png",
+            src: "/images/placeholder_photo.png",
             title: "Web Design",
             subTitle: "Rise above the noise",
             link: "www.eltezza.com"
         },
         {
             id: "2",
-            img: "/images/placeholder_photo.png",
+            src: "/images/placeholder_photo.png",
             title: "Web Design",
             subTitle: "Rise above the noise",
             link: "www.eltezza.com"
         },
         {
             id: "3",
-            img: "/images/placeholder_photo.png",
+            src: "/images/placeholder_photo.png",
             title: "Web Design",
             subTitle: "Rise above the noise",
             link: "www.eltezza.com"
         },
         {
             id: "4",
-            img: "/images/placeholder_photo.png",
+            src: "/images/placeholder_photo.png",
             title: "Web Design",
             subTitle: "Rise above the noise",
             link: "www.eltezza.com"
         },
         {
             id: "5",
-            img: "/images/placeholder_photo.png",
+            src: "/images/placeholder_photo.png",
             title: "Web Design",
             subTitle: "Rise above the noise",
             link: "www.eltezza.com"

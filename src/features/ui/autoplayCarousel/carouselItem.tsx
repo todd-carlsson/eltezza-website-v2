@@ -13,7 +13,7 @@ export function CarouselItem({
         <div className={styles.carouselCard}>
             <Image
                 className={styles.carouselCardImg}
-                src={data.img}
+                src={data.src}
                 alt="image"
                 height={100}
                 width={100}
