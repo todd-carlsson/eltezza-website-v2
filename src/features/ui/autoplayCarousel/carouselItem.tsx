@@ -18,8 +18,13 @@ export function CarouselItem({
                 height={100}
                 width={100}
             />
-            <h3>{data.title}</h3>
-            <p>{data.subTitle}</p>
+            <div className={styles.carouselInfo}>
+                <h3 className={styles.carouselTitle}>{data.title}</h3>
+                <div className={styles.subTitleWrapper}>
+                    <p className={styles.carouselSubTitle}>{data.subTitle}</p>
+                    <p className={styles.carouselLink}>{data.link}</p>
+                </div>
+            </div>
         </div>
     )
 }

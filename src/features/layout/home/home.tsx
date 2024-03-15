@@ -19,34 +19,34 @@ export function HomeComponent() {
         {
             id: "1",
             src: "/images/placeholder_photo.png",
-            title: "Web Design",
+            title: "Branding",
             subTitle: "Rise above the noise",
             link: "www.eltezza.com"
         },
         {
             id: "2",
-            src: "/images/placeholder_photo.png",
+            src: "/images/placeholder_photo2.png",
             title: "Web Design",
             subTitle: "Rise above the noise",
             link: "www.eltezza.com"
         },
         {
             id: "3",
-            src: "/images/placeholder_photo.png",
-            title: "Web Design",
+            src: "/images/placeholder_photo3.png",
+            title: "Reels|Social Media",
             subTitle: "Rise above the noise",
             link: "www.eltezza.com"
         },
         {
             id: "4",
-            src: "/images/placeholder_photo.png",
-            title: "Web Design",
+            src: "/images/placeholder_photo4.png",
+            title: "Graphic Design",
             subTitle: "Rise above the noise",
             link: "www.eltezza.com"
         },
         {
             id: "5",
-            src: "/images/placeholder_photo.png",
+            src: "/images/placeholder_photo2.png",
             title: "Web Design",
             subTitle: "Rise above the noise",
             link: "www.eltezza.com"
@@ -120,7 +120,9 @@ export function HomeComponent() {
                                 color="--ez-orange"
                                 buttonVariant={ButtonVariant.homeOrange}
                             />
+                            <div className={styles.blurLeft} />
                             <div className={styles.divider} />
+                            <div className={styles.blurRight} />
                             <PagePortal
                                 title="creative"
                                 content={placeholderContent}

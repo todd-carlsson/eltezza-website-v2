@@ -53,7 +53,7 @@ const placeholderContent = [
 
 /**Primary state */
 export const Primary: Story = {
-    render: () => <div style={{ height: 300 }}>
+    render: () => <div style={{ height: 300, fontFamily: 'sans-serif' }}>
         <AutoplayCarousel content={placeholderContent} />
     </div>,
     args: {

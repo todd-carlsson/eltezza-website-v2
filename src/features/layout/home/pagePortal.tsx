@@ -4,6 +4,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { Button, ButtonVariant } from "@/features/ui";
+import { AutoplayCarousel } from "@/features/ui/autoplayCarousel";
 
 interface PagePortalProps {
     title: string
@@ -53,11 +54,12 @@ export default function PagePortal({
                     </motion.div>}
             </AnimatePresence>
             {isHovered &&
-            <div className={styles.portalContent}>
-                <Link href={`/${title}`}>
-                    <Button variant={buttonVariant}>Enter</Button>
-                </Link>
-            </div>
+                <div className={styles.portalContent}>
+                    <AutoplayCarousel content={content} />
+                    <Link href={`/${title}`}>
+                        <Button variant={buttonVariant}>Enter</Button>
+                    </Link>
+                </div>
             }
         </div>
     )

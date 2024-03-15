@@ -2,7 +2,6 @@
     overflow: hidden;
     position: relative;
     height: 100%;
-    border-color: #4b5563;
     width: 100%;
 
     .carouselTrack {
@@ -17,9 +16,9 @@
         height: 100%;
         animation: slide 20s linear infinite;
 
-        &:hover {
-            animation-play-state: paused;
-        }
+        // &:hover {
+        //     animation-play-state: paused;
+        // }
 
         @keyframes slide {
             0% {
@@ -35,28 +34,47 @@
 
 .carouselCard {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
     cursor: pointer;
     color: #fff;
-
-    &:hover {
-        transform: scale(0.95);
-        box-shadow: 5px 5px 8px rgba(222, 222, 222, 0.362),
-            10px 10px 8px rgba(152, 133, 133, 0.392),
-            15px 15px 8px rgba(139, 154, 139, 0.303);
-    }
-
+    border: 1px solid #fff;
     border-radius: 7px;
-    background: rgb(41, 40, 40);
+    background: transparent;
     display: flex;
     flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem;
 
     .carouselCardImg {
-        height: 80%;
-        width: 80%;
+        // Will need to make more responsive for smaller screen heights
+        width: 230px;
+        height: 250px;
         object-fit: cover;
     }
+
+    .carouselInfo {
+
+        .carouselTitle {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .subTitleWrapper {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .carouselSubTitle {
+                font-size: 0.75rem;
+            }
+            .carouselLink {
+                font-size: 4px;
+            }
+        }
+
+        
+    }
+
+
 }
