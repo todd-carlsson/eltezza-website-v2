@@ -5,6 +5,7 @@ import styles from "./home.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import PagePortal from "./pagePortal";
 import { ButtonVariant } from "@/features/ui";
+import { landingPageMockData } from "@/constants";
 
 export function HomeComponent() {
     const [isDualPage, setIsDualPage] = useState(false)
@@ -14,44 +15,6 @@ export function HomeComponent() {
             setIsDualPage(true)
         }, 2500)
     }, [])
-
-    const placeholderContent = [
-        {
-            id: "1",
-            src: "/images/placeholder_photo.png",
-            title: "Branding",
-            subTitle: "Rise above the noise",
-            link: "www.eltezza.com"
-        },
-        {
-            id: "2",
-            src: "/images/placeholder_photo2.png",
-            title: "Web Design",
-            subTitle: "Rise above the noise",
-            link: "www.eltezza.com"
-        },
-        {
-            id: "3",
-            src: "/images/placeholder_photo3.png",
-            title: "Reels|Social Media",
-            subTitle: "Rise above the noise",
-            link: "www.eltezza.com"
-        },
-        {
-            id: "4",
-            src: "/images/placeholder_photo4.png",
-            title: "Graphic Design",
-            subTitle: "Rise above the noise",
-            link: "www.eltezza.com"
-        },
-        {
-            id: "5",
-            src: "/images/placeholder_photo2.png",
-            title: "Web Design",
-            subTitle: "Rise above the noise",
-            link: "www.eltezza.com"
-        },
-    ]
 
     return (
         <div
@@ -115,7 +78,7 @@ export function HomeComponent() {
                         >
                             <PagePortal
                                 title="design"
-                                content={placeholderContent}
+                                content={landingPageMockData}
                                 tags={["Web Development", "Social Media", "Brand Design"]}
                                 color="--ez-orange"
                                 buttonVariant={ButtonVariant.homeOrange}
@@ -125,7 +88,7 @@ export function HomeComponent() {
                             <div className={styles.blurRight} />
                             <PagePortal
                                 title="creative"
-                                content={placeholderContent}
+                                content={landingPageMockData}
                                 tags={["Advertising Imagery", "Marketing", "Promotional Videos"]}
                                 color="--adobe-purple"
                                 buttonVariant={ButtonVariant.homePurple}
