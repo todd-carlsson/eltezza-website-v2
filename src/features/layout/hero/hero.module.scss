@@ -1,0 +1,20 @@
+.heroContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+
+    .heroHeading {
+        font-size: 6.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 100%;
+
+        .headingGradient {
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+}

@@ -10,3 +10,9 @@
   width: 100px;
   background-color: white;
 }
+
+/* HERO SECTION FOR DESIGN & CREATIVE PAGES */
+.heroContainer {
+  height: calc(100vh - 80px);
+  width: 100%;
+}
