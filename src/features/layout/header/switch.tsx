@@ -1,7 +1,27 @@
+import Link from "next/link"
+import styles from "./header.module.scss"
 
-function Switch() {
+interface SwitchProps {
+    page: "design" | "creative"
+    color: "--ez-orange" | "--adobe-purple"
+}
+
+function Switch({
+    page,
+    color
+}: SwitchProps) {
     return (
-        <div>Switch</div>
+        <Link href={page === "design" ? "/creative" : "/design"}>
+            <div
+                className={styles.switch}
+                style={{
+                    backgroundColor: `var(${color})`
+                }}
+            >
+                {page}
+                <div className={styles.ellipse} />
+            </div>
+        </Link>
     )
 }
 

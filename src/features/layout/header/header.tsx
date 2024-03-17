@@ -12,7 +12,7 @@ export function Header() {
                 height={22}
                 className={styles.headerLogo}
             />
-            <Switch />
+            <Switch page="design" color="--ez-orange" />
         </header>
     )
 }
