@@ -13,6 +13,7 @@ export function Hero({
 }: HeroProps) {
     return (
         <div className={styles.heroContent}>
+            {/* HEADING */}
             <div className={styles.heroHeadingContainer}>
                 <h1 className={styles.heroHeading}>
                     RISE ABOVE
@@ -25,6 +26,10 @@ export function Hero({
                         }}>NOISE</span>
                 </div>
             </div>
+            {/* DESCRIPTION */}
+            <p className={styles.heroDescription}>
+                {description}
+            </p>
         </div>
     )
 }
