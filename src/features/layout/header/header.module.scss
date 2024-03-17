@@ -11,28 +11,3 @@
         cursor: pointer;
     }
 }
-
-// SWITCH COMPONENT
-.switch {
-    width: 160px;
-    height: 48px;
-    border-radius: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0 0.5rem;
-    align-items: center;
-    text-transform: capitalize;
-    cursor: pointer;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    position: relative;
-
-    .ellipse {
-        width: 34px;
-        height: 34px;
-        background-color: #fff;
-        border-radius: 50%;
-        position: absolute;
-    }
-}

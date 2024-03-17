@@ -1,6 +1,7 @@
 import Link from "next/link"
-import styles from "./header.module.scss"
+import styles from "./switch.module.scss"
 import { motion } from "framer-motion"
+
 interface SwitchProps {
     page: "design" | "creative"
     color: "--ez-orange" | "--adobe-purple"
@@ -28,7 +29,10 @@ function Switch({
                     style={{
                         marginLeft: page === "design" ? "1rem" : 0,
                         marginRight: page === "creative" ? "1rem" : 0,
-                    }}>{page}</motion.span>
+                    }}
+                >
+                    {page}
+                </motion.span>
                 <motion.div
                     initial={{
                         x: page === "creative" ? 110 : 0
@@ -42,4 +46,4 @@ function Switch({
     )
 }
 
-export default Switch
+export { Switch }

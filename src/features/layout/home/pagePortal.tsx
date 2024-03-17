@@ -4,7 +4,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { Button, ButtonVariant } from "@/features/ui";
-import { AutoplayCarousel } from "@/features/ui/autoplayCarousel";
+import { AutoplayCarousel } from "@/features/ui";
 
 interface PagePortalProps {
     title: string
