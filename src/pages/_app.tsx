@@ -1,9 +1,10 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { poppins } from "@/fonts";
+import { poppins, sourceSans } from "@/fonts";
 import { useEffect } from "react";
 import Router from 'next/router';
 import Layout from "./layout";
+import classNames from "classnames";
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -17,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
       Router.events.off('routeChangeStart', checkPage); // remove listener
     }
   }, []);
-  return <main className={poppins.variable}>
+  return <main className={classNames(poppins.variable, sourceSans.variable)}>
       <Layout>
       <Component {...pageProps} />
       </Layout>

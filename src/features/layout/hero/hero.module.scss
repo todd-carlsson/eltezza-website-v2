@@ -1,20 +1,27 @@
 .heroContent {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 50%;
     height: 100%;
+    padding-left: var(--content-padding);
 
-    .heroHeading {
-        font-size: 6.5rem;
-        font-weight: 800;
-        text-transform: uppercase;
-        line-height: 100%;
+    .heroHeadingContainer {
+        display: flex;
+        flex-direction: column;
 
-        .headingGradient {
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+        .heroHeading {
+            font-size: 6.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            line-height: 100%;
+    
+            .headingGradient {
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
         }
     }
+    
 }

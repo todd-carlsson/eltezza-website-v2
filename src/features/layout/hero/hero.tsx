@@ -13,16 +13,18 @@ export function Hero({
 }: HeroProps) {
     return (
         <div className={styles.heroContent}>
-            <h1 className={styles.heroHeading}>
-                RISE ABOVE
+            <div className={styles.heroHeadingContainer}>
                 <h1 className={styles.heroHeading}>
+                    RISE ABOVE
+                </h1>
+                <div className={styles.heroHeading}>
                     THE <span
                         className={styles.headingGradient}
                         style={{
                             backgroundColor: page === "design" ? "var(--ez-orange)" : "var(--adobe-purple)"
                         }}>NOISE</span>
-                </h1>
-            </h1>
+                </div>
+            </div>
         </div>
     )
 }
