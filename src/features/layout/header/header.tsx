@@ -2,7 +2,15 @@ import Image from "next/image"
 import styles from "./header.module.scss"
 import Switch from "./switch"
 
-export function Header() {
+interface HeaderProps {
+    page: "design" | "creative"
+    color: "--ez-orange" | "--adobe-purple"
+}
+
+export function Header({
+    page,
+    color
+}: HeaderProps) {
     return (
         <header className={styles.header}>
             <Image
@@ -12,7 +20,7 @@ export function Header() {
                 height={22}
                 className={styles.headerLogo}
             />
-            <Switch page="design" color="--ez-orange" />
+            <Switch page={page} color={color} />
         </header>
     )
 }

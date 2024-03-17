@@ -25,11 +25,14 @@
     text-transform: capitalize;
     cursor: pointer;
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    position: relative;
 
     .ellipse {
         width: 34px;
         height: 34px;
         background-color: #fff;
         border-radius: 50%;
+        position: absolute;
     }
 }
