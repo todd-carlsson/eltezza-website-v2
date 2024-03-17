@@ -16,7 +16,6 @@ function Switch({
                 className={styles.switch}
                 style={{
                     backgroundColor: `var(${color})`,
-                    // flexDirection: page === "creative" ? "row-reverse" : "row"
                 }}
             >
                 <motion.span

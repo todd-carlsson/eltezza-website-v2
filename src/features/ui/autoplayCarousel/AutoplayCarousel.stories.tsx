@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { AutoplayCarousel } from ".";
-import { landingPageMockData } from "@/constants";
+import { landingPageMockData } from "../../../constants";
 
 /**Autoplay Carousel Component*/
 const meta = {
