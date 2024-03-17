@@ -24,7 +24,7 @@ export const navigationLinks = [
 
 export const headerDescription = {
     design: "An innovative creative powerhouse, based in a dynamic studio. We craft stories that resonate positively in our culture spanning every social channel - from user-centric web experiences to bite-sized content and beyond.",
-    creative: "Enter Eltezza Creative, where we&#39re not just content creators; we&#39re storytellers crafting authentic, scroll-stopping content. Collaborating with amazing brands, our space thrives on genuine creativity and remarkable results."
+    creative: "Enter Eltezza Creative, where we're not just content creators; we're storytellers crafting authentic, scroll-stopping content. Collaborating with amazing brands, our space thrives on genuine creativity and remarkable results."
 }
 
 export const services = {
@@ -47,7 +47,7 @@ export const services = {
         {
             id: "4",
             title: "GRAPHIC DESIGN",
-            description: "Our designs at Eltezza are not just visually pleasing; they&#39re strategically crafted to meet your objectives. We work hand in hand with you to create attention-grabbing assets that get your message across effectively."
+            description: "Our designs at Eltezza are not just visually pleasing; they're strategically crafted to meet your objectives. We work hand in hand with you to create attention-grabbing assets that get your message across effectively."
         },
         {
             id: "5",
@@ -60,17 +60,17 @@ export const services = {
         {
             id: "1",
             title: "PROMOTIONAL VIDEOS",
-            description: "We create promotional videos that are more than just stories; they&#39re connections with your audience. From brainstorming wild ideas to bringing them to life on screen, we turn brand tales into visual experiences. Join us, and let&#39s make your brand story one that resonates, connects, and converts."
+            description: "We create promotional videos that are more than just stories; they're connections with your audience. From brainstorming wild ideas to bringing them to life on screen, we turn brand tales into visual experiences. Join us, and let’s make your brand story one that resonates, connects, and converts."
         },
         {
             id: "2",
             title: "POST PRODUCTION",
-            description: "Transform your content game with our post-production finesse. We take raw footage and sculpt it into polished masterpieces, ensuring each frame aligns seamlessly with your brand&#39s identity."
+            description: "Transform your content game with our post-production finesse. We take raw footage and sculpt it into polished masterpieces, ensuring each frame aligns seamlessly with your brand's identity."
         },
         {
             id: "3",
             title: "ADVERTISING IMAGERY",
-            description: "We carefully curate striking visuals that communicate your brand&#39s essence, creating a lasting impression across diverse channels. Releasing a new product or planning for an upcoming marketing campaign? Get in touch and let&#39s see what we can cook up together - so many other brands already have 😉"
+            description: "We carefully curate striking visuals that communicate your brand's essence, creating a lasting impression across diverse channels. Releasing a new product or planning for an upcoming marketing campaign? Get in touch and let's see what we can cook up together - so many other brands already have 😉"
         },
         {
             id: "4",
@@ -136,17 +136,17 @@ export const faqs = {
         {
             id: "2",
             question: "What industries does your agency specialize in?",
-            answer: "We&#39ve worked with many different clients, ranging from construction all the way to museums. If we are a good fit, no creative endeavor is beyond our capabilities."
+            answer: "We’ve worked with many different clients, ranging from construction all the way to museums. If we are a good fit, no creative endeavor is beyond our capabilities."
         },
         {
             id: "3",
             question: "What is the typical timeline for project completion?",
-            answer: "Depending on the services you require, our timelines range from 3 weeks to 12 weeks. We work on a monthly basis with a lot of our clients, let&#39s hope we do the same for you!"
+            answer: "Depending on the services you require, our timelines range from 3 weeks to 12 weeks. We work on a monthly basis with a lot of our clients, let’s hope we do the same for you!"
         },
         {
             id: "4",
             question: "How much do you charge?",
-            answer: "We work on project-cost pricing, which ensures we can amend the work to your vision without charging for extra hours (if required). Rest assured, we don&#39t charge for the sake of it, we carefully analyze the problem, craft the solution, and then deploy our strategies within a budget that suits both parties."
+            answer: "We work on project-cost pricing, which ensures we can amend the work to your vision without charging for extra hours (if required). Rest assured, we don’t charge for the sake of it, we carefully analyze the problem, craft the solution, and then deploy our strategies within a budget that suits both parties."
         },
         {
             id: "5",
@@ -156,7 +156,7 @@ export const faqs = {
         {
             id: "6",
             question: "What sets your creative agency apart from others in the industry?",
-            answer: "Quite simply, scroll It&#39s quite simple, the level of care and attention we give to all of our clients is second to none. We want YOU to succeed as badly as WE want to breathe. the bottom of our site and submit your request!"
+            answer: "Quite simply, scroll It’s quite simple, the level of care and attention we give to all of our clients is second to none. We want YOU to succeed as badly as WE want to breathe. the bottom of our site and submit your request!"
         }
     ],
     
@@ -179,25 +179,25 @@ export const faqs = {
         {
             id: "4",
             question: "Does this stuff even work?",
-            answer: "Well, we probably wouldn&#39t be here if it didn&#39t ..."
+            answer: "Well, we probably wouldn’t be here if it didn’t ..."
         },
         {
             id: "5",
             question: "How much do you charge?",
-            answer: "We work on project-cost pricing, which ensures we can amend the work to your vision without charging for extra hours (if required). Rest assured, we don&#39t charge for the sake of it, we carefully analyze the problem, craft the solution, and then deploy our strategies within a budget that suits both parties."
+            answer: "We work on project-cost pricing, which ensures we can amend the work to your vision without charging for extra hours (if required). Rest assured, we don’t charge for the sake of it, we carefully analyze the problem, craft the solution, and then deploy our strategies within a budget that suits both parties."
         },
         {
             id: "6",
             question: "What sets your creative agency apart from others in the industry?",
-            answer: "It&#39s quite simple, the level of care and attention we give to all of our clients is second to none. We want YOU to succeed as badly as WE want to breathe"
+            answer: "It’s quite simple, the level of care and attention we give to all of our clients is second to none. We want YOU to succeed as badly as WE want to breathe"
         }
     ]
 }
 
 export const contactFormText = {
     title: "Get in touch",
-    description: "Ready to turn your ideas into digital masterpieces? Let&#39s chat over coffee!",
-    submitted: "Your connection means the world to us, and we can&#39t wait to explore how we can make your experience even better. Whether you have questions, ideas, or just want to chat, we&#39re here for you.",
+    description: "Ready to turn your ideas into digital masterpieces? Let's chat over coffee!",
+    submitted: "Your connection means the world to us, and we can't wait to explore how we can make your experience even better. Whether you have questions, ideas, or just want to chat, we're here for you.",
     email: "hello@eltezza.com",
     phone: "06 213 8994"
 }
