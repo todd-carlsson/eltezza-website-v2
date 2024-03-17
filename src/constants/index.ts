@@ -1,4 +1,9 @@
 // WEBSITE INFO
+export const pageTags = {
+    design: ["Web Development", "Social Media", "Brand Design"],
+    creative: ["Advertising Imagery", "Marketing", "Promotional Videos"]
+}
+
 export const navigationLinks = [
     {
         title: "Our work",

@@ -3,7 +3,7 @@ import styles from "./home.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import PagePortal from "./pagePortal";
 import { ButtonVariant } from "@/features/ui";
-import { landingPageMockData } from "@/constants";
+import { landingPageMockData, pageTags } from "@/constants";
 
 export function HomeComponent() {
     const [isDualPage, setIsDualPage] = useState(false)
@@ -77,7 +77,7 @@ export function HomeComponent() {
                             <PagePortal
                                 title="design"
                                 content={landingPageMockData}
-                                tags={["Web Development", "Social Media", "Brand Design"]}
+                                tags={pageTags.design}
                                 color="--ez-orange"
                                 buttonVariant={ButtonVariant.homeOrange}
                             />
@@ -87,7 +87,7 @@ export function HomeComponent() {
                             <PagePortal
                                 title="creative"
                                 content={landingPageMockData}
-                                tags={["Advertising Imagery", "Marketing", "Promotional Videos"]}
+                                tags={pageTags.creative}
                                 color="--adobe-purple"
                                 buttonVariant={ButtonVariant.homePurple}
                             />
