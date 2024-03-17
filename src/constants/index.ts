@@ -1,4 +1,4 @@
-// WEBSITE DATA
+// WEBSITE INFO
 export const navigationLinks = [
     {
         title: "Our work",
@@ -124,7 +124,10 @@ export const process = {
     ]
 }
 
-export const teamDescription = "Get acquainted with the team pulling the strings behind the mess and outrageous rigs..."
+export const teamDescription = {
+    design: "At Eltezza, a united and passionate team works tirelessly to transform challenges into opportunities and ideas into innovation, ensuring every client's purpose is not just met but exceeded",
+    creative: "Get acquainted with the team pulling the strings behind the mess and outrageous rigs..."
+}
 
 export const faqs = {
     design: [
