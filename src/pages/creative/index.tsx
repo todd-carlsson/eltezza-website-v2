@@ -1,12 +1,14 @@
+import { headerDescription, pageTags } from "@/constants";
+import { Hero } from "@/features/layout";
 
 export default function CreativePage() {
     return (
         <>
-            <div
-                style={{ padding: 100, fontSize: 40 }}
-            >
-                Creative Page
-            </div>
+            <Hero
+                page="creative"
+                description={headerDescription.creative}
+                tags={pageTags.creative}
+            />
         </>
     )
 }
