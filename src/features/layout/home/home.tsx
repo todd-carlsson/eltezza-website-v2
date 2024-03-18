@@ -56,7 +56,7 @@ export function HomeComponent() {
                                 RISE ABOVE
                             </h1>
                             <h1 className={styles.homeTitle}>
-                                THE <span className={styles.titleGradient}>NOISE</span>
+                                THE <span className="textGradient">NOISE</span>
                             </h1>
                         </motion.div>
                     }
