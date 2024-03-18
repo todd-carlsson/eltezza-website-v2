@@ -5,6 +5,7 @@
     font-weight: 500;
     position: fixed;
     bottom: 0;
+    z-index: 999;
 
     .navbarContainer {
         width: 75%;
@@ -22,6 +23,11 @@
             cursor: pointer;
             padding: 0.8rem;
             transition: background-color 0.3s ease-in-out;
+
+            @media screen and (max-width: 800px) {
+                padding: 0.5rem 0.25rem;
+                font-size: 0.75rem;
+            }
 
             &:hover {
                 background-color: var(--heightened-grey);
