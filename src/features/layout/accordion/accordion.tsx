@@ -41,8 +41,8 @@ export function Accordion({
                         >
                             {item.title}
                         </h1>
-                        {active === item.id &&
-                            <AnimatePresence>
+                        <AnimatePresence>
+                            {active === item.id &&
                                 <motion.p
                                     initial={{
                                         opacity: 0
@@ -60,7 +60,8 @@ export function Accordion({
                                 >
                                     {item.description}
                                 </motion.p>
-                            </AnimatePresence>}
+                            }
+                        </AnimatePresence>
                     </div>
                 ))}
             </div>
