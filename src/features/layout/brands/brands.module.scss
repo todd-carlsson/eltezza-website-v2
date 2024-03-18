@@ -16,7 +16,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
-        justify-content: space-evenly;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        gap: 130px;
         width: 100%;
+
+        .brandLogo {
+            width: fit-content;
+        }
     }
 }

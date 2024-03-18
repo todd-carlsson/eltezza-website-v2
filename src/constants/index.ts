@@ -315,5 +315,25 @@ export const brandsMockData = {
             brand: "Bee+",
             src: "/images/brandImages/Bee_logo.svg"
         },
+        {
+            id: "9",
+            brand: "Constructo",
+            src: "/images/brandImages/Constructo_logo.svg"
+        },
+        {
+            id: "10",
+            brand: "Ikaika",
+            src: "/images/brandImages/Ikaika_logo.svg"
+        },
+        {
+            id: "12",
+            brand: "Steve's Tyre Service",
+            src: "/images/brandImages/Steves_logo.svg"
+        },
+        {
+            id: "12",
+            brand: "Robert Embroideries",
+            src: "/images/brandImages/Robert_logo.svg"
+        },
     ]
 }
