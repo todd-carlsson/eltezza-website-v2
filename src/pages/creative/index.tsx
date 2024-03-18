@@ -4,14 +4,16 @@ import styles from "@/styles/Home.module.css"
 
 export default function CreativePage() {
     return (
-        <div className={styles.heroContainer}>
-            <Hero
-                page="creative"
-                description={headerDescription.creative}
-                tags={pageTags.creative}
-            />
+        <>
             <Navbar />
-            <Accordion content={services.creative} color="--adobe-purple" />
-        </div>
+            <div className={styles.heroContainer}>
+                <Hero
+                    page="creative"
+                    description={headerDescription.creative}
+                    tags={pageTags.creative}
+                />
+                <Accordion content={services.creative} color="--adobe-purple" />
+            </div>
+        </>
     )
 }
