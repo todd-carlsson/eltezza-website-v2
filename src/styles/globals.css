@@ -5,7 +5,7 @@
 
     --ez-orange: #FF6947;
     --equinox-blue: #40434E;
-    --heightend-grey: #A2A7A5;
+    --heightened-grey: #A2A7A5;
     --adobe-purple: #5F34E0;
     --salty-green: #3FE0A6;
     --salmon-pink: #FF9093;
@@ -93,6 +93,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -108,6 +109,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul,li {
+  list-style: none;
 }
 
 @media (prefers-color-scheme: dark) {

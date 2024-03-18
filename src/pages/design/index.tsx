@@ -1,5 +1,5 @@
 import { headerDescription, pageTags } from "@/constants";
-import { Hero } from "@/features/layout";
+import { Hero, Navbar } from "@/features/layout";
 import styles from "@/styles/Home.module.css"
 
 export default function DesignPage() {
@@ -10,6 +10,7 @@ export default function DesignPage() {
                 description={headerDescription.design}
                 tags={pageTags.design}
             />
+            <Navbar />
         </div>
     )
 }

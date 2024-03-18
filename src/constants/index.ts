@@ -18,7 +18,7 @@ export const navigationLinks = [
         href: "#clients"
     },
     {
-        title: "about us",
+        title: "About us",
         href: "#about"
     },
     {

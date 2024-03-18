@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-weight: 500;
+    position: fixed;
+    bottom: 0;
+
+    .navbarContainer {
+        width: 75%;
+        border-radius: 50px;
+        border: 1px solid #FFF;
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(6px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem 1rem;
+
+        .link  {
+            border-radius: 27px;
+            cursor: pointer;
+            padding: 0.8rem;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: var(--heightened-grey);
+            }
+        }
+    }
+}
