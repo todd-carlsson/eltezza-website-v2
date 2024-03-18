@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import styles from "./accordion.module.scss"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 interface AccordionProps {
     content: Array<AccordionPropsObj>
@@ -43,30 +43,20 @@ export function Accordion({
                         >
                             {item.title}
                         </h1>
-                        {/* TODO: Fix accordion description making the 
-                        accordion section too large when rendered in
-                         */}
-                        <AnimatePresence>
-                            {active === item.id &&
-                                <motion.p
-                                    initial={{
-                                        opacity: 0
-                                    }}
-                                    animate={{
-                                        opacity: 1
-                                    }}
-                                    exit={{
-                                        opacity: 0
-                                    }}
-                                    className={styles.accordionDescription}
-                                    style={{
-                                        color: color === "--adobe-purple" ? "#fff" : "#000"
-                                    }}
-                                >
-                                    {item.description}
-                                </motion.p>
-                            }
-                        </AnimatePresence>
+                        <motion.p
+                            initial={{
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity: active === item.id ? 1 : 0
+                            }}
+                            className={styles.accordionDescription}
+                            style={{
+                                color: color === "--adobe-purple" ? "#fff" : "#000"
+                            }}
+                        >
+                            {item.description}
+                        </motion.p>
                     </div>
                 ))}
             </div>
