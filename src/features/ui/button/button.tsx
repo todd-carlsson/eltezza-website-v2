@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 interface ButtonProps
     extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: ButtonVariant
+    variant: ButtonVariant
 }
 
 enum ButtonVariant {

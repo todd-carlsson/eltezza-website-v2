@@ -1,4 +1,4 @@
-import { Button } from "@/features/ui";
+import { Button, ButtonVariant } from "@/features/ui";
 import styles from "./hero.module.scss";
 
 interface HeroProps {
@@ -34,7 +34,7 @@ export function Hero({
             {/* TAGS */}
             <div className={styles.heroTags}>
                 {tags.map((tag) => (
-                    <Button key={tag}>
+                    <Button variant={ButtonVariant.main} key={tag}>
                         {tag}
                     </Button>
                 ))}

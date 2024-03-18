@@ -5,7 +5,7 @@ import { landingPageMockData } from "../../../constants";
 /**Autoplay Carousel Component*/
 const meta = {
     component: AutoplayCarousel,
-    title: 'UI/AutoplayCarousel',
+    title: 'ImageComponents/AutoplayCarousel',
     tags: ['autodocs'],
 } satisfies Meta<typeof AutoplayCarousel>
 
