@@ -1,5 +1,6 @@
 import { useState } from "react"
 import styles from "./services.module.scss"
+import { motion, AnimatePresence } from "framer-motion"
 
 interface ServicesProps {
     content: Array<ServicesPropsObj>
@@ -41,14 +42,25 @@ export function Services({
                             {service.title}
                         </h1>
                         {active === service.id &&
-                            <p
-                                className={styles.serviceDescription}
-                                style={{
-                                    color: color === "--adobe-purple" ? "#fff" : "#000"
-                                }}
-                            >
-                                {service.description}
-                            </p>}
+                            <AnimatePresence>
+                                <motion.p
+                                    initial={{
+                                        opacity: 0
+                                    }}
+                                    animate={{
+                                        opacity: 1
+                                    }}
+                                    exit={{
+                                        opacity: 0
+                                    }}
+                                    className={styles.serviceDescription}
+                                    style={{
+                                        color: color === "--adobe-purple" ? "#fff" : "#000"
+                                    }}
+                                >
+                                    {service.description}
+                                </motion.p>
+                            </AnimatePresence>}
                     </div>
                 ))}
             </div>
