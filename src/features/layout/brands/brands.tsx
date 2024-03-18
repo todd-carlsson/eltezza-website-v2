@@ -14,7 +14,7 @@ export function Brands({
     content
 }: BrandsProps) {
     return (
-        <section className={styles.brandsSection}>
+        <section id="clients" className={styles.brandsSection}>
             <h1 className={styles.brandsTitle}>OUR TRUSTED <span className="textGradient">PARTNERS</span></h1>
             <div className={styles.brandsGrid}>
             {content.map((brand) => (

@@ -295,5 +295,25 @@ export const brandsMockData = {
             brand: "Illuminix",
             src: "/images/brandImages/Illuminix_logo.svg"
         },
+        {
+            id: "5",
+            brand: "Cupples Construction",
+            src: "/images/brandImages/Cupples_logo.svg"
+        },
+        {
+            id: "6",
+            brand: "Auckland Museum",
+            src: "/images/brandImages/AM_logo.svg"
+        },
+        {
+            id: "7",
+            brand: "Black Pearl Cafe",
+            src: "/images/brandImages/BlackPearl_logo.svg"
+        },
+        {
+            id: "8",
+            brand: "Bee+",
+            src: "/images/brandImages/Bee_logo.svg"
+        },
     ]
 }
