@@ -4,28 +4,45 @@ export const pageTags = {
     creative: ["Promotional Videos", "Advertising Imagery", "Paid Ads Management"]
 }
 
-export const navigationLinks = [
-    {
-        title: "Our work",
-        href: "#ourwork"
-    },
-    {
-        title: "What we do",
-        href: "#whatwedo"
-    },
-    {
-        title: "Clients",
-        href: "#clients"
-    },
-    {
-        title: "About us",
-        href: "#about"
-    },
-    {
-        title: "Get in touch",
-        href: "#getintouch"
-    },
-]
+export const navigationLinks = {
+    desktop: [
+        {
+            title: "Our work",
+            href: "#ourwork"
+        },
+        {
+            title: "What we do",
+            href: "#whatwedo"
+        },
+        {
+            title: "Clients",
+            href: "#clients"
+        },
+        {
+            title: "About us",
+            href: "#about"
+        },
+        {
+            title: "Get in touch",
+            href: "#getintouch"
+        },
+    ],
+
+    mobile: [
+        {
+            title: "Our work",
+            href: "#ourwork"
+        },
+        {
+            title: "What we do",
+            href: "#whatwedo"
+        },
+        {
+            title: "Get in touch",
+            href: "#getintouch"
+        },
+    ]
+}
 
 export const headerDescription = {
     design: "An innovative creative powerhouse, based in a dynamic studio. We craft stories that resonate positively in our culture spanning every social channel - from user-centric web experiences to bite-sized content and beyond.",
@@ -167,7 +184,7 @@ export const faqs = {
             answer: "Quite simply, scroll It’s quite simple, the level of care and attention we give to all of our clients is second to none. We want YOU to succeed as badly as WE want to breathe. the bottom of our site and submit your request!"
         }
     ],
-    
+
     creative: [
         {
             id: "1",

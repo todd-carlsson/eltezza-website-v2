@@ -43,6 +43,9 @@ export function Accordion({
                         >
                             {item.title}
                         </h1>
+                        {/* TODO: Fix accordion description making the 
+                        accordion section too large when rendered in
+                         */}
                         <AnimatePresence>
                             {active === item.id &&
                                 <motion.p
