@@ -7,6 +7,7 @@
     height: 100%;
     padding-left: var(--content-padding);
 
+    // HEADING
     .heroHeadingContainer {
         display: flex;
         flex-direction: column;
@@ -25,10 +26,17 @@
         }
     }
     
+    // DESCRIPTION
     .heroDescription {
         font-family: var(--font-source-sans);
         font-size: 1.15rem;
         color: var(--gray-text);
         opacity: 0.8;
+    }
+
+    // TAGS
+    .heroTags {
+        display: flex;
+        gap: 1rem;
     }
 }
