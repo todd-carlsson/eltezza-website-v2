@@ -15,6 +15,9 @@ export function Header({
 }: HeaderProps) {
     return (
         <header className={styles.header}>
+            {/* TODO: Fix overflow on background so that it
+            doesn't cover scrollbar
+             */}
             <div className={styles.headerBackground} />
             <Image
                 src="/images/eltezza-home-logo.png"
