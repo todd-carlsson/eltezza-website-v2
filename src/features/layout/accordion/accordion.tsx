@@ -21,7 +21,7 @@ export function Accordion({
 }: AccordionProps) {
     const [active, setActive] = useState<string>("-1")
     return (
-        <div id="whatwedo" className={styles.accordion}>
+        <div id="services" className={styles.accordion}>
             <p className={styles.title}>WHAT WE DO | SERVICES</p>
             <div>
                 {content.map((item) => (

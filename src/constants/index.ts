@@ -8,11 +8,11 @@ export const navigationLinks = {
     desktop: [
         {
             title: "Our work",
-            href: "#ourwork"
+            href: "#work"
         },
         {
             title: "What we do",
-            href: "#whatwedo"
+            href: "#services"
         },
         {
             title: "Clients",
@@ -24,7 +24,7 @@ export const navigationLinks = {
         },
         {
             title: "Get in touch",
-            href: "#getintouch"
+            href: "#contact"
         },
     ],
 
