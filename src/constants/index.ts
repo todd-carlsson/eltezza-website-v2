@@ -7,11 +7,11 @@ export const pageTags = {
 export const navigationLinks = [
     {
         title: "Our work",
-        href: "#ourWork"
+        href: "#ourwork"
     },
     {
         title: "What we do",
-        href: "#whatWeDo"
+        href: "#whatwedo"
     },
     {
         title: "Clients",
@@ -23,7 +23,7 @@ export const navigationLinks = [
     },
     {
         title: "Get in touch",
-        href: "#getInTouch"
+        href: "#getintouch"
     },
 ]
 
