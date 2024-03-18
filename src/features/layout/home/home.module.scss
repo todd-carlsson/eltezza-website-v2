@@ -11,6 +11,7 @@
         background-color: var(--ez-orange);
         border-radius: 50%;
         filter: blur(140px);
+        -webkit-filter: blur(140px);
         opacity: 1;
         position: absolute;
         z-index: 1;
@@ -23,7 +24,8 @@
         height: 100vh;
         background-color: var(--adobe-purple);
         border-radius: 50%;
-        filter: blur(139.8074951171875px);
+        filter: blur(140px);
+        -webkit-filter: blur(140px);
         opacity: 0.4;
         position: absolute;
         z-index: 1;
