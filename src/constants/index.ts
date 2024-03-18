@@ -1,7 +1,7 @@
 // WEBSITE INFO
 export const pageTags = {
-    design: ["Web Development", "Social Media", "Brand Design"],
-    creative: ["Advertising Imagery", "Marketing", "Promotional Videos"]
+    design: ["Web Development", "Branding & Design", "Social Media"],
+    creative: ["Promotional Videos", "Advertising Imagery", "Paid Ads Management"]
 }
 
 export const navigationLinks = [
