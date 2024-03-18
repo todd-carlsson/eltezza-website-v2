@@ -1,3 +1,5 @@
+"use client"
+
 import { PagePortalContent } from "@/features/layout/home/pagePortal";
 import styles from "./autoplayCarousel.module.scss";
 import { CarouselItem } from "./carouselItem";

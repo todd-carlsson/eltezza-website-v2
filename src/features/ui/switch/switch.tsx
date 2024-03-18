@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import styles from "./switch.module.scss"
 import { motion } from "framer-motion"

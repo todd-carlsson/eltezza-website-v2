@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import styles from "./navbar.module.scss"
 import { navigationLinks } from "@/constants"

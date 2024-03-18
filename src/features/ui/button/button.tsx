@@ -1,3 +1,5 @@
+"use client"
+
 import { forwardRef, useState } from "react";
 import styles from "./button.module.scss";
 import classNames from "classnames";
