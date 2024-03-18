@@ -1,7 +1,7 @@
-.services {
+.accordion {
     width: 100%;
     
-    .description {
+    .title {
         color: var(--white-text);
         font-weight: 600;
         text-transform: uppercase;
@@ -9,7 +9,7 @@
         margin-bottom: 2rem;
     }
 
-    .service {
+    .accordionSection {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -19,13 +19,13 @@
         cursor: pointer;
         transition: all 0.3s ease-in-out;
 
-        .serviceTitle {
+        .accordionTitle {
             font-size: 5.5rem;
             color: #fff;
             max-width: 50%;
         }
 
-        .serviceDescription {
+        .accordionDescription {
             max-width: 40%;
             font-size: 1.25rem;
         }

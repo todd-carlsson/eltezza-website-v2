@@ -1,47 +1,47 @@
 import { useState } from "react"
-import styles from "./services.module.scss"
+import styles from "./accordion.module.scss"
 import { motion, AnimatePresence } from "framer-motion"
 
-interface ServicesProps {
-    content: Array<ServicesPropsObj>
+interface AccordionProps {
+    content: Array<AccordionPropsObj>
     color: "--ez-orange" | "--adobe-purple"
 }
 
-type ServicesPropsObj = {
+type AccordionPropsObj = {
     id: string,
     title: string,
     description: string
 }
 
-export function Services({
+export function Accordion({
     content,
     color
-}: ServicesProps) {
+}: AccordionProps) {
     const [active, setActive] = useState<string>("-1")
     return (
-        <div id="whatwedo" className={styles.services}>
-            <p className={styles.description}>WHAT WE DO | SERVICES</p>
+        <div id="whatwedo" className={styles.accordion}>
+            <p className={styles.title}>WHAT WE DO | SERVICES</p>
             <div>
-                {content.map((service) => (
+                {content.map((item) => (
                     <div
-                        className={styles.service}
-                        key={service.id}
-                        onMouseOver={() => setActive(service.id)}
+                        className={styles.accordionSection}
+                        key={item.id}
+                        onMouseOver={() => setActive(item.id)}
                         onMouseLeave={() => setActive("-1")}
                         style={{
-                            backgroundColor: active === service.id ? `var(${color})` : "#000"
+                            backgroundColor: active === item.id ? `var(${color})` : "#000"
                         }}
                     >
                         <h1
-                            className={styles.serviceTitle}
+                            className={styles.accordionTitle}
                             style={{
-                                color: active === service.id && color !== "--adobe-purple"
+                                color: active === item.id && color !== "--adobe-purple"
                                     ? "#000" : "#fff"
                             }}
                         >
-                            {service.title}
+                            {item.title}
                         </h1>
-                        {active === service.id &&
+                        {active === item.id &&
                             <AnimatePresence>
                                 <motion.p
                                     initial={{
@@ -53,12 +53,12 @@ export function Services({
                                     exit={{
                                         opacity: 0
                                     }}
-                                    className={styles.serviceDescription}
+                                    className={styles.accordionDescription}
                                     style={{
                                         color: color === "--adobe-purple" ? "#fff" : "#000"
                                     }}
                                 >
-                                    {service.description}
+                                    {item.description}
                                 </motion.p>
                             </AnimatePresence>}
                     </div>

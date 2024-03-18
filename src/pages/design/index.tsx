@@ -1,5 +1,5 @@
 import { headerDescription, pageTags, services } from "@/constants";
-import { Hero, Navbar, Services } from "@/features/layout";
+import { Hero, Navbar, Accordion } from "@/features/layout";
 import styles from "@/styles/Home.module.css"
 
 export default function DesignPage() {
@@ -11,7 +11,7 @@ export default function DesignPage() {
                 tags={pageTags.design}
             />
             <Navbar />
-            <Services content={services.design} color="--ez-orange" />
+            <Accordion content={services.design} color="--ez-orange" />
         </div>
     )
 }

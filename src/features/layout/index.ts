@@ -2,4 +2,4 @@ export * from "./home";
 export * from "./header";
 export * from "./hero";
 export * from "./navbar";
-export * from "./services";
+export * from "./accordion";
