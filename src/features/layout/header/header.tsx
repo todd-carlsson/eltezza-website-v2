@@ -15,6 +15,7 @@ export function Header({
 }: HeaderProps) {
     return (
         <header className={styles.header}>
+            <div className={styles.headerBackground} />
             <Image
                 src="/images/eltezza-home-logo.png"
                 alt="Eltezza"
