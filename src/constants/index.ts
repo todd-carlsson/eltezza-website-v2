@@ -272,3 +272,28 @@ export const landingPageMockData = [
         link: "www.eltezza.com"
     },
 ]
+
+export const brandsMockData = {
+    design: [
+        {
+            id: "1",
+            brand: "Kmart",
+            src: "/images/brandImages/Kmart_Australia_logo.svg",
+        },
+        {
+            id: "2",
+            brand: "Cutly",
+            src: "/images/brandImages/Cutly_logo.svg",
+        },
+        {
+            id: "3",
+            brand: "Juluwarlu",
+            src: "/images/brandImages/Juluwarlu_logo.svg"
+        },
+        {
+            id: "4",
+            brand: "Illuminix",
+            src: "/images/brandImages/Illuminix_logo.svg"
+        },
+    ]
+}

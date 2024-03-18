@@ -1,5 +1,5 @@
-import { headerDescription, pageTags, services } from "@/constants";
-import { Hero, Navbar, Accordion } from "@/features/layout";
+import { brandsMockData, headerDescription, pageTags, services } from "@/constants";
+import { Hero, Navbar, Accordion, Brands } from "@/features/layout";
 import styles from "@/styles/Home.module.css"
 
 export default function DesignPage() {
@@ -12,6 +12,7 @@ export default function DesignPage() {
             />
             <Navbar />
             <Accordion content={services.design} color="--ez-orange" />
+            <Brands content={brandsMockData.design} />
         </div>
     )
 }
