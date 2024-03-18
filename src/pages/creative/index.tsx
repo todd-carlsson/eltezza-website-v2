@@ -11,7 +11,7 @@ export default function CreativePage() {
                 tags={pageTags.creative}
             />
             <Navbar />
-            <Services content={services.creative} />
+            <Services content={services.creative} color="--adobe-purple" />
         </div>
     )
 }

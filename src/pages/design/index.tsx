@@ -11,7 +11,7 @@ export default function DesignPage() {
                 tags={pageTags.design}
             />
             <Navbar />
-            <Services content={services.design} />
+            <Services content={services.design} color="--ez-orange" />
         </div>
     )
 }
