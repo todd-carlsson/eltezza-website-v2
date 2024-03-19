@@ -14,6 +14,7 @@
 /* HERO SECTION FOR DESIGN & CREATIVE PAGES */
 .heroContainer {
   display: flex;
+  justify-content: space-between;
   height: calc(100vh - 80px);
   width: 100%;
   padding: 0 var(--content-padding);
@@ -28,5 +29,4 @@
   .heroContainer {
     padding: 0 var(--content-padding-sm);
   }
-  
 }
