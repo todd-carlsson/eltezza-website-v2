@@ -19,7 +19,7 @@ export default function DesignPage() {
                     tags={pageTags.design}
                 />
                 <Accordion content={services.design} color="--ez-orange" />
-                <Brands content={brandsMockData.design} />
+                <Brands content={brandsMockData.design} columns={4} />
                 <Process content={ourProcess.design} />
             </div>
         </>
