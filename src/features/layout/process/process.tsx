@@ -95,7 +95,7 @@ export function Process({
                             variants={color === "--ez-orange" ? colorVariant : undefined}
                             style={{ backgroundColor: "#fff" }}
                         >
-                            {`0${item.id}`}
+                            {`0${i + 1}`}
                         </motion.h3>
                         {i !== content.length - 1 &&
                             <img className={styles.arrow} src="/process_arrow.svg" alt="arrow" />
