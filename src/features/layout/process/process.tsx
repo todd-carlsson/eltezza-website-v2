@@ -40,8 +40,20 @@ export function Process({
         visible: {
             opacity: 1,
             transition: {
-                duration: 0.8
-            } 
+                duration: 0.5
+            }
+        }
+    }
+
+    const colorVariant = {
+        hidden: {
+            backgroundColor: "#fff"
+        },
+        visible: {
+            backgroundColor: "#000",
+            transition: {
+                duration: 0.3
+            }
         }
     }
     return (
@@ -72,8 +84,19 @@ export function Process({
                                 style={{ backgroundColor: `var(${color})` }}
                                 variants={listVariant}
                             />
-                            <h3 className={styles.processText}>{item.title}</h3>
-                            <h3 className={styles.processNumber}>{`0${item.id}`}</h3>
+                            <motion.h3
+                                className={styles.processText}
+                                variants={color === "--ez-orange" ? colorVariant : undefined}
+                            >
+
+                                {item.title}
+                            </motion.h3>
+                            <motion.h3
+                                className={styles.processNumber}
+                                variants={color === "--ez-orange" ? colorVariant : undefined}
+                            >
+                                {`0${item.id}`}
+                            </motion.h3>
                             <img className={styles.arrow} src="/process_arrow.svg" alt="arrow" />
                         </motion.div>
 

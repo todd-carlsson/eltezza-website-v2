@@ -28,6 +28,9 @@
                 z-index: 30;
                 max-width: 160px;
                 line-height: 100%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
             }
 
             .processNumber {
@@ -35,6 +38,9 @@
                 font-weight: 500;
                 position: relative;
                 z-index: 30;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
             }
 
             .background {
