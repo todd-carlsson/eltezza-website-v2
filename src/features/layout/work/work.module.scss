@@ -1,6 +1,36 @@
-.workSection {
+// CREATIVE WORK SECTION
+.workSectionCreative {
     width: 100%;
     padding: 0 var(--content-padding);
     margin: 120px 0;
+}
+
+// DESIGN WORK SECTION
+.workSectionDesign {
+    width: 100%;
+    margin: 120px 0;
     height: 400px;
+    position: relative;
+
+    .wheel {
+        position: absolute;
+        z-index: 800;
+        left: var(--content-padding);
+        animation: rotate 15s linear infinite;
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+    }
+
+    .workDesignText {
+        color: var(--white-text);
+        text-align: center;
+    }
 }
