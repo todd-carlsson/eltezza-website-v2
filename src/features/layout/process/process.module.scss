@@ -6,13 +6,36 @@
     .processContainer {
         display: flex;
         margin-top: 5rem;
+        height: fit-content;
+        // position: relative;
 
         .processCard {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            align-items: center;
             height: 100px;
             width: 100%;
             background-color: var(--equinox-blue);
             margin: 0 20px;
             border: 1px solid black;
+            position: relative;
+
+            .processText {
+                font-size: 1rem;
+                font-weight: 700;
+            }
+
+            .processNumber {
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+            .arrow {
+                position: absolute;
+                top: 15px;
+                right: 0;
+            }
         }
     }
 }
