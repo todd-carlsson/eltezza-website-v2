@@ -111,7 +111,7 @@ export const services = {
     ]
 }
 
-export const process = {
+export const ourProcess = {
     design: [
         {
             id: "1",

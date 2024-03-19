@@ -1,4 +1,4 @@
-import { brandsMockData, headerDescription, pageTags, services } from "@/constants";
+import { brandsMockData, headerDescription, pageTags, services, ourProcess } from "@/constants";
 import {
     Hero,
     Navbar,
@@ -20,7 +20,7 @@ export default function DesignPage() {
                 />
                 <Accordion content={services.design} color="--ez-orange" />
                 <Brands content={brandsMockData.design} />
-                <Process />
+                <Process content={ourProcess.design} />
             </div>
         </>
     )
