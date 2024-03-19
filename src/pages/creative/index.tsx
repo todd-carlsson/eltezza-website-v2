@@ -1,4 +1,5 @@
 import {
+    brandsMockData,
     headerDescription,
     landingPageMockData,
     ourProcess,
@@ -13,7 +14,8 @@ import {
     Accordion,
     Process,
     Work,
-    Team
+    Team,
+    Brands
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css"
 
@@ -32,7 +34,7 @@ export default function CreativePage() {
             </div>
             <Work content={landingPageMockData} page={page} />
             <Accordion content={services.creative} color={color} />
-            {/* BRANDS SECTION GOES HERE */}
+            <Brands content={brandsMockData.creative} columns={3} />
             <Process content={ourProcess.creative} color={color} />
             <Team description={teamDescription.creative} content={teamMockData} />
         </>

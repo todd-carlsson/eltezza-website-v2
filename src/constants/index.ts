@@ -344,6 +344,54 @@ export const brandsMockData = {
             brand: "Robert Embroideries",
             src: "/images/brandImages/Robert_logo.svg"
         },
+    ],
+
+    creative: [
+        {
+            id: "1",
+            brand: "Kmart",
+            src: "/images/brandImages/Kmart_Australia_logo.svg",
+        },
+        {
+            id: "2",
+            brand: "Cutly",
+            src: "/images/brandImages/Cutly_logo.svg",
+        },
+        {
+            id: "3",
+            brand: "Nibblish",
+            src: "/images/brandImages/Nibblish_logo.svg",
+        },
+        {
+            id: "4",
+            brand: "Greenhill Seltzers",
+            src: "/images/brandImages/Greenhill_logo.svg",
+        },
+        {
+            id: "5",
+            brand: "EatKinda",
+            src: "/images/brandImages/EatKinda_logo.svg",
+        },
+        {
+            id: "6",
+            brand: "Black Pearl Cafe",
+            src: "/images/brandImages/BlackPearl_logo.svg"
+        },
+        {
+            id: "7",
+            brand: "Goju",
+            src: "/images/brandImages/Goju_logo.svg"
+        },
+        {
+            id: "8",
+            brand: "Rinse",
+            src: "/images/brandImages/Rinse_logo.svg"
+        },
+        {
+            id: "9",
+            brand: "Remarkable Cream",
+            src: "/images/brandImages/RemarkableCream_logo.svg"
+        },
     ]
 }
 
