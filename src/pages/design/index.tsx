@@ -4,7 +4,8 @@ import {
     pageTags,
     services,
     ourProcess,
-    landingPageMockData
+    landingPageMockData,
+    teamDescription
 } from "@/constants";
 import {
     Hero,
@@ -52,7 +53,7 @@ export default function DesignPage() {
             <Accordion content={services.design} color={color} />
             <Brands content={brandsMockData.design} columns={4} />
             <Process content={ourProcess.design} color={color} />
-            <Team />
+            <Team description={teamDescription.design} />
         </>
     )
 }

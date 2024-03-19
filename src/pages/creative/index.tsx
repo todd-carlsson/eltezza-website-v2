@@ -3,7 +3,8 @@ import {
     landingPageMockData,
     ourProcess,
     pageTags,
-    services
+    services,
+    teamDescription
 } from "@/constants";
 import {
     Hero,
@@ -32,7 +33,7 @@ export default function CreativePage() {
             <Accordion content={services.creative} color={color} />
             {/* BRANDS SECTION GOES HERE */}
             <Process content={ourProcess.creative} color={color} />
-            <Team />
+            <Team description={teamDescription.creative} />
         </>
     )
 }

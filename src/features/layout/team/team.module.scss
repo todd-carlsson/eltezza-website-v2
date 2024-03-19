@@ -1,4 +1,16 @@
 .teamSection {
     width: 100%;
     padding: 0 var(--content-padding);
+    margin: 120px 0;
+
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .teamDescription {
+            font-family: var(--font-source-sans);
+            max-width: 50%;
+        }
+    }
 }
