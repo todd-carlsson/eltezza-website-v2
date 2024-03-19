@@ -16,16 +16,18 @@
             height: 100px;
             width: 100%;
             background-color: var(--equinox-blue);
-            margin: 0 20px;
+            margin: 0 10px;
             border: 1px solid black;
             position: relative;
             z-index: 30;
 
             .processText {
-                font-size: 1rem;
+                font-size: 1.15rem;
                 font-weight: 700;
                 position: relative;
                 z-index: 30;
+                max-width: 160px;
+                line-height: 100%;
             }
 
             .processNumber {
