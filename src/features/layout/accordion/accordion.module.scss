@@ -21,10 +21,14 @@
         height: 305px;
 
         .accordionTitle {
-            font-size: 5.5rem;
+            font-size: 5rem;
             color: #fff;
             max-width: 50%;
             line-height: 100%;
+        }
+
+        .noWrap {
+            white-space: nowrap;
         }
 
         .accordionDescription {

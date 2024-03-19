@@ -3,6 +3,7 @@
 import { useState } from "react"
 import styles from "./accordion.module.scss"
 import { motion } from "framer-motion"
+import classNames from "classnames"
 
 interface AccordionProps {
     content: Array<AccordionPropsObj>
@@ -13,6 +14,7 @@ type AccordionPropsObj = {
     id: string,
     title: string,
     description: string
+    wrap: boolean
 }
 
 export function Accordion({
@@ -35,10 +37,12 @@ export function Accordion({
                         }}
                     >
                         <h1
-                            className={styles.accordionTitle}
+                            className={
+                                classNames(styles.accordionTitle, item.wrap ? "" : styles.noWrap)
+                            }
                             style={{
                                 color: active === item.id && color !== "--adobe-purple"
-                                    ? "#000" : "#fff"
+                                    ? "#000" : "#fff",
                             }}
                         >
                             {item.title}

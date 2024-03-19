@@ -54,27 +54,32 @@ export const services = {
         {
             id: "1",
             title: "WEB DEVELOPMENT",
-            description: "From coding to launch, our web development team is your path to a digital masterpiece. Empower your business with a website that impresses and converts."
+            description: "From coding to launch, our web development team is your path to a digital masterpiece. Empower your business with a website that impresses and converts.",
+            wrap: true
         },
         {
             id: "2",
             title: "WEB DESIGN",
-            description: "Our web design services blend aesthetics with user experience because we understand first impressions matter, and your website is your introduction."
+            description: "Our web design services blend aesthetics with user experience because we understand first impressions matter, and your website is your introduction.",
+            wrap: false
         },
         {
             id: "3",
             title: "BRANDING",
-            description: "Our expert team specializes in the art of crafting distinctive and unforgettable brand identities. This includes the creation of unique logos, compelling messaging, and captivating visual elements."
+            description: "Our expert team specializes in the art of crafting distinctive and unforgettable brand identities. This includes the creation of unique logos, compelling messaging, and captivating visual elements.",
+            wrap: false
         },
         {
             id: "4",
             title: "GRAPHIC DESIGN",
-            description: "Our designs at Eltezza are not just visually pleasing; they're strategically crafted to meet your objectives. We work hand in hand with you to create attention-grabbing assets that get your message across effectively."
+            description: "Our designs at Eltezza are not just visually pleasing; they're strategically crafted to meet your objectives. We work hand in hand with you to create attention-grabbing assets that get your message across effectively.",
+            wrap: false
         },
         {
             id: "5",
             title: "SOCIAL MEDIA",
-            description: "We start by creating a unique social media kit that aligns with your brand. Our team then curates high-quality, purposeful content strategies. We actively participate in the content collection to guarantee your social channels capture attention. With this, we then leverage our expertise and deliver captivating, scroll-stopping content."
+            description: "We start by creating a unique social media kit that aligns with your brand. Our team then curates high-quality, purposeful content strategies. We actively participate in the content collection to guarantee your social channels capture attention. With this, we then leverage our expertise and deliver captivating, scroll-stopping content.",
+            wrap: false
         }
     ],
 
@@ -82,22 +87,26 @@ export const services = {
         {
             id: "1",
             title: "PROMOTIONAL VIDEOS",
-            description: "We create promotional videos that are more than just stories; they're connections with your audience. From brainstorming wild ideas to bringing them to life on screen, we turn brand tales into visual experiences. Join us, and let’s make your brand story one that resonates, connects, and converts."
+            description: "We create promotional videos that are more than just stories; they're connections with your audience. From brainstorming wild ideas to bringing them to life on screen, we turn brand tales into visual experiences. Join us, and let’s make your brand story one that resonates, connects, and converts.",
+            wrap: true
         },
         {
             id: "2",
             title: "POST PRODUCTION",
-            description: "Transform your content game with our post-production finesse. We take raw footage and sculpt it into polished masterpieces, ensuring each frame aligns seamlessly with your brand's identity."
+            description: "Transform your content game with our post-production finesse. We take raw footage and sculpt it into polished masterpieces, ensuring each frame aligns seamlessly with your brand's identity.",
+            wrap: true
         },
         {
             id: "3",
             title: "ADVERTISING IMAGERY",
-            description: "We carefully curate striking visuals that communicate your brand's essence, creating a lasting impression across diverse channels. Releasing a new product or planning for an upcoming marketing campaign? Get in touch and let's see what we can cook up together - so many other brands already have 😉"
+            description: "We carefully curate striking visuals that communicate your brand's essence, creating a lasting impression across diverse channels. Releasing a new product or planning for an upcoming marketing campaign? Get in touch and let's see what we can cook up together - so many other brands already have 😉",
+            wrap: true
         },
         {
             id: "4",
             title: "PAID ADS MANAGEMENT",
-            description: "We craft ad campaigns to elevate your brand above digital noise, ensuring it resonates with your audience. From engaging ad content to meticulous tracking of performance metrics, we make sure that you are put in front of the right people. Pair that with continuous optimization, and the possibilities are endless."
+            description: "We craft ad campaigns to elevate your brand above digital noise, ensuring it resonates with your audience. From engaging ad content to meticulous tracking of performance metrics, we make sure that you are put in front of the right people. Pair that with continuous optimization, and the possibilities are endless.",
+            wrap: true
         }
     ]
 }
