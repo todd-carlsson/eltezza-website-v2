@@ -10,15 +10,7 @@
     @media screen and (max-width: 928px) {
         padding: 0 var(--content-padding-sm);
     }
-
-    .brandsTitle {
-        font-weight: 700;
-        font-size: 4.5rem;
-        text-transform: uppercase;
-        line-height: 100%;
-        text-align: center;
-    }
-
+    
     .brandsGrid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

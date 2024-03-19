@@ -16,7 +16,7 @@ export function Brands({
     return (
         // TODO: fix alignment of images on start and end of each grid row
         <section id="clients" className={styles.brandsSection}>
-            <h1 className={styles.brandsTitle}>OUR TRUSTED <span className="textGradient">PARTNERS</span></h1>
+            <h1 className="largeText">OUR TRUSTED <span className="textGradient">PARTNERS</span></h1>
             <div className={styles.brandsGrid}>
                 {content.map((brand) => (
                     <img

@@ -2,6 +2,10 @@ import styles from "./process.module.scss"
 
 export function Process() {
     return (
-        <div>Process</div>
+        <section className={styles.processSection}>
+            <h1 className="largeText">
+                OUR <span className="textGradient">PROCESS</span>
+            </h1>
+        </section>
     )
 }
