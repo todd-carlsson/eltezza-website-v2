@@ -20,8 +20,9 @@ export function AutoplayCarousel({
         <div className={styles.carouselContainer}>
             <div
                 className={classNames(
-                    orientation === "vertical" ? styles.carouselTrackVertical
-                        : styles.carouselTrack
+                    styles.carouselTrack,
+                    orientation === "vertical" ? styles.vertical
+                        : styles.horizontal
                 )}
             >
                 {content.map((item) => (
@@ -35,6 +36,7 @@ export function AutoplayCarousel({
                 {content.map((item) => (
                     <CarouselItem
                         key={item.id}
+                        aria-hidden
                         imageOnly={imageOnly}
                         data={item}
                     >

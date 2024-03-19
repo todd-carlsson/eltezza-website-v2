@@ -11,47 +11,32 @@
         justify-content: center;
         align-items: center;
         height: 80px;
-        gap: 16px;
-        width: 200%;
+        gap: 1rem;
+        width: fit-content;
         height: 100%;
-        animation: slide 20s linear infinite;
+    }
+
+    .horizontal {
+        animation: slide 30s linear infinite;
 
         // &:hover {
         //     animation-play-state: paused;
         // }
 
         @keyframes slide {
-            0% {
-                left: 0;
-            }
-
-            100% {
-                left: -100%;
+            to {
+                transform: translate(calc(-50% - 0.5rem));
             }
         }
     }
 
-    .carouselTrackVertical {
-        display: flex;
+    .vertical {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        height: 80px;
-        gap: 16px;
-        width: 200%;
-        height: 100%;
         animation: slideUp 10s linear infinite;
 
         @keyframes slideUp {
-            0% {
-                top: 0;
-            }
-
-            100% {
-                top: -100%;
+            to {
+                transform: translateY(calc(-50% - 0.5rem));
             }
         }
     }
