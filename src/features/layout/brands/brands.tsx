@@ -31,6 +31,7 @@ export function Brands({
                 }}
             >
                 {content.map((brand) => (
+                    // eslint-disable-next-line @next/next/no-img-element
                     <img
                         key={brand.id}
                         className={styles.brandLogo}

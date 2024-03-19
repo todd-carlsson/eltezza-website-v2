@@ -1,3 +1,5 @@
+"use client"
+
 import { TeamData } from "@/types"
 import styles from "./team.module.scss"
 import Image from "next/image"

@@ -1,3 +1,5 @@
+"use client"
+
 import { CarouselData } from "@/types"
 import styles from "./work.module.scss"
 import { AutoplayCarousel } from "@/features/ui"
