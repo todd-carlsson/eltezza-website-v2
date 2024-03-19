@@ -30,6 +30,31 @@
             }
         }
     }
+
+    .carouselTrackVertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        gap: 16px;
+        width: 200%;
+        height: 100%;
+        animation: slideUp 10s linear infinite;
+
+        @keyframes slideUp {
+            0% {
+                top: 0;
+            }
+
+            100% {
+                top: -100%;
+            }
+        }
+    }
 }
 
 .carouselCard {

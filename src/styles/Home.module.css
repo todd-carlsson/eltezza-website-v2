@@ -13,6 +13,20 @@
 
 /* HERO SECTION FOR DESIGN & CREATIVE PAGES */
 .heroContainer {
+  display: flex;
   height: calc(100vh - 80px);
   width: 100%;
+  padding: 0 var(--content-padding);
+}
+
+.designPageCarousel {
+  width: 40%;
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .heroContainer {
+    padding: 0 var(--content-padding-sm);
+  }
+  
 }

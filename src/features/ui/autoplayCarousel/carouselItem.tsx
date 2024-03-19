@@ -4,10 +4,12 @@ import Image from "next/image"
 
 interface CarouselItemProps {
     data: PagePortalContent
+    imageOnly: boolean
 }
 
 export function CarouselItem({
-    data
+    data,
+    imageOnly
 }: CarouselItemProps) {
     return (
         <div className={styles.carouselCard}>
@@ -18,13 +20,15 @@ export function CarouselItem({
                 height={100}
                 width={100}
             />
-            <div className={styles.carouselInfo}>
-                <h3 className={styles.carouselTitle}>{data.title}</h3>
-                <div className={styles.subTitleWrapper}>
-                    <p className={styles.carouselSubTitle}>{data.subTitle}</p>
-                    <p className={styles.carouselLink}>{data.link}</p>
+            {!imageOnly &&
+                <div className={styles.carouselInfo}>
+                    <h3 className={styles.carouselTitle}>{data.title}</h3>
+                    <div className={styles.subTitleWrapper}>
+                        <p className={styles.carouselSubTitle}>{data.subTitle}</p>
+                        <p className={styles.carouselLink}>{data.link}</p>
+                    </div>
                 </div>
-            </div>
+            }
         </div>
     )
 }

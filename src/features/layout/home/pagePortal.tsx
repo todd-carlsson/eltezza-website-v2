@@ -55,7 +55,9 @@ export default function PagePortal({
             </AnimatePresence>
             {isHovered &&
                 <div className={styles.portalContent}>
-                    <AutoplayCarousel content={content} />
+                    <AutoplayCarousel
+                        orientation="horizontal"
+                        content={content} />
                     <Link href={`/${title}`}>
                         <Button variant={buttonVariant}>Enter</Button>
                     </Link>

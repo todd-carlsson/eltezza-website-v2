@@ -13,10 +13,10 @@ export default function CreativePage() {
                     description={headerDescription.creative}
                     tags={pageTags.creative}
                 />
-                <Accordion content={services.creative} color={color} />
-                {/* BRANDS SECTION GOES HERE */}
-                <Process content={ourProcess.creative} color={color} />
             </div>
+            <Accordion content={services.creative} color={color} />
+            {/* BRANDS SECTION GOES HERE */}
+            <Process content={ourProcess.creative} color={color} />
         </>
     )
 }
