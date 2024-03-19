@@ -27,6 +27,7 @@ export default function DesignPage() {
     const [windowHeight, windowWidth] = useWindowSize()
     return (
         <>
+            <style>{'body { overflow-y: auto; }'}</style>
             <Navbar />
             <div className={styles.heroContainer}>
                 <Hero

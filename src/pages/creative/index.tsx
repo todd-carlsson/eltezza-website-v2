@@ -24,6 +24,7 @@ export default function CreativePage() {
     const color = "--adobe-purple"
     return (
         <>
+            <style>{'body { overflow-y: auto; }'}</style>
             <Navbar />
             <div className={styles.heroContainer}>
                 <Hero
