@@ -6,3 +6,4 @@ export * from "./accordion";
 export * from "./brands";
 export * from "./process";
 export * from "./work";
+export * from "./team";

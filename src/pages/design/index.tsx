@@ -12,7 +12,8 @@ import {
     Accordion,
     Brands,
     Process,
-    Work
+    Work,
+    Team
 } from "@/features/layout";
 import { AutoplayCarousel } from "@/features/ui";
 import useWindowSize from "@/hooks/useWindowSize";
@@ -51,6 +52,7 @@ export default function DesignPage() {
             <Accordion content={services.design} color={color} />
             <Brands content={brandsMockData.design} columns={4} />
             <Process content={ourProcess.design} color={color} />
+            <Team />
         </>
     )
 }

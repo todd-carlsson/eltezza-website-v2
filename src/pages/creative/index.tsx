@@ -10,7 +10,8 @@ import {
     Navbar,
     Accordion,
     Process,
-    Work
+    Work,
+    Team
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css"
 
@@ -31,6 +32,7 @@ export default function CreativePage() {
             <Accordion content={services.creative} color={color} />
             {/* BRANDS SECTION GOES HERE */}
             <Process content={ourProcess.creative} color={color} />
+            <Team />
         </>
     )
 }
