@@ -2,16 +2,11 @@
 
 import classNames from "classnames"
 import styles from "./brands.module.scss"
+import { BrandsData } from "@/types"
 
 interface BrandsProps {
-    content: Array<BrandsPropsObj>
+    content: Array<BrandsData>
     columns: 3 | 4
-}
-
-type BrandsPropsObj = {
-    id: string,
-    brand: string
-    src: string
 }
 
 export function Brands({

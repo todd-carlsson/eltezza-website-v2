@@ -12,3 +12,9 @@ export type TeamData = {
     src: string
     position: string
 }
+
+export type BrandsData = {
+    id: string,
+    brand: string
+    src: string
+}

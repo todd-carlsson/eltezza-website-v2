@@ -1,3 +1,5 @@
+import { BrandsData, CarouselData, TeamData } from "@/types"
+
 // WEBSITE INFO
 export const pageTags = {
     design: ["Web Development", "Branding & Design", "Social Media"],
@@ -280,7 +282,7 @@ export const landingPageMockData = [
         subTitle: "Rise above the noise",
         link: "www.eltezza.com"
     },
-]
+]as Array<CarouselData>
 
 export const brandsMockData = {
     design: [
@@ -344,7 +346,7 @@ export const brandsMockData = {
             brand: "Robert Embroideries",
             src: "/images/brandImages/Robert_logo.svg"
         },
-    ],
+    ]as Array<BrandsData>,
 
     creative: [
         {
@@ -392,7 +394,7 @@ export const brandsMockData = {
             brand: "Remarkable Cream",
             src: "/images/brandImages/RemarkableCream_logo.svg"
         },
-    ]
+    ]as Array<BrandsData>
 }
 
 export const teamMockData = [
@@ -468,4 +470,4 @@ export const teamMockData = [
         src: "https://source.unsplash.com/random/?person",
         position: "Position"
     },
-]
+]as Array<TeamData>
