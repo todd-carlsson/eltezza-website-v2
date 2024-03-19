@@ -87,19 +87,19 @@ export function Process({
                             <motion.h3
                                 className={styles.processText}
                                 variants={color === "--ez-orange" ? colorVariant : undefined}
+                                style={{ backgroundColor: color === "--adobe-purple" ? "#fff" : "" }}
                             >
-
                                 {item.title}
                             </motion.h3>
                             <motion.h3
                                 className={styles.processNumber}
                                 variants={color === "--ez-orange" ? colorVariant : undefined}
+                                style={{ backgroundColor: color === "--adobe-purple" ? "#fff" : "" }}
                             >
                                 {`0${item.id}`}
                             </motion.h3>
                             <img className={styles.arrow} src="/process_arrow.svg" alt="arrow" />
                         </motion.div>
-
                     </>
                 ))}
             </motion.div>

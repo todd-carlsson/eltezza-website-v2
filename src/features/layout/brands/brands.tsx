@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "./brands.module.scss"
 
 interface BrandsProps {
