@@ -7,10 +7,12 @@ import {
     Process
 } from "@/features/layout";
 import { AutoplayCarousel } from "@/features/ui";
+import useWindowSize from "@/hooks/useWindowSize";
 import styles from "@/styles/Home.module.css"
 
 export default function DesignPage() {
     const color = "--ez-orange"
+    const [windowHeight, windowWidth] = useWindowSize()
     return (
         <>
             <Navbar />
@@ -20,7 +22,8 @@ export default function DesignPage() {
                     description={headerDescription.design}
                     tags={pageTags.design}
                 />
-                <div className={styles.designPageCarousel}>
+                {windowWidth > 1075 &&
+                    <div className={styles.designPageCarousel}>
                     <AutoplayCarousel
                         isReversed
                         orientation="vertical"
@@ -33,6 +36,7 @@ export default function DesignPage() {
                         content={landingPageMockData}
                     />
                 </div>
+                }
             </div>
             <Accordion content={services.design} color={color} />
             <Brands content={brandsMockData.design} columns={4} />

@@ -1,6 +1,7 @@
 import { PagePortalContent } from "@/features/layout/home/pagePortal"
 import styles from "./autoplayCarousel.module.scss"
 import Image from "next/image"
+import classNames from "classnames"
 
 interface CarouselItemProps {
     data: PagePortalContent
@@ -16,7 +17,10 @@ export function CarouselItem({
     return (
         <div
             aria-hidden={ariaHidden}
-            className={styles.carouselCard}
+            className={classNames(
+                styles.carouselCard,
+                !imageOnly && styles.withContent
+            )}
         >
             <Image
                 className={styles.carouselCardImg}
