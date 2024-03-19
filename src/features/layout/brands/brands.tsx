@@ -17,14 +17,14 @@ export function Brands({
         <section id="clients" className={styles.brandsSection}>
             <h1 className={styles.brandsTitle}>OUR TRUSTED <span className="textGradient">PARTNERS</span></h1>
             <div className={styles.brandsGrid}>
-            {content.map((brand) => (
-                <img 
-                key={brand.id} 
-                className={styles.brandLogo}
-                src={brand.src} 
-                alt={brand.brand} 
-                />
-            ))}
+                {content.map((brand) => (
+                    <img
+                        key={brand.id}
+                        className={styles.brandLogo}
+                        src={brand.src}
+                        alt={brand.brand}
+                    />
+                ))}
             </div>
         </section>
     )
