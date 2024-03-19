@@ -1,5 +1,6 @@
 "use client"
 
+import classNames from "classnames"
 import styles from "./brands.module.scss"
 
 interface BrandsProps {
@@ -20,7 +21,9 @@ export function Brands({
     return (
         // TODO: fix alignment of images on start and end of each grid row
         <section id="clients" className={styles.brandsSection}>
-            <h1 className="largeText">OUR TRUSTED <span className="textGradient">PARTNERS</span></h1>
+            <h1 className={classNames("largeText", styles.brandsTitle)}>
+                OUR TRUSTED <span className="textGradient">PARTNERS</span>
+            </h1>
             <div
                 className={styles.brandsGrid}
                 style={{
