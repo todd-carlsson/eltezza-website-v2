@@ -14,6 +14,7 @@ export function Brands({
     content
 }: BrandsProps) {
     return (
+        // TODO: fix alignment of images on start and end of each grid row
         <section id="clients" className={styles.brandsSection}>
             <h1 className={styles.brandsTitle}>OUR TRUSTED <span className="textGradient">PARTNERS</span></h1>
             <div className={styles.brandsGrid}>
