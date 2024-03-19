@@ -2,6 +2,7 @@ import styles from "./process.module.scss"
 
 interface ProcessProps {
     content: Array<ProcessPropObj>
+    color: "--ez-orange" | "--adobe-purple"
 }
 
 type ProcessPropObj = {
@@ -17,9 +18,16 @@ export function Process({
             <h1 className="largeText">
                 OUR <span className="textGradient">PROCESS</span>
             </h1>
-            {content.map((item) => (
-                <h1 key={item.id}>{item.title}</h1>
-            ))}
+            <div className={styles.processContainer}>
+                {content.map((item, i) => (
+                    <div
+                        key={item.id}
+                        className={styles.processCard}
+                    >
+
+                    </div>
+                ))}
+            </div>
         </section>
     )
 }

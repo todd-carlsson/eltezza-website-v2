@@ -9,6 +9,7 @@ import {
 import styles from "@/styles/Home.module.css"
 
 export default function DesignPage() {
+    const color = "--ez-orange"
     return (
         <>
             <Navbar />
@@ -18,9 +19,9 @@ export default function DesignPage() {
                     description={headerDescription.design}
                     tags={pageTags.design}
                 />
-                <Accordion content={services.design} color="--ez-orange" />
+                <Accordion content={services.design} color={color} />
                 <Brands content={brandsMockData.design} columns={4} />
-                <Process content={ourProcess.design} />
+                <Process content={ourProcess.design} color={color} />
             </div>
         </>
     )

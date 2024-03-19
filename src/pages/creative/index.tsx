@@ -3,6 +3,7 @@ import { Hero, Navbar, Accordion, Process } from "@/features/layout";
 import styles from "@/styles/Home.module.css"
 
 export default function CreativePage() {
+    const color = "--adobe-purple"
     return (
         <>
             <Navbar />
@@ -12,9 +13,9 @@ export default function CreativePage() {
                     description={headerDescription.creative}
                     tags={pageTags.creative}
                 />
-                <Accordion content={services.creative} color="--adobe-purple" />
+                <Accordion content={services.creative} color={color} />
                 {/* BRANDS SECTION GOES HERE */}
-                <Process content={ourProcess.creative} />
+                <Process content={ourProcess.creative} color={color} />
             </div>
         </>
     )
