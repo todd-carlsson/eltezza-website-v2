@@ -3,6 +3,7 @@
 import Image from "next/image"
 import styles from "./header.module.scss"
 import { Switch } from "@/features/ui"
+import Link from "next/link"
 
 interface HeaderProps {
     page: "design" | "creative"
@@ -19,13 +20,15 @@ export function Header({
             doesn't cover scrollbar
              */}
             <div className={styles.headerBackground} />
-            <Image
-                src="/images/eltezza-home-logo.png"
-                alt="Eltezza"
-                width={131}
-                height={22}
-                className={styles.headerLogo}
-            />
+            <Link href="/">
+                <Image
+                    src="/images/eltezza-home-logo.png"
+                    alt="Eltezza"
+                    width={131}
+                    height={22}
+                    className={styles.headerLogo}
+                />
+            </Link>
             <Switch page={page} color={color} />
         </header>
     )
