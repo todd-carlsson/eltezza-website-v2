@@ -99,7 +99,9 @@ export function Process({
                             >
                                 {`0${item.id}`}
                             </motion.h3>
-                            <img className={styles.arrow} src="/process_arrow.svg" alt="arrow" />
+                            {i !== content.length - 1 &&
+                                <img className={styles.arrow} src="/process_arrow.svg" alt="arrow" />
+                            }
                         </motion.div>
                     </>
                 ))}

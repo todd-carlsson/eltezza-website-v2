@@ -54,9 +54,16 @@
 
             .arrow {
                 position: absolute;
-                top: 15px;
-                right: 0;
+                right: calc(-16% - 46px);
+                top: 17px;
                 z-index: 100;
+
+                @media screen and (max-width: 1300px) {
+                    right: calc(-23% - 46px);
+                }
+                @media screen and (max-width: 1090px) {
+                    right: calc(-26% - 46px);
+                }
             }
         }
     }
