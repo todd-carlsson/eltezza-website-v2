@@ -18,6 +18,7 @@ export function Process({
     content,
     color
 }: ProcessProps) {
+    // TODO: Fix black text color staggering animation on design page
 
     const boxVariant = {
         hidden: {
