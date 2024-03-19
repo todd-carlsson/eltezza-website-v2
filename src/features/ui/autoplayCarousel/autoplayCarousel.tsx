@@ -4,6 +4,7 @@ import { PagePortalContent } from "@/features/layout/home/pagePortal";
 import styles from "./autoplayCarousel.module.scss";
 import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
+import { motion } from "framer-motion";
 
 interface AutoplayCarouselProps {
     content: Array<PagePortalContent>
@@ -20,7 +21,9 @@ export function AutoplayCarousel({
 }: AutoplayCarouselProps) {
     return (
         <div className={styles.carouselContainer}>
-            <div
+            <motion.div
+                drag="x"
+                dragConstraints={{ right: 0}}
                 className={classNames(
                     styles.carouselTrack,
                     orientation === "vertical"
@@ -47,7 +50,7 @@ export function AutoplayCarousel({
                     >
                     </CarouselItem>
                 ))}
-            </div>
+            </motion.div>
         </div>
     )
 }
