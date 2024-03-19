@@ -5,14 +5,19 @@ import Image from "next/image"
 interface CarouselItemProps {
     data: PagePortalContent
     imageOnly: boolean
+    ariaHidden?: boolean
 }
 
 export function CarouselItem({
     data,
-    imageOnly
+    imageOnly,
+    ariaHidden = false
 }: CarouselItemProps) {
     return (
-        <div className={styles.carouselCard}>
+        <div
+            aria-hidden={ariaHidden}
+            className={styles.carouselCard}
+        >
             <Image
                 className={styles.carouselCardImg}
                 src={data.src}

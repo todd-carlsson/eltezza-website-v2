@@ -36,7 +36,7 @@ export function AutoplayCarousel({
                 {content.map((item) => (
                     <CarouselItem
                         key={item.id}
-                        aria-hidden
+                        ariaHidden
                         imageOnly={imageOnly}
                         data={item}
                     >
