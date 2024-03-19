@@ -8,6 +8,10 @@
         margin-top: 5rem;
         height: fit-content;
 
+        @media screen and (max-width: 1130px) {
+            flex-direction: column;
+        }
+
         .processCard {
             display: flex;
             justify-content: space-between;
@@ -20,6 +24,11 @@
             border: 1px solid black;
             position: relative;
             z-index: 30;
+
+            @media screen and (max-width: 1130px) {
+                padding: 26px 20px;
+            }
+    
 
             .processText {
                 font-size: 1.15rem;
@@ -61,6 +70,7 @@
                 @media screen and (max-width: 1300px) {
                     right: calc(-23% - 46px);
                 }
+
                 @media screen and (max-width: 1090px) {
                     right: calc(-26% - 46px);
                 }

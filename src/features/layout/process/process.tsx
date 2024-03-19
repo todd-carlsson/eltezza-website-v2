@@ -27,7 +27,6 @@ export function Process({
         visible: {
             x: 0,
             transition: {
-                delay: 0.2,
                 when: "beforeChildren",
                 staggerChildren: 0.4,
             },
