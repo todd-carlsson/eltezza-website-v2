@@ -1,13 +1,13 @@
 "use client"
 
-import { PagePortalContent } from "@/features/layout/home/pagePortal";
 import styles from "./autoplayCarousel.module.scss";
 import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
 import { motion } from "framer-motion";
+import { CarouselData } from "@/types";
 
 interface AutoplayCarouselProps {
-    content: Array<PagePortalContent>
+    content: Array<CarouselData>
     orientation: "vertical" | "horizontal"
     imageOnly?: boolean
     isReversed?: boolean

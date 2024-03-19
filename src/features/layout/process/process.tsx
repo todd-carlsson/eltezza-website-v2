@@ -71,38 +71,36 @@ export function Process({
                 whileInView="visible"
             >
                 {content.map((item, i) => (
-                    <>
+                    <motion.div
+                        key={item.id}
+                        className={styles.processCard}
+                        style={{
+                            top: i * 50
+                        }}
+                    >
                         <motion.div
-                            key={item.id}
-                            className={styles.processCard}
-                            style={{
-                                top: i * 50
-                            }}
+                            className={styles.background}
+                            style={{ backgroundColor: `var(${color})` }}
+                            variants={listVariant}
+                        />
+                        <motion.h3
+                            className={styles.processText}
+                            variants={color === "--ez-orange" ? colorVariant : undefined}
+                            style={{ backgroundColor: "#fff" }}
                         >
-                            <motion.div
-                                className={styles.background}
-                                style={{ backgroundColor: `var(${color})` }}
-                                variants={listVariant}
-                            />
-                            <motion.h3
-                                className={styles.processText}
-                                variants={color === "--ez-orange" ? colorVariant : undefined}
-                                style={{ backgroundColor: "#fff" }}
-                            >
-                                {item.title}
-                            </motion.h3>
-                            <motion.h3
-                                className={styles.processNumber}
-                                variants={color === "--ez-orange" ? colorVariant : undefined}
-                                style={{ backgroundColor: "#fff" }}
-                            >
-                                {`0${item.id}`}
-                            </motion.h3>
-                            {i !== content.length - 1 &&
-                                <img className={styles.arrow} src="/process_arrow.svg" alt="arrow" />
-                            }
-                        </motion.div>
-                    </>
+                            {item.title}
+                        </motion.h3>
+                        <motion.h3
+                            className={styles.processNumber}
+                            variants={color === "--ez-orange" ? colorVariant : undefined}
+                            style={{ backgroundColor: "#fff" }}
+                        >
+                            {`0${item.id}`}
+                        </motion.h3>
+                        {i !== content.length - 1 &&
+                            <img className={styles.arrow} src="/process_arrow.svg" alt="arrow" />
+                        }
+                    </motion.div>
                 ))}
             </motion.div>
         </section>

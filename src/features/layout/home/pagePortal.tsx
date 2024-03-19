@@ -5,21 +5,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { Button, ButtonVariant } from "@/features/ui";
 import { AutoplayCarousel } from "@/features/ui";
+import { CarouselData } from "@/types";
 
 interface PagePortalProps {
     title: string
-    content: Array<PagePortalContent>
+    content: Array<CarouselData>
     tags: Array<string>
     color: "--ez-orange" | "--adobe-purple"
     buttonVariant: ButtonVariant
-}
-
-export type PagePortalContent = {
-    id: string
-    src: string
-    title: string
-    subTitle: string
-    link: string
 }
 
 export default function PagePortal({

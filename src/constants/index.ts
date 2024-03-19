@@ -335,7 +335,7 @@ export const brandsMockData = {
             src: "/images/brandImages/Ikaika_logo.svg"
         },
         {
-            id: "12",
+            id: "11",
             brand: "Steve's Tyre Service",
             src: "/images/brandImages/Steves_logo.svg"
         },

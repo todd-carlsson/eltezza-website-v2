@@ -1,16 +1,25 @@
-import { brandsMockData, headerDescription, pageTags, services, ourProcess, landingPageMockData } from "@/constants";
+import {
+    brandsMockData,
+    headerDescription,
+    pageTags,
+    services,
+    ourProcess,
+    landingPageMockData
+} from "@/constants";
 import {
     Hero,
     Navbar,
     Accordion,
     Brands,
-    Process
+    Process,
+    Work
 } from "@/features/layout";
 import { AutoplayCarousel } from "@/features/ui";
 import useWindowSize from "@/hooks/useWindowSize";
 import styles from "@/styles/Home.module.css"
 
 export default function DesignPage() {
+    const page = "design"
     const color = "--ez-orange"
     const [windowHeight, windowWidth] = useWindowSize()
     return (
@@ -18,30 +27,30 @@ export default function DesignPage() {
             <Navbar />
             <div className={styles.heroContainer}>
                 <Hero
-                    page="design"
+                    page={page}
                     description={headerDescription.design}
                     tags={pageTags.design}
                 />
                 {windowWidth > 1075 &&
                     <div className={styles.designPageCarousel}>
-                    <AutoplayCarousel
-                        isReversed
-                        orientation="vertical"
-                        imageOnly
-                        content={landingPageMockData}
-                    />
-                    <AutoplayCarousel
-                        orientation="vertical"
-                        imageOnly
-                        content={landingPageMockData}
-                    />
-                </div>
+                        <AutoplayCarousel
+                            isReversed
+                            orientation="vertical"
+                            imageOnly
+                            content={landingPageMockData}
+                        />
+                        <AutoplayCarousel
+                            orientation="vertical"
+                            imageOnly
+                            content={landingPageMockData}
+                        />
+                    </div>
                 }
             </div>
+            <Work content={landingPageMockData} page={page} />
             <Accordion content={services.design} color={color} />
             <Brands content={brandsMockData.design} columns={4} />
             <Process content={ourProcess.design} color={color} />
-
         </>
     )
 }
