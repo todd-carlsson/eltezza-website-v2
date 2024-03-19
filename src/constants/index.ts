@@ -31,15 +31,15 @@ export const navigationLinks = {
     mobile: [
         {
             title: "Our work",
-            href: "#ourwork"
+            href: "#work"
         },
         {
             title: "What we do",
-            href: "#whatwedo"
+            href: "#services"
         },
         {
             title: "Get in touch",
-            href: "#getintouch"
+            href: "#contact"
         },
     ]
 }
