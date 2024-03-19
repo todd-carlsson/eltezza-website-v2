@@ -9,20 +9,25 @@ interface AutoplayCarouselProps {
     content: Array<PagePortalContent>
     orientation: "vertical" | "horizontal"
     imageOnly?: boolean
+    isReversed?: boolean
 }
 
 export function AutoplayCarousel({
     content,
     orientation,
-    imageOnly = false
+    imageOnly = false,
+    isReversed = false
 }: AutoplayCarouselProps) {
     return (
         <div className={styles.carouselContainer}>
             <div
                 className={classNames(
                     styles.carouselTrack,
-                    orientation === "vertical" ? styles.vertical
-                        : styles.horizontal
+                    orientation === "vertical"
+                        ? isReversed
+                            ? styles.verticalReverse : styles.vertical
+                        : isReversed
+                            ? styles.horizontalReverse : styles.horizontal
                 )}
             >
                 {content.map((item) => (

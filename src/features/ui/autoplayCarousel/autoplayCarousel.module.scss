@@ -19,9 +19,14 @@
     .horizontal {
         animation: slide 30s linear infinite;
 
-        // &:hover {
-        //     animation-play-state: paused;
-        // }
+        @keyframes slide {
+            to {
+                transform: translate(calc(-50% - 0.5rem));
+            }
+        }
+    }
+    .horizontalReverse {
+        animation: slide 30s linear reverse infinite;
 
         @keyframes slide {
             to {
@@ -31,12 +36,25 @@
     }
 
     .vertical {
+        max-height: fit-content;
         flex-direction: column;
         animation: slideUp 10s linear infinite;
 
         @keyframes slideUp {
             to {
                 transform: translateY(calc(-50% - 0.5rem));
+            }
+        }
+    }
+
+    .verticalReverse {
+        // height: fit-content;
+        flex-direction: column-reverse;
+        animation: slideUp 10s linear reverse infinite;
+
+        @keyframes slideUp {
+            to {
+                transform: translateY(calc(-100% - 0.5rem));
             }
         }
     }

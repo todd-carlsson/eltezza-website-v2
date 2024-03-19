@@ -22,6 +22,7 @@ export default function DesignPage() {
                 />
                 <div className={styles.designPageCarousel}>
                     <AutoplayCarousel
+                        isReversed
                         orientation="vertical"
                         imageOnly
                         content={landingPageMockData}
