@@ -14,11 +14,21 @@
     position: relative;
     z-index: 999;
 
+    @media screen and (max-width: 800px) {
+        width: 75px;
+        height: 40px;
+    }
+
     .ellipse {
         width: 34px;
         height: 34px;
         background-color: #fff;
         border-radius: 50%;
         position: absolute;
+
+        @media screen and (max-width: 800px) {
+            width: 25px;
+            height: 25px;
+        }
     }
 }

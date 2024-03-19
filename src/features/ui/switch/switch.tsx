@@ -3,6 +3,7 @@
 import Link from "next/link"
 import styles from "./switch.module.scss"
 import { motion } from "framer-motion"
+import useWindowSize from "@/hooks/useWindowSize"
 
 interface SwitchProps {
     page: "design" | "creative"
@@ -13,6 +14,7 @@ function Switch({
     page,
     color
 }: SwitchProps) {
+    const [windowHeight, windowWidth] = useWindowSize()
     return (
         <Link href={page === "design" ? "/creative" : "/design"}>
             <div
@@ -21,26 +23,33 @@ function Switch({
                     backgroundColor: `var(${color})`,
                 }}
             >
-                <motion.span
-                    initial={{
-                        x: page === "creative" ? 5 : 60
-                    }}
-                    animate={{
-                        x: page === "creative" ? 60 : 5
-                    }}
-                    style={{
-                        marginLeft: page === "design" ? "1rem" : 0,
-                        marginRight: page === "creative" ? "1rem" : 0,
-                    }}
-                >
-                    {page}
-                </motion.span>
+                {windowWidth > 800 &&
+                    <motion.span
+                        initial={{
+                            x: page === "creative" ? 5 : 60
+                        }}
+                        animate={{
+                            x: page === "creative" ? 60 : 5
+                        }}
+                        style={{
+                            marginLeft: page === "design" ? "1rem" : 0,
+                            marginRight: page === "creative" ? "1rem" : 0,
+                        }}
+                    >
+                        {page}
+                    </motion.span>
+                }
                 <motion.div
                     initial={{
-                        x: page === "creative" ? 110 : 0
+                        x: page === "creative"
+                            ? windowWidth > 800
+                                ? 110 : 34
+                            : 0
                     }}
                     animate={{
-                        x: page === "creative" ? 0 : 110
+                        x: page === "creative"
+                            ? 0 : windowWidth > 800
+                                ? 110: 34
                     }}
                     className={styles.ellipse} />
             </div>

@@ -7,6 +7,10 @@
     height: 100%;
     padding-left: var(--content-padding);
 
+    @media screen and (max-width: 800px) {
+        padding: 0 var(--content-padding-sm);
+    }
+
     // HEADING
     .heroHeadingContainer {
         display: flex;
