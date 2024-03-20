@@ -9,22 +9,45 @@
 .workSectionDesign {
     width: 100%;
     margin: 120px 0;
-    height: 400px;
+    height: auto;
     position: relative;
 
-    .wheel {
+    .carouselContainer {
+        height: 400px;
+    }
+
+    .wheelContainer {
+        width: 100%;
         position: absolute;
-        z-index: 800;
-        left: var(--content-padding);
-        animation: rotate 15s linear infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        @keyframes rotate {
-            0% {
-                transform: rotate(0deg);
+        @media screen and (max-width: 800px) {
+            position: relative;
+        }
+
+        .wheel {
+            position: absolute;
+            z-index: 800;
+            left: var(--content-padding);
+            top: -10px;
+            animation: rotate 15s linear infinite;
+    
+            @media screen and (max-width: 800px) {
+                position: relative;
+                top: 0;
+                left: 0;
             }
-
-            100% {
-                transform: rotate(-360deg);
+    
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+    
+                100% {
+                    transform: rotate(-360deg);
+                }
             }
         }
     }

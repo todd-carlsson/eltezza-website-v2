@@ -17,18 +17,22 @@ export function Work({
     if (page === "design") {
         return (
             <section className={styles.workSectionDesign}>
-                <Image
-                    className={styles.wheel}
-                    src="/latest_works_wheel.svg"
-                    alt="Latest Work"
-                    width={175}
-                    height={175}
-                />
-                <AutoplayCarousel
-                    imageOnly
-                    orientation="horizontal"
-                    content={content}
-                />
+                <div className={styles.wheelContainer}>
+                    <Image
+                        className={styles.wheel}
+                        src="/latest_works_wheel.svg"
+                        alt="Latest Work"
+                        width={175}
+                        height={175}
+                    />
+                </div>
+                <div className={styles.carouselContainer}>
+                    <AutoplayCarousel
+                        imageOnly
+                        orientation="horizontal"
+                        content={content}
+                    />
+                </div>
                 <p className={styles.workDesignText}>
                     Drag images left or right to view more designs
                 </p>
