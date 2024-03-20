@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 /**Primary state */
 export const Primary: Story = {
   render: () => (
-    <div style={{ height: 300, fontFamily: "sans-serif" }}>
+    <div style={{ height: 400, fontFamily: "sans-serif" }}>
       <AutoplayCarousel
         orientation="horizontal"
         content={landingPageMockData}
