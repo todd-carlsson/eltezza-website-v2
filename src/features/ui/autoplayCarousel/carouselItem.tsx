@@ -1,10 +1,10 @@
-import { PagePortalContent } from "@/features/layout/home/pagePortal";
 import styles from "./autoplayCarousel.module.scss";
 import Image from "next/image";
 import classNames from "classnames";
+import { CarouselData } from "@/types";
 
 interface CarouselItemProps {
-  data: PagePortalContent;
+  data: CarouselData;
   imageOnly: boolean;
   ariaHidden?: boolean;
 }
