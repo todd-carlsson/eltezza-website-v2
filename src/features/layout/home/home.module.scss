@@ -11,7 +11,6 @@
     background-color: var(--ez-orange);
     border-radius: 50%;
     filter: blur(140px);
-    -webkit-filter: blur(140px);
     opacity: 1;
     position: absolute;
     z-index: 1;
@@ -25,7 +24,6 @@
     background-color: var(--adobe-purple);
     border-radius: 50%;
     filter: blur(140px);
-    -webkit-filter: blur(140px);
     opacity: 0.4;
     position: absolute;
     z-index: 1;
@@ -79,8 +77,8 @@
         background: linear-gradient(
           270deg,
           #010101 0%,
-          rgba(1, 1, 1, 0.7) 49.73%,
-          rgba(1, 1, 1, 0) 100%
+          rgb(1 1 1 / 70%) 49.73%,
+          rgb(1 1 1 / 0%) 100%
         );
       }
 
@@ -93,8 +91,8 @@
         background: linear-gradient(
           -270deg,
           #010101 0%,
-          rgba(1, 1, 1, 0.7) 49.73%,
-          rgba(1, 1, 1, 0) 100%
+          rgb(1 1 1 / 70%) 49.73%,
+          rgb(1 1 1 / 0%) 100%
         );
       }
 

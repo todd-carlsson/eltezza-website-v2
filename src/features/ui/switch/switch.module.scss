@@ -13,7 +13,7 @@
   position: relative;
   z-index: 999;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (width <= 800px) {
     width: 75px;
     height: 40px;
   }
@@ -25,7 +25,7 @@
     border-radius: 50%;
     position: absolute;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (width <= 800px) {
       width: 25px;
       height: 25px;
     }

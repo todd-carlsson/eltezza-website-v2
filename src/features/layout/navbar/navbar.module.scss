@@ -11,7 +11,7 @@
     width: 75%;
     border-radius: 50px;
     border: 1px solid #fff;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgb(255 255 255 / 20%);
     backdrop-filter: blur(6px);
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@
       padding: 0.8rem;
       transition: background-color 0.3s ease-in-out;
 
-      @media screen and (max-width: 800px) {
+      @media screen and (width <= 800px) {
         padding: 0.5rem 0.25rem;
         font-size: 0.75rem;
       }
