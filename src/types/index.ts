@@ -1,20 +1,20 @@
 export type CarouselData = {
-    id: string
-    src: string
-    title: string
-    subTitle: string
-    link: string
-}
+  id: string;
+  src: string;
+  title: string;
+  subTitle: string;
+  link: string;
+};
 
 export type TeamData = {
-    id: string
-    name: string
-    src: string
-    position: string
-}
+  id: string;
+  name: string;
+  src: string;
+  position: string;
+};
 
 export type BrandsData = {
-    id: string,
-    brand: string
-    src: string
-}
+  id: string;
+  brand: string;
+  src: string;
+};

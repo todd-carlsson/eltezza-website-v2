@@ -1,126 +1,136 @@
 .homeContainer {
-    width: 100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .orangeOrb {
+    width: 100vh;
     height: 100vh;
+    background-color: var(--ez-orange);
+    border-radius: 50%;
+    filter: blur(140px);
+    -webkit-filter: blur(140px);
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    left: -20%;
+    top: 0;
+  }
+
+  .purpleOrb {
+    width: 100vh;
+    height: 100vh;
+    background-color: var(--adobe-purple);
+    border-radius: 50%;
+    filter: blur(140px);
+    -webkit-filter: blur(140px);
+    opacity: 0.4;
+    position: absolute;
+    z-index: 1;
+    right: -20%;
+    top: 0;
+  }
+
+  .homeWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 100;
 
-    .orangeOrb {
-        width: 100vh;
-        height: 100vh;
-        background-color: var(--ez-orange);
-        border-radius: 50%;
-        filter: blur(140px);
-        -webkit-filter: blur(140px);
-        opacity: 1;
-        position: absolute;
-        z-index: 1;
-        left: -20%;
-        top: 0;
+    .homeTitleContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: max-content;
+      position: absolute;
+
+      .homeTitle {
+        font-weight: 900;
+        font-size: 7.3rem;
+        text-transform: uppercase;
+        line-height: 100%;
+      }
     }
 
-    .purpleOrb {
-        width: 100vh;
-        height: 100vh;
-        background-color: var(--adobe-purple);
-        border-radius: 50%;
-        filter: blur(140px);
-        -webkit-filter: blur(140px);
-        opacity: 0.4;
-        position: absolute;
-        z-index: 1;
-        right: -20%;
-        top: 0;
-    }
+    .dualPageContainer {
+      justify-content: center;
+      align-items: center;
+      height: 100%;
 
-    .homeWrapper {
+      .divider {
+        height: calc(100vh - 82px);
+        background-color: #fff;
+        width: 2px;
+        opacity: 0.5;
+      }
+
+      .blurLeft {
+        position: absolute;
+        z-index: 700;
+        right: 50%;
+        width: 115px;
+        height: 100%;
+        background: linear-gradient(
+          270deg,
+          #010101 0%,
+          rgba(1, 1, 1, 0.7) 49.73%,
+          rgba(1, 1, 1, 0) 100%
+        );
+      }
+
+      .blurRight {
+        position: absolute;
+        z-index: 700;
+        left: 50%;
+        width: 115px;
+        height: 100%;
+        background: linear-gradient(
+          -270deg,
+          #010101 0%,
+          rgba(1, 1, 1, 0.7) 49.73%,
+          rgba(1, 1, 1, 0) 100%
+        );
+      }
+
+      /* PAGE PORTAL */
+      .pagePortalContainer {
+        width: calc(50vw - 2px);
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        position: relative;
-        z-index: 100;
+        font-size: 2rem;
 
-        .homeTitleContainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            width: max-content;
-            position: absolute;
+        .pagePortalTitle {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: absolute;
+          z-index: 2;
 
-            .homeTitle {
-                font-weight: 900;
-                font-size: 7.3rem;
-                text-transform: uppercase;
-                line-height: 100%;
-            }
+          .title {
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 6.625rem;
+            cursor: default;
+          }
         }
 
-        .dualPageContainer {
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-
-            .divider {
-                height: calc(100vh - 82px);
-                background-color: #fff;
-                width: 2px;
-                opacity: 0.5;
-            }
-
-            .blurLeft {
-                position: absolute;
-                z-index: 700;
-                right: 50%;
-                width: 115px;
-                height: 100%;
-                background: linear-gradient(270deg, #010101 0%, rgba(1, 1, 1, 0.70) 49.73%, rgba(1, 1, 1, 0.00) 100%);
-            }
-
-            .blurRight {
-                position: absolute;
-                z-index: 700;
-                left: 50%;
-                width: 115px;
-                height: 100%;
-                background: linear-gradient(-270deg, #010101 0%, rgba(1, 1, 1, 0.70) 49.73%, rgba(1, 1, 1, 0.00) 100%);
-            }
-
-            /* PAGE PORTAL */
-            .pagePortalContainer {
-                width: calc(50vw - 2px);
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 2rem;
-
-                .pagePortalTitle {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    position: absolute;
-                    z-index: 2;
-
-                    .title {
-                        text-transform: uppercase;
-                        font-weight: 900;
-                        font-size: 6.625rem;
-                        cursor: default;
-                    }
-                }
-
-                .portalContent {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    height: 80%;
-                }
-            }
+        .portalContent {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 80%;
         }
+      }
     }
+  }
 }

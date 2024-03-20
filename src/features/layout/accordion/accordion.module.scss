@@ -1,39 +1,39 @@
 .accordion {
-    width: 100%;
-    
-    .title {
-        color: var(--white-text);
-        font-weight: 600;
-        text-transform: uppercase;
-        padding-left: var(--content-padding);
-        margin-bottom: 2rem;
+  width: 100%;
+
+  .title {
+    color: var(--white-text);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: var(--content-padding);
+    margin-bottom: 2rem;
+  }
+
+  .accordionSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 70px var(--content-padding);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    height: 305px;
+
+    .accordionTitle {
+      font-size: 5rem;
+      color: #fff;
+      max-width: 50%;
+      line-height: 100%;
     }
 
-    .accordionSection {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-        padding: 70px var(--content-padding);
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        height: 305px;
-
-        .accordionTitle {
-            font-size: 5rem;
-            color: #fff;
-            max-width: 50%;
-            line-height: 100%;
-        }
-
-        .noWrap {
-            white-space: nowrap;
-        }
-
-        .accordionDescription {
-            max-width: 40%;
-            font-size: 1.25rem;
-        }
+    .noWrap {
+      white-space: nowrap;
     }
+
+    .accordionDescription {
+      max-width: 40%;
+      font-size: 1.25rem;
+    }
+  }
 }

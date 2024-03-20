@@ -1,59 +1,59 @@
 // CREATIVE WORK SECTION
 .workSectionCreative {
-    width: 100%;
-    padding: 0 var(--content-padding);
-    margin: 120px 0;
+  width: 100%;
+  padding: 0 var(--content-padding);
+  margin: 120px 0;
 }
 
 // DESIGN WORK SECTION
 .workSectionDesign {
+  width: 100%;
+  margin: 120px 0;
+  height: auto;
+  position: relative;
+
+  .carouselContainer {
+    height: 400px;
+  }
+
+  .wheelContainer {
     width: 100%;
-    margin: 120px 0;
-    height: auto;
-    position: relative;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    .carouselContainer {
-        height: 400px;
+    @media screen and (max-width: 800px) {
+      position: relative;
     }
 
-    .wheelContainer {
-        width: 100%;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .wheel {
+      position: absolute;
+      z-index: 800;
+      left: var(--content-padding);
+      top: -10px;
+      animation: rotate 15s linear infinite;
 
-        @media screen and (max-width: 800px) {
-            position: relative;
+      @media screen and (max-width: 800px) {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
         }
 
-        .wheel {
-            position: absolute;
-            z-index: 800;
-            left: var(--content-padding);
-            top: -10px;
-            animation: rotate 15s linear infinite;
-    
-            @media screen and (max-width: 800px) {
-                position: relative;
-                top: 0;
-                left: 0;
-            }
-    
-            @keyframes rotate {
-                0% {
-                    transform: rotate(0deg);
-                }
-    
-                100% {
-                    transform: rotate(-360deg);
-                }
-            }
+        100% {
+          transform: rotate(-360deg);
         }
+      }
     }
+  }
 
-    .workDesignText {
-        color: var(--white-text);
-        text-align: center;
-    }
+  .workDesignText {
+    color: var(--white-text);
+    text-align: center;
+  }
 }

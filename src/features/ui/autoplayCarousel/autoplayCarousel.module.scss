@@ -1,114 +1,113 @@
 .carouselContainer {
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .carouselTrack {
+    display: flex;
+    position: absolute;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    gap: 1rem;
+    width: fit-content;
     height: 100%;
-    width: 100%;
 
-    .carouselTrack {
-        display: flex;
-        position: absolute;
-        left: 0;
-        justify-content: center;
-        align-items: center;
-        height: 80px;
-        gap: 1rem;
-        width: fit-content;
-        height: 100%;
-
-        &:active {
-            animation-play-state: paused;
-        }
+    &:active {
+      animation-play-state: paused;
     }
+  }
 
-    .horizontal {
-        animation: slide 30s linear infinite;
+  .horizontal {
+    animation: slide 30s linear infinite;
 
-        @keyframes slide {
-            to {
-                transform: translate(calc(-50% - 0.5rem));
-            }
-        }
+    @keyframes slide {
+      to {
+        transform: translate(calc(-50% - 0.5rem));
+      }
     }
-    .horizontalReverse {
-        animation: slide 30s linear reverse infinite;
+  }
+  .horizontalReverse {
+    animation: slide 30s linear reverse infinite;
 
-        @keyframes slide {
-            to {
-                transform: translate(calc(-50% - 0.5rem));
-            }
-        }
+    @keyframes slide {
+      to {
+        transform: translate(calc(-50% - 0.5rem));
+      }
     }
+  }
 
-    .vertical {
-        max-height: fit-content;
-        flex-direction: column;
-        animation: slideUp 10s linear infinite;
+  .vertical {
+    max-height: fit-content;
+    flex-direction: column;
+    animation: slideUp 10s linear infinite;
 
-        @keyframes slideUp {
-            to {
-                transform: translateY(calc(-50% - 0.5rem));
-            }
-        }
+    @keyframes slideUp {
+      to {
+        transform: translateY(calc(-50% - 0.5rem));
+      }
     }
+  }
 
-    .verticalReverse {
-        // height: fit-content;
-        flex-direction: column-reverse;
-        animation: slideUp 10s linear reverse infinite;
+  .verticalReverse {
+    // height: fit-content;
+    flex-direction: column-reverse;
+    animation: slideUp 10s linear reverse infinite;
 
-        @keyframes slideUp {
-            to {
-                transform: translateY(calc(-100% - 0.5rem));
-            }
-        }
+    @keyframes slideUp {
+      to {
+        transform: translateY(calc(-100% - 0.5rem));
+      }
     }
+  }
 }
 
 .carouselCard {
-    display: flex;
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-    
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+  display: flex;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
 
-    .carouselCardImg {
-        // Will need to make more responsive for smaller screen heights
-        width: 230px;
-        height: 250px;
-        object-fit: cover;
-        position: relative;
-        z-index: -1;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  .carouselCardImg {
+    // Will need to make more responsive for smaller screen heights
+    width: 230px;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+  }
+
+  .carouselInfo {
+    .carouselTitle {
+      font-size: 1rem;
+      font-weight: 700;
     }
 
-    .carouselInfo {
+    .subTitleWrapper {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
 
-        .carouselTitle {
-            font-size: 1rem;
-            font-weight: 700;
-        }
-
-        .subTitleWrapper {
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-
-            .carouselSubTitle {
-                font-size: 0.75rem;
-            }
-            .carouselLink {
-                font-size: 4px;
-            }
-        }
+      .carouselSubTitle {
+        font-size: 0.75rem;
+      }
+      .carouselLink {
+        font-size: 4px;
+      }
     }
+  }
 }
 
 .withContent {
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 7px;
-    padding: 0.75rem;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  padding: 0.75rem;
 }

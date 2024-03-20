@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import styles from "./autoplayCarousel.module.scss";
 import { CarouselItem } from "./carouselItem";
@@ -7,50 +7,50 @@ import { motion } from "framer-motion";
 import { CarouselData } from "@/types";
 
 interface AutoplayCarouselProps {
-    content: Array<CarouselData>
-    orientation: "vertical" | "horizontal"
-    imageOnly?: boolean
-    isReversed?: boolean
+  content: Array<CarouselData>;
+  orientation: "vertical" | "horizontal";
+  imageOnly?: boolean;
+  isReversed?: boolean;
 }
 
 export function AutoplayCarousel({
-    content,
-    orientation,
-    imageOnly = false,
-    isReversed = false
+  content,
+  orientation,
+  imageOnly = false,
+  isReversed = false,
 }: AutoplayCarouselProps) {
-    return (
-        <div className={styles.carouselContainer}>
-            <motion.div
-                drag="x"
-                dragConstraints={{ right: 0}}
-                className={classNames(
-                    styles.carouselTrack,
-                    orientation === "vertical"
-                        ? isReversed
-                            ? styles.verticalReverse : styles.vertical
-                        : isReversed
-                            ? styles.horizontalReverse : styles.horizontal
-                )}
-            >
-                {content.map((item) => (
-                    <CarouselItem
-                        key={item.id}
-                        imageOnly={imageOnly}
-                        data={item}
-                    >
-                    </CarouselItem>
-                ))}
-                {content.map((item) => (
-                    <CarouselItem
-                        key={item.id}
-                        ariaHidden
-                        imageOnly={imageOnly}
-                        data={item}
-                    >
-                    </CarouselItem>
-                ))}
-            </motion.div>
-        </div>
-    )
+  return (
+    <div className={styles.carouselContainer}>
+      <motion.div
+        drag="x"
+        dragConstraints={{ right: 0 }}
+        className={classNames(
+          styles.carouselTrack,
+          orientation === "vertical"
+            ? isReversed
+              ? styles.verticalReverse
+              : styles.vertical
+            : isReversed
+              ? styles.horizontalReverse
+              : styles.horizontal,
+        )}
+      >
+        {content.map((item) => (
+          <CarouselItem
+            key={item.id}
+            imageOnly={imageOnly}
+            data={item}
+          ></CarouselItem>
+        ))}
+        {content.map((item) => (
+          <CarouselItem
+            key={item.id}
+            ariaHidden
+            imageOnly={imageOnly}
+            data={item}
+          ></CarouselItem>
+        ))}
+      </motion.div>
+    </div>
+  );
 }

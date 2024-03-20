@@ -1,22 +1,22 @@
 .teamSection {
-    width: 100%;
-    padding: 0 var(--content-padding);
-    margin: 120px 0;
+  width: 100%;
+  padding: 0 var(--content-padding);
+  margin: 120px 0;
 
-    .textContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
-        .teamDescription {
-            font-family: var(--font-source-sans);
-            max-width: 50%;
-        }
+    .teamDescription {
+      font-family: var(--font-source-sans);
+      max-width: 50%;
     }
+  }
 
-    .teamGrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-top: 60px;
-    }
+  .teamGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 60px;
+  }
 }

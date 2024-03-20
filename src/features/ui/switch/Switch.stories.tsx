@@ -3,28 +3,27 @@ import { Switch } from "./switch";
 
 /**Switch Component*/
 const meta = {
-    component: Switch,
-    title: 'UI/Switch',
-    tags: ['autodocs'],
-} satisfies Meta<typeof Switch>
+  component: Switch,
+  title: "UI/Switch",
+  tags: ["autodocs"],
+} satisfies Meta<typeof Switch>;
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof meta>
-
+type Story = StoryObj<typeof meta>;
 
 /**Design state */
 export const Design: Story = {
-    args: {
-        page: "design",
-        color: "--ez-orange"
-    }
-}
+  args: {
+    page: "design",
+    color: "--ez-orange",
+  },
+};
 
 /**Creative state */
 export const Creative: Story = {
-    args: {
-        page: "creative",
-        color: "--adobe-purple"
-    }
-}
+  args: {
+    page: "creative",
+    color: "--adobe-purple",
+  },
+};

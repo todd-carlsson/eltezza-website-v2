@@ -5,9 +5,11 @@ import Layout from "./layout";
 import classNames from "classnames";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <main className={classNames(poppins.variable, sourceSans.variable)}>
+  return (
+    <main className={classNames(poppins.variable, sourceSans.variable)}>
       <Layout>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
       </Layout>
-    </main>;
+    </main>
+  );
 }
