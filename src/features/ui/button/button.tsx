@@ -1,6 +1,6 @@
 "use client";
 
-import { forwardRef, useState } from "react";
+import React, { forwardRef, useState } from "react";
 import styles from "./button.module.scss";
 import classNames from "classnames";
 import { motion } from "framer-motion";
@@ -9,11 +9,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant: ButtonVariant;
 }
 
-enum ButtonVariant {
+const enum ButtonVariant {
   main = "main",
   homeOrange = "homeOrange",
   homePurple = "homePurple",
-  icon = "icon",
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -35,7 +34,6 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           [styles.mainVariant]: variant === ButtonVariant.main,
           [styles.homeOrange]: variant === ButtonVariant.homeOrange,
           [styles.homePurple]: variant === ButtonVariant.homePurple,
-          [styles.icon]: variant === ButtonVariant.icon,
         })}
         type={type}
         ref={ref}
