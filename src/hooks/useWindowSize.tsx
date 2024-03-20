@@ -11,7 +11,7 @@ function useWindowSize() {
 
   function handleResize() {
     setWindowSize({
-      responsiveWidth: window.innerWidth
+      responsiveWidth: window.innerWidth,
     });
   }
 
