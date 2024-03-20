@@ -11,7 +11,7 @@ interface SwitchProps {
 }
 
 function Switch({ page, color }: SwitchProps) {
-  const [windowHeight, windowWidth] = useWindowSize();
+  const [windowWidth] = useWindowSize();
   return (
     <Link href={page === "design" ? "/creative" : "/design"}>
       <div

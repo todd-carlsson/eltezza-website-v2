@@ -2,19 +2,16 @@ import { useEffect, useState } from "react";
 
 type WindowSize = {
   responsiveWidth: number;
-  responsiveHeight: number;
 };
 
 function useWindowSize() {
   const [windowSize, setWindowSize] = useState({
     responsiveWidth: 0,
-    responsiveHeight: 0,
   } as WindowSize);
 
   function handleResize() {
     setWindowSize({
-      responsiveWidth: window.innerWidth,
-      responsiveHeight: window.innerHeight,
+      responsiveWidth: window.innerWidth
     });
   }
 
@@ -27,7 +24,7 @@ function useWindowSize() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return [windowSize.responsiveHeight, windowSize.responsiveWidth];
+  return [windowSize.responsiveWidth];
 }
 
 export default useWindowSize;

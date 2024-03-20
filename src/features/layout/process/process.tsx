@@ -18,7 +18,7 @@ type ProcessPropObj = {
 export function Process({ content, color }: ProcessProps) {
   // TODO: Fix black text color staggering animation on design page
 
-  const [windowHeight, windowWidth] = useWindowSize();
+  const [windowWidth] = useWindowSize();
 
   const boxVariant = {
     hidden: {

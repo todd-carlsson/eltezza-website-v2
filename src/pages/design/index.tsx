@@ -24,7 +24,7 @@ import styles from "@/styles/Home.module.css";
 export default function DesignPage() {
   const page = "design";
   const color = "--ez-orange";
-  const [windowHeight, windowWidth] = useWindowSize();
+  const [windowWidth] = useWindowSize();
   return (
     <>
       <style>{"body { overflow-y: auto; }"}</style>

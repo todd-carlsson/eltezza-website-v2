@@ -7,7 +7,7 @@ import Image from "next/image";
 import useWindowSize from "@/hooks/useWindowSize";
 
 export function Navbar() {
-  const [windowHeight, windowWidth] = useWindowSize();
+  const [windowWidth] = useWindowSize();
   return (
     <nav className={styles.navbar}>
       <ul className={styles.navbarContainer}>
