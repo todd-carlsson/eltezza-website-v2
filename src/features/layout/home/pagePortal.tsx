@@ -57,6 +57,8 @@ export default function PagePortal({
           </Link>
         </div>
       )}
+      {tags}
+      {color}
     </div>
   );
 }

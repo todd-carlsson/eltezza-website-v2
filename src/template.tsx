@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Template({ children }: { children: React.ReactNode }) {
