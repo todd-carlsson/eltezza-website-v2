@@ -17,10 +17,11 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   render: () => (
     <div style={{ height: 300, fontFamily: "sans-serif" }}>
-      <AutoplayCarousel content={landingPageMockData} />
+      <AutoplayCarousel orientation="horizontal" content={landingPageMockData} />
     </div>
   ),
   args: {
+    orientation: "horizontal",
     content: landingPageMockData,
   },
 };
