@@ -19,6 +19,11 @@ type AccordionPropsObj = {
 
 export function Accordion({ content, color }: AccordionProps) {
   const [active, setActive] = useState<string>("-1");
+
+  function hoverHandler(id: string) {
+    setActive(id);
+  }
+
   return (
     <div id="services" className={styles.accordion}>
       <p className={styles.title}>WHAT WE DO | SERVICES</p>
@@ -27,8 +32,8 @@ export function Accordion({ content, color }: AccordionProps) {
           <div
             className={styles.accordionSection}
             key={item.id}
-            onMouseOver={() => setActive(item.id)}
-            onMouseLeave={() => setActive("-1")}
+            onMouseOver={() => hoverHandler(item.id)}
+            onMouseLeave={() => hoverHandler("-1")}
             style={{
               backgroundColor: active === item.id ? `var(${color})` : "#000",
             }}

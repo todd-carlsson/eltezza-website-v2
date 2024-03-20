@@ -25,10 +25,15 @@ export default function PagePortal({
   buttonVariant,
 }: PagePortalProps) {
   const [isHovered, setIsHovered] = useState(false);
+
+  function hoverHandler(isTrue: boolean) {
+    setIsHovered(isTrue);
+  }
+
   return (
     <div
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => hoverHandler(true)}
+      onMouseLeave={() => hoverHandler(false)}
       className={styles.pagePortalContainer}
     >
       <AnimatePresence>
