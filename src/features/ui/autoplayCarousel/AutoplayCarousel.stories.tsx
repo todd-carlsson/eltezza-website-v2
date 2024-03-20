@@ -13,12 +13,63 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-/**Primary state */
-export const Primary: Story = {
+/**Horizontal state */
+export const Horizontal: Story = {
   render: () => (
     <div style={{ height: 400, fontFamily: "sans-serif" }}>
       <AutoplayCarousel
         orientation="horizontal"
+        content={landingPageMockData}
+      />
+    </div>
+  ),
+  args: {
+    orientation: "horizontal",
+    content: landingPageMockData,
+  },
+};
+
+/**Horizontal Reversed state */
+export const HorizontalReverse: Story = {
+  render: () => (
+    <div style={{ height: 400, fontFamily: "sans-serif" }}>
+      <AutoplayCarousel
+        isReversed
+        orientation="horizontal"
+        content={landingPageMockData}
+      />
+    </div>
+  ),
+  args: {
+    orientation: "horizontal",
+    content: landingPageMockData,
+  },
+};
+
+/**Vertical state */
+export const Vertical: Story = {
+  render: () => (
+    <div style={{ height: 400, fontFamily: "sans-serif" }}>
+      <AutoplayCarousel
+        imageOnly
+        orientation="vertical"
+        content={landingPageMockData}
+      />
+    </div>
+  ),
+  args: {
+    orientation: "horizontal",
+    content: landingPageMockData,
+  },
+};
+
+/**Vertical Reversed state */
+export const VerticalReverse: Story = {
+  render: () => (
+    <div style={{ height: 400, fontFamily: "sans-serif" }}>
+      <AutoplayCarousel
+        imageOnly
+        orientation="vertical"
         content={landingPageMockData}
       />
     </div>
