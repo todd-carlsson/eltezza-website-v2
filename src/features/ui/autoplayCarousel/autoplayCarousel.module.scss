@@ -10,7 +10,6 @@
     left: 0;
     justify-content: center;
     align-items: center;
-    height: 80px;
     gap: 1rem;
     width: fit-content;
     height: 100%;
@@ -29,6 +28,7 @@
       }
     }
   }
+
   .horizontalReverse {
     animation: slide 30s linear reverse infinite;
 
@@ -42,9 +42,9 @@
   .vertical {
     max-height: fit-content;
     flex-direction: column;
-    animation: slideUp 10s linear infinite;
+    animation: slide-up 10s linear infinite;
 
-    @keyframes slideUp {
+    @keyframes slide-up {
       to {
         transform: translateY(calc(-50% - 0.5rem));
       }
@@ -54,9 +54,9 @@
   .verticalReverse {
     // height: fit-content;
     flex-direction: column-reverse;
-    animation: slideUp 10s linear reverse infinite;
+    animation: slide-up 10s linear reverse infinite;
 
-    @keyframes slideUp {
+    @keyframes slide-up {
       to {
         transform: translateY(calc(-100% - 0.5rem));
       }
@@ -65,11 +65,9 @@
 }
 
 .carouselCard {
-  display: flex;
   width: 100%;
   height: auto;
   cursor: pointer;
-
   background: transparent;
   display: flex;
   flex-direction: column;
@@ -98,6 +96,7 @@
       .carouselSubTitle {
         font-size: 0.75rem;
       }
+
       .carouselLink {
         font-size: 4px;
       }

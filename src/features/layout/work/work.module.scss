@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (width <= 800px) {
       position: relative;
     }
 
@@ -34,7 +34,7 @@
       top: -10px;
       animation: rotate 15s linear infinite;
 
-      @media screen and (max-width: 800px) {
+      @media screen and (width <= 800px) {
         position: relative;
         top: 0;
         left: 0;

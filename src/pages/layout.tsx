@@ -1,7 +1,12 @@
 import { Header } from "@/features/layout";
 import { useRouter } from "next/router";
+import { ReactNode } from "react";
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps) {
   const router = useRouter();
   return (
     <>
