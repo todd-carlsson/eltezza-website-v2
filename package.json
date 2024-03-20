@@ -10,7 +10,7 @@
     "lint:code": "eslint --ignore-path .gitignore .",
     "lint:styles": "stylelint --ignore-path .gitignore \"**/*.scss\"",
     "check:types": "tsc --noEmit",
-    "prettier": "prettier  --ignore-path .gitignore --check .",
+    "prettier": "prettier --write --ignore-path .gitignore --check .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepare": "husky install",
