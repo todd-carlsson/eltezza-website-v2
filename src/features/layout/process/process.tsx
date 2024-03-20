@@ -1,5 +1,6 @@
 "use client"
 
+import useWindowSize from "@/hooks/useWindowSize"
 /* eslint-disable @next/next/no-img-element */
 import styles from "./process.module.scss"
 import { motion } from "framer-motion"
@@ -19,6 +20,8 @@ export function Process({
     color
 }: ProcessProps) {
     // TODO: Fix black text color staggering animation on design page
+
+    const [windowHeight, windowWidth] = useWindowSize()
 
     const boxVariant = {
         hidden: {
@@ -64,7 +67,7 @@ export function Process({
             <motion.div
                 className={styles.processContainer}
                 style={{
-                    height: ((content.length - 1) * 50) + 100
+                    height: windowWidth > 800 ? ((content.length - 1) * 50) + 100 : "auto"
                 }}
                 variants={boxVariant}
                 initial="hidden"
@@ -75,7 +78,7 @@ export function Process({
                         key={item.id}
                         className={styles.processCard}
                         style={{
-                            top: i * 50
+                            top: windowWidth > 800 ? i * 50 : ""
                         }}
                     >
                         <motion.div
