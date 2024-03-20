@@ -52,13 +52,23 @@ export default function PagePortal({
       {isHovered && (
         <div className={styles.portalContent}>
           <AutoplayCarousel orientation="horizontal" content={content} />
+          <div className={styles.tagListContainer}>
+            {tags.map((tag, i) => (
+              <>
+                <p
+                  key={tag}>{tag} </p>
+                {i !== tags.length - 1 &&
+                  <p> | </p>
+                }
+              </>
+            ))}
+          </div>
           <Link href={`/${title}`}>
             <Button variant={buttonVariant}>Enter</Button>
           </Link>
+          <p style={{display: "none"}}>{color}</p>
         </div>
       )}
-      {tags}
-      {color}
     </div>
   );
 }

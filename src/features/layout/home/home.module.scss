@@ -127,8 +127,15 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          gap: 40px;
           width: 100%;
           height: 80%;
+
+          .tagListContainer {
+            font-size: 1rem;
+            display: flex;
+            gap: 0.75rem;
+          }
         }
       }
     }
