@@ -7,9 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:code": "eslint --ignore-path .gitignore .",
+    "lint:styles": "stylelint  --ignore-path .gitignore \"**/*.scss\"",
+    "check:types": "tsc --noEmit",
     "prettier": "prettier  --ignore-path .gitignore --check .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
+  },
+  "engines": {
+    "npm": ">=10.2.3",
+    "node": ">=20.10.0"
   },
   "dependencies": {
     "classnames": "^2.5.1",
