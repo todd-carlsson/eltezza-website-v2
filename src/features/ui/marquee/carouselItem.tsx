@@ -1,4 +1,4 @@
-import styles from "./autoplayCarousel.module.scss";
+import styles from "./marquee.module.scss";
 import Image from "next/image";
 import classNames from "classnames";
 import { CarouselData } from "@/types";

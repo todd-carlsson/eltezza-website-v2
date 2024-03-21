@@ -1,24 +1,24 @@
 "use client";
 
-import styles from "./autoplayCarousel.module.scss";
+import styles from "./marquee.module.scss";
 import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { CarouselData } from "@/types";
 
-interface AutoplayCarouselProps {
+interface MarqueeProps {
   content: Array<CarouselData>;
   orientation: "vertical" | "horizontal";
   imageOnly?: boolean;
   isReversed?: boolean;
 }
 
-export function AutoplayCarousel({
+export function Marquee({
   content,
   orientation,
   imageOnly = false,
   isReversed = false,
-}: AutoplayCarouselProps) {
+}: MarqueeProps) {
   return (
     <div className={styles.carouselContainer}>
       <motion.div

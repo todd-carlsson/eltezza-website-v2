@@ -17,7 +17,7 @@ import {
   Work,
   Team,
 } from "@/features/layout";
-import { AutoplayCarousel } from "@/features/ui";
+import { Marquee } from "@/features/ui";
 import useWindowSize from "@/hooks/useWindowSize";
 import styles from "@/styles/Home.module.css";
 
@@ -37,13 +37,13 @@ export default function DesignPage() {
         />
         {windowWidth > 1075 && (
           <div className={styles.designPageCarousel}>
-            <AutoplayCarousel
+            <Marquee
               isReversed
               orientation="vertical"
               imageOnly
               content={landingPageMockData}
             />
-            <AutoplayCarousel
+            <Marquee
               orientation="vertical"
               imageOnly
               content={landingPageMockData}

@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { AutoplayCarousel } from ".";
+import { Marquee } from ".";
 import { landingPageMockData } from "../../../constants";
 
 /**Autoplay Carousel Component*/
 const meta = {
-  component: AutoplayCarousel,
-  title: "ImageComponents/AutoplayCarousel",
+  component: Marquee,
+  title: "ImageComponents/Marquee",
   tags: ["autodocs"],
-} satisfies Meta<typeof AutoplayCarousel>;
+} satisfies Meta<typeof Marquee>;
 
 export default meta;
 
@@ -17,10 +17,7 @@ type Story = StoryObj<typeof meta>;
 export const Horizontal: Story = {
   render: () => (
     <div style={{ height: 400, fontFamily: "sans-serif" }}>
-      <AutoplayCarousel
-        orientation="horizontal"
-        content={landingPageMockData}
-      />
+      <Marquee orientation="horizontal" content={landingPageMockData} />
     </div>
   ),
   args: {
@@ -33,7 +30,7 @@ export const Horizontal: Story = {
 export const HorizontalReverse: Story = {
   render: () => (
     <div style={{ height: 400, fontFamily: "sans-serif" }}>
-      <AutoplayCarousel
+      <Marquee
         isReversed
         orientation="horizontal"
         content={landingPageMockData}
@@ -50,11 +47,7 @@ export const HorizontalReverse: Story = {
 export const Vertical: Story = {
   render: () => (
     <div style={{ height: 400, fontFamily: "sans-serif" }}>
-      <AutoplayCarousel
-        imageOnly
-        orientation="vertical"
-        content={landingPageMockData}
-      />
+      <Marquee imageOnly orientation="vertical" content={landingPageMockData} />
     </div>
   ),
   args: {
@@ -67,11 +60,7 @@ export const Vertical: Story = {
 export const VerticalReverse: Story = {
   render: () => (
     <div style={{ height: 400, fontFamily: "sans-serif" }}>
-      <AutoplayCarousel
-        imageOnly
-        orientation="vertical"
-        content={landingPageMockData}
-      />
+      <Marquee imageOnly orientation="vertical" content={landingPageMockData} />
     </div>
   ),
   args: {

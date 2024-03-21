@@ -2,7 +2,7 @@
 
 import { CarouselData } from "@/types";
 import styles from "./work.module.scss";
-import { AutoplayCarousel } from "@/features/ui";
+import { Marquee } from "@/features/ui";
 import Image from "next/image";
 
 interface WorkProps {
@@ -24,11 +24,7 @@ export function Work({ content, page }: WorkProps) {
           />
         </div>
         <div className={styles.carouselContainer}>
-          <AutoplayCarousel
-            imageOnly
-            orientation="horizontal"
-            content={content}
-          />
+          <Marquee imageOnly orientation="horizontal" content={content} />
         </div>
         <p className={styles.workDesignText}>
           Drag images left or right to view more designs
