@@ -6,7 +6,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { Button, ButtonVariant } from "@/features/ui";
-import { AutoplayCarousel } from "@/features/ui";
+import { Marquee } from "@/features/ui";
 import { CarouselData } from "@/types";
 
 interface PagePortalProps {
@@ -56,7 +56,7 @@ export default function PagePortal({
       </AnimatePresence>
       {isHovered && (
         <div className={styles.portalContent}>
-          <AutoplayCarousel orientation="horizontal" content={content} />
+          <Marquee orientation="horizontal" content={content} />
           <div className={styles.tagListContainer}>
             {tags.map((tag, i) => (
               <>
