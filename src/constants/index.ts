@@ -1,4 +1,4 @@
-import { BrandsData, CarouselData, TeamData } from "@/types";
+import { BrandsData, BtsData, CarouselData, TeamData } from "@/types";
 
 // WEBSITE INFO
 export const pageTags = {
@@ -503,3 +503,30 @@ export const teamMockData = [
     position: "Position",
   },
 ] as Array<TeamData>;
+
+export const btsMockData = [
+  {
+    id: "1",
+    src: "https://res-console.cloudinary.com/dz1q2q4li/media_explorer_thumbnails/a5ea9334c1eae54a7fc4639337a32c68/detailed",
+    alt: "Invited to be part of a panel for design students!",
+    isVideo: false,
+  },
+  {
+    id: "2",
+    src: "https://res.cloudinary.com/dz1q2q4li/video/upload/v1711147988/IMG_4320_ur55eh.mp4",
+    alt: "BTS Video",
+    isVideo: true,
+  },
+  {
+    id: "3",
+    src: "https://res-console.cloudinary.com/dz1q2q4li/media_explorer_thumbnails/7eb7e0d1a5c60ac647b8002f3d9127e4/detailed",
+    alt: "BTS Photo",
+    isVideo: false,
+  },
+  {
+    id: "4",
+    src: "https://res.cloudinary.com/dz1q2q4li/video/upload/v1711147983/IMG_4369_xbo7ve.mp4",
+    alt: "BTS Video 2",
+    isVideo: false,
+  },
+] as Array<BtsData>;

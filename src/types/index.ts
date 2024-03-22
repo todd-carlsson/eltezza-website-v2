@@ -18,3 +18,10 @@ export type BrandsData = {
   brand: string;
   src: string;
 };
+
+export type BtsData = {
+  id: string;
+  src: string;
+  alt: string;
+  isVideo: boolean;
+};
