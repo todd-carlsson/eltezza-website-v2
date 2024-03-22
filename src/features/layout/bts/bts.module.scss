@@ -1,3 +1,17 @@
 .btsSection {
   width: 100%;
+  margin-top: 120px;
+
+  .btsContentContainer {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    right: calc(100% - 2rem);
+
+    .btsImg {
+      object-fit: cover;
+      width: 500px;
+      height: 700px;
+    }
+  }
 }

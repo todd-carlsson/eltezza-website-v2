@@ -7,6 +7,16 @@ const nextConfig = {
         protocol: "https",
         hostname: "source.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "res-console.cloudinary.com",
+        port: '',
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: '',
+      },
     ],
   },
 };

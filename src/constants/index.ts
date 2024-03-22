@@ -527,6 +527,6 @@ export const btsMockData = [
     id: "4",
     src: "https://res.cloudinary.com/dz1q2q4li/video/upload/v1711147983/IMG_4369_xbo7ve.mp4",
     alt: "BTS Video 2",
-    isVideo: false,
+    isVideo: true,
   },
 ] as Array<BtsData>;
