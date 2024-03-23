@@ -11,7 +11,7 @@ interface TeamProps {
 
 export function Team({ content, description }: TeamProps) {
   return (
-    <section className={styles.teamSection}>
+    <section id="about" className={styles.teamSection}>
       <div className={styles.textContainer}>
         <h1
           className="largeText"
