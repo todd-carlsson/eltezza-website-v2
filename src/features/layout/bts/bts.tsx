@@ -4,6 +4,7 @@ import styles from "./bts.module.scss";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { motion } from "framer-motion";
+import BTSText from "./btsText";
 
 interface BTSProps {
   content: Array<BtsData>;
@@ -13,8 +14,6 @@ interface BTSProps {
 export function BTS({ content, page }: BTSProps) {
   const [activeImage, setActiveImage] = useState(content.length - 1);
   const hiddenImage = activeImage === 0 ? content.length - 1 : activeImage - 1;
-
-  const gradientText = page === "design" ? "CURTAINS" : "MESSY!";
 
   useEffect(() => {
     setTimeout(() => {
@@ -87,39 +86,7 @@ export function BTS({ content, page }: BTSProps) {
         )}
       </div>
       <div className={styles.textContainer}>
-        {page === "design" && (
-          <>
-            <div className={styles.textBlock}>
-              <h1
-                className={classNames("largeText", styles.btsText)}
-                style={{ alignSelf: "flex-end" }}
-              >
-                TAKE A
-              </h1>
-              <img
-                className={styles.mainImgDesign}
-                src="/images/bts_design_main.svg"
-                alt="BTS Section"
-              />
-            </div>
-            <div className={styles.textBlock}>
-              <h1 className={classNames("largeText", styles.btsText)}>
-                PEAK BEHIND
-              </h1>
-              <img
-                className={styles.secondaryImgDesign}
-                src="/images/bts_design_2.svg"
-                alt="BTS Section"
-              />
-            </div>
-            <div className={styles.textBlock}>
-              <h1 className={classNames("largeText", styles.btsText)}>
-                THE
-                <span className="textGradient"> {gradientText}</span>
-              </h1>
-            </div>
-          </>
-        )}
+        <BTSText page={page} />
       </div>
     </section>
   );
