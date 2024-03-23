@@ -10,7 +10,7 @@
 
     @media screen and (width <= 1130px) {
       flex-direction: column;
-      gap: 2.5rem;
+      gap: 3.25rem;
     }
 
     .processCard {
@@ -64,6 +64,23 @@
         left: 0;
         top: -30px;
         z-index: 100;
+
+        @media screen and (width <= 1130px) {
+          display: none;
+        }
+      }
+
+      .arrowSmall {
+        display: none;
+
+        @media screen and (width <= 1130px) {
+          display: block;
+          position: absolute;
+          top: -3.8rem;
+          left: 50%;
+          z-index: 100;
+          width: 1rem;
+        }
       }
     }
   }

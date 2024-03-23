@@ -75,15 +75,22 @@ export function Process({ content, color }: ProcessProps) {
             key={item.id}
             className={styles.processCard}
             style={{
-              top: windowWidth > 800 ? i * 50 : "",
+              top: windowWidth >= 1130 ? i * 50 : "",
             }}
           >
             {i !== 0 && (
-              <img
-                className={styles.arrow}
-                src="/process_arrow.svg"
-                alt="arrow"
-              />
+              <>
+                <img
+                  className={styles.arrow}
+                  src="/process_arrow.svg"
+                  alt="arrow"
+                />
+                <img
+                  className={styles.arrowSmall}
+                  src="/process_arrow_mobile.svg"
+                  alt="arrow"
+                />
+              </>
             )}
             <motion.div
               className={styles.background}
