@@ -4,14 +4,23 @@
 
   .btsContentContainer {
     display: flex;
-    gap: 2rem;
     position: relative;
-    right: calc(100% - 2rem);
+    right: 350px;
+    padding: 0 var(--content-padding);
 
     .btsImg {
       object-fit: cover;
-      width: 500px;
-      height: 700px;
+      width: 400px;
+      height: 480px;
+      position: relative;
+      margin-left: 3rem;
+    }
+
+    .hiddenImage {
+      position: relative;
+      left: 0;
+      margin-left: 0;
+      opacity: 0.3;
     }
   }
 }
