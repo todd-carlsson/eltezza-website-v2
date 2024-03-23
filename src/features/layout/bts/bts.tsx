@@ -13,13 +13,13 @@ interface BTSProps {
 
 export function BTS({ content, page }: BTSProps) {
   const [activeImage, setActiveImage] = useState(content.length - 1);
-  const hiddenImage = activeImage === 0 ? content.length - 1 : activeImage - 1;
+  const hiddenImage = activeImage === content.length - 1 ? 0 : activeImage + 1;
 
   useEffect(() => {
     setTimeout(() => {
       setActiveImage(activeImage === content.length - 1 ? 0 : activeImage + 1);
       console.log(activeImage);
-    }, 2500);
+    }, 3000);
   }, [activeImage, content]);
 
   const animationVariant = {
@@ -50,7 +50,6 @@ export function BTS({ content, page }: BTSProps) {
             <source src={content[hiddenImage].src} />
           </motion.video>
         ) : (
-          // eslint-disable-next-line @next/next/no-img-element
           <motion.img
             variants={animationVariant}
             animate="animate"

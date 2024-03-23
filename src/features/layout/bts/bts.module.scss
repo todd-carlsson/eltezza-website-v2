@@ -9,17 +9,17 @@
   .btsContentContainer {
     display: flex;
     position: relative;
-    width: 60%;
-    right: 400px;
+    width: 50%;
+    right: 420px;
     padding: 0 var(--content-padding);
 
     .btsImg {
       object-fit: cover;
-      width: 400px;
-      height: 480px;
+      width: 420px;
+      height: 500px;
       position: relative;
       margin-left: 3rem;
-      min-width: 400px;
+      min-width: 420px;
     }
 
     .hiddenImage {
