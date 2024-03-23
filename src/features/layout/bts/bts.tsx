@@ -18,13 +18,12 @@ export function BTS({ content, page }: BTSProps) {
   useEffect(() => {
     setTimeout(() => {
       setActiveImage(activeImage === content.length - 1 ? 0 : activeImage + 1);
-      console.log(activeImage);
     }, 3000);
   }, [activeImage, content]);
 
   const animationVariant = {
     initial: {
-      x: -1000,
+      x: -400,
     },
     animate: {
       x: 0,
