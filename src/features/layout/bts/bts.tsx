@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { BtsData } from "@/types";
 import styles from "./bts.module.scss";
 import { useEffect, useState } from "react";
@@ -75,7 +76,6 @@ export function BTS({ content, page }: BTSProps) {
             <source src={content[activeImage].src} />
           </motion.video>
         ) : (
-          // eslint-disable-next-line @next/next/no-img-element
           <motion.img
             variants={animationVariant}
             animate="animate"
@@ -87,10 +87,39 @@ export function BTS({ content, page }: BTSProps) {
         )}
       </div>
       <div className={styles.textContainer}>
-        <h1 className={classNames("largeText", styles.btsText)}>
-          {page === "design" ? "TAKE A PEAK BEHIND THE " : "THE PROCESS IS "}
-          <span className="textGradient">{gradientText}</span>
-        </h1>
+        {page === "design" && (
+          <>
+            <div className={styles.textBlock}>
+              <h1
+                className={classNames("largeText", styles.btsText)}
+                style={{ alignSelf: "flex-end" }}
+              >
+                TAKE A
+              </h1>
+              <img
+                className={styles.mainImgDesign}
+                src="/images/bts_design_main.svg"
+                alt="BTS Section"
+              />
+            </div>
+            <div className={styles.textBlock}>
+              <h1 className={classNames("largeText", styles.btsText)}>
+                PEAK BEHIND
+              </h1>
+              <img
+                className={styles.secondaryImgDesign}
+                src="/images/bts_design_2.svg"
+                alt="BTS Section"
+              />
+            </div>
+            <div className={styles.textBlock}>
+              <h1 className={classNames("largeText", styles.btsText)}>
+                THE
+                <span className="textGradient"> {gradientText}</span>
+              </h1>
+            </div>
+          </>
+        )}
       </div>
     </section>
   );
