@@ -78,6 +78,13 @@ export function Process({ content, color }: ProcessProps) {
               top: windowWidth > 800 ? i * 50 : "",
             }}
           >
+            {i !== 0 && (
+              <img
+                className={styles.arrow}
+                src="/process_arrow.svg"
+                alt="arrow"
+              />
+            )}
             <motion.div
               className={styles.background}
               style={{ backgroundColor: `var(${color})` }}
@@ -97,13 +104,6 @@ export function Process({ content, color }: ProcessProps) {
             >
               {`0${i + 1}`}
             </motion.h3>
-            {i !== content.length - 1 && (
-              <img
-                className={styles.arrow}
-                src="/process_arrow.svg"
-                alt="arrow"
-              />
-            )}
           </motion.div>
         ))}
       </motion.div>
