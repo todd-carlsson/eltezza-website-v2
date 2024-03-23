@@ -1,11 +1,15 @@
 .btsSection {
   width: 100%;
   margin-top: 120px;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--content-padding);
 
   .btsContentContainer {
     display: flex;
     position: relative;
-    right: 350px;
+    width: 60%;
+    right: 400px;
     padding: 0 var(--content-padding);
 
     .btsImg {
@@ -14,13 +18,20 @@
       height: 480px;
       position: relative;
       margin-left: 3rem;
+      min-width: 400px;
     }
 
     .hiddenImage {
       position: relative;
       left: 0;
       margin-left: 0;
-      opacity: 0.3;
+      opacity: 0.2;
+    }
+  }
+
+  .textContainer {
+    .btsText {
+      text-align: left;
     }
   }
 }
