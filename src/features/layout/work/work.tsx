@@ -13,7 +13,7 @@ interface WorkProps {
 export function Work({ content, page }: WorkProps) {
   if (page === "design") {
     return (
-      <section className={styles.workSectionDesign}>
+      <section id="work" className={styles.workSectionDesign}>
         <div className={styles.wheelContainer}>
           <Image
             className={styles.wheel}
