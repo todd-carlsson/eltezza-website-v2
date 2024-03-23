@@ -7,6 +7,7 @@ import {
   landingPageMockData,
   teamDescription,
   teamMockData,
+  btsMockData,
 } from "@/constants";
 import {
   Hero,
@@ -16,6 +17,7 @@ import {
   Process,
   Work,
   Team,
+  BTS,
 } from "@/features/layout";
 import { Marquee } from "@/features/ui";
 import useWindowSize from "@/hooks/useWindowSize";
@@ -53,6 +55,7 @@ export default function DesignPage() {
       </div>
       <Work content={landingPageMockData} page={page} />
       <Accordion content={services.design} color={color} />
+      <BTS content={btsMockData} page={page} />
       <Brands content={brandsMockData.design} columns={4} />
       <Process content={ourProcess.design} color={color} />
       <Team description={teamDescription.design} content={teamMockData} />
