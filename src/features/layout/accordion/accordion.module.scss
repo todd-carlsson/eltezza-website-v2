@@ -20,20 +20,39 @@
     transition: all 0.3s ease-in-out;
     height: 305px;
 
-    .accordionTitle {
+    .accordionTitleService {
       font-size: 5rem;
       color: #fff;
       max-width: 50%;
       line-height: 100%;
     }
 
+    .accordionTitleFaq {
+      font-size: 2rem;
+      color: #fff;
+      line-height: 100%;
+      font-weight: 700;
+    }
+
     .noWrap {
       white-space: nowrap;
     }
 
-    .accordionDescription {
+    .descriptionServices {
       max-width: 40%;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
     }
+
+    .descriptionFaq {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+
+  .faqSection {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 2rem;
   }
 }

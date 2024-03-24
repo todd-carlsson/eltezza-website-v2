@@ -9,9 +9,10 @@ import { AccordionData } from "@/types";
 interface AccordionProps {
   content: Array<AccordionData>;
   color: "--ez-orange" | "--adobe-purple";
+  variant: "services" | "faq";
 }
 
-export function Accordion({ content, color }: AccordionProps) {
+export function Accordion({ content, color, variant }: AccordionProps) {
   const [active, setActive] = useState<string>("-1");
 
   function hoverHandler(id: string) {
@@ -20,11 +21,16 @@ export function Accordion({ content, color }: AccordionProps) {
 
   return (
     <div id="services" className={styles.accordion}>
-      <p className={styles.title}>WHAT WE DO | SERVICES</p>
+      <p className={styles.title}>
+        {variant === "services" ? "WHAT WE DO | SERVICES" : "FAQS"}
+      </p>
       <div>
         {content.map((item) => (
           <div
-            className={styles.accordionSection}
+            className={classNames(
+              styles.accordionSection,
+              variant === "faq" ? styles.faqSection : "",
+            )}
             key={item.id}
             onMouseOver={() => hoverHandler(item.id)}
             onMouseLeave={() => hoverHandler("-1")}
@@ -34,7 +40,9 @@ export function Accordion({ content, color }: AccordionProps) {
           >
             <h1
               className={classNames(
-                styles.accordionTitle,
+                variant === "services"
+                  ? styles.accordionTitleService
+                  : styles.accordionTitleFaq,
                 item.wrap ? "" : styles.noWrap,
               )}
               style={{
@@ -53,7 +61,11 @@ export function Accordion({ content, color }: AccordionProps) {
               animate={{
                 opacity: active === item.id ? 1 : 0,
               }}
-              className={styles.accordionDescription}
+              className={classNames(
+                variant === "services"
+                  ? styles.descriptionServices
+                  : styles.descriptionFaq,
+              )}
               style={{
                 color: color === "--adobe-purple" ? "#fff" : "#000",
               }}
