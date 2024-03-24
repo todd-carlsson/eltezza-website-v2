@@ -19,6 +19,7 @@ import {
   Team,
   Brands,
   BTS,
+  Contact,
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
 
@@ -43,6 +44,7 @@ export default function CreativePage() {
       <Process content={ourProcess.creative} color={color} />
       <Team description={teamDescription.creative} content={teamMockData} />
       <Accordion content={faqs.creative} color={color} variant="faq" />
+      <Contact />
     </>
   );
 }
