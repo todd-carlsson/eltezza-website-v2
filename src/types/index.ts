@@ -25,3 +25,10 @@ export type BtsData = {
   alt: string;
   isVideo: boolean;
 };
+
+export type AccordionData = {
+  id: string;
+  title: string;
+  description: string;
+  wrap: boolean;
+};
