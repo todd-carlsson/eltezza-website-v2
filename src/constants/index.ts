@@ -183,80 +183,92 @@ export const faqs = {
   design: [
     {
       id: "1",
-      question: "How do I request a quote or estimate for a project?",
-      answer:
+      title: "How do I request a quote or estimate for a project?",
+      description:
         "Quite simply, scroll to the bottom of our site and submit your request!",
+      wrap: false,
     },
     {
       id: "2",
-      question: "What industries does your agency specialize in?",
-      answer:
+      title: "What industries does your agency specialize in?",
+      description:
         "We’ve worked with many different clients, ranging from construction all the way to museums. If we are a good fit, no creative endeavor is beyond our capabilities.",
+      wrap: false,
     },
     {
       id: "3",
-      question: "What is the typical timeline for project completion?",
-      answer:
+      title: "What is the typical timeline for project completion?",
+      description:
         "Depending on the services you require, our timelines range from 3 weeks to 12 weeks. We work on a monthly basis with a lot of our clients, let’s hope we do the same for you!",
+      wrap: false,
     },
     {
       id: "4",
-      question: "How much do you charge?",
-      answer:
+      title: "How much do you charge?",
+      description:
         "We work on project-cost pricing, which ensures we can amend the work to your vision without charging for extra hours (if required). Rest assured, we don’t charge for the sake of it, we carefully analyze the problem, craft the solution, and then deploy our strategies within a budget that suits both parties.",
+      wrap: false,
     },
     {
       id: "5",
-      question:
+      title:
         "Do you offer ongoing support or maintenance for projects after completion?",
-      answer:
+      description:
         "We offer web maintenance for our web projects, this will allow us to assist you with any updates you may have in the future on top of keeping you safe from any potential cyber-attacks. Whatever the project, we will always be here to help.",
+      wrap: false,
     },
     {
       id: "6",
-      question:
+      title:
         "What sets your creative agency apart from others in the industry?",
-      answer:
+      description:
         "Quite simply, scroll It’s quite simple, the level of care and attention we give to all of our clients is second to none. We want YOU to succeed as badly as WE want to breathe. the bottom of our site and submit your request!",
+      wrap: false,
     },
   ],
 
   creative: [
     {
       id: "1",
-      question: "How do I request a quote or estimate for a project?",
-      answer:
+      title: "How do I request a quote or estimate for a project?",
+      description:
         "Quite simply, scroll to the bottom of our site and submit your request!",
+      wrap: false,
     },
     {
       id: "2",
-      question: "What industries do you specialize in?",
-      answer:
+      title: "What industries do you specialize in?",
+      description:
         "Our bread & butter are FMCG brands. Spanning from drinks all the way to crackers, we have the the know-how to get you seen.",
+      wrap: false,
     },
     {
       id: "3",
-      question: "What is the typical timeline for project completion?",
-      answer:
+      title: "What is the typical timeline for project completion?",
+      description:
         "Depending on the services you require, our timeline ranges from 2 to 6 weeks.",
+      wrap: false,
     },
     {
       id: "4",
-      question: "Does this stuff even work?",
-      answer: "Well, we probably wouldn’t be here if it didn’t ...",
+      title: "Does this stuff even work?",
+      description: "Well, we probably wouldn’t be here if it didn’t ...",
+      wrap: false,
     },
     {
       id: "5",
-      question: "How much do you charge?",
-      answer:
+      title: "How much do you charge?",
+      description:
         "We work on project-cost pricing, which ensures we can amend the work to your vision without charging for extra hours (if required). Rest assured, we don’t charge for the sake of it, we carefully analyze the problem, craft the solution, and then deploy our strategies within a budget that suits both parties.",
+      wrap: false,
     },
     {
       id: "6",
-      question:
+      title:
         "What sets your creative agency apart from others in the industry?",
-      answer:
+      description:
         "It’s quite simple, the level of care and attention we give to all of our clients is second to none. We want YOU to succeed as badly as WE want to breathe",
+      wrap: false,
     },
   ],
 };

@@ -4,18 +4,12 @@ import { useState } from "react";
 import styles from "./accordion.module.scss";
 import { motion } from "framer-motion";
 import classNames from "classnames";
+import { AccordionData } from "@/types";
 
 interface AccordionProps {
-  content: Array<AccordionPropsObj>;
+  content: Array<AccordionData>;
   color: "--ez-orange" | "--adobe-purple";
 }
-
-type AccordionPropsObj = {
-  id: string;
-  title: string;
-  description: string;
-  wrap: boolean;
-};
 
 export function Accordion({ content, color }: AccordionProps) {
   const [active, setActive] = useState<string>("-1");

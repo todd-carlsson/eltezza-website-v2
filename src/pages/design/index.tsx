@@ -8,6 +8,7 @@ import {
   teamDescription,
   teamMockData,
   btsMockData,
+  faqs,
 } from "@/constants";
 import {
   Hero,
@@ -59,6 +60,7 @@ export default function DesignPage() {
       <Brands content={brandsMockData.design} columns={4} />
       <Process content={ourProcess.design} color={color} />
       <Team description={teamDescription.design} content={teamMockData} />
+      <Accordion content={faqs.design} color={color} />
     </>
   );
 }
