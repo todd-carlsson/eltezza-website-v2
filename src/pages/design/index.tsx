@@ -62,7 +62,7 @@ export default function DesignPage() {
       <Process content={ourProcess.design} color={color} />
       <Team description={teamDescription.design} content={teamMockData} />
       <Accordion content={faqs.design} color={color} variant="faq" />
-      <Contact />
+      <Contact text={page} />
     </>
   );
 }

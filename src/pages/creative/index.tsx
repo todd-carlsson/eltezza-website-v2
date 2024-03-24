@@ -44,7 +44,7 @@ export default function CreativePage() {
       <Process content={ourProcess.creative} color={color} />
       <Team description={teamDescription.creative} content={teamMockData} />
       <Accordion content={faqs.creative} color={color} variant="faq" />
-      <Contact />
+      <Contact text="create" />
     </>
   );
 }
