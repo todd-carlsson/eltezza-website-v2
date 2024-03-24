@@ -8,3 +8,4 @@ export * from "./process";
 export * from "./work";
 export * from "./team";
 export * from "./bts";
+export * from "./contact";

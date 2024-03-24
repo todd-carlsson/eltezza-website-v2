@@ -19,6 +19,7 @@ import {
   Work,
   Team,
   BTS,
+  Contact,
 } from "@/features/layout";
 import { Marquee } from "@/features/ui";
 import useWindowSize from "@/hooks/useWindowSize";
@@ -61,6 +62,7 @@ export default function DesignPage() {
       <Process content={ourProcess.design} color={color} />
       <Team description={teamDescription.design} content={teamMockData} />
       <Accordion content={faqs.design} color={color} variant="faq" />
+      <Contact text={page} />
     </>
   );
 }
