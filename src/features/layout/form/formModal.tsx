@@ -9,7 +9,7 @@ interface FormProps {
   showModal: boolean;
 }
 
-export function Form({ onClose, showModal }: FormProps) {
+export function FormModal({ onClose, showModal }: FormProps) {
   return (
     <>
       <AnimatePresence>

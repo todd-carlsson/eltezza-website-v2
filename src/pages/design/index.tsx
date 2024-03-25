@@ -20,8 +20,8 @@ import {
   Team,
   BTS,
   Contact,
-  Form,
   Portal,
+  FormModal,
 } from "@/features/layout";
 import { Marquee } from "@/features/ui";
 import useWindowSize from "@/hooks/useWindowSize";
@@ -70,7 +70,7 @@ export default function DesignPage() {
       <Accordion content={faqs.design} color={color} variant="faq" />
       <Contact onOpen={() => setShowModal(true)} text={page} />
       <Portal>
-        <Form onClose={() => setShowModal(false)} showModal={showModal} />
+        <FormModal onClose={() => setShowModal(false)} showModal={showModal} />
       </Portal>
     </>
   );

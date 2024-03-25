@@ -21,7 +21,7 @@ import {
   BTS,
   Contact,
   Portal,
-  Form,
+  FormModal,
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
@@ -52,7 +52,7 @@ export default function CreativePage() {
       <Accordion content={faqs.creative} color={color} variant="faq" />
       <Contact text="create" onOpen={() => setShowModal(true)} />
       <Portal>
-        <Form onClose={() => setShowModal(false)} showModal={showModal} />
+        <FormModal onClose={() => setShowModal(false)} showModal={showModal} />
       </Portal>
     </>
   );

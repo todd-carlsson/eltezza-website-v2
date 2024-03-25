@@ -1,1 +1,1 @@
-export { Form } from "./form";
+export { FormModal } from "./formModal";
