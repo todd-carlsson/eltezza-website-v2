@@ -1,6 +1,7 @@
 import { Button, ButtonVariant, Input } from "@/features/ui";
 import styles from "./form.module.scss";
 import { contactFormText } from "@/constants";
+import Image from "next/image";
 
 export default function Form() {
   return (
@@ -19,6 +20,28 @@ export default function Form() {
           Share your vision
         </Button>
       </form>
+      <div>
+        <p className={styles.formDescription}>{contactFormText.email}</p>
+        <p className={styles.formDescription}>{contactFormText.phone}</p>
+        <Image
+          src="/images/facebook.svg"
+          alt="Facebook"
+          width={32}
+          height={32}
+        />
+        <Image
+          src="/images/instagram.svg"
+          alt="Instagram"
+          width={32}
+          height={32}
+        />
+        <Image
+          src="/images/linkedin.svg"
+          alt="Linkedin"
+          width={20}
+          height={20}
+        />
+      </div>
     </>
   );
 }
