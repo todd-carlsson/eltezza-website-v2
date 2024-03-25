@@ -1,5 +1,6 @@
 .accordion {
   width: 100%;
+  position: relative;
 
   .title {
     color: var(--white-text);
@@ -19,21 +20,12 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     height: 305px;
-    position: relative;
 
     .accordionTitleService {
       font-size: 5rem;
       color: #fff;
       max-width: 50%;
       line-height: 100%;
-    }
-
-    .accordionTitleFaq {
-      font-size: 2rem;
-      color: #fff;
-      line-height: 100%;
-      font-weight: 700;
-      position: relative;
     }
 
     .noWrap {
@@ -44,18 +36,29 @@
       max-width: 40%;
       font-size: 1.2rem;
     }
-
-    .descriptionFaq {
-      width: 100%;
-      font-size: 1rem;
-      position: relative;
-    }
   }
 
   .faqSection {
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-    height: auto;
-    gap: 2rem;
+    height: 240px;
+    position: relative;
+    padding: 0 var(--content-padding);
+
+    .accordionTitleFaq {
+      max-width: 100%;
+      font-size: 2rem;
+      color: #fff;
+      line-height: 100%;
+      font-weight: 700;
+    }
+
+    .descriptionFaq {
+      max-width: 100%;
+      font-size: 1rem;
+      position: absolute;
+      margin-top: 2.5rem;
+    }
   }
 }

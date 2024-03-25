@@ -40,10 +40,10 @@ export function Accordion({ content, color, variant }: AccordionProps) {
           >
             <motion.h1
               initial={{
-                top: "35%",
+                y: variant === "faq" ? -40 : 0,
               }}
               animate={{
-                top: active === item.id ? 0 : "35%",
+                y: variant === "faq" ? (active === item.id ? -40 : 0) : 0,
               }}
               className={classNames(
                 variant === "services"
@@ -63,11 +63,11 @@ export function Accordion({ content, color, variant }: AccordionProps) {
             <motion.p
               initial={{
                 opacity: 0,
-                top: variant === "faq" ? "35%" : "",
+                y: variant === "faq" ? -20 : 0,
               }}
               animate={{
                 opacity: active === item.id ? 1 : 0,
-                top: variant === "faq" && active === item.id ? 0 : "35%",
+                y: variant === "faq" ? (active === item.id ? 0 : 40) : 0,
               }}
               className={classNames(
                 variant === "services"
