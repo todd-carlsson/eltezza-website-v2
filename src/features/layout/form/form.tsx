@@ -71,7 +71,7 @@ export function Form({ onClose, showModal }: FormProps) {
               <Input placeholder="Message" type="text" />
               <Button
                 className={styles.formSubmitBtn}
-                variant={ButtonVariant.main}
+                variant={ButtonVariant.gradient}
               >
                 Share your vision
               </Button>
