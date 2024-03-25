@@ -2,6 +2,7 @@ import { Button, ButtonVariant, Input } from "@/features/ui";
 import styles from "./form.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import { contactFormText } from "@/constants";
+import Image from "next/image";
 
 interface FormProps {
   onClose: () => void;
@@ -14,11 +15,15 @@ export function Form({ onClose, showModal }: FormProps) {
       <AnimatePresence>
         {showModal && (
           <motion.div
+            onClick={onClose}
             initial={{
               opacity: 0,
             }}
             animate={{
-              opacity: 0.3,
+              opacity: 0.4,
+              transition: {
+                duration: 0.15,
+              },
             }}
             exit={{
               opacity: 0,
@@ -35,12 +40,26 @@ export function Form({ onClose, showModal }: FormProps) {
             }}
             animate={{
               x: 0,
+              transition: {
+                duration: 0.6,
+              },
             }}
             exit={{
               x: 600,
+              transition: {
+                duration: 0.35,
+              },
             }}
             className={styles.modalContainer}
           >
+            <Image
+              onClick={onClose}
+              className={styles.close}
+              src="/x-close.svg"
+              alt="X Close"
+              width={32}
+              height={33}
+            />
             <h1 className={styles.formTitle}>{contactFormText.title}</h1>
             <p className={styles.formDescription}>
               {contactFormText.description}
@@ -57,9 +76,6 @@ export function Form({ onClose, showModal }: FormProps) {
                 Share your vision
               </Button>
             </form>
-            <Button onClick={onClose} variant={ButtonVariant.main}>
-              Click me
-            </Button>
           </motion.div>
         )}
       </AnimatePresence>
