@@ -1,3 +1,8 @@
 .form {
-  width: 100%;
+  width: 50%;
+  height: 100vh;
+  background-color: red;
+  position: absolute;
+  z-index: 9999;
+  right: 0;
 }

@@ -2,7 +2,12 @@ import Image from "next/image";
 import styles from "./contact.module.scss";
 import { Button, ButtonVariant } from "@/features/ui";
 
-export function Contact({ text }: { text: "design" | "create" }) {
+interface ContactProps {
+  text: "design" | "create";
+  onOpen: () => void;
+}
+
+export function Contact({ text, onOpen }: ContactProps) {
   return (
     <section className={styles.contactSection}>
       <div className={styles.purpleOrb} />
@@ -49,7 +54,11 @@ export function Contact({ text }: { text: "design" | "create" }) {
           Let&apos;s make your digital dreams a reality. Contact us today to
           start the journey.
         </p>
-        <Button variant={ButtonVariant.main} className={styles.contactButton}>
+        <Button
+          onClick={onOpen}
+          variant={ButtonVariant.main}
+          className={styles.contactButton}
+        >
           Let&apos;s Collaborate
         </Button>
       </div>

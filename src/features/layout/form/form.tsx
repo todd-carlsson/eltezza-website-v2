@@ -1,5 +1,17 @@
+import { Button, ButtonVariant } from "@/features/ui";
 import styles from "./form.module.scss";
 
-export function Form() {
-  return <div className={styles.form}>Form</div>;
+interface FormProps {
+  onClose: () => void;
+}
+
+export function Form({ onClose }: FormProps) {
+  return (
+    <div className={styles.form}>
+      Form
+      <Button onClick={onClose} variant={ButtonVariant.main}>
+        Click me
+      </Button>
+    </div>
+  );
 }

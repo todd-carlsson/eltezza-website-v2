@@ -21,15 +21,20 @@ import {
   BTS,
   Contact,
   Form,
+  Portal,
 } from "@/features/layout";
 import { Marquee } from "@/features/ui";
 import useWindowSize from "@/hooks/useWindowSize";
 import styles from "@/styles/Home.module.css";
+import { useState } from "react";
 
 export default function DesignPage() {
   const page = "design";
   const color = "--ez-orange";
   const [windowWidth] = useWindowSize();
+
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <style>{"body { overflow-y: auto; }"}</style>
@@ -63,8 +68,10 @@ export default function DesignPage() {
       <Process content={ourProcess.design} color={color} />
       <Team description={teamDescription.design} content={teamMockData} />
       <Accordion content={faqs.design} color={color} variant="faq" />
-      <Contact text={page} />
-      <Form />
+      <Contact onOpen={() => setShowModal(true)} text={page} />
+      <Portal>
+        {showModal && <Form onClose={() => setShowModal(false)} />}
+      </Portal>
     </>
   );
 }
