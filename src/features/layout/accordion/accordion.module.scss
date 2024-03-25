@@ -19,6 +19,7 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     height: 305px;
+    position: relative;
 
     .accordionTitleService {
       font-size: 5rem;
@@ -32,6 +33,7 @@
       color: #fff;
       line-height: 100%;
       font-weight: 700;
+      position: relative;
     }
 
     .noWrap {
@@ -46,6 +48,7 @@
     .descriptionFaq {
       width: 100%;
       font-size: 1rem;
+      position: relative;
     }
   }
 
