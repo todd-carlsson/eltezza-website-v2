@@ -52,7 +52,7 @@ export default function CreativePage() {
       <Accordion content={faqs.creative} color={color} variant="faq" />
       <Contact text="create" onOpen={() => setShowModal(true)} />
       <Portal>
-        {showModal && <Form onClose={() => setShowModal(false)} />}
+        <Form onClose={() => setShowModal(false)} showModal={showModal} />
       </Portal>
     </>
   );
