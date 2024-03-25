@@ -51,3 +51,14 @@
   color: #fff;
   background-color: var(--adobe-purple);
 }
+
+.gradient {
+  width: fit-content;
+  font-size: 1rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(
+    90deg,
+    var(--ez-orange) 0%,
+    var(--adobe-purple) 100%
+  );
+}

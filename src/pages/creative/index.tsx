@@ -20,12 +20,18 @@ import {
   Brands,
   BTS,
   Contact,
+  Portal,
+  Form,
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
+import { useState } from "react";
 
 export default function CreativePage() {
   const page = "creative";
   const color = "--adobe-purple";
+
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <style>{"body { overflow-y: auto; }"}</style>
@@ -44,7 +50,10 @@ export default function CreativePage() {
       <Process content={ourProcess.creative} color={color} />
       <Team description={teamDescription.creative} content={teamMockData} />
       <Accordion content={faqs.creative} color={color} variant="faq" />
-      <Contact text="create" />
+      <Contact text="create" onOpen={() => setShowModal(true)} />
+      <Portal>
+        <Form onClose={() => setShowModal(false)} showModal={showModal} />
+      </Portal>
     </>
   );
 }
