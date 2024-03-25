@@ -38,7 +38,13 @@ export function Accordion({ content, color, variant }: AccordionProps) {
               backgroundColor: active === item.id ? `var(${color})` : "#000",
             }}
           >
-            <h1
+            <motion.h1
+              initial={{
+                top: "35%",
+              }}
+              animate={{
+                top: active === item.id ? 0 : "35%",
+              }}
               className={classNames(
                 variant === "services"
                   ? styles.accordionTitleService
@@ -53,13 +59,15 @@ export function Accordion({ content, color, variant }: AccordionProps) {
               }}
             >
               {item.title}
-            </h1>
+            </motion.h1>
             <motion.p
               initial={{
                 opacity: 0,
+                top: variant === "faq" ? "35%" : "",
               }}
               animate={{
                 opacity: active === item.id ? 1 : 0,
+                top: variant === "faq" && active === item.id ? 0 : "35%",
               }}
               className={classNames(
                 variant === "services"
