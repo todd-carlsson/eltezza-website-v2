@@ -1,6 +1,5 @@
 .contactSection {
   width: 100%;
-  height: calc(100vh - 150px);
   position: relative;
   display: flex;
   align-items: center;
@@ -69,7 +68,7 @@
       padding: 1rem 1.5rem;
       font-size: 1.25rem;
       font-weight: 500;
-      margin-top: 2rem;
+      margin: 2rem 0;
     }
   }
 }
