@@ -6,14 +6,16 @@ export default function Layout({ children }: { children: ReactNode }) {
   const router = useRouter();
   return (
     <>
-      <div id="contact-root"></div>
       {router.pathname !== "/" && (
-        <Header
-          page={router.pathname === "/design" ? "design" : "creative"}
-          color={
-            router.pathname === "/design" ? "--ez-orange" : "--adobe-purple"
-          }
-        />
+        <>
+          <div id="contact-root"></div>
+          <Header
+            page={router.pathname === "/design" ? "design" : "creative"}
+            color={
+              router.pathname === "/design" ? "--ez-orange" : "--adobe-purple"
+            }
+          />
+        </>
       )}
       {children}
     </>
