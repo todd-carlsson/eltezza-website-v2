@@ -2,14 +2,11 @@ import { Header } from "@/features/layout";
 import { useRouter } from "next/router";
 import { ReactNode } from "react";
 
-interface LayoutProps {
-  children: ReactNode;
-}
-
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({ children }: { children: ReactNode }) {
   const router = useRouter();
   return (
     <>
+      <div id="contact-root"></div>
       {router.pathname !== "/" && (
         <Header
           page={router.pathname === "/design" ? "design" : "creative"}

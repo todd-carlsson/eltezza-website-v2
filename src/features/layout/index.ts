@@ -9,3 +9,4 @@ export * from "./work";
 export * from "./team";
 export * from "./bts";
 export * from "./contact";
+export * from "./form";

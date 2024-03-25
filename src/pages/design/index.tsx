@@ -20,6 +20,7 @@ import {
   Team,
   BTS,
   Contact,
+  Form,
 } from "@/features/layout";
 import { Marquee } from "@/features/ui";
 import useWindowSize from "@/hooks/useWindowSize";
@@ -63,6 +64,7 @@ export default function DesignPage() {
       <Team description={teamDescription.design} content={teamMockData} />
       <Accordion content={faqs.design} color={color} variant="faq" />
       <Contact text={page} />
+      <Form />
     </>
   );
 }
