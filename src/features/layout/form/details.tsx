@@ -1,4 +1,4 @@
-import { contactFormText } from "@/constants";
+import { contactFormText, socialLinks } from "@/constants";
 import styles from "./form.module.scss";
 import {
   FaFacebookSquare,
@@ -6,14 +6,26 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
-export default function Details() {
+interface DetailsProps {
+  color: "--ez-orange" | "--adobe-purple";
+}
+
+export default function Details({ color }: DetailsProps) {
   return (
-    <div>
-      <p className={styles.formDescription}>{contactFormText.email}</p>
-      <p className={styles.formDescription}>{contactFormText.phone}</p>
-      <FaFacebookSquare size={32} color="red" />
-      <FaInstagramSquare size={32} color="red" />
-      <FaLinkedin size={32} color="red" />
+    <div className={styles.details}>
+      <p className={styles.detailsDescription}>{contactFormText.email}</p>
+      <p className={styles.detailsDescription}>{contactFormText.phone}</p>
+      <div className={styles.socialLinks}>
+        <a href={socialLinks.facebook} target="_blank">
+          <FaFacebookSquare size={34} color={`var(${color})`} />
+        </a>
+        <a href={socialLinks.instagram} target="_blank">
+          <FaInstagramSquare size={34} color={`var(${color})`} />
+        </a>
+        <a href={socialLinks.linkedin} target="_blank">
+          <FaLinkedin size={34} color={`var(${color})`} />
+        </a>
+      </div>
     </div>
   );
 }

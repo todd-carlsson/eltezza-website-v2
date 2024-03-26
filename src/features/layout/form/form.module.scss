@@ -46,6 +46,24 @@
     }
   }
 
+  // DETAILS
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 1rem;
+
+    .detailsDescription {
+      font-family: var(--font-source-sans);
+    }
+
+    .socialLinks {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+
   // SUBMIT SCREEN
 
   .submitScreenContainer {

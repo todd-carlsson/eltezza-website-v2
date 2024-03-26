@@ -11,6 +11,7 @@ import Details from "./details";
 interface FormProps {
   isSubmitted: boolean;
   submittedForm: () => void;
+  color: "--ez-orange" | "--adobe-purple";
 }
 
 const formSchema = z.object({
@@ -22,7 +23,7 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-export default function Form({ isSubmitted, submittedForm }: FormProps) {
+export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
   const [loading, setLoading] = useState(false);
 
   const { control, handleSubmit } = useForm<FormValues>({
@@ -158,7 +159,7 @@ export default function Form({ isSubmitted, submittedForm }: FormProps) {
               Share your vision
             </Button>
           </form>
-          <Details />
+          <Details color={color} />
         </motion.div>
       )}
     </AnimatePresence>
