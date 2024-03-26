@@ -131,6 +131,7 @@ export default function Form() {
           className={styles.formSubmitBtn}
           variant={ButtonVariant.gradient}
           type="submit"
+          disabled={loading}
         >
           Share your vision
         </Button>

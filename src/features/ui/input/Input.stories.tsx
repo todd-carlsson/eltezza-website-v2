@@ -26,6 +26,14 @@ export const Email: Story = {
     type: "email",
   },
 };
+/**Disabled */
+export const Disabled: Story = {
+  args: {
+    placeholder: "Email Address",
+    type: "email",
+    disabled: true,
+  },
+};
 /**Error state */
 export const Error: Story = {
   args: {
