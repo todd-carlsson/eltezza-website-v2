@@ -5,8 +5,8 @@ import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
 import { useState } from "react";
+import Details from "./details";
 
 interface FormProps {
   isSubmitted: boolean;
@@ -158,28 +158,7 @@ export default function Form({ isSubmitted, submittedForm }: FormProps) {
               Share your vision
             </Button>
           </form>
-          <div>
-            <p className={styles.formDescription}>{contactFormText.email}</p>
-            <p className={styles.formDescription}>{contactFormText.phone}</p>
-            <Image
-              src="/images/facebook.svg"
-              alt="Facebook"
-              width={32}
-              height={32}
-            />
-            <Image
-              src="/images/instagram.svg"
-              alt="Instagram"
-              width={32}
-              height={32}
-            />
-            <Image
-              src="/images/linkedin.svg"
-              alt="Linkedin"
-              width={20}
-              height={20}
-            />
-          </div>
+          <Details />
         </motion.div>
       )}
     </AnimatePresence>
