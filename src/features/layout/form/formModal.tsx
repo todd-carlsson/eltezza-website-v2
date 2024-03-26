@@ -8,16 +8,19 @@ import SubmitScreen from "./submitScreen";
 interface FormModalProps {
   onClose: () => void;
   showModal: boolean;
+  color: "--ez-orange" | "--adobe-purple";
 }
 
-export function FormModal({ onClose, showModal }: FormModalProps) {
+export function FormModal({ onClose, showModal, color }: FormModalProps) {
   const [isSubmitted, setIsSubmitted] = useState(false);
   return (
     <>
       <AnimatePresence>
         {showModal && (
           <motion.div
-            onClick={onClose}
+            onClick={() => {
+              onClose(), setIsSubmitted(false);
+            }}
             initial={{
               opacity: 0,
             }}
@@ -65,6 +68,7 @@ export function FormModal({ onClose, showModal }: FormModalProps) {
               height={33}
             />
             <Form
+              color={color}
               isSubmitted={isSubmitted}
               submittedForm={() => setIsSubmitted(true)}
             />

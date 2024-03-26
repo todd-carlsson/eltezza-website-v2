@@ -70,7 +70,11 @@ export default function DesignPage() {
       <Accordion content={faqs.design} color={color} variant="faq" />
       <Contact onOpen={() => setShowModal(true)} text={page} />
       <Portal>
-        <FormModal onClose={() => setShowModal(false)} showModal={showModal} />
+        <FormModal
+          onClose={() => setShowModal(false)}
+          showModal={showModal}
+          color={color}
+        />
       </Portal>
     </>
   );

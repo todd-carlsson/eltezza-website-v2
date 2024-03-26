@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./form.module.scss";
 import { contactFormText } from "@/constants";
 import { Button, ButtonVariant } from "@/features/ui";
+import { motion } from "framer-motion";
 
 interface SubmitScreenProps {
   onClose: () => void;
@@ -13,7 +14,18 @@ export default function SubmitScreen({
   resetForm,
 }: SubmitScreenProps) {
   return (
-    <div className={styles.submitScreenContainer}>
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+        transition: {
+          duration: 0.6,
+        },
+      }}
+      className={styles.submitScreenContainer}
+    >
       <Image
         src="/images/coffee_doodle.svg"
         alt="Coffee Doodle Image"
@@ -35,6 +47,6 @@ export default function SubmitScreen({
       >
         Close
       </Button>
-    </div>
+    </motion.div>
   );
 }

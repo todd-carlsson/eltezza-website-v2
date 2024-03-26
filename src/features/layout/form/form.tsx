@@ -4,12 +4,14 @@ import { contactFormText } from "@/constants";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import Details from "./details";
 
 interface FormProps {
   isSubmitted: boolean;
   submittedForm: () => void;
+  color: "--ez-orange" | "--adobe-purple";
 }
 
 const formSchema = z.object({
@@ -21,7 +23,7 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-export default function Form({ isSubmitted, submittedForm }: FormProps) {
+export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
   const [loading, setLoading] = useState(false);
 
   const { control, handleSubmit } = useForm<FormValues>({
@@ -46,9 +48,19 @@ export default function Form({ isSubmitted, submittedForm }: FormProps) {
   };
 
   return (
-    <>
+    <AnimatePresence>
       {!isSubmitted && (
-        <div>
+        <motion.div
+          initial={{
+            opacity: 1,
+          }}
+          exit={{
+            opacity: 0,
+            transition: {
+              duration: 0.3,
+            },
+          }}
+        >
           <h1 className={styles.formTitle}>{contactFormText.title}</h1>
           <p className={styles.formDescription}>
             {contactFormText.description}
@@ -147,30 +159,9 @@ export default function Form({ isSubmitted, submittedForm }: FormProps) {
               Share your vision
             </Button>
           </form>
-          <div>
-            <p className={styles.formDescription}>{contactFormText.email}</p>
-            <p className={styles.formDescription}>{contactFormText.phone}</p>
-            <Image
-              src="/images/facebook.svg"
-              alt="Facebook"
-              width={32}
-              height={32}
-            />
-            <Image
-              src="/images/instagram.svg"
-              alt="Instagram"
-              width={32}
-              height={32}
-            />
-            <Image
-              src="/images/linkedin.svg"
-              alt="Linkedin"
-              width={20}
-              height={20}
-            />
-          </div>
-        </div>
+          <Details color={color} />
+        </motion.div>
       )}
-    </>
+    </AnimatePresence>
   );
 }
