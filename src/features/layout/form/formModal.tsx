@@ -17,7 +17,9 @@ export function FormModal({ onClose, showModal }: FormModalProps) {
       <AnimatePresence>
         {showModal && (
           <motion.div
-            onClick={onClose}
+            onClick={() => {
+              onClose(), setIsSubmitted(false);
+            }}
             initial={{
               opacity: 0,
             }}

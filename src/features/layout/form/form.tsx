@@ -4,6 +4,7 @@ import { contactFormText } from "@/constants";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -46,9 +47,19 @@ export default function Form({ isSubmitted, submittedForm }: FormProps) {
   };
 
   return (
-    <>
+    <AnimatePresence>
       {!isSubmitted && (
-        <div>
+        <motion.div
+          initial={{
+            opacity: 1,
+          }}
+          exit={{
+            opacity: 0,
+            transition: {
+              duration: 0.3,
+            },
+          }}
+        >
           <h1 className={styles.formTitle}>{contactFormText.title}</h1>
           <p className={styles.formDescription}>
             {contactFormText.description}
@@ -169,8 +180,8 @@ export default function Form({ isSubmitted, submittedForm }: FormProps) {
               height={20}
             />
           </div>
-        </div>
+        </motion.div>
       )}
-    </>
+    </AnimatePresence>
   );
 }
