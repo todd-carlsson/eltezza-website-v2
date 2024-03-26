@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Form from "./form";
 import { useState } from "react";
+import SubmitScreen from "./submitScreen";
 
 interface FormModalProps {
   onClose: () => void;
@@ -54,7 +55,9 @@ export function FormModal({ onClose, showModal }: FormModalProps) {
             className={styles.modalContainer}
           >
             <Image
-              onClick={onClose}
+              onClick={() => {
+                onClose(), setIsSubmitted(false);
+              }}
               className={styles.close}
               src="/x-close.svg"
               alt="X Close"
@@ -65,6 +68,12 @@ export function FormModal({ onClose, showModal }: FormModalProps) {
               isSubmitted={isSubmitted}
               submittedForm={() => setIsSubmitted(true)}
             />
+            {isSubmitted && (
+              <SubmitScreen
+                onClose={onClose}
+                resetForm={() => setIsSubmitted(false)}
+              />
+            )}
           </motion.div>
         )}
       </AnimatePresence>
