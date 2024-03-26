@@ -45,4 +45,36 @@
       margin-top: 2rem;
     }
   }
+
+  // SUBMIT SCREEN
+
+  .submitScreenContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+    margin-top: 40px;
+
+    .submitScreenText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .submittedDescription {
+        font-family: var(--font-source-sans);
+        font-size: 1rem;
+        color: #fff;
+      }
+    }
+
+    .submittedCloseBtn {
+      padding: 1rem 1.5rem;
+      font-weight: 500;
+      width: fit-content;
+    }
+  }
 }

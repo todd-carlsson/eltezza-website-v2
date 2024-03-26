@@ -23,6 +23,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       children,
       type = "button",
       variant = ButtonVariant.main,
+      disabled = false,
       ...props
     },
     ref,
@@ -39,12 +40,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         })}
         type={type}
         ref={ref}
+        disabled={disabled}
         {...props}
         onMouseOver={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         {children}
-        {variant === ButtonVariant.main && (
+        {variant === ButtonVariant.main && !disabled && (
           <motion.div
             initial={{
               opacity: 0,

@@ -9,7 +9,7 @@ interface ContactProps {
 
 export function Contact({ text, onOpen }: ContactProps) {
   return (
-    <section className={styles.contactSection}>
+    <section id="contact" className={styles.contactSection}>
       <div className={styles.purpleOrb} />
       <div className={styles.contactContainer}>
         <Image

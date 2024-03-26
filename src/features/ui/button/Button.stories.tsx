@@ -29,6 +29,14 @@ export const Main: Story = {
     variant: ButtonVariant.main,
   },
 };
+/**Main disabled state */
+export const MainDisabled: Story = {
+  args: {
+    children: "Test Button 123",
+    variant: ButtonVariant.main,
+    disabled: true,
+  },
+};
 
 /**Orange state */
 export const Orange: Story = {
@@ -43,5 +51,22 @@ export const Purple: Story = {
   args: {
     children: "Enter",
     variant: ButtonVariant.homePurple,
+  },
+};
+
+/**Gradient state */
+export const Gradient: Story = {
+  args: {
+    children: "Test Button 123",
+    variant: ButtonVariant.gradient,
+  },
+};
+
+/**Gradient disabled state */
+export const GradientDisabled: Story = {
+  args: {
+    children: "Test Button 123",
+    variant: ButtonVariant.gradient,
+    disabled: true,
   },
 };

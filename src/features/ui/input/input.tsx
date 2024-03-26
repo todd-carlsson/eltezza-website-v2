@@ -8,7 +8,7 @@ export interface InputProps
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className, type, error, ...props }, ref) => {
+  ({ className, type, error, disabled = false, ...props }, ref) => {
     return (
       <input
         type={type}
@@ -18,6 +18,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           className,
         )}
         ref={ref}
+        disabled={disabled}
         {...props}
       />
     );
