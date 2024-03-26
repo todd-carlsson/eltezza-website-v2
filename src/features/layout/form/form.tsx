@@ -9,7 +9,7 @@ import { useState } from "react";
 
 const formSchema = z.object({
   fullName: z.string().min(1),
-  email: z.string().email().min(5),
+  email: z.string().email().min(5).email("Please specify a valid email"),
   subject: z.string().min(1),
   message: z.string().min(3),
 });
@@ -20,6 +20,8 @@ export default function Form() {
   const [loading, setLoading] = useState(false);
 
   const { control, handleSubmit } = useForm<FormValues>({
+    mode: "onBlur",
+    reValidateMode: "onBlur",
     resolver: zodResolver(formSchema),
     defaultValues: {
       fullName: "",
@@ -29,17 +31,12 @@ export default function Form() {
     },
   });
 
-  const onSubmit = async (data: FormValues) => {
-    try {
-      setLoading(true);
-      setTimeout(() => {
-        console.log(data);
-      }, 3000);
-    } catch (error) {
-      console.log("Form Error, ", error);
-    } finally {
+  const onSubmit = (data: FormValues) => {
+    setLoading(true);
+    setTimeout(() => {
+      console.log(data);
       setLoading(false);
-    }
+    }, 3000);
   };
 
   return (
@@ -55,7 +52,7 @@ export default function Form() {
           name="fullName"
           control={control}
           render={({
-            field: { value, onChange, ref },
+            field: { value, onChange, onBlur, ref },
             fieldState: { error },
           }) => (
             <Input
@@ -65,6 +62,7 @@ export default function Form() {
               required
               ref={ref}
               value={value}
+              onBlur={onBlur}
               onChange={onChange}
               error={Boolean(error)}
             />
@@ -74,7 +72,7 @@ export default function Form() {
           name="email"
           control={control}
           render={({
-            field: { value, onChange, ref },
+            field: { value, onChange, onBlur, ref },
             fieldState: { error },
           }) => (
             <Input
@@ -84,6 +82,7 @@ export default function Form() {
               required
               ref={ref}
               value={value}
+              onBlur={onBlur}
               onChange={onChange}
               error={Boolean(error)}
             />
@@ -93,7 +92,7 @@ export default function Form() {
           name="subject"
           control={control}
           render={({
-            field: { value, onChange, ref },
+            field: { value, onChange, onBlur, ref },
             fieldState: { error },
           }) => (
             <Input
@@ -103,6 +102,7 @@ export default function Form() {
               required
               ref={ref}
               value={value}
+              onBlur={onBlur}
               onChange={onChange}
               error={Boolean(error)}
             />
@@ -112,7 +112,7 @@ export default function Form() {
           name="message"
           control={control}
           render={({
-            field: { value, onChange, ref },
+            field: { value, onChange, onBlur, ref },
             fieldState: { error },
           }) => (
             <Input
@@ -122,6 +122,7 @@ export default function Form() {
               required
               ref={ref}
               value={value}
+              onBlur={onBlur}
               onChange={onChange}
               error={Boolean(error)}
             />
