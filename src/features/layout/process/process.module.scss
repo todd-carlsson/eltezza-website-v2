@@ -1,3 +1,12 @@
+@mixin text($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  position: relative;
+  z-index: 30;
+  background-clip: text;
+  color: transparent;
+}
+
 .processSection {
   width: 100%;
   padding: 0 40px;
@@ -8,7 +17,7 @@
     margin-top: 5rem;
     height: fit-content;
 
-    @media screen and (width <= 1130px) {
+    @media screen and (width <=1130px) {
       flex-direction: column;
       gap: 3.25rem;
     }
@@ -26,28 +35,19 @@
       position: relative;
       z-index: 30;
 
-      @media screen and (width <= 1130px) {
+      @media screen and (width <=1130px) {
         padding: 26px 20px;
       }
 
       .processText {
-        font-size: 1.15rem;
-        font-weight: 700;
-        position: relative;
-        z-index: 30;
+        @include text(1.15rem, 700);
+
         max-width: 160px;
         line-height: 100%;
-        background-clip: text;
-        color: transparent;
       }
 
       .processNumber {
-        font-size: 1rem;
-        font-weight: 500;
-        position: relative;
-        z-index: 30;
-        background-clip: text;
-        color: transparent;
+        @include text(1rem, 500);
       }
 
       .background {
@@ -65,7 +65,7 @@
         top: -30px;
         z-index: 100;
 
-        @media screen and (width <= 1130px) {
+        @media screen and (width <=1130px) {
           display: none;
         }
       }
@@ -73,7 +73,7 @@
       .arrowSmall {
         display: none;
 
-        @media screen and (width <= 1130px) {
+        @media screen and (width <=1130px) {
           display: block;
           position: absolute;
           top: -3.8rem;
