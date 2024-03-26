@@ -2,13 +2,15 @@ import styles from "./form.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Form from "./form";
+import { useState } from "react";
 
-interface FormProps {
+interface FormModalProps {
   onClose: () => void;
   showModal: boolean;
 }
 
-export function FormModal({ onClose, showModal }: FormProps) {
+export function FormModal({ onClose, showModal }: FormModalProps) {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   return (
     <>
       <AnimatePresence>
@@ -59,7 +61,10 @@ export function FormModal({ onClose, showModal }: FormProps) {
               width={32}
               height={33}
             />
-            <Form />
+            <Form
+              isSubmitted={isSubmitted}
+              submittedForm={() => setIsSubmitted(true)}
+            />
           </motion.div>
         )}
       </AnimatePresence>
