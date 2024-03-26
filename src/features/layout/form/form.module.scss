@@ -1,3 +1,10 @@
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .opacLayer {
   width: 100vw;
   height: 100vh;
@@ -67,19 +74,15 @@
   // SUBMIT SCREEN
 
   .submitScreenContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
+
     height: 100%;
     gap: 2rem;
     margin-top: 40px;
 
     .submitScreenText {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include flex-center;
+
       gap: 1rem;
 
       .submittedDescription {

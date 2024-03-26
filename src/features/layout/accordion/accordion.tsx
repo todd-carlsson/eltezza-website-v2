@@ -21,7 +21,7 @@ export function Accordion({ content, color, variant }: AccordionProps) {
 
   return (
     <div id="services" className={styles.accordion}>
-      <p className={styles.title}>
+      <p className={styles.heading}>
         {variant === "services" ? "WHAT WE DO | SERVICES" : "FAQS"}
       </p>
       <div>

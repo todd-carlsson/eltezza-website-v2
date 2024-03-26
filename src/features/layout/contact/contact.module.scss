@@ -1,3 +1,16 @@
+@mixin orb($color, $direction) {
+  width: 100vh;
+  height: 100vh;
+  background-color: $color;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.45;
+  position: absolute;
+  z-index: 1;
+  #{$direction}: -20%;
+  top: 0;
+}
+
 .contactSection {
   width: 100%;
   position: relative;
@@ -9,29 +22,11 @@
   margin-bottom: 40px;
 
   .orangeOrb {
-    width: 100vh;
-    height: 100vh;
-    background-color: var(--ez-orange);
-    border-radius: 50%;
-    filter: blur(140px);
-    opacity: 1;
-    position: absolute;
-    z-index: 1;
-    right: -20%;
-    top: 0;
+    @include orb(var(--ez-orange), right);
   }
 
   .purpleOrb {
-    width: 100vh;
-    height: 100vh;
-    background-color: var(--adobe-purple);
-    border-radius: 50%;
-    filter: blur(140px);
-    opacity: 0.4;
-    position: absolute;
-    z-index: 1;
-    left: -20%;
-    top: 0;
+    @include orb(var(--adobe-purple), left);
   }
 
   .contactContainer {

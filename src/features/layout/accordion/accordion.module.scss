@@ -1,8 +1,21 @@
+@mixin title($max-width, $font-size) {
+  max-width: $max-width;
+  font-size: $font-size;
+  color: #fff;
+  line-height: 100%;
+  font-weight: 700;
+}
+
+@mixin description($max-width, $font-size) {
+  max-width: $max-width;
+  font-size: $font-size;
+}
+
 .accordion {
   width: 100%;
   position: relative;
 
-  .title {
+  .heading {
     color: var(--white-text);
     font-weight: 600;
     text-transform: uppercase;
@@ -22,10 +35,7 @@
     height: 305px;
 
     .accordionTitleService {
-      font-size: 5rem;
-      color: #fff;
-      max-width: 50%;
-      line-height: 100%;
+      @include title(50%, 5rem);
     }
 
     .noWrap {
@@ -33,8 +43,7 @@
     }
 
     .descriptionServices {
-      max-width: 40%;
-      font-size: 1.2rem;
+      @include description(40%, 1.2rem);
     }
   }
 
@@ -47,16 +56,12 @@
     padding: 0 var(--content-padding);
 
     .accordionTitleFaq {
-      max-width: 100%;
-      font-size: 2rem;
-      color: #fff;
-      line-height: 100%;
-      font-weight: 700;
+      @include title(100%, 2rem);
     }
 
     .descriptionFaq {
-      max-width: 100%;
-      font-size: 1rem;
+      @include description(100%, 1rem);
+
       position: absolute;
       margin-top: 2.5rem;
     }
