@@ -1,7 +1,7 @@
 import { Button, ButtonVariant, Input } from "@/features/ui";
 import styles from "./form.module.scss";
 import { contactFormText } from "@/constants";
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import Image from "next/image";
@@ -19,7 +19,7 @@ type FormValues = z.infer<typeof formSchema>;
 export default function Form() {
   const [loading, setLoading] = useState(false);
 
-  const form = useForm<FormValues>({
+  const { control, handleSubmit } = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       fullName: "",
@@ -29,12 +29,14 @@ export default function Form() {
     },
   });
 
-  const onSubmit = async () => {
+  const onSubmit = async (data: FormValues) => {
     try {
       setLoading(true);
-      console.log("SUBMITEDDD");
+      setTimeout(() => {
+        console.log(data);
+      }, 3000);
     } catch (error) {
-      console.log("error!!!!!!!!!!!!");
+      console.log("Form Error, ", error);
     } finally {
       setLoading(false);
     }
@@ -44,21 +46,87 @@ export default function Form() {
     <>
       <h1 className={styles.formTitle}>{contactFormText.title}</h1>
       <p className={styles.formDescription}>{contactFormText.description}</p>
-      <form onSubmit={form.handleSubmit(onSubmit)} className={styles.form}>
-        <Input
-          placeholder="Full name"
-          type="text"
-          disabled={loading}
-          required
+      <form
+        noValidate
+        onSubmit={handleSubmit(onSubmit)}
+        className={styles.form}
+      >
+        <Controller
+          name="fullName"
+          control={control}
+          render={({
+            field: { value, onChange, ref },
+            fieldState: { error },
+          }) => (
+            <Input
+              placeholder="Full name"
+              type="text"
+              disabled={loading}
+              required
+              ref={ref}
+              value={value}
+              onChange={onChange}
+              error={Boolean(error)}
+            />
+          )}
         />
-        <Input
-          placeholder="Email address"
-          type="email"
-          disabled={loading}
-          required
+        <Controller
+          name="email"
+          control={control}
+          render={({
+            field: { value, onChange, ref },
+            fieldState: { error },
+          }) => (
+            <Input
+              placeholder="Email address"
+              type="email"
+              disabled={loading}
+              required
+              ref={ref}
+              value={value}
+              onChange={onChange}
+              error={Boolean(error)}
+            />
+          )}
         />
-        <Input placeholder="Subject" type="text" disabled={loading} required />
-        <Input placeholder="Message" type="text" disabled={loading} required />
+        <Controller
+          name="subject"
+          control={control}
+          render={({
+            field: { value, onChange, ref },
+            fieldState: { error },
+          }) => (
+            <Input
+              placeholder="Subject"
+              type="text"
+              disabled={loading}
+              required
+              ref={ref}
+              value={value}
+              onChange={onChange}
+              error={Boolean(error)}
+            />
+          )}
+        />
+        <Controller
+          name="message"
+          control={control}
+          render={({
+            field: { value, onChange, ref },
+            fieldState: { error },
+          }) => (
+            <Input
+              placeholder="Message"
+              type="text"
+              disabled={loading}
+              required
+              ref={ref}
+              value={value}
+              onChange={onChange}
+              error={Boolean(error)}
+            />
+          )}
+        />
         <Button
           className={styles.formSubmitBtn}
           variant={ButtonVariant.gradient}
