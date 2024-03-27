@@ -337,35 +337,35 @@ export const landingPageMockData = [
 export const creativeWorkData = [
   {
     id: "1",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497959/EZ%20Website%20-%20Creative/Work%20Section/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_49/v1711497959/EZ%20Website%20-%20Creative/Work%20Section/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1711508045/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/remarkable_cream_thumbnail_i8sdpw.jpg",
     size: "large",
   },
   {
     id: "2",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497891/EZ%20Website%20-%20Creative/Work%20Section/Kiwiblue_Zoomed_jtmk4o.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_49/v1711497891/EZ%20Website%20-%20Creative/Work%20Section/Kiwiblue_Zoomed_jtmk4o.mp4",
     thumbnail:
       "https://res-console.cloudinary.com/dsxzhd4c2/thumbnails/v1/video/upload/v1711497891/RVogV2Vic2l0ZSAtIENyZWF0aXZlL1dvcmsgU2VjdGlvbi9LaXdpYmx1ZV9ab29tZWRfanRtazRv/drilldown",
     size: "small",
   },
   {
     id: "3",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497883/EZ%20Website%20-%20Creative/Work%20Section/Goju_Content_Reel_dhbmn7.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_55/v1711497883/EZ%20Website%20-%20Creative/Work%20Section/Goju_Content_Reel_dhbmn7.mp4",
     thumbnail:
       "https://res-console.cloudinary.com/dsxzhd4c2/thumbnails/v1/video/upload/v1711497883/RVogV2Vic2l0ZSAtIENyZWF0aXZlL1dvcmsgU2VjdGlvbi9Hb2p1X0NvbnRlbnRfUmVlbF9kaGJtbjc=/drilldown",
     size: "small",
   },
   {
     id: "4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497905/EZ%20Website%20-%20Creative/Work%20Section/Innerbloom_Zoomed_kozcl5.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_57/v1711497905/EZ%20Website%20-%20Creative/Work%20Section/Innerbloom_Zoomed_kozcl5.mp4",
     thumbnail:
       "https://res-console.cloudinary.com/dsxzhd4c2/thumbnails/v1/video/upload/v1711497905/RVogV2Vic2l0ZSAtIENyZWF0aXZlL1dvcmsgU2VjdGlvbi9Jbm5lcmJsb29tX1pvb21lZF9rb3pjbDU=/drilldown",
     size: "small",
   },
   {
     id: "5",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_50/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
     thumbnail:
       "https://res-console.cloudinary.com/dsxzhd4c2/thumbnails/v1/video/upload/v1711497920/RVogV2Vic2l0ZSAtIENyZWF0aXZlL1dvcmsgU2VjdGlvbi9FYXRraW5kYV9XZWJzaXRlX1ZpZGVvX2Rxb2hiZA==/drilldown",
     size: "large",
@@ -373,42 +373,42 @@ export const creativeWorkData = [
 
   {
     id: "6",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497924/EZ%20Website%20-%20Creative/Work%20Section/Honey_Soy_1x1_zptjyf.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_41/v1711497924/EZ%20Website%20-%20Creative/Work%20Section/Honey_Soy_1x1_zptjyf.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1711508516/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/honey_soy_chicken_thumbnail_brftrr.jpg",
     size: "medium",
   },
   {
     id: "7",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711499368/EZ%20Website%20-%20Creative/Work%20Section/Snowy_G_1x1_fxji0j.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_57/v1711499368/EZ%20Website%20-%20Creative/Work%20Section/Snowy_G_1x1_fxji0j.mp4",
     thumbnail:
       "https://res-console.cloudinary.com/dsxzhd4c2/thumbnails/v1/video/upload/v1711499368/RVogV2Vic2l0ZSAtIENyZWF0aXZlL1dvcmsgU2VjdGlvbi9Tbm93eV9HXzF4MV9meGppMGo=/drilldown",
     size: "medium",
   },
   {
     id: "8",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497879/EZ%20Website%20-%20Creative/Work%20Section/Rinse_Content_Final_Version_gk9vl8.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_55/v1711497879/EZ%20Website%20-%20Creative/Work%20Section/Rinse_Content_Final_Version_gk9vl8.mp4",
     thumbnail:
       "https://res-console.cloudinary.com/dsxzhd4c2/thumbnails/v1/video/upload/v1711497879/RVogV2Vic2l0ZSAtIENyZWF0aXZlL1dvcmsgU2VjdGlvbi9SaW5zZV9Db250ZW50X0ZpbmFsX1ZlcnNpb25fZ2s5dmw4/drilldown",
     size: "large",
   },
   {
     id: "9",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497918/EZ%20Website%20-%20Creative/Work%20Section/Redbull_Zoomed_gfb6hv.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_54/v1711497918/EZ%20Website%20-%20Creative/Work%20Section/Redbull_Zoomed_gfb6hv.mp4",
     thumbnail:
       "https://res-console.cloudinary.com/dsxzhd4c2/thumbnails/v1/video/upload/v1711497918/RVogV2Vic2l0ZSAtIENyZWF0aXZlL1dvcmsgU2VjdGlvbi9SZWRidWxsX1pvb21lZF9nZmI2aHY=/drilldown",
     size: "small",
   },
   {
     id: "10",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497923/EZ%20Website%20-%20Creative/Work%20Section/Charlie_Zoomed_nuafy8.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_47/v1711497923/EZ%20Website%20-%20Creative/Work%20Section/Charlie_Zoomed_nuafy8.mp4",
     thumbnail:
       "https://res-console.cloudinary.com/dsxzhd4c2/thumbnails/v1/video/upload/v1711497923/RVogV2Vic2l0ZSAtIENyZWF0aXZlL1dvcmsgU2VjdGlvbi9DaGFybGllX1pvb21lZF9udWFmeTg=/drilldown",
     size: "small",
   },
   {
     id: "11",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497916/EZ%20Website%20-%20Creative/Work%20Section/Live_Content_Reel_npbkph.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_48/v1711497916/EZ%20Website%20-%20Creative/Work%20Section/Live_Content_Reel_npbkph.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1711508866/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/live_content_reel_thumbnail_cputhk.jpg",
     size: "small",
@@ -422,7 +422,7 @@ export const creativeWorkData = [
   },
   {
     id: "13",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711498114/EZ%20Website%20-%20Creative/Work%20Section/Ball_Animation_1x1_yp7ku1.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_56/v1711498114/EZ%20Website%20-%20Creative/Work%20Section/Ball_Animation_1x1_yp7ku1.mp4",
     thumbnail:
       "https://res-console.cloudinary.com/dsxzhd4c2/thumbnails/v1/video/upload/v1711498114/RVogV2Vic2l0ZSAtIENyZWF0aXZlL1dvcmsgU2VjdGlvbi9CYWxsX0FuaW1hdGlvbl8xeDFfeXA3a3Ux/drilldown",
     size: "medium",

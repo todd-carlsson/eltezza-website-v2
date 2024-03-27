@@ -14,6 +14,7 @@ export function CreativeWork({ content }: CreativeWorkProps) {
       return styles.gridColSpanThree;
     } else return styles.gridColSpanTwo;
   }
+
   return (
     <section className={styles.workSectionCreative}>
       <div className={styles.creativeGrid}>
@@ -26,8 +27,7 @@ export function CreativeWork({ content }: CreativeWorkProps) {
             poster={item.thumbnail}
             key={item.id}
             src={item.src}
-            // autoPlay
-            // loop
+            loop
             preload="metadata"
             muted
           >
