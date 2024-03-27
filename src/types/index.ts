@@ -16,6 +16,7 @@ export type TeamData = {
 export type CreativeWorkData = {
   id: string;
   src: string;
+  thumbnail: string;
   size: "small" | "medium" | "large";
 };
 
