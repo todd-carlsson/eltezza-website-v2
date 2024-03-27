@@ -17,6 +17,18 @@ export function CreativeWork({ content }: CreativeWorkProps) {
 
   return (
     <section id="work" className={styles.workSectionCreative}>
+      <div className={styles.textContainer}>
+        <h1 className="largeText">
+          OUR LATEST <span className="textGradient">WORKS</span>
+        </h1>
+        <div className={styles.descriptionContainer}>
+          <p className={styles.purpleUnderline}>Hover</p>
+          <p className={styles.workDescription}>
+            {" "}
+            your cursor on the cards below to play the videos.
+          </p>
+        </div>
+      </div>
       <div className={styles.creativeGrid}>
         {content.map((item) => (
           <video
