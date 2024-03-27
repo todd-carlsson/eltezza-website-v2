@@ -4,6 +4,46 @@
   padding: 120px var(--content-padding);
   margin: 120px 0;
 
+  @media screen and (width <= 800px) {
+    padding: 120px var(--content-padding-sm);
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+    position: relative;
+
+    .descriptionContainer {
+      display: flex;
+
+      .purpleUnderline {
+        font-family: var(--font-source-sans);
+        position: relative;
+        width: 45px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 45px;
+          height: 5px;
+          left: -3px;
+          top: 13px;
+          z-index: -1;
+          background: var(--adobe-purple);
+        }
+      }
+
+      .workDescription {
+        font-family: var(--font-source-sans);
+        position: relative;
+      }
+    }
+  }
+
   .creativeGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
