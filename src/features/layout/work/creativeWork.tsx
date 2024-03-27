@@ -25,8 +25,13 @@ export function CreativeWork({ content }: CreativeWorkProps) {
             )}
             key={item.id}
             src={item.src}
+            // autoPlay
+            // loop
+            preload="metadata"
             muted
-          />
+          >
+            <source src={item.src} />
+          </video>
         ))}
       </div>
     </section>
