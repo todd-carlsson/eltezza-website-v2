@@ -21,13 +21,10 @@ export function CreativeWork({ content }: CreativeWorkProps) {
         <h1 className="largeText">
           OUR LATEST <span className="textGradient">WORKS</span>
         </h1>
-        <div className={styles.descriptionContainer}>
-          <p className={styles.purpleUnderline}>Hover</p>
-          <p className={styles.workDescription}>
-            {" "}
-            your cursor on the cards below to play the videos.
-          </p>
-        </div>
+        <p className={styles.workDescription}>
+          <span className={styles.purpleUnderline}>Hover </span>
+          your cursor on the cards below to play the videos.
+        </p>
       </div>
       <div className={styles.creativeGrid}>
         {content.map((item) => (
@@ -39,9 +36,10 @@ export function CreativeWork({ content }: CreativeWorkProps) {
             poster={item.thumbnail}
             key={item.id}
             src={item.src}
+            muted
+            // autoPlay
             loop
             preload="metadata"
-            muted
           >
             <source src={item.src} />
           </video>
