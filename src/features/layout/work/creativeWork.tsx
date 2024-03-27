@@ -23,6 +23,7 @@ export function CreativeWork({ content }: CreativeWorkProps) {
               styles.creativeVideo,
               getVideoColumnSize(item.size),
             )}
+            poster={item.thumbnail}
             key={item.id}
             src={item.src}
             // autoPlay
