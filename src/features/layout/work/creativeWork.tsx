@@ -16,7 +16,7 @@ export function CreativeWork({ content }: CreativeWorkProps) {
   }
 
   return (
-    <section className={styles.workSectionCreative}>
+    <section id="work" className={styles.workSectionCreative}>
       <div className={styles.creativeGrid}>
         {content.map((item) => (
           <video
