@@ -3,7 +3,6 @@ import {
   btsMockData,
   faqs,
   headerDescription,
-  landingPageMockData,
   ourProcess,
   pageTags,
   services,
@@ -15,7 +14,7 @@ import {
   Navbar,
   Accordion,
   Process,
-  Work,
+  CreativeWork,
   Team,
   Brands,
   BTS,
@@ -43,7 +42,7 @@ export default function CreativePage() {
           tags={pageTags.creative}
         />
       </div>
-      <Work content={landingPageMockData} page={page} />
+      <CreativeWork />
       <Accordion content={services.creative} color={color} variant="services" />
       <BTS content={btsMockData} page={page} />
       <Brands content={brandsMockData.creative} columns={3} />

@@ -1,1 +1,2 @@
-export { Work } from "./work";
+export { DesignWork } from "./designWork";
+export { CreativeWork } from "./creativeWork";
