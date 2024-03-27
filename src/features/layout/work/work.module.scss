@@ -3,6 +3,27 @@
   width: 100%;
   padding: 120px var(--content-padding);
   margin: 120px 0;
+
+  .creativeGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    .gridColSpanSix {
+      grid-column: span 6;
+    }
+
+    .gridColSpanThree {
+      grid-column: span 3;
+    }
+
+    .gridColSpanTwo {
+      grid-column: span 2;
+    }
+
+    .creativeVideo {
+      width: 100%;
+    }
+  }
 }
 
 // DESIGN WORK SECTION
@@ -24,7 +45,7 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (width <= 800px) {
+    @media screen and (width <=800px) {
       position: relative;
     }
 
@@ -35,7 +56,7 @@
       top: -10px;
       animation: rotate 15s linear infinite;
 
-      @media screen and (width <= 800px) {
+      @media screen and (width <=800px) {
         position: relative;
         top: 0;
         left: 0;

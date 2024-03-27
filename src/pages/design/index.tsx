@@ -16,7 +16,7 @@ import {
   Accordion,
   Brands,
   Process,
-  Work,
+  DesignWork,
   Team,
   BTS,
   Contact,
@@ -61,7 +61,7 @@ export default function DesignPage() {
           </div>
         )}
       </div>
-      <Work content={landingPageMockData} page={page} />
+      <DesignWork content={landingPageMockData} />
       <Accordion content={services.design} color={color} variant="services" />
       <BTS content={btsMockData} page={page} />
       <Brands content={brandsMockData.design} columns={4} />

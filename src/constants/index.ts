@@ -1,4 +1,10 @@
-import { BrandsData, BtsData, CarouselData, TeamData } from "@/types";
+import {
+  BrandsData,
+  BtsData,
+  CarouselData,
+  CreativeWorkData,
+  TeamData,
+} from "@/types";
 
 // WEBSITE INFO
 export const pageTags = {
@@ -289,7 +295,7 @@ export const socialLinks = {
   linkedin: "https://www.linkedin.com/company/eltezza/",
 };
 
-// MOCK DATA
+// DATA
 export const landingPageMockData = [
   {
     id: "1",
@@ -327,6 +333,75 @@ export const landingPageMockData = [
     link: "www.eltezza.com",
   },
 ] as Array<CarouselData>;
+
+export const creativeWorkData = [
+  {
+    id: "1",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497959/EZ%20Website%20-%20Creative/Work%20Section/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
+    size: "large",
+  },
+  {
+    id: "2",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497891/EZ%20Website%20-%20Creative/Work%20Section/Kiwiblue_Zoomed_jtmk4o.mp4",
+    size: "small",
+  },
+  {
+    id: "3",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497883/EZ%20Website%20-%20Creative/Work%20Section/Goju_Content_Reel_dhbmn7.mp4",
+    size: "small",
+  },
+  {
+    id: "4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497905/EZ%20Website%20-%20Creative/Work%20Section/Innerbloom_Zoomed_kozcl5.mp4",
+    size: "small",
+  },
+  {
+    id: "5",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
+    size: "large",
+  },
+
+  {
+    id: "6",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497924/EZ%20Website%20-%20Creative/Work%20Section/Honey_Soy_1x1_zptjyf.mp4",
+    size: "medium",
+  },
+  {
+    id: "7",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711499368/EZ%20Website%20-%20Creative/Work%20Section/Snowy_G_1x1_fxji0j.mp4",
+    size: "medium",
+  },
+  {
+    id: "8",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497879/EZ%20Website%20-%20Creative/Work%20Section/Rinse_Content_Final_Version_gk9vl8.mp4",
+    size: "large",
+  },
+  {
+    id: "9",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497918/EZ%20Website%20-%20Creative/Work%20Section/Redbull_Zoomed_gfb6hv.mp4",
+    size: "small",
+  },
+  {
+    id: "10",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497923/EZ%20Website%20-%20Creative/Work%20Section/Charlie_Zoomed_nuafy8.mp4",
+    size: "small",
+  },
+  {
+    id: "11",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711497916/EZ%20Website%20-%20Creative/Work%20Section/Live_Content_Reel_npbkph.mp4",
+    size: "small",
+  },
+  {
+    id: "12",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711498021/EZ%20Website%20-%20Creative/Work%20Section/KMART_KWTA_ultgma.mp4",
+    size: "medium",
+  },
+  {
+    id: "13",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711498114/EZ%20Website%20-%20Creative/Work%20Section/Ball_Animation_1x1_yp7ku1.mp4",
+    size: "medium",
+  },
+] as Array<CreativeWorkData>;
 
 export const brandsMockData = {
   design: [

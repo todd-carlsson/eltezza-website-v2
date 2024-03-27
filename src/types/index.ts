@@ -13,6 +13,12 @@ export type TeamData = {
   position: string;
 };
 
+export type CreativeWorkData = {
+  id: string;
+  src: string;
+  size: "small" | "medium" | "large";
+};
+
 export type BrandsData = {
   id: string;
   brand: string;
