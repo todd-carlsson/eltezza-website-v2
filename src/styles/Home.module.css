@@ -15,17 +15,21 @@
 .heroContainer {
   display: flex;
   justify-content: space-between;
-  height: calc(100vh - 80px);
   width: 100%;
   padding: 0 var(--content-padding);
+  position: relative;
+  top: 100px;
 }
 
 .designPageCarousel {
   width: 40%;
   display: flex;
+  height: 100vh;
+  position: relative;
+  top: -100px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (width <= 800px) {
   .heroContainer {
     padding: 0 var(--content-padding-sm);
   }
