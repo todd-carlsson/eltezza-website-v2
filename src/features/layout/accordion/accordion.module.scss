@@ -34,16 +34,42 @@
     transition: all 0.3s ease-in-out;
     height: 305px;
 
-    .accordionTitleService {
-      @include title(50%, 5rem);
+    @media screen and (width <= 1450px) {
+      height: auto;
+    }
+
+    @media screen and (width <= 800px) {
+      height: auto;
+      padding: 70px var(--content-padding-sm);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin: var(--content-padding-sm);
+      border: none;
     }
 
     .noWrap {
       white-space: nowrap;
+
+      // @media screen and (width <= 1450px) {
+      //   white-space: normal;
+      // }
+    }
+
+    .accordionTitleService {
+      @include title(50%, 4.5rem);
+
+      @media screen and (width <= 800px) {
+        @include title(100%, 2.5rem);
+      }
     }
 
     .descriptionServices {
-      @include description(40%, 1.2rem);
+      @include description(40%, 1rem);
+
+      @media screen and (width <= 800px) {
+        @include description(100%, 1rem);
+      }
     }
   }
 
@@ -55,15 +81,39 @@
     position: relative;
     padding: 0 var(--content-padding);
 
+    @media screen and (width <= 1000px) {
+      height: 320px;
+      padding: 0 var(--content-padding-sm);
+    }
+
+    @media screen and (width <= 800px) {
+      padding: 70px var(--content-padding-sm);
+      height: auto;
+    }
+
     .accordionTitleFaq {
       @include title(100%, 2rem);
+
+      @media screen and (width <= 1450px) {
+        white-space: normal;
+      }
     }
 
     .descriptionFaq {
-      @include description(100%, 1rem);
+      @include description(max-content, 1rem);
 
+      width: fit-content;
       position: absolute;
       margin-top: 2.5rem;
+
+      @media screen and (width <= 1000px) {
+        margin-top: 3.5rem;
+      }
+
+      @media screen and (width <= 800px) {
+        position: relative;
+        margin-top: 0;
+      }
     }
   }
 }

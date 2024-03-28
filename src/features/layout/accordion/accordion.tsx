@@ -5,6 +5,7 @@ import styles from "./accordion.module.scss";
 import { motion } from "framer-motion";
 import classNames from "classnames";
 import { AccordionData } from "@/types";
+import useWindowSize from "@/hooks/useWindowSize";
 
 interface AccordionProps {
   content: Array<AccordionData>;
@@ -14,6 +15,7 @@ interface AccordionProps {
 
 export function Accordion({ content, color, variant }: AccordionProps) {
   const [active, setActive] = useState<string>("-1");
+  const [windowWidth] = useWindowSize();
 
   function hoverHandler(id: string) {
     setActive(id);
@@ -35,15 +37,23 @@ export function Accordion({ content, color, variant }: AccordionProps) {
             onMouseOver={() => hoverHandler(item.id)}
             onMouseLeave={() => hoverHandler("-1")}
             style={{
-              backgroundColor: active === item.id ? `var(${color})` : "#000",
+              backgroundColor:
+                active === item.id || windowWidth <= 800
+                  ? `var(${color})`
+                  : "#000",
             }}
           >
             <motion.h1
               initial={{
-                y: variant === "faq" ? -40 : 0,
+                y: variant === "faq" && windowWidth > 800 ? -45 : 0,
               }}
               animate={{
-                y: variant === "faq" ? (active === item.id ? -40 : 0) : 0,
+                y:
+                  variant === "faq" && windowWidth > 800
+                    ? active === item.id
+                      ? -45
+                      : 0
+                    : 0,
               }}
               className={classNames(
                 variant === "services"
@@ -55,7 +65,9 @@ export function Accordion({ content, color, variant }: AccordionProps) {
                 color:
                   active === item.id && color !== "--adobe-purple"
                     ? "#000"
-                    : "#fff",
+                    : windowWidth <= 800 && color === "--ez-orange"
+                      ? "#000"
+                      : "#fff",
               }}
             >
               {item.title}
@@ -63,11 +75,16 @@ export function Accordion({ content, color, variant }: AccordionProps) {
             <motion.p
               initial={{
                 opacity: 0,
-                y: variant === "faq" ? -20 : 0,
+                y: variant === "faq" && windowWidth > 800 ? -20 : 0,
               }}
               animate={{
-                opacity: active === item.id ? 1 : 0,
-                y: variant === "faq" ? (active === item.id ? 0 : 40) : 0,
+                opacity: active === item.id || windowWidth <= 800 ? 1 : 0,
+                y:
+                  variant === "faq" && windowWidth > 800
+                    ? active === item.id
+                      ? 0
+                      : 40
+                    : 0,
               }}
               className={classNames(
                 variant === "services"
@@ -76,6 +93,12 @@ export function Accordion({ content, color, variant }: AccordionProps) {
               )}
               style={{
                 color: color === "--adobe-purple" ? "#fff" : "#000",
+                position:
+                  active === item.id && windowWidth <= 800
+                    ? "relative"
+                    : windowWidth > 800
+                      ? "absolute"
+                      : "relative",
               }}
             >
               {item.description}
