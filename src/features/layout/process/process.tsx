@@ -64,7 +64,7 @@ export function Process({ content, color }: ProcessProps) {
       <motion.div
         className={styles.processContainer}
         style={{
-          height: windowWidth > 800 ? (content.length - 1) * 50 + 100 : "auto",
+          height: windowWidth <= 800 ? (content.length - 1) * 50 + 100 : "auto",
         }}
         variants={boxVariant}
         initial="hidden"
