@@ -12,6 +12,13 @@ interface HeroProps {
 export function Hero({ page, description, tags }: HeroProps) {
   return (
     <div className={styles.heroContent}>
+      <div
+        className={styles.orb}
+        style={{
+          backgroundColor:
+            page === "design" ? "var(--ez-orange)" : "var(--adobe-purple)",
+        }}
+      />
       {/* HEADING */}
       <div className={styles.heroHeadingContainer}>
         <h1 className={styles.heroHeading}>RISE ABOVE</h1>
