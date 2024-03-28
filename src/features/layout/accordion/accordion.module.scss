@@ -36,7 +36,8 @@
 
     @media screen and (width <= 1000px) {
       height: 320px;
-      padding: 0 var(--content-padding-sm);
+
+      // padding: 0 var(--content-padding-sm);
     }
 
     @media screen and (width <= 800px) {
@@ -59,7 +60,7 @@
 
       @media screen and (width <= 1250px) {
         white-space: normal;
-        font-size: clamp(2.75rem, 3.5rem, 4.5rem);
+        font-size: clamp(2.5rem, 4.75vw, 4rem);
       }
 
       @media screen and (width <= 800px) {
@@ -69,6 +70,10 @@
 
     .descriptionServices {
       @include description(40%, 1rem);
+
+      @media screen and (width <= 1000px) {
+        font-size: clamp(0.5rem, 2vw, 0.85rem);
+      }
 
       @media screen and (width <= 800px) {
         @include description(100%, 1rem);
