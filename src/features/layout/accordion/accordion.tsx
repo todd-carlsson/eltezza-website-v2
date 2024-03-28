@@ -21,6 +21,37 @@ export function Accordion({ content, color, variant }: AccordionProps) {
     setActive(id);
   }
 
+  function getTitleAnimation(id: string) {
+    if (variant === "faq" && windowWidth > 800) {
+      if (active === id) return -45;
+      else return 0;
+    } else return 0;
+  }
+
+  function getTitleColor(id: string) {
+    if (active === id && color !== "--adobe-purple") {
+      return "#000";
+    }
+    if (windowWidth <= 800 && color === "--ez-orange") {
+      return "#000";
+    } else return "#fff";
+  }
+
+  function getDescriptionAnimation(id: string) {
+    if (variant === "faq" && windowWidth > 800) {
+      if (active === id) return 0;
+      else return 40;
+    } else return 0;
+  }
+
+  function getDescriptionPosition(id: string) {
+    if (active === id && windowWidth <= 800) {
+      return "relative";
+    } else if (windowWidth > 800 && active !== id) {
+      return "absolute";
+    } else return "relative";
+  }
+
   return (
     <div id="services" className={styles.accordion}>
       <p className={styles.heading}>
@@ -48,12 +79,7 @@ export function Accordion({ content, color, variant }: AccordionProps) {
                 y: variant === "faq" && windowWidth > 800 ? -45 : 0,
               }}
               animate={{
-                y:
-                  variant === "faq" && windowWidth > 800
-                    ? active === item.id
-                      ? -45
-                      : 0
-                    : 0,
+                y: getTitleAnimation(item.id),
               }}
               className={classNames(
                 variant === "services"
@@ -62,12 +88,7 @@ export function Accordion({ content, color, variant }: AccordionProps) {
                 item.wrap ? "" : styles.noWrap,
               )}
               style={{
-                color:
-                  active === item.id && color !== "--adobe-purple"
-                    ? "#000"
-                    : windowWidth <= 800 && color === "--ez-orange"
-                      ? "#000"
-                      : "#fff",
+                color: getTitleColor(item.id),
               }}
             >
               {item.title}
@@ -76,15 +97,12 @@ export function Accordion({ content, color, variant }: AccordionProps) {
               initial={{
                 opacity: 0,
                 y: variant === "faq" && windowWidth > 800 ? -20 : 0,
+                position: "absolute",
               }}
               animate={{
                 opacity: active === item.id || windowWidth <= 800 ? 1 : 0,
-                y:
-                  variant === "faq" && windowWidth > 800
-                    ? active === item.id
-                      ? 0
-                      : 40
-                    : 0,
+                y: getDescriptionAnimation(item.id),
+                position: getDescriptionPosition(item.id),
               }}
               className={classNames(
                 variant === "services"
@@ -93,12 +111,7 @@ export function Accordion({ content, color, variant }: AccordionProps) {
               )}
               style={{
                 color: color === "--adobe-purple" ? "#fff" : "#000",
-                position:
-                  active === item.id && windowWidth <= 800
-                    ? "relative"
-                    : windowWidth > 800
-                      ? "absolute"
-                      : "relative",
+                position: getDescriptionPosition(item.id),
               }}
             >
               {item.description}

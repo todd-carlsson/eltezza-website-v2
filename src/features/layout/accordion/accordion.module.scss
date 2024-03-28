@@ -43,17 +43,14 @@
       padding: 70px var(--content-padding-sm);
       flex-direction: column;
       align-items: flex-start;
-      gap: 1.5rem;
+      gap: 2.5rem;
       margin: var(--content-padding-sm);
       border: none;
+      cursor: auto;
     }
 
     .noWrap {
       white-space: nowrap;
-
-      // @media screen and (width <= 1450px) {
-      //   white-space: normal;
-      // }
     }
 
     .accordionTitleService {
@@ -79,7 +76,7 @@
     align-items: flex-start;
     height: 240px;
     position: relative;
-    padding: 0 var(--content-padding);
+    padding: 100px var(--content-padding);
 
     @media screen and (width <= 1000px) {
       height: 320px;
@@ -104,11 +101,7 @@
 
       width: fit-content;
       position: absolute;
-      margin-top: 2.5rem;
-
-      @media screen and (width <= 1000px) {
-        margin-top: 3.5rem;
-      }
+      margin-top: 0.5rem;
 
       @media screen and (width <= 800px) {
         position: relative;
