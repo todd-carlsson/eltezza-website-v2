@@ -57,8 +57,9 @@
     .accordionTitleService {
       @include title(50%, 4.5rem);
 
-      @media screen and (width <= 1200px) {
+      @media screen and (width <= 1250px) {
         white-space: normal;
+        font-size: clamp(2.75rem, 3.5rem, 4.5rem);
       }
 
       @media screen and (width <= 800px) {
