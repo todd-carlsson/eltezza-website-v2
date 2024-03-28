@@ -45,6 +45,7 @@ export function Accordion({ content, color, variant }: AccordionProps) {
   }
 
   function getDescriptionPosition(id: string) {
+    if (variant === "services") return "relative";
     if (active === id && windowWidth <= 800) {
       return "relative";
     } else if (windowWidth > 800 && active !== id) {

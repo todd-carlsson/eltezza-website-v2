@@ -34,8 +34,9 @@
     transition: all 0.3s ease-in-out;
     height: 305px;
 
-    @media screen and (width <= 1450px) {
-      height: auto;
+    @media screen and (width <= 1000px) {
+      height: 320px;
+      padding: 0 var(--content-padding-sm);
     }
 
     @media screen and (width <= 800px) {
@@ -56,6 +57,10 @@
     .accordionTitleService {
       @include title(50%, 4.5rem);
 
+      @media screen and (width <= 1200px) {
+        white-space: normal;
+      }
+
       @media screen and (width <= 800px) {
         @include title(100%, 2.5rem);
       }
@@ -69,6 +74,8 @@
       }
     }
   }
+
+  // FAQ SECTION
 
   .faqSection {
     flex-direction: column;
