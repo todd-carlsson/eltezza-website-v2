@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./contact.module.scss";
 import { Button, ButtonVariant } from "@/features/ui";
+import useWindowSize from "@/hooks/useWindowSize";
 
 interface ContactProps {
   text: "design" | "create";
@@ -8,6 +9,7 @@ interface ContactProps {
 }
 
 export function Contact({ text, onOpen }: ContactProps) {
+  const [windowWidth] = useWindowSize();
   return (
     <section id="contact" className={styles.contactSection}>
       <div className={styles.purpleOrb} />
@@ -17,6 +19,7 @@ export function Contact({ text, onOpen }: ContactProps) {
           alt="Eltezza"
           width={133}
           height={22}
+          className={styles.logo}
         />
         <div>
           <h1 className={styles.contactLargeText}>
@@ -51,8 +54,8 @@ export function Contact({ text, onOpen }: ContactProps) {
           </h1>
         </div>
         <p className={styles.contactDescription}>
-          Let&apos;s make your digital dreams a reality. Contact us today to
-          start the journey.
+          Let&apos;s make your digital dreams a reality.
+          {windowWidth <= 590 && <br />} Contact us today to start the journey.
         </p>
         <Button
           onClick={onOpen}
