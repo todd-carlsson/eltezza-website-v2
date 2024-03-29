@@ -25,6 +25,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   const { control, handleSubmit } = useForm<FormValues>({
     mode: "onBlur",
@@ -49,6 +50,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
       submittedForm();
     } catch (error) {
       console.log(error);
+      setError(true);
     } finally {
       setLoading(false);
     }
@@ -78,11 +80,15 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
           <p className={styles.formDescription}>
             {contactFormText.description}
           </p>
+
           <form
             noValidate
             onSubmit={handleSubmit(onSubmit)}
             className={styles.form}
           >
+            {error && (
+              <p className={styles.errorMsg}>{contactFormText.error}</p>
+            )}
             <Controller
               name="fullName"
               control={control}
