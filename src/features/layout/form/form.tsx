@@ -38,13 +38,26 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
     },
   });
 
-  const onSubmit = (data: FormValues) => {
-    setLoading(true);
-    setTimeout(() => {
-      console.log(data);
+  const onSubmit = async (data: FormValues) => {
+    try {
+      setLoading(true);
+      await fetch("/api/mail", {
+        method: "post",
+        body: JSON.stringify(data),
+      });
       setLoading(false);
       submittedForm();
-    }, 3000);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
+
+    // setTimeout(() => {
+    //   console.log(data);
+    //   setLoading(false);
+    //   submittedForm();
+    // }, 3000);
   };
 
   return (
