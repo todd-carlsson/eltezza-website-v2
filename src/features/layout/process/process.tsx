@@ -1,8 +1,6 @@
-"use client";
-
-import useWindowSize from "@/hooks/useWindowSize";
 /* eslint-disable @next/next/no-img-element */
 import styles from "./process.module.scss";
+import useWindowSize from "@/hooks/useWindowSize";
 import { motion } from "framer-motion";
 
 interface ProcessProps {
@@ -69,6 +67,13 @@ export function Process({ content, color }: ProcessProps) {
         variants={boxVariant}
         initial="hidden"
         whileInView="visible"
+        viewport={{
+          margin:
+            windowWidth <= 800
+              ? `-${(content.length - 1) * 50 + 100}px`
+              : "-50%",
+          once: true,
+        }}
       >
         {content.map((item, i) => (
           <motion.div
