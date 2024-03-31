@@ -9,6 +9,10 @@
     "lint": "next lint",
     "lint:code": "eslint --ignore-path .gitignore .",
     "lint:styles": "stylelint --ignore-path .gitignore \"**/*.scss\"",
+    "test": "npx playwright test",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:safari": "npx playwright test --project=webkit",
     "check:types": "tsc --noEmit",
     "prettier": "prettier --write --ignore-path .gitignore --check .",
     "storybook": "storybook dev -p 6006",
@@ -34,6 +38,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.2.20",
+    "@playwright/test": "^1.42.1",
     "@storybook/addon-a11y": "^8.0.0",
     "@storybook/addon-essentials": "^8.0.0",
     "@storybook/addon-interactions": "^8.0.0",

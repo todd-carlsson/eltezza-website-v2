@@ -44,3 +44,7 @@ next-env.d.ts
 .env
 
 *storybook.log
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
