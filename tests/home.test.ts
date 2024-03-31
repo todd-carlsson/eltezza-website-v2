@@ -15,7 +15,7 @@ test("Home page animation test", async ({ page }) => {
   await expect(designText).not.toBeVisible();
   await expect(creativeText).not.toBeVisible();
 
-  await page.waitForTimeout(4000);
+  await page.waitForTimeout(7000);
   // Expect the slogan to not be visible due to the animation transition
   await expect(riseAboveText).not.toBeVisible();
   await expect(noiseSpanText).not.toBeVisible();
