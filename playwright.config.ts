@@ -24,7 +24,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   webServer: {
     command: "npm run start",
-    url: "http://localhost:3000/",
+    url: "http://localhost:3000",
     timeout: 120000,
   },
   use: {
