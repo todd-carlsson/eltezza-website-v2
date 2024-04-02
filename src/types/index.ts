@@ -13,6 +13,18 @@ export type TeamData = {
   position: string;
 };
 
+export type CreativeHeroImgData = {
+  id: string;
+  src: string;
+  alt: string;
+};
+
+export type CreativeHeroVideoData = {
+  id: string;
+  src: string;
+  thumbnail: string;
+};
+
 export type CreativeWorkData = {
   id: string;
   src: string;

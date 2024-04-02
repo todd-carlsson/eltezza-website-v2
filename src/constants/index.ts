@@ -2,6 +2,8 @@ import {
   BrandsData,
   BtsData,
   CarouselData,
+  CreativeHeroImgData,
+  CreativeHeroVideoData,
   CreativeWorkData,
   TeamData,
 } from "@/types";
@@ -334,6 +336,29 @@ export const landingPageMockData = [
     link: "www.eltezza.com",
   },
 ] as Array<CarouselData>;
+
+export const creativeHeroData = {
+  video: [
+    {
+      id: "1",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_50/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
+      thumbnail:
+        "https://res-console.cloudinary.com/dsxzhd4c2/thumbnails/v1/video/upload/v1711497920/RVogV2Vic2l0ZSAtIENyZWF0aXZlL1dvcmsgU2VjdGlvbi9FYXRraW5kYV9XZWJzaXRlX1ZpZGVvX2Rxb2hiZA==/drilldown",
+    },
+  ] as Array<CreativeHeroVideoData>,
+  images: [
+    {
+      id: "1",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712095539/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
+      alt: "EatKinda Freezer",
+    },
+    {
+      id: "2",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712095540/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Available_Woowlorths_Final_1.5x_zfnn1v.jpg",
+      alt: "EatKinda available at Woolworths",
+    },
+  ] as Array<CreativeHeroImgData>,
+};
 
 export const creativeWorkData = [
   {
