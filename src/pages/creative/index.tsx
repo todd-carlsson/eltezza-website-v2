@@ -13,6 +13,7 @@ import {
 } from "@/constants";
 import {
   Hero,
+  CreativeHero,
   Navbar,
   Accordion,
   Process,
@@ -26,7 +27,6 @@ import {
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
-import CreativeHero from "./hero";
 import useWindowSize from "@/hooks/useWindowSize";
 
 export default function CreativePage() {

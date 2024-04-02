@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from "@/styles/Home.module.css";
+import styles from "./hero.module.scss";
 import { CreativeHeroImgData, CreativeHeroVideoData } from "@/types";
 import classNames from "classnames";
 
@@ -8,7 +8,7 @@ interface CreativeHeroProps {
   images: Array<CreativeHeroImgData>;
 }
 
-export default function CreativeHero({ video, images }: CreativeHeroProps) {
+export function CreativeHero({ video, images }: CreativeHeroProps) {
   return (
     <div className={styles.creativeHeroContainer}>
       {video.map((item) => (
