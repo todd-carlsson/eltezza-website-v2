@@ -1,6 +1,7 @@
 import {
   brandsMockData,
   btsMockData,
+  creativeHeroData,
   creativeWorkData,
   faqs,
   headerDescription,
@@ -25,12 +26,15 @@ import {
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
+import CreativeHero from "./hero";
+import useWindowSize from "@/hooks/useWindowSize";
 
 export default function CreativePage() {
   const page = "creative";
   const color = "--adobe-purple";
 
   const [showModal, setShowModal] = useState(false);
+  const [windowWidth] = useWindowSize();
 
   return (
     <>
@@ -42,6 +46,12 @@ export default function CreativePage() {
           description={headerDescription.creative}
           tags={pageTags.creative}
         />
+        {windowWidth > 1075 && (
+          <CreativeHero
+            video={creativeHeroData.video}
+            images={creativeHeroData.images}
+          />
+        )}
       </div>
       <CreativeWork content={creativeWorkData} />
       <Accordion content={services.creative} color={color} variant="services" />
