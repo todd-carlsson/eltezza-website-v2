@@ -13,13 +13,15 @@ interface BTSProps {
 
 export function BTS({ content, page }: BTSProps) {
   const [activeImage, setActiveImage] = useState(content.length - 1);
-  const hiddenImage = activeImage === content.length - 1 ? 0 : activeImage + 1;
+  // const hiddenImage = activeImage === content.length - 1 ? 0 : activeImage + 1;
+  const [hiddenImage, setHiddenImage] = useState(0);
 
   useEffect(() => {
     setTimeout(() => {
       setActiveImage(activeImage === content.length - 1 ? 0 : activeImage + 1);
+      setHiddenImage(hiddenImage === content.length - 1 ? 0 : hiddenImage + 1);
     }, 3000);
-  }, [activeImage, content]);
+  }, [activeImage, content, hiddenImage]);
 
   const animationVariant = {
     initial: {
@@ -40,6 +42,7 @@ export function BTS({ content, page }: BTSProps) {
         {/* HIDDEN */}
         {content[hiddenImage].isVideo ? (
           <motion.video
+            key={"1"}
             variants={animationVariant}
             animate="animate"
             initial="initial"
@@ -50,6 +53,7 @@ export function BTS({ content, page }: BTSProps) {
           </motion.video>
         ) : (
           <motion.img
+            key={"1"}
             variants={animationVariant}
             animate="animate"
             initial="initial"
@@ -61,6 +65,7 @@ export function BTS({ content, page }: BTSProps) {
         {/* ACTIVE */}
         {content[activeImage].isVideo ? (
           <motion.video
+            key={activeImage}
             variants={animationVariant}
             animate="animate"
             initial="initial"
@@ -74,6 +79,7 @@ export function BTS({ content, page }: BTSProps) {
           </motion.video>
         ) : (
           <motion.img
+            key={activeImage}
             variants={animationVariant}
             animate="animate"
             initial="initial"
