@@ -669,3 +669,93 @@ export const btsMockData = [
     isVideo: true,
   },
 ] as Array<BtsData>;
+
+export const btsData = {
+  design: [
+    {
+      id: "1",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186772/EZ%20Website%20-%20Design/BTS/Photos/Sharing_our_experience_with_amazing_uni_students_dewbey.jpg",
+      alt: "Sharing our experience with amazing uni students!",
+      isVideo: false,
+    },
+    {
+      id: "2",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_71/v1711328016/EZ%20Website%20-%20Design/BTS/Videos/IMG_4369_vugvs0.mov",
+      alt: "Chris filming food",
+      isVideo: true,
+    },
+    {
+      id: "3",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186669/EZ%20Website%20-%20Design/BTS/Photos/Meeting_with_an_industry_veteran_dfxypu.jpg",
+      alt: "Meeting with an industry veteran",
+      isVideo: false,
+    },
+    {
+      id: "4",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_69/v1711327992/EZ%20Website%20-%20Design/BTS/Videos/IMG_4320_vuxhjw.mov",
+      alt: "Chris trying to use chopsticks",
+      isVideo: true,
+    },
+    {
+      id: "5",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186802/EZ%20Website%20-%20Design/BTS/Photos/Invited_to_be_part_of_a_panel_for_design_students_yiivm9.jpg",
+      alt: "Invited to be part of a panel for design students",
+      isVideo: false,
+    },
+    {
+      id: "6",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_69/v1711328066/EZ%20Website%20-%20Design/BTS/Videos/IMG_0188_hbsrhx.mov",
+      alt: "Behind the scenes at Steve's Tyre Service",
+      isVideo: true,
+    },
+    {
+      id: "7",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186637/EZ%20Website%20-%20Design/BTS/Photos/In_the_zone_ockvgx.jpg",
+      alt: "In the zone",
+      isVideo: false,
+    },
+    {
+      id: "8",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186745/EZ%20Website%20-%20Design/BTS/Photos/IMG_4587_uwiyp8.jpg",
+      alt: "Thumbs up!",
+      isVideo: false,
+    },
+    {
+      id: "9",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186598/EZ%20Website%20-%20Design/BTS/Photos/IMG_3768_wtjkw3.jpg",
+      alt: "Working in the office",
+      isVideo: false,
+    },
+    {
+      id: "10",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_68/v1711328046/EZ%20Website%20-%20Design/BTS/Videos/IMG_0181_p1xnmj.mov",
+      alt: "Behind the scenes at Steve's Tyre Service",
+      isVideo: true,
+    },
+    {
+      id: "11",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186558/EZ%20Website%20-%20Design/BTS/Photos/IMG_3648_sxvsam.jpg",
+      alt: "Photoshoot time!",
+      isVideo: false,
+    },
+    {
+      id: "12",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183912/EZ%20Website%20-%20Design/BTS/Photos/IMG_0221_mo4hz0.jpg",
+      alt: "Client meeting with Mo and Chris",
+      isVideo: false,
+    },
+    {
+      id: "13",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183905/EZ%20Website%20-%20Design/BTS/Photos/Client_Meeting_gvffpg.jpg",
+      alt: "Client meeting with Danilo and Mo",
+      isVideo: false,
+    },
+    {
+      id: "14",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183893/EZ%20Website%20-%20Design/BTS/Photos/_What_do_we_do_at_Eltezza__hiejen.jpg",
+      alt: "what do we do at Eltezza?",
+      isVideo: false,
+    },
+  ] as Array<BtsData>,
+  creative: [],
+};

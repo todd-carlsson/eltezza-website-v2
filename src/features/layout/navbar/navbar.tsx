@@ -55,10 +55,11 @@ export function Navbar() {
             ))}
         <li>
           <Image
+            className={styles.arrow}
             src="/NavArrow.svg"
             alt="^ Back to top"
-            height={windowWidth > 800 ? 28 : 18}
-            width={windowWidth > 800 ? 28 : 18}
+            height={22}
+            width={22}
           />
         </li>
       </ul>

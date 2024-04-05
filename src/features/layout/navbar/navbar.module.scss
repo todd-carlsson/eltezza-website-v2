@@ -4,11 +4,15 @@
   width: 100vw;
   font-weight: 500;
   position: fixed;
-  bottom: 0;
+  bottom: 26px;
   z-index: 999;
 
+  @media screen and (width <= 800px) {
+    display: none;
+  }
+
   .navbarContainer {
-    width: 75%;
+    width: 55%;
     border-radius: 50px;
     border: 1px solid #fff;
     background: rgb(255 255 255 / 20%);
@@ -41,6 +45,12 @@
       &:hover {
         background-color: #000;
       }
+    }
+
+    .arrow {
+      position: relative;
+      top: 3px;
+      right: 0.8rem;
     }
   }
 }
