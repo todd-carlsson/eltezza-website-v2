@@ -22,6 +22,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.65rem 0.9rem;
+    position: fixed;
+    bottom: 26px;
+    z-index: 999;
 
     @media screen and (width <= 1200px) {
       width: 77%;
