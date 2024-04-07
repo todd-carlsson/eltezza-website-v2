@@ -1,11 +1,12 @@
 .navbar {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   font-weight: 500;
   position: fixed;
   bottom: 26px;
   z-index: 999;
+  padding: 0 2rem;
 
   @media screen and (width <= 800px) {
     display: none;
@@ -22,17 +23,16 @@
     justify-content: space-between;
     padding: 0.65rem 0.9rem;
 
+    @media screen and (width <= 1200px) {
+      width: 77%;
+    }
+
     .link {
       border-radius: 27px;
       cursor: pointer;
       padding: 0.8rem;
       transition: background-color 0.3s ease-in-out;
       font-size: 0.85rem;
-
-      @media screen and (width <= 800px) {
-        padding: 0.5rem 0.25rem;
-        font-size: 0.75rem;
-      }
 
       &:hover {
         background-color: var(--heightened-grey);
