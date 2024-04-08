@@ -367,6 +367,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187627/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Remarkable_Cream_TN_ouqltl.jpg",
     size: "large",
+    client: "Remarkable Cream",
+    campaign: "Crafted by nature, perfected by tradition",
   },
   {
     id: "2",
@@ -374,6 +376,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187514/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Kiwi_Blue_NT_qutbbd.jpg",
     size: "small",
+    client: "Kiwi Blue",
+    campaign: "Out of the blue",
   },
   {
     id: "3",
@@ -381,6 +385,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187438/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Go_Ju_TN_irpemp.jpg",
     size: "small",
+    client: "Goju",
+    campaign: "Need some pep in your step?",
   },
   {
     id: "4",
@@ -388,6 +394,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187493/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Innerbloom_TN_r25fo4.jpg",
     size: "small",
+    client: "Innerbloom",
+    campaign: "My only one",
   },
   {
     id: "5",
@@ -395,6 +403,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187412/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/EatKinda_TN_yclerg.jpg",
     size: "large",
+    client: "Eatkinda",
+    campaign: "Kinda different, totally delicious",
   },
 
   {
@@ -403,6 +413,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187469/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Honey_Soy_TN_kscrr3.jpg",
     size: "medium",
+    client: "Honey Soy Chicken",
+    campaign: "Glazing perfection",
   },
   {
     id: "7",
@@ -410,6 +422,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187682/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Snowy_G_TN_miougx.jpg",
     size: "medium",
+    client: "Snowy-G Chicken",
+    campaign: "It goes beyond the mayo",
   },
   {
     id: "8",
@@ -417,6 +431,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187656/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Rinse_TN_nuwajl.jpg",
     size: "large",
+    client: "Rinse Vodka",
+    campaign: "Because one is not enough",
   },
   {
     id: "9",
@@ -424,6 +440,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187600/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Redbull_TN_eqmilw.jpg",
     size: "small",
+    client: "Red Bull",
+    campaign: "The new wings in town",
   },
   {
     id: "10",
@@ -431,6 +449,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187381/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Charlies_TN_xbihz7.jpg",
     size: "small",
+    client: "Charlie's",
+    campaign: "Shake up the good stuff!",
   },
   {
     id: "11",
@@ -438,6 +458,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187576/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Live_TN_zvkmkn.jpg",
     size: "small",
+    client: "Live+",
+    campaign: "Electrified living",
   },
   {
     id: "12",
@@ -445,6 +467,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187551/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/KMART_TN_fnsr1v.jpg",
     size: "medium",
+    client: "KMart",
+    campaign: "Wishing tree appeal",
   },
   {
     id: "13",
@@ -452,6 +476,8 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187345/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/3D_Ball_TN_nskugx.jpg",
     size: "medium",
+    client: "3D Ball",
+    campaign: "Infinite alignment",
   },
 ] as Array<CreativeWorkData>;
 

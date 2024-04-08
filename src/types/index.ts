@@ -30,6 +30,8 @@ export type CreativeWorkData = {
   src: string;
   thumbnail: string;
   size: "small" | "medium" | "large";
+  client: string;
+  campaign: string;
 };
 
 export type BrandsData = {

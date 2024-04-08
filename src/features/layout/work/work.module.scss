@@ -19,13 +19,13 @@
     .purpleUnderline {
       font-family: var(--font-source-sans);
       position: relative;
-      width: 45px;
+      z-index: 1;
 
-      &::after {
+      &::before {
         content: "";
         position: absolute;
         display: block;
-        width: 45px;
+        width: 100%;
         height: 5px;
         left: -3px;
         top: 13px;
@@ -62,10 +62,85 @@
       grid-column: span 2;
     }
 
-    .creativeVideo {
+    .creativeVideoContainer {
+      position: relative;
       width: 100%;
-      cursor: pointer;
-      border-radius: 12px;
+      height: fit-content;
+
+      .creativeVideo {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        border-radius: 12px;
+        opacity: 0.5;
+        position: relative;
+        z-index: 60;
+      }
+
+      .videoThumbail {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        cursor: pointer;
+        z-index: 90;
+        object-fit: cover;
+      }
+
+      .videoDetails {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.75rem;
+        z-index: 80;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        padding: 0.5rem;
+
+        .clientContainer {
+          width: fit-content;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.75rem;
+          justify-content: center;
+        }
+
+        .clientName {
+          font-size: 1.5rem;
+
+          @media screen and (width <= 1200px) {
+            font-size: clamp(1.25rem, 6vw, 0.5rem);
+          }
+
+          @media screen and (width <= 500px) {
+            font-size: clamp(0.8rem, 6vw, 0.5rem);
+          }
+        }
+
+        .campaignName {
+          font-size: 1rem;
+
+          @media screen and (width <= 1200px) {
+            font-size: clamp(0.75rem, 6vw, 0.3rem);
+          }
+
+          @media screen and (width <= 500px) {
+            font-size: clamp(0.6rem, 6vw, 0.3rem);
+          }
+        }
+
+        .lineThrough {
+          width: 65px;
+          height: 4px;
+          background-color: var(--adobe-purple);
+        }
+      }
     }
   }
 }
