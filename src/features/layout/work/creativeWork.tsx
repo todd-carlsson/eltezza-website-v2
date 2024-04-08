@@ -2,8 +2,7 @@ import { CreativeWorkData } from "@/types";
 import styles from "./work.module.scss";
 import classNames from "classnames";
 import { useRef, useState } from "react";
-import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
@@ -70,25 +69,24 @@ export function CreativeWork({ content }: CreativeWorkProps) {
             )}
             key={item.id}
           >
-            <AnimatePresence>
-              {hoveredVideo !== item.id && (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                >
-                  <Image
-                    className={classNames(styles.videoThumbail)}
-                    src={item.thumbnail}
-                    alt={item.src}
-                    onMouseEnter={() => playVideo(item.id)}
-                    onMouseLeave={() => pauseVideo(item.id)}
-                    width={500}
-                    height={400}
-                  />
-                </motion.div>
-              )}
-            </AnimatePresence>
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: hoveredVideo !== item.id ? 1 : 0 }}
+              className={classNames(styles.videoThumbail)}
+              src={item.thumbnail}
+              alt={item.src}
+              onMouseEnter={() => playVideo(item.id)}
+              onMouseLeave={() => pauseVideo(item.id)}
+            />
+            <motion.div
+              onMouseEnter={() => playVideo(item.id)}
+              onMouseLeave={() => pauseVideo(item.id)}
+              className={styles.videoDetails}
+            >
+              <h3 className={styles.campaignName}>Name of brand</h3>
+              <div className={styles.lineThrough} />
+              <p className={styles.brandName}>Campaign</p>
+            </motion.div>
             <video
               className={classNames(styles.creativeVideo)}
               poster={item.thumbnail}
@@ -104,7 +102,6 @@ export function CreativeWork({ content }: CreativeWorkProps) {
                 }
               }}
               muted
-              // autoPlay
               loop
               preload="metadata"
             >
