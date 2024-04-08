@@ -83,9 +83,9 @@ export function CreativeWork({ content }: CreativeWorkProps) {
               onMouseLeave={() => pauseVideo(item.id)}
               className={styles.videoDetails}
             >
-              <h3 className={styles.campaignName}>Name of brand</h3>
+              <h3 className={styles.clientName}>{item.client}</h3>
               <div className={styles.lineThrough} />
-              <p className={styles.brandName}>Campaign</p>
+              <p className={styles.campaignName}>{item.campaign}</p>
             </motion.div>
             <video
               className={classNames(styles.creativeVideo)}

@@ -72,7 +72,7 @@
         height: 100%;
         cursor: pointer;
         border-radius: 12px;
-        opacity: 0.6;
+        opacity: 0.5;
         position: relative;
         z-index: 60;
       }
@@ -84,6 +84,7 @@
         border-radius: 12px;
         cursor: pointer;
         z-index: 90;
+        object-fit: cover;
       }
 
       .videoDetails {
@@ -99,11 +100,11 @@
         text-transform: uppercase;
         font-weight: 500;
 
-        .campaignName {
+        .clientName {
           font-size: 1.5rem;
         }
 
-        .brandName {
+        .campaignName {
           font-size: 1rem;
         }
 
