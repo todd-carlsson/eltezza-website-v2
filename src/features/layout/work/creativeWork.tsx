@@ -1,6 +1,7 @@
 import { CreativeWorkData } from "@/types";
 import styles from "./work.module.scss";
 import classNames from "classnames";
+import { useRef } from "react";
 
 interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
@@ -13,6 +14,34 @@ export function CreativeWork({ content }: CreativeWorkProps) {
     } else if (size === "medium") {
       return styles.gridColSpanThree;
     } else return styles.gridColSpanTwo;
+  }
+
+  const itemsRef = useRef<null | Map<string, HTMLVideoElement>>(null);
+
+  function playVideo(itemId: string) {
+    const map = getMap();
+    if (map !== null) {
+      const node = map.get(itemId);
+      node !== undefined && node.play();
+    }
+  }
+
+  function pauseVideo(itemId: string) {
+    const map = getMap();
+    if (map !== null) {
+      const node = map.get(itemId);
+      if (node !== undefined) {
+        node.load();
+      }
+    }
+  }
+
+  function getMap() {
+    if (!itemsRef.current) {
+      // Initialize the Map on first usage.
+      itemsRef.current = new Map();
+    }
+    return itemsRef.current;
   }
 
   return (
@@ -36,6 +65,16 @@ export function CreativeWork({ content }: CreativeWorkProps) {
             poster={item.thumbnail}
             key={item.id}
             src={item.src}
+            onMouseEnter={() => playVideo(item.id)}
+            onMouseLeave={() => pauseVideo(item.id)}
+            ref={(node) => {
+              const map = getMap();
+              if (node) {
+                map.set(item.id, node);
+              } else {
+                map.delete(item.id);
+              }
+            }}
             muted
             // autoPlay
             loop
