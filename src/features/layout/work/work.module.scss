@@ -62,10 +62,25 @@
       grid-column: span 2;
     }
 
-    .creativeVideo {
+    .creativeVideoContainer {
+      position: relative;
       width: 100%;
-      cursor: pointer;
-      border-radius: 12px;
+      height: fit-content;
+
+      .creativeVideo {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        border-radius: 12px;
+      }
+
+      .videoThumbail {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        cursor: pointer;
+      }
     }
   }
 }

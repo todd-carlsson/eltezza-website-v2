@@ -1,7 +1,9 @@
 import { CreativeWorkData } from "@/types";
 import styles from "./work.module.scss";
 import classNames from "classnames";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
@@ -17,8 +19,10 @@ export function CreativeWork({ content }: CreativeWorkProps) {
   }
 
   const itemsRef = useRef<null | Map<string, HTMLVideoElement>>(null);
+  const [hoveredVideo, setHoveredVideo] = useState("-1");
 
   function playVideo(itemId: string) {
+    setHoveredVideo(itemId);
     const map = getMap();
     if (map !== null) {
       const node = map.get(itemId);
@@ -27,11 +31,13 @@ export function CreativeWork({ content }: CreativeWorkProps) {
   }
 
   function pauseVideo(itemId: string) {
+    setHoveredVideo("-1");
     const map = getMap();
     if (map !== null) {
       const node = map.get(itemId);
       if (node !== undefined) {
-        node.load();
+        node.pause();
+        node.currentTime = 0;
       }
     }
   }
@@ -57,31 +63,54 @@ export function CreativeWork({ content }: CreativeWorkProps) {
       </div>
       <div className={styles.creativeGrid}>
         {content.map((item) => (
-          <video
+          <div
             className={classNames(
-              styles.creativeVideo,
+              styles.creativeVideoContainer,
               getVideoColumnSize(item.size),
             )}
-            poster={item.thumbnail}
             key={item.id}
-            src={item.src}
-            onMouseEnter={() => playVideo(item.id)}
-            onMouseLeave={() => pauseVideo(item.id)}
-            ref={(node) => {
-              const map = getMap();
-              if (node) {
-                map.set(item.id, node);
-              } else {
-                map.delete(item.id);
-              }
-            }}
-            muted
-            // autoPlay
-            loop
-            preload="metadata"
           >
-            <source src={item.src} />
-          </video>
+            <AnimatePresence>
+              {hoveredVideo !== item.id && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  <Image
+                    className={classNames(styles.videoThumbail)}
+                    src={item.thumbnail}
+                    alt={item.src}
+                    onMouseEnter={() => playVideo(item.id)}
+                    onMouseLeave={() => pauseVideo(item.id)}
+                    width={500}
+                    height={400}
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
+            <video
+              className={classNames(styles.creativeVideo)}
+              poster={item.thumbnail}
+              src={item.src}
+              onMouseEnter={() => playVideo(item.id)}
+              onMouseLeave={() => pauseVideo(item.id)}
+              ref={(node) => {
+                const map = getMap();
+                if (node) {
+                  map.set(item.id, node);
+                } else {
+                  map.delete(item.id);
+                }
+              }}
+              muted
+              // autoPlay
+              loop
+              preload="metadata"
+            >
+              <source src={item.src} type="video/mp4" />
+            </video>
+          </div>
         ))}
       </div>
     </section>
