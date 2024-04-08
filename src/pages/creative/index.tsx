@@ -10,6 +10,7 @@ import {
   services,
   teamDescription,
   teamMockData,
+  testimonialsData,
 } from "@/constants";
 import {
   Hero,
@@ -60,7 +61,7 @@ export default function CreativePage() {
       <Brands content={brandsMockData.creative} columns={3} />
       <Process content={ourProcess.creative} color={color} />
       <Team description={teamDescription.creative} content={teamMockData} />
-      <Reviews />
+      <Reviews content={testimonialsData} />
       <Accordion content={faqs.creative} color={color} variant="faq" />
       <Contact text="create" onOpen={() => setShowModal(true)} />
       <Portal>

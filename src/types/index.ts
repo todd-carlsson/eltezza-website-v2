@@ -53,3 +53,10 @@ export type AccordionData = {
   description: string;
   wrap: boolean;
 };
+
+export type TestimonialsData = {
+  id: string;
+  review: string;
+  name: string;
+  role: string;
+};

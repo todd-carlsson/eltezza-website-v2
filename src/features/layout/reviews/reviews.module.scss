@@ -1,3 +1,33 @@
 .reviews {
   width: 100%;
+  margin-top: 100px;
+  margin-bottom: 65px;
+  padding: 120px 0;
+
+  .reviewsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+
+    .reviewContainer {
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+
+      .reviewText {
+        font-family: var(--font-source-sans);
+      }
+
+      .reviewName {
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-top: 21px;
+      }
+
+      .reviewRole {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
