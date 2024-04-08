@@ -2,6 +2,7 @@
 import styles from "./hero.module.scss";
 import { CreativeHeroImgData, CreativeHeroVideoData } from "@/types";
 import classNames from "classnames";
+import Image from "next/image";
 
 interface CreativeHeroProps {
   video: Array<CreativeHeroVideoData>;
@@ -27,8 +28,10 @@ export function CreativeHero({ video, images }: CreativeHeroProps) {
         </video>
       ))}
       {images.map((item) => (
-        <img
+        <Image
           className={styles.creativeImg}
+          width={250}
+          height={250}
           key={item.id}
           src={item.src}
           alt={item.alt}
