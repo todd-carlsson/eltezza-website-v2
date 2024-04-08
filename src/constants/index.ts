@@ -669,33 +669,6 @@ export const teamMockData = [
   },
 ] as Array<TeamData>;
 
-export const btsMockData = [
-  {
-    id: "1",
-    src: "https://res-console.cloudinary.com/dz1q2q4li/media_explorer_thumbnails/a5ea9334c1eae54a7fc4639337a32c68/detailed",
-    alt: "Invited to be part of a panel for design students!",
-    isVideo: false,
-  },
-  {
-    id: "2",
-    src: "https://res.cloudinary.com/dz1q2q4li/video/upload/v1711147988/IMG_4320_ur55eh.mp4",
-    alt: "BTS Video",
-    isVideo: true,
-  },
-  {
-    id: "3",
-    src: "https://res-console.cloudinary.com/dz1q2q4li/media_explorer_thumbnails/7eb7e0d1a5c60ac647b8002f3d9127e4/detailed",
-    alt: "BTS Photo",
-    isVideo: false,
-  },
-  {
-    id: "4",
-    src: "https://res.cloudinary.com/dz1q2q4li/video/upload/v1711147983/IMG_4369_xbo7ve.mp4",
-    alt: "BTS Video 2",
-    isVideo: true,
-  },
-] as Array<BtsData>;
-
 export const btsData = {
   design: [
     {
@@ -783,5 +756,126 @@ export const btsData = {
       isVideo: false,
     },
   ] as Array<BtsData>,
-  creative: [],
+  creative: [
+    {
+      id: "1",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183208/EZ%20Website%20-%20Creative/BTS/Photos/Sharing_the_stage_with_other_awesome_agencies_fnds14.jpg",
+      alt: "Sharing the stage with other awesome agencies",
+      isVideo: false,
+    },
+    {
+      id: "2",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1711327348/EZ%20Website%20-%20Creative/BTS/Videos/IMG_2974_t7r7jz.mov",
+      alt: "Filming",
+      isVideo: true,
+    },
+    {
+      id: "3",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183143/EZ%20Website%20-%20Creative/BTS/Photos/Pradeep_qorjpw.jpg",
+      alt: "Pradeep!",
+      isVideo: false,
+    },
+    {
+      id: "4",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_62/v1711327348/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0289_zkbal1.mov",
+      alt: "Goju behind the scenes",
+      isVideo: true,
+    },
+    {
+      id: "5",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183099/EZ%20Website%20-%20Creative/BTS/Photos/Mo_Chris_Ben_hk4if5.jpg",
+      alt: "Mo, Chris and Ben",
+      isVideo: false,
+    },
+    {
+      id: "6",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_61/v1711327335/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0268_whzgtf.mov",
+      alt: "Dunk!",
+      isVideo: true,
+    },
+    {
+      id: "7",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183049/EZ%20Website%20-%20Creative/BTS/Photos/IMG_7073_kxjqe6.jpg",
+      alt: "Chris with Seltzers",
+      isVideo: false,
+    },
+    {
+      id: "8",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1711327333/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0265_pdzbv2.mov",
+      alt: "Slam that Rinse can",
+      isVideo: true,
+    },
+    {
+      id: "9",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183002/EZ%20Website%20-%20Creative/BTS/Photos/IMG_3067_ocmthz.jpg",
+      alt: "Vitality Bites BTS",
+      isVideo: false,
+    },
+    {
+      id: "10",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712182947/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0373_eg7qqi.jpg",
+      alt: "Vitality Bites Photoshoot",
+      isVideo: false,
+    },
+    {
+      id: "11",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712182886/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0293_jmaghr.jpg",
+      alt: "Filming setup",
+      isVideo: false,
+    },
+    {
+      id: "12",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_62/v1711327343/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0178_ljg1mh.mov",
+      alt: "Chris the Barista",
+      isVideo: true,
+    },
+    {
+      id: "13",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712182821/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0292_ol8zrs.jpg",
+      alt: "Hangin' the Goju bottle",
+      isVideo: false,
+    },
+    {
+      id: "14",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1711327343/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0162_rw3rlj.mov",
+      alt: "Video editing",
+      isVideo: true,
+    },
+    {
+      id: "15",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712182568/EZ%20Website%20-%20Creative/BTS/Photos/I_see_you_d7wnxc.jpg",
+      alt: "I see you!",
+      isVideo: false,
+    },
+    {
+      id: "16",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1711327318/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0152_yihkrx.mov",
+      alt: "Honey Soy Chicken BTS",
+      isVideo: true,
+    },
+    {
+      id: "17",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712182647/EZ%20Website%20-%20Creative/BTS/Photos/Give_us_ya_best_pose_wsanck.jpg",
+      alt: "Give us ya best pose!",
+      isVideo: false,
+    },
+    {
+      id: "18",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1711327310/EZ%20Website%20-%20Creative/BTS/Videos/Copy_of_IMG_0275_pxdxsc.mov",
+      alt: "Filming BTS",
+      isVideo: true,
+    },
+    {
+      id: "19",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183283/EZ%20Website%20-%20Creative/BTS/Photos/Danny_fowga4.jpg",
+      alt: "Danny!",
+      isVideo: false,
+    },
+    {
+      id: "20",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183244/EZ%20Website%20-%20Creative/BTS/Photos/Chris_CEO_qiaopi.jpg",
+      alt: "Chris CEO",
+      isVideo: false,
+    },
+  ] as Array<BtsData>,
 };
