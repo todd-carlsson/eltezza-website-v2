@@ -6,6 +6,7 @@ import {
   CreativeHeroVideoData,
   CreativeWorkData,
   TeamData,
+  TestimonialsData,
 } from "@/types";
 
 // WEBSITE INFO
@@ -480,6 +481,51 @@ export const creativeWorkData = [
     campaign: "Infinite alignment",
   },
 ] as Array<CreativeWorkData>;
+
+export const testimonialsData = [
+  {
+    id: "1",
+    review:
+      "Their professionalism and caring attitude really fits into our core values at Steve's, and they have become an awesome fit for us. They have truly gone above and beyond when it comes to promoting our brand and working with us, to ensure that we push out great content.They have enabled our brand over social media to reach heights that we thought were unachievable.",
+    name: "Steven Deans",
+    role: "Owner of Steve's Tyre Service & Auto Care",
+  },
+  {
+    id: "2",
+    review:
+      "Excellent team to deal with. They have collaborated with us on a lot of aspects including social media, ads, and a fresh re-brand, this has enabled us to become more recognizable as we aim to further expand to new locations. Most importantly they enjoy what they do.",
+    name: "Paul Leang",
+    role: "Director of Formosa Pacific Limited",
+  },
+  {
+    id: "3",
+    review:
+      "Highly recommend this team of young professionals. You can tell they put their heart and passion into their work - it is just quality. They hit deadlines, communication is very efficient and prompt. Eltezza is extremely responsive to feedback and they go above and beyond to deliver value.",
+    name: "Keonimana Shigematsu",
+    role: "Director of IKAIKA",
+  },
+  {
+    id: "4",
+    review:
+      "We are thankful for the splendid content, amazing brand identity, and beautifully interactive website. Eltezza has been with us since day one and we continue to find use for their services on an ongoing basis for video ad campaigns. They truly served all our creative needs. Highly Recommended!",
+    name: "Aden Fareh",
+    role: "Public Relations at Cutly",
+  },
+  {
+    id: "5",
+    review:
+      "Great company to deal with. Made everything easy to understand, and worked with us around our busy schedule. Always bright, bubbly, friendly, and willing to lend a hand if we got stuck. Not to mention that they customized our website to develop something that truly reflected what we wanted for our business. We have no hesitations in recommending Eltezza.",
+    name: "Sean Cupples",
+    role: "Director of Cupples Construction",
+  },
+  {
+    id: "6",
+    review:
+      "We engaged Eltezza for the animation of a corporate project for one of Australia's well-known brands, and it was an absolute pleasure. They comprehended the brief exceptionally well and executed it with precision. The client was extremely satisfied!",
+    name: "Arielle Thomas",
+    role: "CinemaThom",
+  },
+] as Array<TestimonialsData>;
 
 export const brandsMockData = {
   design: [

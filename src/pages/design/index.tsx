@@ -9,6 +9,7 @@ import {
   teamMockData,
   faqs,
   btsData,
+  testimonialsData,
 } from "@/constants";
 import {
   Hero,
@@ -22,6 +23,7 @@ import {
   Contact,
   Portal,
   FormModal,
+  Reviews,
 } from "@/features/layout";
 import { Marquee } from "@/features/ui";
 import useWindowSize from "@/hooks/useWindowSize";
@@ -67,6 +69,7 @@ export default function DesignPage() {
       <Brands content={brandsMockData.design} columns={4} />
       <Process content={ourProcess.design} color={color} />
       <Team description={teamDescription.design} content={teamMockData} />
+      <Reviews content={testimonialsData} />
       <Accordion content={faqs.design} color={color} variant="faq" />
       <Contact onOpen={() => setShowModal(true)} text={page} />
       <Portal>
