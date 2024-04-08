@@ -42,7 +42,7 @@ export function BTS({ content, page }: BTSProps) {
         {/* HIDDEN */}
         {content[hiddenImage].isVideo ? (
           <motion.video
-            key={"1"}
+            key={"-1"}
             variants={animationVariant}
             animate="animate"
             initial="initial"
@@ -53,7 +53,7 @@ export function BTS({ content, page }: BTSProps) {
           </motion.video>
         ) : (
           <motion.img
-            key={"1"}
+            key={"-1"}
             variants={animationVariant}
             animate="animate"
             initial="initial"
