@@ -83,9 +83,49 @@ export function CreativeWork({ content }: CreativeWorkProps) {
               onMouseLeave={() => pauseVideo(item.id)}
               className={styles.videoDetails}
             >
-              <h3 className={styles.clientName}>{item.client}</h3>
-              <div className={styles.lineThrough} />
-              <p className={styles.campaignName}>{item.campaign}</p>
+              <div className={styles.clientContainer}>
+                <motion.h3
+                  initial={{
+                    y: 10,
+                    opacity: 0,
+                  }}
+                  animate={{
+                    y: hoveredVideo === item.id ? 0 : 10,
+                    opacity: 1,
+                    transition: {
+                      duration: 0.17,
+                    },
+                  }}
+                  className={styles.clientName}
+                >
+                  {item.client}
+                </motion.h3>
+                <motion.div
+                  className={styles.lineThrough}
+                  initial={{
+                    width: 0,
+                  }}
+                  animate={{
+                    width: hoveredVideo === item.id ? 50 : 0,
+                  }}
+                />
+              </div>
+              <motion.p
+                initial={{
+                  y: -10,
+                  opacity: 0,
+                }}
+                animate={{
+                  y: hoveredVideo === item.id ? 0 : -10,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.17,
+                  },
+                }}
+                className={styles.campaignName}
+              >
+                {item.campaign}
+              </motion.p>
             </motion.div>
             <video
               className={classNames(styles.creativeVideo)}
