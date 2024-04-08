@@ -342,9 +342,9 @@ export const creativeHeroData = {
   video: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_50/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_40/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
       thumbnail:
-        "https://res-console.cloudinary.com/dsxzhd4c2/thumbnails/v1/video/upload/v1711497920/RVogV2Vic2l0ZSAtIENyZWF0aXZlL1dvcmsgU2VjdGlvbi9FYXRraW5kYV9XZWJzaXRlX1ZpZGVvX2Rxb2hiZA==/drilldown",
+        "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187412/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/EatKinda_TN_yclerg.jpg",
     },
   ] as Array<CreativeHeroVideoData>,
   images: [
