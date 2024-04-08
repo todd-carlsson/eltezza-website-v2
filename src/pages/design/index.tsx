@@ -22,6 +22,7 @@ import {
   Contact,
   Portal,
   FormModal,
+  Reviews,
 } from "@/features/layout";
 import { Marquee } from "@/features/ui";
 import useWindowSize from "@/hooks/useWindowSize";
@@ -67,6 +68,7 @@ export default function DesignPage() {
       <Brands content={brandsMockData.design} columns={4} />
       <Process content={ourProcess.design} color={color} />
       <Team description={teamDescription.design} content={teamMockData} />
+      <Reviews />
       <Accordion content={faqs.design} color={color} variant="faq" />
       <Contact onOpen={() => setShowModal(true)} text={page} />
       <Portal>

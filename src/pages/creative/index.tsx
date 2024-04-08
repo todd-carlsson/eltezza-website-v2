@@ -24,6 +24,7 @@ import {
   Contact,
   Portal,
   FormModal,
+  Reviews,
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
@@ -59,6 +60,7 @@ export default function CreativePage() {
       <Brands content={brandsMockData.creative} columns={3} />
       <Process content={ourProcess.creative} color={color} />
       <Team description={teamDescription.creative} content={teamMockData} />
+      <Reviews />
       <Accordion content={faqs.creative} color={color} variant="faq" />
       <Contact text="create" onOpen={() => setShowModal(true)} />
       <Portal>
