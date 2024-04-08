@@ -48,8 +48,9 @@ export function BTS({ content, page }: BTSProps) {
             initial="initial"
             className={classNames(styles.btsImg, styles.hiddenImage)}
             muted
+            preload="metadata"
           >
-            <source src={content[hiddenImage].src} />
+            <source src={content[hiddenImage].src} type="video/mp4" />
           </motion.video>
         ) : (
           <motion.img
@@ -71,11 +72,12 @@ export function BTS({ content, page }: BTSProps) {
             initial="initial"
             className={styles.btsImg}
             src={content[activeImage].src}
+            preload="metadata"
             autoPlay
             loop
             muted
           >
-            <source src={content[activeImage].src} />
+            <source src={content[activeImage].src} type="video/mp4" />
           </motion.video>
         ) : (
           <motion.img

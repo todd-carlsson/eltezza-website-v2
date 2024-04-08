@@ -1,6 +1,6 @@
 import {
   brandsMockData,
-  btsMockData,
+  btsData,
   creativeHeroData,
   creativeWorkData,
   faqs,
@@ -55,7 +55,7 @@ export default function CreativePage() {
       </div>
       <CreativeWork content={creativeWorkData} />
       <Accordion content={services.creative} color={color} variant="services" />
-      <BTS content={btsMockData} page={page} />
+      <BTS content={btsData.creative} page={page} />
       <Brands content={brandsMockData.creative} columns={3} />
       <Process content={ourProcess.creative} color={color} />
       <Team description={teamDescription.creative} content={teamMockData} />
