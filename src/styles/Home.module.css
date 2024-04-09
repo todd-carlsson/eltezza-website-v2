@@ -22,12 +22,19 @@
 }
 
 .designPageCarousel {
-  width: 40%;
+  width: 43%;
+  min-width: 520px;
   display: flex;
   gap: 2rem;
   height: 100vh;
   position: relative;
   top: -100px;
+}
+
+@media screen and (width <= 1250px) {
+  .designPageCarousel {
+    min-width: 43%;
+  }
 }
 
 @media screen and (width <= 800px) {
