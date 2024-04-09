@@ -10,6 +10,7 @@ import {
   faqs,
   btsData,
   testimonialsData,
+  designCarouselData,
 } from "@/constants";
 import {
   Hero,
@@ -64,7 +65,7 @@ export default function DesignPage() {
           </div>
         )}
       </div>
-      <DesignWork content={landingPageMockData} />
+      <DesignWork content={designCarouselData} />
       <Services content={services.design} color={color} />
       <BTS content={btsData.design} page={page} />
       <Brands content={brandsMockData.design} columns={4} />

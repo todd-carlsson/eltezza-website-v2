@@ -1,5 +1,3 @@
-"use client";
-
 import { CarouselData } from "@/types";
 import styles from "./work.module.scss";
 import { Marquee } from "@/features/ui";

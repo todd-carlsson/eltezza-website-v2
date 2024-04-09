@@ -307,6 +307,7 @@ export const landingPageMockData = [
     title: "Branding",
     subTitle: "Rise above the noise",
     link: "www.eltezza.com",
+    isVideo: false,
   },
   {
     id: "2",
@@ -314,6 +315,7 @@ export const landingPageMockData = [
     title: "Web Design",
     subTitle: "Rise above the noise",
     link: "www.eltezza.com",
+    isVideo: false,
   },
   {
     id: "3",
@@ -321,6 +323,7 @@ export const landingPageMockData = [
     title: "Reels|Social Media",
     subTitle: "Rise above the noise",
     link: "www.eltezza.com",
+    isVideo: false,
   },
   {
     id: "4",
@@ -328,6 +331,7 @@ export const landingPageMockData = [
     title: "Graphic Design",
     subTitle: "Rise above the noise",
     link: "www.eltezza.com",
+    isVideo: false,
   },
   {
     id: "5",
@@ -335,6 +339,7 @@ export const landingPageMockData = [
     title: "Web Design",
     subTitle: "Rise above the noise",
     link: "www.eltezza.com",
+    isVideo: false,
   },
 ] as Array<CarouselData>;
 
@@ -360,6 +365,58 @@ export const creativeHeroData = {
     },
   ] as Array<CreativeHeroImgData>,
 };
+
+export const designCarouselData = [
+  {
+    id: "1",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637870/EZ%20Website%20-%20Design/Work%20Section%20Carousel/edmund_website_gdnyzr.jpg",
+    alt: "Edmund Website",
+    badge: "Web Design",
+    isVideo: false,
+  },
+  {
+    id: "2",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637974/EZ%20Website%20-%20Design/Work%20Section%20Carousel/phillipines_website_o0zb9x.jpg",
+    alt: "Philippines Travel Website",
+    badge: "Web Design",
+    isVideo: false,
+  },
+  {
+    id: "3",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638353/EZ%20Website%20-%20Design/Work%20Section%20Carousel/black_pearl_branding_ypwjz5.jpg",
+    alt: "Black Pearl Cafe Branding",
+    badge: "Branding",
+    isVideo: false,
+  },
+  {
+    id: "4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638400/EZ%20Website%20-%20Design/Work%20Section%20Carousel/uptania_branding_pvkykm.jpg",
+    alt: "Uptania Branding",
+    badge: "Branding",
+    isVideo: false,
+  },
+  {
+    id: "5",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638242/EZ%20Website%20-%20Design/Work%20Section%20Carousel/steves_black_sox_bpz5uv.jpg",
+    alt: "Steve's Tyre Service",
+    badge: "Social Media",
+    isVideo: false,
+  },
+  {
+    id: "6",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
+    alt: "Peak Performance",
+    badge: "Social Media",
+    isVideo: false,
+  },
+  {
+    id: "7",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_40/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    alt: "Ikaika Motivational Reel",
+    badge: "Reels",
+    isVideo: true,
+  },
+] as Array<CarouselData>;
 
 export const creativeWorkData = [
   {

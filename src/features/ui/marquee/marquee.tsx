@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./marquee.module.scss";
 import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";

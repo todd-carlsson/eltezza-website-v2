@@ -22,13 +22,25 @@ export function CarouselItem({
         !imageOnly && styles.withContent,
       )}
     >
-      <Image
-        className={styles.carouselCardImg}
-        src={data.src}
-        alt="image"
-        height={100}
-        width={100}
-      />
+      {!data.isVideo ? (
+        <Image
+          className={styles.carouselCardImg}
+          src={data.src}
+          alt={data.alt ? data.alt : "image"}
+          height={100}
+          width={100}
+        />
+      ) : (
+        <video
+          className={styles.carouselCardImg}
+          autoPlay
+          loop
+          muted
+          preload="metadata"
+        >
+          <source src={data.src} />
+        </video>
+      )}
       {!imageOnly && (
         <div className={styles.carouselInfo}>
           <h3 className={styles.carouselTitle}>{data.title}</h3>
