@@ -4,12 +4,14 @@ import {
   pageTags,
   services,
   ourProcess,
-  landingPageMockData,
   teamDescription,
   teamMockData,
   faqs,
   btsData,
   testimonialsData,
+  designCarouselData,
+  designMarqueeLeftData,
+  designMarqueeRightData,
 } from "@/constants";
 import {
   Hero,
@@ -54,17 +56,19 @@ export default function DesignPage() {
               isReversed
               orientation="vertical"
               imageOnly
-              content={landingPageMockData}
+              content={designMarqueeLeftData}
+              width={300}
             />
             <Marquee
               orientation="vertical"
               imageOnly
-              content={landingPageMockData}
+              content={designMarqueeRightData}
+              width={300}
             />
           </div>
         )}
       </div>
-      <DesignWork content={landingPageMockData} />
+      <DesignWork content={designCarouselData} />
       <Services content={services.design} color={color} />
       <BTS content={btsData.design} page={page} />
       <Brands content={brandsMockData.design} columns={4} />

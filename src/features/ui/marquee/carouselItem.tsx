@@ -7,12 +7,16 @@ interface CarouselItemProps {
   data: CarouselData;
   imageOnly: boolean;
   ariaHidden?: boolean;
+  width?: number;
+  height?: number;
 }
 
 export function CarouselItem({
   data,
   imageOnly,
   ariaHidden = false,
+  width,
+  height,
 }: CarouselItemProps) {
   return (
     <div
@@ -22,13 +26,33 @@ export function CarouselItem({
         !imageOnly && styles.withContent,
       )}
     >
-      <Image
-        className={styles.carouselCardImg}
-        src={data.src}
-        alt="image"
-        height={100}
-        width={100}
-      />
+      {!data.isVideo ? (
+        <Image
+          className={styles.carouselCardImg}
+          src={data.src}
+          alt={data.alt ? data.alt : "image"}
+          height={height ? height : 300}
+          width={width ? width : 300}
+          style={{
+            width: width ? width : "auto",
+            height: height ? height : "auto",
+          }}
+        />
+      ) : (
+        <video
+          className={styles.carouselCardImg}
+          autoPlay
+          loop
+          muted
+          preload="metadata"
+          style={{
+            width: width ? width : "auto",
+            height: height ? height : "auto",
+          }}
+        >
+          <source src={data.src} />
+        </video>
+      )}
       {!imageOnly && (
         <div className={styles.carouselInfo}>
           <h3 className={styles.carouselTitle}>{data.title}</h3>
