@@ -5,14 +5,20 @@
   padding: 120px 0;
 
   .reviewsContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    width: max-content;
     margin-top: 30px;
+    cursor: pointer;
+
+    &:active {
+      cursor: grab;
+    }
 
     .reviewContainer {
       padding: 4rem;
       display: flex;
       flex-direction: column;
+      max-width: 33vw;
       gap: 9px;
 
       .reviewText {
