@@ -31,8 +31,8 @@ export function CarouselItem({
           className={styles.carouselCardImg}
           src={data.src}
           alt={data.alt ? data.alt : "image"}
-          height={height ? height : 100}
-          width={width ? width : 100}
+          height={height ? height : 300}
+          width={width ? width : 300}
           style={{
             width: width ? width : "auto",
             height: height ? height : "auto",
