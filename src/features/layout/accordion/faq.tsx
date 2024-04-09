@@ -29,7 +29,7 @@ export function Faq({ content, color }: AccordionProps) {
 
   function getTitleAnimation(id: string) {
     if (windowWidth > 800) {
-      if (active === id) return -45;
+      if (active === id) return -40;
       else return 0;
     } else return 0;
   }
@@ -37,16 +37,8 @@ export function Faq({ content, color }: AccordionProps) {
   function getDescriptionAnimation(id: string) {
     if (windowWidth > 800) {
       if (active === id) return 0;
-      else return 40;
+      else return 20;
     } else return 0;
-  }
-
-  function getDescriptionPosition(id: string) {
-    if (active === id && windowWidth <= 800) {
-      return "relative";
-    } else if (windowWidth > 800 && active !== id) {
-      return "absolute";
-    } else return "relative";
   }
   return (
     <div id="faqs" className={styles.accordion}>
@@ -67,7 +59,7 @@ export function Faq({ content, color }: AccordionProps) {
           >
             <motion.h1
               initial={{
-                y: windowWidth > 800 ? -45 : 0,
+                y: windowWidth > 800 ? -40 : 0,
               }}
               animate={{
                 y: getTitleAnimation(item.id),
@@ -86,17 +78,14 @@ export function Faq({ content, color }: AccordionProps) {
               initial={{
                 opacity: 0,
                 y: windowWidth > 800 ? -20 : 0,
-                position: "absolute",
               }}
               animate={{
                 opacity: active === item.id || windowWidth <= 800 ? 1 : 0,
                 y: getDescriptionAnimation(item.id),
-                position: getDescriptionPosition(item.id),
               }}
               className={classNames(styles.descriptionFaq)}
               style={{
                 color: color === "--adobe-purple" ? "#fff" : "#000",
-                position: getDescriptionPosition(item.id),
               }}
             >
               {item.description}

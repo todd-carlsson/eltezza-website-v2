@@ -89,7 +89,8 @@
     align-items: flex-start;
     height: 240px;
     position: relative;
-    padding: 100px var(--content-padding);
+    padding: 0 var(--content-padding);
+    gap: 1rem;
 
     @media screen and (width <= 1000px) {
       height: 320px;
@@ -113,12 +114,15 @@
       @include description(max-content, 1rem);
 
       width: fit-content;
+      display: inline-block;
       position: absolute;
-      margin-top: 0.5rem;
+      margin-top: 3rem;
+      margin-right: var(--content-padding);
 
       @media screen and (width <= 800px) {
         position: relative;
         margin-top: 0;
+        margin-right: 0;
       }
     }
   }
