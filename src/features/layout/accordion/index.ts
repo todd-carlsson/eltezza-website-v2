@@ -1,1 +1,2 @@
-export { Accordion } from "./accordion";
+export { Services } from "./services";
+export { Faq } from "./faq";
