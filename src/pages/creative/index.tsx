@@ -16,7 +16,8 @@ import {
   Hero,
   CreativeHero,
   Navbar,
-  Accordion,
+  Services,
+  Faq,
   Process,
   CreativeWork,
   Team,
@@ -56,13 +57,13 @@ export default function CreativePage() {
         )}
       </div>
       <CreativeWork content={creativeWorkData} />
-      <Accordion content={services.creative} color={color} variant="services" />
+      <Services content={services.creative} color={color} />
       <BTS content={btsData.creative} page={page} />
       <Brands content={brandsMockData.creative} columns={3} />
       <Process content={ourProcess.creative} color={color} />
       <Team description={teamDescription.creative} content={teamMockData} />
       <Reviews content={testimonialsData} />
-      <Accordion content={faqs.creative} color={color} variant="faq" />
+      <Faq content={faqs.creative} color={color} />
       <Contact text="create" onOpen={() => setShowModal(true)} />
       <Portal>
         <FormModal

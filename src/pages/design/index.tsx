@@ -14,7 +14,8 @@ import {
 import {
   Hero,
   Navbar,
-  Accordion,
+  Services,
+  Faq,
   Brands,
   Process,
   DesignWork,
@@ -64,13 +65,13 @@ export default function DesignPage() {
         )}
       </div>
       <DesignWork content={landingPageMockData} />
-      <Accordion content={services.design} color={color} variant="services" />
+      <Services content={services.design} color={color} />
       <BTS content={btsData.design} page={page} />
       <Brands content={brandsMockData.design} columns={4} />
       <Process content={ourProcess.design} color={color} />
       <Team description={teamDescription.design} content={teamMockData} />
       <Reviews content={testimonialsData} />
-      <Accordion content={faqs.design} color={color} variant="faq" />
+      <Faq content={faqs.design} color={color} />
       <Contact onOpen={() => setShowModal(true)} text={page} />
       <Portal>
         <FormModal
