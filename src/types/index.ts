@@ -1,9 +1,12 @@
 export type CarouselData = {
   id: string;
   src: string;
-  title: string;
-  subTitle: string;
-  link: string;
+  title?: string;
+  subTitle?: string;
+  link?: string;
+  alt?: string;
+  badge?: string;
+  isVideo: boolean;
 };
 
 export type TeamData = {

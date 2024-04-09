@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./marquee.module.scss";
 import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
@@ -11,6 +9,9 @@ interface MarqueeProps {
   orientation: "vertical" | "horizontal";
   imageOnly?: boolean;
   isReversed?: boolean;
+  width?: number;
+  height?: number;
+  drag?: boolean;
 }
 
 export function Marquee({
@@ -18,11 +19,14 @@ export function Marquee({
   orientation,
   imageOnly = false,
   isReversed = false,
+  width,
+  height,
+  drag,
 }: MarqueeProps) {
   return (
     <div className={styles.carouselContainer}>
       <motion.div
-        drag="x"
+        drag={drag && "x"}
         dragConstraints={{ right: 0 }}
         className={classNames(
           styles.carouselTrack,
@@ -40,6 +44,8 @@ export function Marquee({
             key={item.id}
             imageOnly={imageOnly}
             data={item}
+            width={width}
+            height={height}
           ></CarouselItem>
         ))}
         {content.map((item) => (
@@ -48,6 +54,8 @@ export function Marquee({
             ariaHidden
             imageOnly={imageOnly}
             data={item}
+            width={width}
+            height={height}
           ></CarouselItem>
         ))}
       </motion.div>

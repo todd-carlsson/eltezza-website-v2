@@ -1,5 +1,3 @@
-"use client";
-
 import { Button, ButtonVariant } from "@/features/ui";
 import styles from "./hero.module.scss";
 
