@@ -2,7 +2,7 @@ import { TestimonialsData } from "@/types";
 import Review from "./review";
 import styles from "./reviews.module.scss";
 import { motion, useMotionValue } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface ReviewsProps {
   content: Array<TestimonialsData>;
@@ -12,14 +12,6 @@ const DRAG_BUFFER = 80;
 
 export function Reviews({ content }: ReviewsProps) {
   const [imgIndex, setImgIndex] = useState(0);
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (imgIndex < content.length - 2) {
-        setImgIndex((prevState) => prevState + 1);
-      }
-    }, 3000);
-  }, [imgIndex, content.length]);
 
   const dragX = useMotionValue(0);
 
