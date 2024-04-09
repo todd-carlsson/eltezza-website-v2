@@ -7,12 +7,16 @@ interface CarouselItemProps {
   data: CarouselData;
   imageOnly: boolean;
   ariaHidden?: boolean;
+  width?: number;
+  height?: number;
 }
 
 export function CarouselItem({
   data,
   imageOnly,
   ariaHidden = false,
+  width,
+  height,
 }: CarouselItemProps) {
   return (
     <div
@@ -27,8 +31,12 @@ export function CarouselItem({
           className={styles.carouselCardImg}
           src={data.src}
           alt={data.alt ? data.alt : "image"}
-          height={100}
-          width={100}
+          height={height ? height : 100}
+          width={width ? width : 100}
+          style={{
+            width: width ? width : "auto",
+            height: height ? height : "auto",
+          }}
         />
       ) : (
         <video
@@ -37,6 +45,10 @@ export function CarouselItem({
           loop
           muted
           preload="metadata"
+          style={{
+            width: width ? width : "auto",
+            height: height ? height : "auto",
+          }}
         >
           <source src={data.src} />
         </video>

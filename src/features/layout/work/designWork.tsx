@@ -20,7 +20,12 @@ export function DesignWork({ content }: WorkProps) {
         />
       </div>
       <div className={styles.carouselContainer}>
-        <Marquee imageOnly orientation="horizontal" content={content} />
+        <Marquee
+          imageOnly
+          orientation="horizontal"
+          content={content}
+          height={350}
+        />
       </div>
       <p className={styles.workDesignText}>
         Drag images left or right to view more designs

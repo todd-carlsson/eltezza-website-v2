@@ -24,6 +24,7 @@
 .designPageCarousel {
   width: 40%;
   display: flex;
+  gap: 2rem;
   height: 100vh;
   position: relative;
   top: -100px;

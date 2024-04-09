@@ -366,6 +366,60 @@ export const creativeHeroData = {
   ] as Array<CreativeHeroImgData>,
 };
 
+export const designMarqueeLeftData = [
+  {
+    id: "1",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
+    alt: "Peak Performance",
+    isVideo: false,
+  },
+  {
+    id: "2",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712640516/EZ%20Website%20-%20Design/Hero%20Marquee%20LEFT/lokl_gym_branding_b0kavo.jpg",
+    alt: "LOKL Gym",
+    isVideo: false,
+  },
+  {
+    id: "3",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637974/EZ%20Website%20-%20Design/Work%20Section%20Carousel/phillipines_website_o0zb9x.jpg",
+    alt: "Philippines Travel Website",
+    isVideo: false,
+  },
+  {
+    id: "4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712640773/EZ%20Website%20-%20Design/Hero%20Marquee%20LEFT/flanzy_branding_tkpepz.jpg",
+    alt: "Flanzy Branding",
+    isVideo: false,
+  },
+] as Array<CarouselData>;
+
+export const designMarqueeRightData = [
+  {
+    id: "1",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
+    alt: "Peak Performance",
+    isVideo: false,
+  },
+  {
+    id: "2",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712640516/EZ%20Website%20-%20Design/Hero%20Marquee%20LEFT/lokl_gym_branding_b0kavo.jpg",
+    alt: "LOKL Gym",
+    isVideo: false,
+  },
+  {
+    id: "3",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637974/EZ%20Website%20-%20Design/Work%20Section%20Carousel/phillipines_website_o0zb9x.jpg",
+    alt: "Philippines Travel Website",
+    isVideo: false,
+  },
+  {
+    id: "4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712640773/EZ%20Website%20-%20Design/Hero%20Marquee%20LEFT/flanzy_branding_tkpepz.jpg",
+    alt: "Flanzy Branding",
+    isVideo: false,
+  },
+] as Array<CarouselData>;
+
 export const designCarouselData = [
   {
     id: "1",
