@@ -113,15 +113,14 @@
     .descriptionFaq {
       @include description(max-content, 1rem);
 
-      width: fit-content;
+      width: calc(100vw - var(--content-padding) * 2);
       display: inline-block;
       position: absolute;
-      margin-top: 3rem;
       margin-right: var(--content-padding);
 
       @media screen and (width <= 800px) {
+        width: auto;
         position: relative;
-        margin-top: 0;
         margin-right: 0;
       }
     }
