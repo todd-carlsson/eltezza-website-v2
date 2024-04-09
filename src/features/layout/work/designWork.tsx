@@ -25,6 +25,7 @@ export function DesignWork({ content }: WorkProps) {
           orientation="horizontal"
           content={content}
           height={350}
+          drag
         />
       </div>
       <p className={styles.workDesignText}>

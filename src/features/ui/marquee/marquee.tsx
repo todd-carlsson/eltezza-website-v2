@@ -11,6 +11,7 @@ interface MarqueeProps {
   isReversed?: boolean;
   width?: number;
   height?: number;
+  drag?: boolean;
 }
 
 export function Marquee({
@@ -20,11 +21,12 @@ export function Marquee({
   isReversed = false,
   width,
   height,
+  drag,
 }: MarqueeProps) {
   return (
     <div className={styles.carouselContainer}>
       <motion.div
-        drag="x"
+        drag={drag && "x"}
         dragConstraints={{ right: 0 }}
         className={classNames(
           styles.carouselTrack,
