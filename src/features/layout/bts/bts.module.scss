@@ -3,23 +3,59 @@
   margin-top: 120px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0 var(--content-padding);
+  padding-left: 0;
+
+  @media screen and (width <=1000px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 0 var(--content-padding-sm);
+  }
 
   .btsContentContainer {
     display: flex;
     position: relative;
     width: 50%;
-    right: 420px;
+    right: calc(var(--content-padding) + 100px);
     padding: 0 var(--content-padding);
+
+    @media screen and (width <=1400px) {
+      right: 30vw;
+    }
+
+    @media screen and (width <=1180px) {
+      right: calc(39vw + 75px);
+    }
+
+    @media screen and (width <=1000px) {
+      right: 0;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      justify-content: flex-start;
+    }
 
     .btsImg {
       object-fit: cover;
       width: 420px;
       height: 500px;
-      position: relative;
+      max-height: calc(100% - 200px);
       margin-left: 3rem;
       min-width: 420px;
+
+      @media screen and (width <=1400px) {
+        height: 50vw;
+        width: auto;
+      }
+
+      @media screen and (width <=1000px) {
+        width: 100%;
+        min-width: 100%;
+        min-height: 400px;
+        margin-left: 0;
+      }
     }
 
     .hiddenImage {
@@ -30,29 +66,63 @@
     }
   }
 
+  // TEXT
+
   .textContainer {
     display: flex;
     flex-direction: column;
+
+    @media screen and (width <= 1000px) {
+      flex-direction: row;
+      gap: 0.75rem;
+    }
+
+    .mainImgCreative {
+      width: 200px;
+      height: auto;
+
+      @media screen and (width <=1000px) {
+        width: 60%;
+      }
+    }
 
     .textBlock {
       display: flex;
       align-items: center;
       gap: 1.25rem;
 
+      @media screen and (width <=1000px) {
+        gap: 0.5rem;
+      }
+
       .mainImgDesign {
         width: 200px;
         height: auto;
+
+        @media screen and (width <=1000px) {
+          width: 40%;
+        }
       }
 
       .secondaryImgDesign {
         height: 80px;
         width: auto;
+
+        @media screen and (width <=1000px) {
+          width: 20%;
+          height: 2.75rem;
+        }
       }
 
       .btsText {
         white-space: nowrap;
         text-align: left;
         align-self: center;
+        font-size: clamp(3rem, -0.5556rem + 7.1111vw, 6rem);
+
+        @media screen and (width <=1000px) {
+          font-size: 2.25rem;
+        }
       }
     }
   }
