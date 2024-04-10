@@ -5,13 +5,13 @@ import {
   services,
   ourProcess,
   teamDescription,
-  teamMockData,
   faqs,
   btsData,
   testimonialsData,
   designCarouselData,
   designMarqueeLeftData,
   designMarqueeRightData,
+  teamData,
 } from "@/constants";
 import {
   Hero,
@@ -73,7 +73,7 @@ export default function DesignPage() {
       <BTS content={btsData.design} page={page} />
       <Brands content={brandsMockData.design} columns={4} />
       <Process content={ourProcess.design} color={color} />
-      <Team description={teamDescription.design} content={teamMockData} />
+      <Team description={teamDescription.design} content={teamData.design} />
       <Reviews content={testimonialsData} />
       <Faq content={faqs.design} color={color} />
       <Contact onOpen={() => setShowModal(true)} text={page} />

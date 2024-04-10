@@ -8,8 +8,8 @@ import {
   ourProcess,
   pageTags,
   services,
+  teamData,
   teamDescription,
-  teamMockData,
   testimonialsData,
 } from "@/constants";
 import {
@@ -61,7 +61,10 @@ export default function CreativePage() {
       <BTS content={btsData.creative} page={page} />
       <Brands content={brandsMockData.creative} columns={3} />
       <Process content={ourProcess.creative} color={color} />
-      <Team description={teamDescription.creative} content={teamMockData} />
+      <Team
+        description={teamDescription.creative}
+        content={teamData.creative}
+      />
       <Reviews content={testimonialsData} />
       <Faq content={faqs.creative} color={color} />
       <Contact text="create" onOpen={() => setShowModal(true)} />

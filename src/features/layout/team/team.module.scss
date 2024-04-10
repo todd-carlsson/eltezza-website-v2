@@ -18,6 +18,36 @@
   .teamGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
     margin-top: 60px;
+
+    .memberContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-transform: uppercase;
+
+      .teamImg {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .memberName {
+        font-weight: 600;
+        color: #fff;
+      }
+
+      .lineThrough {
+        height: 1px;
+        width: 100%;
+        background: #fff;
+      }
+
+      .positionContainer {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   }
 }
