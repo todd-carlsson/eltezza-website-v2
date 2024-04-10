@@ -1,11 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
+import useWindowSize from "@/hooks/useWindowSize";
 import styles from "./bts.module.scss";
 import classNames from "classnames";
 
 export default function BTSText({ page }: { page: "design" | "creative" }) {
+  const [windowWidth] = useWindowSize();
   if (page === "design")
     return (
-      <>
+      <div>
         <div className={styles.textBlock}>
           <h1
             className={classNames("largeText", styles.btsText)}
@@ -35,32 +37,43 @@ export default function BTSText({ page }: { page: "design" | "creative" }) {
             <span className="textGradient"> CURTAINS</span>
           </h1>
         </div>
-      </>
+      </div>
     );
   else if (page === "creative")
     return (
       <>
-        <div className={styles.textBlock}>
-          <h1
-            className={classNames("largeText", styles.btsText)}
-            style={{ alignSelf: "flex-end" }}
-          >
-            THE
-          </h1>
+        <div>
+          <div className={styles.textBlock}>
+            <h1
+              className={classNames("largeText", styles.btsText)}
+              style={{ alignSelf: "flex-end" }}
+            >
+              THE
+            </h1>
+            {windowWidth > 1000 && (
+              <img
+                className={styles.mainImgCreative}
+                src="/images/bts_creative.svg"
+                alt="BTS Section"
+              />
+            )}
+          </div>
+          <div className={styles.textBlock}>
+            <h1 className={classNames("largeText", styles.btsText)}>PROCESS</h1>
+          </div>
+          <div className={styles.textBlock}>
+            <h1 className={classNames("largeText", styles.btsText)}>
+              IS <span className="textGradient">MESSY!</span>
+            </h1>
+          </div>
+        </div>
+        {windowWidth <= 1000 && (
           <img
-            className={styles.mainImgDesign}
+            className={styles.mainImgCreative}
             src="/images/bts_creative.svg"
             alt="BTS Section"
           />
-        </div>
-        <div className={styles.textBlock}>
-          <h1 className={classNames("largeText", styles.btsText)}>PROCESS</h1>
-        </div>
-        <div className={styles.textBlock}>
-          <h1 className={classNames("largeText", styles.btsText)}>
-            IS <span className="textGradient">MESSY!</span>
-          </h1>
-        </div>
+        )}
       </>
     );
 }
