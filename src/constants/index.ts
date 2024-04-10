@@ -5,6 +5,7 @@ import {
   CreativeHeroImgData,
   CreativeHeroVideoData,
   CreativeWorkData,
+  FeaturedReviewData,
   TeamData,
   TestimonialsData,
 } from "@/types";
@@ -342,6 +343,21 @@ export const landingPageMockData = [
     isVideo: false,
   },
 ] as Array<CarouselData>;
+
+export const featuredReviewData = {
+  design: {
+    review:
+      "Excellent team to deal with. They have collaborated with us on a lot of aspects including social media, ads, and a fresh re-brand, this has enabled us to become more recognizable as we aim to further expand to new locations. Most importantly they enjoy what they do.",
+    name: "Paul Leang, Director of Formosa Pacific Limited",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712712642/EZ%20Website%20-%20Design/Featured%20Review%20Image/paulleang_b0bajo.jpg",
+  } as FeaturedReviewData,
+  creative: {
+    review:
+      "We engaged Eltezza for the animation of a corporate project for one of Australia's well-known brands, and it was an absolute pleasure. They comprehended the brief exceptionally well and executed it with precision. The client was extremely satisfied!",
+    name: "Arielle Thomas, CinemaThom",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712712679/EZ%20Website%20-%20Creative/Featured%20Review%20Image/ariellethomas_s7hai7.jpg",
+  } as FeaturedReviewData,
+};
 
 export const creativeHeroData = {
   video: [
@@ -751,80 +767,90 @@ export const brandsMockData = {
   ] as Array<BrandsData>,
 };
 
-export const teamMockData = [
-  {
-    id: "1",
-    name: "Person 1",
-    src: "https://source.unsplash.com/random/?person",
-    position: "Position",
-  },
-  {
-    id: "2",
-    name: "Person 2",
-    src: "https://source.unsplash.com/random/?man",
-    position: "Position",
-  },
-  {
-    id: "3",
-    name: "Person 3",
-    src: "https://source.unsplash.com/random/?woman",
-    position: "Position",
-  },
-  {
-    id: "4",
-    name: "Person 4",
-    src: "https://source.unsplash.com/random/?dog",
-    position: "Position",
-  },
-  {
-    id: "5",
-    name: "Person 5",
-    src: "https://source.unsplash.com/random/?man,portrait",
-    position: "Position",
-  },
-  {
-    id: "6",
-    name: "Person 6",
-    src: "https://source.unsplash.com/random/?woman,glasses",
-    position: "Position",
-  },
-  {
-    id: "7",
-    name: "Person 7",
-    src: "https://source.unsplash.com/random/?man,smile",
-    position: "Position",
-  },
-  {
-    id: "8",
-    name: "Person 8",
-    src: "https://source.unsplash.com/random/?person,glasses,blonde",
-    position: "Position",
-  },
-  {
-    id: "9",
-    name: "Person 9",
-    src: "https://source.unsplash.com/random/?person,smile",
-    position: "Position",
-  },
-  {
-    id: "10",
-    name: "Person 10",
-    src: "https://source.unsplash.com/random/?person,funny",
-    position: "Position",
-  },
-  {
-    id: "11",
-    name: "Person 11",
-    src: "https://source.unsplash.com/random/?man,funny",
-    position: "Position",
-  },
-  {
-    id: "12",
-    name: "Person 12",
-    src: "https://source.unsplash.com/random/?person",
-    position: "Position",
-  },
-] as Array<TeamData>;
+export const teamData = {
+  design: [
+    {
+      id: "1",
+      name: "Shay Gillanders",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709619/EZ%20Website%20-%20Design/Team/Shay_Gillanders_-_Visual_Designer_ap1gci.jpg",
+      position: "Visual Designer",
+    },
+    {
+      id: "2",
+      name: "Pradeep Chhetri",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709592/EZ%20Website%20-%20Design/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
+      position: "Account Manager",
+    },
+    {
+      id: "3",
+      name: "Mo Eltayeb",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709569/EZ%20Website%20-%20Design/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
+      position: "Managing Director",
+    },
+    {
+      id: "4",
+      name: "Ilyas Megarbi",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709541/EZ%20Website%20-%20Design/Team/Ilyas_Megarbi_-_Graphic_Designer_vzcui1.jpg",
+      position: "Graphic Designer",
+    },
+    {
+      id: "5",
+      name: "Danilo Herrera",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709515/EZ%20Website%20-%20Design/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
+      position: "Business Strategist",
+    },
+    {
+      id: "6",
+      name: "Chris Teneza",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709488/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_qdk5rr.jpg",
+      position: "Creative Director",
+    },
+    {
+      id: "7",
+      name: "Aileen Banzagales",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709446/EZ%20Website%20-%20Design/Team/Aileen_Banzagales_-_Graphic_Designer_i8iyet.jpg",
+      position: "Graphic Designer",
+    },
+  ] as Array<TeamData>,
+  creative: [
+    {
+      id: "1",
+      name: "Shay Gillanders",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709619/EZ%20Website%20-%20Design/Team/Shay_Gillanders_-_Visual_Designer_ap1gci.jpg",
+      position: "Visual Designer",
+    },
+    {
+      id: "2",
+      name: "Pradeep Chhetri",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709592/EZ%20Website%20-%20Design/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
+      position: "Account Manager",
+    },
+    {
+      id: "3",
+      name: "Mo Eltayeb",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709569/EZ%20Website%20-%20Design/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
+      position: "Managing Director",
+    },
+    {
+      id: "4",
+      name: "King Raffy",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709685/EZ%20Website%20-%20Creative/Team/King_Raffy_-_Visual_Designer_bxau6w.jpg",
+      position: "Visual Designer",
+    },
+    {
+      id: "5",
+      name: "Danilo Herrera",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709515/EZ%20Website%20-%20Design/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
+      position: "Business Strategist",
+    },
+    {
+      id: "6",
+      name: "Chris Teneza",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709488/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_qdk5rr.jpg",
+      position: "Creative Director",
+    },
+  ],
+};
 
 export const btsData = {
   design: [

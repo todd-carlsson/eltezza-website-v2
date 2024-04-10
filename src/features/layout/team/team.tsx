@@ -1,15 +1,14 @@
-"use client";
-
 import { TeamData } from "@/types";
 import styles from "./team.module.scss";
-import Image from "next/image";
+import TeamMember from "./teamMember";
 
 interface TeamProps {
   content: Array<TeamData>;
   description: string;
+  color: "--ez-orange" | "--adobe-purple";
 }
 
-export function Team({ content, description }: TeamProps) {
+export function Team({ content, description, color }: TeamProps) {
   return (
     <section id="about" className={styles.teamSection}>
       <div className={styles.textContainer}>
@@ -24,14 +23,8 @@ export function Team({ content, description }: TeamProps) {
         <p className={styles.teamDescription}>{description}</p>
       </div>
       <div className={styles.teamGrid}>
-        {content.map((item) => (
-          <Image
-            key={item.id}
-            src={item.src}
-            alt={item.name}
-            width={250}
-            height={420}
-          />
+        {content.map((item, i) => (
+          <TeamMember key={item.id} member={item} index={i} color={color} />
         ))}
       </div>
     </section>

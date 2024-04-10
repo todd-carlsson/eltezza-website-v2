@@ -1,5 +1,8 @@
 import { Button, ButtonVariant } from "@/features/ui";
 import styles from "./hero.module.scss";
+import { FeaturedReview } from "../reviews";
+import { featuredReviewData } from "@/constants";
+import useWindowSize from "@/hooks/useWindowSize";
 
 interface HeroProps {
   page: "design" | "creative";
@@ -8,6 +11,7 @@ interface HeroProps {
 }
 
 export function Hero({ page, description, tags }: HeroProps) {
+  const [windowWidth] = useWindowSize();
   return (
     <div className={styles.heroContent}>
       <div
@@ -43,6 +47,9 @@ export function Hero({ page, description, tags }: HeroProps) {
           </Button>
         ))}
       </div>
+      {windowWidth > 1075 && (
+        <FeaturedReview content={featuredReviewData[page]} />
+      )}
     </div>
   );
 }
