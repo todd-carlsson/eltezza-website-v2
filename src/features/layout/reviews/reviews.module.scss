@@ -19,6 +19,8 @@
       display: flex;
       flex-direction: column;
       max-width: 33vw;
+      position: relative;
+      left: -33vw;
       gap: 9px;
 
       .reviewText {
