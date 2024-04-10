@@ -9,6 +9,12 @@ export type CarouselData = {
   isVideo: boolean;
 };
 
+export type FeaturedReviewData = {
+  review: string;
+  name: string;
+  src: string;
+};
+
 export type TeamData = {
   id: string;
   name: string;

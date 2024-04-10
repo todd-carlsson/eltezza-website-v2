@@ -37,3 +37,33 @@
     }
   }
 }
+
+// FEATURED REVIEW (HERO SECTION)
+
+.featuredReview {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 60px;
+
+  .reviewImage {
+    background: transparent;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .review {
+      color: rgb(229 231 235 / 60%);
+      font-size: 0.75rem;
+      font-style: italic;
+    }
+
+    .name {
+      color: var(--white-text);
+      font-size: 0.9rem;
+    }
+  }
+}
