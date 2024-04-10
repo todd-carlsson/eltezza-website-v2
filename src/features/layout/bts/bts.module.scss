@@ -77,14 +77,41 @@
       gap: 0.75rem;
     }
 
+    .mainImgCreative {
+      width: 200px;
+      height: auto;
+
+      @media screen and (width <=1000px) {
+        width: 60%;
+      }
+    }
+
     .textBlock {
       display: flex;
       align-items: center;
       gap: 1.25rem;
 
+      @media screen and (width <=1000px) {
+        gap: 0.5rem;
+      }
+
+      .mainImgDesign {
+        width: 200px;
+        height: auto;
+
+        @media screen and (width <=1000px) {
+          width: 40%;
+        }
+      }
+
       .secondaryImgDesign {
         height: 80px;
         width: auto;
+
+        @media screen and (width <=1000px) {
+          width: 20%;
+          height: 2.75rem;
+        }
       }
 
       .btsText {
@@ -98,14 +125,5 @@
         }
       }
     }
-  }
-}
-
-.mainImgDesign {
-  width: 200px;
-  height: auto;
-
-  @media screen and (width <=1000px) {
-    width: 60%;
   }
 }

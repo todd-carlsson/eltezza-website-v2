@@ -7,7 +7,7 @@ export default function BTSText({ page }: { page: "design" | "creative" }) {
   const [windowWidth] = useWindowSize();
   if (page === "design")
     return (
-      <>
+      <div>
         <div className={styles.textBlock}>
           <h1
             className={classNames("largeText", styles.btsText)}
@@ -37,7 +37,7 @@ export default function BTSText({ page }: { page: "design" | "creative" }) {
             <span className="textGradient"> CURTAINS</span>
           </h1>
         </div>
-      </>
+      </div>
     );
   else if (page === "creative")
     return (
@@ -52,7 +52,7 @@ export default function BTSText({ page }: { page: "design" | "creative" }) {
             </h1>
             {windowWidth > 1000 && (
               <img
-                className={styles.mainImgDesign}
+                className={styles.mainImgCreative}
                 src="/images/bts_creative.svg"
                 alt="BTS Section"
               />
@@ -69,7 +69,7 @@ export default function BTSText({ page }: { page: "design" | "creative" }) {
         </div>
         {windowWidth <= 1000 && (
           <img
-            className={styles.mainImgDesign}
+            className={styles.mainImgCreative}
             src="/images/bts_creative.svg"
             alt="BTS Section"
           />
