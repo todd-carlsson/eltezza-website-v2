@@ -14,6 +14,7 @@ export function Reviews({ content }: ReviewsProps) {
   const [imgIndex, setImgIndex] = useState(0);
 
   const dragX = useMotionValue(0);
+  // const scale = useTransform(dragX, [-DRAG_BUFFER, 0, DRAG_BUFFER], [1, 0.8, 1])
 
   function onDragEnd() {
     const x = dragX.get();
@@ -41,6 +42,10 @@ export function Reviews({ content }: ReviewsProps) {
         }}
         animate={{
           translateX: `-${imgIndex * 33}vw`,
+          transition: {
+            duration: 0.35,
+            type: "tween",
+          },
         }}
         className={styles.reviewsContainer}
       >
