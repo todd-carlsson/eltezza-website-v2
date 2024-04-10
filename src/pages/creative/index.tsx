@@ -64,6 +64,7 @@ export default function CreativePage() {
       <Team
         description={teamDescription.creative}
         content={teamData.creative}
+        color={color}
       />
       <Reviews content={testimonialsData} />
       <Faq content={faqs.creative} color={color} />

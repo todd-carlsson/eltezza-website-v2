@@ -5,9 +5,10 @@ import styles from "./team.module.scss";
 interface TeamMemberProps {
   member: TeamData;
   index: number;
+  color: "--ez-orange" | "--adobe-purple";
 }
 
-export default function TeamMember({ member, index }: TeamMemberProps) {
+export default function TeamMember({ member, index, color }: TeamMemberProps) {
   return (
     <div className={styles.memberContainer}>
       <Image
@@ -20,7 +21,12 @@ export default function TeamMember({ member, index }: TeamMemberProps) {
       />
       <p className={styles.memberName}>{member.name}</p>
       <div className={styles.lineThrough} />
-      <div className={styles.positionContainer}>
+      <div
+        className={styles.positionContainer}
+        style={{
+          color: `var(${color})`,
+        }}
+      >
         <p>{member.position}</p>
         <p>0{index + 1}</p>
       </div>
