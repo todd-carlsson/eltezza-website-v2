@@ -47,10 +47,10 @@
     padding: 70px var(--content-padding);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    height: 305px;
+    height: 285px;
 
     @media screen and (width <= 1000px) {
-      height: 320px;
+      height: 305px;
     }
 
     @media screen and (width <= 800px) {
