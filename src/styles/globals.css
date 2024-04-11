@@ -49,6 +49,12 @@ li {
   text-align: center;
 }
 
+@media screen and (width <=420px) {
+  .largeText {
+    font-size: clamp(2.75rem, 12vw, 4rem);
+  }
+}
+
 .textGradient {
   background: linear-gradient(
     90deg,
