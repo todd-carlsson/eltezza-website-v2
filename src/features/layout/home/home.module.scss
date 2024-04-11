@@ -56,11 +56,19 @@
       align-items: center;
       height: 100%;
 
+      @media screen and (width <= 1200px) {
+        flex-direction: column;
+      }
+
       .divider {
         height: calc(100vh - 82px);
         background-color: #fff;
         width: 2px;
         opacity: 0.5;
+
+        @media screen and (width <= 1200px) {
+          display: none;
+        }
       }
 
       .blurLeft {
@@ -75,6 +83,10 @@
           rgb(1 1 1 / 70%) 49.73%,
           rgb(1 1 1 / 0%) 100%
         );
+
+        @media screen and (width <= 1200px) {
+          display: none;
+        }
       }
 
       .blurRight {
@@ -89,6 +101,10 @@
           rgb(1 1 1 / 70%) 49.73%,
           rgb(1 1 1 / 0%) 100%
         );
+
+        @media screen and (width <= 1200px) {
+          display: none;
+        }
       }
 
       /* PAGE PORTAL */
