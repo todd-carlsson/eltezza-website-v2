@@ -1,3 +1,10 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -16,6 +23,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 1500px;
   padding: 0 var(--content-padding);
   position: relative;
   top: 100px;
@@ -26,7 +34,6 @@
   min-width: 520px;
   display: flex;
   gap: 2rem;
-  height: 100vh;
   position: relative;
   top: -100px;
 }
