@@ -29,11 +29,7 @@
     gap: 2rem;
     margin-top: 60px;
 
-    @media screen and (width <= 1130px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    @media screen and (width <= 950px) {
+    @media screen and (width <= 1050px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
