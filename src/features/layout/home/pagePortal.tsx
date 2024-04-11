@@ -66,7 +66,9 @@ export default function PagePortal({
             ))}
           </div>
           <Link href={`/${title}`}>
-            <Button variant={buttonVariant}>Enter</Button>
+            <Button className={styles.homeButton} variant={buttonVariant}>
+              Enter
+            </Button>
           </Link>
           <p style={{ display: "none" }}>{color}</p>
         </div>

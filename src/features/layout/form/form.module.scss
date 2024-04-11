@@ -1,4 +1,4 @@
-@mixin flex-center {
+@mixin flex-col-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,6 +8,7 @@
 .opacLayer {
   width: 100vw;
   height: 100vh;
+  left: 0;
   background-color: #000;
   position: absolute;
   z-index: 9998;
@@ -16,6 +17,7 @@
 
 .modalContainer {
   max-width: 500px;
+  width: 100vw;
   height: 100vh;
   padding: 30px 50px;
   background: rgb(0 0 1 / 90%);
@@ -79,14 +81,14 @@
   // SUBMIT SCREEN
 
   .submitScreenContainer {
-    @include flex-center;
+    @include flex-col-center;
 
     height: 100%;
     gap: 2rem;
     margin-top: 40px;
 
     .submitScreenText {
-      @include flex-center;
+      @include flex-col-center;
 
       gap: 1rem;
 

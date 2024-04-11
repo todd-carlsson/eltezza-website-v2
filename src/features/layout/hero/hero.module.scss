@@ -43,7 +43,7 @@
       }
 
       @media screen and (width <=400px) {
-        font-size: 3.2rem;
+        font-size: 3rem;
       }
 
       .headingGradient {
@@ -78,6 +78,17 @@
     @media screen and (width <=525px) {
       justify-content: center;
       max-width: calc(100vw - var(--content-padding-sm) * 2);
+    }
+  }
+
+  .creativeHeroTags {
+    @media screen and (width <=1250px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (width < 1075px) {
+      display: flex;
     }
   }
 }
