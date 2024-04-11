@@ -3,6 +3,10 @@
   padding: 0 var(--content-padding);
   margin: 120px 0;
 
+  @media screen and (width <= 800px) {
+    padding: 0 var(--content-padding-sm);
+  }
+
   .textContainer {
     display: flex;
     flex-direction: column;
@@ -12,6 +16,10 @@
     .teamDescription {
       font-family: var(--font-source-sans);
       max-width: 50%;
+
+      @media screen and (width <= 800px) {
+        max-width: none;
+      }
     }
   }
 
@@ -20,6 +28,14 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-top: 60px;
+
+    @media screen and (width <= 1050px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (width <= 500px) {
+      grid-template-columns: 1fr;
+    }
 
     .memberContainer {
       display: flex;
