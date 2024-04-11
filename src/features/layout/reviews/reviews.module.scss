@@ -10,6 +10,10 @@
     margin-top: 30px;
     cursor: pointer;
 
+    @media screen and (width <= 1000px) {
+      flex-direction: column;
+    }
+
     &:active {
       cursor: grab;
     }
@@ -21,6 +25,10 @@
       min-width: 33.333%;
       position: relative;
       gap: 9px;
+
+      @media screen and (width <= 800px) {
+        padding: 4rem var(--content-padding-sm);
+      }
 
       .reviewText {
         font-family: var(--font-source-sans);
