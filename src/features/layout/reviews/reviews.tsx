@@ -22,13 +22,23 @@ export function Reviews({ content }: ReviewsProps) {
     // If user drags to the right
     if (x <= -DRAG_BUFFER && imgIndex !== content.length - 1) {
       if (imgIndex >= content.length - 2) {
-        setImgIndex(1);
+        setImgIndex(0);
       } else setImgIndex((prevIndex) => prevIndex + 1);
-    } else if (x >= DRAG_BUFFER) {
+      console.log(imgIndex);
+    }
+    // If user drags to the left
+    else if (x >= DRAG_BUFFER) {
       if (imgIndex <= -1) {
         setImgIndex(content.length - 2);
       } else setImgIndex((prevIndex) => prevIndex - 1);
     }
+    console.log(imgIndex);
+  }
+
+  function getAnimationValue() {
+    if (imgIndex <= -1) {
+      return "+33.333vw";
+    } else return `-${imgIndex * 33.333}vw`;
   }
 
   return (
@@ -47,7 +57,7 @@ export function Reviews({ content }: ReviewsProps) {
           x: dragX,
         }}
         animate={{
-          translateX: `-${imgIndex * 33.333}vw`,
+          translateX: getAnimationValue(),
           transition: {
             duration: 0.35,
             type: "tween",
