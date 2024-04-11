@@ -6,7 +6,7 @@
 
   .reviewsContainer {
     display: flex;
-    width: max-content;
+    width: 100%;
     margin-top: 30px;
     cursor: pointer;
 
@@ -18,9 +18,8 @@
       padding: 4rem;
       display: flex;
       flex-direction: column;
-      max-width: 33vw;
+      min-width: 33.333%;
       position: relative;
-      left: -33vw;
       gap: 9px;
 
       .reviewText {

@@ -12,13 +12,14 @@ interface ReviewProps {
 export default function Review({ review, index, imgIndex }: ReviewProps) {
   return (
     <motion.div
+      layout
       initial={{
         scale: 0.8,
         opacity: 0.5,
       }}
       animate={{
-        scale: index === imgIndex + 2 ? 1 : 0.8,
-        opacity: index === imgIndex + 2 ? 1 : 0.5,
+        scale: index === imgIndex + 1 ? 1 : 0.8,
+        opacity: index === imgIndex + 1 ? 1 : 0.5,
       }}
       className={styles.reviewContainer}
     >
