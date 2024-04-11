@@ -12,6 +12,7 @@
 
     @media screen and (width <= 1000px) {
       flex-direction: column;
+      cursor: auto;
     }
 
     &:active {
