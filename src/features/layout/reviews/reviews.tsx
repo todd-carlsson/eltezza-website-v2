@@ -2,6 +2,7 @@ import { TestimonialsData } from "@/types";
 import Review from "./review";
 import styles from "./reviews.module.scss";
 import { motion, useMotionValue } from "framer-motion";
+import uuid from "react-uuid";
 import { useState } from "react";
 
 interface ReviewsProps {
@@ -14,14 +15,30 @@ export function Reviews({ content }: ReviewsProps) {
   const [imgIndex, setImgIndex] = useState(0);
 
   const dragX = useMotionValue(0);
+  // const scale = useTransform(dragX, [-DRAG_BUFFER, 0, DRAG_BUFFER], [1, 0.8, 1])
 
   function onDragEnd() {
     const x = dragX.get();
+    // If user drags to the right
     if (x <= -DRAG_BUFFER && imgIndex !== content.length - 1) {
-      setImgIndex((prevState) => prevState + 1);
-    } else if (x >= DRAG_BUFFER && imgIndex !== 0) {
-      setImgIndex((prevState) => prevState - 1);
+      if (imgIndex >= content.length - 2) {
+        setImgIndex(0);
+      } else setImgIndex((prevIndex) => prevIndex + 1);
+      console.log(imgIndex);
     }
+    // If user drags to the left
+    else if (x >= DRAG_BUFFER) {
+      if (imgIndex <= -1) {
+        setImgIndex(content.length - 2);
+      } else setImgIndex((prevIndex) => prevIndex - 1);
+    }
+    console.log(imgIndex);
+  }
+
+  function getAnimationValue() {
+    if (imgIndex <= -1) {
+      return "+33.333vw";
+    } else return `-${imgIndex * 33.333}vw`;
   }
 
   return (
@@ -40,12 +57,16 @@ export function Reviews({ content }: ReviewsProps) {
           x: dragX,
         }}
         animate={{
-          translateX: `-${imgIndex * 33}vw`,
+          translateX: getAnimationValue(),
+          transition: {
+            duration: 0.35,
+            type: "tween",
+          },
         }}
         className={styles.reviewsContainer}
       >
         {content.map((item, i) => (
-          <Review key={item.id} review={item} index={i} imgIndex={imgIndex} />
+          <Review key={uuid()} review={item} index={i} imgIndex={imgIndex} />
         ))}
       </motion.div>
     </section>

@@ -12,6 +12,7 @@ interface ReviewProps {
 export default function Review({ review, index, imgIndex }: ReviewProps) {
   return (
     <motion.div
+      layout
       initial={{
         scale: 0.8,
         opacity: 0.5,
