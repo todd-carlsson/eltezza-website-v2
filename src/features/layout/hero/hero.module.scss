@@ -80,6 +80,17 @@
       max-width: calc(100vw - var(--content-padding-sm) * 2);
     }
   }
+
+  .creativeHeroTags {
+    @media screen and (width <=1250px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (width < 1075px) {
+      display: flex;
+    }
+  }
 }
 
 // CREATIVE HERO SECTION

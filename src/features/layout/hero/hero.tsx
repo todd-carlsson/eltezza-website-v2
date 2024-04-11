@@ -3,6 +3,7 @@ import styles from "./hero.module.scss";
 import { FeaturedReview } from "../reviews";
 import { featuredReviewData } from "@/constants";
 import useWindowSize from "@/hooks/useWindowSize";
+import classNames from "classnames";
 
 interface HeroProps {
   page: "design" | "creative";
@@ -40,7 +41,12 @@ export function Hero({ page, description, tags }: HeroProps) {
       {/* DESCRIPTION */}
       <p className={styles.heroDescription}>{description}</p>
       {/* TAGS */}
-      <div className={styles.heroTags}>
+      <div
+        className={classNames(
+          styles.heroTags,
+          page === "creative" && styles.creativeHeroTags,
+        )}
+      >
         {tags.map((tag) => (
           <Button variant={ButtonVariant.main} key={tag}>
             {tag}
