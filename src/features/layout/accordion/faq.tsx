@@ -43,7 +43,7 @@ export function Faq({ content, color }: AccordionProps) {
   }
   return (
     <div id="faqs" className={styles.accordion}>
-      <p className={styles.heading}>FAQS</p>
+      <p className={classNames(styles.heading, styles.faqHeading)}>FAQS</p>
       <div>
         {content.map((item) => (
           <div
