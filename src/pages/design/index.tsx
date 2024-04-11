@@ -81,7 +81,7 @@ export default function DesignPage() {
       <Reviews content={testimonialsData} />
       <Faq content={faqs.design} color={color} />
       <Contact onOpen={() => setShowModal(true)} text={page} />
-      <Portal>
+      <Portal root="contact-root">
         <FormModal
           onClose={() => setShowModal(false)}
           showModal={showModal}
