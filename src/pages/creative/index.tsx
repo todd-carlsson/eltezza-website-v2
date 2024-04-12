@@ -69,7 +69,7 @@ export default function CreativePage() {
       <Reviews content={testimonialsData} />
       <Faq content={faqs.creative} color={color} />
       <Contact text="create" onOpen={() => setShowModal(true)} />
-      <Portal>
+      <Portal root="contact-root">
         <FormModal
           onClose={() => setShowModal(false)}
           showModal={showModal}

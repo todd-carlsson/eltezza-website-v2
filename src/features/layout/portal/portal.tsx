@@ -1,16 +1,21 @@
 import { useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 
-export function Portal({ children }: React.PropsWithChildren) {
+interface PortalProps {
+  root: string;
+  children: React.ReactNode;
+}
+
+export function Portal({ root, children }: PortalProps) {
   const ref = useRef<Element | null>(null);
   useEffect(() => {
-    ref.current = document.getElementById("contact-root");
-  }, []);
+    ref.current = document.getElementById(root);
+  }, [root]);
 
   return ref.current
     ? createPortal(
         <>{children}</>,
-        document.getElementById("contact-root") as HTMLElement,
+        document.getElementById(root) as HTMLElement,
       )
     : null;
 }

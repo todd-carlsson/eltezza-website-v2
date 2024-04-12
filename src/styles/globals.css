@@ -29,8 +29,6 @@ body {
   scroll-behavior: smooth;
   color: #fff;
   background-color: #000;
-  position: relative;
-  left: 0;
 }
 
 a {
