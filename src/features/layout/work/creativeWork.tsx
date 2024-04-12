@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Portal } from "../portal";
-import { IoMdExit } from "react-icons/io";
+import FullScreenVideo from "./components/fullScreenVideo";
 
 interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
@@ -59,22 +59,6 @@ export function CreativeWork({ content }: CreativeWorkProps) {
     return itemsRef.current;
   }
 
-  const animateUp = {
-    hidden: {
-      y: "100%",
-    },
-    visible: {
-      y: 0,
-      transition: {
-        duration: 0.3,
-        type: "tween",
-      },
-    },
-    exit: {
-      y: "100%",
-    },
-  };
-
   return (
     <section id="work" className={styles.workSectionCreative}>
       <div className={styles.textContainer}>
@@ -99,55 +83,10 @@ export function CreativeWork({ content }: CreativeWorkProps) {
             <Portal root="video-root">
               <AnimatePresence>
                 {openedVideo === item.id && (
-                  <motion.div
-                    onClick={removeFullVideo}
-                    className={styles.fullScreenContainer}
-                  >
-                    <motion.div
-                      initial={{
-                        opacity: 0,
-                      }}
-                      animate={{
-                        opacity: 0.8,
-                      }}
-                      exit={{
-                        opacity: 0,
-                      }}
-                      className={styles.opacLayer}
-                    />
-                    <motion.div
-                      variants={animateUp}
-                      initial="hidden"
-                      animate="visible"
-                      exit="exit"
-                      className={styles.fullVideoWrapper}
-                    >
-                      <div className={styles.exit}>
-                        <IoMdExit size={50} />
-                      </div>
-                      <motion.video
-                        variants={animateUp}
-                        initial="hidden"
-                        animate="visible"
-                        exit="exit"
-                        className={classNames(styles.creativeVideoFull)}
-                        poster={item.thumbnail}
-                        src={item.src}
-                        ref={(node) => {
-                          const map = getMap();
-                          if (node) {
-                            map.set(item.id, node);
-                          } else {
-                            map.delete(item.id);
-                          }
-                        }}
-                        controls
-                        preload="metadata"
-                      >
-                        <source src={item.src} type="video/mp4" />
-                      </motion.video>
-                    </motion.div>
-                  </motion.div>
+                  <FullScreenVideo
+                    video={item}
+                    removeFullVideo={removeFullVideo}
+                  />
                 )}
               </AnimatePresence>
             </Portal>
