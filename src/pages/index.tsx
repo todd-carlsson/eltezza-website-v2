@@ -14,31 +14,61 @@ export default function Home() {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="favicon/apple-touch-icon.png"
+          href="favicon-orange/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="favicon/favicon-32x32.png"
+          href="favicon-orange/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="favicon/favicon-16x16.png"
+          href="favicon-orange/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest"></link>
+        <link rel="manifest" href="favicon-orange/site.webmanifest"></link>
         <meta
           property="og:title"
           content="Eltezza | Rise above the noise"
           key="title"
         />
         <meta
-          property="og:description"
+          name="description"
           content="We move past generic concepts and incorporate unique conceptual elements to create inimitable identities. In other words, we make your brand worth looking at."
           key="description"
         />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://eltezza.com/" />
+        <meta property="og:title" content="Eltezza | Rise above the noise" />
+        <meta
+          property="og:description"
+          content="We move past generic concepts and incorporate unique conceptual elements to create inimitable identities. In other words, we make your brand worth looking at."
+        />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712889804/EZ%20Website%20-%20Misc/riseabovethenoise_ffeyu4.jpg"
+        />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://eltezza.com/" />
+        <meta
+          property="twitter:title"
+          content="Eltezza | Rise above the noise"
+        />
+        <meta
+          property="twitter:description"
+          content="We move past generic concepts and incorporate unique conceptual elements to create inimitable identities. In other words, we make your brand worth looking at."
+        />
+        <meta
+          property="twitter:image"
+          content="https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712889804/EZ%20Website%20-%20Misc/riseabovethenoise_ffeyu4.jpg"
+        />
+
+        {/* Meta Tags Generated with https://metatags.io */}
       </Head>
       <main className={classNames(styles.main, inter.className)}>
         <HomeComponent />
