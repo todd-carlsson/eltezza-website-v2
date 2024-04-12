@@ -2,7 +2,10 @@ import { CreativeWorkData } from "@/types";
 import styles from "./work.module.scss";
 import classNames from "classnames";
 import { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { Portal } from "../portal";
+import FullScreenVideo from "./components/fullScreenVideo";
+import VideoDetails from "./components/videoDetails";
 
 interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
@@ -19,6 +22,14 @@ export function CreativeWork({ content }: CreativeWorkProps) {
 
   const itemsRef = useRef<null | Map<string, HTMLVideoElement>>(null);
   const [hoveredVideo, setHoveredVideo] = useState("-1");
+  const [openedVideo, setOpenedVideo] = useState("-1");
+
+  function openFullVideo(itemId: string) {
+    setOpenedVideo(itemId);
+  }
+  function removeFullVideo() {
+    setOpenedVideo("-1");
+  }
 
   function playVideo(itemId: string) {
     setHoveredVideo(itemId);
@@ -69,64 +80,31 @@ export function CreativeWork({ content }: CreativeWorkProps) {
             )}
             key={item.id}
           >
+            {/* FULL SCREEN VIDEO */}
+            <Portal root="video-root">
+              <AnimatePresence>
+                {openedVideo === item.id && (
+                  <FullScreenVideo
+                    video={item}
+                    removeFullVideo={removeFullVideo}
+                  />
+                )}
+              </AnimatePresence>
+            </Portal>
+            {/* THUMBNAIL */}
             <motion.img
               initial={{ opacity: 0 }}
               animate={{ opacity: hoveredVideo !== item.id ? 1 : 0 }}
               className={classNames(styles.videoThumbail)}
               src={item.thumbnail}
               alt={item.src}
+              onClick={() => openFullVideo(item.id)}
               onMouseEnter={() => playVideo(item.id)}
               onMouseLeave={() => pauseVideo(item.id)}
             />
-            <motion.div
-              onMouseEnter={() => playVideo(item.id)}
-              onMouseLeave={() => pauseVideo(item.id)}
-              className={styles.videoDetails}
-            >
-              <div className={styles.clientContainer}>
-                <motion.h3
-                  initial={{
-                    y: 10,
-                    opacity: 0,
-                  }}
-                  animate={{
-                    y: hoveredVideo === item.id ? 0 : 10,
-                    opacity: 1,
-                    transition: {
-                      duration: 0.17,
-                    },
-                  }}
-                  className={styles.clientName}
-                >
-                  {item.client}
-                </motion.h3>
-                <motion.div
-                  className={styles.lineThrough}
-                  initial={{
-                    width: 0,
-                  }}
-                  animate={{
-                    width: hoveredVideo === item.id ? 50 : 0,
-                  }}
-                />
-              </div>
-              <motion.p
-                initial={{
-                  y: -10,
-                  opacity: 0,
-                }}
-                animate={{
-                  y: hoveredVideo === item.id ? 0 : -10,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.17,
-                  },
-                }}
-                className={styles.campaignName}
-              >
-                {item.campaign}
-              </motion.p>
-            </motion.div>
+            {/* VIDEO DETAILS TEXT */}
+            <VideoDetails hoveredVideo={hoveredVideo} video={item} />
+            {/* VIDEO */}
             <video
               className={classNames(styles.creativeVideo)}
               poster={item.thumbnail}
