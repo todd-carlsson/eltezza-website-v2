@@ -2,6 +2,7 @@ import styles from "./marquee.module.scss";
 import Image from "next/image";
 import classNames from "classnames";
 import { CarouselData } from "@/types";
+import { Badge } from "../badge";
 
 interface CarouselItemProps {
   data: CarouselData;
@@ -26,6 +27,9 @@ export function CarouselItem({
         !imageOnly && styles.withContent,
       )}
     >
+      {data.badge && (
+        <Badge className={styles.carouselBadge}>{data.badge}</Badge>
+      )}
       {!data.isVideo ? (
         <Image
           className={styles.carouselCardImg}
