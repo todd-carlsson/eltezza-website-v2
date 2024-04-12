@@ -71,7 +71,7 @@ export default function DesignPage() {
         />
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://eltezza.com/" />
+        <meta property="og:url" content="https://eltezza.com/design" />
         <meta property="og:title" content="Eltezza | Design" />
         <meta
           property="og:description"
@@ -84,7 +84,7 @@ export default function DesignPage() {
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://eltezza.com/" />
+        <meta property="twitter:url" content="https://eltezza.com/design" />
         <meta property="twitter:title" content="Eltezza | Design" />
         <meta
           property="twitter:description"

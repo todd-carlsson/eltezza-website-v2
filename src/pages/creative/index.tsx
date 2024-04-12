@@ -70,7 +70,7 @@ export default function CreativePage() {
         />
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://eltezza.com/" />
+        <meta property="og:url" content="https://eltezza.com/creative" />
         <meta property="og:title" content="Eltezza | Creative" />
         <meta
           property="og:description"
@@ -83,7 +83,7 @@ export default function CreativePage() {
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://eltezza.com/" />
+        <meta property="twitter:url" content="https://eltezza.com/creative" />
         <meta property="twitter:title" content="Eltezza | Creative" />
         <meta
           property="twitter:description"
