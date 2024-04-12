@@ -10,6 +10,35 @@ import {
   TestimonialsData,
 } from "@/types";
 
+// METADATA
+
+export const metaData = {
+  design: {
+    title: "Eltezza | Design",
+    description:
+      "Welcome to Eltezza: home to two distinct yet intertwined identities. Our studio creates captivating narratives, while our agency arm delivers tangible results, shaping the future of brand engagement.",
+    link: "https://eltezza.com/design",
+    image:
+      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712889804/EZ%20Website%20-%20Misc/riseabovethenoise_ffeyu4.jpg",
+  },
+  creative: {
+    title: "Eltezza | Creative",
+    description:
+      "Welcome to Eltezza: home to two distinct yet intertwined identities. Our studio creates captivating narratives, while our agency arm delivers tangible results, shaping the future of brand engagement.",
+    link: "https://eltezza.com/creative",
+    image:
+      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712889804/EZ%20Website%20-%20Misc/riseabovethenoise_ffeyu4.jpg",
+  },
+  home: {
+    title: "Eltezza | Rise above the noise",
+    description:
+      "Welcome to Eltezza: home to two distinct yet intertwined identities. Our studio creates captivating narratives, while our agency arm delivers tangible results, shaping the future of brand engagement.",
+    link: "https://eltezza.com/",
+    image:
+      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712889804/EZ%20Website%20-%20Misc/riseabovethenoise_ffeyu4.jpg",
+  },
+};
+
 // WEBSITE INFO
 export const pageTags = {
   design: ["Web Development", "Branding & Design", "Social Media"],
@@ -290,7 +319,7 @@ export const contactFormText = {
   submitted:
     "Your connection means the world to us, and we can't wait to explore how we can make your experience even better. Whether you have questions, ideas, or just want to chat, we're here for you.",
   error: "Something went wrong, please try again.",
-  email: "hello@eltezza.com",
+  email: "eltezza.ltd@gmail.com",
   phone: "06 213 8994",
 };
 

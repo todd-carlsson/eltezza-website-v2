@@ -1,3 +1,11 @@
+// METADATA
+export type MetaDataType = {
+  title: string;
+  description: string;
+  link: string;
+  image: string;
+};
+
 export type CarouselData = {
   id: string;
   src: string;
