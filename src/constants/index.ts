@@ -290,7 +290,7 @@ export const contactFormText = {
   submitted:
     "Your connection means the world to us, and we can't wait to explore how we can make your experience even better. Whether you have questions, ideas, or just want to chat, we're here for you.",
   error: "Something went wrong, please try again.",
-  email: "hello@eltezza.com",
+  email: "eltezza.ltd@gmail.com",
   phone: "06 213 8994",
 };
 
