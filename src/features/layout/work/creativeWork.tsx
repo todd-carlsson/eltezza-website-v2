@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Portal } from "../portal";
 import FullScreenVideo from "./components/fullScreenVideo";
+import VideoDetails from "./components/videoDetails";
 
 interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
@@ -101,56 +102,8 @@ export function CreativeWork({ content }: CreativeWorkProps) {
               onMouseEnter={() => playVideo(item.id)}
               onMouseLeave={() => pauseVideo(item.id)}
             />
-            <motion.div
-              onMouseEnter={() => playVideo(item.id)}
-              onMouseLeave={() => pauseVideo(item.id)}
-              className={styles.videoDetails}
-            >
-              {/* VIDEO TEXT DETAILS */}
-              <div className={styles.clientContainer}>
-                <motion.h3
-                  initial={{
-                    y: 10,
-                    opacity: 0,
-                  }}
-                  animate={{
-                    y: hoveredVideo === item.id ? 0 : 10,
-                    opacity: 1,
-                    transition: {
-                      duration: 0.17,
-                    },
-                  }}
-                  className={styles.clientName}
-                >
-                  {item.client}
-                </motion.h3>
-                <motion.div
-                  className={styles.lineThrough}
-                  initial={{
-                    width: 0,
-                  }}
-                  animate={{
-                    width: hoveredVideo === item.id ? 50 : 0,
-                  }}
-                />
-              </div>
-              <motion.p
-                initial={{
-                  y: -10,
-                  opacity: 0,
-                }}
-                animate={{
-                  y: hoveredVideo === item.id ? 0 : -10,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.17,
-                  },
-                }}
-                className={styles.campaignName}
-              >
-                {item.campaign}
-              </motion.p>
-            </motion.div>
+            {/* VIDEO DETAILS TEXT */}
+            <VideoDetails hoveredVideo={hoveredVideo} video={item} />
             {/* VIDEO */}
             <video
               className={classNames(styles.creativeVideo)}
