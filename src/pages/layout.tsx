@@ -8,7 +8,8 @@ export default function Layout({ children }: { children: ReactNode }) {
     <>
       {router.pathname !== "/" && (
         <>
-          <div id="contact-root"></div>
+          <div id="contact-root" />
+          <div id="video-root" />
           <Header
             page={router.pathname === "/design" ? "design" : "creative"}
             color={
