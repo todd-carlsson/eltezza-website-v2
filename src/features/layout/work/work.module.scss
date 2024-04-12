@@ -187,6 +187,7 @@
     .creativeVideoFull {
       width: auto;
       height: calc(100vh - 60px);
+      max-height: 900px;
       position: relative;
       z-index: 9999;
     }
