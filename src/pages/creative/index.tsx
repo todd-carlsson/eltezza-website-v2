@@ -31,6 +31,7 @@ import {
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
+import Head from "next/head";
 
 export default function CreativePage() {
   const page = "creative";
@@ -41,6 +42,10 @@ export default function CreativePage() {
 
   return (
     <>
+      <Head>
+        <title>Eltezza | Creative</title>
+        <meta property="og:title" content="Eltezza | Creative" key="title" />
+      </Head>
       <style>{"body { overflow-y: auto; }"}</style>
       <Navbar />
       <div className={styles.heroContainer}>

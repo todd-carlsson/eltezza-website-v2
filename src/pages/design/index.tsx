@@ -31,6 +31,7 @@ import {
 import { Marquee } from "@/features/ui";
 import useWindowSize from "@/hooks/useWindowSize";
 import styles from "@/styles/Home.module.css";
+import Head from "next/head";
 import { useState } from "react";
 
 export default function DesignPage() {
@@ -42,6 +43,10 @@ export default function DesignPage() {
 
   return (
     <>
+      <Head>
+        <title>Eltezza | Design</title>
+        <meta property="og:title" content="Eltezza | Design" key="title" />
+      </Head>
       <style>{"body { overflow-y: auto; }"}</style>
       <Navbar />
       <div className={styles.heroContainer}>
