@@ -12,6 +12,7 @@
   --white-text: #e8e8e8;
   --content-padding: 115px;
   --content-padding-sm: 30px;
+  --max-width: 1800px;
 }
 
 * {

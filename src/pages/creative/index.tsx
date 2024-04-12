@@ -5,6 +5,7 @@ import {
   creativeWorkData,
   faqs,
   headerDescription,
+  metaData,
   ourProcess,
   pageTags,
   services,
@@ -31,6 +32,7 @@ import {
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
+import MetaData from "@/metadata";
 
 export default function CreativePage() {
   const page = "creative";
@@ -41,6 +43,7 @@ export default function CreativePage() {
 
   return (
     <>
+      <MetaData data={metaData.creative} favIconColor="purple" />
       <style>{"body { overflow-y: auto; }"}</style>
       <Navbar />
       <div className={styles.heroContainer}>

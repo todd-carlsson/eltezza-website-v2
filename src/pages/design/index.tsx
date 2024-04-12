@@ -12,6 +12,7 @@ import {
   designMarqueeLeftData,
   designMarqueeRightData,
   teamData,
+  metaData,
 } from "@/constants";
 import {
   Hero,
@@ -30,6 +31,7 @@ import {
 } from "@/features/layout";
 import { Marquee } from "@/features/ui";
 import useWindowSize from "@/hooks/useWindowSize";
+import MetaData from "@/metadata";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
 
@@ -42,6 +44,7 @@ export default function DesignPage() {
 
   return (
     <>
+      <MetaData data={metaData.design} />
       <style>{"body { overflow-y: auto; }"}</style>
       <Navbar />
       <div className={styles.heroContainer}>
