@@ -91,12 +91,9 @@
     }
 
     .mainImgCreative {
-      width: 200px;
+      width: 15vw;
       height: auto;
-
-      @media screen and (width <=1000px) {
-        width: 150px;
-      }
+      max-width: 235px;
 
       @media screen and (width <=800px) {
         width: 50%;
