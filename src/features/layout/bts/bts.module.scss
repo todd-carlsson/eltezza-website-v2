@@ -4,11 +4,12 @@
   margin-top: 120px;
   display: flex;
   align-items: center;
+  gap: 1rem;
   justify-content: space-between;
   padding: 0 var(--content-padding);
   padding-left: 0;
 
-  @media screen and (width <=1000px) {
+  @media screen and (width <=800px) {
     flex-direction: column-reverse;
     align-items: flex-start;
     gap: 4rem;
@@ -26,7 +27,11 @@
       right: 30vw;
     }
 
-    @media screen and (width <=1180px) {
+    @media screen and (width <=1150px) {
+      right: calc(29vw + 75px);
+    }
+
+    @media screen and (width <=1110px) {
       right: calc(39vw + 75px);
     }
 
@@ -41,20 +46,23 @@
     .btsImg {
       object-fit: cover;
       width: 420px;
+      max-width: 50%;
       height: 500px;
-      max-height: calc(100% - 200px);
       margin-left: 3rem;
       min-width: 420px;
+      max-height: 450px;
 
       @media screen and (width <=1400px) {
         height: 50vw;
         width: auto;
+        max-width: 50vw;
       }
 
-      @media screen and (width <=1000px) {
+      @media screen and (width <=800px) {
         width: 100%;
         min-width: 100%;
         min-height: 400px;
+        max-height: 100vh;
         margin-left: 0;
       }
     }
@@ -73,7 +81,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (width <= 1000px) {
+    @media screen and (width <= 800px) {
       flex-direction: row;
       gap: 0.75rem;
     }
@@ -83,7 +91,12 @@
       height: auto;
 
       @media screen and (width <=1000px) {
-        width: 60%;
+        width: 150px;
+      }
+
+      @media screen and (width <=800px) {
+        width: 50%;
+        max-width: 50%;
       }
     }
 
@@ -92,26 +105,26 @@
       align-items: center;
       gap: 1.25rem;
 
-      @media screen and (width <=1000px) {
+      @media screen and (width <=800px) {
         gap: 0.5rem;
       }
 
       .mainImgDesign {
-        width: 200px;
+        width: 150px;
         height: auto;
 
-        @media screen and (width <=1000px) {
+        @media screen and (width <=800px) {
           width: 40%;
         }
       }
 
       .secondaryImgDesign {
-        height: 80px;
+        height: 60px;
         width: auto;
 
-        @media screen and (width <=1000px) {
+        @media screen and (width <=800px) {
           width: 20%;
-          height: 2.75rem;
+          height: 3.75rem;
         }
       }
 
@@ -121,8 +134,32 @@
         align-self: center;
         font-size: clamp(3rem, -0.5556rem + 7.1111vw, 6rem);
 
-        @media screen and (width <=1000px) {
-          font-size: 2.25rem;
+        @media screen and (width <=800px) {
+          font-size: clamp(4rem, 10vw, 6rem);
+        }
+
+        @media screen and (width <=500px) {
+          font-size: clamp(3rem, 4vw, 4rem);
+        }
+
+        @media screen and (width <=400px) {
+          font-size: clamp(2.35rem, 5vw, 3.8rem);
+        }
+      }
+
+      .designBtsText {
+        font-size: clamp(2.15rem, 4vw, 4rem);
+
+        @media screen and (width <=800px) {
+          font-size: clamp(4rem, 10vw, 6rem);
+        }
+
+        @media screen and (width <=500px) {
+          font-size: clamp(3rem, 4vw, 4rem);
+        }
+
+        @media screen and (width <=400px) {
+          font-size: clamp(2.35rem, 5vw, 3.8rem);
         }
       }
     }

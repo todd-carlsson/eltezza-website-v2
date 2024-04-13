@@ -118,6 +118,12 @@
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 
+  @media screen and (width <= 1075px) {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
   .purpleOrb {
     @include orb(
       var(--adobe-purple),
@@ -181,7 +187,9 @@
   }
 
   @media screen and (width <= 1075px) {
-    min-width: 43%;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   .designHeroMarquee {
