@@ -10,7 +10,11 @@ export default function BTSText({ page }: { page: "design" | "creative" }) {
       <div>
         <div className={styles.textBlock}>
           <h1
-            className={classNames("largeText", styles.btsText)}
+            className={classNames(
+              "largeText",
+              styles.btsText,
+              styles.designBtsText,
+            )}
             style={{ alignSelf: "flex-end" }}
           >
             TAKE A
@@ -22,7 +26,13 @@ export default function BTSText({ page }: { page: "design" | "creative" }) {
           />
         </div>
         <div className={styles.textBlock}>
-          <h1 className={classNames("largeText", styles.btsText)}>
+          <h1
+            className={classNames(
+              "largeText",
+              styles.btsText,
+              styles.designBtsText,
+            )}
+          >
             PEAK BEHIND
           </h1>
           <img
@@ -32,7 +42,13 @@ export default function BTSText({ page }: { page: "design" | "creative" }) {
           />
         </div>
         <div className={styles.textBlock}>
-          <h1 className={classNames("largeText", styles.btsText)}>
+          <h1
+            className={classNames(
+              "largeText",
+              styles.btsText,
+              styles.designBtsText,
+            )}
+          >
             THE
             <span className="textGradient"> CURTAINS</span>
           </h1>
@@ -50,7 +66,7 @@ export default function BTSText({ page }: { page: "design" | "creative" }) {
             >
               THE
             </h1>
-            {windowWidth > 1000 && (
+            {windowWidth > 800 && (
               <img
                 className={styles.mainImgCreative}
                 src="/images/bts_creative.svg"
@@ -67,7 +83,7 @@ export default function BTSText({ page }: { page: "design" | "creative" }) {
             </h1>
           </div>
         </div>
-        {windowWidth <= 1000 && (
+        {windowWidth <= 800 && (
           <img
             className={styles.mainImgCreative}
             src="/images/bts_creative.svg"
