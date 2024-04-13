@@ -10,11 +10,6 @@ export function HomeComponent() {
   const [isDualPage, setIsDualPage] = useState(false);
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => {};
-  }, []);
-
-  useEffect(() => {
     setTimeout(() => {
       setIsDualPage(true);
     }, 2500);
