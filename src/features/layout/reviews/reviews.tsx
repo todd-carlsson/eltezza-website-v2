@@ -3,8 +3,9 @@ import Review from "./review";
 import styles from "./reviews.module.scss";
 import { motion, useMotionValue } from "framer-motion";
 import uuid from "react-uuid";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
+import { Button, ButtonVariant } from "@/features/ui";
 
 interface ReviewsProps {
   content: Array<TestimonialsData>;
@@ -15,6 +16,30 @@ const DRAG_BUFFER = 80;
 export function Reviews({ content }: ReviewsProps) {
   const [imgIndex, setImgIndex] = useState(0);
   const [windowWidth] = useWindowSize();
+
+  const [paginationCount, setPaginationCount] = useState(
+    windowWidth > 1050 ? content.length - 1 : 3,
+  );
+  const [isPaginated, setIsPaginated] = useState(false);
+
+  useEffect(() => {
+    if (windowWidth > 1050) {
+      setPaginationCount(content.length - 1);
+    }
+    if (windowWidth <= 1050 && !isPaginated) {
+      setPaginationCount(3);
+    }
+  }, [windowWidth, isPaginated, content.length]);
+
+  function paginateData() {
+    if (paginationCount !== content.length - 1) {
+      setPaginationCount(content.length - 1);
+      setIsPaginated(true);
+    } else if (paginationCount === content.length - 1) {
+      setPaginationCount(3);
+      setIsPaginated(false);
+    }
+  }
 
   const dragX = useMotionValue(0);
   // const scale = useTransform(dragX, [-DRAG_BUFFER, 0, DRAG_BUFFER], [1, 0.8, 1])
@@ -80,10 +105,23 @@ export function Reviews({ content }: ReviewsProps) {
           Hear it from our <span className="textGradient">partners</span>
         </h1>
         <div className={styles.reviewsContainer}>
-          {content.map((item, i) => (
+          {content.slice(0, paginationCount).map((item, i) => (
             <Review key={uuid()} review={item} index={i} imgIndex={imgIndex} />
           ))}
         </div>
+        {windowWidth <= 1050 && (
+          <div className={styles.buttonContainer}>
+            <Button
+              onClick={paginateData}
+              className={styles.paginateButton}
+              variant={ButtonVariant.gradient}
+            >
+              {paginationCount !== content.length - 1
+                ? "View more testimonials"
+                : "Show less"}
+            </Button>
+          </div>
+        )}
       </section>
     );
 }
