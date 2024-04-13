@@ -27,7 +27,11 @@
       right: 30vw;
     }
 
-    @media screen and (width <=1180px) {
+    @media screen and (width <=1150px) {
+      right: calc(29vw + 75px);
+    }
+
+    @media screen and (width <=1110px) {
       right: calc(39vw + 75px);
     }
 
@@ -44,9 +48,9 @@
       width: 420px;
       max-width: 50%;
       height: 500px;
-      max-height: calc(100% - 200px);
       margin-left: 3rem;
       min-width: 420px;
+      max-height: 450px;
 
       @media screen and (width <=1400px) {
         height: 50vw;
@@ -58,6 +62,7 @@
         width: 100%;
         min-width: 100%;
         min-height: 400px;
+        max-height: 100vh;
         margin-left: 0;
       }
     }
