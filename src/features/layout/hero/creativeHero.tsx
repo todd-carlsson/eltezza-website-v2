@@ -12,6 +12,7 @@ interface CreativeHeroProps {
 export function CreativeHero({ video, images }: CreativeHeroProps) {
   return (
     <div className={styles.creativeHeroContainer}>
+      <div className={styles.purpleOrb} />
       {video.map((item) => (
         <video
           className={classNames(
@@ -37,6 +38,7 @@ export function CreativeHero({ video, images }: CreativeHeroProps) {
           alt={item.alt}
         />
       ))}
+      <div className={styles.purpleOrbSmall} />
     </div>
   );
 }

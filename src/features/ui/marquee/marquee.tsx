@@ -7,6 +7,7 @@ import { CarouselData } from "@/types";
 interface MarqueeProps {
   content: Array<CarouselData>;
   orientation: "vertical" | "horizontal";
+  className?: string;
   imageOnly?: boolean;
   isReversed?: boolean;
   width?: number;
@@ -17,6 +18,7 @@ interface MarqueeProps {
 export function Marquee({
   content,
   orientation,
+  className,
   imageOnly = false,
   isReversed = false,
   width,
@@ -24,7 +26,7 @@ export function Marquee({
   drag,
 }: MarqueeProps) {
   return (
-    <div className={styles.carouselContainer}>
+    <div className={classNames(styles.carouselContainer, className)}>
       <motion.div
         drag={drag && "x"}
         dragConstraints={{ right: 0 }}

@@ -31,7 +31,6 @@ import {
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
-import useWindowSize from "@/hooks/useWindowSize";
 import MetaData from "@/metadata";
 
 export default function CreativePage() {
@@ -39,7 +38,6 @@ export default function CreativePage() {
   const color = "--adobe-purple";
 
   const [showModal, setShowModal] = useState(false);
-  const [windowWidth] = useWindowSize();
 
   return (
     <>
@@ -51,12 +49,10 @@ export default function CreativePage() {
           description={headerDescription.creative}
           tags={pageTags.creative}
         />
-        {windowWidth > 1075 && (
-          <CreativeHero
-            video={creativeHeroData.video}
-            images={creativeHeroData.images}
-          />
-        )}
+        <CreativeHero
+          video={creativeHeroData.video}
+          images={creativeHeroData.images}
+        />
       </div>
       <CreativeWork content={creativeWorkData} />
       <Services content={services.creative} color={color} />
