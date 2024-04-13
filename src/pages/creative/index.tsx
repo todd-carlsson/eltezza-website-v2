@@ -44,7 +44,6 @@ export default function CreativePage() {
   return (
     <>
       <MetaData data={metaData.creative} favIconColor="purple" />
-      <style>{"body { overflow-y: auto; }"}</style>
       <Navbar />
       <div className={styles.heroContainer}>
         <Hero

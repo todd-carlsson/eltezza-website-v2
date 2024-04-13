@@ -4,9 +4,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import PagePortal from "./pagePortal";
 import { ButtonVariant } from "@/features/ui";
 import { designMarqueeLeftData, pageTags } from "@/constants";
+import classNames from "classnames";
 
 export function HomeComponent() {
   const [isDualPage, setIsDualPage] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {};
+  }, []);
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,7 +21,7 @@ export function HomeComponent() {
   }, []);
 
   return (
-    <div className={styles.homeContainer}>
+    <div className={classNames(styles.homeContainer, "noScroll")}>
       <motion.div
         initial={{ opacity: 0, y: "-100vh", x: "-100vw" }}
         animate={{ opacity: 0.4, y: !isDualPage ? 0 : "50vh", x: 0 }}
