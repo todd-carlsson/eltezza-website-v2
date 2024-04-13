@@ -39,6 +39,15 @@ export const metaData = {
   },
 };
 
+// LOGOS
+
+export const logos = {
+  design:
+    "https://res.cloudinary.com/dsxzhd4c2/image/upload/q_69/v1712986935/EZ%20Website%20-%20Design/Final_Logo_Eltezza_Design_-_White_it63xt.png",
+  creative:
+    "https://res.cloudinary.com/dsxzhd4c2/image/upload/q_69/v1712986892/EZ%20Website%20-%20Creative/Final_Logo_Eltezza_Creative_-_White_oz5nrt.png",
+};
+
 // WEBSITE INFO
 export const pageTags = {
   design: ["Web Development", "Branding & Design", "Social Media"],
@@ -373,6 +382,43 @@ export const landingPageMockData = [
   },
 ] as Array<CarouselData>;
 
+export const landingPageData = {
+  design: [
+    {
+      id: "1",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637780/EZ%20Website%20-%20Design/Work%20Section%20Carousel/cupples_website_ladznn.jpg",
+      title: "Web Design",
+      subTitle: "Rise above the noise",
+      link: "www.eltezza.com",
+      isVideo: false,
+    },
+    {
+      id: "2",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638353/EZ%20Website%20-%20Design/Work%20Section%20Carousel/black_pearl_branding_ypwjz5.jpg",
+      title: "Branding",
+      subTitle: "Rise above the noise",
+      link: "www.eltezza.com",
+      isVideo: false,
+    },
+    {
+      id: "3",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_40/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
+      title: "Reels",
+      subTitle: "Rise above the noise",
+      link: "www.eltezza.com",
+      isVideo: true,
+    },
+    {
+      id: "4",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
+      title: "Graphic Design",
+      subTitle: "Rise above the noise",
+      link: "www.eltezza.com",
+      isVideo: false,
+    },
+  ] as Array<CarouselData>,
+};
+
 export const featuredReviewData = {
   design: {
     review:
@@ -441,27 +487,33 @@ export const designMarqueeLeftData = [
 export const designMarqueeRightData = [
   {
     id: "1",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
-    alt: "Peak Performance",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712983995/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/fire_social_media_r3lqkm.jpg",
+    alt: "Fire social media",
     isVideo: false,
   },
   {
     id: "2",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712640516/EZ%20Website%20-%20Design/Hero%20Marquee%20LEFT/lokl_gym_branding_b0kavo.jpg",
-    alt: "LOKL Gym",
-    isVideo: false,
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_38/v1712984277/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/Tonkotsu_Ramen_on_Fire_Reel_mpqmrp.mp4",
+    alt: "Tonkotsu Ramen on Fire Reel",
+    isVideo: true,
   },
   {
     id: "3",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637974/EZ%20Website%20-%20Design/Work%20Section%20Carousel/phillipines_website_o0zb9x.jpg",
-    alt: "Philippines Travel Website",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712984003/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/black_pearl_social_media_oi1slb.jpg",
+    alt: "Black Pearl social media",
     isVideo: false,
   },
   {
     id: "4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712640773/EZ%20Website%20-%20Design/Hero%20Marquee%20LEFT/flanzy_branding_tkpepz.jpg",
-    alt: "Flanzy Branding",
-    isVideo: false,
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_38/v1712984254/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/What_they_know_about_steves_reel_ifxohz.mp4",
+    alt: "What they know about steves reel",
+    isVideo: true,
+  },
+  {
+    id: "5",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_38/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    alt: "Ikaika Motivational Reel",
+    isVideo: true,
   },
 ] as Array<CarouselData>;
 
@@ -510,7 +562,7 @@ export const designCarouselData = [
   },
   {
     id: "7",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_40/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_30/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
     alt: "Ikaika Motivational Reel",
     badge: "Reels",
     isVideo: true,

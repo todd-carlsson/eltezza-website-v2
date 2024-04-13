@@ -3,7 +3,7 @@ import styles from "./home.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import PagePortal from "./pagePortal";
 import { ButtonVariant } from "@/features/ui";
-import { designMarqueeLeftData, pageTags } from "@/constants";
+import { landingPageData, logos, pageTags } from "@/constants";
 import classNames from "classnames";
 
 export function HomeComponent() {
@@ -73,7 +73,8 @@ export function HomeComponent() {
             >
               <PagePortal
                 title="design"
-                content={designMarqueeLeftData}
+                logo={logos.design}
+                content={landingPageData.design}
                 tags={pageTags.design}
                 color="--ez-orange"
                 buttonVariant={ButtonVariant.homeOrange}
@@ -83,7 +84,8 @@ export function HomeComponent() {
               <div className={styles.blurRight} />
               <PagePortal
                 title="creative"
-                content={designMarqueeLeftData}
+                logo={logos.creative}
+                content={landingPageData.design}
                 tags={pageTags.creative}
                 color="--adobe-purple"
                 buttonVariant={ButtonVariant.homePurple}
