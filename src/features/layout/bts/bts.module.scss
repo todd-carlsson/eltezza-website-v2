@@ -43,8 +43,11 @@
       justify-content: flex-start;
     }
 
+    // BTS IMAGES AND VIDEOS
+
     .btsImg {
       object-fit: cover;
+      object-position: 50% 50%;
       width: 420px;
       max-width: 50%;
       height: 520px;
