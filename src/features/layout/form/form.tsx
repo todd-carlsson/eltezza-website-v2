@@ -1,4 +1,4 @@
-import { Button, ButtonVariant, Input } from "@/features/ui";
+import { Button, ButtonVariant, Input, TextArea } from "@/features/ui";
 import styles from "./form.module.scss";
 import { contactFormText } from "@/constants";
 import { Controller, useForm } from "react-hook-form";
@@ -156,9 +156,8 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                 field: { value, onChange, onBlur, ref },
                 fieldState: { error },
               }) => (
-                <Input
+                <TextArea
                   placeholder="Message"
-                  type="text"
                   disabled={loading}
                   required
                   ref={ref}
