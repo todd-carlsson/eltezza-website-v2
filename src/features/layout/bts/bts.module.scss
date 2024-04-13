@@ -136,7 +136,7 @@
         white-space: nowrap;
         text-align: left;
         align-self: center;
-        font-size: clamp(3rem, -0.5556rem + 7.1111vw, 6rem);
+        font-size: clamp(3rem, -0.5556rem + 7.1111vw, 7rem);
 
         @media screen and (width <=800px) {
           font-size: clamp(4rem, 10vw, 7rem);
