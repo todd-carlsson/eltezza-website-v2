@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import styles from "./switch.module.scss";
 import { motion } from "framer-motion";
@@ -13,7 +11,7 @@ interface SwitchProps {
 function Switch({ page, color }: SwitchProps) {
   const [windowWidth] = useWindowSize();
   return (
-    <Link href={page === "design" ? "/creative" : "/design"}>
+    <Link href={page === "design" ? "/creative" : "/design"} scroll shallow>
       <div
         className={styles.switch}
         style={{
