@@ -19,42 +19,25 @@ export function Navbar() {
   return (
     <nav className={styles.navbar}>
       <ul className={styles.navbarContainer}>
-        {windowWidth > 800
-          ? navigationLinks.desktop.map((link) => (
-              <Link
-                onClick={() => clickHandler(link.href)}
-                key={link.href}
-                href={link.href}
+        {windowWidth > 800 &&
+          navigationLinks.desktop.map((link) => (
+            <Link
+              onClick={() => clickHandler(link.href)}
+              key={link.href}
+              href={link.href}
+            >
+              <li
+                className={classNames(
+                  styles.link,
+                  activeLink === link.href && styles.linkActive,
+                )}
               >
-                <li
-                  className={classNames(
-                    styles.link,
-                    activeLink === link.href && styles.linkActive,
-                  )}
-                >
-                  {link.title}
-                </li>
-              </Link>
-            ))
-          : navigationLinks.mobile.map((link) => (
-              <Link
-                onClick={() => clickHandler(link.href)}
-                key={link.href}
-                href={link.href}
-              >
-                <li
-                  className={classNames(
-                    styles.link,
-                    activeLink === link.href && styles.linkActive,
-                  )}
-                >
-                  {link.title}
-                </li>
-              </Link>
-            ))}
-        <li className={styles.arrowContainer}>
+                {link.title}
+              </li>
+            </Link>
+          ))}
+        <li onClick={ScrollToTop} className={styles.arrowContainer}>
           <Image
-            onClick={ScrollToTop}
             className={styles.arrow}
             src="/NavArrow.svg"
             alt="^ Back to top"

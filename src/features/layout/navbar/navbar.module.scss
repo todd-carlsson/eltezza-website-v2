@@ -9,7 +9,7 @@
   padding: 0 2rem;
 
   @media screen and (width <=800px) {
-    display: none;
+    justify-content: flex-end;
   }
 
   .navbarContainer {
@@ -29,6 +29,13 @@
 
     @media screen and (width <=1200px) {
       width: 77%;
+    }
+
+    @media screen and (width <=800px) {
+      width: auto;
+      border-radius: 50%;
+      padding: 0;
+      justify-content: flex-end;
     }
 
     .link {
@@ -67,6 +74,10 @@
 
       &:active {
         background-color: #000;
+      }
+
+      @media screen and (width <=800px) {
+        padding: 1.25rem;
       }
 
       .arrow {
