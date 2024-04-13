@@ -47,15 +47,19 @@
       object-fit: cover;
       width: 420px;
       max-width: 50%;
-      height: 500px;
+      height: 520px;
       margin-left: 3rem;
       min-width: 420px;
-      max-height: 450px;
+      max-height: 465px;
 
       @media screen and (width <=1400px) {
         height: 50vw;
         width: auto;
         max-width: 50vw;
+      }
+
+      @media screen and (width <=900px) {
+        max-height: 70vh;
       }
 
       @media screen and (width <=800px) {
@@ -81,7 +85,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (width <= 800px) {
+    @media screen and (width <=800px) {
       flex-direction: row;
       gap: 0.75rem;
     }
@@ -135,7 +139,7 @@
         font-size: clamp(3rem, -0.5556rem + 7.1111vw, 6rem);
 
         @media screen and (width <=800px) {
-          font-size: clamp(4rem, 10vw, 6rem);
+          font-size: clamp(4rem, 10vw, 7rem);
         }
 
         @media screen and (width <=500px) {
@@ -148,7 +152,7 @@
       }
 
       .designBtsText {
-        font-size: clamp(2.15rem, 4vw, 4rem);
+        font-size: clamp(2.15rem, 4.25vw, 7rem);
 
         @media screen and (width <=800px) {
           font-size: clamp(4rem, 10vw, 6rem);
