@@ -29,8 +29,7 @@ import {
   FormModal,
   Reviews,
 } from "@/features/layout";
-import { Marquee } from "@/features/ui";
-import useWindowSize from "@/hooks/useWindowSize";
+import DesignHero from "@/features/layout/hero/designHero";
 import MetaData from "@/metadata";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
@@ -38,7 +37,6 @@ import { useState } from "react";
 export default function DesignPage() {
   const page = "design";
   const color = "--ez-orange";
-  const [windowWidth] = useWindowSize();
 
   const [showModal, setShowModal] = useState(false);
 
@@ -52,23 +50,10 @@ export default function DesignPage() {
           description={headerDescription.design}
           tags={pageTags.design}
         />
-        {windowWidth > 1075 && (
-          <div className={styles.designPageCarousel}>
-            <Marquee
-              isReversed
-              orientation="vertical"
-              imageOnly
-              content={designMarqueeLeftData}
-              width={300}
-            />
-            <Marquee
-              orientation="vertical"
-              imageOnly
-              content={designMarqueeRightData}
-              width={300}
-            />
-          </div>
-        )}
+        <DesignHero
+          leftData={designMarqueeLeftData}
+          rightData={designMarqueeRightData}
+        />
       </div>
       <DesignWork content={designCarouselData} />
       <Services content={services.design} color={color} />
