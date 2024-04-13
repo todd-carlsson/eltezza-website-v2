@@ -10,7 +10,7 @@
   height: 100vh;
   left: 0;
   background-color: #000;
-  position: absolute;
+  position: fixed;
   z-index: 9998;
   top: 0;
 }
@@ -22,7 +22,7 @@
   padding: 30px 50px;
   background: rgb(0 0 1 / 90%);
   backdrop-filter: blur(6px);
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   right: 0;
   display: flex;
