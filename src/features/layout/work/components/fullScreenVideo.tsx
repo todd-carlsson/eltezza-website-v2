@@ -19,7 +19,7 @@ export default function FullScreenVideo({
     visible: {
       y: 0,
       transition: {
-        duration: 0.3,
+        duration: 0.4,
         type: "tween",
       },
     },
@@ -38,6 +38,11 @@ export default function FullScreenVideo({
         }}
         animate={{
           opacity: 0.8,
+          transition: {
+            delay: 0.4,
+            duration: 0.3,
+            type: "tween",
+          },
         }}
         exit={{
           opacity: 0,

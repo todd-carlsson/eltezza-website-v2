@@ -48,7 +48,7 @@ export function Hero({ page, description, tags }: HeroProps) {
         )}
       >
         {tags.map((tag) => (
-          <Button variant={ButtonVariant.main} key={tag}>
+          <Button variant={ButtonVariant.main} key={tag} role="presentation">
             {tag}
           </Button>
         ))}

@@ -8,8 +8,8 @@
   z-index: 999;
   padding: 0 2rem;
 
-  @media screen and (width <= 800px) {
-    display: none;
+  @media screen and (width <=800px) {
+    justify-content: flex-end;
   }
 
   .navbarContainer {
@@ -27,8 +27,15 @@
     bottom: 26px;
     z-index: 999;
 
-    @media screen and (width <= 1200px) {
+    @media screen and (width <=1200px) {
       width: 77%;
+    }
+
+    @media screen and (width <=800px) {
+      width: auto;
+      border-radius: 50%;
+      padding: 0;
+      justify-content: flex-end;
     }
 
     .link {
@@ -51,10 +58,32 @@
       }
     }
 
-    .arrow {
+    .arrowContainer {
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      border-radius: 50%;
+      padding: 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: relative;
-      top: 3px;
-      right: 0.8rem;
+
+      &:hover {
+        background-color: var(--heightened-grey);
+      }
+
+      &:active {
+        background-color: #000;
+      }
+
+      @media screen and (width <=800px) {
+        padding: 1.25rem;
+      }
+
+      .arrow {
+        position: relative;
+        top: -2px;
+      }
     }
   }
 }
