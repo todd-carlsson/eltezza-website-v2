@@ -52,7 +52,7 @@ export function Navbar() {
                 </li>
               </Link>
             ))}
-        <li>
+        <li className={styles.arrowContainer}>
           <Image
             onClick={ScrollToTop}
             className={styles.arrow}
