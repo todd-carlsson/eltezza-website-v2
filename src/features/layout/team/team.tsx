@@ -1,6 +1,9 @@
 import { TeamData } from "@/types";
 import styles from "./team.module.scss";
 import TeamMember from "./teamMember";
+import { useEffect, useState } from "react";
+import useWindowSize from "@/hooks/useWindowSize";
+import { Button, ButtonVariant } from "@/features/ui";
 
 interface TeamProps {
   content: Array<TeamData>;
@@ -9,6 +12,40 @@ interface TeamProps {
 }
 
 export function Team({ content, description, color }: TeamProps) {
+  const [windowWidth] = useWindowSize();
+  const [paginationCount, setPaginationCount] = useState(
+    windowWidth > 1050 ? content.length - 1 : 3,
+  );
+  const [isPaginated, setIsPaginated] = useState(false);
+
+  useEffect(() => {
+    if (windowWidth > 1050) {
+      setPaginationCount(content.length - 1);
+    }
+    if (windowWidth <= 1050 && !isPaginated) {
+      setPaginationCount(4);
+    }
+    if (windowWidth <= 500 && !isPaginated) {
+      setPaginationCount(3);
+    }
+  }, [windowWidth, isPaginated, content.length]);
+
+  function paginateData() {
+    if (paginationCount !== content.length - 1) {
+      setPaginationCount(content.length - 1);
+      setIsPaginated(true);
+    } else if (paginationCount === content.length - 1) {
+      if (windowWidth <= 1050) {
+        setPaginationCount(4);
+        setIsPaginated(false);
+      }
+      if (windowWidth <= 500) {
+        setPaginationCount(3);
+        setIsPaginated(false);
+      }
+    }
+  }
+
   return (
     <section id="about" className={styles.teamSection}>
       <div className={styles.textContainer}>
@@ -23,10 +60,23 @@ export function Team({ content, description, color }: TeamProps) {
         <p className={styles.teamDescription}>{description}</p>
       </div>
       <div className={styles.teamGrid}>
-        {content.map((item, i) => (
+        {content.slice(0, paginationCount).map((item, i) => (
           <TeamMember key={item.id} member={item} index={i} color={color} />
         ))}
       </div>
+      {windowWidth <= 1050 && (
+        <div className={styles.buttonContainer}>
+          <Button
+            onClick={paginateData}
+            variant={ButtonVariant.gradient}
+            className={styles.paginateButton}
+          >
+            {paginationCount !== content.length - 1
+              ? "View our team"
+              : "Show less"}
+          </Button>
+        </div>
+      )}
     </section>
   );
 }

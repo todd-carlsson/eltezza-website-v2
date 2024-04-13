@@ -70,4 +70,19 @@
       }
     }
   }
+
+  // BUTTON
+
+  .buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    .paginateButton {
+      width: 75%;
+      padding: 1.25rem;
+      max-width: 260px;
+    }
+  }
 }
