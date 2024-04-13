@@ -45,7 +45,6 @@ export default function DesignPage() {
   return (
     <>
       <MetaData data={metaData.design} />
-      <style>{"body { overflow-y: auto; }"}</style>
       <Navbar />
       <div className={styles.heroContainer}>
         <Hero

@@ -15,6 +15,10 @@
   --max-width: 1800px;
 }
 
+:root:has(.noScroll) {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,8 +29,7 @@
 html,
 body {
   max-width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   color: #fff;
   background-color: #000;

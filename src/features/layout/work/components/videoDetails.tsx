@@ -30,7 +30,7 @@ export default function VideoDetails({
         >
           {video.client}
         </motion.h3>
-        <motion.div
+        <motion.hr
           className={styles.lineThrough}
           initial={{
             width: 0,
