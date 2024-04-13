@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import styles from "./home.module.scss";
 import { useState } from "react";
@@ -15,6 +13,7 @@ interface PagePortalProps {
   tags: Array<string>;
   color: "--ez-orange" | "--adobe-purple";
   buttonVariant: ButtonVariant;
+  logo: string;
 }
 
 export default function PagePortal({
@@ -23,6 +22,7 @@ export default function PagePortal({
   tags,
   color,
   buttonVariant,
+  logo,
 }: PagePortalProps) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -56,7 +56,20 @@ export default function PagePortal({
       </AnimatePresence>
       {isHovered && (
         <div className={styles.portalContent}>
-          <Marquee orientation="horizontal" content={content} />
+          <Image
+            className={styles.portalLogo}
+            src={logo}
+            alt={title}
+            width={200}
+            height={170}
+          />
+          <Marquee
+            className={styles.homeMarquee}
+            orientation="horizontal"
+            content={content}
+            height={195}
+            width={195}
+          />
           <div className={styles.tagListContainer}>
             {tags.map((tag, i) => (
               <>
