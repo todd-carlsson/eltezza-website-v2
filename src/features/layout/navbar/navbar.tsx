@@ -1,11 +1,10 @@
-import Link from "next/link";
 import styles from "./navbar.module.scss";
 import { navigationLinks } from "@/constants";
 import Image from "next/image";
 import useWindowSize from "@/hooks/useWindowSize";
 import { useState } from "react";
 import classNames from "classnames";
-import { ScrollToTop } from "./scrollToTop";
+import { Scroll } from "@/utils/scroll";
 
 export function Navbar() {
   const [windowWidth] = useWindowSize();
@@ -16,27 +15,35 @@ export function Navbar() {
     setActiveLink(href);
   }
 
+  function handleClickScroll(id: string) {
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <nav className={styles.navbar}>
       <ul className={styles.navbarContainer}>
         {windowWidth > 800 &&
           navigationLinks.desktop.map((link) => (
-            <Link
-              onClick={() => clickHandler(link.href)}
+            <li
               key={link.href}
-              href={link.href}
+              className={classNames(
+                styles.link,
+                activeLink === link.href && styles.linkActive,
+              )}
+              onClick={() => {
+                clickHandler(link.href), handleClickScroll(link.href);
+              }}
             >
-              <li
-                className={classNames(
-                  styles.link,
-                  activeLink === link.href && styles.linkActive,
-                )}
-              >
-                {link.title}
-              </li>
-            </Link>
+              {link.title}
+            </li>
           ))}
-        <li onClick={ScrollToTop} className={styles.arrowContainer}>
+        <li
+          onClick={() => Scroll(0, "smooth")}
+          className={styles.arrowContainer}
+        >
           <Image
             className={styles.arrow}
             src="/NavArrow.svg"

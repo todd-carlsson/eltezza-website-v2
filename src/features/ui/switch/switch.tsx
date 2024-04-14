@@ -11,7 +11,11 @@ interface SwitchProps {
 function Switch({ page, color }: SwitchProps) {
   const [windowWidth] = useWindowSize();
   return (
-    <Link href={page === "design" ? "/creative" : "/design"} scroll shallow>
+    <Link
+      href={page === "design" ? "/creative" : "/design"}
+      scroll={false}
+      shallow
+    >
       <div
         className={styles.switch}
         style={{

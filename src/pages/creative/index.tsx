@@ -29,10 +29,11 @@ import {
   Reviews,
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MetaData from "@/metadata";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
+import { Scroll } from "@/utils/scroll";
 
 export default function CreativePage() {
   const page = "creative";
@@ -41,6 +42,10 @@ export default function CreativePage() {
   const [showModal, setShowModal] = useState(false);
   const isPresent = useIsPresent();
   const router = useRouter();
+
+  useEffect(() => {
+    Scroll(0, "auto");
+  }, []);
 
   return (
     <>
