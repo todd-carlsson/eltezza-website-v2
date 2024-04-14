@@ -6,20 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export default function Layout({ children }: { children: ReactNode }) {
   const router = useRouter();
-  const variants = {
-    initial: {
-      opacity: 0,
-      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-    },
-    animate: {
-      opacity: 1,
-      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-    },
-    exit: {
-      opacity: 0,
-      clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
-    },
-  };
+
   return (
     <>
       {router.pathname !== "/" && (
@@ -39,12 +26,8 @@ export default function Layout({ children }: { children: ReactNode }) {
         <motion.div
           key={router.route}
           className={styles.main}
-          variants={variants}
-          initial="initial"
-          animate="animate"
-          exit="exit"
           transition={{
-            duration: 0.75,
+            duration: 0.5,
           }}
         >
           {children}

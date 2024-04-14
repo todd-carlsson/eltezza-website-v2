@@ -32,12 +32,16 @@ import DesignHero from "@/features/layout/hero/designHero";
 import MetaData from "@/metadata";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
+import { motion, useIsPresent } from "framer-motion";
+import { useRouter } from "next/router";
 
 export default function DesignPage() {
   const page = "design";
   const color = "--ez-orange";
 
   const [showModal, setShowModal] = useState(false);
+  const isPresent = useIsPresent();
+  const router = useRouter();
 
   return (
     <>
@@ -73,6 +77,19 @@ export default function DesignPage() {
           color={color}
         />
       </Portal>
+      <motion.div
+        initial={{ scaleX: 1 }}
+        animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut" } }}
+        exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
+        style={{
+          originX: isPresent ? 0 : 1,
+          backgroundColor:
+            router.pathname === "/creative"
+              ? "var(--adobe-purple)"
+              : "var(--ez-orange)",
+        }}
+        className={styles.privacyScreen}
+      />
     </>
   );
 }
