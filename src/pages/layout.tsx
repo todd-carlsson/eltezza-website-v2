@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 
   return (
     <>
-      {router.pathname !== "/" && (
+      {router.pathname === "/creative" || router.pathname === "/design" ? (
         <>
           <div id="contact-root" />
           <div id="video-root" />
@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           />
           <Navbar />
         </>
-      )}
+      ) : null}
       <AnimatePresence mode="wait">
         <motion.div
           key={router.route}
