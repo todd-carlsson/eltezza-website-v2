@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "./navbar.module.scss";
 import { navigationLinks } from "@/constants";
 import Image from "next/image";
@@ -16,25 +15,30 @@ export function Navbar() {
     setActiveLink(href);
   }
 
+  function handleClickScroll(id: string) {
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <nav className={styles.navbar}>
       <ul className={styles.navbarContainer}>
         {windowWidth > 800 &&
           navigationLinks.desktop.map((link) => (
-            <Link
-              onClick={() => clickHandler(link.href)}
+            <li
               key={link.href}
-              href={link.href}
+              className={classNames(
+                styles.link,
+                activeLink === link.href && styles.linkActive,
+              )}
+              onClick={() => {
+                clickHandler(link.href), handleClickScroll(link.href);
+              }}
             >
-              <li
-                className={classNames(
-                  styles.link,
-                  activeLink === link.href && styles.linkActive,
-                )}
-              >
-                {link.title}
-              </li>
-            </Link>
+              {link.title}
+            </li>
           ))}
         <li
           onClick={() => Scroll(0, "smooth")}

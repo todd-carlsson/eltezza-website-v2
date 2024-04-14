@@ -34,10 +34,6 @@ body {
   background-color: #000;
 }
 
-body {
-  scroll-behavior: smooth;
-}
-
 a {
   color: inherit;
   text-decoration: none;
