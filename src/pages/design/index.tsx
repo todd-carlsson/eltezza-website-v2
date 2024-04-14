@@ -16,7 +16,6 @@ import {
 } from "@/constants";
 import {
   Hero,
-  Navbar,
   Services,
   Faq,
   Brands,
@@ -43,7 +42,6 @@ export default function DesignPage() {
   return (
     <>
       <MetaData data={metaData.design} />
-      <Navbar />
       <div className={styles.heroContainer}>
         <Hero
           page={page}

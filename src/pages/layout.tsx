@@ -1,4 +1,4 @@
-import { Header } from "@/features/layout";
+import { Header, Navbar } from "@/features/layout";
 import { useRouter } from "next/router";
 import { ReactNode } from "react";
 import styles from "@/styles/Home.module.css";
@@ -9,12 +9,15 @@ export default function Layout({ children }: { children: ReactNode }) {
   const variants = {
     initial: {
       opacity: 0,
+      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
     },
     animate: {
       opacity: 1,
+      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
     },
     exit: {
       opacity: 0,
+      clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
     },
   };
   return (
@@ -29,6 +32,7 @@ export default function Layout({ children }: { children: ReactNode }) {
               router.pathname === "/design" ? "--ez-orange" : "--adobe-purple"
             }
           />
+          <Navbar />
         </>
       )}
       <AnimatePresence mode="wait">

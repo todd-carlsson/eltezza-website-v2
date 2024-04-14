@@ -16,7 +16,6 @@ import {
 import {
   Hero,
   CreativeHero,
-  Navbar,
   Services,
   Faq,
   Process,
@@ -42,7 +41,6 @@ export default function CreativePage() {
   return (
     <>
       <MetaData data={metaData.creative} favIconColor="purple" />
-      <Navbar />
       <div className={styles.heroContainer}>
         <Hero
           page={page}
