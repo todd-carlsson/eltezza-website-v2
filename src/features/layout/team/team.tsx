@@ -14,13 +14,13 @@ interface TeamProps {
 export function Team({ content, description, color }: TeamProps) {
   const [windowWidth] = useWindowSize();
   const [paginationCount, setPaginationCount] = useState(
-    windowWidth > 1050 ? content.length - 1 : 3,
+    windowWidth > 1050 ? content.length : 3,
   );
   const [isPaginated, setIsPaginated] = useState(false);
 
   useEffect(() => {
     if (windowWidth > 1050) {
-      setPaginationCount(content.length - 1);
+      setPaginationCount(content.length);
     }
     if (windowWidth <= 1050 && !isPaginated) {
       setPaginationCount(4);
@@ -31,10 +31,10 @@ export function Team({ content, description, color }: TeamProps) {
   }, [windowWidth, isPaginated, content.length]);
 
   function paginateData() {
-    if (paginationCount !== content.length - 1) {
-      setPaginationCount(content.length - 1);
+    if (paginationCount !== content.length) {
+      setPaginationCount(content.length);
       setIsPaginated(true);
-    } else if (paginationCount === content.length - 1) {
+    } else if (paginationCount === content.length) {
       if (windowWidth <= 1050) {
         setPaginationCount(4);
         setIsPaginated(false);
@@ -71,9 +71,7 @@ export function Team({ content, description, color }: TeamProps) {
             variant={ButtonVariant.gradient}
             className={styles.paginateButton}
           >
-            {paginationCount !== content.length - 1
-              ? "View our team"
-              : "Show less"}
+            {paginationCount < content.length ? "View our team" : "Show less"}
           </Button>
         </div>
       )}

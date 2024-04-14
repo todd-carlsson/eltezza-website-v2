@@ -18,13 +18,13 @@ export function Reviews({ content }: ReviewsProps) {
   const [windowWidth] = useWindowSize();
 
   const [paginationCount, setPaginationCount] = useState(
-    windowWidth > 1050 ? content.length - 1 : 3,
+    windowWidth > 1050 ? content.length : 3,
   );
   const [isPaginated, setIsPaginated] = useState(false);
 
   useEffect(() => {
     if (windowWidth > 1050) {
-      setPaginationCount(content.length - 1);
+      setPaginationCount(content.length);
     }
     if (windowWidth <= 1050 && !isPaginated) {
       setPaginationCount(3);
@@ -32,10 +32,10 @@ export function Reviews({ content }: ReviewsProps) {
   }, [windowWidth, isPaginated, content.length]);
 
   function paginateData() {
-    if (paginationCount !== content.length - 1) {
-      setPaginationCount(content.length - 1);
+    if (paginationCount !== content.length) {
+      setPaginationCount(content.length);
       setIsPaginated(true);
-    } else if (paginationCount === content.length - 1) {
+    } else if (paginationCount === content.length) {
       setPaginationCount(3);
       setIsPaginated(false);
     }
@@ -116,7 +116,7 @@ export function Reviews({ content }: ReviewsProps) {
               className={styles.paginateButton}
               variant={ButtonVariant.gradient}
             >
-              {paginationCount !== content.length - 1
+              {paginationCount < content.length
                 ? "View more testimonials"
                 : "Show less"}
             </Button>
