@@ -5,7 +5,7 @@ import Image from "next/image";
 import useWindowSize from "@/hooks/useWindowSize";
 import { useState } from "react";
 import classNames from "classnames";
-import { ScrollToTop } from "./scrollToTop";
+import { Scroll } from "@/utils/scroll";
 
 export function Navbar() {
   const [windowWidth] = useWindowSize();
@@ -36,7 +36,10 @@ export function Navbar() {
               </li>
             </Link>
           ))}
-        <li onClick={ScrollToTop} className={styles.arrowContainer}>
+        <li
+          onClick={() => Scroll(0, "smooth")}
+          className={styles.arrowContainer}
+        >
           <Image
             className={styles.arrow}
             src="/NavArrow.svg"

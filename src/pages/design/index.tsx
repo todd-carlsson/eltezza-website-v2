@@ -31,9 +31,10 @@ import {
 import DesignHero from "@/features/layout/hero/designHero";
 import MetaData from "@/metadata";
 import styles from "@/styles/Home.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
+import { Scroll } from "@/utils/scroll";
 
 export default function DesignPage() {
   const page = "design";
@@ -42,6 +43,10 @@ export default function DesignPage() {
   const [showModal, setShowModal] = useState(false);
   const isPresent = useIsPresent();
   const router = useRouter();
+
+  useEffect(() => {
+    Scroll(0, "auto");
+  }, []);
 
   return (
     <>
