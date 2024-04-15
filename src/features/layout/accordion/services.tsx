@@ -15,7 +15,9 @@ export function Services({ content, color }: AccordionProps) {
   const [windowWidth] = useWindowSize();
 
   function hoverHandler(id: string) {
-    setActive(id);
+    if (windowWidth > 800) {
+      setActive(id);
+    }
   }
 
   function getTitleColor(id: string) {
@@ -31,6 +33,7 @@ export function Services({ content, color }: AccordionProps) {
     <div id="services" className={styles.accordion}>
       <p className={styles.heading}>WHAT WE DO | SERVICES</p>
       <div>
+        {/* TODO: Move mapped content into seperate component for memoization */}
         {content.map((item) => (
           <div
             className={classNames(styles.accordionSection)}

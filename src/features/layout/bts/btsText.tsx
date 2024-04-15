@@ -2,8 +2,13 @@
 import useWindowSize from "@/hooks/useWindowSize";
 import styles from "./bts.module.scss";
 import classNames from "classnames";
+import { memo } from "react";
 
-export default function BTSText({ page }: { page: "design" | "creative" }) {
+export const BTSText = memo(function BTSText({
+  page,
+}: {
+  page: "design" | "creative";
+}) {
   const [windowWidth] = useWindowSize();
   if (page === "design")
     return (
@@ -92,4 +97,4 @@ export default function BTSText({ page }: { page: "design" | "creative" }) {
         )}
       </>
     );
-}
+});

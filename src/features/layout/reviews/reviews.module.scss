@@ -54,6 +54,10 @@
     justify-content: center;
     margin-top: 3rem;
 
+    @media screen and (width > 1050px) {
+      display: none;
+    }
+
     .paginateButton {
       width: 75%;
       padding: 1.25rem;
@@ -69,6 +73,10 @@
   align-items: center;
   gap: 1rem;
   margin-top: 60px;
+
+  @media screen and (width <= 1075px) {
+    display: none;
+  }
 
   .reviewImage {
     background: transparent;

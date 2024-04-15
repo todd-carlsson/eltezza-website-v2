@@ -5,7 +5,7 @@ import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Portal } from "../portal";
 import FullScreenVideo from "./components/fullScreenVideo";
-import VideoDetails from "./components/videoDetails";
+import { VideoDetails } from "./components/videoDetails";
 
 interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
@@ -103,7 +103,10 @@ export function CreativeWork({ content }: CreativeWorkProps) {
               onMouseLeave={() => pauseVideo(item.id)}
             />
             {/* VIDEO DETAILS TEXT */}
-            <VideoDetails hoveredVideo={hoveredVideo} video={item} />
+            <VideoDetails
+              hoveredVideo={hoveredVideo === item.id ? hoveredVideo : "-1"}
+              video={item}
+            />
             {/* VIDEO */}
             <video
               className={classNames(styles.creativeVideo)}

@@ -1,15 +1,14 @@
 import Image from "next/image";
 import styles from "./contact.module.scss";
 import { Button, ButtonVariant } from "@/features/ui";
-import useWindowSize from "@/hooks/useWindowSize";
+import { memo } from "react";
 
 interface ContactProps {
   text: "design" | "create";
   onOpen: () => void;
 }
 
-export function Contact({ text, onOpen }: ContactProps) {
-  const [windowWidth] = useWindowSize();
+export const Contact = memo(function Contact({ text, onOpen }: ContactProps) {
   return (
     <section id="contact" className={styles.contactSection}>
       <div className={styles.purpleOrb} />
@@ -55,7 +54,7 @@ export function Contact({ text, onOpen }: ContactProps) {
         </div>
         <p className={styles.contactDescription}>
           Let&apos;s make your digital dreams a reality.
-          {windowWidth <= 590 && <br />} Contact us today to start the journey.
+          <br className={styles.break} /> Contact us today to start the journey.
         </p>
         <Button
           onClick={onOpen}
@@ -68,4 +67,4 @@ export function Contact({ text, onOpen }: ContactProps) {
       <div className={styles.orangeOrb} />
     </section>
   );
-}
+});

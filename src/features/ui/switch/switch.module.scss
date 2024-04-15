@@ -18,6 +18,14 @@
     height: 40px;
   }
 
+  .switchText {
+    display: block;
+
+    @media screen and (width <= 800px) {
+      display: none;
+    }
+  }
+
   .ellipse {
     width: 34px;
     height: 34px;
