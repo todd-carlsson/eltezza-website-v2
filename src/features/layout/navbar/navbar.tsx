@@ -2,14 +2,25 @@ import styles from "./navbar.module.scss";
 import { navigationLinks } from "@/constants";
 import Image from "next/image";
 import useWindowSize from "@/hooks/useWindowSize";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { Scroll } from "@/utils/scroll";
+import { useScrollspy } from "@/hooks/useScrollspy";
 
 export function Navbar() {
   const [windowWidth] = useWindowSize();
 
   const [activeLink, setActiveLink] = useState("-1");
+  // Get all ids from the navigationLinks.desktop array and remove the # at the start
+  const ids = Array.from(navigationLinks.desktop, (item) =>
+    item.href.slice(1, item.href.length),
+  );
+  const activeId = useScrollspy(ids, 80);
+
+  // Remove the current active link whenever tha id from useScrollspy changes
+  useEffect(() => {
+    setActiveLink("-1");
+  }, [activeId]);
 
   function clickHandler(href: string) {
     setActiveLink(href);
@@ -31,7 +42,8 @@ export function Navbar() {
               key={link.href}
               className={classNames(
                 styles.link,
-                activeLink === link.href && styles.linkActive,
+                activeLink === link.href ? styles.linkActive : null,
+                activeId === link.href ? styles.linkActive : null,
               )}
               onClick={() => {
                 clickHandler(link.href), handleClickScroll(link.href);
