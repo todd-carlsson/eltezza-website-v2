@@ -31,6 +31,7 @@ export function Services({ content, color }: AccordionProps) {
     <div id="services" className={styles.accordion}>
       <p className={styles.heading}>WHAT WE DO | SERVICES</p>
       <div>
+        {/* TODO: Move mapped content into seperate component for memoization */}
         {content.map((item) => (
           <div
             className={classNames(styles.accordionSection)}

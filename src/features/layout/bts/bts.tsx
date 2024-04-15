@@ -4,7 +4,7 @@ import styles from "./bts.module.scss";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { motion } from "framer-motion";
-import BTSText from "./btsText";
+import { BTSText } from "./btsText";
 import useWindowSize from "@/hooks/useWindowSize";
 
 interface BTSProps {
