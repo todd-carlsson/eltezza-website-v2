@@ -1,6 +1,6 @@
 import { TeamData } from "@/types";
 import styles from "./team.module.scss";
-import TeamMember from "./teamMember";
+import { TeamMember } from "./teamMember";
 import { useEffect, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
 import { Button, ButtonVariant } from "@/features/ui";
