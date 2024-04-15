@@ -1,4 +1,6 @@
-import { useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useEffect, useState } from "react";
+const canUseDOM = typeof window !== "undefined";
+const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 
 const clamp = (value: number) => Math.max(0, value);
 
@@ -8,7 +10,7 @@ const isBetween = (value: number, floor: number, ceil: number) =>
 export const useScrollspy = (ids: string[], offset: number = 0) => {
   const [activeId, setActiveId] = useState("");
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const listener = () => {
       const scroll = window.scrollY;
 
