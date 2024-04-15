@@ -5,6 +5,7 @@ import PagePortal from "./pagePortal";
 import { ButtonVariant } from "@/features/ui";
 import { landingPageData, logos, pageTags } from "@/constants";
 import classNames from "classnames";
+import uuid from "react-uuid";
 
 export function HomeComponent() {
   const [isDualPage, setIsDualPage] = useState(false);
@@ -72,6 +73,7 @@ export function HomeComponent() {
               className={styles.dualPageContainer}
             >
               <PagePortal
+                key={uuid()}
                 title="design"
                 logo={logos.design}
                 content={landingPageData.design}
@@ -83,6 +85,7 @@ export function HomeComponent() {
               <div className={styles.divider} />
               <div className={styles.blurRight} />
               <PagePortal
+                key={uuid()}
                 title="creative"
                 logo={logos.creative}
                 content={landingPageData.design}
