@@ -1,15 +1,12 @@
 import styles from "./navbar.module.scss";
 import { navigationLinks } from "@/constants";
 import Image from "next/image";
-import useWindowSize from "@/hooks/useWindowSize";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { Scroll } from "@/utils/scroll";
 import { useScrollspy } from "@/hooks/useScrollspy";
 
 export function Navbar() {
-  const [windowWidth] = useWindowSize();
-
   const [activeLink, setActiveLink] = useState("-1");
   // Get all ids from the navigationLinks.desktop array and remove the # at the start
   const ids = Array.from(navigationLinks.desktop, (item) =>
@@ -36,22 +33,21 @@ export function Navbar() {
   return (
     <nav className={styles.navbar}>
       <ul className={styles.navbarContainer}>
-        {windowWidth > 800 &&
-          navigationLinks.desktop.map((link) => (
-            <li
-              key={link.href}
-              className={classNames(
-                styles.link,
-                activeLink === link.href ? styles.linkActive : null,
-                activeId === link.href ? styles.linkActive : null,
-              )}
-              onClick={() => {
-                clickHandler(link.href), handleClickScroll(link.href);
-              }}
-            >
-              {link.title}
-            </li>
-          ))}
+        {navigationLinks.desktop.map((link) => (
+          <li
+            key={link.href}
+            className={classNames(
+              styles.link,
+              activeLink === link.href ? styles.linkActive : null,
+              activeId === link.href ? styles.linkActive : null,
+            )}
+            onClick={() => {
+              clickHandler(link.href), handleClickScroll(link.href);
+            }}
+          >
+            {link.title}
+          </li>
+        ))}
         <li
           onClick={() => Scroll(0, "smooth")}
           className={styles.arrowContainer}
