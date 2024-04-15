@@ -70,6 +70,10 @@
   gap: 1rem;
   margin-top: 60px;
 
+  @media screen and (width <= 1075px) {
+    display: none;
+  }
+
   .reviewImage {
     background: transparent;
   }
