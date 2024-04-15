@@ -9,11 +9,12 @@ import { Button, ButtonVariant } from "@/features/ui";
 
 interface ReviewsProps {
   content: Array<TestimonialsData>;
+  page: "design" | "creative";
 }
 
 const DRAG_BUFFER = 80;
 
-export function Reviews({ content }: ReviewsProps) {
+export function Reviews({ content, page }: ReviewsProps) {
   const [imgIndex, setImgIndex] = useState(0);
   const [windowWidth] = useWindowSize();
 
@@ -93,7 +94,13 @@ export function Reviews({ content }: ReviewsProps) {
           className={styles.reviewsContainer}
         >
           {content.map((item, i) => (
-            <Review key={uuid()} review={item} index={i} imgIndex={imgIndex} />
+            <Review
+              key={uuid()}
+              review={item}
+              index={i}
+              imgIndex={imgIndex}
+              page={page}
+            />
           ))}
         </motion.div>
       </section>
@@ -106,7 +113,13 @@ export function Reviews({ content }: ReviewsProps) {
         </h1>
         <div className={styles.reviewsContainer}>
           {content.slice(0, paginationCount).map((item, i) => (
-            <Review key={uuid()} review={item} index={i} imgIndex={imgIndex} />
+            <Review
+              key={uuid()}
+              review={item}
+              index={i}
+              imgIndex={imgIndex}
+              page={page}
+            />
           ))}
         </div>
         {windowWidth <= 1050 && (

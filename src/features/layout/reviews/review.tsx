@@ -8,9 +8,10 @@ interface ReviewProps {
   review: TestimonialsData;
   index: number;
   imgIndex: number;
+  page: "design" | "creative";
 }
 
-export default function Review({ review, index, imgIndex }: ReviewProps) {
+export default function Review({ review, index, imgIndex, page }: ReviewProps) {
   const [windowWidth] = useWindowSize();
   if (windowWidth > 1000) {
     return (
@@ -29,7 +30,12 @@ export default function Review({ review, index, imgIndex }: ReviewProps) {
         <p className={styles.reviewText}>{review.review}</p>
         <h3 className={styles.reviewName}>{review.name}</h3>
         <p className={styles.reviewRole}>{review.role}</p>
-        <Image src="/images/stars.svg" alt="5 stars" width={120} height={20} />
+        <Image
+          src={`/images/stars-${page}.svg`}
+          alt="5 stars"
+          width={120}
+          height={20}
+        />
       </motion.div>
     );
   } else
@@ -38,7 +44,12 @@ export default function Review({ review, index, imgIndex }: ReviewProps) {
         <p className={styles.reviewText}>{review.review}</p>
         <h3 className={styles.reviewName}>{review.name}</h3>
         <p className={styles.reviewRole}>{review.role}</p>
-        <Image src="/images/stars.svg" alt="5 stars" width={120} height={20} />
+        <Image
+          src={`/images/stars-${page}.svg`}
+          alt="5 stars"
+          width={120}
+          height={20}
+        />
       </div>
     );
 }
