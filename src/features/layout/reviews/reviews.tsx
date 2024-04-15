@@ -117,7 +117,8 @@ export function Reviews({ content, page }: ReviewsProps) {
               key={item.id}
               review={item}
               index={i}
-              imgIndex={imgIndex}
+              // Pass in the imgIndex state only if windowWidth is greater than 1000px
+              imgIndex={windowWidth > 1000 ? imgIndex : i - 1}
               page={page}
             />
           ))}
