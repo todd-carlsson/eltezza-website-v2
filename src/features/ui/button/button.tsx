@@ -29,6 +29,16 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     ref,
   ) => {
     const [isHovered, setIsHovered] = useState(false);
+    function onMouseOver() {
+      if (variant === ButtonVariant.main && !disabled) {
+        setIsHovered(true);
+      }
+    }
+    function onMouseLeave() {
+      if (variant === ButtonVariant.main && !disabled) {
+        setIsHovered(false);
+      }
+    }
     return (
       <button
         data-testid="ui-button"
@@ -42,8 +52,8 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         disabled={disabled}
         {...props}
-        onMouseOver={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+        onMouseOver={onMouseOver}
+        onMouseLeave={onMouseLeave}
       >
         {children}
         {variant === ButtonVariant.main && !disabled && (
