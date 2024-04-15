@@ -1,5 +1,5 @@
 import { TestimonialsData } from "@/types";
-import Review from "./review";
+import { Review } from "./review";
 import styles from "./reviews.module.scss";
 import { motion, useMotionValue } from "framer-motion";
 import uuid from "react-uuid";
@@ -114,7 +114,7 @@ export function Reviews({ content, page }: ReviewsProps) {
         <div className={styles.reviewsContainer}>
           {content.slice(0, paginationCount).map((item, i) => (
             <Review
-              key={uuid()}
+              key={item.id}
               review={item}
               index={i}
               imgIndex={imgIndex}
@@ -122,19 +122,17 @@ export function Reviews({ content, page }: ReviewsProps) {
             />
           ))}
         </div>
-        {windowWidth <= 1050 && (
-          <div className={styles.buttonContainer}>
-            <Button
-              onClick={paginateData}
-              className={styles.paginateButton}
-              variant={ButtonVariant.gradient}
-            >
-              {paginationCount < content.length
-                ? "View more testimonials"
-                : "Show less"}
-            </Button>
-          </div>
-        )}
+        <div className={styles.buttonContainer}>
+          <Button
+            onClick={paginateData}
+            className={styles.paginateButton}
+            variant={ButtonVariant.gradient}
+          >
+            {paginationCount < content.length
+              ? "View more testimonials"
+              : "Show less"}
+          </Button>
+        </div>
       </section>
     );
 }

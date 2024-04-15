@@ -3,6 +3,7 @@ import styles from "./reviews.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import useWindowSize from "@/hooks/useWindowSize";
+import { memo } from "react";
 
 interface ReviewProps {
   review: TestimonialsData;
@@ -11,7 +12,12 @@ interface ReviewProps {
   page: "design" | "creative";
 }
 
-export default function Review({ review, index, imgIndex, page }: ReviewProps) {
+export const Review = memo(function Review({
+  review,
+  index,
+  imgIndex,
+  page,
+}: ReviewProps) {
   const [windowWidth] = useWindowSize();
   if (windowWidth > 1000) {
     return (
@@ -52,4 +58,4 @@ export default function Review({ review, index, imgIndex, page }: ReviewProps) {
         />
       </div>
     );
-}
+});
