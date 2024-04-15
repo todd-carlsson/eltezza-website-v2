@@ -72,7 +72,7 @@ export default function DesignPage() {
         content={teamData.design}
         color={color}
       />
-      <Reviews content={testimonialsData} />
+      <Reviews content={testimonialsData} page={page} />
       <Faq content={faqs.design} color={color} />
       <Contact onOpen={() => setShowModal(true)} text={page} />
       <Portal root="contact-root">

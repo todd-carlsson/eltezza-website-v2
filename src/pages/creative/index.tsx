@@ -71,7 +71,7 @@ export default function CreativePage() {
         content={teamData.creative}
         color={color}
       />
-      <Reviews content={testimonialsData} />
+      <Reviews content={testimonialsData} page={page} />
       <Faq content={faqs.creative} color={color} />
       <Contact text="create" onOpen={() => setShowModal(true)} />
       <Portal root="contact-root">
