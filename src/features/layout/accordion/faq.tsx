@@ -15,7 +15,9 @@ export function Faq({ content, color }: AccordionProps) {
   const [windowWidth] = useWindowSize();
 
   function hoverHandler(id: string) {
-    setActive(id);
+    if (windowWidth > 800) {
+      setActive(id);
+    }
   }
 
   function getTitleColor(id: string) {

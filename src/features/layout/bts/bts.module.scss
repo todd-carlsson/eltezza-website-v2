@@ -79,6 +79,10 @@
       left: 0;
       margin-left: 0;
       opacity: 0.2;
+
+      @media screen and (width <= 1100px) {
+        display: none;
+      }
     }
   }
 

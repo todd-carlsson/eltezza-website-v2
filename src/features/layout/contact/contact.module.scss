@@ -97,6 +97,14 @@
         font-size: clamp(0.75rem, 8vw, 1rem);
         padding: 0 var(--content-padding-sm);
       }
+
+      .break {
+        display: none;
+
+        @media screen and (width <= 590px) {
+          display: block;
+        }
+      }
     }
 
     .contactButton {

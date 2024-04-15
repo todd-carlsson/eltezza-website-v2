@@ -2,7 +2,6 @@ import { Button, ButtonVariant } from "@/features/ui";
 import styles from "./hero.module.scss";
 import { FeaturedReview } from "../reviews";
 import { featuredReviewData } from "@/constants";
-import useWindowSize from "@/hooks/useWindowSize";
 import classNames from "classnames";
 
 interface HeroProps {
@@ -12,16 +11,8 @@ interface HeroProps {
 }
 
 export function Hero({ page, description, tags }: HeroProps) {
-  const [windowWidth] = useWindowSize();
   return (
     <div className={styles.heroContent}>
-      <div
-        className={styles.orb}
-        style={{
-          backgroundColor:
-            page === "design" ? "var(--ez-orange)" : "var(--adobe-purple)",
-        }}
-      />
       {/* HEADING */}
       <div className={styles.heroHeadingContainer}>
         <h1 className={styles.heroHeading}>RISE ABOVE</h1>
@@ -53,9 +44,7 @@ export function Hero({ page, description, tags }: HeroProps) {
           </Button>
         ))}
       </div>
-      {windowWidth > 1075 && (
-        <FeaturedReview content={featuredReviewData[page]} />
-      )}
+      <FeaturedReview content={featuredReviewData[page]} />
     </div>
   );
 }

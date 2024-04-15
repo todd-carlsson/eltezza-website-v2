@@ -48,6 +48,10 @@
       &:hover {
         background-color: var(--heightened-grey);
       }
+
+      @media screen and (width <= 800px) {
+        display: none;
+      }
     }
 
     .linkActive {

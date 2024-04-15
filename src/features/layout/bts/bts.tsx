@@ -4,8 +4,7 @@ import styles from "./bts.module.scss";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { motion } from "framer-motion";
-import BTSText from "./btsText";
-import useWindowSize from "@/hooks/useWindowSize";
+import { BTSText } from "./btsText";
 
 interface BTSProps {
   content: Array<BtsData>;
@@ -16,7 +15,6 @@ export function BTS({ content, page }: BTSProps) {
   const [activeImage, setActiveImage] = useState(content.length - 1);
   // const hiddenImage = activeImage === content.length - 1 ? 0 : activeImage + 1;
   const [hiddenImage, setHiddenImage] = useState(0);
-  const [windowWidth] = useWindowSize();
 
   useEffect(() => {
     setTimeout(() => {
@@ -42,7 +40,7 @@ export function BTS({ content, page }: BTSProps) {
     <section className={styles.btsSection}>
       <div className={styles.btsContentContainer}>
         {/* HIDDEN */}
-        {windowWidth > 1100 && content[hiddenImage].isVideo ? (
+        {content[hiddenImage].isVideo ? (
           <motion.video
             key={"-1"}
             variants={animationVariant}
@@ -55,17 +53,15 @@ export function BTS({ content, page }: BTSProps) {
             <source src={content[hiddenImage].src} type="video/mp4" />
           </motion.video>
         ) : (
-          windowWidth > 1000 && (
-            <motion.img
-              key={"-1"}
-              variants={animationVariant}
-              animate="animate"
-              initial="initial"
-              className={classNames(styles.btsImg, styles.hiddenImage)}
-              src={content[hiddenImage].src}
-              alt={content[hiddenImage].alt}
-            />
-          )
+          <motion.img
+            key={"-1"}
+            variants={animationVariant}
+            animate="animate"
+            initial="initial"
+            className={classNames(styles.btsImg, styles.hiddenImage)}
+            src={content[hiddenImage].src}
+            alt={content[hiddenImage].alt}
+          />
         )}
         {/* ACTIVE */}
         {content[activeImage].isVideo ? (

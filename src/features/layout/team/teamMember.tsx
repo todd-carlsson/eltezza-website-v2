@@ -1,6 +1,7 @@
 import { TeamData } from "@/types";
 import Image from "next/image";
 import styles from "./team.module.scss";
+import { memo } from "react";
 
 interface TeamMemberProps {
   member: TeamData;
@@ -8,7 +9,11 @@ interface TeamMemberProps {
   color: "--ez-orange" | "--adobe-purple";
 }
 
-export default function TeamMember({ member, index, color }: TeamMemberProps) {
+export const TeamMember = memo(function TeamMember({
+  member,
+  index,
+  color,
+}: TeamMemberProps) {
   return (
     <div className={styles.memberContainer}>
       <Image
@@ -32,4 +37,4 @@ export default function TeamMember({ member, index, color }: TeamMemberProps) {
       </div>
     </div>
   );
-}
+});
