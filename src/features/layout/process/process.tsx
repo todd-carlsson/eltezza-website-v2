@@ -2,6 +2,7 @@
 import styles from "./process.module.scss";
 import useWindowSize from "@/hooks/useWindowSize";
 import { motion } from "framer-motion";
+import { memo } from "react";
 
 interface ProcessProps {
   content: Array<ProcessPropObj>;
@@ -13,7 +14,7 @@ type ProcessPropObj = {
   title: string;
 };
 
-export function Process({ content, color }: ProcessProps) {
+export const Process = memo(function Process({ content, color }: ProcessProps) {
   // TODO: Fix black text color staggering animation on design page
 
   const [windowWidth] = useWindowSize();
@@ -122,4 +123,4 @@ export function Process({ content, color }: ProcessProps) {
       </motion.div>
     </section>
   );
-}
+});

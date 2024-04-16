@@ -1,7 +1,7 @@
 import { CreativeWorkData } from "@/types";
 import styles from "./work.module.scss";
 import classNames from "classnames";
-import { useRef, useState } from "react";
+import { memo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Portal } from "../portal";
 import FullScreenVideo from "./components/fullScreenVideo";
@@ -11,7 +11,9 @@ interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
 }
 
-export function CreativeWork({ content }: CreativeWorkProps) {
+export const CreativeWork = memo(function CreativeWork({
+  content,
+}: CreativeWorkProps) {
   function getVideoColumnSize(size: "small" | "medium" | "large") {
     if (size === "large") {
       return styles.gridColSpanSix;
@@ -133,4 +135,4 @@ export function CreativeWork({ content }: CreativeWorkProps) {
       </div>
     </section>
   );
-}
+});

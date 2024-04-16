@@ -3,7 +3,7 @@ import { Review } from "./review";
 import styles from "./reviews.module.scss";
 import { motion, useMotionValue } from "framer-motion";
 import uuid from "react-uuid";
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
 import { Button, ButtonVariant } from "@/features/ui";
 
@@ -14,7 +14,7 @@ interface ReviewsProps {
 
 const DRAG_BUFFER = 80;
 
-export function Reviews({ content, page }: ReviewsProps) {
+export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
   const [imgIndex, setImgIndex] = useState(0);
   const [windowWidth] = useWindowSize();
 
@@ -136,4 +136,4 @@ export function Reviews({ content, page }: ReviewsProps) {
         </div>
       </section>
     );
-}
+});
