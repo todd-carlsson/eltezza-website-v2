@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { BtsData } from "@/types";
 import styles from "./bts.module.scss";
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { BTSText } from "./btsText";
@@ -11,7 +11,7 @@ interface BTSProps {
   page: "design" | "creative";
 }
 
-export function BTS({ content, page }: BTSProps) {
+export const BTS = memo(function BTS({ content, page }: BTSProps) {
   const [activeImage, setActiveImage] = useState(content.length - 1);
   // const hiddenImage = activeImage === content.length - 1 ? 0 : activeImage + 1;
   const [hiddenImage, setHiddenImage] = useState(0);
@@ -96,4 +96,4 @@ export function BTS({ content, page }: BTSProps) {
       </div>
     </section>
   );
-}
+});

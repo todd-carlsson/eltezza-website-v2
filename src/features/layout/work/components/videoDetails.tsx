@@ -1,17 +1,13 @@
 import { CreativeWorkData } from "@/types";
 import styles from "../work.module.scss";
 import { motion } from "framer-motion";
-import { memo } from "react";
 
 interface VideoDetailsProps {
-  hoveredVideo: string;
+  hoveredVideo: string | null;
   video: CreativeWorkData;
 }
 
-export const VideoDetails = memo(function VideoDetails({
-  hoveredVideo,
-  video,
-}: VideoDetailsProps) {
+export function VideoDetails({ hoveredVideo, video }: VideoDetailsProps) {
   return (
     <motion.div className={styles.videoDetails}>
       <div className={styles.clientContainer}>
@@ -59,4 +55,4 @@ export const VideoDetails = memo(function VideoDetails({
       </motion.p>
     </motion.div>
   );
-});
+}

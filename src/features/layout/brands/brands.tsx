@@ -3,15 +3,15 @@
 import classNames from "classnames";
 import styles from "./brands.module.scss";
 import { BrandsData } from "@/types";
+import { memo } from "react";
 
 interface BrandsProps {
   content: Array<BrandsData>;
   columns: 3 | 4;
 }
 
-export function Brands({ content, columns }: BrandsProps) {
+export const Brands = memo(function Brands({ content, columns }: BrandsProps) {
   return (
-    // TODO: fix alignment of images on start and end of each grid row
     <section id="clients" className={styles.brandsSection}>
       <h1 className={classNames("largeText", styles.brandsTitle)}>
         OUR TRUSTED <span className="textGradient">PARTNERS</span>
@@ -35,4 +35,4 @@ export function Brands({ content, columns }: BrandsProps) {
       </div>
     </section>
   );
-}
+});

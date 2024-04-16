@@ -3,6 +3,7 @@ import styles from "./hero.module.scss";
 import { FeaturedReview } from "../reviews";
 import { featuredReviewData } from "@/constants";
 import classNames from "classnames";
+import { memo } from "react";
 
 interface HeroProps {
   page: "design" | "creative";
@@ -10,7 +11,7 @@ interface HeroProps {
   tags: Array<string>;
 }
 
-export function Hero({ page, description, tags }: HeroProps) {
+export const Hero = memo(function Hero({ page, description, tags }: HeroProps) {
   return (
     <div className={styles.heroContent}>
       {/* HEADING */}
@@ -47,4 +48,4 @@ export function Hero({ page, description, tags }: HeroProps) {
       <FeaturedReview content={featuredReviewData[page]} />
     </div>
   );
-}
+});

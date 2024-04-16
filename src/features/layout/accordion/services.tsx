@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import styles from "./accordion.module.scss";
 import { motion } from "framer-motion";
 import classNames from "classnames";
@@ -10,7 +10,10 @@ interface AccordionProps {
   color: "--ez-orange" | "--adobe-purple";
 }
 
-export function Services({ content, color }: AccordionProps) {
+export const Services = memo(function Services({
+  content,
+  color,
+}: AccordionProps) {
   const [active, setActive] = useState<string>("-1");
   const [windowWidth] = useWindowSize();
 
@@ -78,4 +81,4 @@ export function Services({ content, color }: AccordionProps) {
       </div>
     </div>
   );
-}
+});
