@@ -31,6 +31,24 @@ textarea.textarea {
   }
 }
 
+.label {
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 1rem;
+  padding: 0 3px;
+  left: 0.5rem;
+  cursor: text;
+}
+
+textarea.textarea:focus ~ .label {
+  font-size: 0.85rem;
+  transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  top: -0.15rem;
+  background-color: #000;
+}
+
 textarea.error {
   border-bottom: 2px solid #f04438;
 
@@ -38,4 +56,8 @@ textarea.error {
     color: #f04438;
     opacity: 0.6;
   }
+}
+
+label.error {
+  color: red;
 }

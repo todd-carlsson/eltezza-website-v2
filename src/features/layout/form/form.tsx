@@ -4,6 +4,7 @@ import { contactFormText } from "@/constants";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { MdError } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import Details from "./details";
@@ -133,6 +134,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   />
                   {error && (
                     <div className={styles.formFeedback}>
+                      <MdError size={20} color="red" />
                       <span>{error?.message}</span>
                     </div>
                   )}
@@ -160,6 +162,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   />
                   {error && (
                     <div className={styles.formFeedback}>
+                      <MdError size={20} color="red" />
                       <span>{error?.message}</span>
                     </div>
                   )}
@@ -187,6 +190,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   />
                   {error && (
                     <div className={styles.formFeedback}>
+                      <MdError size={20} color="red" />
                       <span>{error?.message}</span>
                     </div>
                   )}
@@ -213,6 +217,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   />
                   {error && (
                     <div className={styles.formFeedback}>
+                      <MdError size={20} color="red" />
                       <span>{error?.message}</span>
                     </div>
                   )}

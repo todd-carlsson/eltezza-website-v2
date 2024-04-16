@@ -20,13 +20,31 @@ input.input {
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px #fff;
+    box-shadow: 0 0 0 1.5px #fff;
   }
 
   &:disabled {
     opacity: 0.6;
     cursor: not-allowed;
   }
+}
+
+.label {
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 1rem;
+  padding: 0 3px;
+  left: 0.5rem;
+  cursor: text;
+}
+
+input.input:focus ~ .label {
+  font-size: 0.85rem;
+  transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  top: -0.15rem;
+  background-color: #000;
 }
 
 input.error {
@@ -36,4 +54,8 @@ input.error {
     color: #f04438;
     opacity: 0.6;
   }
+}
+
+label.error {
+  color: red;
 }
