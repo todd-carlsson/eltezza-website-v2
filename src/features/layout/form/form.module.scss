@@ -50,6 +50,17 @@
     flex-direction: column;
     gap: 1rem;
 
+    .inputWrap {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+
+      .formFeedback {
+        font-size: 0.85rem;
+        color: red;
+      }
+    }
+
     .errorMsg {
       color: red;
       font-family: var(--font-source-sans);
