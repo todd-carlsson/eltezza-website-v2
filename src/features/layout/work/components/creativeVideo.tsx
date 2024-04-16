@@ -5,19 +5,20 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CreativeWorkData } from "@/types";
 import { VideoDetails } from "./videoDetails";
 import FullScreenVideo from "./fullScreenVideo";
+import { memo } from "react";
 
 interface CreativeVideoProps {
   video: CreativeWorkData;
   hoveredVideo: string;
-  pauseVideo: () => void;
-  playVideo: () => void;
-  openFullVideo: () => void;
+  pauseVideo: (itemId: string) => void;
+  playVideo: (itemId: string) => void;
+  openFullVideo: (itemId: string) => void;
   removeFullVideo: () => void;
   openedVideo: string;
   getMap: () => Map<string, HTMLVideoElement>;
 }
 
-export default function CreativeVideo({
+export const CreativeVideo = memo(function CreativeVideo({
   video,
   hoveredVideo,
   pauseVideo,
@@ -58,9 +59,9 @@ export default function CreativeVideo({
         className={classNames(styles.videoThumbail)}
         src={video.thumbnail}
         alt={video.src}
-        onClick={openFullVideo}
-        onMouseEnter={playVideo}
-        onMouseLeave={pauseVideo}
+        onClick={() => openFullVideo(video.id)}
+        onMouseEnter={() => playVideo(video.id)}
+        onMouseLeave={() => pauseVideo(video.id)}
       />
       {/* VIDEO DETAILS TEXT */}
       <VideoDetails
@@ -72,8 +73,8 @@ export default function CreativeVideo({
         className={classNames(styles.creativeVideo)}
         poster={video.thumbnail}
         src={video.src}
-        onMouseEnter={playVideo}
-        onMouseLeave={pauseVideo}
+        onMouseEnter={() => playVideo(video.id)}
+        onMouseLeave={() => pauseVideo(video.id)}
         ref={(node) => {
           const map = getMap();
           if (node) {
@@ -90,4 +91,4 @@ export default function CreativeVideo({
       </video>
     </div>
   );
-}
+});
