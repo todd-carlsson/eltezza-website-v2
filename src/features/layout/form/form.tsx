@@ -22,15 +22,26 @@ const formSchema = z.object({
     })
     .min(1, { message: "Please enter a name" }),
   email: z
-    .string()
+    .string({
+      required_error: "Email is required",
+      invalid_type_error: "Email must be a string",
+    })
     .email({
       message: "Please enter an email",
     })
     .min(5),
   subject: z
-    .string()
+    .string({
+      required_error: "Subject is required",
+      invalid_type_error: "Subject must be a string",
+    })
     .min(1, { message: "Please enter a subject for your message" }),
-  message: z.string().min(5, { message: "Please enter a message" }),
+  message: z
+    .string({
+      required_error: "Message is required",
+      invalid_type_error: "Message must be a string",
+    })
+    .min(5, { message: "Please enter a message" }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
