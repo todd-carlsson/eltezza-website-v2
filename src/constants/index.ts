@@ -897,8 +897,14 @@ export const teamData = {
     {
       id: "7",
       name: "Aileen Banzagales",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709446/EZ%20Website%20-%20Design/Team/Aileen_Banzagales_-_Graphic_Designer_i8iyet.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713243560/EZ%20Website%20-%20Design/Team/Aileen_Banzagles_-_Graphic_Designer_oompl5.jpg",
       position: "Graphic Designer",
+    },
+    {
+      id: "8",
+      name: "Jimwell Manlusoc",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713243569/EZ%20Website%20-%20Design/Team/Jimwell_Manlusoc_-_UI_UX_Designer_oevxvk.jpg",
+      position: "UI/UX Designer",
     },
   ] as Array<TeamData>,
   creative: [
@@ -928,6 +934,12 @@ export const teamData = {
     },
     {
       id: "5",
+      name: "Shay Gillanders",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709619/EZ%20Website%20-%20Design/Team/Shay_Gillanders_-_Visual_Designer_ap1gci.jpg",
+      position: "Visual Designer",
+    },
+    {
+      id: "6",
       name: "King Raffy",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709685/EZ%20Website%20-%20Creative/Team/King_Raffy_-_Visual_Designer_bxau6w.jpg",
       position: "Visual Designer",
