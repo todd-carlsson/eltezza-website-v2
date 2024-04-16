@@ -16,6 +16,7 @@ import {
 } from "@/constants";
 import {
   Hero,
+  DesignHero,
   Services,
   Faq,
   Brands,
@@ -28,7 +29,6 @@ import {
   FormModal,
   Reviews,
 } from "@/features/layout";
-import DesignHero from "@/features/layout/hero/designHero";
 import MetaData from "@/metadata";
 import styles from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";

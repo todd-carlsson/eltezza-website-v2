@@ -2,7 +2,7 @@ import { AccordionData } from "@/types";
 import styles from "./accordion.module.scss";
 import { motion } from "framer-motion";
 import classNames from "classnames";
-import { useState } from "react";
+import { memo, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
 
 interface AccordionProps {
@@ -10,7 +10,7 @@ interface AccordionProps {
   color: "--ez-orange" | "--adobe-purple";
 }
 
-export function Faq({ content, color }: AccordionProps) {
+export const Faq = memo(function Faq({ content, color }: AccordionProps) {
   const [active, setActive] = useState<string>("-1");
   const [windowWidth] = useWindowSize();
 
@@ -98,4 +98,4 @@ export function Faq({ content, color }: AccordionProps) {
       </div>
     </div>
   );
-}
+});

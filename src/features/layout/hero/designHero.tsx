@@ -1,13 +1,17 @@
 import { CarouselData } from "@/types";
 import styles from "./hero.module.scss";
 import { Marquee } from "@/features/ui";
+import { memo } from "react";
 
 interface DesignHeroProps {
   leftData: CarouselData[];
   rightData: CarouselData[];
 }
 
-export default function DesignHero({ leftData, rightData }: DesignHeroProps) {
+export const DesignHero = memo(function DesignHero({
+  leftData,
+  rightData,
+}: DesignHeroProps) {
   return (
     <div className={styles.designPageCarousel}>
       <div className={styles.orangeOrb} />
@@ -29,4 +33,4 @@ export default function DesignHero({ leftData, rightData }: DesignHeroProps) {
       <div className={styles.orangeOrbSmall} />
     </div>
   );
-}
+});

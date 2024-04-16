@@ -1,7 +1,7 @@
 import { TeamData } from "@/types";
 import styles from "./team.module.scss";
 import { TeamMember } from "./teamMember";
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
 import { Button, ButtonVariant } from "@/features/ui";
 
@@ -11,7 +11,11 @@ interface TeamProps {
   color: "--ez-orange" | "--adobe-purple";
 }
 
-export function Team({ content, description, color }: TeamProps) {
+export const Team = memo(function Team({
+  content,
+  description,
+  color,
+}: TeamProps) {
   const [windowWidth] = useWindowSize();
   const [paginationCount, setPaginationCount] = useState(
     windowWidth > 1050 ? content.length : 3,
@@ -64,17 +68,15 @@ export function Team({ content, description, color }: TeamProps) {
           <TeamMember key={item.id} member={item} index={i} color={color} />
         ))}
       </div>
-      {windowWidth <= 1050 && (
-        <div className={styles.buttonContainer}>
-          <Button
-            onClick={paginateData}
-            variant={ButtonVariant.gradient}
-            className={styles.paginateButton}
-          >
-            {paginationCount < content.length ? "View our team" : "Show less"}
-          </Button>
-        </div>
-      )}
+      <div className={styles.buttonContainer}>
+        <Button
+          onClick={paginateData}
+          variant={ButtonVariant.gradient}
+          className={styles.paginateButton}
+        >
+          {paginationCount < content.length ? "View our team" : "Show less"}
+        </Button>
+      </div>
     </section>
   );
-}
+});
