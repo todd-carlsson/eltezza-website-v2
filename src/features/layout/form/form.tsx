@@ -119,8 +119,8 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                 <Input
                   placeholder="Email address"
                   type="email"
-                  disabled={loading}
                   required
+                  disabled={loading}
                   ref={ref}
                   value={value}
                   onBlur={onBlur}

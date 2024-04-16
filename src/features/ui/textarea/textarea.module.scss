@@ -12,14 +12,17 @@ textarea.textarea {
   min-height: 65px;
   position: relative;
 
+  &:hover {
+    box-shadow: 0 0 0 1px var(--gray-text);
+  }
+
   &::placeholder {
     color: #fff;
     opacity: 0.65;
   }
 
   &:focus {
-    outline: 1px ridge rgba($color: #fff, $alpha: 80%);
-    border-radius: 12px;
+    box-shadow: 0 0 0 1px #fff;
   }
 
   &:disabled {
