@@ -5,6 +5,7 @@ import * as React from "react";
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
+  hasValue?: boolean;
   error?: boolean;
 }
 
@@ -16,6 +17,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       error,
       disabled = false,
       placeholder,
+      hasValue,
       label = placeholder,
       ...props
     },
@@ -39,7 +41,11 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         {label || placeholder ? (
           <label
             htmlFor={inputId}
-            className={classNames(styles.label, error ? styles.error : "")}
+            className={classNames(
+              styles.label,
+              error ? styles.error : "",
+              hasValue ? styles.focused : "",
+            )}
           >
             {label}
           </label>

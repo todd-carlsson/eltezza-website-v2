@@ -124,6 +124,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   <Input
                     placeholder="Full name"
                     type="text"
+                    hasValue={!!value.length}
                     disabled={loading}
                     required
                     ref={ref}
@@ -153,6 +154,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                     placeholder="Email address"
                     type="email"
                     required
+                    hasValue={!!value.length}
                     disabled={loading}
                     ref={ref}
                     value={value}
@@ -182,6 +184,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                     type="text"
                     disabled={loading}
                     required
+                    hasValue={!!value.length}
                     ref={ref}
                     value={value}
                     onBlur={onBlur}
@@ -209,6 +212,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                     placeholder="Message"
                     disabled={loading}
                     required
+                    hasValue={!!value.length}
                     ref={ref}
                     value={value}
                     onBlur={onBlur}

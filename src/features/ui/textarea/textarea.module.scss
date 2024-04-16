@@ -41,9 +41,9 @@ textarea.textarea {
   cursor: text;
 }
 
-textarea.textarea:focus ~ .label {
+textarea.textarea:focus ~ .label,
+label.focused {
   font-size: 0.85rem;
-  transform: translate(0, -50%);
   transform: translate(0, -50%);
   top: -0.15rem;
   background-color: #000;

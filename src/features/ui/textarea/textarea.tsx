@@ -4,6 +4,7 @@ import * as React from "react";
 
 export interface TextAreaProps
   extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+  hasValue?: boolean;
   label?: string;
   error?: boolean;
 }
@@ -15,6 +16,7 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
       error,
       disabled = false,
       placeholder,
+      hasValue,
       label = placeholder,
       ...props
     },
@@ -37,7 +39,11 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
         {label || placeholder ? (
           <label
             htmlFor={inputId}
-            className={classNames(styles.label, error ? styles.error : "")}
+            className={classNames(
+              styles.label,
+              error ? styles.error : "",
+              hasValue ? styles.focused : "",
+            )}
           >
             {label}
           </label>
