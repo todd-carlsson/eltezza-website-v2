@@ -981,7 +981,7 @@ export const btsData = {
     },
     {
       id: "6",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_69/v1711328066/EZ%20Website%20-%20Design/BTS/Videos/IMG_0188_hbsrhx.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_58/v1711328066/EZ%20Website%20-%20Design/BTS/Videos/IMG_0188_hbsrhx.mov",
       alt: "Behind the scenes at Steve's Tyre Service",
       isVideo: true,
     },
