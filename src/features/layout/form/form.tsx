@@ -4,6 +4,7 @@ import { contactFormText } from "@/constants";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { MdError } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import Details from "./details";
@@ -15,10 +16,33 @@ interface FormProps {
 }
 
 const formSchema = z.object({
-  fullName: z.string().min(1),
-  email: z.string().email().min(5).email("Please specify a valid email"),
-  subject: z.string().min(1),
-  message: z.string().min(3),
+  fullName: z
+    .string({
+      required_error: "Name is required",
+      invalid_type_error: "Name must be a string",
+    })
+    .min(1, { message: "Please enter a name" }),
+  email: z
+    .string({
+      required_error: "Email is required",
+      invalid_type_error: "Email must be a string",
+    })
+    .email({
+      message: "Please enter an email",
+    })
+    .min(5),
+  subject: z
+    .string({
+      required_error: "Subject is required",
+      invalid_type_error: "Subject must be a string",
+    })
+    .min(1, { message: "Please enter a subject for your message" }),
+  message: z
+    .string({
+      required_error: "Message is required",
+      invalid_type_error: "Message must be a string",
+    })
+    .min(5, { message: "Please enter a message" }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -96,17 +120,26 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                 field: { value, onChange, onBlur, ref },
                 fieldState: { error },
               }) => (
-                <Input
-                  placeholder="Full name"
-                  type="text"
-                  disabled={loading}
-                  required
-                  ref={ref}
-                  value={value}
-                  onBlur={onBlur}
-                  onChange={onChange}
-                  error={Boolean(error)}
-                />
+                <div className={styles.inputWrap}>
+                  <Input
+                    placeholder="Full name"
+                    type="text"
+                    hasValue={!!value.length}
+                    disabled={loading}
+                    required
+                    ref={ref}
+                    value={value}
+                    onBlur={onBlur}
+                    onChange={onChange}
+                    error={Boolean(error)}
+                  />
+                  {error && (
+                    <div className={styles.formFeedback}>
+                      <MdError size={20} color="red" />
+                      <span>{error?.message}</span>
+                    </div>
+                  )}
+                </div>
               )}
             />
             <Controller
@@ -116,17 +149,26 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                 field: { value, onChange, onBlur, ref },
                 fieldState: { error },
               }) => (
-                <Input
-                  placeholder="Email address"
-                  type="email"
-                  disabled={loading}
-                  required
-                  ref={ref}
-                  value={value}
-                  onBlur={onBlur}
-                  onChange={onChange}
-                  error={Boolean(error)}
-                />
+                <div className={styles.inputWrap}>
+                  <Input
+                    placeholder="Email address"
+                    type="email"
+                    required
+                    hasValue={!!value.length}
+                    disabled={loading}
+                    ref={ref}
+                    value={value}
+                    onBlur={onBlur}
+                    onChange={onChange}
+                    error={Boolean(error)}
+                  />
+                  {error && (
+                    <div className={styles.formFeedback}>
+                      <MdError size={20} color="red" />
+                      <span>{error?.message}</span>
+                    </div>
+                  )}
+                </div>
               )}
             />
             <Controller
@@ -136,17 +178,26 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                 field: { value, onChange, onBlur, ref },
                 fieldState: { error },
               }) => (
-                <Input
-                  placeholder="Subject"
-                  type="text"
-                  disabled={loading}
-                  required
-                  ref={ref}
-                  value={value}
-                  onBlur={onBlur}
-                  onChange={onChange}
-                  error={Boolean(error)}
-                />
+                <div className={styles.inputWrap}>
+                  <Input
+                    placeholder="Subject"
+                    type="text"
+                    disabled={loading}
+                    required
+                    hasValue={!!value.length}
+                    ref={ref}
+                    value={value}
+                    onBlur={onBlur}
+                    onChange={onChange}
+                    error={Boolean(error)}
+                  />
+                  {error && (
+                    <div className={styles.formFeedback}>
+                      <MdError size={20} color="red" />
+                      <span>{error?.message}</span>
+                    </div>
+                  )}
+                </div>
               )}
             />
             <Controller
@@ -156,16 +207,25 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                 field: { value, onChange, onBlur, ref },
                 fieldState: { error },
               }) => (
-                <TextArea
-                  placeholder="Message"
-                  disabled={loading}
-                  required
-                  ref={ref}
-                  value={value}
-                  onBlur={onBlur}
-                  onChange={onChange}
-                  error={Boolean(error)}
-                />
+                <div className={styles.inputWrap}>
+                  <TextArea
+                    placeholder="Message"
+                    disabled={loading}
+                    required
+                    hasValue={!!value.length}
+                    ref={ref}
+                    value={value}
+                    onBlur={onBlur}
+                    onChange={onChange}
+                    error={Boolean(error)}
+                  />
+                  {error && (
+                    <div className={styles.formFeedback}>
+                      <MdError size={20} color="red" />
+                      <span>{error?.message}</span>
+                    </div>
+                  )}
+                </div>
               )}
             />
             <Button
