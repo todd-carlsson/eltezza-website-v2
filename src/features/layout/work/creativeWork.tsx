@@ -1,11 +1,7 @@
 import { CreativeWorkData } from "@/types";
 import styles from "./work.module.scss";
-import classNames from "classnames";
 import { memo, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { Portal } from "../portal";
-import FullScreenVideo from "./components/fullScreenVideo";
-import { VideoDetails } from "./components/videoDetails";
+import CreativeVideo from "./components/creativeVideo";
 
 interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
@@ -14,14 +10,6 @@ interface CreativeWorkProps {
 export const CreativeWork = memo(function CreativeWork({
   content,
 }: CreativeWorkProps) {
-  function getVideoColumnSize(size: "small" | "medium" | "large") {
-    if (size === "large") {
-      return styles.gridColSpanSix;
-    } else if (size === "medium") {
-      return styles.gridColSpanThree;
-    } else return styles.gridColSpanTwo;
-  }
-
   const itemsRef = useRef<null | Map<string, HTMLVideoElement>>(null);
   const [hoveredVideo, setHoveredVideo] = useState("-1");
   const [openedVideo, setOpenedVideo] = useState("-1");
@@ -75,62 +63,17 @@ export const CreativeWork = memo(function CreativeWork({
       </div>
       <div className={styles.creativeGrid}>
         {content.map((item) => (
-          <div
-            className={classNames(
-              styles.creativeVideoContainer,
-              getVideoColumnSize(item.size),
-            )}
+          <CreativeVideo
             key={item.id}
-          >
-            {/* FULL SCREEN VIDEO */}
-            <Portal root="video-root">
-              <AnimatePresence>
-                {openedVideo === item.id && (
-                  <FullScreenVideo
-                    video={item}
-                    removeFullVideo={removeFullVideo}
-                  />
-                )}
-              </AnimatePresence>
-            </Portal>
-            {/* THUMBNAIL */}
-            <motion.img
-              initial={{ opacity: 0 }}
-              animate={{ opacity: hoveredVideo !== item.id ? 1 : 0 }}
-              className={classNames(styles.videoThumbail)}
-              src={item.thumbnail}
-              alt={item.src}
-              onClick={() => openFullVideo(item.id)}
-              onMouseEnter={() => playVideo(item.id)}
-              onMouseLeave={() => pauseVideo(item.id)}
-            />
-            {/* VIDEO DETAILS TEXT */}
-            <VideoDetails
-              hoveredVideo={hoveredVideo === item.id ? hoveredVideo : "-1"}
-              video={item}
-            />
-            {/* VIDEO */}
-            <video
-              className={classNames(styles.creativeVideo)}
-              poster={item.thumbnail}
-              src={item.src}
-              onMouseEnter={() => playVideo(item.id)}
-              onMouseLeave={() => pauseVideo(item.id)}
-              ref={(node) => {
-                const map = getMap();
-                if (node) {
-                  map.set(item.id, node);
-                } else {
-                  map.delete(item.id);
-                }
-              }}
-              muted
-              loop
-              preload="metadata"
-            >
-              <source src={item.src} type="video/mp4" />
-            </video>
-          </div>
+            video={item}
+            hoveredVideo={hoveredVideo}
+            pauseVideo={() => pauseVideo(item.id)}
+            playVideo={() => playVideo(item.id)}
+            openFullVideo={() => openFullVideo(item.id)}
+            removeFullVideo={removeFullVideo}
+            openedVideo={openedVideo}
+            getMap={getMap}
+          />
         ))}
       </div>
     </section>
