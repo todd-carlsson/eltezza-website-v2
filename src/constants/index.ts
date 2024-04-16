@@ -278,7 +278,7 @@ export const faqs = {
       title:
         "What sets your creative agency apart from others in the industry?",
       description:
-        "Quite simply, scroll It’s quite simple, the level of care and attention we give to all of our clients is second to none. We want YOU to succeed as badly as WE want to breathe. the bottom of our site and submit your request!",
+        "It's quite simple, the level of care and attention we give to all of our clients is second to none. We want YOU to succeed as badly as WE want to breathe.",
       wrap: false,
     },
   ],

@@ -29,7 +29,7 @@ export default function Custom404() {
           <span className="textGradient">404</span>
         </h1>
         <h1 className="largeText">Not Found</h1>
-        <p>Looks like you are a bit lost</p>
+        <p>Let&apos;s get back to the noise</p>
         <Link href="/">
           <Button className={styles.errorButton} variant={ButtonVariant.main}>
             Go Home <IoMdExit size={24} />
