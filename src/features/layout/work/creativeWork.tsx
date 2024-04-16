@@ -11,8 +11,8 @@ export const CreativeWork = memo(function CreativeWork({
   content,
 }: CreativeWorkProps) {
   const itemsRef = useRef<null | Map<string, HTMLVideoElement>>(null);
-  const [hoveredVideo, setHoveredVideo] = useState("-1");
-  const [openedVideo, setOpenedVideo] = useState("-1");
+  const [hoveredVideo, setHoveredVideo] = useState<null | string>(null);
+  const [openedVideo, setOpenedVideo] = useState<null | string>(null);
 
   const getMap = useCallback(() => {
     if (!itemsRef.current) {
@@ -27,7 +27,7 @@ export const CreativeWork = memo(function CreativeWork({
   }, []);
 
   const removeFullVideo = useCallback(() => {
-    return setOpenedVideo("-1");
+    return setOpenedVideo(null);
   }, []);
 
   const playVideo = useCallback(
@@ -44,7 +44,7 @@ export const CreativeWork = memo(function CreativeWork({
 
   const pauseVideo = useCallback(
     (itemId: string) => {
-      setHoveredVideo("-1");
+      setHoveredVideo(null);
       const map = getMap();
       if (map !== null) {
         const node = map.get(itemId);
@@ -73,12 +73,12 @@ export const CreativeWork = memo(function CreativeWork({
           <CreativeVideo
             key={item.id}
             video={item}
-            hoveredVideo={hoveredVideo === item.id ? hoveredVideo : "-1"}
+            hoveredVideo={hoveredVideo === item.id ? hoveredVideo : null}
             pauseVideo={pauseVideo}
             playVideo={playVideo}
             openFullVideo={openFullVideo}
             removeFullVideo={removeFullVideo}
-            openedVideo={openedVideo}
+            openedVideo={openedVideo === item.id ? openedVideo : null}
             getMap={getMap}
           />
         ))}

@@ -9,12 +9,12 @@ import { memo } from "react";
 
 interface CreativeVideoProps {
   video: CreativeWorkData;
-  hoveredVideo: string;
+  hoveredVideo: string | null;
   pauseVideo: (itemId: string) => void;
   playVideo: (itemId: string) => void;
   openFullVideo: (itemId: string) => void;
   removeFullVideo: () => void;
-  openedVideo: string;
+  openedVideo: string | null;
   getMap: () => Map<string, HTMLVideoElement>;
 }
 
@@ -65,7 +65,7 @@ export const CreativeVideo = memo(function CreativeVideo({
       />
       {/* VIDEO DETAILS TEXT */}
       <VideoDetails
-        hoveredVideo={hoveredVideo === video.id ? hoveredVideo : "-1"}
+        hoveredVideo={hoveredVideo === video.id ? hoveredVideo : null}
         video={video}
       />
       {/* VIDEO */}
