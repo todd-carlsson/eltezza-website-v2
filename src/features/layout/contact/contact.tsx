@@ -60,6 +60,7 @@ export const Contact = memo(function Contact({ text, onOpen }: ContactProps) {
           onClick={onOpen}
           variant={ButtonVariant.main}
           className={styles.contactButton}
+          aria-label="Open Contact Form"
         >
           Let&apos;s Collaborate
         </Button>

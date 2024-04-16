@@ -10,20 +10,41 @@ input.input {
   width: 100%;
   position: relative;
 
+  &:hover {
+    box-shadow: 0 0 0 1px var(--gray-text);
+  }
+
   &::placeholder {
     color: #fff;
     opacity: 0.6;
   }
 
   &:focus {
-    outline: 1px ridge rgba($color: #fff, $alpha: 80%);
-    border-radius: 12px;
+    box-shadow: 0 0 0 1.5px #fff;
   }
 
   &:disabled {
     opacity: 0.6;
     cursor: not-allowed;
   }
+}
+
+.label {
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 1rem;
+  padding: 0 3px;
+  left: 0.5rem;
+  cursor: text;
+}
+
+input.input:focus ~ .label,
+label.focused {
+  font-size: 0.85rem;
+  transform: translate(0, -50%);
+  top: -0.15rem;
+  background-color: #000;
 }
 
 input.error {
@@ -33,4 +54,8 @@ input.error {
     color: #f04438;
     opacity: 0.6;
   }
+}
+
+label.error {
+  color: red;
 }
