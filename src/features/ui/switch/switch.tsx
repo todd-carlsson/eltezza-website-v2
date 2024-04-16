@@ -26,6 +26,7 @@ function Switch({ page, color }: SwitchProps) {
         style={{
           backgroundColor: `var(${color})`,
         }}
+        aria-labelledby="Toggle"
       >
         <motion.span
           className={styles.switchText}
