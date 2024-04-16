@@ -66,6 +66,7 @@ export function FormModal({ onClose, showModal, color }: FormModalProps) {
               alt="X Close"
               width={32}
               height={33}
+              aria-label="Close Contact Form"
             />
             <Form
               color={color}
