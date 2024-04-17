@@ -30,6 +30,7 @@ export const DesignHero = memo(function DesignHero({
         content={rightData}
         width={300}
       />
+      <div className={styles.blurBottom} />
       <div className={styles.orangeOrbSmall} />
     </div>
   );
