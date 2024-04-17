@@ -2,6 +2,7 @@ import classNames from "classnames";
 import styles from "./brands.module.scss";
 import { BrandsData } from "@/types";
 import { memo } from "react";
+import Image from "next/image";
 
 interface BrandsProps {
   content: Array<BrandsData>;
@@ -22,12 +23,13 @@ export const Brands = memo(function Brands({ content, columns }: BrandsProps) {
         }}
       >
         {content.map((brand) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <Image
             key={brand.id}
             className={styles.brandLogo}
             src={brand.src}
             alt={brand.brand}
+            width={150}
+            height={150}
           />
         ))}
       </div>

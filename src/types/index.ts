@@ -60,6 +60,7 @@ export type BrandsData = {
 export type BtsData = {
   id: string;
   src: string;
+  placeholder: string;
   alt: string;
   isVideo: boolean;
 };
