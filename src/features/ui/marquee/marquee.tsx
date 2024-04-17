@@ -26,7 +26,10 @@ export function Marquee({
   drag,
 }: MarqueeProps) {
   return (
-    <div className={classNames(styles.carouselContainer, className)}>
+    <div
+      className={classNames(styles.carouselContainer, className)}
+      aria-labelledby="Marquee"
+    >
       <motion.div
         drag={drag && "x"}
         dragConstraints={{ right: 0 }}

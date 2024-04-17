@@ -1,5 +1,3 @@
-"use client";
-
 import classNames from "classnames";
 import styles from "./brands.module.scss";
 import { BrandsData } from "@/types";

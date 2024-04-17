@@ -48,6 +48,13 @@ export default function DesignPage() {
     Scroll(0, "auto");
   }, []);
 
+  function onOpen() {
+    return setShowModal(true);
+  }
+  function onClose() {
+    return setShowModal(false);
+  }
+
   return (
     <>
       <MetaData data={metaData.design} />
@@ -74,13 +81,9 @@ export default function DesignPage() {
       />
       <Reviews content={testimonialsData} page={page} />
       <Faq content={faqs.design} color={color} />
-      <Contact onOpen={() => setShowModal(true)} text={page} />
+      <Contact onOpen={onOpen} text={page} />
       <Portal root="contact-root">
-        <FormModal
-          onClose={() => setShowModal(false)}
-          showModal={showModal}
-          color={color}
-        />
+        <FormModal onClose={onClose} showModal={showModal} color={color} />
       </Portal>
       <motion.div
         initial={{ scaleX: 1 }}

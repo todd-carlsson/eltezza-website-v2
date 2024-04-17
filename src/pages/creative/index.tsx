@@ -47,6 +47,13 @@ export default function CreativePage() {
     Scroll(0, "auto");
   }, []);
 
+  function onOpen() {
+    return setShowModal(true);
+  }
+  function onClose() {
+    return setShowModal(false);
+  }
+
   return (
     <>
       <MetaData data={metaData.creative} favIconColor="purple" />
@@ -73,13 +80,9 @@ export default function CreativePage() {
       />
       <Reviews content={testimonialsData} page={page} />
       <Faq content={faqs.creative} color={color} />
-      <Contact text="create" onOpen={() => setShowModal(true)} />
+      <Contact text="create" onOpen={onOpen} />
       <Portal root="contact-root">
-        <FormModal
-          onClose={() => setShowModal(false)}
-          showModal={showModal}
-          color={color}
-        />
+        <FormModal onClose={onClose} showModal={showModal} color={color} />
       </Portal>
       <motion.div
         initial={{ scaleX: 1 }}

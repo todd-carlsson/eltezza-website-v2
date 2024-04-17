@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Marquee } from ".";
-import { landingPageMockData } from "../../../constants";
+import { landingPageData } from "../../../constants/data";
 
 /**Autoplay Carousel Component*/
 const meta = {
@@ -17,12 +17,12 @@ type Story = StoryObj<typeof meta>;
 export const Horizontal: Story = {
   render: () => (
     <div style={{ height: 400, fontFamily: "sans-serif" }}>
-      <Marquee orientation="horizontal" content={landingPageMockData} />
+      <Marquee orientation="horizontal" content={landingPageData.design} />
     </div>
   ),
   args: {
     orientation: "horizontal",
-    content: landingPageMockData,
+    content: landingPageData.design,
   },
 };
 
@@ -33,13 +33,13 @@ export const HorizontalReverse: Story = {
       <Marquee
         isReversed
         orientation="horizontal"
-        content={landingPageMockData}
+        content={landingPageData.design}
       />
     </div>
   ),
   args: {
     orientation: "horizontal",
-    content: landingPageMockData,
+    content: landingPageData.design,
   },
 };
 
@@ -47,12 +47,16 @@ export const HorizontalReverse: Story = {
 export const Vertical: Story = {
   render: () => (
     <div style={{ height: 400, fontFamily: "sans-serif" }}>
-      <Marquee imageOnly orientation="vertical" content={landingPageMockData} />
+      <Marquee
+        imageOnly
+        orientation="vertical"
+        content={landingPageData.design}
+      />
     </div>
   ),
   args: {
     orientation: "horizontal",
-    content: landingPageMockData,
+    content: landingPageData.design,
   },
 };
 
@@ -60,11 +64,15 @@ export const Vertical: Story = {
 export const VerticalReverse: Story = {
   render: () => (
     <div style={{ height: 400, fontFamily: "sans-serif" }}>
-      <Marquee imageOnly orientation="vertical" content={landingPageMockData} />
+      <Marquee
+        imageOnly
+        orientation="vertical"
+        content={landingPageData.design}
+      />
     </div>
   ),
   args: {
     orientation: "horizontal",
-    content: landingPageMockData,
+    content: landingPageData.design,
   },
 };

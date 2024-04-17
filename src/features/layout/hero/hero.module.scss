@@ -11,14 +11,14 @@
   top: $top;
   overflow: hidden;
 
-  @media screen and (width <= 1075px) {
+  @media screen and (width <=1075px) {
     width: 75vw;
     height: 75vw;
     top: -35vw;
     right: -35vw;
   }
 
-  @media screen and (width <= 550px) {
+  @media screen and (width <=550px) {
     width: 100vw;
     height: 100vw;
     top: -50vw;
@@ -34,7 +34,7 @@
   width: 50%;
   height: 100%;
   position: relative;
-  z-index: 10;
+  z-index: 700;
 
   @media screen and (width <=800px) {
     width: auto;
@@ -118,7 +118,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 
-  @media screen and (width <= 1075px) {
+  @media screen and (width <=1075px) {
     position: absolute;
     right: 0;
     top: 0;
@@ -138,7 +138,7 @@
     left: -100px;
     opacity: 0.2;
 
-    @media screen and (width <= 1075px) {
+    @media screen and (width <=1075px) {
       display: none;
     }
   }
@@ -153,7 +153,7 @@
     position: relative;
     z-index: 10;
 
-    @media screen and (width <= 1075px) {
+    @media screen and (width <=1075px) {
       display: none;
     }
   }
@@ -166,7 +166,7 @@
     position: relative;
     z-index: 10;
 
-    @media screen and (width <= 1075px) {
+    @media screen and (width <=1075px) {
       display: none;
     }
   }
@@ -181,22 +181,43 @@
   gap: 2rem;
   position: relative;
   top: -100px;
+  height: calc(100vh - 95px);
+  min-height: 600px;
+  max-height: 775px;
 
-  @media screen and (width <= 1250px) {
+  @media screen and (width <=1250px) {
     min-width: 43%;
   }
 
-  @media screen and (width <= 1075px) {
+  @media screen and (width <=1075px) {
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  .blurBottom {
+    display: inline-block;
+    position: absolute;
+    z-index: 200;
+    right: 0;
+    bottom: -200px;
+    width: 50vw;
+    height: 500px;
+    background: linear-gradient(
+      180deg,
+      rgb(0 0 1 / 0%) 0%,
+      rgb(0 0 1 / 60%) 35.94%,
+      rgb(0 0 1 / 90%) 55.72%,
+      #000001 76.35%,
+      #000001 100%
+    );
   }
 
   .designHeroMarquee {
     position: relative;
     z-index: 10;
 
-    @media screen and (width <= 1075px) {
+    @media screen and (width <=1075px) {
       display: none;
     }
   }
@@ -211,7 +232,7 @@
     left: -100px;
     opacity: 0.2;
 
-    @media screen and (width <= 1075px) {
+    @media screen and (width <=1075px) {
       display: none;
     }
   }

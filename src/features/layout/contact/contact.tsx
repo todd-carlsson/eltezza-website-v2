@@ -1,14 +1,13 @@
 import Image from "next/image";
 import styles from "./contact.module.scss";
 import { Button, ButtonVariant } from "@/features/ui";
-import { memo } from "react";
 
 interface ContactProps {
   text: "design" | "create";
   onOpen: () => void;
 }
 
-export const Contact = memo(function Contact({ text, onOpen }: ContactProps) {
+export function Contact({ text, onOpen }: ContactProps) {
   return (
     <section id="contact" className={styles.contactSection}>
       <div className={styles.purpleOrb} />
@@ -68,4 +67,4 @@ export const Contact = memo(function Contact({ text, onOpen }: ContactProps) {
       <div className={styles.orangeOrb} />
     </section>
   );
-});
+}
