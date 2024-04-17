@@ -515,7 +515,7 @@ export const teamData = {
     {
       id: "6",
       name: "Ilyas Megarbi",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709541/EZ%20Website%20-%20Design/Team/Ilyas_Megarbi_-_Graphic_Designer_vzcui1.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713331517/EZ%20Website%20-%20Design/Team/Ilyas_Megarbi_-_Graphic_Designer_agv0jc.jpg",
       position: "Graphic Designer",
     },
     {
@@ -527,7 +527,7 @@ export const teamData = {
     {
       id: "8",
       name: "Jimwell Manlusoc",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713243569/EZ%20Website%20-%20Design/Team/Jimwell_Manlusoc_-_UI_UX_Designer_oevxvk.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713331347/EZ%20Website%20-%20Design/Team/Jimwell_Manlusoc_-_UI_UX_Designer_adui9h.jpg",
       position: "UI/UX Designer",
     },
   ] as Array<TeamData>,
