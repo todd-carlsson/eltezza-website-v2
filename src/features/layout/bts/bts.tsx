@@ -55,6 +55,8 @@ export const BTS = memo(function BTS({ content, page }: BTSProps) {
         ) : (
           <motion.img
             key={"-1"}
+            loading="lazy"
+            decoding="async"
             variants={animationVariant}
             animate="animate"
             initial="initial"
@@ -82,6 +84,8 @@ export const BTS = memo(function BTS({ content, page }: BTSProps) {
         ) : (
           <motion.img
             key={activeImage}
+            loading="lazy"
+            decoding="async"
             variants={animationVariant}
             animate="animate"
             initial="initial"
