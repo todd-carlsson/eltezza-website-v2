@@ -38,7 +38,7 @@ export const BTSText = memo(function BTSText({
               styles.designBtsText,
             )}
           >
-            PEAK BEHIND
+            PEEK BEHIND
           </h1>
           <Image
             className={styles.secondaryImgDesign}

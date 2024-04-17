@@ -2,6 +2,7 @@
 import { BtsData } from "@/types";
 import styles from "./bts.module.scss";
 import { memo, useEffect, useState } from "react";
+import ProgressiveImage from "react-progressive-graceful-image";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { BTSText } from "./btsText";
@@ -53,17 +54,24 @@ export const BTS = memo(function BTS({ content, page }: BTSProps) {
             <source src={content[hiddenImage].src} type="video/mp4" />
           </motion.video>
         ) : (
-          <motion.img
-            key={"-1"}
-            loading="lazy"
-            decoding="async"
-            variants={animationVariant}
-            animate="animate"
-            initial="initial"
-            className={classNames(styles.btsImg, styles.hiddenImage)}
+          <ProgressiveImage
             src={content[hiddenImage].src}
-            alt={content[hiddenImage].alt}
-          />
+            placeholder={content[hiddenImage].placeholder}
+          >
+            {(src) => (
+              <motion.img
+                key={"-1"}
+                loading="lazy"
+                decoding="async"
+                variants={animationVariant}
+                animate="animate"
+                initial="initial"
+                className={classNames(styles.btsImg, styles.hiddenImage)}
+                src={src}
+                alt={content[hiddenImage].alt}
+              />
+            )}
+          </ProgressiveImage>
         )}
         {/* ACTIVE */}
         {content[activeImage].isVideo ? (
@@ -82,17 +90,24 @@ export const BTS = memo(function BTS({ content, page }: BTSProps) {
             <source src={content[activeImage].src} type="video/mp4" />
           </motion.video>
         ) : (
-          <motion.img
-            key={activeImage}
-            loading="lazy"
-            decoding="async"
-            variants={animationVariant}
-            animate="animate"
-            initial="initial"
-            className={styles.btsImg}
+          <ProgressiveImage
             src={content[activeImage].src}
-            alt={content[activeImage].alt}
-          />
+            placeholder={content[activeImage].placeholder}
+          >
+            {(src) => (
+              <motion.img
+                key={activeImage}
+                loading="lazy"
+                decoding="async"
+                variants={animationVariant}
+                animate="animate"
+                initial="initial"
+                className={styles.btsImg}
+                src={src}
+                alt={content[activeImage].alt}
+              />
+            )}
+          </ProgressiveImage>
         )}
       </div>
       <div className={styles.textContainer}>
