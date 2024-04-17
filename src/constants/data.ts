@@ -515,7 +515,7 @@ export const teamData = {
     {
       id: "6",
       name: "Ilyas Megarbi",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709541/EZ%20Website%20-%20Design/Team/Ilyas_Megarbi_-_Graphic_Designer_vzcui1.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713331517/EZ%20Website%20-%20Design/Team/Ilyas_Megarbi_-_Graphic_Designer_agv0jc.jpg",
       position: "Graphic Designer",
     },
     {
