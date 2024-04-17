@@ -575,7 +575,7 @@ export const btsData = {
   design: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186772/EZ%20Website%20-%20Design/BTS/Photos/Sharing_our_experience_with_amazing_uni_students_dewbey.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_73/v1712186772/EZ%20Website%20-%20Design/BTS/Photos/Sharing_our_experience_with_amazing_uni_students_dewbey.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712186772/EZ%20Website%20-%20Design/BTS/Photos/Sharing_our_experience_with_amazing_uni_students_dewbey.jpg",
       alt: "Sharing our experience with amazing uni students!",
@@ -583,13 +583,13 @@ export const btsData = {
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_71/v1711328016/EZ%20Website%20-%20Design/BTS/Videos/IMG_4369_vugvs0.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1711328016/EZ%20Website%20-%20Design/BTS/Videos/IMG_4369_vugvs0.mov",
       alt: "Chris filming food",
       isVideo: true,
     },
     {
       id: "3",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186669/EZ%20Website%20-%20Design/BTS/Photos/Meeting_with_an_industry_veteran_dfxypu.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_71/v1712186669/EZ%20Website%20-%20Design/BTS/Photos/Meeting_with_an_industry_veteran_dfxypu.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712186669/EZ%20Website%20-%20Design/BTS/Photos/Meeting_with_an_industry_veteran_dfxypu.jpg",
       alt: "Meeting with an industry veteran",
@@ -597,13 +597,13 @@ export const btsData = {
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_69/v1711327992/EZ%20Website%20-%20Design/BTS/Videos/IMG_4320_vuxhjw.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_66/v1711327992/EZ%20Website%20-%20Design/BTS/Videos/IMG_4320_vuxhjw.mov",
       alt: "Chris trying to use chopsticks",
       isVideo: true,
     },
     {
       id: "5",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186802/EZ%20Website%20-%20Design/BTS/Photos/Invited_to_be_part_of_a_panel_for_design_students_yiivm9.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_75/v1712186802/EZ%20Website%20-%20Design/BTS/Photos/Invited_to_be_part_of_a_panel_for_design_students_yiivm9.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712186802/EZ%20Website%20-%20Design/BTS/Photos/Invited_to_be_part_of_a_panel_for_design_students_yiivm9.jpg",
       alt: "Invited to be part of a panel for design students",
@@ -617,7 +617,7 @@ export const btsData = {
     },
     {
       id: "7",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186637/EZ%20Website%20-%20Design/BTS/Photos/In_the_zone_ockvgx.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712186637/EZ%20Website%20-%20Design/BTS/Photos/In_the_zone_ockvgx.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712186637/EZ%20Website%20-%20Design/BTS/Photos/In_the_zone_ockvgx.jpg",
       alt: "In the zone",
@@ -625,7 +625,7 @@ export const btsData = {
     },
     {
       id: "8",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186745/EZ%20Website%20-%20Design/BTS/Photos/IMG_4587_uwiyp8.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_71/v1712186745/EZ%20Website%20-%20Design/BTS/Photos/IMG_4587_uwiyp8.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_15/v1712186745/EZ%20Website%20-%20Design/BTS/Photos/IMG_4587_uwiyp8.jpg",
       alt: "Thumbs up!",
@@ -633,7 +633,7 @@ export const btsData = {
     },
     {
       id: "9",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186598/EZ%20Website%20-%20Design/BTS/Photos/IMG_3768_wtjkw3.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712186598/EZ%20Website%20-%20Design/BTS/Photos/IMG_3768_wtjkw3.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712186598/EZ%20Website%20-%20Design/BTS/Photos/IMG_3768_wtjkw3.jpg",
       alt: "Working in the office",
@@ -641,13 +641,13 @@ export const btsData = {
     },
     {
       id: "10",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_68/v1711328046/EZ%20Website%20-%20Design/BTS/Videos/IMG_0181_p1xnmj.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1711328046/EZ%20Website%20-%20Design/BTS/Videos/IMG_0181_p1xnmj.mov",
       alt: "Behind the scenes at Steve's Tyre Service",
       isVideo: true,
     },
     {
       id: "11",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712186558/EZ%20Website%20-%20Design/BTS/Photos/IMG_3648_sxvsam.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712186558/EZ%20Website%20-%20Design/BTS/Photos/IMG_3648_sxvsam.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712186558/EZ%20Website%20-%20Design/BTS/Photos/IMG_3648_sxvsam.jpg",
       alt: "Photoshoot time!",
@@ -655,7 +655,7 @@ export const btsData = {
     },
     {
       id: "12",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183912/EZ%20Website%20-%20Design/BTS/Photos/IMG_0221_mo4hz0.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183912/EZ%20Website%20-%20Design/BTS/Photos/IMG_0221_mo4hz0.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183912/EZ%20Website%20-%20Design/BTS/Photos/IMG_0221_mo4hz0.jpg",
       alt: "Client meeting with Mo and Chris",
@@ -663,7 +663,7 @@ export const btsData = {
     },
     {
       id: "13",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183905/EZ%20Website%20-%20Design/BTS/Photos/Client_Meeting_gvffpg.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750/v1712183905/EZ%20Website%20-%20Design/BTS/Photos/Client_Meeting_gvffpg.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183905/EZ%20Website%20-%20Design/BTS/Photos/Client_Meeting_gvffpg.jpg",
       alt: "Client meeting with Danilo and Mo",
@@ -671,7 +671,7 @@ export const btsData = {
     },
     {
       id: "14",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183893/EZ%20Website%20-%20Design/BTS/Photos/_What_do_we_do_at_Eltezza__hiejen.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183893/EZ%20Website%20-%20Design/BTS/Photos/_What_do_we_do_at_Eltezza__hiejen.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_15/v1712183893/EZ%20Website%20-%20Design/BTS/Photos/_What_do_we_do_at_Eltezza__hiejen.jpg",
       alt: "What do we do at Eltezza?",
@@ -681,7 +681,7 @@ export const btsData = {
   creative: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183208/EZ%20Website%20-%20Creative/BTS/Photos/Sharing_the_stage_with_other_awesome_agencies_fnds14.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183208/EZ%20Website%20-%20Creative/BTS/Photos/Sharing_the_stage_with_other_awesome_agencies_fnds14.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_15/v1712183208/EZ%20Website%20-%20Creative/BTS/Photos/Sharing_the_stage_with_other_awesome_agencies_fnds14.jpg",
       alt: "Sharing the stage with other awesome agencies",
@@ -695,7 +695,7 @@ export const btsData = {
     },
     {
       id: "3",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183143/EZ%20Website%20-%20Creative/BTS/Photos/Pradeep_qorjpw.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183143/EZ%20Website%20-%20Creative/BTS/Photos/Pradeep_qorjpw.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183143/EZ%20Website%20-%20Creative/BTS/Photos/Pradeep_qorjpw.jpg",
       alt: "Pradeep!",
@@ -703,13 +703,13 @@ export const btsData = {
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_62/v1711327348/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0289_zkbal1.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1711327348/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0289_zkbal1.mov",
       alt: "Goju behind the scenes",
       isVideo: true,
     },
     {
       id: "5",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183099/EZ%20Website%20-%20Creative/BTS/Photos/Mo_Chris_Ben_hk4if5.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183099/EZ%20Website%20-%20Creative/BTS/Photos/Mo_Chris_Ben_hk4if5.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_15/v1712183099/EZ%20Website%20-%20Creative/BTS/Photos/Mo_Chris_Ben_hk4if5.jpg",
       alt: "Mo, Chris and Ben",
@@ -723,7 +723,7 @@ export const btsData = {
     },
     {
       id: "7",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183049/EZ%20Website%20-%20Creative/BTS/Photos/IMG_7073_kxjqe6.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183049/EZ%20Website%20-%20Creative/BTS/Photos/IMG_7073_kxjqe6.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183049/EZ%20Website%20-%20Creative/BTS/Photos/IMG_7073_kxjqe6.jpg",
       alt: "Chris with Seltzers boxes",
@@ -737,7 +737,7 @@ export const btsData = {
     },
     {
       id: "9",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183002/EZ%20Website%20-%20Creative/BTS/Photos/IMG_3067_ocmthz.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183002/EZ%20Website%20-%20Creative/BTS/Photos/IMG_3067_ocmthz.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183002/EZ%20Website%20-%20Creative/BTS/Photos/IMG_3067_ocmthz.jpg",
       alt: "Vitality Bites BTS",
@@ -745,7 +745,7 @@ export const btsData = {
     },
     {
       id: "10",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712182947/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0373_eg7qqi.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712182947/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0373_eg7qqi.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712182947/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0373_eg7qqi.jpg",
       alt: "Vitality Bites Photoshoot",
@@ -753,7 +753,7 @@ export const btsData = {
     },
     {
       id: "11",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712182886/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0293_jmaghr.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712182886/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0293_jmaghr.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712182886/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0293_jmaghr.jpg",
       alt: "Filming setup",
@@ -767,7 +767,7 @@ export const btsData = {
     },
     {
       id: "13",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712182821/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0292_ol8zrs.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712182821/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0292_ol8zrs.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712182821/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0292_ol8zrs.jpg",
       alt: "Hangin' the Goju bottle",
@@ -775,13 +775,13 @@ export const btsData = {
     },
     {
       id: "14",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1711327343/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0162_rw3rlj.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1711327343/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0162_rw3rlj.mov",
       alt: "Video editing",
       isVideo: true,
     },
     {
       id: "15",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712182568/EZ%20Website%20-%20Creative/BTS/Photos/I_see_you_d7wnxc.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712182568/EZ%20Website%20-%20Creative/BTS/Photos/I_see_you_d7wnxc.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_15/v1712182568/EZ%20Website%20-%20Creative/BTS/Photos/I_see_you_d7wnxc.jpg",
       alt: "I see you!",
@@ -795,7 +795,7 @@ export const btsData = {
     },
     {
       id: "17",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712182647/EZ%20Website%20-%20Creative/BTS/Photos/Give_us_ya_best_pose_wsanck.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712182647/EZ%20Website%20-%20Creative/BTS/Photos/Give_us_ya_best_pose_wsanck.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712182647/EZ%20Website%20-%20Creative/BTS/Photos/Give_us_ya_best_pose_wsanck.jpg",
       alt: "Give us ya best pose!",
@@ -809,7 +809,7 @@ export const btsData = {
     },
     {
       id: "19",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183283/EZ%20Website%20-%20Creative/BTS/Photos/Danny_fowga4.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183283/EZ%20Website%20-%20Creative/BTS/Photos/Danny_fowga4.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183283/EZ%20Website%20-%20Creative/BTS/Photos/Danny_fowga4.jpg",
       alt: "Danny!",
@@ -817,7 +817,7 @@ export const btsData = {
     },
     {
       id: "20",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712183244/EZ%20Website%20-%20Creative/BTS/Photos/Chris_CEO_qiaopi.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183244/EZ%20Website%20-%20Creative/BTS/Photos/Chris_CEO_qiaopi.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183244/EZ%20Website%20-%20Creative/BTS/Photos/Chris_CEO_qiaopi.jpg",
       alt: "Chris CEO",
