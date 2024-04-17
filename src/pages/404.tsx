@@ -6,13 +6,16 @@ import { metaData } from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Custom404() {
   const isPresent = useIsPresent();
   const router = useRouter();
   return (
     <>
-      <MetaData data={metaData.error} />
+      <Head>
+        <MetaData data={metaData.error} />
+      </Head>
       <motion.div
         initial={{
           opacity: 0,

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import React from "react";
 import { MetaDataType } from "./types";
 
@@ -12,7 +11,7 @@ export default function MetaData({
   favIconColor = "orange",
 }: MetaDataProps) {
   return (
-    <Head>
+    <>
       <title>{data.title}</title>
       <link
         rel="apple-touch-icon"
@@ -52,6 +51,6 @@ export default function MetaData({
       <meta property="twitter:image" content={data.image} />
 
       {/* Meta Tags Generated with https://metatags.io */}
-    </Head>
+    </>
   );
 }

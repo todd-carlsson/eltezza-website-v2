@@ -59,6 +59,8 @@ export const CreativeVideo = memo(function CreativeVideo({
         className={classNames(styles.videoThumbail)}
         src={video.thumbnail}
         alt={video.src}
+        loading="lazy"
+        decoding="async"
         onClick={() => openFullVideo(video.id)}
         onMouseEnter={() => playVideo(video.id)}
         onMouseLeave={() => pauseVideo(video.id)}

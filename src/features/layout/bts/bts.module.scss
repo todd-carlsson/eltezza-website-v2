@@ -43,6 +43,11 @@
       justify-content: flex-start;
     }
 
+    .invisible {
+      position: absolute;
+      visibility: hidden;
+    }
+
     // BTS IMAGES AND VIDEOS
 
     .btsImg {
