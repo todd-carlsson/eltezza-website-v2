@@ -6,7 +6,6 @@ import MetaData from "@/metadata";
 import { metaData } from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +14,7 @@ export default function Home() {
   const router = useRouter();
   return (
     <>
-      <Head>
-        <MetaData data={metaData.home} />
-      </Head>
+      <MetaData data={metaData.home} />
       <main className={classNames(styles.main, inter.className)}>
         <HomeComponent />
         <motion.div

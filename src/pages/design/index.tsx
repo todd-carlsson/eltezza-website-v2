@@ -35,7 +35,6 @@ import { useEffect, useState } from "react";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
 import { Scroll } from "@/utils/scroll";
-import Head from "next/head";
 
 export default function DesignPage() {
   const page = "design";
@@ -58,9 +57,7 @@ export default function DesignPage() {
 
   return (
     <>
-      <Head>
-        <MetaData data={metaData.design} />
-      </Head>
+      <MetaData data={metaData.design} btsData={btsData.design} />
       <div className={styles.heroContainer}>
         <Hero
           page={page}

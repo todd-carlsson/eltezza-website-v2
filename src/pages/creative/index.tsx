@@ -34,7 +34,6 @@ import MetaData from "@/metadata";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
 import { Scroll } from "@/utils/scroll";
-import Head from "next/head";
 
 export default function CreativePage() {
   const page = "creative";
@@ -57,9 +56,11 @@ export default function CreativePage() {
 
   return (
     <>
-      <Head>
-        <MetaData data={metaData.creative} favIconColor="purple" />
-      </Head>
+      <MetaData
+        data={metaData.creative}
+        favIconColor="purple"
+        btsData={btsData.creative}
+      />
       <div className={styles.heroContainer}>
         <Hero
           page={page}
