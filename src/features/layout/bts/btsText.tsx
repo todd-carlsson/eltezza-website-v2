@@ -1,15 +1,13 @@
-/* eslint-disable @next/next/no-img-element */
-import useWindowSize from "@/hooks/useWindowSize";
 import styles from "./bts.module.scss";
 import classNames from "classnames";
 import { memo } from "react";
+import Image from "next/image";
 
 export const BTSText = memo(function BTSText({
   page,
 }: {
   page: "design" | "creative";
 }) {
-  const [windowWidth] = useWindowSize();
   if (page === "design")
     return (
       <div>
@@ -24,10 +22,12 @@ export const BTSText = memo(function BTSText({
           >
             TAKE A
           </h1>
-          <img
+          <Image
             className={styles.mainImgDesign}
             src="/images/bts_design_main.svg"
             alt="BTS Section"
+            width={150}
+            height={150}
           />
         </div>
         <div className={styles.textBlock}>
@@ -38,12 +38,14 @@ export const BTSText = memo(function BTSText({
               styles.designBtsText,
             )}
           >
-            PEAK BEHIND
+            PEEK BEHIND
           </h1>
-          <img
+          <Image
             className={styles.secondaryImgDesign}
             src="/images/bts_design_2.svg"
             alt="BTS Section"
+            width={60}
+            height={60}
           />
         </div>
         <div className={styles.textBlock}>
@@ -71,13 +73,16 @@ export const BTSText = memo(function BTSText({
             >
               THE
             </h1>
-            {windowWidth > 800 && (
-              <img
-                className={styles.mainImgCreative}
-                src="/images/bts_creative.svg"
-                alt="BTS Section"
-              />
-            )}
+            <Image
+              className={classNames(
+                styles.mainImgCreative,
+                styles.creativeImgDesktop,
+              )}
+              src="/images/bts_creative.svg"
+              alt="BTS Section"
+              width={200}
+              height={200}
+            />
           </div>
           <div className={styles.textBlock}>
             <h1 className={classNames("largeText", styles.btsText)}>PROCESS</h1>
@@ -88,13 +93,16 @@ export const BTSText = memo(function BTSText({
             </h1>
           </div>
         </div>
-        {windowWidth <= 800 && (
-          <img
-            className={styles.mainImgCreative}
-            src="/images/bts_creative.svg"
-            alt="BTS Section"
-          />
-        )}
+        <Image
+          className={classNames(
+            styles.mainImgCreative,
+            styles.creativeImgMobile,
+          )}
+          src="/images/bts_creative.svg"
+          alt="BTS Section"
+          width={200}
+          height={200}
+        />
       </>
     );
 });

@@ -1,15 +1,17 @@
-import Head from "next/head";
 import React from "react";
-import { MetaDataType } from "./types";
+import { BtsData, MetaDataType } from "./types";
+import Head from "next/head";
 
 interface MetaDataProps {
   data: MetaDataType;
   favIconColor?: "purple" | "orange";
+  btsData?: Array<BtsData>;
 }
 
 export default function MetaData({
   data,
   favIconColor = "orange",
+  btsData,
 }: MetaDataProps) {
   return (
     <Head>
@@ -35,6 +37,13 @@ export default function MetaData({
         rel="manifest"
         href={`favicon-${favIconColor}/site.webmanifest`}
       ></link>
+      {btsData?.map((item) => {
+        if (!item.isVideo) {
+          return (
+            <link key={item.id} rel="preload" as="image" href={item.src} />
+          );
+        }
+      })}
       <meta property="og:title" content={data.title} key="title" />
       <meta name="description" content={data.description} key="description" />
       {/* Open Graph / Facebook */}
