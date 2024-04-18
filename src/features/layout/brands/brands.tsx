@@ -17,6 +17,7 @@ export const Brands = memo(function Brands({ content, columns }: BrandsProps) {
       </h1>
       <div
         className={styles.brandsGrid}
+        // REFACTOR THIS
         style={{
           gridTemplateColumns:
             columns === 3 ? "1fr 1fr 1fr" : "1fr 1fr 1fr 1fr",

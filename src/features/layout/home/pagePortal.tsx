@@ -64,6 +64,7 @@ export default function PagePortal({
             height={170}
           />
           <Marquee
+            imageOnly
             className={styles.homeMarquee}
             orientation="horizontal"
             content={content}
