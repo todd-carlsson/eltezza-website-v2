@@ -29,8 +29,12 @@ export const Brands = memo(function Brands({ content, columns }: BrandsProps) {
             className={styles.brandLogo}
             src={brand.src}
             alt={brand.brand}
-            width={150}
+            width={brand.maxWidth || 150}
             height={150}
+            style={{
+              maxWidth: brand.maxWidth,
+              width: brand.width,
+            }}
           />
         ))}
       </div>

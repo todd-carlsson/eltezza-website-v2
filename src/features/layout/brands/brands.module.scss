@@ -20,7 +20,7 @@
     display: grid;
     place-items: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 130px;
+    grid-row-gap: 160px;
     width: 90%;
     position: relative;
 
@@ -35,13 +35,14 @@
     .brandLogo {
       width: 100%;
       max-width: 120px;
-      min-width: 80px;
 
-      // height: fit-content;
+      // min-width: 80px;
+
+      height: fit-content;
       position: relative;
 
       // DO this just for mobile
-      border-bottom: 1px solid rgba($color: #525252, $alpha: 60%);
+      // border-bottom: 1px solid rgba($color: #525252, $alpha: 60%);
 
       @media (width <= 928px) {
         width: 80%;
