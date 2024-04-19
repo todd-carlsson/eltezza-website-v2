@@ -27,7 +27,7 @@ export const landingPageData = {
     },
     {
       id: "3",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_40/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_40/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
       badge: "Reels",
       isVideo: true,
     },
