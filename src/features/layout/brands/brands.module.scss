@@ -31,6 +31,10 @@
       grid-row-gap: 70px;
     }
 
+    @media (width <=400px) {
+      grid-row-gap: 1%;
+    }
+
     .brandLogo {
       width: 100%;
       max-width: 120px;
