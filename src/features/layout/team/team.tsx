@@ -1,7 +1,7 @@
 import { TeamData } from "@/types";
 import styles from "./team.module.scss";
 import { TeamMember } from "./teamMember";
-import { memo, useEffect, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
 import { Button, ButtonVariant } from "@/features/ui";
 
@@ -21,6 +21,8 @@ export const Team = memo(function Team({
     windowWidth > 1050 ? content.length : 3,
   );
   const [isPaginated, setIsPaginated] = useState(false);
+
+  const scrollDiv = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (windowWidth > 1050) {
@@ -42,6 +44,7 @@ export const Team = memo(function Team({
       if (windowWidth <= 1050) {
         setPaginationCount(4);
         setIsPaginated(false);
+        scrollDiv.current?.scrollIntoView({ behavior: "smooth" });
       }
       if (windowWidth <= 500) {
         setPaginationCount(3);
@@ -51,7 +54,7 @@ export const Team = memo(function Team({
   }
 
   return (
-    <section id="about" className={styles.teamSection}>
+    <section id="about" className={styles.teamSection} ref={scrollDiv}>
       <div className={styles.textContainer}>
         <h1
           className="largeText"
