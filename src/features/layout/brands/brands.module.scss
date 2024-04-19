@@ -27,14 +27,20 @@
       grid-column-gap: 3rem;
     }
 
+    @media (width <=768px) {
+      grid-row-gap: 70px;
+    }
+
     .brandLogo {
       width: 100%;
       max-width: 120px;
-      height: fit-content;
       position: relative;
+      border-bottom: 1px solid rgba($color: #525252, $alpha: 65%);
 
-      // DO this just for mobile
-      // border-bottom: 1px solid rgba($color: #525252, $alpha: 60%);
+      @media (width > 768px) {
+        border-bottom: none;
+        height: fit-content;
+      }
     }
   }
 
