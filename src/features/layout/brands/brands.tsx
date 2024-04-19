@@ -16,11 +16,10 @@ export const Brands = memo(function Brands({ content, columns }: BrandsProps) {
         OUR TRUSTED <span className="textGradient">PARTNERS</span>
       </h1>
       <div
-        className={styles.brandsGrid}
-        style={{
-          gridTemplateColumns:
-            columns === 3 ? "1fr 1fr 1fr" : "1fr 1fr 1fr 1fr",
-        }}
+        className={classNames(
+          styles.brandsGrid,
+          columns === 3 ? styles.threeCols : styles.fourCols,
+        )}
       >
         {content.map((brand) => (
           <Image
@@ -28,8 +27,12 @@ export const Brands = memo(function Brands({ content, columns }: BrandsProps) {
             className={styles.brandLogo}
             src={brand.src}
             alt={brand.brand}
-            width={150}
+            width={brand.maxWidth || 150}
             height={150}
+            style={{
+              maxWidth: brand.maxWidth,
+              width: brand.width,
+            }}
           />
         ))}
       </div>
