@@ -57,7 +57,7 @@ export default function DesignPage() {
 
   return (
     <>
-      <MetaData data={metaData.design} btsData={btsData.design} />
+      <MetaData data={metaData.design} imageData={btsData.design} />
       <div className={styles.heroContainer}>
         <Hero
           page={page}

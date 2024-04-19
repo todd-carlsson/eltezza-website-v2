@@ -3,7 +3,7 @@ import styles from "@/styles/Home.module.css";
 import { HomeComponent } from "@/features/layout";
 import classNames from "classnames";
 import MetaData from "@/metadata";
-import { metaData } from "@/constants";
+import { landingPageData, metaData } from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
 
@@ -14,7 +14,10 @@ export default function Home() {
   const router = useRouter();
   return (
     <>
-      <MetaData data={metaData.home} />
+      <MetaData
+        data={metaData.home}
+        imageData={[...landingPageData.design, ...landingPageData.creative]}
+      />
       <main className={classNames(styles.main, inter.className)}>
         <HomeComponent />
         <motion.div

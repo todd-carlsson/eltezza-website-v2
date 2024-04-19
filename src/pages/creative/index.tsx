@@ -59,7 +59,7 @@ export default function CreativePage() {
       <MetaData
         data={metaData.creative}
         favIconColor="purple"
-        btsData={btsData.creative}
+        imageData={btsData.creative}
       />
       <div className={styles.heroContainer}>
         <Hero
