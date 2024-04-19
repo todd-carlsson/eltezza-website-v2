@@ -88,7 +88,7 @@ export function HomeComponent() {
                 key={uuid()}
                 title="creative"
                 logo={logos.creative}
-                content={landingPageData.design}
+                content={landingPageData.creative}
                 tags={pageTags.creative}
                 color="--adobe-purple"
                 buttonVariant={ButtonVariant.homePurple}

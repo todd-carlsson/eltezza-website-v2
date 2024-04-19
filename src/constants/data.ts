@@ -38,6 +38,75 @@ export const landingPageData = {
       isVideo: false,
     },
   ] as Array<CarouselData>,
+  creative: [
+    {
+      id: "1",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510473/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_V_mjlm08.jpg",
+      badge: "Branding",
+      isVideo: false,
+    },
+    {
+      id: "2",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_45/v1711497879/EZ%20Website%20-%20Creative/Work%20Section/Rinse_Content_Final_Version_gk9vl8.mp4",
+      badge: "Branding",
+      isVideo: true,
+    },
+    {
+      id: "3",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510456/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_No_Ugly_2_vd5xg1.jpg",
+      badge: "Branding",
+      isVideo: false,
+    },
+    {
+      id: "4",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_38/v1711497959/EZ%20Website%20-%20Creative/Work%20Section/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
+      badge: "Branding",
+      isVideo: true,
+    },
+    {
+      id: "4",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510429/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_Jarrah_pujknc.jpg",
+      badge: "Branding",
+      isVideo: false,
+    },
+
+    {
+      id: "5",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_54/v1711497918/EZ%20Website%20-%20Creative/Work%20Section/Redbull_Zoomed_gfb6hv.mp4",
+      badge: "Branding",
+      isVideo: true,
+    },
+    {
+      id: "6",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510413/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_Greenhill_Seltzers_1_jf9sdv.jpg",
+      badge: "Branding",
+      isVideo: false,
+    },
+    {
+      id: "7",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_47/v1711497891/EZ%20Website%20-%20Creative/Work%20Section/Kiwiblue_Zoomed_jtmk4o.mp4",
+      badge: "Branding",
+      isVideo: true,
+    },
+    {
+      id: "8",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712095539/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
+      badge: "Branding",
+      isVideo: false,
+    },
+    {
+      id: "9",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_36/v1711497924/EZ%20Website%20-%20Creative/Work%20Section/Honey_Soy_1x1_zptjyf.mp4",
+      badge: "Branding",
+      isVideo: true,
+    },
+    {
+      id: "10",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_43/v1711497883/EZ%20Website%20-%20Creative/Work%20Section/Goju_Content_Reel_dhbmn7.mp4",
+      badge: "Branding",
+      isVideo: true,
+    },
+  ] as Array<CarouselData>,
 };
 
 // DESIGN PAGE DATA
