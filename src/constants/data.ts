@@ -15,13 +15,13 @@ export const landingPageData = {
   design: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637780/EZ%20Website%20-%20Design/Work%20Section%20Carousel/cupples_website_ladznn.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712637780/EZ%20Website%20-%20Design/Work%20Section%20Carousel/cupples_website_ladznn.jpg",
       badge: "Web Design",
       isVideo: false,
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638353/EZ%20Website%20-%20Design/Work%20Section%20Carousel/black_pearl_branding_ypwjz5.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712638353/EZ%20Website%20-%20Design/Work%20Section%20Carousel/black_pearl_branding_ypwjz5.jpg",
       badge: "Branding",
       isVideo: false,
     },
@@ -33,7 +33,7 @@ export const landingPageData = {
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
       badge: "Graphic Design",
       isVideo: false,
     },
