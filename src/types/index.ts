@@ -55,6 +55,8 @@ export type BrandsData = {
   id: string;
   brand: string;
   src: string;
+  maxWidth?: number;
+  width?: string;
 };
 
 export type BtsData = {
