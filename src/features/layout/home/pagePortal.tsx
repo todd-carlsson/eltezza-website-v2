@@ -64,12 +64,10 @@ export default function PagePortal({
             height={170}
           />
           <Marquee
-            imageOnly
             className={styles.homeMarquee}
             orientation="horizontal"
             content={content}
-            height={195}
-            width={195}
+            height={250}
           />
           <div className={styles.tagListContainer}>
             {tags.map((tag, i) => (
