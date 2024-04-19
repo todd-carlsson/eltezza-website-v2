@@ -16,12 +16,10 @@ export const Brands = memo(function Brands({ content, columns }: BrandsProps) {
         OUR TRUSTED <span className="textGradient">PARTNERS</span>
       </h1>
       <div
-        className={styles.brandsGrid}
-        // REFACTOR THIS
-        style={{
-          gridTemplateColumns:
-            columns === 3 ? "1fr 1fr 1fr" : "1fr 1fr 1fr 1fr",
-        }}
+        className={classNames(
+          styles.brandsGrid,
+          columns === 3 ? styles.threeCols : styles.fourCols,
+        )}
       >
         {content.map((brand) => (
           <Image

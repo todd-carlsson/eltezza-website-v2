@@ -56,7 +56,6 @@ export type BrandsData = {
   brand: string;
   src: string;
   maxWidth?: number;
-  minWidth?: number;
   width?: string;
 };
 
