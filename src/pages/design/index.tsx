@@ -49,15 +49,15 @@ export default function DesignPage() {
   }, []);
 
   function onOpen() {
-    return setShowModal(true);
+    setShowModal(true);
   }
   function onClose() {
-    return setShowModal(false);
+    setShowModal(false);
   }
 
   return (
     <>
-      <MetaData data={metaData.design} btsData={btsData.design} />
+      <MetaData data={metaData.design} imageData={btsData.design} />
       <div className={styles.heroContainer}>
         <Hero
           page={page}

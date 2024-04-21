@@ -1,17 +1,17 @@
 import React from "react";
-import { BtsData, MetaDataType } from "./types";
+import { BtsData, CarouselData, MetaDataType } from "./types";
 import Head from "next/head";
 
 interface MetaDataProps {
   data: MetaDataType;
   favIconColor?: "purple" | "orange";
-  btsData?: Array<BtsData>;
+  imageData?: Array<BtsData | CarouselData>;
 }
 
 export default function MetaData({
   data,
   favIconColor = "orange",
-  btsData,
+  imageData,
 }: MetaDataProps) {
   return (
     <Head>
@@ -37,7 +37,7 @@ export default function MetaData({
         rel="manifest"
         href={`favicon-${favIconColor}/site.webmanifest`}
       ></link>
-      {btsData?.map((item) => {
+      {imageData?.map((item) => {
         if (!item.isVideo) {
           return (
             <link key={item.id} rel="preload" as="image" href={item.src} />

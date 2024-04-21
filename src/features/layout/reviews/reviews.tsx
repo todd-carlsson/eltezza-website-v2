@@ -3,7 +3,7 @@ import { Review } from "./review";
 import styles from "./reviews.module.scss";
 import { motion, useMotionValue } from "framer-motion";
 import uuid from "react-uuid";
-import { memo, useEffect, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
 import { Button, ButtonVariant } from "@/features/ui";
 
@@ -23,6 +23,8 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
   );
   const [isPaginated, setIsPaginated] = useState(false);
 
+  const scrollDiv = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
     if (windowWidth > 1050) {
       setPaginationCount(content.length);
@@ -39,6 +41,7 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
     } else if (paginationCount === content.length) {
       setPaginationCount(3);
       setIsPaginated(false);
+      scrollDiv.current?.scrollIntoView({ behavior: "smooth" });
     }
   }
 
@@ -70,7 +73,7 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
   }
   if (windowWidth > 1000) {
     return (
-      <section className={styles.reviews}>
+      <section id="reviews" className={styles.reviews} ref={scrollDiv}>
         <h1 className="largeText">
           Hear it from our <span className="textGradient">partners</span>
         </h1>
@@ -107,7 +110,7 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
     );
   } else
     return (
-      <section className={styles.reviews}>
+      <section className={styles.reviews} ref={scrollDiv}>
         <h1 className="largeText">
           Hear it from our <span className="textGradient">partners</span>
         </h1>

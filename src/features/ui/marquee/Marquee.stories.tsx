@@ -47,11 +47,7 @@ export const HorizontalReverse: Story = {
 export const Vertical: Story = {
   render: () => (
     <div style={{ height: 400, fontFamily: "sans-serif" }}>
-      <Marquee
-        imageOnly
-        orientation="vertical"
-        content={landingPageData.design}
-      />
+      <Marquee orientation="vertical" content={landingPageData.design} />
     </div>
   ),
   args: {
@@ -64,11 +60,7 @@ export const Vertical: Story = {
 export const VerticalReverse: Story = {
   render: () => (
     <div style={{ height: 400, fontFamily: "sans-serif" }}>
-      <Marquee
-        imageOnly
-        orientation="vertical"
-        content={landingPageData.design}
-      />
+      <Marquee orientation="vertical" content={landingPageData.design} />
     </div>
   ),
   args: {
