@@ -8,7 +8,6 @@ interface MarqueeProps {
   content: Array<CarouselData>;
   orientation: "vertical" | "horizontal";
   className?: string;
-  imageOnly?: boolean;
   isReversed?: boolean;
   width?: number;
   height?: number;
@@ -19,7 +18,6 @@ export function Marquee({
   content,
   orientation,
   className,
-  imageOnly = false,
   isReversed = false,
   width,
   height,
@@ -47,7 +45,6 @@ export function Marquee({
         {content.map((item) => (
           <CarouselItem
             key={item.id}
-            imageOnly={imageOnly}
             data={item}
             width={width}
             height={height}
@@ -57,7 +54,6 @@ export function Marquee({
           <CarouselItem
             key={item.id}
             ariaHidden
-            imageOnly={imageOnly}
             data={item}
             width={width}
             height={height}

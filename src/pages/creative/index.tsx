@@ -48,10 +48,10 @@ export default function CreativePage() {
   }, []);
 
   function onOpen() {
-    return setShowModal(true);
+    setShowModal(true);
   }
   function onClose() {
-    return setShowModal(false);
+    setShowModal(false);
   }
 
   return (
@@ -59,7 +59,7 @@ export default function CreativePage() {
       <MetaData
         data={metaData.creative}
         favIconColor="purple"
-        btsData={btsData.creative}
+        imageData={btsData.creative}
       />
       <div className={styles.heroContainer}>
         <Hero

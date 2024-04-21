@@ -19,14 +19,12 @@ export const DesignHero = memo(function DesignHero({
         className={styles.designHeroMarquee}
         isReversed
         orientation="vertical"
-        imageOnly
         content={leftData}
         width={300}
       />
       <Marquee
         className={styles.designHeroMarquee}
         orientation="vertical"
-        imageOnly
         content={rightData}
         width={300}
       />
