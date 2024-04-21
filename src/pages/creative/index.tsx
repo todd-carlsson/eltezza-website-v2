@@ -48,10 +48,10 @@ export default function CreativePage() {
   }, []);
 
   function onOpen() {
-    return setShowModal(true);
+    setShowModal(true);
   }
   function onClose() {
-    return setShowModal(false);
+    setShowModal(false);
   }
 
   return (

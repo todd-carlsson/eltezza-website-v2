@@ -49,10 +49,10 @@ export default function DesignPage() {
   }, []);
 
   function onOpen() {
-    return setShowModal(true);
+    setShowModal(true);
   }
   function onClose() {
-    return setShowModal(false);
+    setShowModal(false);
   }
 
   return (
