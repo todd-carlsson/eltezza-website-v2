@@ -54,7 +54,7 @@ export const landingPageData = {
     {
       id: "1",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510473/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_V_mjlm08.jpg",
-      badge: "Imagery",
+      badge: "Advertising Imagery",
       isVideo: false,
     },
     {
@@ -66,7 +66,7 @@ export const landingPageData = {
     {
       id: "3",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510456/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_No_Ugly_2_vd5xg1.jpg",
-      badge: "Imagery",
+      badge: "Advertising Imagery",
       isVideo: false,
     },
     {
@@ -78,7 +78,7 @@ export const landingPageData = {
     {
       id: "4",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510429/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_Jarrah_pujknc.jpg",
-      badge: "Imagery",
+      badge: "Advertising Imagery",
       isVideo: false,
     },
 
@@ -91,7 +91,7 @@ export const landingPageData = {
     {
       id: "6",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510413/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_Greenhill_Seltzers_1_jf9sdv.jpg",
-      badge: "Imagery",
+      badge: "Advertising Imagery",
       isVideo: false,
     },
     {
@@ -103,7 +103,7 @@ export const landingPageData = {
     {
       id: "8",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712095539/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
-      badge: "Imagery",
+      badge: "Advertising Imagery",
       isVideo: false,
     },
     {
