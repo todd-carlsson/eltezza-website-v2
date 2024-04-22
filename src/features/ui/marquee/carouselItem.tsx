@@ -25,6 +25,7 @@ export function CarouselItem({
       {!data.isVideo ? (
         <Image
           className={styles.carouselCardImg}
+          loading="eager"
           src={data.src}
           alt={data.alt ? data.alt : "image"}
           height={height ? height : 300}
