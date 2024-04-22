@@ -43,6 +43,12 @@ export const landingPageData = {
       badge: "Reels",
       isVideo: true,
     },
+    {
+      id: "6",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713766486/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Shareable_Giveaway_hiz45d.jpg",
+      badge: "Social Media",
+      isVideo: false,
+    },
   ] as Array<CarouselData>,
   creative: [
     {
@@ -251,6 +257,13 @@ export const designCarouselData = [
     id: "11",
     src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712984003/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/black_pearl_social_media_oi1slb.jpg",
     alt: "Black Pearl Social Media",
+    badge: "Social Media",
+    isVideo: false,
+  },
+  {
+    id: "12",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713766486/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Shareable_Giveaway_hiz45d.jpg",
+    alt: "Black Pearl Shareable Giveaway",
     badge: "Social Media",
     isVideo: false,
   },
