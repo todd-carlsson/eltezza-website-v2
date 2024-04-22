@@ -45,7 +45,7 @@ export const landingPageData = {
     },
     {
       id: "6",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713766486/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Shareable_Giveaway_hiz45d.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713766486/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Shareable_Giveaway_hiz45d.jpg",
       badge: "Social Media",
       isVideo: false,
     },
