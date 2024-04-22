@@ -32,5 +32,5 @@ export default function handler(
 
   mail.send(data);
 
-  res.status(200).json({ name: "John Doe" });
+  res.status(200);
 }
