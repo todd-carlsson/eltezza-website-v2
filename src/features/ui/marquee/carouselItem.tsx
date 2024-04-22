@@ -6,6 +6,7 @@ import { Badge } from "../badge";
 
 interface CarouselItemProps {
   data: CarouselData;
+  badgeSize?: "small" | "large";
   ariaHidden?: boolean;
   width?: number;
   height?: number;
@@ -14,13 +15,22 @@ interface CarouselItemProps {
 export function CarouselItem({
   data,
   ariaHidden = false,
+  badgeSize = "large",
   width,
   height,
 }: CarouselItemProps) {
   return (
     <div aria-hidden={ariaHidden} className={classNames(styles.carouselCard)}>
       {data.badge && (
-        <Badge className={styles.carouselBadge}>{data.badge}</Badge>
+        <Badge
+          className={classNames(
+            styles.carouselBadge,
+            badgeSize === "small" && styles.carouselBadgeSmall,
+          )}
+          size={badgeSize}
+        >
+          {data.badge}
+        </Badge>
       )}
       {!data.isVideo ? (
         <Image
