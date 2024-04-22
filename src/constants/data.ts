@@ -37,7 +37,12 @@ export const landingPageData = {
       badge: "Social Media",
       isVideo: false,
     },
-    // OREO VIDEO GOES HERE
+    {
+      id: "5",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_43/v1713756798/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Oreo_Reel_super_final_rlocdk.mp4",
+      badge: "Reels",
+      isVideo: true,
+    },
   ] as Array<CarouselData>,
   creative: [
     {
@@ -188,38 +193,66 @@ export const designCarouselData = [
   },
   {
     id: "3",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_30/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    alt: "Ikaika Motivational Reel",
+    badge: "Reels",
+    isVideo: true,
+  },
+  {
+    id: "4",
     src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638353/EZ%20Website%20-%20Design/Work%20Section%20Carousel/black_pearl_branding_ypwjz5.jpg",
     alt: "Black Pearl Cafe Branding",
     badge: "Branding",
     isVideo: false,
   },
   {
-    id: "4",
+    id: "5",
     src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638400/EZ%20Website%20-%20Design/Work%20Section%20Carousel/uptania_branding_pvkykm.jpg",
     alt: "Uptania Branding",
     badge: "Branding",
     isVideo: false,
   },
   {
-    id: "5",
+    id: "6",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_45/v1713756798/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Oreo_Reel_super_final_rlocdk.mp4",
+    alt: "Oreo Reel",
+    badge: "Reels",
+    isVideo: true,
+  },
+  {
+    id: "7",
     src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638242/EZ%20Website%20-%20Design/Work%20Section%20Carousel/steves_black_sox_bpz5uv.jpg",
     alt: "Steve's Tyre Service",
     badge: "Social Media",
     isVideo: false,
   },
   {
-    id: "6",
+    id: "8",
     src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
     alt: "Peak Performance",
     badge: "Social Media",
     isVideo: false,
   },
   {
-    id: "7",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_30/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
-    alt: "Ikaika Motivational Reel",
+    id: "9",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_43/v1712984254/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/What_they_know_about_steves_reel_ifxohz.mp4",
+    alt: "What they know about Steve's Reel",
     badge: "Reels",
     isVideo: true,
+  },
+  {
+    id: "10",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713756992/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Good_earth_tours_Branding_zjlxmz.jpg",
+    alt: "Good Earth Tours Branding",
+    badge: "Branding",
+    isVideo: false,
+  },
+  {
+    id: "11",
+    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712984003/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/black_pearl_social_media_oi1slb.jpg",
+    alt: "Black Pearl Social Media",
+    badge: "Social Media",
+    isVideo: false,
   },
 ] as Array<CarouselData>;
 
