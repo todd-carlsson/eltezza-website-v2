@@ -7,6 +7,7 @@ import { CarouselData } from "@/types";
 interface MarqueeProps {
   content: Array<CarouselData>;
   orientation: "vertical" | "horizontal";
+  badgeSize?: "small" | "large";
   className?: string;
   isReversed?: boolean;
   width?: number;
@@ -17,6 +18,7 @@ interface MarqueeProps {
 export function Marquee({
   content,
   orientation,
+  badgeSize = "large",
   className,
   isReversed = false,
   width,
@@ -45,6 +47,7 @@ export function Marquee({
         {content.map((item) => (
           <CarouselItem
             key={item.id}
+            badgeSize={badgeSize}
             data={item}
             width={width}
             height={height}
