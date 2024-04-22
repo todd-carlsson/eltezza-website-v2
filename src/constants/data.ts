@@ -39,15 +39,15 @@ export const landingPageData = {
     },
     {
       id: "5",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_43/v1713756798/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Oreo_Reel_super_final_rlocdk.mp4",
-      badge: "Reels",
-      isVideo: true,
-    },
-    {
-      id: "6",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713766486/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Shareable_Giveaway_hiz45d.jpg",
       badge: "Social Media",
       isVideo: false,
+    },
+    {
+      id: "6",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_43/v1713756798/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Oreo_Reel_super_final_rlocdk.mp4",
+      badge: "Reels",
+      isVideo: true,
     },
   ] as Array<CarouselData>,
   creative: [
