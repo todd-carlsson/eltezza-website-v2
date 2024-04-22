@@ -18,3 +18,10 @@ export const Main: Story = {
     children: "Web Design",
   },
 };
+/** Small Badge */
+export const Small: Story = {
+  args: {
+    size: "small",
+    children: "Web Design",
+  },
+};
