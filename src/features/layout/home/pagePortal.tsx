@@ -12,7 +12,6 @@ interface PagePortalProps {
   title: string;
   content: Array<CarouselData>;
   tags: Array<string>;
-  color: "--ez-orange" | "--adobe-purple";
   buttonVariant: ButtonVariant;
   logo: string;
 }
@@ -21,7 +20,6 @@ export default function PagePortal({
   title,
   content,
   tags,
-  color,
   buttonVariant,
   logo,
 }: PagePortalProps) {
@@ -90,20 +88,21 @@ export default function PagePortal({
             content={content}
             height={250}
           />
-          <div className={styles.tagListContainer}>
-            {tags.map((tag, i) => (
-              <>
-                <p key={tag}>{tag} </p>
-                {i !== tags.length - 1 && <p> | </p>}
-              </>
-            ))}
+          <div className={styles.portalBottom}>
+            <div className={styles.tagListContainer}>
+              {tags.map((tag, i) => (
+                <>
+                  <p key={tag}>{tag} </p>
+                  {i !== tags.length - 1 && <p> | </p>}
+                </>
+              ))}
+            </div>
+            <Link href={`/${title}`}>
+              <Button className={styles.homeButton} variant={buttonVariant}>
+                Enter
+              </Button>
+            </Link>
           </div>
-          <Link href={`/${title}`}>
-            <Button className={styles.homeButton} variant={buttonVariant}>
-              Enter
-            </Button>
-          </Link>
-          <p style={{ display: "none" }}>{color}</p>
         </div>
       )}
     </div>
