@@ -35,7 +35,7 @@ export default function PagePortal({
   useEffect(() => {
     if (windowSize <= 1200) {
       setIsHovered(true);
-    }
+    } else setIsHovered(false);
   }, [windowSize]);
 
   function PagePortalTitle() {
