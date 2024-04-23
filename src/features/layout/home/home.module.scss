@@ -144,6 +144,10 @@
           height: auto;
           flex-direction: column;
           position: relative;
+          top: 70%;
+        }
+
+        @media screen and (width <=800px) {
           top: 50%;
         }
 
@@ -203,6 +207,10 @@
 
             @media screen and (width <= 800px) {
               font-size: 0.7rem;
+            }
+
+            @media screen and (width <= 600px) {
+              font-size: 2.25vw;
             }
           }
 

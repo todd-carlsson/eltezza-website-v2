@@ -40,6 +40,25 @@ export default function PagePortal({
     }
   }, [windowSize]);
 
+  function PagePortalTitle() {
+    return (
+      <motion.div
+        className={styles.pagePortalTitle}
+        initial={{ opacity: 0, display: "none" }}
+        animate={{ opacity: 1, display: "flex" }}
+        exit={{ opacity: 0 }}
+      >
+        <Image
+          src="/images/eltezza-home-logo.png"
+          alt="Eltezza"
+          width={124}
+          height={20}
+        />
+        <h1 className={styles.title}>{title}</h1>
+      </motion.div>
+    );
+  }
+
   return (
     <div
       onMouseEnter={() => hoverHandler(true)}
@@ -47,22 +66,13 @@ export default function PagePortal({
       className={styles.pagePortalContainer}
     >
       <AnimatePresence>
-        {!isHovered && (
-          <motion.div
-            className={styles.pagePortalTitle}
-            initial={{ opacity: 0, display: "none" }}
-            animate={{ opacity: 1, display: "flex" }}
-            exit={{ opacity: 0 }}
-          >
-            <Image
-              src="/images/eltezza-home-logo.png"
-              alt="Eltezza"
-              width={124}
-              height={20}
-            />
-            <h1 className={styles.title}>{title}</h1>
-          </motion.div>
-        )}
+        {/* If window width is > 1200 and hovered is true, don't display the title text*/}
+        {windowSize > 1200
+          ? isHovered
+            ? null
+            : PagePortalTitle()
+          : // If window width is <= 1200px, always display the title text
+            PagePortalTitle()}
       </AnimatePresence>
       {isHovered && (
         <div className={styles.portalContent}>
