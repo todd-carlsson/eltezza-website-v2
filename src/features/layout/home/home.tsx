@@ -78,7 +78,6 @@ export function HomeComponent() {
                 logo={logos.design}
                 content={landingPageData.design}
                 tags={pageTags.design}
-                color="--ez-orange"
                 buttonVariant={ButtonVariant.homeOrange}
               />
               <div className={styles.blurLeft} />
@@ -90,7 +89,6 @@ export function HomeComponent() {
                 logo={logos.creative}
                 content={landingPageData.creative}
                 tags={pageTags.creative}
-                color="--adobe-purple"
                 buttonVariant={ButtonVariant.homePurple}
               />
             </motion.div>

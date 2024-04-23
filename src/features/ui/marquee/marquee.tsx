@@ -3,6 +3,7 @@ import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { CarouselData } from "@/types";
+import { memo } from "react";
 
 interface MarqueeProps {
   content: Array<CarouselData>;
@@ -15,7 +16,7 @@ interface MarqueeProps {
   drag?: boolean;
 }
 
-export function Marquee({
+export const Marquee = memo(function Marquee({
   content,
   orientation,
   badgeSize = "large",
@@ -66,4 +67,4 @@ export function Marquee({
       </motion.div>
     </div>
   );
-}
+});
