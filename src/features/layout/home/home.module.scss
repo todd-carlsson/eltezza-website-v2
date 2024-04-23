@@ -136,10 +136,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
+        font-size: 3rem;
 
-        @media screen and (width <= 1000px) {
-          width: 100%;
+        @media screen and (width <= 1200px) {
+          width: 100vw;
+          padding: 4rem 0;
+          height: auto;
+          flex-direction: column;
+          position: relative;
+          top: 50%;
         }
 
         .pagePortalTitle {
@@ -148,6 +153,10 @@
           align-items: center;
           position: absolute;
           z-index: 2;
+
+          @media screen and (width <=1200px) {
+            position: relative;
+          }
 
           .title {
             text-transform: uppercase;
@@ -178,7 +187,9 @@
             width: 224px;
             height: 70px;
 
-            // position: absolute;
+            @media screen and (width <=1200px) {
+              display: none;
+            }
           }
 
           .homeMarquee {

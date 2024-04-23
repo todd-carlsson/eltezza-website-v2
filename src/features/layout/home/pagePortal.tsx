@@ -1,11 +1,12 @@
 import Image from "next/image";
 import styles from "./home.module.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { Button, ButtonVariant } from "@/features/ui";
 import { Marquee } from "@/features/ui";
 import { CarouselData } from "@/types";
+import useWindowSize from "@/hooks/useWindowSize";
 
 interface PagePortalProps {
   title: string;
@@ -25,10 +26,19 @@ export default function PagePortal({
   logo,
 }: PagePortalProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const [windowSize] = useWindowSize();
 
   function hoverHandler(isTrue: boolean) {
-    setIsHovered(isTrue);
+    if (windowSize <= 1200) {
+      setIsHovered(true);
+    } else setIsHovered(isTrue);
   }
+
+  useEffect(() => {
+    if (windowSize <= 1200) {
+      setIsHovered(true);
+    }
+  }, [windowSize]);
 
   return (
     <div
