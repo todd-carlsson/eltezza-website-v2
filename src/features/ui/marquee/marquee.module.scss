@@ -54,13 +54,15 @@
   .verticalReverse {
     max-height: fit-content;
     position: relative;
-    bottom: -250px;
+    bottom: -270px;
     flex-direction: column-reverse;
     animation: slide-down 13s linear reverse infinite;
 
     @keyframes slide-down {
       to {
-        transform: translateY(calc(-1252.5px - 0.5rem));
+        transform: translateY(
+          calc((-1.6161 * var(--vertical-marquee-height)) - 0.5rem)
+        );
       }
     }
   }

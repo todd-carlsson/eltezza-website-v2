@@ -13,6 +13,7 @@
   --content-padding: 115px;
   --content-padding-sm: 30px;
   --max-width: 1800px;
+  --vertical-marquee-height: 775px;
 }
 
 :root:has(.noScroll) {
