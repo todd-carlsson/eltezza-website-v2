@@ -42,23 +42,29 @@
   .vertical {
     max-height: fit-content;
     flex-direction: column;
-    animation: slide-up 10s linear infinite;
+    position: relative;
+    bottom: -350px;
+    animation: slide-up 22s linear infinite;
 
     @keyframes slide-up {
       to {
-        transform: translateY(calc(-50% - 0.5rem));
+        transform: translateY(calc((-3 * var(--vertical-marquee-height))));
       }
     }
   }
 
   .verticalReverse {
-    // height: fit-content;
+    max-height: fit-content;
+    position: relative;
+    bottom: -350px;
     flex-direction: column-reverse;
-    animation: slide-up 10s linear reverse infinite;
+    animation: slide-down 15s linear reverse infinite;
 
-    @keyframes slide-up {
+    @keyframes slide-down {
       to {
-        transform: translateY(calc(-100% - 0.5rem));
+        transform: translateY(
+          calc((-1.6161 * var(--vertical-marquee-height)) - 0.5rem)
+        );
       }
     }
   }
