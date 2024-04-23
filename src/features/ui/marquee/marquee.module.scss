@@ -44,7 +44,7 @@
     flex-direction: column;
     position: relative;
     bottom: -350px;
-    animation: slide-up 12s linear infinite;
+    animation: slide-up 22s linear infinite;
 
     @keyframes slide-up {
       to {
@@ -60,7 +60,7 @@
     position: relative;
     bottom: -350px;
     flex-direction: column-reverse;
-    animation: slide-down 13s linear reverse infinite;
+    animation: slide-down 15s linear reverse infinite;
 
     @keyframes slide-down {
       to {
