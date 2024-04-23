@@ -48,9 +48,7 @@
 
     @keyframes slide-up {
       to {
-        transform: translateY(
-          calc((-2.93 * var(--vertical-marquee-height)) - 0.5rem)
-        );
+        transform: translateY(calc((-3 * var(--vertical-marquee-height))));
       }
     }
   }
