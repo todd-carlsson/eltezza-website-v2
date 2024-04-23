@@ -42,23 +42,25 @@
   .vertical {
     max-height: fit-content;
     flex-direction: column;
-    animation: slide-up 10s linear infinite;
+    animation: slide-up 5s linear infinite;
 
     @keyframes slide-up {
       to {
-        transform: translateY(calc(-50% - 0.5rem));
+        transform: translateY(calc(-387.5px - 0.5rem));
       }
     }
   }
 
   .verticalReverse {
-    // height: fit-content;
+    max-height: fit-content;
+    position: relative;
+    bottom: -250px;
     flex-direction: column-reverse;
-    animation: slide-up 10s linear reverse infinite;
+    animation: slide-down 13s linear reverse infinite;
 
-    @keyframes slide-up {
+    @keyframes slide-down {
       to {
-        transform: translateY(calc(-100% - 0.5rem));
+        transform: translateY(calc(-1252.5px - 0.5rem));
       }
     }
   }

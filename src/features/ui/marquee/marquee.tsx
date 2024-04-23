@@ -32,7 +32,7 @@ export function Marquee({
     >
       <motion.div
         drag={drag && "x"}
-        dragConstraints={{ right: 0 }}
+        dragConstraints={{ right: 0, left: 0 }}
         className={classNames(
           styles.carouselTrack,
           orientation === "vertical"
