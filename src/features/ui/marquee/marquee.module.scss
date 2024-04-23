@@ -42,11 +42,15 @@
   .vertical {
     max-height: fit-content;
     flex-direction: column;
-    animation: slide-up 5s linear infinite;
+    position: relative;
+    bottom: -350px;
+    animation: slide-up 12s linear infinite;
 
     @keyframes slide-up {
       to {
-        transform: translateY(calc(-387.5px - 0.5rem));
+        transform: translateY(
+          calc((-2.93 * var(--vertical-marquee-height)) - 0.5rem)
+        );
       }
     }
   }
