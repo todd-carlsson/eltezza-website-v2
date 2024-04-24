@@ -25,7 +25,7 @@ export const DesignWork = memo(function DesignWork({ content }: WorkProps) {
         <Marquee
           orientation="horizontal"
           content={content}
-          height={350}
+          imgHeight={350}
           time={23}
           drag
         />
