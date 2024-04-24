@@ -1,14 +1,10 @@
 import styles from "./marquee.module.scss";
 import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
-import {
-  motion,
-  useMotionValue,
-  useMotionValueEvent,
-  useReducedMotion,
-} from "framer-motion";
+import { animate, motion, useMotionValue } from "framer-motion";
 import { CarouselData } from "@/types";
 import useMeasure from "react-use-measure";
+import { useEffect } from "react";
 
 interface MarqueeProps {
   content: Array<CarouselData>;
@@ -35,79 +31,48 @@ export function Marquee({
 }: MarqueeProps) {
   const [ref, { width, height }] = useMeasure();
 
-  const prefersReducedMotion = useReducedMotion();
+  // const prefersReducedMotion = useReducedMotion();
 
   const x = useMotionValue(0);
+  const y = useMotionValue(0);
 
-  useMotionValueEvent(x, "animationStart", () => {
-    if (x.get() <= -width / 2) {
-      x.set(0);
-    }
-  });
+  useEffect(() => {
+    const getFinalPosition = () => {
+      if (orientation === "horizontal") {
+        return -width / 2 - 8;
+      } else if (orientation === "vertical") {
+        if (!isReversed) {
+          return -height / 2 + 8;
+        } else return height / 2 - 8;
+      } else return 0;
+    };
 
-  function MarqueeSize() {
-    if (orientation === "horizontal") {
-      return width * -0.3625;
-    } else {
-      if (!isReversed) {
-        return -height;
-      } else return height * 0.3333;
-    }
-  }
+    const xControls = animate(x, getFinalPosition(), {
+      ease: "linear",
+      duration: time,
+      repeat: Infinity,
+      repeatType: "loop",
+      repeatDelay: 0,
+    });
 
-  const marqueeVariantsX = {
-    animate: {
-      x: [0, MarqueeSize()],
-      transition: {
-        x: {
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: time,
-          ease: "linear",
-        },
-      },
-    },
-  };
-
-  const marqueeVariantsY = {
-    animate: {
-      y: [0, MarqueeSize() / 2],
-      transition: {
-        y: {
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: time,
-          ease: "linear",
-        },
-      },
-    },
-  };
-  const marqueeVariantsYReversed = {
-    animate: {
-      y: [MarqueeSize() / -2, MarqueeSize()],
-      transition: {
-        y: {
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: time,
-          ease: "linear",
-        },
-      },
-    },
-  };
+    const yControls = animate(y, getFinalPosition(), {
+      ease: "linear",
+      duration: time,
+      repeat: Infinity,
+      repeatType: "loop",
+      repeatDelay: 0,
+    });
+    return () => {
+      xControls.stop();
+      yControls.stop();
+    };
+  }, [height, isReversed, orientation, time, width, x, y]);
 
   function getTop() {
     if (orientation === "vertical") {
-      if (isReversed) return height * -0.3333;
-      else if (!isReversed) return MarqueeSize() / 4;
+      if (isReversed) return height * -0.66;
+      else if (!isReversed) return -height / 4;
     }
-  }
-
-  function getVariants() {
-    if (orientation === "vertical") {
-      if (isReversed) return marqueeVariantsYReversed;
-      else return marqueeVariantsY;
-    } else if (orientation === "horizontal") return marqueeVariantsX;
   }
 
   return (
@@ -127,11 +92,10 @@ export function Marquee({
             : null,
         )}
         ref={ref}
-        variants={getVariants()}
-        animate={prefersReducedMotion ? "" : "animate"}
         style={{
+          x: orientation === "horizontal" ? x : 0,
+          y: orientation === "vertical" ? y : 0,
           top: getTop(),
-          x,
         }}
       >
         {content.map((item) => (
