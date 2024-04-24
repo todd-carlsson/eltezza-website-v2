@@ -1,7 +1,12 @@
 import styles from "./marquee.module.scss";
 import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
-import { motion, useReducedMotion } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useMotionValueEvent,
+  useReducedMotion,
+} from "framer-motion";
 import { CarouselData } from "@/types";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
@@ -35,6 +40,14 @@ export function Marquee({
   const [windowSize] = useWindowSize();
 
   const prefersReducedMotion = useReducedMotion();
+
+  const x = useMotionValue(0);
+
+  useMotionValueEvent(x, "animationStart", () => {
+    if (x.get() <= -marqueeWidth / 2) {
+      x.set(0);
+    }
+  });
 
   // For the useLayoutEffect
   const canUseDOM = typeof window !== "undefined";
@@ -129,7 +142,7 @@ export function Marquee({
     >
       <motion.div
         drag={drag && "x"}
-        dragConstraints={{ right: 0, left: 0 }}
+        dragConstraints={{ right: 0, left: -marqueeWidth / 2 }}
         className={classNames(
           styles.carouselTrack,
           orientation === "vertical"
@@ -143,7 +156,7 @@ export function Marquee({
         animate={prefersReducedMotion ? "" : "animate"}
         style={{
           top: getTop(),
-          // bottom: getBottom()
+          x,
         }}
       >
         {content.map((item) => (
