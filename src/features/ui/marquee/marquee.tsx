@@ -1,7 +1,12 @@
 import styles from "./marquee.module.scss";
 import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
-import { motion } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useMotionValueEvent,
+  useReducedMotion,
+} from "framer-motion";
 import { CarouselData } from "@/types";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
@@ -18,7 +23,7 @@ interface MarqueeProps {
   drag?: boolean;
 }
 
-export const Marquee = function Marquee({
+export function Marquee({
   content,
   orientation,
   badgeSize = "large",
@@ -34,18 +39,36 @@ export const Marquee = function Marquee({
   const [marqueeHeight, setMarqueeHeight] = useState(0);
   const [windowSize] = useWindowSize();
 
+  const prefersReducedMotion = useReducedMotion();
+
+  const x = useMotionValue(0);
+
+  useMotionValueEvent(x, "animationStart", () => {
+    if (x.get() <= -marqueeWidth / 2) {
+      x.set(0);
+    }
+  });
+
   // For the useLayoutEffect
   const canUseDOM = typeof window !== "undefined";
   const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 
   useIsomorphicLayoutEffect(() => {
-    setMarqueeWidth(
-      marqueeRef?.current?.offsetWidth ? marqueeRef?.current?.offsetWidth : 0,
-    );
-    setMarqueeHeight(
-      marqueeRef?.current?.offsetHeight ? marqueeRef?.current?.offsetHeight : 0,
-    );
-  }, [windowSize, marqueeHeight, marqueeWidth]);
+    setTimeout(() => {
+      setMarqueeWidth(
+        marqueeRef?.current?.offsetWidth ? marqueeRef?.current?.offsetWidth : 0,
+      );
+      setMarqueeHeight(
+        marqueeRef?.current?.offsetHeight
+          ? marqueeRef?.current?.offsetHeight
+          : 0,
+      );
+    }, 200);
+  }, [
+    windowSize,
+    marqueeRef.current?.offsetHeight,
+    marqueeRef.current?.offsetWidth,
+  ]);
 
   function MarqueeSize() {
     if (orientation === "horizontal") {
@@ -119,7 +142,7 @@ export const Marquee = function Marquee({
     >
       <motion.div
         drag={drag && "x"}
-        dragConstraints={{ right: 0, left: 0 }}
+        dragConstraints={{ right: 0, left: -marqueeWidth / 2 }}
         className={classNames(
           styles.carouselTrack,
           orientation === "vertical"
@@ -130,10 +153,10 @@ export const Marquee = function Marquee({
         )}
         ref={marqueeRef}
         variants={getVariants()}
-        animate="animate"
+        animate={prefersReducedMotion ? "" : "animate"}
         style={{
           top: getTop(),
-          // bottom: getBottom()
+          x,
         }}
       >
         {content.map((item) => (
@@ -158,4 +181,4 @@ export const Marquee = function Marquee({
       </motion.div>
     </motion.div>
   );
-};
+}
