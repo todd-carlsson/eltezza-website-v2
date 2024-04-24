@@ -1,7 +1,12 @@
 import styles from "./marquee.module.scss";
 import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
-import { animate, motion, useMotionValue } from "framer-motion";
+import {
+  animate,
+  motion,
+  useMotionValue,
+  useReducedMotion,
+} from "framer-motion";
 import { CarouselData } from "@/types";
 import useMeasure from "react-use-measure";
 import { useEffect } from "react";
@@ -31,7 +36,7 @@ export function Marquee({
 }: MarqueeProps) {
   const [ref, { width, height }] = useMeasure();
 
-  // const prefersReducedMotion = useReducedMotion();
+  const prefersReducedMotion = useReducedMotion();
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -93,8 +98,8 @@ export function Marquee({
         )}
         ref={ref}
         style={{
-          x: orientation === "horizontal" ? x : 0,
-          y: orientation === "vertical" ? y : 0,
+          x: orientation === "horizontal" && !prefersReducedMotion ? x : 0,
+          y: orientation === "vertical" && !prefersReducedMotion ? y : 0,
           top: getTop(),
         }}
       >
