@@ -7,6 +7,7 @@
   .carouselTrack {
     display: flex;
     position: relative;
+    top: 0;
     left: 0;
     justify-content: center;
     align-items: center;
@@ -14,21 +15,16 @@
     width: fit-content;
     height: fit-content;
     overflow: hidden;
-
-    &:active {
-      animation-play-state: paused;
-    }
   }
 
   .vertical {
     flex-direction: column;
     position: relative;
-    bottom: -600px;
+    overflow: hidden;
   }
 
   .verticalReverse {
     position: relative;
-    top: -600px;
     flex-direction: column-reverse;
     overflow: hidden;
   }

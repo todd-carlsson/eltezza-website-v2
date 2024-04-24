@@ -181,9 +181,8 @@
   gap: 2rem;
   position: relative;
   top: -100px;
-
-  // height: calc(100vh - 95px);
-  // min-height: 600px;
+  height: calc(100vh - 95px);
+  min-height: 600px;
   max-height: var(--vertical-marquee-height);
 
   @media screen and (width <=1250px) {

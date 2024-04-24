@@ -19,9 +19,16 @@ export const DesignWork = memo(function DesignWork({ content }: WorkProps) {
           width={175}
           height={175}
         />
+        <div className={styles.wheelBlur} />
       </div>
       <div className={styles.carouselContainer}>
-        <Marquee orientation="horizontal" content={content} height={350} drag />
+        <Marquee
+          orientation="horizontal"
+          content={content}
+          height={350}
+          time={23}
+          drag
+        />
       </div>
       <p className={styles.workDesignText}>
         Drag images left or right to view more designs
