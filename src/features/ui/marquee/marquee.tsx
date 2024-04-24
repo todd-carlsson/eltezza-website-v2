@@ -47,7 +47,7 @@ export const Marquee = function Marquee({
 
   function MarqueeSize() {
     if (orientation === "horizontal") {
-      return -marqueeWidth * 0.5;
+      return marqueeWidth * -0.3625;
     } else {
       if (!isReversed) {
         return -marqueeHeight * 0.3333;
@@ -57,12 +57,12 @@ export const Marquee = function Marquee({
 
   const marqueeVariantsX = {
     animate: {
-      x: [MarqueeSize() / 2, MarqueeSize()],
+      x: [0, MarqueeSize()],
       transition: {
         x: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 15,
+          duration: 20,
           ease: "linear",
         },
       },
@@ -96,9 +96,7 @@ export const Marquee = function Marquee({
             ? isReversed
               ? styles.verticalReverse
               : styles.vertical
-            : isReversed
-              ? styles.horizontal
-              : styles.horizontal,
+            : null,
         )}
         ref={marqueeRef}
         variants={
