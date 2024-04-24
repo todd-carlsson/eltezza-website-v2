@@ -6,73 +6,37 @@
 
   .carouselTrack {
     display: flex;
-    position: absolute;
+    position: relative;
     left: 0;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     width: fit-content;
-    height: 100%;
+    height: fit-content;
+    overflow: hidden;
 
     &:active {
       animation-play-state: paused;
     }
   }
 
-  .horizontal {
-    animation: slide 30s linear infinite;
-
-    @keyframes slide {
-      to {
-        transform: translate(calc(-50% - 0.5rem));
-      }
-    }
-  }
-
-  .horizontalReverse {
-    animation: slide 30s linear reverse infinite;
-
-    @keyframes slide {
-      to {
-        transform: translate(calc(-50% - 0.5rem));
-      }
-    }
-  }
-
   .vertical {
-    max-height: fit-content;
     flex-direction: column;
     position: relative;
-    bottom: -350px;
-    animation: slide-up 22s linear infinite;
-
-    @keyframes slide-up {
-      to {
-        transform: translateY(calc((-3 * var(--vertical-marquee-height))));
-      }
-    }
+    bottom: -600px;
   }
 
   .verticalReverse {
-    max-height: fit-content;
     position: relative;
-    bottom: -350px;
+    top: -600px;
     flex-direction: column-reverse;
-    animation: slide-down 15s linear reverse infinite;
-
-    @keyframes slide-down {
-      to {
-        transform: translateY(
-          calc((-1.6161 * var(--vertical-marquee-height)) - 0.5rem)
-        );
-      }
-    }
+    overflow: hidden;
   }
 }
 
 .carouselCard {
   width: 100%;
-  height: auto;
+  height: fit-content;
   cursor: pointer;
   background: transparent;
   display: flex;
