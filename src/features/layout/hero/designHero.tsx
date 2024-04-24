@@ -20,14 +20,14 @@ export const DesignHero = memo(function DesignHero({
         isReversed
         orientation="vertical"
         content={leftData}
-        width={"100%"}
+        imgWidth={"100%"}
         time={13}
       />
       <Marquee
         className={styles.designHeroMarquee}
         orientation="vertical"
         content={rightData}
-        width={"100%"}
+        imgWidth={"100%"}
         time={13}
       />
       <div className={styles.blurBottom} />
