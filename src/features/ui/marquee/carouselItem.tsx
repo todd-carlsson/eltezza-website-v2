@@ -8,8 +8,8 @@ interface CarouselItemProps {
   data: CarouselData;
   badgeSize?: "small" | "large";
   ariaHidden?: boolean;
-  width?: number;
-  height?: number;
+  width?: number | string;
+  height?: number | string;
 }
 
 export function CarouselItem({
@@ -38,8 +38,8 @@ export function CarouselItem({
           loading="eager"
           src={data.src}
           alt={data.alt ? data.alt : "image"}
-          height={height ? height : 300}
-          width={width ? width : 300}
+          height={300}
+          width={300}
           style={{
             width: width ? width : "auto",
             height: height ? height : "auto",

@@ -20,13 +20,13 @@ export const DesignHero = memo(function DesignHero({
         isReversed
         orientation="vertical"
         content={leftData}
-        width={300}
+        width={"100%"}
       />
       <Marquee
         className={styles.designHeroMarquee}
         orientation="vertical"
         content={rightData}
-        width={300}
+        width={"100%"}
       />
       <div className={styles.blurBottom} />
       <div className={styles.orangeOrbSmall} />

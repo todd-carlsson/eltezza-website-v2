@@ -3,7 +3,8 @@ import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { CarouselData } from "@/types";
-import { memo } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import useWindowSize from "@/hooks/useWindowSize";
 
 interface MarqueeProps {
   content: Array<CarouselData>;
@@ -11,12 +12,12 @@ interface MarqueeProps {
   badgeSize?: "small" | "large";
   className?: string;
   isReversed?: boolean;
-  width?: number;
-  height?: number;
+  width?: number | string;
+  height?: number | string;
   drag?: boolean;
 }
 
-export const Marquee = memo(function Marquee({
+export const Marquee = function Marquee({
   content,
   orientation,
   badgeSize = "large",
@@ -26,8 +27,63 @@ export const Marquee = memo(function Marquee({
   height,
   drag,
 }: MarqueeProps) {
+  const marqueeRef = useRef<HTMLDivElement | null>(null);
+  const [marqueeWidth, setMarqueeWidth] = useState(0);
+  const [marqueeHeight, setMarqueeHeight] = useState(0);
+  const [windowSize] = useWindowSize();
+
+  // For the useLayoutEffect
+  const canUseDOM = typeof window !== "undefined";
+  const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
+
+  useIsomorphicLayoutEffect(() => {
+    setMarqueeWidth(
+      marqueeRef?.current?.offsetWidth ? marqueeRef?.current?.offsetWidth : 0,
+    );
+    setMarqueeHeight(
+      marqueeRef?.current?.offsetHeight ? marqueeRef?.current?.offsetHeight : 0,
+    );
+  }, [windowSize]);
+
+  function MarqueeSize() {
+    if (orientation === "horizontal") {
+      return marqueeWidth * -0.3625;
+    } else {
+      if (!isReversed) {
+        return -marqueeHeight * 0.3333;
+      } else return marqueeHeight * 0.3333;
+    }
+  }
+
+  const marqueeVariantsX = {
+    animate: {
+      x: [0, MarqueeSize()],
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 20,
+          ease: "linear",
+        },
+      },
+    },
+  };
+
+  const marqueeVariantsY = {
+    animate: {
+      y: [MarqueeSize() / -2, MarqueeSize()],
+      transition: {
+        y: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 20,
+          ease: "linear",
+        },
+      },
+    },
+  };
   return (
-    <div
+    <motion.div
       className={classNames(styles.carouselContainer, className)}
       aria-labelledby="Marquee"
     >
@@ -40,10 +96,16 @@ export const Marquee = memo(function Marquee({
             ? isReversed
               ? styles.verticalReverse
               : styles.vertical
-            : isReversed
-              ? styles.horizontalReverse
-              : styles.horizontal,
+            : null,
         )}
+        ref={marqueeRef}
+        variants={
+          orientation === "horizontal" ? marqueeVariantsX : marqueeVariantsY
+        }
+        animate="animate"
+        style={{
+          top: orientation === "vertical" ? marqueeHeight * -0.3333 : 0,
+        }}
       >
         {content.map((item) => (
           <CarouselItem
@@ -65,6 +127,6 @@ export const Marquee = memo(function Marquee({
           ></CarouselItem>
         ))}
       </motion.div>
-    </div>
+    </motion.div>
   );
-});
+};
