@@ -50,7 +50,7 @@ export const Marquee = function Marquee({
       return marqueeWidth * -0.3625;
     } else {
       if (!isReversed) {
-        return -marqueeHeight * 0.3333;
+        return -marqueeHeight * 0.675;
       } else return marqueeHeight * 0.3333;
     }
   }
@@ -76,7 +76,7 @@ export const Marquee = function Marquee({
         y: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 20,
+          duration: 15,
           ease: "linear",
         },
       },

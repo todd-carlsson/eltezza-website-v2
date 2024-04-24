@@ -14,10 +14,6 @@
     width: fit-content;
     height: fit-content;
     overflow: hidden;
-
-    &:active {
-      animation-play-state: paused;
-    }
   }
 
   .vertical {
