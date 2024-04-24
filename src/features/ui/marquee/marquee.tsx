@@ -10,6 +10,7 @@ interface MarqueeProps {
   content: Array<CarouselData>;
   orientation: "vertical" | "horizontal";
   badgeSize?: "small" | "large";
+  time?: number;
   className?: string;
   isReversed?: boolean;
   width?: number | string;
@@ -21,6 +22,7 @@ export const Marquee = function Marquee({
   content,
   orientation,
   badgeSize = "large",
+  time = 20,
   className,
   isReversed = false,
   width,
@@ -43,14 +45,14 @@ export const Marquee = function Marquee({
     setMarqueeHeight(
       marqueeRef?.current?.offsetHeight ? marqueeRef?.current?.offsetHeight : 0,
     );
-  }, [windowSize]);
+  }, [windowSize, marqueeHeight, marqueeWidth]);
 
   function MarqueeSize() {
     if (orientation === "horizontal") {
       return marqueeWidth * -0.3625;
     } else {
       if (!isReversed) {
-        return -marqueeHeight * 0.675;
+        return -marqueeHeight;
       } else return marqueeHeight * 0.3333;
     }
   }
@@ -62,7 +64,7 @@ export const Marquee = function Marquee({
         x: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 20,
+          duration: time,
           ease: "linear",
         },
       },
@@ -71,17 +73,45 @@ export const Marquee = function Marquee({
 
   const marqueeVariantsY = {
     animate: {
-      y: [MarqueeSize() / -2, MarqueeSize()],
+      y: [0, MarqueeSize() / 2],
       transition: {
         y: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 15,
+          duration: time,
           ease: "linear",
         },
       },
     },
   };
+  const marqueeVariantsYReversed = {
+    animate: {
+      y: [MarqueeSize() / -2, MarqueeSize()],
+      transition: {
+        y: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: time,
+          ease: "linear",
+        },
+      },
+    },
+  };
+
+  function getTop() {
+    if (orientation === "vertical") {
+      if (isReversed) return marqueeHeight * -0.3333;
+      else if (!isReversed) return MarqueeSize() / 4;
+    }
+  }
+
+  function getVariants() {
+    if (orientation === "vertical") {
+      if (isReversed) return marqueeVariantsYReversed;
+      else return marqueeVariantsY;
+    } else if (orientation === "horizontal") return marqueeVariantsX;
+  }
+
   return (
     <motion.div
       className={classNames(styles.carouselContainer, className)}
@@ -99,12 +129,11 @@ export const Marquee = function Marquee({
             : null,
         )}
         ref={marqueeRef}
-        variants={
-          orientation === "horizontal" ? marqueeVariantsX : marqueeVariantsY
-        }
+        variants={getVariants()}
         animate="animate"
         style={{
-          top: orientation === "vertical" ? marqueeHeight * -0.3333 : 0,
+          top: getTop(),
+          // bottom: getBottom()
         }}
       >
         {content.map((item) => (
