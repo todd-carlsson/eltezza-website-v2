@@ -21,15 +21,10 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
-
-    // top: -800px;
-    // bottom: -800px;
   }
 
   .verticalReverse {
     position: relative;
-
-    // top: -600px;
     flex-direction: column-reverse;
     overflow: hidden;
   }
