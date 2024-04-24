@@ -1,7 +1,7 @@
 .carouselContainer {
   overflow: hidden;
   position: relative;
-  height: fit-content;
+  height: 100%;
   width: 100%;
 
   .carouselTrack {
@@ -13,6 +13,7 @@
     gap: 1rem;
     width: fit-content;
     height: fit-content;
+    overflow: hidden;
 
     &:active {
       animation-play-state: paused;
@@ -29,15 +30,15 @@
     }
   }
 
-  .horizontalReverse {
-    // animation: slide 30s linear reverse infinite;
+  // .horizontalReverse {
+  //   // animation: slide 30s linear reverse infinite;
 
-    // @keyframes slide {
-    //   to {
-    //     transform: translate(calc(-50% - 0.5rem));
-    //   }
-    // }
-  }
+  //   // @keyframes slide {
+  //   //   to {
+  //   //     transform: translate(calc(-50% - 0.5rem));
+  //   //   }
+  //   // }
+  // }
 
   .vertical {
     // max-height: fit-content;
@@ -59,6 +60,7 @@
     position: relative;
     top: -600px;
     flex-direction: column-reverse;
+    overflow: hidden;
 
     // animation: slide-down 7s linear reverse infinite;
 

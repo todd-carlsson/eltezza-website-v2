@@ -91,7 +91,7 @@ export const Marquee = memo(function Marquee({
               ? styles.verticalReverse
               : styles.vertical
             : isReversed
-              ? styles.horizontalReverse
+              ? styles.horizontal
               : styles.horizontal,
         )}
         ref={marqueeRef}
@@ -99,10 +99,12 @@ export const Marquee = memo(function Marquee({
           orientation === "horizontal" ? marqueeVariantsX : marqueeVariantsY
         }
         animate="animate"
-        // style={{
-        //   bottom: orientation === "vertical" && isReversed ? marqueeHeight / -4 : 0,
-        //   top: orientation === "vertical" && !isReversed ? marqueeHeight / 4 : 0
-        // }}
+        style={{
+          top:
+            orientation === "vertical" && isReversed ? marqueeHeight / -2 : 0,
+          bottom:
+            orientation === "vertical" && !isReversed ? marqueeHeight / -1 : 0,
+        }}
       >
         {content.map((item) => (
           <CarouselItem
