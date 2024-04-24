@@ -3,7 +3,7 @@ import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { CarouselData } from "@/types";
-import { memo } from "react";
+import { memo, useLayoutEffect, useRef, useState } from "react";
 
 interface MarqueeProps {
   content: Array<CarouselData>;
@@ -11,8 +11,8 @@ interface MarqueeProps {
   badgeSize?: "small" | "large";
   className?: string;
   isReversed?: boolean;
-  width?: number;
-  height?: number;
+  width?: number | string;
+  height?: number | string;
   drag?: boolean;
 }
 
@@ -26,8 +26,58 @@ export const Marquee = memo(function Marquee({
   height,
   drag,
 }: MarqueeProps) {
+  const marqueeRef = useRef<HTMLDivElement | null>(null);
+  const [marqueeWidth, setMarqueeWidth] = useState<number>(0);
+  const [marqueeHeight, setMarqueeHeight] = useState<number>(0);
+
+  useLayoutEffect(() => {
+    setMarqueeWidth(
+      marqueeRef?.current?.offsetWidth ? marqueeRef?.current?.offsetWidth : 0,
+    );
+    setMarqueeHeight(
+      marqueeRef?.current?.offsetHeight ? marqueeRef?.current?.offsetHeight : 0,
+    );
+  }, []);
+
+  function MarqueeSize() {
+    if (orientation === "horizontal") {
+      return -marqueeWidth * 0.2;
+    } else {
+      if (!isReversed) {
+        return -marqueeHeight * 0.5;
+      } else return marqueeHeight * 0.5;
+    }
+  }
+
+  const marqueeVariantsX = {
+    animate: {
+      x: [MarqueeSize() / 2, MarqueeSize()],
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 10,
+          ease: "linear",
+        },
+      },
+    },
+  };
+
+  const marqueeVariantsY = {
+    animate: {
+      y: [0, MarqueeSize()],
+      transition: {
+        y: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 9,
+          ease: "linear",
+        },
+      },
+    },
+  };
   return (
-    <div
+    <motion.div
       className={classNames(styles.carouselContainer, className)}
       aria-labelledby="Marquee"
     >
@@ -44,6 +94,15 @@ export const Marquee = memo(function Marquee({
               ? styles.horizontalReverse
               : styles.horizontal,
         )}
+        ref={marqueeRef}
+        variants={
+          orientation === "horizontal" ? marqueeVariantsX : marqueeVariantsY
+        }
+        animate="animate"
+        // style={{
+        //   bottom: orientation === "vertical" && isReversed ? marqueeHeight / -4 : 0,
+        //   top: orientation === "vertical" && !isReversed ? marqueeHeight / 4 : 0
+        // }}
       >
         {content.map((item) => (
           <CarouselItem
@@ -65,6 +124,6 @@ export const Marquee = memo(function Marquee({
           ></CarouselItem>
         ))}
       </motion.div>
-    </div>
+    </motion.div>
   );
 });
