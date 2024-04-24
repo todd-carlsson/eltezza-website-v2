@@ -86,7 +86,7 @@ export default function PagePortal({
             className={styles.homeMarquee}
             orientation="horizontal"
             content={content}
-            height={250}
+            imgHeight={250}
           />
           <div className={styles.portalBottom}>
             <div className={styles.tagListContainer}>

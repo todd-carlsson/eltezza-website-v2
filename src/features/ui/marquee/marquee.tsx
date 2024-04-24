@@ -8,8 +8,7 @@ import {
   useReducedMotion,
 } from "framer-motion";
 import { CarouselData } from "@/types";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import useWindowSize from "@/hooks/useWindowSize";
+import useMeasure from "react-use-measure";
 
 interface MarqueeProps {
   content: Array<CarouselData>;
@@ -18,8 +17,8 @@ interface MarqueeProps {
   time?: number;
   className?: string;
   isReversed?: boolean;
-  width?: number | string;
-  height?: number | string;
+  imgWidth?: number | string;
+  imgHeight?: number | string;
   drag?: boolean;
 }
 
@@ -30,53 +29,29 @@ export function Marquee({
   time = 20,
   className,
   isReversed = false,
-  width,
-  height,
+  imgWidth,
+  imgHeight,
   drag,
 }: MarqueeProps) {
-  const marqueeRef = useRef<HTMLDivElement | null>(null);
-  const [marqueeWidth, setMarqueeWidth] = useState(0);
-  const [marqueeHeight, setMarqueeHeight] = useState(0);
-  const [windowSize] = useWindowSize();
+  const [ref, { width, height }] = useMeasure();
 
   const prefersReducedMotion = useReducedMotion();
 
   const x = useMotionValue(0);
 
   useMotionValueEvent(x, "animationStart", () => {
-    if (x.get() <= -marqueeWidth / 2) {
+    if (x.get() <= -width / 2) {
       x.set(0);
     }
   });
 
-  // For the useLayoutEffect
-  const canUseDOM = typeof window !== "undefined";
-  const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
-
-  useIsomorphicLayoutEffect(() => {
-    setTimeout(() => {
-      setMarqueeWidth(
-        marqueeRef?.current?.offsetWidth ? marqueeRef?.current?.offsetWidth : 0,
-      );
-      setMarqueeHeight(
-        marqueeRef?.current?.offsetHeight
-          ? marqueeRef?.current?.offsetHeight
-          : 0,
-      );
-    }, 200);
-  }, [
-    windowSize,
-    marqueeRef.current?.offsetHeight,
-    marqueeRef.current?.offsetWidth,
-  ]);
-
   function MarqueeSize() {
     if (orientation === "horizontal") {
-      return marqueeWidth * -0.3625;
+      return width * -0.3625;
     } else {
       if (!isReversed) {
-        return -marqueeHeight;
-      } else return marqueeHeight * 0.3333;
+        return -height;
+      } else return height * 0.3333;
     }
   }
 
@@ -123,7 +98,7 @@ export function Marquee({
 
   function getTop() {
     if (orientation === "vertical") {
-      if (isReversed) return marqueeHeight * -0.3333;
+      if (isReversed) return height * -0.3333;
       else if (!isReversed) return MarqueeSize() / 4;
     }
   }
@@ -142,7 +117,7 @@ export function Marquee({
     >
       <motion.div
         drag={drag && "x"}
-        dragConstraints={{ right: 0, left: -marqueeWidth / 2 }}
+        dragConstraints={{ right: 0, left: -width / 2 }}
         className={classNames(
           styles.carouselTrack,
           orientation === "vertical"
@@ -151,7 +126,7 @@ export function Marquee({
               : styles.vertical
             : null,
         )}
-        ref={marqueeRef}
+        ref={ref}
         variants={getVariants()}
         animate={prefersReducedMotion ? "" : "animate"}
         style={{
@@ -164,8 +139,8 @@ export function Marquee({
             key={item.id}
             badgeSize={badgeSize}
             data={item}
-            width={width}
-            height={height}
+            width={imgWidth}
+            height={imgHeight}
           ></CarouselItem>
         ))}
         {content.map((item) => (
@@ -174,8 +149,8 @@ export function Marquee({
             badgeSize={badgeSize}
             ariaHidden
             data={item}
-            width={width}
-            height={height}
+            width={imgWidth}
+            height={imgHeight}
           ></CarouselItem>
         ))}
       </motion.div>
