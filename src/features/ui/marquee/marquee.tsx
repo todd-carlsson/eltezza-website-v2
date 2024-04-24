@@ -1,7 +1,7 @@
 import styles from "./marquee.module.scss";
 import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { CarouselData } from "@/types";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
@@ -33,6 +33,8 @@ export function Marquee({
   const [marqueeWidth, setMarqueeWidth] = useState(0);
   const [marqueeHeight, setMarqueeHeight] = useState(0);
   const [windowSize] = useWindowSize();
+
+  const prefersReducedMotion = useReducedMotion();
 
   // For the useLayoutEffect
   const canUseDOM = typeof window !== "undefined";
@@ -138,7 +140,7 @@ export function Marquee({
         )}
         ref={marqueeRef}
         variants={getVariants()}
-        animate="animate"
+        animate={prefersReducedMotion ? "" : "animate"}
         style={{
           top: getTop(),
           // bottom: getBottom()
