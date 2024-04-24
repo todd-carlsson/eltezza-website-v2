@@ -212,21 +212,34 @@
   }
 
   .wheelContainer {
-    width: 100%;
-    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 90px;
+    left: var(--content-padding);
 
     @media screen and (width <=800px) {
       position: relative;
     }
 
-    .wheel {
+    .wheelBlur {
       position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+      background: rgb(255 255 255 / 20%);
+      border-radius: 50%;
+      z-index: 750;
+    }
+
+    .wheel {
+      position: relative;
       z-index: 800;
-      left: var(--content-padding);
-      top: -75px;
       animation: rotate 15s linear infinite;
 
       @media screen and (width <=800px) {
