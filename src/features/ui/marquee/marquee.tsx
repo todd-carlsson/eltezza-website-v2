@@ -3,7 +3,8 @@ import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { CarouselData } from "@/types";
-import { memo, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import useWindowSize from "@/hooks/useWindowSize";
 
 interface MarqueeProps {
   content: Array<CarouselData>;
@@ -16,7 +17,7 @@ interface MarqueeProps {
   drag?: boolean;
 }
 
-export const Marquee = memo(function Marquee({
+export const Marquee = function Marquee({
   content,
   orientation,
   badgeSize = "large",
@@ -27,25 +28,30 @@ export const Marquee = memo(function Marquee({
   drag,
 }: MarqueeProps) {
   const marqueeRef = useRef<HTMLDivElement | null>(null);
-  const [marqueeWidth, setMarqueeWidth] = useState<number>(0);
-  const [marqueeHeight, setMarqueeHeight] = useState<number>(0);
+  const [marqueeWidth, setMarqueeWidth] = useState(0);
+  const [marqueeHeight, setMarqueeHeight] = useState(0);
+  const [windowSize] = useWindowSize();
 
-  useLayoutEffect(() => {
+  // For the useLayoutEffect
+  const canUseDOM = typeof window !== "undefined";
+  const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
+
+  useIsomorphicLayoutEffect(() => {
     setMarqueeWidth(
       marqueeRef?.current?.offsetWidth ? marqueeRef?.current?.offsetWidth : 0,
     );
     setMarqueeHeight(
       marqueeRef?.current?.offsetHeight ? marqueeRef?.current?.offsetHeight : 0,
     );
-  }, []);
+  }, [windowSize]);
 
   function MarqueeSize() {
     if (orientation === "horizontal") {
-      return -marqueeWidth * 0.2;
+      return -marqueeWidth * 0.5;
     } else {
       if (!isReversed) {
-        return -marqueeHeight * 0.5;
-      } else return marqueeHeight * 0.5;
+        return -marqueeHeight * 0.3333;
+      } else return marqueeHeight * 0.3333;
     }
   }
 
@@ -56,7 +62,7 @@ export const Marquee = memo(function Marquee({
         x: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 10,
+          duration: 15,
           ease: "linear",
         },
       },
@@ -65,12 +71,12 @@ export const Marquee = memo(function Marquee({
 
   const marqueeVariantsY = {
     animate: {
-      y: [0, MarqueeSize()],
+      y: [MarqueeSize() / -2, MarqueeSize()],
       transition: {
         y: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 9,
+          duration: 20,
           ease: "linear",
         },
       },
@@ -100,10 +106,7 @@ export const Marquee = memo(function Marquee({
         }
         animate="animate"
         style={{
-          top:
-            orientation === "vertical" && isReversed ? marqueeHeight / -2 : 0,
-          bottom:
-            orientation === "vertical" && !isReversed ? marqueeHeight / -1 : 0,
+          top: orientation === "vertical" ? marqueeHeight * -0.3333 : 0,
         }}
       >
         {content.map((item) => (
@@ -128,4 +131,4 @@ export const Marquee = memo(function Marquee({
       </motion.div>
     </motion.div>
   );
-});
+};
