@@ -18,7 +18,7 @@ interface MarqueeProps {
   drag?: boolean;
 }
 
-export const Marquee = function Marquee({
+export function Marquee({
   content,
   orientation,
   badgeSize = "large",
@@ -39,13 +39,21 @@ export const Marquee = function Marquee({
   const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 
   useIsomorphicLayoutEffect(() => {
-    setMarqueeWidth(
-      marqueeRef?.current?.offsetWidth ? marqueeRef?.current?.offsetWidth : 0,
-    );
-    setMarqueeHeight(
-      marqueeRef?.current?.offsetHeight ? marqueeRef?.current?.offsetHeight : 0,
-    );
-  }, [windowSize, marqueeHeight, marqueeWidth]);
+    setTimeout(() => {
+      setMarqueeWidth(
+        marqueeRef?.current?.offsetWidth ? marqueeRef?.current?.offsetWidth : 0,
+      );
+      setMarqueeHeight(
+        marqueeRef?.current?.offsetHeight
+          ? marqueeRef?.current?.offsetHeight
+          : 0,
+      );
+    }, 200);
+  }, [
+    windowSize,
+    marqueeRef.current?.offsetHeight,
+    marqueeRef.current?.offsetWidth,
+  ]);
 
   function MarqueeSize() {
     if (orientation === "horizontal") {
@@ -158,4 +166,4 @@ export const Marquee = function Marquee({
       </motion.div>
     </motion.div>
   );
-};
+}
