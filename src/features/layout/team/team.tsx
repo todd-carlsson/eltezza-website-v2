@@ -44,7 +44,9 @@ export const Team = memo(function Team({
       if (windowWidth <= 1050) {
         setPaginationCount(4);
         setIsPaginated(false);
-        scrollDiv.current?.scrollIntoView({ behavior: "smooth" });
+        setTimeout(() => {
+          scrollDiv.current?.scrollIntoView({ behavior: "smooth" });
+        }, 10);
       }
       if (windowWidth <= 500) {
         setPaginationCount(3);
@@ -54,7 +56,7 @@ export const Team = memo(function Team({
   }
 
   return (
-    <section id="about" className={styles.teamSection} ref={scrollDiv}>
+    <section id="about" className={styles.teamSection}>
       <div className={styles.textContainer}>
         <h1
           className="largeText"
@@ -71,7 +73,7 @@ export const Team = memo(function Team({
           <TeamMember key={item.id} member={item} index={i} color={color} />
         ))}
       </div>
-      <div className={styles.buttonContainer}>
+      <div className={styles.buttonContainer} ref={scrollDiv}>
         <Button
           onClick={paginateData}
           variant={ButtonVariant.gradient}

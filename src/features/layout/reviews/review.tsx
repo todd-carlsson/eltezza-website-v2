@@ -48,7 +48,7 @@ export function Review({ review, index, page, length }: ReviewProps) {
         opacity: getIndex() === index ? 1 : 0.5,
       }}
       className={styles.reviewContainer}
-      onClick={slide}
+      onClick={windowSize > 1000 ? slide : () => {}}
     >
       <p className={styles.reviewText}>{review.review}</p>
       <h3 className={styles.reviewName}>{review.name}</h3>
