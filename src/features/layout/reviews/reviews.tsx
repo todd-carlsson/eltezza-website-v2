@@ -1,21 +1,19 @@
 import { TestimonialsData } from "@/types";
 import { Review } from "./review";
 import styles from "./reviews.module.scss";
-import { motion, useMotionValue } from "framer-motion";
-import uuid from "react-uuid";
 import { memo, useEffect, useRef, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
 import { Button, ButtonVariant } from "@/features/ui";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 interface ReviewsProps {
   content: Array<TestimonialsData>;
   page: "design" | "creative";
 }
 
-const DRAG_BUFFER = 80;
-
 export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
-  const [imgIndex, setImgIndex] = useState(0);
+  const [rerender, setRerender] = useState(false);
   const [windowWidth] = useWindowSize();
 
   const [paginationCount, setPaginationCount] = useState(
@@ -45,67 +43,28 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
     }
   }
 
-  const dragX = useMotionValue(0);
-  // const scale = useTransform(dragX, [-DRAG_BUFFER, 0, DRAG_BUFFER], [1, 0.8, 1])
-
-  function onDragEnd() {
-    const x = dragX.get();
-    // If user drags to the right
-    if (x <= -DRAG_BUFFER && imgIndex !== content.length - 1) {
-      if (imgIndex >= content.length - 2) {
-        setImgIndex(0);
-      } else setImgIndex((prevIndex) => prevIndex + 1);
-      console.log(imgIndex);
-    }
-    // If user drags to the left
-    else if (x >= DRAG_BUFFER) {
-      if (imgIndex <= -1) {
-        setImgIndex(content.length - 2);
-      } else setImgIndex((prevIndex) => prevIndex - 1);
-    }
-    console.log(imgIndex);
+  function clickHandler() {
+    setRerender(!rerender);
   }
 
-  function getAnimationValue() {
-    if (imgIndex <= -1) {
-      return "+33.333vw";
-    } else return `-${imgIndex * 33.333}vw`;
-  }
   if (windowWidth > 1000) {
     return (
       <section id="reviews" className={styles.reviews} ref={scrollDiv}>
         <h1 className="largeText">
           Hear it from our <span className="textGradient">partners</span>
         </h1>
-        <motion.div
-          drag="x"
-          dragConstraints={{
-            left: 0,
-            right: 0,
-          }}
-          onDragEnd={onDragEnd}
-          style={{
-            x: dragX,
-          }}
-          animate={{
-            translateX: getAnimationValue(),
-            transition: {
-              duration: 0.35,
-              type: "tween",
-            },
-          }}
-          className={styles.reviewsContainer}
+        <Swiper
+          slidesPerView={3}
+          className={styles.reviews}
+          onSlideChange={clickHandler}
+          slideToClickedSlide
         >
           {content.map((item, i) => (
-            <Review
-              key={uuid()}
-              review={item}
-              index={i}
-              imgIndex={imgIndex}
-              page={page}
-            />
+            <SwiperSlide key={item.id}>
+              <Review review={item} index={i} page={page} />
+            </SwiperSlide>
           ))}
-        </motion.div>
+        </Swiper>
       </section>
     );
   } else
@@ -116,14 +75,7 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
         </h1>
         <div className={styles.reviewsContainer}>
           {content.slice(0, paginationCount).map((item, i) => (
-            <Review
-              key={item.id}
-              review={item}
-              index={i}
-              // Pass in the imgIndex state only if windowWidth is greater than 1000px
-              imgIndex={windowWidth > 1000 ? imgIndex : i - 1}
-              page={page}
-            />
+            <Review key={item.id} review={item} index={i} page={page} />
           ))}
         </div>
         <div className={styles.buttonContainer}>
