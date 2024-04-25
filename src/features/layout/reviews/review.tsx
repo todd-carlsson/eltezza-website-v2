@@ -25,7 +25,7 @@ export function Review({ review, index, page, length }: ReviewProps) {
       } else return swiperIndex + 1;
     } else return index;
   }
-  function getSlideToIndex() {
+  function slide() {
     if (index < swiperIndex) return swiper.slideNext();
     else return swiper.slidePrev();
   }
@@ -48,7 +48,7 @@ export function Review({ review, index, page, length }: ReviewProps) {
         opacity: getIndex() === index ? 1 : 0.5,
       }}
       className={styles.reviewContainer}
-      onClick={getSlideToIndex}
+      onClick={slide}
     >
       <p className={styles.reviewText}>{review.review}</p>
       <h3 className={styles.reviewName}>{review.name}</h3>
