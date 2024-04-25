@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useSwiper } from "swiper/react";
+import useWindowSize from "@/hooks/useWindowSize";
 
 interface ReviewProps {
   review: TestimonialsData;
@@ -15,11 +16,14 @@ interface ReviewProps {
 export function Review({ review, index, page, length }: ReviewProps) {
   const swiper = useSwiper();
   const [swiperIndex, setSwiperIndex] = useState(1);
+  const [windowSize] = useWindowSize();
 
   function getIndex() {
-    if (swiperIndex === length) {
-      return 0;
-    } else return swiperIndex + 1;
+    if (windowSize > 1000) {
+      if (swiperIndex === length) {
+        return 0;
+      } else return swiperIndex + 1;
+    } else return index;
   }
 
   useEffect(() => {
