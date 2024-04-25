@@ -39,7 +39,9 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
     } else if (paginationCount === content.length) {
       setPaginationCount(3);
       setIsPaginated(false);
-      scrollDiv.current?.scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => {
+        scrollDiv.current?.scrollIntoView({ behavior: "smooth" });
+      }, 10);
     }
   }
 
@@ -49,7 +51,7 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
 
   if (windowWidth > 1000) {
     return (
-      <section id="reviews" className={styles.reviews} ref={scrollDiv}>
+      <section id="reviews" className={styles.reviews}>
         <h1 className="largeText">
           Hear it from our <span className="textGradient">partners</span>
         </h1>
@@ -95,7 +97,7 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
     );
   } else
     return (
-      <section className={styles.reviews} ref={scrollDiv}>
+      <section className={styles.reviews}>
         <h1 className="largeText">
           Hear it from our <span className="textGradient">partners</span>
         </h1>
@@ -104,7 +106,7 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
             <Review key={item.id} review={item} index={i} page={page} />
           ))}
         </div>
-        <div className={styles.buttonContainer}>
+        <div className={styles.buttonContainer} ref={scrollDiv}>
           <Button
             onClick={paginateData}
             className={styles.paginateButton}
