@@ -11,7 +11,7 @@ import {
 } from "framer-motion";
 import { CarouselData } from "@/types";
 import useMeasure from "react-use-measure";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 interface MarqueeProps {
   content: Array<CarouselData>;
@@ -38,6 +38,7 @@ export function Marquee({
 }: MarqueeProps) {
   const [carouselTrackRef, { width, height }] = useMeasure();
   const [carouselRef, { width: carouselWidth }] = useMeasure();
+  const [isAnimating, setIsAnimating] = useState(true);
 
   const prefersReducedMotion = useReducedMotion();
 
@@ -51,20 +52,24 @@ export function Marquee({
     // If x is at the very end of the marquee
     if (orientation === "horizontal" && latest <= -width + carouselWidth) {
       x.set(-width / 2 + carouselWidth);
-      animate(x, [x.get(), x.get() + xVelocity.get()], {
-        type: "tween",
-        ease: "easeOut",
-        duration: width / 2 / -xVelocity.get(),
-      });
+      if (!isAnimating) {
+        animate(x, [x.get(), x.get() + xVelocity.get()], {
+          type: "tween",
+          ease: "easeOut",
+          duration: width / 2 / -xVelocity.get(),
+        });
+      }
     }
     // If x is at the beginning of the marquee
     if (orientation === "horizontal" && latest >= 0) {
       x.set(-width / 2);
-      animate(x, [x.get(), x.get() + xVelocity.get()], {
-        type: "tween",
-        ease: "easeOut",
-        duration: width / 2 / xVelocity.get(),
-      });
+      if (!isAnimating) {
+        animate(x, [x.get(), x.get() + xVelocity.get()], {
+          type: "tween",
+          ease: "easeOut",
+          duration: width / 2 / xVelocity.get(),
+        });
+      }
     }
   });
 
@@ -116,6 +121,7 @@ export function Marquee({
       <motion.div
         drag={drag && "x"}
         dragConstraints={{ right: 0, left: -width + carouselWidth }}
+        onDrag={() => setIsAnimating(false)}
         className={classNames(
           styles.carouselTrack,
           orientation === "vertical"
