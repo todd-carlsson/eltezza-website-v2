@@ -82,7 +82,12 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
         >
           {content.map((item, i) => (
             <SwiperSlide key={item.id}>
-              <Review review={item} index={i} page={page} />
+              <Review
+                review={item}
+                index={i}
+                page={page}
+                length={content.length - 1}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
