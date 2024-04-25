@@ -58,10 +58,36 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
           className={styles.reviews}
           onSlideChange={clickHandler}
           slideToClickedSlide
+          loop={true}
+          on={{
+            init: function loopBagFix(swiper) {
+              /* 1. Add a copy of the slides */
+              const slides = swiper.slides;
+              const wrapper = swiper.wrapperEl;
+              slides.forEach((slide) => {
+                wrapper.append(slide.cloneNode(true));
+              });
+
+              /* 2. Remove the duplicated pagination */
+              setTimeout(() => {
+                const paginations = swiper.pagination.bullets;
+                paginations.forEach((pagination, index) => {
+                  if (index > paginations.length / 2 - 1) {
+                    pagination.remove();
+                  }
+                });
+              }, 100);
+            },
+          }}
         >
           {content.map((item, i) => (
             <SwiperSlide key={item.id}>
-              <Review review={item} index={i} page={page} />
+              <Review
+                review={item}
+                index={i}
+                page={page}
+                length={content.length - 1}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
