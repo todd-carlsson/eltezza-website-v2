@@ -69,14 +69,6 @@ export function Marquee({
   });
 
   useEffect(() => {
-    if (orientation === "horizontal") {
-      return xVelocity.onChange((latestVelocity) => {
-        console.log("Velocity", latestVelocity);
-      });
-    }
-  }, [xVelocity, orientation]);
-
-  useEffect(() => {
     const getFinalPosition = () => {
       if (orientation === "horizontal") {
         return -width / 2 - 8;
