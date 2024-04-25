@@ -7,6 +7,7 @@ import {
   useMotionValue,
   useMotionValueEvent,
   useReducedMotion,
+  useVelocity,
 } from "framer-motion";
 import { CarouselData } from "@/types";
 import useMeasure from "react-use-measure";
@@ -43,14 +44,37 @@ export function Marquee({
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
+  const xVelocity = useVelocity(x);
+
+  // Change where x is based on it's current position
   useMotionValueEvent(x, "change", (latest) => {
+    // If x is at the very end of the marquee
     if (orientation === "horizontal" && latest <= -width + carouselWidth) {
       x.set(-width / 2 + carouselWidth);
+      animate(x, [x.get(), x.get() + xVelocity.get()], {
+        type: "tween",
+        ease: "easeOut",
+        duration: width / 2 / -xVelocity.get(),
+      });
     }
+    // If x is at the beginning of the marquee
     if (orientation === "horizontal" && latest >= 0) {
       x.set(-width / 2);
+      animate(x, [x.get(), x.get() + xVelocity.get()], {
+        type: "tween",
+        ease: "easeOut",
+        duration: width / 2 / xVelocity.get(),
+      });
     }
   });
+
+  useEffect(() => {
+    if (orientation === "horizontal") {
+      return xVelocity.onChange((latestVelocity) => {
+        console.log("Velocity", latestVelocity);
+      });
+    }
+  }, [xVelocity, orientation]);
 
   useEffect(() => {
     const getFinalPosition = () => {
@@ -113,6 +137,7 @@ export function Marquee({
           x: orientation === "horizontal" && !prefersReducedMotion ? x : 0,
           y: orientation === "vertical" && !prefersReducedMotion ? y : 0,
           top: getTop(),
+          touchAction: "none",
         }}
       >
         {content.map((item) => (
