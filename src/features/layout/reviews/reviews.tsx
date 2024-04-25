@@ -13,7 +13,7 @@ interface ReviewsProps {
 }
 
 export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
-  const [imgIndex, setImgIndex] = useState(0);
+  const [rerender, setRerender] = useState(false);
   const [windowWidth] = useWindowSize();
 
   const [paginationCount, setPaginationCount] = useState(
@@ -43,12 +43,8 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
     }
   }
 
-  function onDragEnd(swipeDirection: "prev" | "next") {
-    setImgIndex((prevState) => {
-      if (swipeDirection === "prev") {
-        return prevState - 1;
-      } else return prevState + 1;
-    });
+  function clickHandler() {
+    setRerender(!rerender);
   }
 
   if (windowWidth > 1000) {
@@ -59,16 +55,13 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
         </h1>
         <Swiper
           slidesPerView={3}
-          spaceBetween={30}
           className={styles.reviews}
-          onSlideChange={(swiper) => onDragEnd(swiper.swipeDirection)}
+          onSlideChange={clickHandler}
+          slideToClickedSlide
         >
           {content.map((item, i) => (
-            <SwiperSlide
-              key={item.id}
-              onClick={(swiper) => swiper.currentTarget}
-            >
-              <Review review={item} index={i} imgIndex={imgIndex} page={page} />
+            <SwiperSlide key={item.id}>
+              <Review review={item} index={i} page={page} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -82,14 +75,7 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
         </h1>
         <div className={styles.reviewsContainer}>
           {content.slice(0, paginationCount).map((item, i) => (
-            <Review
-              key={item.id}
-              review={item}
-              index={i}
-              // Pass in the imgIndex state only if windowWidth is greater than 1000px
-              imgIndex={windowWidth > 1000 ? imgIndex : i - 1}
-              page={page}
-            />
+            <Review key={item.id} review={item} index={i} page={page} />
           ))}
         </div>
         <div className={styles.buttonContainer}>
