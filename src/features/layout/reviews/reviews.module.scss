@@ -2,6 +2,7 @@
   width: 100%;
   margin-top: 80px;
   padding: 120px 0;
+  user-select: none;
 
   .reviewsContainer {
     display: flex;
@@ -17,32 +18,32 @@
     &:active {
       cursor: grab;
     }
+  }
 
-    .reviewContainer {
-      padding: 4rem;
-      display: flex;
-      flex-direction: column;
-      min-width: 33.333%;
-      position: relative;
-      gap: 9px;
+  .reviewContainer {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 33.333%;
+    position: relative;
+    gap: 9px;
 
-      @media screen and (width <= 800px) {
-        padding: 4rem var(--content-padding-sm);
-      }
+    @media screen and (width <= 800px) {
+      padding: 4rem var(--content-padding-sm);
+    }
 
-      .reviewText {
-        font-family: var(--font-source-sans);
-      }
+    .reviewText {
+      font-family: var(--font-source-sans);
+    }
 
-      .reviewName {
-        font-weight: 600;
-        font-size: 1.5rem;
-        margin-top: 21px;
-      }
+    .reviewName {
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-top: 21px;
+    }
 
-      .reviewRole {
-        font-size: 0.8rem;
-      }
+    .reviewRole {
+      font-size: 0.8rem;
     }
   }
 
