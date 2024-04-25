@@ -2,6 +2,7 @@ import styles from "./marquee.module.scss";
 import { CarouselItem } from "./carouselItem";
 import classNames from "classnames";
 import {
+  animate,
   motion,
   useMotionValue,
   useMotionValueEvent,
@@ -9,6 +10,7 @@ import {
 } from "framer-motion";
 import { CarouselData } from "@/types";
 import useMeasure from "react-use-measure";
+import { useEffect } from "react";
 
 interface MarqueeProps {
   content: Array<CarouselData>;
@@ -33,91 +35,71 @@ export function Marquee({
   imgHeight,
   drag,
 }: MarqueeProps) {
-  const [ref, { width, height }] = useMeasure();
+  const [carouselTrackRef, { width, height }] = useMeasure();
+  const [carouselRef, { width: carouselWidth }] = useMeasure();
 
   const prefersReducedMotion = useReducedMotion();
 
   const x = useMotionValue(0);
+  const y = useMotionValue(0);
 
-  useMotionValueEvent(x, "animationStart", () => {
-    if (x.get() <= -width / 2) {
-      x.set(0);
+  useMotionValueEvent(x, "change", (latest) => {
+    if (orientation === "horizontal" && latest <= -width + carouselWidth) {
+      x.set(-width / 2 + carouselWidth);
+    }
+    if (orientation === "horizontal" && latest >= 0) {
+      x.set(-width / 2);
     }
   });
 
-  function MarqueeSize() {
-    if (orientation === "horizontal") {
-      return width * -0.3625;
-    } else {
-      if (!isReversed) {
-        return -height;
-      } else return height * 0.3333;
-    }
-  }
+  useEffect(() => {
+    const getFinalPosition = () => {
+      if (orientation === "horizontal") {
+        return -width / 2 - 8;
+      } else if (orientation === "vertical") {
+        if (!isReversed) {
+          return -height / 2 + 8;
+        } else return height / 2 - 8;
+      } else return 0;
+    };
 
-  const marqueeVariantsX = {
-    animate: {
-      x: [0, MarqueeSize()],
-      transition: {
-        x: {
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: time,
-          ease: "linear",
-        },
-      },
-    },
-  };
+    const xControls = animate(x, getFinalPosition(), {
+      ease: "linear",
+      duration: time,
+      repeat: Infinity,
+      repeatType: "loop",
+      repeatDelay: 0,
+    });
 
-  const marqueeVariantsY = {
-    animate: {
-      y: [0, MarqueeSize() / 2],
-      transition: {
-        y: {
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: time,
-          ease: "linear",
-        },
-      },
-    },
-  };
-  const marqueeVariantsYReversed = {
-    animate: {
-      y: [MarqueeSize() / -2, MarqueeSize()],
-      transition: {
-        y: {
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: time,
-          ease: "linear",
-        },
-      },
-    },
-  };
+    const yControls = animate(y, getFinalPosition(), {
+      ease: "linear",
+      duration: time,
+      repeat: Infinity,
+      repeatType: "loop",
+      repeatDelay: 0,
+    });
+    return () => {
+      xControls.stop();
+      yControls.stop();
+    };
+  }, [height, isReversed, orientation, time, width, x, y]);
 
   function getTop() {
     if (orientation === "vertical") {
-      if (isReversed) return height * -0.3333;
-      else if (!isReversed) return MarqueeSize() / 4;
+      if (isReversed) return height * -0.66;
+      else if (!isReversed) return -height / 4;
     }
-  }
-
-  function getVariants() {
-    if (orientation === "vertical") {
-      if (isReversed) return marqueeVariantsYReversed;
-      else return marqueeVariantsY;
-    } else if (orientation === "horizontal") return marqueeVariantsX;
   }
 
   return (
     <motion.div
       className={classNames(styles.carouselContainer, className)}
       aria-labelledby="Marquee"
+      ref={carouselRef}
     >
       <motion.div
         drag={drag && "x"}
-        dragConstraints={{ right: 0, left: -width / 2 }}
+        dragConstraints={{ right: 0, left: -width + carouselWidth }}
         className={classNames(
           styles.carouselTrack,
           orientation === "vertical"
@@ -126,12 +108,11 @@ export function Marquee({
               : styles.vertical
             : null,
         )}
-        ref={ref}
-        variants={getVariants()}
-        animate={prefersReducedMotion ? "" : "animate"}
+        ref={carouselTrackRef}
         style={{
+          x: orientation === "horizontal" && !prefersReducedMotion ? x : 0,
+          y: orientation === "vertical" && !prefersReducedMotion ? y : 0,
           top: getTop(),
-          x,
         }}
       >
         {content.map((item) => (
