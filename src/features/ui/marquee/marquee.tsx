@@ -5,6 +5,7 @@ import {
   animate,
   motion,
   useMotionValue,
+  useMotionValueEvent,
   useReducedMotion,
 } from "framer-motion";
 import { CarouselData } from "@/types";
@@ -35,11 +36,21 @@ export function Marquee({
   drag,
 }: MarqueeProps) {
   const [ref, { width, height }] = useMeasure();
+  const [carouselRef, { width: carouselWidth }] = useMeasure();
 
   const prefersReducedMotion = useReducedMotion();
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
+
+  useMotionValueEvent(x, "change", (latest) => {
+    if (orientation === "horizontal" && latest <= -width + carouselWidth) {
+      x.set(-width / 2 + carouselWidth);
+    }
+    if (orientation === "horizontal" && latest >= 0) {
+      x.set(-width / 2);
+    }
+  });
 
   useEffect(() => {
     const getFinalPosition = () => {
@@ -84,10 +95,11 @@ export function Marquee({
     <motion.div
       className={classNames(styles.carouselContainer, className)}
       aria-labelledby="Marquee"
+      ref={carouselRef}
     >
       <motion.div
         drag={drag && "x"}
-        dragConstraints={{ right: 0, left: -width / 2 }}
+        dragConstraints={{ right: 0, left: -width + carouselWidth }}
         className={classNames(
           styles.carouselTrack,
           orientation === "vertical"
