@@ -35,7 +35,7 @@ export function Marquee({
   imgHeight,
   drag,
 }: MarqueeProps) {
-  const [ref, { width, height }] = useMeasure();
+  const [carouselTrackRef, { width, height }] = useMeasure();
   const [carouselRef, { width: carouselWidth }] = useMeasure();
 
   const prefersReducedMotion = useReducedMotion();
@@ -108,7 +108,7 @@ export function Marquee({
               : styles.vertical
             : null,
         )}
-        ref={ref}
+        ref={carouselTrackRef}
         style={{
           x: orientation === "horizontal" && !prefersReducedMotion ? x : 0,
           y: orientation === "vertical" && !prefersReducedMotion ? y : 0,
