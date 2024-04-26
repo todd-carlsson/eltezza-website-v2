@@ -330,7 +330,6 @@ export const creativeWorkData = [
     client: "Innerbloom",
     campaign: "My only one",
   },
-
   {
     id: "5",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_45/v1714115547/EZ%20Website%20-%20Creative/Work%20Section/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
@@ -367,7 +366,6 @@ export const creativeWorkData = [
     client: "PEAQ",
     campaign: "One tap away",
   },
-
   {
     id: "9",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_50/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
@@ -384,7 +382,7 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187469/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Honey_Soy_TN_kscrr3.jpg",
     size: "medium",
-    client: "Honey Soy Chicken",
+    client: "Black Pearl",
     campaign: "Glazing perfection",
   },
   {
@@ -393,7 +391,7 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187682/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Snowy_G_TN_miougx.jpg",
     size: "medium",
-    client: "Snowy-G Chicken",
+    client: "Black Pearl",
     campaign: "It goes beyond the mayo",
   },
   {
