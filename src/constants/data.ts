@@ -330,8 +330,46 @@ export const creativeWorkData = [
     client: "Innerbloom",
     campaign: "My only one",
   },
+
   {
     id: "5",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_45/v1714114086/EZ%20Website%20-%20Creative/Work%20Section/PEAQ_Launch_Video_v19qlk.mp4",
+    thumbnail:
+      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1714114484/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/PEAQ_ROCKET_rqw8an.jpg",
+    size: "large",
+    client: "PEAQ",
+    campaign: "One tap away",
+  },
+  {
+    id: "6",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_47/v1714105902/EZ%20Website%20-%20Creative/Work%20Section/Reel_Bobby_jnsrcg.mp4",
+    thumbnail:
+      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1714114615/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/BOBBY_rqauly.jpg",
+    size: "small",
+    client: "PEAQ",
+    campaign: "One tap away",
+  },
+  {
+    id: "7",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_47/v1714114268/EZ%20Website%20-%20Creative/Work%20Section/Reel_Kasey_1_c0lltz.mp4",
+    thumbnail:
+      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1714114569/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/KASEY_klrlb9.jpg",
+    size: "small",
+    client: "PEAQ",
+    campaign: "One tap away",
+  },
+  {
+    id: "8",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_50/v1714114104/EZ%20Website%20-%20Creative/Work%20Section/Tim_Reel_xdnwwt.mp4",
+    thumbnail:
+      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1714114382/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/TIM_lukho3.jpg",
+    size: "small",
+    client: "PEAQ",
+    campaign: "One tap away",
+  },
+
+  {
+    id: "9",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_50/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187412/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/EatKinda_TN_yclerg.jpg",
@@ -341,7 +379,7 @@ export const creativeWorkData = [
   },
 
   {
-    id: "6",
+    id: "10",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_41/v1711497924/EZ%20Website%20-%20Creative/Work%20Section/Honey_Soy_1x1_zptjyf.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187469/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Honey_Soy_TN_kscrr3.jpg",
@@ -350,7 +388,7 @@ export const creativeWorkData = [
     campaign: "Glazing perfection",
   },
   {
-    id: "7",
+    id: "11",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_57/v1711499368/EZ%20Website%20-%20Creative/Work%20Section/Snowy_G_1x1_fxji0j.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187682/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Snowy_G_TN_miougx.jpg",
@@ -359,7 +397,7 @@ export const creativeWorkData = [
     campaign: "It goes beyond the mayo",
   },
   {
-    id: "8",
+    id: "12",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_55/v1711497879/EZ%20Website%20-%20Creative/Work%20Section/Rinse_Content_Final_Version_gk9vl8.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187656/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Rinse_TN_nuwajl.jpg",
@@ -368,7 +406,7 @@ export const creativeWorkData = [
     campaign: "Because one is not enough",
   },
   {
-    id: "9",
+    id: "13",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_54/v1711497918/EZ%20Website%20-%20Creative/Work%20Section/Redbull_Zoomed_gfb6hv.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187600/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Redbull_TN_eqmilw.jpg",
@@ -377,7 +415,7 @@ export const creativeWorkData = [
     campaign: "The new wings in town",
   },
   {
-    id: "10",
+    id: "14",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_47/v1711497923/EZ%20Website%20-%20Creative/Work%20Section/Charlie_Zoomed_nuafy8.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187381/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Charlies_TN_xbihz7.jpg",
@@ -386,7 +424,7 @@ export const creativeWorkData = [
     campaign: "Shake up the good stuff!",
   },
   {
-    id: "11",
+    id: "15",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_48/v1711497916/EZ%20Website%20-%20Creative/Work%20Section/Live_Content_Reel_npbkph.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187576/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Live_TN_zvkmkn.jpg",
@@ -395,7 +433,7 @@ export const creativeWorkData = [
     campaign: "Electrified living",
   },
   {
-    id: "12",
+    id: "16",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711498021/EZ%20Website%20-%20Creative/Work%20Section/KMART_KWTA_ultgma.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187551/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/KMART_TN_fnsr1v.jpg",
@@ -404,7 +442,7 @@ export const creativeWorkData = [
     campaign: "Wishing tree appeal",
   },
   {
-    id: "13",
+    id: "17",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_56/v1711498114/EZ%20Website%20-%20Creative/Work%20Section/Ball_Animation_1x1_yp7ku1.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187345/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/3D_Ball_TN_nskugx.jpg",
