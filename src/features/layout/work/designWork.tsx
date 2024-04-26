@@ -31,7 +31,7 @@ export const DesignWork = memo(function DesignWork({ content }: WorkProps) {
         />
       </div>
       <p className={styles.workDesignText}>
-        Drag images left or right to view more designs
+        Drag left or right to view more designs
       </p>
     </section>
   );

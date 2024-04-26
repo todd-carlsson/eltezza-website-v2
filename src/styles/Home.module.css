@@ -46,9 +46,12 @@
 .heroContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: var(--max-width);
   padding: 0 var(--content-padding);
+  height: calc(100vh - 75px);
+  min-height: 600px;
   position: relative;
   top: 100px;
 }
