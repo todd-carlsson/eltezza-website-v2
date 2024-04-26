@@ -56,6 +56,7 @@ export function Marquee({
         animate(x, [x.get(), x.get() + xVelocity.get()], {
           type: "tween",
           ease: "easeOut",
+          damping: xVelocity.get(),
           duration: width / 2 / -xVelocity.get(),
         });
       }
@@ -67,6 +68,7 @@ export function Marquee({
         animate(x, [x.get(), x.get() + xVelocity.get()], {
           type: "tween",
           ease: "easeOut",
+          damping: xVelocity.get(),
           duration: width / 2 / xVelocity.get(),
         });
       }
