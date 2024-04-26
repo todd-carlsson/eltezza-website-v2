@@ -333,7 +333,7 @@ export const creativeWorkData = [
 
   {
     id: "5",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_45/v1714114086/EZ%20Website%20-%20Creative/Work%20Section/PEAQ_Launch_Video_v19qlk.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_45/v1714115547/EZ%20Website%20-%20Creative/Work%20Section/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1714114484/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/PEAQ_ROCKET_rqw8an.jpg",
     size: "large",
