@@ -605,8 +605,8 @@ export const brandsMockData = {
     },
     {
       id: "2",
-      brand: "Cutly",
-      src: "/images/brandImages/Cutly_logo.svg",
+      brand: "PEAQ",
+      src: "/images/brandImages/Peaq_logo.svg",
       maxWidth: 110,
       width: "83%",
     },
