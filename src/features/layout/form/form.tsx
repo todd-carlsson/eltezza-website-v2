@@ -65,6 +65,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
 
   const onSubmit = async (data: FormValues) => {
     try {
+      setError(false);
       setLoading(true);
       await fetch("/api/mail", {
         method: "post",
