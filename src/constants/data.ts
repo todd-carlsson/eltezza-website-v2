@@ -102,19 +102,31 @@ export const landingPageData = {
     },
     {
       id: "8",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_45/v1714115547/EZ%20Website%20-%20Creative/Work%20Section/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
+      badge: "Promotional Video",
+      isVideo: true,
+    },
+    {
+      id: "9",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712095539/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
     {
-      id: "9",
+      id: "10",
       src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_36/v1711497924/EZ%20Website%20-%20Creative/Work%20Section/Honey_Soy_1x1_zptjyf.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
-      id: "10",
+      id: "11",
       src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_43/v1711497883/EZ%20Website%20-%20Creative/Work%20Section/Goju_Content_Reel_dhbmn7.mp4",
+      badge: "Promotional Video",
+      isVideo: true,
+    },
+    {
+      id: "12",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_50/v1714114104/EZ%20Website%20-%20Creative/Work%20Section/Tim_Reel_xdnwwt.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
