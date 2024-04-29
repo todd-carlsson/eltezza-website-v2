@@ -153,7 +153,7 @@ export function Marquee({
           <CarouselItem
             key={item.id}
             badgeSize={badgeSize}
-            ariaHidden
+            aria-hidden
             data={item}
             width={imgWidth}
             height={imgHeight}

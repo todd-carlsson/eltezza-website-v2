@@ -65,7 +65,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
               opacity: isHovered ? 1 : 0,
             }}
             className={styles.gradientBackground}
-            aria-hidden={isHovered}
+            aria-hidden={!isHovered}
           />
         )}
       </button>

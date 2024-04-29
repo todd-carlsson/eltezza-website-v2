@@ -17,13 +17,21 @@ export default function Details({ color }: DetailsProps) {
       <p className={styles.detailsDescription}>{contactFormText.phone}</p>
       <div className={styles.socialLinks}>
         <a href={socialLinks.facebook} target="_blank">
-          <FaFacebookSquare size={28} color={`var(${color})`} />
+          <FaFacebookSquare
+            size={28}
+            color={`var(${color})`}
+            aria-label="Facebook"
+          />
         </a>
         <a href={socialLinks.instagram} target="_blank">
-          <FaInstagramSquare size={28} color={`var(${color})`} />
+          <FaInstagramSquare
+            size={28}
+            color={`var(${color})`}
+            aria-label="Instagram"
+          />
         </a>
         <a href={socialLinks.linkedin} target="_blank">
-          <FaLinkedin size={28} color={`var(${color})`} />
+          <FaLinkedin size={28} color={`var(${color})`} aria-label="Linkedin" />
         </a>
       </div>
     </div>
