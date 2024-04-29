@@ -6,12 +6,13 @@ input.input {
   outline: none;
   border: none;
   border-bottom: 2px solid #d9d9d9;
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
   width: 100%;
   position: relative;
 
   &:hover {
     box-shadow: 0 0 0 1px var(--gray-text);
+    border-radius: 5px;
   }
 
   &::placeholder {
@@ -21,6 +22,7 @@ input.input {
 
   &:focus {
     box-shadow: 0 0 0 1.5px #fff;
+    border-radius: 5px;
   }
 
   &:disabled {
@@ -47,8 +49,14 @@ label.focused {
   background-color: #000;
 }
 
+input.success {
+  border: 2px solid var(--salty-green);
+  border-radius: 5px;
+}
+
 input.error {
-  border-bottom: 2px solid #f04438;
+  border: 2px solid var(--salmon-pink);
+  border-radius: 5px;
 
   &::placeholder {
     color: #f04438;
@@ -57,5 +65,9 @@ input.error {
 }
 
 label.error {
-  color: red;
+  color: var(--salmon-pink);
+}
+
+label.success {
+  color: var(--salty-green);
 }
