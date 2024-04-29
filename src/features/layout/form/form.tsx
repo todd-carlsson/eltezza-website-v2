@@ -79,12 +79,6 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
     } finally {
       setLoading(false);
     }
-
-    // setTimeout(() => {
-    //   console.log(data);
-    //   setLoading(false);
-    //   submittedForm();
-    // }, 3000);
   };
 
   return (
@@ -119,12 +113,16 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
               control={control}
               render={({
                 field: { value, onChange, onBlur, ref },
-                fieldState: { error },
+                fieldState: { error, isTouched },
               }) => (
                 <div className={styles.inputWrap}>
                   <Input
                     placeholder="Full name"
                     type="text"
+                    aria-invalid={Boolean(error)}
+                    aria-disabled={loading}
+                    isValid={isTouched && !error ? true : false}
+                    aria-required
                     hasValue={!!value.length}
                     disabled={loading}
                     required
@@ -137,7 +135,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   {error && (
                     <div className={styles.formFeedback}>
                       <MdError size={18} color="red" />
-                      <span>{error?.message}</span>
+                      <span role="alert">{error?.message}</span>
                     </div>
                   )}
                 </div>
@@ -148,13 +146,17 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
               control={control}
               render={({
                 field: { value, onChange, onBlur, ref },
-                fieldState: { error },
+                fieldState: { error, isTouched },
               }) => (
                 <div className={styles.inputWrap}>
                   <Input
                     placeholder="Email address"
                     type="email"
+                    aria-disabled={loading}
+                    aria-invalid={Boolean(error)}
+                    aria-required
                     required
+                    isValid={isTouched && !error ? true : false}
                     hasValue={!!value.length}
                     disabled={loading}
                     ref={ref}
@@ -166,7 +168,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   {error && (
                     <div className={styles.formFeedback}>
                       <MdError size={18} color="red" />
-                      <span>{error?.message}</span>
+                      <span role="alert">{error?.message}</span>
                     </div>
                   )}
                 </div>
@@ -177,14 +179,18 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
               control={control}
               render={({
                 field: { value, onChange, onBlur, ref },
-                fieldState: { error },
+                fieldState: { error, isTouched },
               }) => (
                 <div className={styles.inputWrap}>
                   <Input
                     placeholder="Subject"
                     type="text"
+                    aria-invalid={Boolean(error)}
+                    aria-disabled={loading}
+                    aria-required
                     disabled={loading}
                     required
+                    isValid={isTouched && !error ? true : false}
                     hasValue={!!value.length}
                     ref={ref}
                     value={value}
@@ -195,7 +201,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   {error && (
                     <div className={styles.formFeedback}>
                       <MdError size={18} color="red" />
-                      <span>{error?.message}</span>
+                      <span role="alert">{error?.message}</span>
                     </div>
                   )}
                 </div>
@@ -206,13 +212,17 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
               control={control}
               render={({
                 field: { value, onChange, onBlur, ref },
-                fieldState: { error },
+                fieldState: { error, isTouched },
               }) => (
                 <div className={styles.inputWrap}>
                   <TextArea
                     placeholder="Message"
                     disabled={loading}
+                    aria-invalid={Boolean(error)}
+                    aria-disabled={loading}
+                    aria-required
                     required
+                    isValid={isTouched && !error ? true : false}
                     hasValue={!!value.length}
                     ref={ref}
                     value={value}
@@ -223,7 +233,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   {error && (
                     <div className={styles.formFeedback}>
                       <MdError size={18} color="red" />
-                      <span>{error?.message}</span>
+                      <span role="alert">{error?.message}</span>
                     </div>
                   )}
                 </div>
