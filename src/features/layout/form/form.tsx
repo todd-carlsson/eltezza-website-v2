@@ -121,7 +121,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                     type="text"
                     aria-invalid={Boolean(error)}
                     aria-disabled={loading}
-                    isValid={isTouched && !error ? true : false}
+                    isValid={isTouched && !error}
                     aria-required
                     hasValue={!!value.length}
                     disabled={loading}
@@ -156,7 +156,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                     aria-invalid={Boolean(error)}
                     aria-required
                     required
-                    isValid={isTouched && !error ? true : false}
+                    isValid={isTouched && !error}
                     hasValue={!!value.length}
                     disabled={loading}
                     ref={ref}
@@ -190,7 +190,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                     aria-required
                     disabled={loading}
                     required
-                    isValid={isTouched && !error ? true : false}
+                    isValid={isTouched && !error}
                     hasValue={!!value.length}
                     ref={ref}
                     value={value}
@@ -222,7 +222,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                     aria-disabled={loading}
                     aria-required
                     required
-                    isValid={isTouched && !error ? true : false}
+                    isValid={isTouched && !error}
                     hasValue={!!value.length}
                     ref={ref}
                     value={value}
