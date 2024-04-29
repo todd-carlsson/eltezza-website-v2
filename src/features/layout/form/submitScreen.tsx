@@ -33,8 +33,10 @@ export default function SubmitScreen({
         height={228}
       />
       <div className={styles.submitScreenText}>
-        <h1 className="textGradient">Thank You!</h1>
-        <p className={styles.submittedDescription}>
+        <h1 className="textGradient" role="alert">
+          Thank You!
+        </h1>
+        <p className={styles.submittedDescription} role="alert">
           {contactFormText.submitted}
         </p>
       </div>
