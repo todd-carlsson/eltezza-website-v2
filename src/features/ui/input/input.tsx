@@ -32,6 +32,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           className={classNames(
             styles.input,
             error ? styles.error : "",
+            hasValue && !error ? styles.success : "",
             className,
           )}
           ref={ref}
@@ -45,6 +46,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
               styles.label,
               error ? styles.error : "",
               hasValue ? styles.focused : "",
+              hasValue && !error ? styles.success : "",
             )}
           >
             {label}
