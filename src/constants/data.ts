@@ -90,7 +90,7 @@ export const landingPageData = {
     },
     {
       id: "6",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510413/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_Greenhill_Seltzers_1_jf9sdv.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1714348758/EZ%20Website%20-%20Creative/Landing%20Page/Greenhill_Seltzers_1_bouwy7.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
@@ -102,19 +102,31 @@ export const landingPageData = {
     },
     {
       id: "8",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_45/v1714115547/EZ%20Website%20-%20Creative/Work%20Section/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
+      badge: "Promotional Video",
+      isVideo: true,
+    },
+    {
+      id: "9",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712095539/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
     {
-      id: "9",
+      id: "10",
       src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_36/v1711497924/EZ%20Website%20-%20Creative/Work%20Section/Honey_Soy_1x1_zptjyf.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
-      id: "10",
+      id: "11",
       src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_43/v1711497883/EZ%20Website%20-%20Creative/Work%20Section/Goju_Content_Reel_dhbmn7.mp4",
+      badge: "Promotional Video",
+      isVideo: true,
+    },
+    {
+      id: "12",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_48/v1714347679/EZ%20Website%20-%20Creative/Work%20Section/Nev_Reel_Final_rdt49z.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -330,7 +342,6 @@ export const creativeWorkData = [
     client: "Innerbloom",
     campaign: "My only one",
   },
-
   {
     id: "5",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_45/v1714115547/EZ%20Website%20-%20Creative/Work%20Section/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
@@ -360,14 +371,13 @@ export const creativeWorkData = [
   },
   {
     id: "8",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_50/v1714114104/EZ%20Website%20-%20Creative/Work%20Section/Tim_Reel_xdnwwt.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_48/v1714347679/EZ%20Website%20-%20Creative/Work%20Section/Nev_Reel_Final_rdt49z.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1714114382/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/TIM_lukho3.jpg",
+      "https://res.cloudinary.com/dsxzhd4c2/image/upload/q_63/v1714348625/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Neve_-_Website_Thumbnail_o46hwp.jpg",
     size: "small",
     client: "PEAQ",
     campaign: "One tap away",
   },
-
   {
     id: "9",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_50/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
@@ -384,7 +394,7 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187469/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Honey_Soy_TN_kscrr3.jpg",
     size: "medium",
-    client: "Honey Soy Chicken",
+    client: "Black Pearl",
     campaign: "Glazing perfection",
   },
   {
@@ -393,7 +403,7 @@ export const creativeWorkData = [
     thumbnail:
       "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187682/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Snowy_G_TN_miougx.jpg",
     size: "medium",
-    client: "Snowy-G Chicken",
+    client: "Black Pearl",
     campaign: "It goes beyond the mayo",
   },
   {

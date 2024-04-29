@@ -85,6 +85,7 @@
     flex-direction: column;
     padding-top: 2rem;
     gap: 1rem;
+    position: relative;
 
     .detailsDescription {
       font-family: var(--font-source-sans);
@@ -93,6 +94,8 @@
     .socialLinks {
       display: flex;
       gap: 0.5rem;
+      position: relative;
+      left: -2px;
     }
   }
 
