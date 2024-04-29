@@ -245,7 +245,11 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
               type="submit"
               disabled={loading}
             >
-              Share your vision
+              {loading ? (
+                <span className={styles.loader} />
+              ) : (
+                "Share your vision"
+              )}
             </Button>
           </form>
           <Details color={color} />
