@@ -57,7 +57,8 @@ textarea.success {
 }
 
 textarea.error {
-  border-bottom: 2px solid #f04438;
+  border: 2px solid (var(--salmon-pink));
+  border-radius: 5px;
 
   &::placeholder {
     color: #f04438;
@@ -66,7 +67,7 @@ textarea.error {
 }
 
 label.error {
-  color: red;
+  color: var(--salmon-pink);
 }
 
 label.success {
