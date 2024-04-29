@@ -136,7 +136,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   />
                   {error && (
                     <div className={styles.formFeedback}>
-                      <MdError size={20} color="red" />
+                      <MdError size={18} color="red" />
                       <span>{error?.message}</span>
                     </div>
                   )}
@@ -165,7 +165,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   />
                   {error && (
                     <div className={styles.formFeedback}>
-                      <MdError size={20} color="red" />
+                      <MdError size={18} color="red" />
                       <span>{error?.message}</span>
                     </div>
                   )}
@@ -194,7 +194,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   />
                   {error && (
                     <div className={styles.formFeedback}>
-                      <MdError size={20} color="red" />
+                      <MdError size={18} color="red" />
                       <span>{error?.message}</span>
                     </div>
                   )}
@@ -222,7 +222,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
                   />
                   {error && (
                     <div className={styles.formFeedback}>
-                      <MdError size={20} color="red" />
+                      <MdError size={18} color="red" />
                       <span>{error?.message}</span>
                     </div>
                   )}
