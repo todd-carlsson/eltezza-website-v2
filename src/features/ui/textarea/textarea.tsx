@@ -30,6 +30,7 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
           className={classNames(
             styles.textarea,
             error ? styles.error : "",
+            hasValue && !error ? styles.success : "",
             className,
           )}
           ref={ref}
@@ -43,6 +44,7 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
               styles.label,
               error ? styles.error : "",
               hasValue ? styles.focused : "",
+              hasValue && !error ? styles.success : "",
             )}
           >
             {label}
