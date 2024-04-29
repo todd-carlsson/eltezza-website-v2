@@ -27,11 +27,9 @@ export default function FullScreenVideo({
       y: "100%",
     },
   };
+
   return (
-    <motion.div
-      onClick={removeFullVideo}
-      className={styles.fullScreenContainer}
-    >
+    <motion.div className={styles.fullScreenContainer}>
       <motion.div
         initial={{
           opacity: 0,
@@ -47,6 +45,7 @@ export default function FullScreenVideo({
         exit={{
           opacity: 0,
         }}
+        onClick={removeFullVideo}
         className={styles.opacLayer}
       />
       <motion.div
@@ -56,7 +55,7 @@ export default function FullScreenVideo({
         exit="exit"
         className={styles.fullVideoWrapper}
       >
-        <div className={styles.exit}>
+        <div className={styles.exit} onClick={removeFullVideo}>
           <IoMdExit size={50} />
         </div>
         <motion.video
