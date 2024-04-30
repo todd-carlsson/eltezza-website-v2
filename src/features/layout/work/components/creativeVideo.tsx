@@ -6,6 +6,7 @@ import { CreativeWorkData } from "@/types";
 import { VideoDetails } from "./videoDetails";
 import FullScreenVideo from "./fullScreenVideo";
 import { memo } from "react";
+import useWindowSize from "@/hooks/useWindowSize";
 
 interface CreativeVideoProps {
   video: CreativeWorkData;
@@ -35,6 +36,16 @@ export const CreativeVideo = memo(function CreativeVideo({
       return styles.gridColSpanThree;
     } else return styles.gridColSpanTwo;
   }
+
+  function getVideoSrc() {
+    if (windowWidth > 1000) {
+      return <source src={video.src} type="video/mp4" />;
+    } else if (windowWidth <= 1000 && windowWidth > 600) {
+      return <source src={video.srcMedium} type="video/mp4" />;
+    } else return <source src={video.srcSmall} type="video/mp4" />;
+  }
+
+  const [windowWidth] = useWindowSize();
 
   return (
     <div
@@ -74,7 +85,6 @@ export const CreativeVideo = memo(function CreativeVideo({
       <video
         className={classNames(styles.creativeVideo)}
         poster={video.thumbnail}
-        src={video.src}
         onMouseEnter={() => playVideo(video.id)}
         onMouseLeave={() => pauseVideo(video.id)}
         ref={(node) => {
@@ -89,7 +99,7 @@ export const CreativeVideo = memo(function CreativeVideo({
         loop
         preload="metadata"
       >
-        <source src={video.src} type="video/mp4" />
+        {getVideoSrc()}
       </video>
     </div>
   );
