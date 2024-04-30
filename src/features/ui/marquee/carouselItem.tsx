@@ -3,24 +3,24 @@ import Image from "next/image";
 import classNames from "classnames";
 import { CarouselData } from "@/types";
 import { Badge } from "../badge";
+import React from "react";
 
-interface CarouselItemProps {
+interface CarouselItemProps extends React.HTMLAttributes<HTMLDivElement> {
   data: CarouselData;
   badgeSize?: "small" | "large";
-  ariaHidden?: boolean;
   width?: number | string;
   height?: number | string;
 }
 
 export function CarouselItem({
   data,
-  ariaHidden = false,
   badgeSize = "large",
   width,
   height,
+  ...props
 }: CarouselItemProps) {
   return (
-    <div aria-hidden={ariaHidden} className={classNames(styles.carouselCard)}>
+    <div className={classNames(styles.carouselCard)} {...props}>
       {data.badge && (
         <Badge
           className={classNames(

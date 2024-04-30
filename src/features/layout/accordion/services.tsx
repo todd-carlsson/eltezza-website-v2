@@ -49,6 +49,7 @@ export const Services = memo(function Services({
                   ? `var(${color})`
                   : "#000",
             }}
+            aria-expanded={active === item.id || windowWidth <= 800}
           >
             <h1
               className={classNames(

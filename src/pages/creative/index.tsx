@@ -84,7 +84,7 @@ export default function CreativePage() {
       />
       <Reviews content={testimonialsData} page={page} />
       <Faq content={faqs.creative} color={color} />
-      <Contact text="create" onOpen={onOpen} />
+      <Contact text="create" onOpen={onOpen} isOpen={showModal} />
       <Portal root="contact-root">
         <FormModal onClose={onClose} showModal={showModal} color={color} />
       </Portal>

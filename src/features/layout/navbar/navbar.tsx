@@ -44,6 +44,8 @@ export function Navbar() {
             onClick={() => {
               clickHandler(link.href), handleClickScroll(link.href);
             }}
+            aria-roledescription="link"
+            aria-current={activeId === link.href}
           >
             {link.title}
           </li>
@@ -51,6 +53,7 @@ export function Navbar() {
         <li
           onClick={() => Scroll(0, "smooth")}
           className={styles.arrowContainer}
+          aria-label="Scroll to top"
         >
           <Image
             className={styles.arrow}

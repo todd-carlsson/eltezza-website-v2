@@ -56,6 +56,7 @@ export function FormModal({ onClose, showModal, color }: FormModalProps) {
               },
             }}
             className={styles.modalContainer}
+            aria-modal="true"
           >
             <Image
               onClick={() => {
