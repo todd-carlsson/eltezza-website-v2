@@ -57,7 +57,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       >
         {children}
         {variant === ButtonVariant.main && !disabled && (
-          <motion.div
+          <motion.span
             initial={{
               opacity: 0,
             }}
@@ -65,6 +65,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
               opacity: isHovered ? 1 : 0,
             }}
             className={styles.gradientBackground}
+            aria-hidden={!isHovered}
           />
         )}
       </button>

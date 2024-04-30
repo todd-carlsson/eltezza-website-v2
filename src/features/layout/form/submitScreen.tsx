@@ -25,6 +25,9 @@ export default function SubmitScreen({
         },
       }}
       className={styles.submitScreenContainer}
+      role="dialog"
+      aria-labelledby="dialog1Title"
+      aria-describedby="dialog1Desc"
     >
       <Image
         src="/images/coffee_doodle.svg"
@@ -33,8 +36,10 @@ export default function SubmitScreen({
         height={228}
       />
       <div className={styles.submitScreenText}>
-        <h1 className="textGradient">Thank You!</h1>
-        <p className={styles.submittedDescription}>
+        <h1 className="textGradient" id="dialog1Title">
+          Thank You!
+        </h1>
+        <p className={styles.submittedDescription} id="dialog1Desc">
           {contactFormText.submitted}
         </p>
       </div>

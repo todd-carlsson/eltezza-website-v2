@@ -117,8 +117,9 @@ export function Marquee({
   return (
     <motion.div
       className={classNames(styles.carouselContainer, className)}
-      aria-labelledby="Marquee"
+      aria-label="Marquee"
       ref={carouselRef}
+      aria-orientation={orientation}
     >
       <motion.div
         drag={drag && "x"}
@@ -153,7 +154,7 @@ export function Marquee({
           <CarouselItem
             key={item.id}
             badgeSize={badgeSize}
-            ariaHidden
+            aria-hidden
             data={item}
             width={imgWidth}
             height={imgHeight}

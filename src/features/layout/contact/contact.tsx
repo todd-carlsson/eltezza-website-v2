@@ -5,9 +5,10 @@ import { Button, ButtonVariant } from "@/features/ui";
 interface ContactProps {
   text: "design" | "create";
   onOpen: () => void;
+  isOpen: boolean;
 }
 
-export function Contact({ text, onOpen }: ContactProps) {
+export function Contact({ text, onOpen, isOpen }: ContactProps) {
   return (
     <section id="contact" className={styles.contactSection}>
       <div className={styles.purpleOrb} />
@@ -60,6 +61,8 @@ export function Contact({ text, onOpen }: ContactProps) {
           variant={ButtonVariant.main}
           className={styles.contactButton}
           aria-label="Open Contact Form"
+          aria-haspopup="dialog"
+          aria-expanded={isOpen}
         >
           Let&apos;s Collaborate
         </Button>
