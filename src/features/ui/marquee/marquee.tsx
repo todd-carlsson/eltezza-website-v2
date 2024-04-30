@@ -117,7 +117,7 @@ export function Marquee({
   return (
     <motion.div
       className={classNames(styles.carouselContainer, className)}
-      aria-labelledby="Marquee"
+      aria-label="Marquee"
       ref={carouselRef}
       aria-orientation={orientation}
     >

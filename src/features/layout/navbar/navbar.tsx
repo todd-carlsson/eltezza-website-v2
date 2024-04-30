@@ -45,6 +45,7 @@ export function Navbar() {
               clickHandler(link.href), handleClickScroll(link.href);
             }}
             aria-label={`Scroll to ${link.href.slice(1, link.href.length)} section`}
+            aria-roledescription="link"
           >
             {link.title}
           </li>
