@@ -50,6 +50,7 @@ export const BTS = memo(function BTS({ content, page }: BTSProps) {
             className={classNames(styles.btsImg, styles.hiddenImage)}
             muted
             preload="metadata"
+            aria-live="polite"
           >
             <source src={content[hiddenImage].src} type="video/mp4" />
           </motion.video>
@@ -68,6 +69,7 @@ export const BTS = memo(function BTS({ content, page }: BTSProps) {
                 className={classNames(styles.btsImg, styles.hiddenImage)}
                 src={src}
                 alt={content[hiddenImage].alt}
+                aria-live="polite"
               />
             )}
           </ProgressiveImage>
@@ -85,6 +87,7 @@ export const BTS = memo(function BTS({ content, page }: BTSProps) {
             autoPlay
             loop
             muted
+            aria-live="polite"
           >
             <source src={content[activeImage].src} type="video/mp4" />
           </motion.video>
@@ -103,6 +106,7 @@ export const BTS = memo(function BTS({ content, page }: BTSProps) {
                 className={styles.btsImg}
                 src={src}
                 alt={content[activeImage].alt}
+                aria-live="polite"
               />
             )}
           </ProgressiveImage>
