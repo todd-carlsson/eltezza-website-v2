@@ -46,6 +46,7 @@ export function Navbar() {
             }}
             aria-label={`Scroll to ${link.href.slice(1, link.href.length)} section`}
             aria-roledescription="link"
+            aria-current={activeId === link.href}
           >
             {link.title}
           </li>
