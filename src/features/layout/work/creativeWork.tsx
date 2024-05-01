@@ -76,6 +76,7 @@ export const CreativeWork = memo(function CreativeWork({
             key={item.id}
             video={item}
             // Pass the video id if the window width is less than or equal to 1000.
+            // This will ensure that the video will autoplay for tablet/mobile view
             hoveredVideo={
               windowWidth > 1000
                 ? hoveredVideo === item.id

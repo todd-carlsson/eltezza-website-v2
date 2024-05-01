@@ -56,7 +56,7 @@ export default function FullScreenVideo({
         className={styles.fullVideoWrapper}
       >
         <div className={styles.exit} onClick={removeFullVideo}>
-          <IoMdExit size={50} />
+          <IoMdExit size={50} style={{ cursor: "pointer" }} />
         </div>
         <motion.video
           variants={animateUp}
