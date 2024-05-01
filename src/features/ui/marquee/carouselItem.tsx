@@ -57,7 +57,7 @@ export function CarouselItem({
             height: height ? height : "auto",
           }}
         >
-          <source src={data.src} />
+          <source src={data.src} type="video/mp4" />
         </video>
       )}
     </div>

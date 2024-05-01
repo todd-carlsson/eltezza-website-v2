@@ -152,10 +152,6 @@
           position: relative;
         }
 
-        // @media screen and (width <=800px) {
-        //   top: 50%;
-        // }
-
         .pagePortalTitle {
           display: flex;
           flex-direction: column;
@@ -199,10 +195,6 @@
             @media screen and (width <=1200px) {
               display: none;
             }
-          }
-
-          .homeMarquee {
-            height: 300px;
           }
 
           .portalBottom {

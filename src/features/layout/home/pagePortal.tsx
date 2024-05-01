@@ -83,7 +83,6 @@ export default function PagePortal({
           />
           <Marquee
             badgeSize="small"
-            className={styles.homeMarquee}
             orientation="horizontal"
             content={content}
             imgHeight={250}
