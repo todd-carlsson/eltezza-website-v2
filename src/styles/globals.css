@@ -39,6 +39,10 @@ body {
   overflow-x: hidden;
   color: #fff;
   background-color: #000;
+
+  /* To stop the content on the landing page from being off center on mobile view */
+  position: sticky;
+  left: 0;
 }
 
 a {
