@@ -32,6 +32,10 @@
   justify-content: center;
   align-items: center;
 
+  @media screen and (width <= 1200px) {
+    height: fit-content;
+  }
+
   .orangeOrb {
     @include orb(var(--ez-orange), left);
   }
@@ -76,10 +80,10 @@
     .dualPageContainer {
       justify-content: center;
       align-items: center;
-      height: 100%;
 
       @media screen and (width <= 1200px) {
         flex-direction: column;
+        height: auto;
       }
 
       .divider {
@@ -141,15 +145,14 @@
         @media screen and (width <= 1200px) {
           width: 100vw;
           padding: 4rem 0;
-          height: auto;
+          height: fit-content;
           flex-direction: column;
           position: relative;
-          top: 70%;
         }
 
-        @media screen and (width <=800px) {
-          top: 50%;
-        }
+        // @media screen and (width <=800px) {
+        //   top: 50%;
+        // }
 
         .pagePortalTitle {
           display: flex;
