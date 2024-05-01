@@ -10,27 +10,31 @@ mail.setApiKey(
   process.env.SENDGRID_API_KEY ? process.env.SENDGRID_API_KEY : "",
 );
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>,
 ) {
-  const body = JSON.parse(req.body);
-  const message = `
+  try {
+    const body = JSON.parse(req.body);
+    const message = `
   Name: ${body.fullName}\r\n
   Email: ${body.email}\r\n
   Subject: ${body.subject}\r\n
   Message: ${body.message}\r\n
   `;
 
-  const data = {
-    to: "eltezza.ltd@gmail.com",
-    from: "hello@eltezza.com",
-    subject: `[CONTACT FORM]: ${body.subject}`,
-    text: message,
-    html: message.replace(/\r\n/g, "<br>"),
-  };
+    const data = {
+      to: "eltezza.ltd@gmail.com",
+      from: "hello@eltezza.com",
+      subject: `[CONTACT FORM]: ${body.subject}`,
+      text: message,
+      html: message.replace(/\r\n/g, "<br>"),
+    };
 
-  mail.send(data);
+    await mail.send(data);
 
-  res.status(200);
+    res.status(200);
+  } catch (error) {
+    console.log(error);
+  }
 }
