@@ -52,7 +52,10 @@ export function HomeComponent() {
             >
               <h1 className={styles.homeTitle}>RISE ABOVE</h1>
               <h1 className={styles.homeTitle}>
-                THE <span className="textGradient">NOISE</span>
+                THE{" "}
+                <span className={classNames(styles.homeTitle, "textGradient")}>
+                  NOISE
+                </span>
               </h1>
             </motion.div>
           )}
