@@ -13,7 +13,8 @@ export const Brands = memo(function Brands({ content, columns }: BrandsProps) {
   return (
     <section id="clients" className={styles.brandsSection}>
       <h1 className={classNames("largeText", styles.brandsTitle)}>
-        OUR TRUSTED <span className="textGradient">PARTNERS</span>
+        OUR TRUSTED <br className={styles.titleBreak} />{" "}
+        <span className="textGradient">PARTNERS</span>
       </h1>
       <div
         className={classNames(

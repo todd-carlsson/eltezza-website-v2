@@ -24,13 +24,13 @@ export const Faq = memo(function Faq({ content, color }: AccordionProps) {
     if (active === id && color !== "--adobe-purple") {
       return "#000";
     }
-    if (windowWidth <= 800 && color === "--ez-orange") {
+    if (windowWidth <= 1000 && color === "--ez-orange") {
       return "#000";
     } else return "#fff";
   }
 
   function getDescriptionPosition(id: string) {
-    if (windowWidth > 800) {
+    if (windowWidth > 1000) {
       if (active === id) {
         return "relative";
       } else return "absolute";
@@ -38,7 +38,7 @@ export const Faq = memo(function Faq({ content, color }: AccordionProps) {
   }
 
   function getDescriptionAnimation(id: string) {
-    if (windowWidth > 800) {
+    if (windowWidth > 1000) {
       if (active === id) return 0;
       else return 65;
     } else return 0;
@@ -55,16 +55,16 @@ export const Faq = memo(function Faq({ content, color }: AccordionProps) {
             onMouseLeave={() => hoverHandler("-1")}
             style={{
               backgroundColor:
-                active === item.id || windowWidth <= 800
+                active === item.id || windowWidth <= 1000
                   ? `var(${color})`
                   : "#000",
             }}
-            aria-expanded={active === item.id || windowWidth <= 800}
+            aria-expanded={active === item.id || windowWidth <= 1000}
           >
             <motion.h1
               layout
               initial={{
-                y: windowWidth > 800 ? -40 : 0,
+                y: windowWidth > 1000 ? -40 : 0,
               }}
               transition={{ duration: 0.2 }}
               className={classNames(
@@ -80,10 +80,10 @@ export const Faq = memo(function Faq({ content, color }: AccordionProps) {
             <motion.p
               initial={{
                 opacity: 0,
-                y: windowWidth > 800 ? -20 : 0,
+                y: windowWidth > 1000 ? -20 : 0,
               }}
               animate={{
-                opacity: active === item.id || windowWidth <= 800 ? 1 : 0,
+                opacity: active === item.id || windowWidth <= 1000 ? 1 : 0,
                 y: getDescriptionAnimation(item.id),
               }}
               className={classNames(styles.descriptionFaq)}
