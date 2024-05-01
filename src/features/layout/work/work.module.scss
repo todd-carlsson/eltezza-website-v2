@@ -153,15 +153,16 @@
 
 .fullScreenContainer {
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   z-index: 9997;
   left: 0;
-  overflow: hidden;
+  overflow: scroll;
 
   .opacLayer {
     width: 100%;
@@ -170,11 +171,12 @@
     z-index: 9990;
     opacity: 0.8;
     background: #000;
-    cursor: pointer;
   }
 
   .fullVideoWrapper {
     width: fit-content;
+    height: fit-content;
+    position: relative;
 
     .exit {
       width: 100%;
@@ -184,13 +186,14 @@
       align-items: center;
       position: relative;
       z-index: 9999;
-      cursor: pointer;
     }
 
     .creativeVideoFull {
       width: auto;
+      max-width: 100vw;
+      max-height: calc(100vh - 60px);
       height: calc(100vh - 60px);
-      max-height: 900px;
+      height: auto;
       position: relative;
       z-index: 9999;
     }
