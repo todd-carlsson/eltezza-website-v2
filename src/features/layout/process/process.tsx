@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "./process.module.scss";
 import useWindowSize from "@/hooks/useWindowSize";
+import classNames from "classnames";
 import { motion } from "framer-motion";
 import { memo } from "react";
 
@@ -57,7 +58,7 @@ export const Process = memo(function Process({ content, color }: ProcessProps) {
   };
   return (
     <section className={styles.processSection}>
-      <h1 className="largeText">
+      <h1 className={classNames(styles.processTitle, "largeText")}>
         OUR <span className="textGradient">PROCESS</span>
       </h1>
       <motion.div
