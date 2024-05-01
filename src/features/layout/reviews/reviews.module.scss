@@ -5,6 +5,26 @@
   user-select: none;
   cursor: pointer;
 
+  .reviewsTitle {
+    display: block;
+
+    @media screen and (width <= 800px) {
+      font-size: 10vw;
+    }
+
+    @media screen and (width <= 400px) {
+      font-size: 11vw;
+    }
+
+    .titleBreak {
+      display: none;
+
+      @media screen and (width <= 1000px) {
+        display: block;
+      }
+    }
+  }
+
   .reviewsContainer {
     display: flex;
     width: 100%;

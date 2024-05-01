@@ -16,14 +16,18 @@
     margin-top: 120px;
     white-space: nowrap;
 
-    @media screen and (width <= 600px) {
+    @media screen and (width <= 900px) {
+      font-size: 7vw;
+    }
+
+    @media screen and (width <= 768px) {
       font-size: 12vw;
     }
 
     .titleBreak {
       display: none;
 
-      @media screen and (width <= 600px) {
+      @media screen and (width <= 768px) {
         display: block;
       }
     }

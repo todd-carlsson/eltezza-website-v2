@@ -6,6 +6,7 @@ import useWindowSize from "@/hooks/useWindowSize";
 import { Button, ButtonVariant } from "@/features/ui";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import classNames from "classnames";
 
 interface ReviewsProps {
   content: Array<TestimonialsData>;
@@ -52,7 +53,7 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
   if (windowWidth > 1000) {
     return (
       <section id="reviews" className={styles.reviews}>
-        <h1 className="largeText">
+        <h1 className={classNames(styles.reviewsTitle, "largeText")}>
           Hear it from our <span className="textGradient">partners</span>
         </h1>
         <Swiper
@@ -98,8 +99,10 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
   } else
     return (
       <section className={styles.reviews}>
-        <h1 className="largeText">
-          Hear it from our <span className="textGradient">partners</span>
+        <h1 className={classNames(styles.reviewsTitle, "largeText")}>
+          Hear it from
+          <br className={styles.titleBreak} />
+          our <span className="textGradient">partners</span>
         </h1>
         <div className={styles.reviewsContainer}>
           {content.slice(0, paginationCount).map((item, i) => (
