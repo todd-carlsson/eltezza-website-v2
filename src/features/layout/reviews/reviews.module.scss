@@ -25,6 +25,10 @@
     }
   }
 
+  .slider {
+    margin-top: 60px;
+  }
+
   .reviewsContainer {
     display: flex;
     width: 100%;
@@ -34,27 +38,40 @@
     @media screen and (width <= 1000px) {
       flex-direction: column;
       cursor: auto;
+      user-select: text;
     }
 
     &:active {
       cursor: grab;
+
+      @media screen and (width <= 1000px) {
+        cursor: auto;
+      }
     }
   }
 
   .reviewContainer {
-    padding: 4rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     min-width: 33.333%;
     position: relative;
     gap: 9px;
 
-    @media screen and (width <= 800px) {
-      padding: 4rem var(--content-padding-sm);
+    @media screen and (width > 1400px) {
+      padding: 1rem 4rem;
+    }
+
+    @media screen and (width <= 1000px) {
+      padding: 2.5rem var(--content-padding-sm);
     }
 
     .reviewText {
       font-family: var(--font-source-sans);
+
+      @media screen and (width <= 800px) {
+        font-size: 0.8rem;
+      }
     }
 
     .reviewName {

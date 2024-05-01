@@ -58,7 +58,7 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
         </h1>
         <Swiper
           slidesPerView={3}
-          className={styles.reviews}
+          className={styles.slider}
           onSlideChange={clickHandler}
           slideToClickedSlide
           loop={true}
