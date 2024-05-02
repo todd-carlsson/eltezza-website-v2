@@ -120,6 +120,9 @@ export function Marquee({
       aria-label="Marquee"
       ref={carouselRef}
       aria-orientation={orientation}
+      style={{
+        maxWidth: orientation === "horizontal" ? width / 2 : "",
+      }}
     >
       <motion.div
         drag={drag && "x"}
