@@ -49,7 +49,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const [formError, setFormError] = useState(false);
 
   const { control, handleSubmit } = useForm<FormValues>({
     mode: "onBlur",
@@ -65,17 +65,21 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
 
   const onSubmit = async (data: FormValues) => {
     try {
-      setError(false);
+      setFormError(false);
       setLoading(true);
-      await fetch("/api/mail", {
+      const res = await fetch("/api/mail", {
         method: "post",
         body: JSON.stringify(data),
       });
-      setLoading(false);
-      submittedForm();
+      if (res.status === 500) {
+        setFormError(true);
+      } else {
+        setLoading(false);
+        submittedForm();
+      }
     } catch (error) {
       console.log(error);
-      setError(true);
+      setFormError(true);
     } finally {
       setLoading(false);
     }
@@ -105,7 +109,7 @@ export default function Form({ isSubmitted, submittedForm, color }: FormProps) {
             onSubmit={handleSubmit(onSubmit)}
             className={styles.form}
           >
-            {error && (
+            {formError && (
               <p className={styles.errorMsg}>{contactFormText.error}</p>
             )}
             <Controller
