@@ -10,12 +10,18 @@ mail.setApiKey(
   process.env.SENDGRID_API_KEY ? process.env.SENDGRID_API_KEY : "",
 );
 
+export const config = {
+  api: {
+    externalResolver: true,
+  },
+};
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>,
 ) {
   try {
-    const body = JSON.parse(req.body);
+    const body = await JSON.parse(req.body);
     const message = `
   Name: ${body.fullName}\r\n
   Email: ${body.email}\r\n
@@ -33,8 +39,11 @@ export default async function handler(
 
     await mail.send(data);
 
-    res.status(200);
+    // @ts-expect-error Error is unknown
+    return res.status(200).json({ error: "" });
   } catch (error) {
     console.log(error);
+    // @ts-expect-error Just for the error checking
+    return res.status(500).json({ error: error.message });
   }
 }
