@@ -56,6 +56,7 @@ export function CarouselItem({
             width: width ? width : "auto",
             height: height ? height : "auto",
           }}
+          playsInline
         >
           <source src={data.src} type="video/mp4" />
         </video>
