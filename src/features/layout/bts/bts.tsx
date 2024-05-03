@@ -51,6 +51,7 @@ export const BTS = memo(function BTS({ content, page }: BTSProps) {
             muted
             preload="metadata"
             aria-live="polite"
+            playsInline
           >
             <source src={content[hiddenImage].src} type="video/mp4" />
           </motion.video>
@@ -88,6 +89,7 @@ export const BTS = memo(function BTS({ content, page }: BTSProps) {
             loop
             muted
             aria-live="polite"
+            playsInline
           >
             <source src={content[activeImage].src} type="video/mp4" />
           </motion.video>
