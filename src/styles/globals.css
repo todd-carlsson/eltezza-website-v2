@@ -50,17 +50,29 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  margin: 0;
+}
+
+p {
+  line-height: normal;
+}
+
 ul,
 li {
   list-style: none;
+}
+
+button {
+  line-height: normal;
 }
 
 .largeText {
   font-weight: 700;
   font-size: 4.5rem;
   text-transform: uppercase;
-  line-height: 100%;
   text-align: center;
+  margin: 0;
 }
 
 @media screen and (width <=420px) {
