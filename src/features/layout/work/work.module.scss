@@ -14,8 +14,21 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     position: relative;
+
+    .latestWorksText {
+      white-space: nowrap;
+
+      @media screen and (width <= 1000px) {
+        font-size: 8vw;
+      }
+
+      @media screen and (width <= 700px) {
+        white-space: wrap;
+        font-size: 11.5vw;
+      }
+    }
 
     .purpleUnderline {
       font-family: var(--font-source-sans);
