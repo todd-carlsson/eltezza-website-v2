@@ -41,7 +41,7 @@ body {
   background-color: #000;
 
   /* To stop the content on the landing page from being off center on mobile view */
-  position: sticky;
+  position: relative;
   left: 0;
 }
 
