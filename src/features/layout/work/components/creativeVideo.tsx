@@ -1,12 +1,11 @@
 import classNames from "classnames";
 import styles from "../work.module.scss";
 import { Portal } from "../../portal";
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { CreativeWorkData } from "@/types";
 import { VideoDetails } from "./videoDetails";
 import FullScreenVideo from "./fullScreenVideo";
-import { memo, useEffect, useRef } from "react";
-import useWindowSize from "@/hooks/useWindowSize";
+import { memo } from "react";
 
 interface CreativeVideoProps {
   video: CreativeWorkData;
@@ -37,33 +36,12 @@ export const CreativeVideo = memo(function CreativeVideo({
     } else return styles.gridColSpanTwo;
   }
 
-  function getVideoSrc() {
-    if (windowWidth > 1000) {
-      return <source src={video.src} type="video/mp4" />;
-    } else if (windowWidth <= 1000 && windowWidth > 600) {
-      return <source src={video.srcMedium} type="video/mp4" />;
-    } else return <source src={video.srcSmall} type="video/mp4" />;
-  }
-
-  const [windowWidth] = useWindowSize();
-  const containerRef = useRef(null);
-  const isInView = useInView(containerRef);
-
-  useEffect(() => {
-    if (windowWidth <= 1000 && isInView) {
-      playVideo(video.id);
-    } else if (windowWidth <= 1000 && !isInView) {
-      pauseVideo(video.id);
-    }
-  }, [windowWidth, playVideo, video.id, isInView, pauseVideo]);
-
   return (
     <div
       className={classNames(
         styles.creativeVideoContainer,
         getVideoColumnSize(video.size),
       )}
-      ref={containerRef}
       key={video.id}
     >
       {/* FULL SCREEN VIDEO */}
@@ -84,8 +62,8 @@ export const CreativeVideo = memo(function CreativeVideo({
         loading="lazy"
         decoding="async"
         onClick={() => openFullVideo(video.id)}
-        onMouseEnter={() => (windowWidth > 1000 ? playVideo(video.id) : null)}
-        onMouseLeave={() => (windowWidth > 1000 ? pauseVideo(video.id) : null)}
+        onMouseEnter={() => playVideo(video.id)}
+        onMouseLeave={() => pauseVideo(video.id)}
       />
       {/* VIDEO DETAILS TEXT */}
       <VideoDetails
@@ -96,8 +74,9 @@ export const CreativeVideo = memo(function CreativeVideo({
       <video
         className={classNames(styles.creativeVideo)}
         poster={video.thumbnail}
-        onMouseEnter={() => (windowWidth > 1000 ? playVideo(video.id) : null)}
-        onMouseLeave={() => (windowWidth > 1000 ? pauseVideo(video.id) : null)}
+        src={video.src}
+        onMouseEnter={() => playVideo(video.id)}
+        onMouseLeave={() => pauseVideo(video.id)}
         ref={(node) => {
           const map = getMap();
           if (node) {
@@ -110,7 +89,7 @@ export const CreativeVideo = memo(function CreativeVideo({
         loop
         preload="metadata"
       >
-        {getVideoSrc()}
+        <source src={video.src} type="video/mp4" />
       </video>
     </div>
   );
