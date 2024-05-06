@@ -18,8 +18,6 @@
     position: relative;
 
     .latestWorksText {
-      white-space: nowrap;
-
       @media screen and (width <= 1000px) {
         font-size: 8vw;
       }

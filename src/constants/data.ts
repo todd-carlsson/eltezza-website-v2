@@ -773,7 +773,7 @@ export const btsData = {
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1711328016/EZ%20Website%20-%20Design/BTS/Videos/IMG_4369_vugvs0.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1714967879/EZ%20Website%20-%20Design/BTS/Videos/IMG_4369_dpuon2.mp4",
       alt: "Chris filming food",
       isVideo: true,
     },
@@ -787,7 +787,7 @@ export const btsData = {
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_66/v1711327992/EZ%20Website%20-%20Design/BTS/Videos/IMG_4320_vuxhjw.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1714967847/EZ%20Website%20-%20Design/BTS/Videos/IMG_4320_qlu2jw.mp4",
       alt: "Chris trying to use chopsticks",
       isVideo: true,
     },
@@ -801,7 +801,7 @@ export const btsData = {
     },
     {
       id: "6",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_58/v1711328066/EZ%20Website%20-%20Design/BTS/Videos/IMG_0188_hbsrhx.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_58/v1714967819/EZ%20Website%20-%20Design/BTS/Videos/IMG_0188_s6xzvp.mp4",
       alt: "Behind the scenes at Steve's Tyre Service",
       isVideo: true,
     },
@@ -831,7 +831,7 @@ export const btsData = {
     },
     {
       id: "10",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1711328046/EZ%20Website%20-%20Design/BTS/Videos/IMG_0181_p1xnmj.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1714967793/EZ%20Website%20-%20Design/BTS/Videos/IMG_0181_ukibqj.mp4",
       alt: "Behind the scenes at Steve's Tyre Service",
       isVideo: true,
     },
@@ -879,7 +879,7 @@ export const btsData = {
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1711327348/EZ%20Website%20-%20Creative/BTS/Videos/IMG_2974_t7r7jz.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1714967262/EZ%20Website%20-%20Creative/BTS/Videos/IMG_2974_zzlgzw.mp4",
       alt: "Filming",
       isVideo: true,
     },
@@ -893,7 +893,7 @@ export const btsData = {
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1711327348/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0289_zkbal1.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1714967247/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0289_s9kbnw.mp4",
       alt: "Goju behind the scenes",
       isVideo: true,
     },
@@ -907,7 +907,7 @@ export const btsData = {
     },
     {
       id: "6",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_61/v1711327335/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0268_whzgtf.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1714967229/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0268_swi4xa.mp4",
       alt: "Dunk!",
       isVideo: true,
     },
@@ -921,7 +921,7 @@ export const btsData = {
     },
     {
       id: "8",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1711327333/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0265_pdzbv2.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1714967218/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0265_oq3usj.mp4",
       alt: "Slam that Rinse can",
       isVideo: true,
     },
@@ -951,7 +951,7 @@ export const btsData = {
     },
     {
       id: "12",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_62/v1711327343/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0178_ljg1mh.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_62/v1714967207/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0178_kog9qh.mp4",
       alt: "Chris the Barista",
       isVideo: true,
     },
@@ -965,7 +965,7 @@ export const btsData = {
     },
     {
       id: "14",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1711327343/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0162_rw3rlj.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1714967191/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0162_kdykqr.mp4",
       alt: "Video editing",
       isVideo: true,
     },
@@ -979,7 +979,7 @@ export const btsData = {
     },
     {
       id: "16",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1711327318/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0152_yihkrx.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1714967166/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0152_weisck.mp4",
       alt: "Honey Soy Chicken BTS",
       isVideo: true,
     },
@@ -993,7 +993,7 @@ export const btsData = {
     },
     {
       id: "18",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1711327310/EZ%20Website%20-%20Creative/BTS/Videos/Copy_of_IMG_0275_pxdxsc.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1714967179/EZ%20Website%20-%20Creative/BTS/Videos/Copy_of_IMG_0275_cq2av0.mp4",
       alt: "Filming BTS",
       isVideo: true,
     },

@@ -68,6 +68,7 @@ export default function FullScreenVideo({
           src={video.src}
           controls
           preload="metadata"
+          playsInline
         >
           <source src={video.src} type="video/mp4" />
         </motion.video>
