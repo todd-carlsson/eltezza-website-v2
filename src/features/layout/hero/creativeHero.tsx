@@ -24,6 +24,7 @@ export function CreativeHero({ video, images }: CreativeHeroProps) {
           autoPlay
           loop
           preload="metadata"
+          playsInline
         >
           <source src={item.src} />
         </video>
