@@ -773,7 +773,7 @@ export const btsData = {
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1711328016/EZ%20Website%20-%20Design/BTS/Videos/IMG_4369_vugvs0.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1714967879/EZ%20Website%20-%20Design/BTS/Videos/IMG_4369_dpuon2.mp4",
       alt: "Chris filming food",
       isVideo: true,
     },
@@ -787,7 +787,7 @@ export const btsData = {
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_66/v1711327992/EZ%20Website%20-%20Design/BTS/Videos/IMG_4320_vuxhjw.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1714967847/EZ%20Website%20-%20Design/BTS/Videos/IMG_4320_qlu2jw.mp4",
       alt: "Chris trying to use chopsticks",
       isVideo: true,
     },
@@ -801,7 +801,7 @@ export const btsData = {
     },
     {
       id: "6",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_58/v1711328066/EZ%20Website%20-%20Design/BTS/Videos/IMG_0188_hbsrhx.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_58/v1714967819/EZ%20Website%20-%20Design/BTS/Videos/IMG_0188_s6xzvp.mp4",
       alt: "Behind the scenes at Steve's Tyre Service",
       isVideo: true,
     },
@@ -831,7 +831,7 @@ export const btsData = {
     },
     {
       id: "10",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1711328046/EZ%20Website%20-%20Design/BTS/Videos/IMG_0181_p1xnmj.mov",
+      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1714967793/EZ%20Website%20-%20Design/BTS/Videos/IMG_0181_ukibqj.mp4",
       alt: "Behind the scenes at Steve's Tyre Service",
       isVideo: true,
     },
