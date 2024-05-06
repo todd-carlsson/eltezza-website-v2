@@ -2,6 +2,7 @@ import { CreativeWorkData } from "@/types";
 import styles from "./work.module.scss";
 import { memo, useCallback, useRef, useState } from "react";
 import { CreativeVideo } from "./components/creativeVideo";
+import classNames from "classnames";
 
 interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
@@ -60,7 +61,7 @@ export const CreativeWork = memo(function CreativeWork({
   return (
     <section id="work" className={styles.workSectionCreative}>
       <div className={styles.textContainer}>
-        <h1 className="largeText">
+        <h1 className={classNames(styles.latestWorksText, "largeText")}>
           OUR LATEST <span className="textGradient">WORKS</span>
         </h1>
         <p className={styles.workDescription}>
