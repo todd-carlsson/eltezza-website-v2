@@ -42,8 +42,6 @@ export type CreativeHeroVideoData = {
 export type CreativeWorkData = {
   id: string;
   src: string;
-  srcMedium: string;
-  srcSmall: string;
   thumbnail: string;
   size: "small" | "medium" | "large";
   client: string;
