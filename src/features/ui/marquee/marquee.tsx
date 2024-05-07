@@ -117,9 +117,8 @@ export function Marquee({
   return (
     <motion.div
       className={classNames(styles.carouselContainer, className)}
-      aria-label="Marquee"
+      role="marquee"
       ref={carouselRef}
-      aria-orientation={orientation}
       style={{
         maxWidth: orientation === "horizontal" ? width / 2 : "",
       }}
