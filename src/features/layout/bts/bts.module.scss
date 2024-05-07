@@ -55,10 +55,9 @@
       object-position: 50% 50%;
       width: 420px;
       max-width: 50%;
-      height: 520px;
+      height: 575px;
       margin-left: 3rem;
       min-width: 420px;
-      max-height: 465px;
 
       @media screen and (width <=1400px) {
         height: 50vw;
@@ -72,7 +71,7 @@
 
       @media screen and (width <=800px) {
         width: 100%;
-        min-width: 100%;
+        min-width: calc(100vw - var(--content-padding-sm) * 2);
         min-height: 400px;
         max-height: 100vh;
         margin-left: 0;
@@ -108,8 +107,8 @@
       max-width: 235px;
 
       @media screen and (width <=800px) {
-        width: 50%;
-        max-width: 50%;
+        width: 40%;
+        max-width: none;
       }
     }
 
@@ -133,6 +132,7 @@
       display: flex;
       align-items: center;
       gap: 1.25rem;
+      line-height: 1;
 
       @media screen and (width <=800px) {
         gap: 0.5rem;
