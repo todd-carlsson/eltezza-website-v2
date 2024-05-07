@@ -1,9 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
 import styles from "./process.module.scss";
 import useWindowSize from "@/hooks/useWindowSize";
 import classNames from "classnames";
 import { motion } from "framer-motion";
-import { memo } from "react";
+import Image from "next/image";
 
 interface ProcessProps {
   content: Array<ProcessPropObj>;
@@ -15,7 +14,7 @@ type ProcessPropObj = {
   title: string;
 };
 
-export const Process = memo(function Process({ content, color }: ProcessProps) {
+export function Process({ content, color }: ProcessProps) {
   // TODO: Fix black text color staggering animation on design page
 
   const [windowWidth] = useWindowSize();
@@ -88,15 +87,19 @@ export const Process = memo(function Process({ content, color }: ProcessProps) {
           >
             {i !== 0 && (
               <>
-                <img
+                <Image
                   className={styles.arrow}
                   src="/process_arrow.svg"
                   alt="arrow"
+                  width={82}
+                  height={26}
                 />
-                <img
+                <Image
                   className={styles.arrowSmall}
                   src="/process_arrow_mobile.svg"
                   alt="arrow"
+                  width={11}
+                  height={42}
                 />
               </>
             )}
@@ -124,4 +127,4 @@ export const Process = memo(function Process({ content, color }: ProcessProps) {
       </motion.div>
     </section>
   );
-});
+}
