@@ -41,19 +41,22 @@ export function BTS({ content, page }: BTSProps) {
       <div className={styles.btsContentContainer}>
         {/* HIDDEN */}
         {content[hiddenImage].isVideo ? (
-          <motion.video
+          <motion.div
             key={"-1"}
             variants={animationVariant}
             animate="animate"
             initial="initial"
-            className={classNames(styles.btsImg, styles.hiddenImage)}
-            muted
-            preload="metadata"
-            aria-live="polite"
-            playsInline
           >
-            <source src={content[hiddenImage].src} type="video/mp4" />
-          </motion.video>
+            <video
+              className={classNames(styles.btsImg, styles.hiddenImage)}
+              muted
+              preload="metadata"
+              aria-live="polite"
+              playsInline
+            >
+              <source src={content[hiddenImage].src} type="video/mp4" />
+            </video>
+          </motion.div>
         ) : (
           <ProgressiveImage
             src={content[hiddenImage].src}
@@ -76,22 +79,25 @@ export function BTS({ content, page }: BTSProps) {
         )}
         {/* ACTIVE */}
         {content[activeImage].isVideo ? (
-          <motion.video
+          <motion.div
             key={activeImage}
             variants={animationVariant}
             animate="animate"
             initial="initial"
-            className={styles.btsImg}
-            src={content[activeImage].src}
-            preload="metadata"
-            autoPlay
-            loop
-            muted
-            aria-live="polite"
-            playsInline
           >
-            <source src={content[activeImage].src} type="video/mp4" />
-          </motion.video>
+            <video
+              className={styles.btsImg}
+              src={content[activeImage].src}
+              preload="metadata"
+              autoPlay
+              loop
+              muted
+              aria-live="polite"
+              playsInline
+            >
+              <source src={content[activeImage].src} type="video/mp4" />
+            </video>
+          </motion.div>
         ) : (
           <ProgressiveImage
             src={content[activeImage].src}
