@@ -40,7 +40,7 @@ export const Hero = memo(function Hero({ page, description, tags }: HeroProps) {
         )}
       >
         {tags.map((tag) => (
-          <Button variant={ButtonVariant.main} key={tag} role="presentation">
+          <Button variant={ButtonVariant.main} key={tag}>
             {tag}
           </Button>
         ))}
