@@ -10,15 +10,23 @@
   #{$direction}: -20%;
   top: 0;
   overflow: hidden;
+  filter: blur(140px);
+  filter: blur(140px);
+  filter: blur(140px);
+  backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
 
-  @media screen and (width <= 1100px) {
+  @media screen and (width <=1100px) {
     width: 70vw;
     height: 70vw;
     top: 25vh;
     #{$direction}: -35%;
   }
 
-  @media screen and (width <= 550px) {
+  @media screen and (width <=550px) {
     width: 70vw;
     height: 100vw;
     #{$direction}: -40%;
@@ -65,11 +73,11 @@
         text-transform: uppercase;
         line-height: 100%;
 
-        @media screen and (width <= 1000px) {
+        @media screen and (width <=1000px) {
           font-size: clamp(4rem, 10vw, 6rem);
         }
 
-        @media screen and (width <= 415px) {
+        @media screen and (width <=415px) {
           font-size: clamp(2.75rem, 10vw, 5rem);
         }
       }
@@ -79,7 +87,7 @@
       justify-content: center;
       align-items: center;
 
-      @media screen and (width <= 1200px) {
+      @media screen and (width <=1200px) {
         flex-direction: column;
         height: auto;
       }
@@ -90,7 +98,7 @@
         width: 2px;
         opacity: 0.5;
 
-        @media screen and (width <= 1200px) {
+        @media screen and (width <=1200px) {
           display: none;
         }
       }
@@ -108,7 +116,7 @@
           rgb(1 1 1 / 0%) 100%
         );
 
-        @media screen and (width <= 1200px) {
+        @media screen and (width <=1200px) {
           display: none;
         }
       }
@@ -126,7 +134,7 @@
           rgb(1 1 1 / 0%) 100%
         );
 
-        @media screen and (width <= 1200px) {
+        @media screen and (width <=1200px) {
           display: none;
         }
       }
@@ -140,7 +148,7 @@
         align-items: center;
         font-size: 3rem;
 
-        @media screen and (width <= 1200px) {
+        @media screen and (width <=1200px) {
           width: 100vw;
           padding: 4rem 0;
           height: fit-content;
@@ -165,7 +173,7 @@
             font-size: 6.625rem;
             cursor: default;
 
-            @media screen and (width <= 800px) {
+            @media screen and (width <=800px) {
               font-size: clamp(4rem, 10vw, 6rem);
             }
           }
@@ -179,7 +187,7 @@
           gap: 40px;
           width: 100%;
 
-          @media screen and (width <= 800px) {
+          @media screen and (width <=800px) {
             font-size: 80%;
             gap: 25px;
           }
@@ -209,17 +217,17 @@
               display: flex;
               gap: 0.75rem;
 
-              @media screen and (width <= 800px) {
+              @media screen and (width <=800px) {
                 font-size: 0.7rem;
               }
 
-              @media screen and (width <= 600px) {
+              @media screen and (width <=600px) {
                 font-size: 2.25vw;
               }
             }
 
             .homeButton {
-              @media screen and (width <= 800px) {
+              @media screen and (width <=800px) {
                 padding: 20px var(--content-padding);
               }
             }

@@ -11,14 +11,22 @@
   z-index: 1;
   #{$direction}: -20%;
   top: 0;
+  filter: blur(140px);
+  filter: blur(140px);
+  filter: blur(140px);
+  backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
 
-  @media screen and (width <= 1100px) {
+  @media screen and (width <=1100px) {
     width: 70vw;
     height: 70vw;
     #{$direction}: -35%;
   }
 
-  @media screen and (width <= 550px) {
+  @media screen and (width <=550px) {
     width: 70vw;
     height: 100vw;
     #{$direction}: -40%;
@@ -54,12 +62,12 @@
     z-index: 120;
     max-width: 1300px;
 
-    @media screen and (width <= 550px) {
+    @media screen and (width <=550px) {
       gap: 1.5rem;
     }
 
     .logo {
-      @media screen and (width <= 550px) {
+      @media screen and (width <=550px) {
         width: 84px;
         height: 14px;
       }
@@ -72,11 +80,11 @@
       line-height: 100%;
       text-align: center;
 
-      @media screen and (width <= 1100px) {
+      @media screen and (width <=1100px) {
         font-size: clamp(3rem, 8vw, 5.5rem);
       }
 
-      @media screen and (width <= 550px) {
+      @media screen and (width <=550px) {
         font-size: clamp(2rem, 9vw, 3rem);
         line-height: 120%;
       }
@@ -93,7 +101,7 @@
       color: var(--white-text);
       text-align: center;
 
-      @media screen and (width <= 1100px) {
+      @media screen and (width <=1100px) {
         font-size: clamp(0.75rem, 8vw, 1rem);
         padding: 0 var(--content-padding-sm);
       }
@@ -101,7 +109,7 @@
       .break {
         display: none;
 
-        @media screen and (width <= 590px) {
+        @media screen and (width <=590px) {
           display: block;
         }
       }
@@ -113,7 +121,7 @@
       font-weight: 500;
       margin: 2rem 0;
 
-      @media screen and (width <= 1000px) {
+      @media screen and (width <=1000px) {
         font-size: clamp(0.75rem, 8vw, 1rem);
       }
     }
