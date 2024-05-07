@@ -59,9 +59,6 @@ export const Faq = memo(function Faq({ content, color }: AccordionProps) {
                   ? `var(${color})`
                   : "#000",
             }}
-            aria-expanded={
-              active === item.id || windowWidth <= 1000 ? false : undefined
-            }
           >
             <motion.h1
               layout
