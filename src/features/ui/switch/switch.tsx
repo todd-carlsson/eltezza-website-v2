@@ -15,11 +15,13 @@ function Switch({ page, color }: SwitchProps) {
       return 110;
     } else return 34;
   }
+  const nextPage = page === "design" ? "/creative" : "/design";
   return (
     <Link
-      href={page === "design" ? "/creative" : "/design"}
+      href={nextPage}
       scroll={false}
       shallow
+      aria-label={`Switch to ${nextPage.slice(1, nextPage.length)} page`}
     >
       <div
         className={styles.switch}
