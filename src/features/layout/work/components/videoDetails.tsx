@@ -11,7 +11,7 @@ export function VideoDetails({ hoveredVideo, video }: VideoDetailsProps) {
   return (
     <motion.div className={styles.videoDetails}>
       <div className={styles.clientContainer}>
-        <motion.h3
+        <motion.div
           initial={{
             y: 10,
             opacity: 0,
@@ -26,7 +26,7 @@ export function VideoDetails({ hoveredVideo, video }: VideoDetailsProps) {
           className={styles.clientName}
         >
           {video.client}
-        </motion.h3>
+        </motion.div>
         <motion.hr
           className={styles.lineThrough}
           initial={{
@@ -37,7 +37,7 @@ export function VideoDetails({ hoveredVideo, video }: VideoDetailsProps) {
           }}
         />
       </div>
-      <motion.p
+      <motion.div
         initial={{
           y: -10,
           opacity: 0,
@@ -52,7 +52,7 @@ export function VideoDetails({ hoveredVideo, video }: VideoDetailsProps) {
         className={styles.campaignName}
       >
         {video.campaign}
-      </motion.p>
+      </motion.div>
     </motion.div>
   );
 }

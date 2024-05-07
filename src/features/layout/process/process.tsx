@@ -105,20 +105,20 @@ export const Process = memo(function Process({ content, color }: ProcessProps) {
               style={{ backgroundColor: `var(${color})` }}
               variants={listVariant}
             />
-            <motion.h3
+            <motion.div
               className={styles.processText}
               variants={color === "--ez-orange" ? colorVariant : undefined}
               style={{ backgroundColor: "#fff" }}
             >
               {item.title}
-            </motion.h3>
-            <motion.h3
+            </motion.div>
+            <motion.div
               className={styles.processNumber}
               variants={color === "--ez-orange" ? colorVariant : undefined}
               style={{ backgroundColor: "#fff" }}
             >
               {`0${i + 1}`}
-            </motion.h3>
+            </motion.div>
           </motion.div>
         ))}
       </motion.div>

@@ -51,7 +51,7 @@ export function Review({ review, index, page, length }: ReviewProps) {
       onClick={windowSize > 1000 ? slide : () => {}}
     >
       <p className={styles.reviewText}>{review.review}</p>
-      <h3 className={styles.reviewName}>{review.name}</h3>
+      <div className={styles.reviewName}>{review.name}</div>
       <p className={styles.reviewRole}>{review.role}</p>
       <Image
         src={`/images/stars-${page}.svg`}
