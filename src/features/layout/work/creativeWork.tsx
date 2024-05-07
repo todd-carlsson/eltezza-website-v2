@@ -1,6 +1,6 @@
 import { CreativeWorkData } from "@/types";
 import styles from "./work.module.scss";
-import { memo, useCallback, useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { CreativeVideo } from "./components/creativeVideo";
 import classNames from "classnames";
 
@@ -8,9 +8,7 @@ interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
 }
 
-export const CreativeWork = memo(function CreativeWork({
-  content,
-}: CreativeWorkProps) {
+export function CreativeWork({ content }: CreativeWorkProps) {
   const itemsRef = useRef<null | Map<string, HTMLVideoElement>>(null);
   const [hoveredVideo, setHoveredVideo] = useState<null | string>(null);
   const [openedVideo, setOpenedVideo] = useState<null | string>(null);
@@ -86,4 +84,4 @@ export const CreativeWork = memo(function CreativeWork({
       </div>
     </section>
   );
-});
+}
