@@ -1,7 +1,7 @@
 import { TestimonialsData } from "@/types";
 import { Review } from "./review";
 import styles from "./reviews.module.scss";
-import { memo, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
 import { Button, ButtonVariant } from "@/features/ui";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,7 +13,7 @@ interface ReviewsProps {
   page: "design" | "creative";
 }
 
-export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
+export function Reviews({ content, page }: ReviewsProps) {
   const [rerender, setRerender] = useState(false);
   const [windowWidth] = useWindowSize();
 
@@ -122,4 +122,4 @@ export const Reviews = memo(function Reviews({ content, page }: ReviewsProps) {
         </div>
       </section>
     );
-});
+}

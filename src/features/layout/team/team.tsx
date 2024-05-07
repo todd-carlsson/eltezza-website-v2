@@ -1,7 +1,7 @@
 import { TeamData } from "@/types";
 import styles from "./team.module.scss";
 import { TeamMember } from "./teamMember";
-import { memo, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import useWindowSize from "@/hooks/useWindowSize";
 import { Button, ButtonVariant } from "@/features/ui";
 
@@ -11,11 +11,7 @@ interface TeamProps {
   color: "--ez-orange" | "--adobe-purple";
 }
 
-export const Team = memo(function Team({
-  content,
-  description,
-  color,
-}: TeamProps) {
+export function Team({ content, description, color }: TeamProps) {
   const [windowWidth] = useWindowSize();
   const [paginationCount, setPaginationCount] = useState(
     windowWidth > 1050 ? content.length : 3,
@@ -84,4 +80,4 @@ export const Team = memo(function Team({
       </div>
     </section>
   );
-});
+}

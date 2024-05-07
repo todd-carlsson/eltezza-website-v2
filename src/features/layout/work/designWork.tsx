@@ -2,13 +2,12 @@ import { CarouselData } from "@/types";
 import styles from "./work.module.scss";
 import { Marquee } from "@/features/ui";
 import Image from "next/image";
-import { memo } from "react";
 
 interface WorkProps {
   content: Array<CarouselData>;
 }
 
-export const DesignWork = memo(function DesignWork({ content }: WorkProps) {
+export function DesignWork({ content }: WorkProps) {
   return (
     <section id="work" className={styles.workSectionDesign}>
       <div className={styles.wheelContainer}>
@@ -35,4 +34,4 @@ export const DesignWork = memo(function DesignWork({ content }: WorkProps) {
       </p>
     </section>
   );
-});
+}
