@@ -59,6 +59,7 @@ export function CarouselItem({
           playsInline
         >
           <source src={data.src} type="video/mp4" />
+          Unable to play video
         </video>
       )}
     </div>
