@@ -140,7 +140,7 @@ export function Marquee({
           x: orientation === "horizontal" && !prefersReducedMotion ? x : 0,
           y: orientation === "vertical" && !prefersReducedMotion ? y : 0,
           top: getTop(),
-          touchAction: "none",
+          touchAction: "pan-y",
         }}
       >
         {content.map((item) => (

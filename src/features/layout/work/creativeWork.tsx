@@ -3,6 +3,7 @@ import styles from "./work.module.scss";
 import { useCallback, useRef, useState } from "react";
 import { CreativeVideo } from "./components/creativeVideo";
 import classNames from "classnames";
+import useWindowSize from "@/hooks/useWindowSize";
 
 interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
@@ -12,6 +13,7 @@ export function CreativeWork({ content }: CreativeWorkProps) {
   const itemsRef = useRef<null | Map<string, HTMLVideoElement>>(null);
   const [hoveredVideo, setHoveredVideo] = useState<null | string>(null);
   const [openedVideo, setOpenedVideo] = useState<null | string>(null);
+  const [windowWidth] = useWindowSize();
 
   const getMap = useCallback(() => {
     if (!itemsRef.current) {
@@ -63,8 +65,12 @@ export function CreativeWork({ content }: CreativeWorkProps) {
           OUR LATEST <span className="textGradient">WORKS</span>
         </h1>
         <p className={styles.workDescription}>
-          <span className={styles.purpleUnderline}>Hover </span>
-          your cursor on the cards below to play the videos.
+          <span className={styles.purpleUnderline}>
+            {windowWidth > 1000 ? "Hover" : "Tap"}{" "}
+          </span>
+          {windowWidth > 1000
+            ? "your cursor on the cards below to play the videos."
+            : "on the cards below to play the videos."}
         </p>
       </div>
       <div className={styles.creativeGrid}>

@@ -1,8 +1,9 @@
 import styles from "./process.module.scss";
 import useWindowSize from "@/hooks/useWindowSize";
 import classNames from "classnames";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import { useRef } from "react";
 
 interface ProcessProps {
   content: Array<ProcessPropObj>;
@@ -18,6 +19,8 @@ export function Process({ content, color }: ProcessProps) {
   // TODO: Fix black text color staggering animation on design page
 
   const [windowWidth] = useWindowSize();
+  const processContainerRef = useRef(null);
+  const isInView = useInView(processContainerRef);
 
   const boxVariant = {
     hidden: {
@@ -62,20 +65,14 @@ export function Process({ content, color }: ProcessProps) {
       </h1>
       <motion.div
         className={styles.processContainer}
+        ref={processContainerRef}
         style={{
           height:
             windowWidth >= 1130 ? (content.length - 1) * 50 + 100 : "auto",
         }}
         variants={boxVariant}
         initial="hidden"
-        whileInView="visible"
-        viewport={{
-          margin:
-            windowWidth <= 800
-              ? `-${(content.length - 1) * 50 + 100}px`
-              : "-50%",
-          once: true,
-        }}
+        animate={isInView ? "visible" : "hidden"}
       >
         {content.map((item, i) => (
           <motion.div
@@ -98,8 +95,8 @@ export function Process({ content, color }: ProcessProps) {
                   className={styles.arrowSmall}
                   src="/process_arrow_mobile.svg"
                   alt="arrow"
-                  width={11}
-                  height={42}
+                  width={15}
+                  height={48}
                 />
               </>
             )}
