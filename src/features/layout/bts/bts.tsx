@@ -55,6 +55,7 @@ export function BTS({ content, page }: BTSProps) {
               playsInline
             >
               <source src={content[hiddenImage].src} type="video/mp4" />
+              Unable to play video
             </video>
           </motion.div>
         ) : (
@@ -96,6 +97,7 @@ export function BTS({ content, page }: BTSProps) {
               playsInline
             >
               <source src={content[activeImage].src} type="video/mp4" />
+              Unable to play video
             </video>
           </motion.div>
         ) : (
