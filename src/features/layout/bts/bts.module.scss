@@ -58,6 +58,8 @@
       height: 575px;
       margin-left: 3rem;
       min-width: 420px;
+      position: relative;
+      background: #fff;
 
       @media screen and (width <=1400px) {
         height: 50vw;
