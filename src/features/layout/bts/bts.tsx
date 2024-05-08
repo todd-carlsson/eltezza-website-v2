@@ -49,14 +49,12 @@ export function BTS({ content, page }: BTSProps) {
           >
             <video
               className={classNames(styles.btsImg, styles.hiddenImage)}
+              src={content[hiddenImage].src}
               muted
               preload="metadata"
               aria-live="polite"
               playsInline
-            >
-              <source src={content[hiddenImage].src} type="video/mp4" />
-              Unable to play video
-            </video>
+            />
           </motion.div>
         ) : (
           <ProgressiveImage
@@ -95,10 +93,7 @@ export function BTS({ content, page }: BTSProps) {
               muted
               aria-live="polite"
               playsInline
-            >
-              <source src={content[activeImage].src} type="video/mp4" />
-              Unable to play video
-            </video>
+            />
           </motion.div>
         ) : (
           <ProgressiveImage
