@@ -557,7 +557,7 @@ export const featuredReviewData = {
   } as FeaturedReviewData,
 };
 
-export const brandsMockData = {
+export const brandsData = {
   design: [
     {
       id: "1",
