@@ -8,6 +8,7 @@ export const BTSText = memo(function BTSText({
 }: {
   page: "design" | "creative";
 }) {
+  /* THIS FUNCTION RETURNS A DIFFERENT COMPONENT BASED ON THE PAGE THAT IS ACTIVE */
   if (page === "design")
     return (
       <div>

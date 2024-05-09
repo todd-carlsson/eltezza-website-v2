@@ -14,6 +14,9 @@ interface ReviewsProps {
 }
 
 export function Reviews({ content, page }: ReviewsProps) {
+  /* !IMPORTANT! */
+  /* THIS FUNCTION RETURNS A DIFFERENT COMPONENT BASED ON WINDOW WIDTH, 
+  BE SURE TO UPDATE THE CORRECT COMPONENT */
   const [rerender, setRerender] = useState(false);
   const [windowWidth] = useWindowSize();
 

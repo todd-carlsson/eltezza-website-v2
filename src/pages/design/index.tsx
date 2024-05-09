@@ -1,5 +1,5 @@
 import {
-  brandsMockData,
+  brandsData,
   headerDescription,
   pageTags,
   services,
@@ -72,7 +72,7 @@ export default function DesignPage() {
       <DesignWork content={designCarouselData} />
       <Services content={services.design} color={color} />
       <BTS content={btsData.design} page={page} />
-      <Brands content={brandsMockData.design} columns={4} />
+      <Brands content={brandsData.design} columns={4} />
       <Process content={ourProcess.design} color={color} />
       <Team
         description={teamDescription.design}
