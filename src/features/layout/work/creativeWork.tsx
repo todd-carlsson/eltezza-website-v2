@@ -80,7 +80,7 @@ export function CreativeWork({ content }: CreativeWorkProps) {
             video={item}
             hoveredVideo={hoveredVideo === item.id ? hoveredVideo : null}
             pauseVideo={pauseVideo}
-            playVideo={playVideo}
+            playVideo={windowWidth > 1000 ? playVideo : () => null}
             openFullVideo={openFullVideo}
             removeFullVideo={removeFullVideo}
             openedVideo={openedVideo === item.id ? openedVideo : null}

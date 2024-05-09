@@ -65,7 +65,7 @@ export default function FullScreenVideo({
           exit="exit"
           className={styles.creativeVideoFull}
           poster={video.thumbnail}
-          src={video.src}
+          src={video.srcHighQuality}
           controls
           preload="metadata"
           playsInline
