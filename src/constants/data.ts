@@ -367,7 +367,7 @@ export const creativeWorkData = [
       "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1714105902/EZ%20Website%20-%20Creative/Work%20Section/Reel_Bobby_jnsrcg.mp4",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_47/v1714105902/EZ%20Website%20-%20Creative/Work%20Section/Reel_Bobby_jnsrcg.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1714114615/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/BOBBY_rqauly.jpg",
+      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715553783/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Bobby_Reaching_lzw3ry.jpg",
     size: "small",
     client: "PEAQ",
     campaign: "One tap away",
@@ -375,10 +375,10 @@ export const creativeWorkData = [
   {
     id: "7",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1714114268/EZ%20Website%20-%20Creative/Work%20Section/Reel_Kasey_1_c0lltz.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_47/v1714114268/EZ%20Website%20-%20Creative/Work%20Section/Reel_Kasey_1_c0lltz.mp4",
+      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_69/v1715553855/EZ%20Website%20-%20Creative/Work%20Section/AP_Reel_nhvysa.mp4",
+    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_47/v1715553855/EZ%20Website%20-%20Creative/Work%20Section/AP_Reel_nhvysa.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1714114569/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/KASEY_klrlb9.jpg",
+      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715553747/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Alex_Peaq_wjp3eh.jpg",
     size: "small",
     client: "PEAQ",
     campaign: "One tap away",

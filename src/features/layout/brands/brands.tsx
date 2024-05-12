@@ -2,6 +2,7 @@ import classNames from "classnames";
 import styles from "./brands.module.scss";
 import { BrandsData } from "@/types";
 import Image from "next/image";
+import useWindowSize from "@/hooks/useWindowSize";
 
 interface BrandsProps {
   content: Array<BrandsData>;
@@ -9,6 +10,14 @@ interface BrandsProps {
 }
 
 export function Brands({ content, columns }: BrandsProps) {
+  const [windowWidth] = useWindowSize();
+  function getMaxWidth(maxWidth: number | undefined) {
+    if (windowWidth > 500) {
+      return maxWidth;
+    } else if (maxWidth) {
+      return maxWidth * 0.7;
+    } else return 150 * 0.7;
+  }
   return (
     <section id="clients" className={styles.brandsSection}>
       <h1 className={classNames("largeText", styles.brandsTitle)}>
@@ -30,7 +39,7 @@ export function Brands({ content, columns }: BrandsProps) {
             width={brand.maxWidth || 150}
             height={150}
             style={{
-              maxWidth: brand.maxWidth,
+              maxWidth: getMaxWidth(brand.maxWidth),
               width: brand.width,
             }}
           />
