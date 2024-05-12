@@ -70,6 +70,7 @@ button {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+  line-height: 100%;
 }
 
 @media screen and (width <=420px) {
