@@ -6,7 +6,7 @@ import { memo } from "react";
 interface TeamMemberProps {
   member: TeamData;
   index: number;
-  color: "--ez-orange" | "--adobe-purple";
+  color: string;
 }
 
 export const TeamMember = memo(function TeamMember({
@@ -29,7 +29,7 @@ export const TeamMember = memo(function TeamMember({
       <div
         className={styles.positionContainer}
         style={{
-          color: `var(${color})`,
+          color: color.slice(0, 2) === "--" ? `var(${color})` : color,
         }}
       >
         <p>{member.position}</p>
