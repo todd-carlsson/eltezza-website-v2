@@ -378,7 +378,7 @@ export const creativeWorkData = [
       "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_69/v1715553855/EZ%20Website%20-%20Creative/Work%20Section/AP_Reel_nhvysa.mp4",
     src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_47/v1715553855/EZ%20Website%20-%20Creative/Work%20Section/AP_Reel_nhvysa.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715553747/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Alex_Peaq_wjp3eh.jpg",
+      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715643448/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Alex_P_-_Thumbnail_sgrabf.jpg",
     size: "small",
     client: "PEAQ",
     campaign: "One tap away",
