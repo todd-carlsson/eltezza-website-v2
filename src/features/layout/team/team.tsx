@@ -8,7 +8,7 @@ import { Button, ButtonVariant } from "@/features/ui";
 interface TeamProps {
   content: Array<TeamData>;
   description: string;
-  color: "--ez-orange" | "--adobe-purple";
+  color: string;
 }
 
 export function Team({ content, description, color }: TeamProps) {

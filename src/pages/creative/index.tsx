@@ -80,7 +80,7 @@ export default function CreativePage() {
       <Team
         description={teamDescription.creative}
         content={teamData.creative}
-        color={color}
+        color={"rgb(132, 90, 255)"}
       />
       <Reviews content={testimonialsData} page={page} />
       <Faq content={faqs.creative} color={color} />
