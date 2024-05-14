@@ -709,7 +709,7 @@ export const teamData = {
     {
       id: "1",
       name: "Chris Teneza",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709488/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_qdk5rr.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715647107/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
       position: "Creative Director",
     },
     {
@@ -759,7 +759,7 @@ export const teamData = {
     {
       id: "1",
       name: "Chris Teneza",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709488/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_qdk5rr.jpg",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715647107/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
       position: "Creative Director",
     },
     {
