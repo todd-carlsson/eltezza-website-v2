@@ -159,7 +159,7 @@ export const designMarqueeLeftData = [
     alt: "Flanzy Branding",
     isVideo: false,
   },
-] as Array<CarouselData>;
+] satisfies Array<CarouselData>;
 
 export const designMarqueeRightData = [
   {
@@ -192,7 +192,7 @@ export const designMarqueeRightData = [
     alt: "Ikaika Motivational Reel",
     isVideo: true,
   },
-] as Array<CarouselData>;
+] satisfies Array<CarouselData>;
 
 export const designCarouselData = [
   {
@@ -279,7 +279,7 @@ export const designCarouselData = [
     badge: "Social Media",
     isVideo: false,
   },
-] as Array<CarouselData>;
+] satisfies Array<CarouselData>;
 
 // CREATIVE PAGE DATA
 export const creativeHeroData = {
@@ -290,7 +290,7 @@ export const creativeHeroData = {
       thumbnail:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187412/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/EatKinda_TN_yclerg.jpg",
     },
-  ] as Array<CreativeHeroVideoData>,
+  ] satisfies Array<CreativeHeroVideoData>,
   images: [
     {
       id: "1",
@@ -302,7 +302,7 @@ export const creativeHeroData = {
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712095540/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Available_Woowlorths_Final_1.5x_zfnn1v.jpg",
       alt: "EatKinda available at Woolworths",
     },
-  ] as Array<CreativeHeroImgData>,
+  ] satisfies Array<CreativeHeroImgData>,
 };
 
 export const creativeWorkData = [
@@ -494,7 +494,7 @@ export const creativeWorkData = [
     client: "3D Ball",
     campaign: "Infinite alignment",
   },
-] as Array<CreativeWorkData>;
+] satisfies Array<CreativeWorkData>;
 
 export const testimonialsData = [
   {
@@ -539,7 +539,7 @@ export const testimonialsData = [
     name: "Arielle Thomas",
     role: "CinemaThom",
   },
-] as Array<TestimonialsData>;
+] satisfies Array<TestimonialsData>;
 
 // OTHER DATA FOR DESIGN & CREATIVE PAGES
 export const featuredReviewData = {
@@ -548,13 +548,13 @@ export const featuredReviewData = {
       "Excellent team to deal with. They have collaborated with us on a lot of aspects including social media, ads, and a fresh re-brand, this has enabled us to become more recognizable as we aim to further expand to new locations. Most importantly they enjoy what they do.",
     name: "Paul Leang, Director of Formosa Pacific Limited",
     src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_100/v1712725782/EZ%20Website%20-%20Design/Featured%20Review%20Image/Paul_fbfqqr.png",
-  } as FeaturedReviewData,
+  } satisfies FeaturedReviewData,
   creative: {
     review:
       "We engaged Eltezza for the animation of a corporate project for one of Australia's well-known brands, and it was an absolute pleasure. They comprehended the brief exceptionally well and executed it with precision. The client was extremely satisfied!",
     name: "Arielle Thomas, CinemaThom",
     src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_100/v1712725682/EZ%20Website%20-%20Creative/Featured%20Review%20Image/Arielle_hwmabn.png",
-  } as FeaturedReviewData,
+  } satisfies FeaturedReviewData,
 };
 
 export const brandsData = {
@@ -639,7 +639,7 @@ export const brandsData = {
       maxWidth: 90,
       width: "75%",
     },
-  ] as Array<BrandsData>,
+  ] satisfies Array<BrandsData>,
 
   creative: [
     {
@@ -701,7 +701,7 @@ export const brandsData = {
       maxWidth: 129,
       width: "105%",
     },
-  ] as Array<BrandsData>,
+  ] satisfies Array<BrandsData>,
 };
 
 export const teamData = {
@@ -754,7 +754,7 @@ export const teamData = {
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713331347/EZ%20Website%20-%20Design/Team/Jimwell_Manlusoc_-_UI_UX_Designer_adui9h.jpg",
       position: "UI/UX Designer",
     },
-  ] as Array<TeamData>,
+  ] satisfies Array<TeamData>,
   creative: [
     {
       id: "1",
@@ -798,7 +798,7 @@ export const teamData = {
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709685/EZ%20Website%20-%20Creative/Team/King_Raffy_-_Visual_Designer_bxau6w.jpg",
       position: "Visual Designer",
     },
-  ],
+  ] satisfies Array<TeamData>,
 };
 
 export const btsData = {
@@ -907,7 +907,7 @@ export const btsData = {
       alt: "What do we do at Eltezza?",
       isVideo: false,
     },
-  ] as Array<BtsData>,
+  ] satisfies Array<BtsData>,
   creative: [
     {
       id: "1",
@@ -1053,5 +1053,5 @@ export const btsData = {
       alt: "Chris CEO",
       isVideo: false,
     },
-  ] as Array<BtsData>,
+  ] satisfies Array<BtsData>,
 };
