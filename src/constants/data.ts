@@ -788,18 +788,12 @@ export const teamData = {
     },
     {
       id: "5",
-      name: "Shay Gillanders",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709619/EZ%20Website%20-%20Design/Team/Shay_Gillanders_-_Visual_Designer_ap1gci.jpg",
-      position: "Visual Designer",
-    },
-    {
-      id: "6",
       name: "Ilyas Megarbi",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713331517/EZ%20Website%20-%20Design/Team/Ilyas_Megarbi_-_Graphic_Designer_agv0jc.jpg",
       position: "Graphic Designer",
     },
     {
-      id: "7",
+      id: "6",
       name: "King Raffy",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709685/EZ%20Website%20-%20Creative/Team/King_Raffy_-_Visual_Designer_bxau6w.jpg",
       position: "Visual Designer",

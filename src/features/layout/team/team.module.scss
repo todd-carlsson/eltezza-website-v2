@@ -29,15 +29,15 @@
 
   .teamGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.25rem 2rem;
     margin-top: 60px;
 
     @media screen and (width <= 1050px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (width <= 500px) {
+    @media screen and (width <= 720px) {
       grid-template-columns: 1fr;
     }
 

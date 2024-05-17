@@ -25,10 +25,7 @@ export function Team({ content, description, color }: TeamProps) {
       setPaginationCount(content.length);
     }
     if (windowWidth <= 1050 && !isPaginated) {
-      setPaginationCount(4);
-    }
-    if (windowWidth <= 500 && !isPaginated) {
-      setPaginationCount(3);
+      setPaginationCount(2);
     }
   }, [windowWidth, isPaginated, content.length]);
 
