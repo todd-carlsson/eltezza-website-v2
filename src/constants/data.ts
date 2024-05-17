@@ -738,18 +738,24 @@ export const teamData = {
     },
     {
       id: "6",
+      name: "Todd Carlsson",
+      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715919824/EZ%20Website%20-%20Design/Team/Todd_Carlsson_-_Web_Developer_wnk07m.jpg",
+      position: "Web Developer",
+    },
+    {
+      id: "7",
       name: "Shay Gillanders",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709619/EZ%20Website%20-%20Design/Team/Shay_Gillanders_-_Visual_Designer_ap1gci.jpg",
       position: "Visual Designer",
     },
     {
-      id: "7",
+      id: "8",
       name: "Aileen Banzagales",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713243560/EZ%20Website%20-%20Design/Team/Aileen_Banzagles_-_Graphic_Designer_oompl5.jpg",
       position: "Graphic Designer",
     },
     {
-      id: "8",
+      id: "9",
       name: "Jimwell Manlusoc",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713331347/EZ%20Website%20-%20Design/Team/Jimwell_Manlusoc_-_UI_UX_Designer_adui9h.jpg",
       position: "UI/UX Designer",
@@ -782,18 +788,12 @@ export const teamData = {
     },
     {
       id: "5",
-      name: "Shay Gillanders",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709619/EZ%20Website%20-%20Design/Team/Shay_Gillanders_-_Visual_Designer_ap1gci.jpg",
-      position: "Visual Designer",
-    },
-    {
-      id: "6",
       name: "Ilyas Megarbi",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713331517/EZ%20Website%20-%20Design/Team/Ilyas_Megarbi_-_Graphic_Designer_agv0jc.jpg",
       position: "Graphic Designer",
     },
     {
-      id: "7",
+      id: "6",
       name: "King Raffy",
       src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709685/EZ%20Website%20-%20Creative/Team/King_Raffy_-_Visual_Designer_bxau6w.jpg",
       position: "Visual Designer",
