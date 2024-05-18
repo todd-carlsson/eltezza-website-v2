@@ -21,8 +21,8 @@ export const TeamMember = memo(function TeamMember({
         className={styles.teamImg}
         src={member.src}
         alt={member.name}
-        width={250}
-        height={420}
+        width={1300}
+        height={1800}
       />
       <p className={styles.memberName}>{member.name}</p>
       <div className={styles.lineThrough} />
