@@ -77,6 +77,8 @@ export function VideoUI({
           ${autoplay && "autoplay"}
           playsinline
           preload="metadata"
+          width=${props.style?.width}
+          height=${props.style?.height}
         >
         <source src="${src}" type="video/mp4" />
         </video>`,

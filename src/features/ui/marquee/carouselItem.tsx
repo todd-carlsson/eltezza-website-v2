@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { CarouselData } from "@/types";
 import { Badge } from "../badge";
 import React from "react";
+import { VideoUI } from "../video";
 
 interface CarouselItemProps extends React.HTMLAttributes<HTMLDivElement> {
   data: CarouselData;
@@ -46,21 +47,14 @@ export function CarouselItem({
           }}
         />
       ) : (
-        <video
+        <VideoUI
+          src={data.src}
           className={styles.carouselCardImg}
-          autoPlay
-          loop
-          muted
-          preload="metadata"
           style={{
             width: width ? width : "auto",
             height: height ? height : "auto",
           }}
-          playsInline
-        >
-          <source src={data.src} type="video/mp4" />
-          Unable to play video
-        </video>
+        />
       )}
     </div>
   );
