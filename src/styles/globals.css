@@ -13,6 +13,7 @@
   --vertical-marquee-height: 775px;
 }
 
+/* 
 :root:has(.noScroll) {
   overflow: hidden;
 }
@@ -21,7 +22,7 @@
   :root:has(.noScroll) {
     overflow-y: scroll;
   }
-}
+} */
 
 * {
   box-sizing: border-box;
