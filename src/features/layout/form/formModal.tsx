@@ -1,6 +1,5 @@
 import styles from "./form.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import Form from "./form";
 import { useState } from "react";
 import SubmitScreen from "./submitScreen";
@@ -58,18 +57,16 @@ export function FormModal({ onClose, showModal, color }: FormModalProps) {
             className={styles.modalContainer}
             aria-modal="true"
           >
-            <Image
+            <div
               onClick={() => {
                 onClose(), setIsSubmitted(false);
               }}
               className={styles.close}
-              src="/x-close.svg"
-              alt="X Close"
-              width={32}
-              height={33}
               aria-label="Close Contact Form"
-              loading="eager"
-            />
+            >
+              <span className={styles.lineOne} />
+              <span className={styles.lineTwo} />
+            </div>
             <Form
               color={color}
               isSubmitted={isSubmitted}
