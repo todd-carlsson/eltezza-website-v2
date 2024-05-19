@@ -66,7 +66,6 @@ export function VideoUI({
   ) : (
     <div
       ref={videoParentRef}
-      {...props}
       dangerouslySetInnerHTML={{
         __html: `
         <video
