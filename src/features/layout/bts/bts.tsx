@@ -1,10 +1,11 @@
 import { BtsData } from "@/types";
 import styles from "./bts.module.scss";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import ProgressiveImage from "react-progressive-graceful-image";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { BTSText } from "./btsText";
+import { VideoUI } from "@/features/ui";
 
 interface BTSProps {
   content: Array<BtsData>;
@@ -15,13 +16,11 @@ export function BTS({ content, page }: BTSProps) {
   const [activeImage, setActiveImage] = useState(content.length - 1);
   // const hiddenImage = activeImage === content.length - 1 ? 0 : activeImage + 1;
   const [hiddenImage, setHiddenImage] = useState(0);
-  const ref = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
     setTimeout(() => {
       setActiveImage(activeImage === content.length - 1 ? 0 : activeImage + 1);
       setHiddenImage(hiddenImage === content.length - 1 ? 0 : hiddenImage + 1);
-      ref.current && ref.current.play();
     }, 3000);
   }, [activeImage, content, hiddenImage]);
 
@@ -86,7 +85,8 @@ export function BTS({ content, page }: BTSProps) {
             animate="animate"
             initial="initial"
           >
-            <video
+            <VideoUI className={styles.btsImg} src={content[activeImage].src} />
+            {/* <video
               className={styles.btsImg}
               src={content[activeImage].src}
               preload="metadata"
@@ -95,8 +95,7 @@ export function BTS({ content, page }: BTSProps) {
               muted
               aria-live="polite"
               playsInline
-              ref={ref}
-            />
+            /> */}
           </motion.div>
         ) : (
           <ProgressiveImage
