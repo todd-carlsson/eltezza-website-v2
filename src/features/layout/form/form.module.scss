@@ -30,7 +30,31 @@
   overflow-y: scroll;
 
   .close {
+    position: relative;
+    display: inline;
     cursor: pointer;
+    width: 33px;
+    height: 33px;
+
+    .lineOne,
+    .lineTwo {
+      display: inline-block;
+      position: relative;
+      height: 26px;
+      width: 3px;
+      background: #fff;
+      bottom: -4px;
+    }
+
+    .lineOne {
+      transform: rotate(45deg);
+      left: 12px;
+    }
+
+    .lineTwo {
+      transform: rotate(-45deg);
+      left: 10px;
+    }
   }
 
   .formTitle {
