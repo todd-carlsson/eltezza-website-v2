@@ -13,31 +13,22 @@ export function CreativeHero({ video, images }: CreativeHeroProps) {
   return (
     <div className={styles.creativeHeroContainer}>
       <div className={styles.purpleOrb} />
-      {/* {video.map((item) => (
-        <video
-          className={classNames(
-            styles.creativeHeroVideo,
-            styles.gridColSpanTwo,
-          )}
-          key={item.id}
-          muted
-          autoPlay
-          loop
-          preload="metadata"
-          playsInline
-        >
-          <source src={item.src} />
-        </video>
-      ))} */}
       {video.map((item) => (
-        <VideoUI
+        <div
           key={item.id}
-          src={item.src}
           className={classNames(
             styles.creativeHeroVideo,
             styles.gridColSpanTwo,
           )}
-        />
+        >
+          <VideoUI
+            src={item.src}
+            className={classNames(
+              styles.creativeHeroVideo,
+              styles.gridColSpanTwo,
+            )}
+          />
+        </div>
       ))}
       {images.map((item) => (
         <Image
