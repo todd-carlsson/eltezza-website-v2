@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import { VideoUI } from "@/features/ui";
 import styles from "./hero.module.scss";
 import { CreativeHeroImgData, CreativeHeroVideoData } from "@/types";
 import classNames from "classnames";
@@ -13,7 +13,7 @@ export function CreativeHero({ video, images }: CreativeHeroProps) {
   return (
     <div className={styles.creativeHeroContainer}>
       <div className={styles.purpleOrb} />
-      {video.map((item) => (
+      {/* {video.map((item) => (
         <video
           className={classNames(
             styles.creativeHeroVideo,
@@ -28,6 +28,16 @@ export function CreativeHero({ video, images }: CreativeHeroProps) {
         >
           <source src={item.src} />
         </video>
+      ))} */}
+      {video.map((item) => (
+        <VideoUI
+          key={item.id}
+          src={item.src}
+          className={classNames(
+            styles.creativeHeroVideo,
+            styles.gridColSpanTwo,
+          )}
+        />
       ))}
       {images.map((item) => (
         <Image
