@@ -24,6 +24,7 @@ export type TeamData = {
   id: string;
   name: string;
   src: string;
+  placeholder?: string;
   position: string;
 };
 
