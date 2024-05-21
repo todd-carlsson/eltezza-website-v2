@@ -165,25 +165,26 @@ export const landingPageData = {
 export const designMarqueeLeftData = [
   {
     id: "1",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
+    src: distributionName + "/Design/Marquee+Left/peak_performance_sgqk8g.jpg",
     alt: "Peak Performance",
     isVideo: false,
   },
   {
     id: "2",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712640516/EZ%20Website%20-%20Design/Hero%20Marquee%20LEFT/lokl_gym_branding_b0kavo.jpg",
+    src: distributionName + "/Design/Marquee+Left/lokl_gym_branding_b0kavo.jpg",
     alt: "LOKL Gym",
     isVideo: false,
   },
   {
     id: "3",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637974/EZ%20Website%20-%20Design/Work%20Section%20Carousel/phillipines_website_o0zb9x.jpg",
+    src:
+      distributionName + "/Design/Marquee+Left/phillipines_website_o0zb9x.jpg",
     alt: "Philippines Travel Website",
     isVideo: false,
   },
   {
     id: "4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712640773/EZ%20Website%20-%20Design/Hero%20Marquee%20LEFT/flanzy_branding_tkpepz.jpg",
+    src: distributionName + "/Design/Marquee+Left/flanzy_branding_tkpepz.jpg",
     alt: "Flanzy Branding",
     isVideo: false,
   },
@@ -192,31 +193,40 @@ export const designMarqueeLeftData = [
 export const designMarqueeRightData = [
   {
     id: "1",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712983995/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/fire_social_media_r3lqkm.jpg",
+    src:
+      distributionName + "/Design/Marquee+Right/fire_social_media_r3lqkm.jpg",
     alt: "Fire social media",
     isVideo: false,
   },
   {
     id: "2",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_38/v1712984277/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/Tonkotsu_Ramen_on_Fire_Reel_mpqmrp.mp4",
+    src:
+      distributionName +
+      "/Design/Marquee+Right/Tonkotsu_Ramen_on_Fire_Reel_mpqmrp.mp4",
     alt: "Tonkotsu Ramen on Fire Reel",
     isVideo: true,
   },
   {
     id: "3",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712984003/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/black_pearl_social_media_oi1slb.jpg",
+    src:
+      distributionName +
+      "/Design/Marquee+Right/black_pearl_social_media_oi1slb.jpg",
     alt: "Black Pearl social media",
     isVideo: false,
   },
   {
     id: "4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_38/v1712984254/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/What_they_know_about_steves_reel_ifxohz.mp4",
+    src:
+      distributionName +
+      "/Design/Marquee+Right/What_they_know_about_steves_reel_ifxohz.mp4",
     alt: "What they know about steves reel",
     isVideo: true,
   },
   {
     id: "5",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_38/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    src:
+      distributionName +
+      "/Design/Marquee+Right/Ikaika_Motivational_Reel_k6l7dy.mp4",
     alt: "Ikaika Motivational Reel",
     isVideo: true,
   },
@@ -225,84 +235,86 @@ export const designMarqueeRightData = [
 export const designCarouselData = [
   {
     id: "1",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637870/EZ%20Website%20-%20Design/Work%20Section%20Carousel/edmund_website_gdnyzr.jpg",
+    src: distributionName + "/Design/Work/edmund_website_gdnyzr.jpg",
     alt: "Edmund Website",
     badge: "Web Design",
     isVideo: false,
   },
   {
     id: "2",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637974/EZ%20Website%20-%20Design/Work%20Section%20Carousel/phillipines_website_o0zb9x.jpg",
+    src: distributionName + "/Design/Work/phillipines_website_o0zb9x.jpg",
     alt: "Philippines Travel Website",
     badge: "Web Design",
     isVideo: false,
   },
   {
     id: "3",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_30/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    src: distributionName + "/Design/Work/Ikaika_Motivational_Reel_k6l7dy.mp4",
     alt: "Ikaika Motivational Reel",
     badge: "Reels",
     isVideo: true,
   },
   {
     id: "4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638353/EZ%20Website%20-%20Design/Work%20Section%20Carousel/black_pearl_branding_ypwjz5.jpg",
+    src: distributionName + "/Design/Work/black_pearl_branding_ypwjz5.jpg",
     alt: "Black Pearl Cafe Branding",
     badge: "Branding",
     isVideo: false,
   },
   {
     id: "5",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638400/EZ%20Website%20-%20Design/Work%20Section%20Carousel/uptania_branding_pvkykm.jpg",
+    src: distributionName + "/Design/Work/uptania_branding_pvkykm.jpg",
     alt: "Uptania Branding",
     badge: "Branding",
     isVideo: false,
   },
   {
     id: "6",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_45/v1713756798/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Oreo_Reel_super_final_rlocdk.mp4",
+    src: distributionName + "/Design/Work/Oreo_Reel_super_final_rlocdk.mp4",
     alt: "Oreo Reel",
     badge: "Reels",
     isVideo: true,
   },
   {
     id: "7",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638242/EZ%20Website%20-%20Design/Work%20Section%20Carousel/steves_black_sox_bpz5uv.jpg",
+    src: distributionName + "/Design/Work/steves_black_sox_bpz5uv.jpg",
     alt: "Steve's Tyre Service",
     badge: "Social Media",
     isVideo: false,
   },
   {
     id: "8",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
+    src: distributionName + "/Design/Work/peak_performance_sgqk8g.jpg",
     alt: "Peak Performance",
     badge: "Social Media",
     isVideo: false,
   },
   {
     id: "9",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_43/v1712984254/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/What_they_know_about_steves_reel_ifxohz.mp4",
+    src:
+      distributionName +
+      "/Design/Work/What_they_know_about_steves_reel_ifxohz.mp4",
     alt: "What they know about Steve's Reel",
     badge: "Reels",
     isVideo: true,
   },
   {
     id: "10",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713756992/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Good_earth_tours_Branding_zjlxmz.jpg",
+    src: distributionName + "/Design/Work/Good_earth_tours_Branding_zjlxmz.jpg",
     alt: "Good Earth Tours Branding",
     badge: "Branding",
     isVideo: false,
   },
   {
     id: "11",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712984003/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/black_pearl_social_media_oi1slb.jpg",
+    src: distributionName + "/Design/Work/black_pearl_social_media_oi1slb.jpg",
     alt: "Black Pearl Social Media",
     badge: "Social Media",
     isVideo: false,
   },
   {
     id: "12",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713766486/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Shareable_Giveaway_hiz45d.jpg",
+    src: distributionName + "/Design/Work/Shareable_Giveaway_hiz45d.jpg",
     alt: "Black Pearl Shareable Giveaway",
     badge: "Social Media",
     isVideo: false,
