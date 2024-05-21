@@ -18,6 +18,11 @@ const nextConfig = {
         hostname: "res.cloudinary.com",
         port: '',
       },
+      {
+        protocol: "https",
+        hostname: "d5st4psppqx3d.cloudfront.net",
+        port: '',
+      },
     ],
   },
 };

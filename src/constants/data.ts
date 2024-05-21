@@ -10,42 +10,52 @@ import {
   TestimonialsData,
 } from "@/types";
 
+const distributionName = "https://d5st4psppqx3d.cloudfront.net";
+
 // HOME PAGE DATA
 export const landingPageData = {
   design: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712637780/EZ%20Website%20-%20Design/Work%20Section%20Carousel/cupples_website_ladznn.jpg",
+      src: distributionName + "/Landing+Page/Design/cupples_website_ladznn.jpg",
       badge: "Web Design",
       isVideo: false,
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712638353/EZ%20Website%20-%20Design/Work%20Section%20Carousel/black_pearl_branding_ypwjz5.jpg",
+      src:
+        distributionName +
+        "/Landing+Page/Design/black_pearl_branding_ypwjz5.jpg",
       badge: "Branding",
       isVideo: false,
     },
     {
       id: "3",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_40/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Design/Ikaika_Motivational_Reel_k6l7dy.mp4",
       badge: "Reels",
       isVideo: true,
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
+      src:
+        distributionName + "/Landing+Page/Design/peak_performance_sgqk8g.jpg",
       badge: "Social Media",
       isVideo: false,
     },
     {
       id: "5",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713766486/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Shareable_Giveaway_hiz45d.jpg",
+      src:
+        distributionName + "/Landing+Page/Design/Shareable_Giveaway_hiz45d.jpg",
       badge: "Social Media",
       isVideo: false,
     },
     {
       id: "6",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_43/v1713756798/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Oreo_Reel_super_final_rlocdk.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Design/Oreo_Reel_super_final_rlocdk.mp4",
       badge: "Reels",
       isVideo: true,
     },
@@ -53,80 +63,98 @@ export const landingPageData = {
   creative: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510473/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_V_mjlm08.jpg",
+      src: distributionName + "/Landing+Page/Creative/Copy_of_V_mjlm08.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_45/v1711497879/EZ%20Website%20-%20Creative/Work%20Section/Rinse_Content_Final_Version_gk9vl8.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/Rinse_Content_Final_Version_gk9vl8.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "3",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510456/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_No_Ugly_2_vd5xg1.jpg",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/Copy_of_No_Ugly_2_vd5xg1.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_38/v1711497959/EZ%20Website%20-%20Creative/Work%20Section/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510429/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_Jarrah_pujknc.jpg",
+      src:
+        distributionName + "/Landing+Page/Creative/Copy_of_Jarrah_pujknc.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
 
     {
       id: "5",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_54/v1711497918/EZ%20Website%20-%20Creative/Work%20Section/Redbull_Zoomed_gfb6hv.mp4",
+      src:
+        distributionName + "/Landing+Page/Creative/Redbull_Zoomed_gfb6hv.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "6",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1714348758/EZ%20Website%20-%20Creative/Landing%20Page/Greenhill_Seltzers_1_bouwy7.jpg",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/Greenhill_Seltzers_1_bouwy7.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
     {
       id: "7",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_47/v1711497891/EZ%20Website%20-%20Creative/Work%20Section/Kiwiblue_Zoomed_jtmk4o.mp4",
+      src:
+        distributionName + "/Landing+Page/Creative/Kiwiblue_Zoomed_jtmk4o.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "8",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_45/v1714115547/EZ%20Website%20-%20Creative/Work%20Section/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "9",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712095539/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
     {
       id: "10",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_36/v1711497924/EZ%20Website%20-%20Creative/Work%20Section/Honey_Soy_1x1_zptjyf.mp4",
+      src: distributionName + "/Landing+Page/Creative/Honey_Soy_1x1_zptjyf.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "11",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_43/v1711497883/EZ%20Website%20-%20Creative/Work%20Section/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/Goju_Content_Reel_dhbmn7.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "12",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_48/v1714347679/EZ%20Website%20-%20Creative/Work%20Section/Nev_Reel_Final_rdt49z.mp4",
+      src:
+        distributionName + "/Landing+Page/Creative/Nev_Reel_Final_rdt49z.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
