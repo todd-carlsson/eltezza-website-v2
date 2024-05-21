@@ -1,6 +1,8 @@
+const distributionName = "https://d5st4psppqx3d.cloudfront.net";
+
 export const logos = {
   design:
-    "https://res.cloudinary.com/dsxzhd4c2/image/upload/q_60/v1712986935/EZ%20Website%20-%20Design/Final_Logo_Eltezza_Design_-_White_it63xt.png",
+    distributionName + "/Logos/Final_Logo_Eltezza_Design_-_White_it63xt.png",
   creative:
-    "https://res.cloudinary.com/dsxzhd4c2/image/upload/q_60/v1712986892/EZ%20Website%20-%20Creative/Final_Logo_Eltezza_Creative_-_White_oz5nrt.png",
+    distributionName + "/Logos/Final_Logo_Eltezza_Creative_-_White_oz5nrt.png",
 };

@@ -10,42 +10,52 @@ import {
   TestimonialsData,
 } from "@/types";
 
+const distributionName = "https://d5st4psppqx3d.cloudfront.net";
+
 // HOME PAGE DATA
 export const landingPageData = {
   design: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712637780/EZ%20Website%20-%20Design/Work%20Section%20Carousel/cupples_website_ladznn.jpg",
+      src: distributionName + "/Landing+Page/Design/cupples_website_ladznn.jpg",
       badge: "Web Design",
       isVideo: false,
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712638353/EZ%20Website%20-%20Design/Work%20Section%20Carousel/black_pearl_branding_ypwjz5.jpg",
+      src:
+        distributionName +
+        "/Landing+Page/Design/black_pearl_branding_ypwjz5.jpg",
       badge: "Branding",
       isVideo: false,
     },
     {
       id: "3",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_40/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Design/Ikaika_Motivational_Reel_k6l7dy.mp4",
       badge: "Reels",
       isVideo: true,
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
+      src:
+        distributionName + "/Landing+Page/Design/peak_performance_sgqk8g.jpg",
       badge: "Social Media",
       isVideo: false,
     },
     {
       id: "5",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713766486/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Shareable_Giveaway_hiz45d.jpg",
+      src:
+        distributionName + "/Landing+Page/Design/Shareable_Giveaway_hiz45d.jpg",
       badge: "Social Media",
       isVideo: false,
     },
     {
       id: "6",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_43/v1713756798/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Oreo_Reel_super_final_rlocdk.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Design/Oreo_Reel_super_final_rlocdk.mp4",
       badge: "Reels",
       isVideo: true,
     },
@@ -53,80 +63,98 @@ export const landingPageData = {
   creative: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510473/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_V_mjlm08.jpg",
+      src: distributionName + "/Landing+Page/Creative/Copy_of_V_mjlm08.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_45/v1711497879/EZ%20Website%20-%20Creative/Work%20Section/Rinse_Content_Final_Version_gk9vl8.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/Rinse_Content_Final_Version_gk9vl8.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "3",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510456/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_No_Ugly_2_vd5xg1.jpg",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/Copy_of_No_Ugly_2_vd5xg1.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_38/v1711497959/EZ%20Website%20-%20Creative/Work%20Section/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1713510429/EZ%20Website%20-%20Creative/Landing%20Page/Copy_of_Jarrah_pujknc.jpg",
+      src:
+        distributionName + "/Landing+Page/Creative/Copy_of_Jarrah_pujknc.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
 
     {
       id: "5",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_54/v1711497918/EZ%20Website%20-%20Creative/Work%20Section/Redbull_Zoomed_gfb6hv.mp4",
+      src:
+        distributionName + "/Landing+Page/Creative/Redbull_Zoomed_gfb6hv.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "6",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1714348758/EZ%20Website%20-%20Creative/Landing%20Page/Greenhill_Seltzers_1_bouwy7.jpg",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/Greenhill_Seltzers_1_bouwy7.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
     {
       id: "7",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_47/v1711497891/EZ%20Website%20-%20Creative/Work%20Section/Kiwiblue_Zoomed_jtmk4o.mp4",
+      src:
+        distributionName + "/Landing+Page/Creative/Kiwiblue_Zoomed_jtmk4o.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "8",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_45/v1714115547/EZ%20Website%20-%20Creative/Work%20Section/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "9",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_500/v1712095539/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
     {
       id: "10",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_36/v1711497924/EZ%20Website%20-%20Creative/Work%20Section/Honey_Soy_1x1_zptjyf.mp4",
+      src: distributionName + "/Landing+Page/Creative/Honey_Soy_1x1_zptjyf.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "11",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_43/v1711497883/EZ%20Website%20-%20Creative/Work%20Section/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Creative/Goju_Content_Reel_dhbmn7.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
       id: "12",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/c_scale,h_500,q_48/v1714347679/EZ%20Website%20-%20Creative/Work%20Section/Nev_Reel_Final_rdt49z.mp4",
+      src:
+        distributionName + "/Landing+Page/Creative/Nev_Reel_Final_rdt49z.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -137,25 +165,26 @@ export const landingPageData = {
 export const designMarqueeLeftData = [
   {
     id: "1",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
+    src: distributionName + "/Design/Marquee+Left/peak_performance_sgqk8g.jpg",
     alt: "Peak Performance",
     isVideo: false,
   },
   {
     id: "2",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712640516/EZ%20Website%20-%20Design/Hero%20Marquee%20LEFT/lokl_gym_branding_b0kavo.jpg",
+    src: distributionName + "/Design/Marquee+Left/lokl_gym_branding_b0kavo.jpg",
     alt: "LOKL Gym",
     isVideo: false,
   },
   {
     id: "3",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637974/EZ%20Website%20-%20Design/Work%20Section%20Carousel/phillipines_website_o0zb9x.jpg",
+    src:
+      distributionName + "/Design/Marquee+Left/phillipines_website_o0zb9x.jpg",
     alt: "Philippines Travel Website",
     isVideo: false,
   },
   {
     id: "4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712640773/EZ%20Website%20-%20Design/Hero%20Marquee%20LEFT/flanzy_branding_tkpepz.jpg",
+    src: distributionName + "/Design/Marquee+Left/flanzy_branding_tkpepz.jpg",
     alt: "Flanzy Branding",
     isVideo: false,
   },
@@ -164,31 +193,40 @@ export const designMarqueeLeftData = [
 export const designMarqueeRightData = [
   {
     id: "1",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712983995/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/fire_social_media_r3lqkm.jpg",
+    src:
+      distributionName + "/Design/Marquee+Right/fire_social_media_r3lqkm.jpg",
     alt: "Fire social media",
     isVideo: false,
   },
   {
     id: "2",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_38/v1712984277/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/Tonkotsu_Ramen_on_Fire_Reel_mpqmrp.mp4",
+    src:
+      distributionName +
+      "/Design/Marquee+Right/Tonkotsu_Ramen_on_Fire_Reel_mpqmrp.mp4",
     alt: "Tonkotsu Ramen on Fire Reel",
     isVideo: true,
   },
   {
     id: "3",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712984003/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/black_pearl_social_media_oi1slb.jpg",
+    src:
+      distributionName +
+      "/Design/Marquee+Right/black_pearl_social_media_oi1slb.jpg",
     alt: "Black Pearl social media",
     isVideo: false,
   },
   {
     id: "4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_38/v1712984254/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/What_they_know_about_steves_reel_ifxohz.mp4",
+    src:
+      distributionName +
+      "/Design/Marquee+Right/What_they_know_about_steves_reel_ifxohz.mp4",
     alt: "What they know about steves reel",
     isVideo: true,
   },
   {
     id: "5",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_38/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    src:
+      distributionName +
+      "/Design/Marquee+Right/Ikaika_Motivational_Reel_k6l7dy.mp4",
     alt: "Ikaika Motivational Reel",
     isVideo: true,
   },
@@ -197,84 +235,86 @@ export const designMarqueeRightData = [
 export const designCarouselData = [
   {
     id: "1",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637870/EZ%20Website%20-%20Design/Work%20Section%20Carousel/edmund_website_gdnyzr.jpg",
+    src: distributionName + "/Design/Work/edmund_website_gdnyzr.jpg",
     alt: "Edmund Website",
     badge: "Web Design",
     isVideo: false,
   },
   {
     id: "2",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712637974/EZ%20Website%20-%20Design/Work%20Section%20Carousel/phillipines_website_o0zb9x.jpg",
+    src: distributionName + "/Design/Work/phillipines_website_o0zb9x.jpg",
     alt: "Philippines Travel Website",
     badge: "Web Design",
     isVideo: false,
   },
   {
     id: "3",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_30/v1712638812/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    src: distributionName + "/Design/Work/Ikaika_Motivational_Reel_k6l7dy.mp4",
     alt: "Ikaika Motivational Reel",
     badge: "Reels",
     isVideo: true,
   },
   {
     id: "4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638353/EZ%20Website%20-%20Design/Work%20Section%20Carousel/black_pearl_branding_ypwjz5.jpg",
+    src: distributionName + "/Design/Work/black_pearl_branding_ypwjz5.jpg",
     alt: "Black Pearl Cafe Branding",
     badge: "Branding",
     isVideo: false,
   },
   {
     id: "5",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638400/EZ%20Website%20-%20Design/Work%20Section%20Carousel/uptania_branding_pvkykm.jpg",
+    src: distributionName + "/Design/Work/uptania_branding_pvkykm.jpg",
     alt: "Uptania Branding",
     badge: "Branding",
     isVideo: false,
   },
   {
     id: "6",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_45/v1713756798/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Oreo_Reel_super_final_rlocdk.mp4",
+    src: distributionName + "/Design/Work/Oreo_Reel_super_final_rlocdk.mp4",
     alt: "Oreo Reel",
     badge: "Reels",
     isVideo: true,
   },
   {
     id: "7",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638242/EZ%20Website%20-%20Design/Work%20Section%20Carousel/steves_black_sox_bpz5uv.jpg",
+    src: distributionName + "/Design/Work/steves_black_sox_bpz5uv.jpg",
     alt: "Steve's Tyre Service",
     badge: "Social Media",
     isVideo: false,
   },
   {
     id: "8",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712638181/EZ%20Website%20-%20Design/Work%20Section%20Carousel/peak_performance_sgqk8g.jpg",
+    src: distributionName + "/Design/Work/peak_performance_sgqk8g.jpg",
     alt: "Peak Performance",
     badge: "Social Media",
     isVideo: false,
   },
   {
     id: "9",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_43/v1712984254/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/What_they_know_about_steves_reel_ifxohz.mp4",
+    src:
+      distributionName +
+      "/Design/Work/What_they_know_about_steves_reel_ifxohz.mp4",
     alt: "What they know about Steve's Reel",
     badge: "Reels",
     isVideo: true,
   },
   {
     id: "10",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713756992/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Good_earth_tours_Branding_zjlxmz.jpg",
+    src: distributionName + "/Design/Work/Good_earth_tours_Branding_zjlxmz.jpg",
     alt: "Good Earth Tours Branding",
     badge: "Branding",
     isVideo: false,
   },
   {
     id: "11",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712984003/EZ%20Website%20-%20Design/Hero%20Marquee%20RIGHT/black_pearl_social_media_oi1slb.jpg",
+    src: distributionName + "/Design/Work/black_pearl_social_media_oi1slb.jpg",
     alt: "Black Pearl Social Media",
     badge: "Social Media",
     isVideo: false,
   },
   {
     id: "12",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713766486/EZ%20Website%20-%20Design/Work%20Section%20Carousel/Shareable_Giveaway_hiz45d.jpg",
+    src: distributionName + "/Design/Work/Shareable_Giveaway_hiz45d.jpg",
     alt: "Black Pearl Shareable Giveaway",
     badge: "Social Media",
     isVideo: false,
@@ -286,20 +326,25 @@ export const creativeHeroData = {
   video: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_40/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
+      src:
+        distributionName +
+        "/Creative/Hero/video/Eatkinda_Website_Video_dqohbd.mp4",
       thumbnail:
-        "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187412/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/EatKinda_TN_yclerg.jpg",
+        distributionName + "/Creative/Hero/video/EatKinda_TN_yclerg.jpg",
     },
   ] satisfies Array<CreativeHeroVideoData>,
   images: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712095539/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
+      src:
+        distributionName + "/Creative/Hero/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
       alt: "EatKinda Freezer",
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712095540/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Available_Woowlorths_Final_1.5x_zfnn1v.jpg",
+      src:
+        distributionName +
+        "/Creative/Hero/EatKinda_-_Available_Woowlorths_Final_1.5x_zfnn1v.jpg",
       alt: "EatKinda available at Woolworths",
     },
   ] satisfies Array<CreativeHeroImgData>,
@@ -309,10 +354,14 @@ export const creativeWorkData = [
   {
     id: "1",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1711497959/EZ%20Website%20-%20Creative/Work%20Section/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_49/v1711497959/EZ%20Website%20-%20Creative/Work%20Section/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
+      distributionName +
+      "/Creative/Work/RemarkableCream/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/RemarkableCream/REVISED_Remarkable_Video_Wide_ozrqog_LOWRES.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187627/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Remarkable_Cream_TN_ouqltl.jpg",
+      distributionName +
+      "/Creative/Work/RemarkableCream/Remarkable_Cream_TN_ouqltl.jpg",
     size: "large",
     client: "Remarkable Cream",
     campaign: "Crafted by nature, perfected by tradition",
@@ -320,10 +369,12 @@ export const creativeWorkData = [
   {
     id: "2",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1711497891/EZ%20Website%20-%20Creative/Work%20Section/Kiwiblue_Zoomed_jtmk4o.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_49/v1711497891/EZ%20Website%20-%20Creative/Work%20Section/Kiwiblue_Zoomed_jtmk4o.mp4",
+      distributionName + "/Creative/Work/KiwiBlue/Kiwiblue_Zoomed_jtmk4o.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/KiwiBlue/Kiwiblue_Zoomed_jtmk4o_LOWRES.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187514/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Kiwi_Blue_NT_qutbbd.jpg",
+      distributionName + "/Creative/Work/KiwiBlue/Kiwi_Blue_NT_qutbbd.jpg",
     size: "small",
     client: "Kiwi Blue",
     campaign: "Out of the blue",
@@ -331,10 +382,11 @@ export const creativeWorkData = [
   {
     id: "3",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1711497883/EZ%20Website%20-%20Creative/Work%20Section/Goju_Content_Reel_dhbmn7.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_55/v1711497883/EZ%20Website%20-%20Creative/Work%20Section/Goju_Content_Reel_dhbmn7.mp4",
-    thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187438/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Go_Ju_TN_irpemp.jpg",
+      distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+    thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
     size: "small",
     client: "Goju",
     campaign: "Need some pep in your step?",
@@ -342,10 +394,13 @@ export const creativeWorkData = [
   {
     id: "4",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1711497905/EZ%20Website%20-%20Creative/Work%20Section/Innerbloom_Zoomed_kozcl5.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_57/v1711497905/EZ%20Website%20-%20Creative/Work%20Section/Innerbloom_Zoomed_kozcl5.mp4",
+      distributionName +
+      "/Creative/Work/Innerbloom/Innerbloom_Zoomed_kozcl5.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/Innerbloom/Innerbloom_Zoomed_kozcl5_LOWRES.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187493/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Innerbloom_TN_r25fo4.jpg",
+      distributionName + "/Creative/Work/Innerbloom/Innerbloom_TN_r25fo4.jpg",
     size: "small",
     client: "Innerbloom",
     campaign: "My only one",
@@ -353,10 +408,13 @@ export const creativeWorkData = [
   {
     id: "5",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1714115547/EZ%20Website%20-%20Creative/Work%20Section/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_45/v1714115547/EZ%20Website%20-%20Creative/Work%20Section/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
+      distributionName +
+      "/Creative/Work/PEAQLaunch/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/PEAQLaunch/NEW_PEAQ_Launch_Video_1_vcfcud_LOWRES.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1714114484/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/PEAQ_ROCKET_rqw8an.jpg",
+      distributionName + "/Creative/Work/PEAQLaunch/PEAQ_ROCKET_rqw8an.jpg",
     size: "large",
     client: "PEAQ",
     campaign: "One tap away",
@@ -364,10 +422,12 @@ export const creativeWorkData = [
   {
     id: "6",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1714105902/EZ%20Website%20-%20Creative/Work%20Section/Reel_Bobby_jnsrcg.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_47/v1714105902/EZ%20Website%20-%20Creative/Work%20Section/Reel_Bobby_jnsrcg.mp4",
+      distributionName + "/Creative/Work/PEAQBobby/Reel_Bobby_jnsrcg.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/PEAQBobby/Reel_Bobby_jnsrcg_LOWRES.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715553783/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Bobby_Reaching_lzw3ry.jpg",
+      distributionName + "/Creative/Work/PEAQBobby/Bobby_Reaching_lzw3ry.jpg",
     size: "small",
     client: "PEAQ",
     campaign: "One tap away",
@@ -375,10 +435,11 @@ export const creativeWorkData = [
   {
     id: "7",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_69/v1715553855/EZ%20Website%20-%20Creative/Work%20Section/AP_Reel_nhvysa.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_47/v1715553855/EZ%20Website%20-%20Creative/Work%20Section/AP_Reel_nhvysa.mp4",
+      distributionName + "/Creative/Work/PEAQAlex/AP_Reel_nhvysa.mp4",
+    src: distributionName + "/Creative/Work/PEAQAlex/AP_Reel_nhvysa_LOWRES.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715643448/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Alex_P_-_Thumbnail_sgrabf.jpg",
+      distributionName +
+      "/Creative/Work/PEAQAlex/Alex_P_-_Thumbnail_sgrabf.jpg",
     size: "small",
     client: "PEAQ",
     campaign: "One tap away",
@@ -386,10 +447,13 @@ export const creativeWorkData = [
   {
     id: "8",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1714347679/EZ%20Website%20-%20Creative/Work%20Section/Nev_Reel_Final_rdt49z.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_48/v1714347679/EZ%20Website%20-%20Creative/Work%20Section/Nev_Reel_Final_rdt49z.mp4",
+      distributionName + "/Creative/Work/PEAQNeve/Nev_Reel_Final_rdt49z.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/PEAQNeve/Nev_Reel_Final_rdt49z_LOWRES.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/q_63/v1714348625/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Neve_-_Website_Thumbnail_o46hwp.jpg",
+      distributionName +
+      "/Creative/Work/PEAQNeve/Neve_-_Website_Thumbnail_o46hwp.jpg",
     size: "small",
     client: "PEAQ",
     campaign: "One tap away",
@@ -397,10 +461,13 @@ export const creativeWorkData = [
   {
     id: "9",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_50/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
+      distributionName +
+      "/Creative/Work/Eatkinda/Eatkinda_Website_Video_dqohbd.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/Eatkinda/Eatkinda_Website_Video_dqohbd_LOWRES.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187412/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/EatKinda_TN_yclerg.jpg",
+      distributionName + "/Creative/Work/Eatkinda/EatKinda_TN_yclerg.jpg",
     size: "large",
     client: "Eatkinda",
     campaign: "Kinda different, totally delicious",
@@ -409,10 +476,12 @@ export const creativeWorkData = [
   {
     id: "10",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1711497924/EZ%20Website%20-%20Creative/Work%20Section/Honey_Soy_1x1_zptjyf.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_41/v1711497924/EZ%20Website%20-%20Creative/Work%20Section/Honey_Soy_1x1_zptjyf.mp4",
+      distributionName + "/Creative/Work/HoneySoy/Honey_Soy_1x1_zptjyf.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/HoneySoy/Honey_Soy_1x1_zptjyf_LOWRES.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187469/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Honey_Soy_TN_kscrr3.jpg",
+      distributionName + "/Creative/Work/HoneySoy/Honey_Soy_TN_kscrr3.jpg",
     size: "medium",
     client: "Black Pearl",
     campaign: "Glazing perfection",
@@ -420,10 +489,10 @@ export const creativeWorkData = [
   {
     id: "11",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1711499368/EZ%20Website%20-%20Creative/Work%20Section/Snowy_G_1x1_fxji0j.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_57/v1711499368/EZ%20Website%20-%20Creative/Work%20Section/Snowy_G_1x1_fxji0j.mp4",
-    thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187682/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Snowy_G_TN_miougx.jpg",
+      distributionName + "/Creative/Work/SnowyG/Snowy_G_1x1_fxji0j.mp4",
+    src:
+      distributionName + "/Creative/Work/SnowyG/Snowy_G_1x1_fxji0j_LOWRES.mp4",
+    thumbnail: distributionName + "/Creative/Work/SnowyG/Snowy_G_TN_miougx.jpg",
     size: "medium",
     client: "Black Pearl",
     campaign: "It goes beyond the mayo",
@@ -431,10 +500,12 @@ export const creativeWorkData = [
   {
     id: "12",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1711497879/EZ%20Website%20-%20Creative/Work%20Section/Rinse_Content_Final_Version_gk9vl8.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_55/v1711497879/EZ%20Website%20-%20Creative/Work%20Section/Rinse_Content_Final_Version_gk9vl8.mp4",
-    thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187656/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Rinse_TN_nuwajl.jpg",
+      distributionName +
+      "/Creative/Work/Rinse/Rinse_Content_Final_Version_gk9vl8.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/Rinse/Rinse_Content_Final_Version_gk9vl8_LOWRES.mp4",
+    thumbnail: distributionName + "/Creative/Work/Rinse/Rinse_TN_nuwajl.jpg",
     size: "large",
     client: "Rinse Vodka",
     campaign: "Because one is not enough",
@@ -442,10 +513,12 @@ export const creativeWorkData = [
   {
     id: "13",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1711497918/EZ%20Website%20-%20Creative/Work%20Section/Redbull_Zoomed_gfb6hv.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_54/v1711497918/EZ%20Website%20-%20Creative/Work%20Section/Redbull_Zoomed_gfb6hv.mp4",
+      distributionName + "/Creative/Work/Redbull/Redbull_Zoomed_gfb6hv.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/Redbull/Redbull_Zoomed_gfb6hv_LOWRES.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187600/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Redbull_TN_eqmilw.jpg",
+      distributionName + "/Creative/Work/Redbull/Redbull_TN_eqmilw.jpg",
     size: "small",
     client: "Red Bull",
     campaign: "The new wings in town",
@@ -453,10 +526,12 @@ export const creativeWorkData = [
   {
     id: "14",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1711497923/EZ%20Website%20-%20Creative/Work%20Section/Charlie_Zoomed_nuafy8.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_47/v1711497923/EZ%20Website%20-%20Creative/Work%20Section/Charlie_Zoomed_nuafy8.mp4",
+      distributionName + "/Creative/Work/Charlies/Charlie_Zoomed_nuafy8.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/Charlies/Charlie_Zoomed_nuafy8_LOWRES.mp4",
     thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187381/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Charlies_TN_xbihz7.jpg",
+      distributionName + "/Creative/Work/Charlies/Charlies_TN_xbihz7.jpg",
     size: "small",
     client: "Charlie's",
     campaign: "Shake up the good stuff!",
@@ -464,10 +539,11 @@ export const creativeWorkData = [
   {
     id: "15",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1711497916/EZ%20Website%20-%20Creative/Work%20Section/Live_Content_Reel_npbkph.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_48/v1711497916/EZ%20Website%20-%20Creative/Work%20Section/Live_Content_Reel_npbkph.mp4",
-    thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187576/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/Live_TN_zvkmkn.jpg",
+      distributionName + "/Creative/Work/Live/Live_Content_Reel_npbkph.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/Live/Live_Content_Reel_npbkph_LOWRES.mp4",
+    thumbnail: distributionName + "/Creative/Work/Live/Live_TN_zvkmkn.jpg",
     size: "small",
     client: "Live+",
     campaign: "Electrified living",
@@ -475,10 +551,9 @@ export const creativeWorkData = [
   {
     id: "16",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711498021/EZ%20Website%20-%20Creative/Work%20Section/KMART_KWTA_ultgma.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/v1711498021/EZ%20Website%20-%20Creative/Work%20Section/KMART_KWTA_ultgma.mp4",
-    thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187551/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/KMART_TN_fnsr1v.jpg",
+      distributionName + "/Creative/Work/Kmart/KMART_KWTA_ultgma.mp4",
+    src: distributionName + "/Creative/Work/Kmart/KMART_KWTA_ultgma.mp4",
+    thumbnail: distributionName + "/Creative/Work/Kmart/KMART_TN_fnsr1v.jpg",
     size: "medium",
     client: "KMart",
     campaign: "Wishing tree appeal",
@@ -486,10 +561,11 @@ export const creativeWorkData = [
   {
     id: "17",
     srcHighQuality:
-      "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_70/v1711498114/EZ%20Website%20-%20Creative/Work%20Section/Ball_Animation_1x1_yp7ku1.mp4",
-    src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_56/v1711498114/EZ%20Website%20-%20Creative/Work%20Section/Ball_Animation_1x1_yp7ku1.mp4",
-    thumbnail:
-      "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187345/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/3D_Ball_TN_nskugx.jpg",
+      distributionName + "/Creative/Work/Ball/Ball_Animation_1x1_yp7ku1.mp4",
+    src:
+      distributionName +
+      "/Creative/Work/Ball/Ball_Animation_1x1_yp7ku1_LOWRES.mp4",
+    thumbnail: distributionName + "/Creative/Work/Ball/3D_Ball_TN_nskugx.jpg",
     size: "medium",
     client: "3D Ball",
     campaign: "Infinite alignment",
@@ -547,13 +623,13 @@ export const featuredReviewData = {
     review:
       "Excellent team to deal with. They have collaborated with us on a lot of aspects including social media, ads, and a fresh re-brand, this has enabled us to become more recognizable as we aim to further expand to new locations. Most importantly they enjoy what they do.",
     name: "Paul Leang, Director of Formosa Pacific Limited",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_100/v1712725782/EZ%20Website%20-%20Design/Featured%20Review%20Image/Paul_fbfqqr.png",
+    src: distributionName + "/Design/Feat_Review/Paul_fbfqqr.png",
   } satisfies FeaturedReviewData,
   creative: {
     review:
       "We engaged Eltezza for the animation of a corporate project for one of Australia's well-known brands, and it was an absolute pleasure. They comprehended the brief exceptionally well and executed it with precision. The client was extremely satisfied!",
     name: "Arielle Thomas, CinemaThom",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_100/v1712725682/EZ%20Website%20-%20Creative/Featured%20Review%20Image/Arielle_hwmabn.png",
+    src: distributionName + "/Creative/Feat_Review/Arielle_hwmabn.png",
   } satisfies FeaturedReviewData,
 };
 
@@ -709,7 +785,9 @@ export const teamData = {
     {
       id: "1",
       name: "Chris Teneza",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715647107/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
+      src:
+        distributionName +
+        "/Design/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1715647107/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
       position: "Creative Director",
@@ -717,7 +795,9 @@ export const teamData = {
     {
       id: "2",
       name: "Mo Eltayeb",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709569/EZ%20Website%20-%20Design/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
+      src:
+        distributionName +
+        "/Design/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709569/EZ%20Website%20-%20Design/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
       position: "Managing Director",
@@ -725,7 +805,9 @@ export const teamData = {
     {
       id: "3",
       name: "Pradeep Chhetri",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709592/EZ%20Website%20-%20Design/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
+      src:
+        distributionName +
+        "/Design/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709592/EZ%20Website%20-%20Design/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
       position: "Account Manager",
@@ -733,7 +815,9 @@ export const teamData = {
     {
       id: "4",
       name: "Danilo Herrera",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709515/EZ%20Website%20-%20Design/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
+      src:
+        distributionName +
+        "/Design/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709515/EZ%20Website%20-%20Design/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
       position: "Business Strategist",
@@ -741,7 +825,9 @@ export const teamData = {
     {
       id: "5",
       name: "Elisa Hickton",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715732923/EZ%20Website%20-%20Design/Team/Elisa_Hickton_-_Content_Producer_mjkeyq.jpg",
+      src:
+        distributionName +
+        "/Design/Team/Elisa_Hickton_-_Content_Producer_mjkeyq.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1715732923/EZ%20Website%20-%20Design/Team/Elisa_Hickton_-_Content_Producer_mjkeyq.jpg",
       position: "Content Producer",
@@ -749,7 +835,9 @@ export const teamData = {
     {
       id: "6",
       name: "Todd Carlsson",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715919824/EZ%20Website%20-%20Design/Team/Todd_Carlsson_-_Web_Developer_wnk07m.jpg",
+      src:
+        distributionName +
+        "/Design/Team/Todd_Carlsson_-_Web_Developer_wnk07m.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1715919824/EZ%20Website%20-%20Design/Team/Todd_Carlsson_-_Web_Developer_wnk07m.jpg",
       position: "Web Developer",
@@ -757,7 +845,9 @@ export const teamData = {
     {
       id: "7",
       name: "Shay Gillanders",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709619/EZ%20Website%20-%20Design/Team/Shay_Gillanders_-_Visual_Designer_ap1gci.jpg",
+      src:
+        distributionName +
+        "/Design/Team/Shay_Gillanders_-_Visual_Designer_ap1gci.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709619/EZ%20Website%20-%20Design/Team/Shay_Gillanders_-_Visual_Designer_ap1gci.jpg",
       position: "Visual Designer",
@@ -765,7 +855,9 @@ export const teamData = {
     {
       id: "8",
       name: "Aileen Banzagales",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713243560/EZ%20Website%20-%20Design/Team/Aileen_Banzagles_-_Graphic_Designer_oompl5.jpg",
+      src:
+        distributionName +
+        "/Design/Team/Aileen_Banzagles_-_Graphic_Designer_oompl5.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1713243560/EZ%20Website%20-%20Design/Team/Aileen_Banzagles_-_Graphic_Designer_oompl5.jpg",
       position: "Graphic Designer",
@@ -773,7 +865,9 @@ export const teamData = {
     {
       id: "9",
       name: "Jimwell Manlusoc",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713331347/EZ%20Website%20-%20Design/Team/Jimwell_Manlusoc_-_UI_UX_Designer_adui9h.jpg",
+      src:
+        distributionName +
+        "/Design/Team/Jimwell_Manlusoc_-_UI_UX_Designer_adui9h.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1713331347/EZ%20Website%20-%20Design/Team/Jimwell_Manlusoc_-_UI_UX_Designer_adui9h.jpg",
       position: "UI/UX Designer",
@@ -783,7 +877,9 @@ export const teamData = {
     {
       id: "1",
       name: "Chris Teneza",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715647107/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
+      src:
+        distributionName +
+        "/Creative/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1715647107/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
       position: "Creative Director",
@@ -791,7 +887,9 @@ export const teamData = {
     {
       id: "2",
       name: "Mo Eltayeb",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709569/EZ%20Website%20-%20Design/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
+      src:
+        distributionName +
+        "/Creative/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709569/EZ%20Website%20-%20Design/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
       position: "Managing Director",
@@ -799,7 +897,9 @@ export const teamData = {
     {
       id: "3",
       name: "Pradeep Chhetri",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709592/EZ%20Website%20-%20Design/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
+      src:
+        distributionName +
+        "/Creative/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709592/EZ%20Website%20-%20Design/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
       position: "Account Manager",
@@ -807,7 +907,9 @@ export const teamData = {
     {
       id: "4",
       name: "Danilo Herrera",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709515/EZ%20Website%20-%20Design/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
+      src:
+        distributionName +
+        "/Creative/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709515/EZ%20Website%20-%20Design/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
       position: "Business Strategist",
@@ -815,7 +917,9 @@ export const teamData = {
     {
       id: "5",
       name: "Ilyas Megarbi",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713331517/EZ%20Website%20-%20Design/Team/Ilyas_Megarbi_-_Graphic_Designer_agv0jc.jpg",
+      src:
+        distributionName +
+        "/Creative/Team/Ilyas_Megarbi_-_Graphic_Designer_agv0jc.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1713331517/EZ%20Website%20-%20Design/Team/Ilyas_Megarbi_-_Graphic_Designer_agv0jc.jpg",
       position: "Graphic Designer",
@@ -823,7 +927,9 @@ export const teamData = {
     {
       id: "6",
       name: "King Raffy",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709685/EZ%20Website%20-%20Creative/Team/King_Raffy_-_Visual_Designer_bxau6w.jpg",
+      src:
+        distributionName +
+        "/Creative/Team/King_Raffy_-_Visual_Designer_bxau6w.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709685/EZ%20Website%20-%20Creative/Team/King_Raffy_-_Visual_Designer_bxau6w.jpg",
       position: "Visual Designer",
@@ -835,7 +941,9 @@ export const btsData = {
   design: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_73/v1712186772/EZ%20Website%20-%20Design/BTS/Photos/Sharing_our_experience_with_amazing_uni_students_dewbey.jpg",
+      src:
+        distributionName +
+        "/Design/BTS/Sharing_our_experience_with_amazing_uni_students_dewbey.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712186772/EZ%20Website%20-%20Design/BTS/Photos/Sharing_our_experience_with_amazing_uni_students_dewbey.jpg",
       alt: "Sharing our experience with amazing uni students!",
@@ -843,13 +951,15 @@ export const btsData = {
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1714967879/EZ%20Website%20-%20Design/BTS/Videos/IMG_4369_dpuon2.mp4",
+      src: distributionName + "/Design/BTS/IMG_4369_dpuon2.mp4",
       alt: "Chris filming food",
       isVideo: true,
     },
     {
       id: "3",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_71/v1712186669/EZ%20Website%20-%20Design/BTS/Photos/Meeting_with_an_industry_veteran_dfxypu.jpg",
+      src:
+        distributionName +
+        "/Design/BTS/Meeting_with_an_industry_veteran_dfxypu.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712186669/EZ%20Website%20-%20Design/BTS/Photos/Meeting_with_an_industry_veteran_dfxypu.jpg",
       alt: "Meeting with an industry veteran",
@@ -857,13 +967,15 @@ export const btsData = {
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1714967847/EZ%20Website%20-%20Design/BTS/Videos/IMG_4320_qlu2jw.mp4",
+      src: distributionName + "/Design/BTS/IMG_4320_qlu2jw.mp4",
       alt: "Chris trying to use chopsticks",
       isVideo: true,
     },
     {
       id: "5",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_75/v1712186802/EZ%20Website%20-%20Design/BTS/Photos/Invited_to_be_part_of_a_panel_for_design_students_yiivm9.jpg",
+      src:
+        distributionName +
+        "/Design/BTS/Invited_to_be_part_of_a_panel_for_design_students_yiivm9.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712186802/EZ%20Website%20-%20Design/BTS/Photos/Invited_to_be_part_of_a_panel_for_design_students_yiivm9.jpg",
       alt: "Invited to be part of a panel for design students",
@@ -871,13 +983,13 @@ export const btsData = {
     },
     {
       id: "6",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_58/v1714967819/EZ%20Website%20-%20Design/BTS/Videos/IMG_0188_s6xzvp.mp4",
+      src: distributionName + "/Design/BTS/IMG_0188_s6xzvp.mp4",
       alt: "Behind the scenes at Steve's Tyre Service",
       isVideo: true,
     },
     {
       id: "7",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712186637/EZ%20Website%20-%20Design/BTS/Photos/In_the_zone_ockvgx.jpg",
+      src: distributionName + "/Design/BTS/In_the_zone_ockvgx.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712186637/EZ%20Website%20-%20Design/BTS/Photos/In_the_zone_ockvgx.jpg",
       alt: "In the zone",
@@ -885,7 +997,7 @@ export const btsData = {
     },
     {
       id: "8",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_71/v1712186745/EZ%20Website%20-%20Design/BTS/Photos/IMG_4587_uwiyp8.jpg",
+      src: distributionName + "/Design/BTS/IMG_4587_uwiyp8.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_15/v1712186745/EZ%20Website%20-%20Design/BTS/Photos/IMG_4587_uwiyp8.jpg",
       alt: "Thumbs up!",
@@ -893,7 +1005,7 @@ export const btsData = {
     },
     {
       id: "9",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712186598/EZ%20Website%20-%20Design/BTS/Photos/IMG_3768_wtjkw3.jpg",
+      src: distributionName + "/Design/BTS/IMG_3768_wtjkw3.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712186598/EZ%20Website%20-%20Design/BTS/Photos/IMG_3768_wtjkw3.jpg",
       alt: "Working in the office",
@@ -901,13 +1013,13 @@ export const btsData = {
     },
     {
       id: "10",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1714967793/EZ%20Website%20-%20Design/BTS/Videos/IMG_0181_ukibqj.mp4",
+      src: distributionName + "/Design/BTS/IMG_0181_ukibqj.mp4",
       alt: "Behind the scenes at Steve's Tyre Service",
       isVideo: true,
     },
     {
       id: "11",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712186558/EZ%20Website%20-%20Design/BTS/Photos/IMG_3648_sxvsam.jpg",
+      src: distributionName + "/Design/BTS/IMG_3648_sxvsam.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712186558/EZ%20Website%20-%20Design/BTS/Photos/IMG_3648_sxvsam.jpg",
       alt: "Photoshoot time!",
@@ -915,7 +1027,7 @@ export const btsData = {
     },
     {
       id: "12",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183912/EZ%20Website%20-%20Design/BTS/Photos/IMG_0221_mo4hz0.jpg",
+      src: distributionName + "/Design/BTS/IMG_0221_mo4hz0.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183912/EZ%20Website%20-%20Design/BTS/Photos/IMG_0221_mo4hz0.jpg",
       alt: "Client meeting with Mo and Chris",
@@ -923,7 +1035,7 @@ export const btsData = {
     },
     {
       id: "13",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750/v1712183905/EZ%20Website%20-%20Design/BTS/Photos/Client_Meeting_gvffpg.jpg",
+      src: distributionName + "/Design/BTS/Client_Meeting_gvffpg.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183905/EZ%20Website%20-%20Design/BTS/Photos/Client_Meeting_gvffpg.jpg",
       alt: "Client meeting with Danilo and Mo",
@@ -931,7 +1043,8 @@ export const btsData = {
     },
     {
       id: "14",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183893/EZ%20Website%20-%20Design/BTS/Photos/_What_do_we_do_at_Eltezza__hiejen.jpg",
+      src:
+        distributionName + "/Design/BTS/_What_do_we_do_at_Eltezza__hiejen.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_15/v1712183893/EZ%20Website%20-%20Design/BTS/Photos/_What_do_we_do_at_Eltezza__hiejen.jpg",
       alt: "What do we do at Eltezza?",
@@ -941,7 +1054,9 @@ export const btsData = {
   creative: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183208/EZ%20Website%20-%20Creative/BTS/Photos/Sharing_the_stage_with_other_awesome_agencies_fnds14.jpg",
+      src:
+        distributionName +
+        "/Creative/BTS/Sharing_the_stage_with_other_awesome_agencies_fnds14.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_15/v1712183208/EZ%20Website%20-%20Creative/BTS/Photos/Sharing_the_stage_with_other_awesome_agencies_fnds14.jpg",
       alt: "Sharing the stage with other awesome agencies",
@@ -949,13 +1064,13 @@ export const btsData = {
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1714967262/EZ%20Website%20-%20Creative/BTS/Videos/IMG_2974_zzlgzw.mp4",
+      src: distributionName + "/Creative/BTS/IMG_2974_zzlgzw.mp4",
       alt: "Filming",
       isVideo: true,
     },
     {
       id: "3",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183143/EZ%20Website%20-%20Creative/BTS/Photos/Pradeep_qorjpw.jpg",
+      src: distributionName + "/Creative/BTS/Pradeep_qorjpw.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183143/EZ%20Website%20-%20Creative/BTS/Photos/Pradeep_qorjpw.jpg",
       alt: "Pradeep!",
@@ -963,13 +1078,13 @@ export const btsData = {
     },
     {
       id: "4",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1714967247/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0289_s9kbnw.mp4",
+      src: distributionName + "/Creative/BTS/IMG_0289_s9kbnw.mp4",
       alt: "Goju behind the scenes",
       isVideo: true,
     },
     {
       id: "5",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183099/EZ%20Website%20-%20Creative/BTS/Photos/Mo_Chris_Ben_hk4if5.jpg",
+      src: distributionName + "/Creative/BTS/Mo_Chris_Ben_hk4if5.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_15/v1712183099/EZ%20Website%20-%20Creative/BTS/Photos/Mo_Chris_Ben_hk4if5.jpg",
       alt: "Mo, Chris and Ben",
@@ -977,13 +1092,13 @@ export const btsData = {
     },
     {
       id: "6",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1714967229/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0268_swi4xa.mp4",
+      src: distributionName + "/Creative/BTS/IMG_0268_swi4xa.mp4",
       alt: "Dunk!",
       isVideo: true,
     },
     {
       id: "7",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183049/EZ%20Website%20-%20Creative/BTS/Photos/IMG_7073_kxjqe6.jpg",
+      src: distributionName + "/Creative/BTS/IMG_7073_kxjqe6.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183049/EZ%20Website%20-%20Creative/BTS/Photos/IMG_7073_kxjqe6.jpg",
       alt: "Chris with Seltzers boxes",
@@ -991,13 +1106,13 @@ export const btsData = {
     },
     {
       id: "8",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_65/v1714967218/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0265_oq3usj.mp4",
+      src: distributionName + "/Creative/BTS/IMG_0265_oq3usj.mp4",
       alt: "Slam that Rinse can",
       isVideo: true,
     },
     {
       id: "9",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183002/EZ%20Website%20-%20Creative/BTS/Photos/IMG_3067_ocmthz.jpg",
+      src: distributionName + "/Creative/BTS/IMG_3067_ocmthz.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183002/EZ%20Website%20-%20Creative/BTS/Photos/IMG_3067_ocmthz.jpg",
       alt: "Vitality Bites BTS",
@@ -1005,7 +1120,7 @@ export const btsData = {
     },
     {
       id: "10",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712182947/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0373_eg7qqi.jpg",
+      src: distributionName + "/Creative/BTS/IMG_0373_eg7qqi.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712182947/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0373_eg7qqi.jpg",
       alt: "Vitality Bites Photoshoot",
@@ -1013,7 +1128,7 @@ export const btsData = {
     },
     {
       id: "11",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712182886/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0293_jmaghr.jpg",
+      src: distributionName + "/Creative/BTS/IMG_0293_jmaghr.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712182886/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0293_jmaghr.jpg",
       alt: "Filming setup",
@@ -1021,13 +1136,13 @@ export const btsData = {
     },
     {
       id: "12",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_62/v1714967207/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0178_kog9qh.mp4",
+      src: distributionName + "/Creative/BTS/IMG_0178_kog9qh.mp4",
       alt: "Chris the Barista",
       isVideo: true,
     },
     {
       id: "13",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712182821/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0292_ol8zrs.jpg",
+      src: distributionName + "/Creative/BTS/IMG_0292_ol8zrs.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712182821/EZ%20Website%20-%20Creative/BTS/Photos/IMG_0292_ol8zrs.jpg",
       alt: "Hangin' the Goju bottle",
@@ -1035,13 +1150,13 @@ export const btsData = {
     },
     {
       id: "14",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1714967191/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0162_kdykqr.mp4",
+      src: distributionName + "/Creative/BTS/IMG_0162_kdykqr.mp4",
       alt: "Video editing",
       isVideo: true,
     },
     {
       id: "15",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712182568/EZ%20Website%20-%20Creative/BTS/Photos/I_see_you_d7wnxc.jpg",
+      src: distributionName + "/Creative/BTS/I_see_you_d7wnxc.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_15/v1712182568/EZ%20Website%20-%20Creative/BTS/Photos/I_see_you_d7wnxc.jpg",
       alt: "I see you!",
@@ -1049,13 +1164,13 @@ export const btsData = {
     },
     {
       id: "16",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_63/v1714967166/EZ%20Website%20-%20Creative/BTS/Videos/IMG_0152_weisck.mp4",
+      src: distributionName + "/Creative/BTS/IMG_0152_weisck.mp4",
       alt: "Honey Soy Chicken BTS",
       isVideo: true,
     },
     {
       id: "17",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712182647/EZ%20Website%20-%20Creative/BTS/Photos/Give_us_ya_best_pose_wsanck.jpg",
+      src: distributionName + "/Creative/BTS/Give_us_ya_best_pose_wsanck.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712182647/EZ%20Website%20-%20Creative/BTS/Photos/Give_us_ya_best_pose_wsanck.jpg",
       alt: "Give us ya best pose!",
@@ -1063,13 +1178,13 @@ export const btsData = {
     },
     {
       id: "18",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_60/v1714967179/EZ%20Website%20-%20Creative/BTS/Videos/Copy_of_IMG_0275_cq2av0.mp4",
+      src: distributionName + "/Creative/BTS/Copy_of_IMG_0275_cq2av0.mp4",
       alt: "Filming BTS",
       isVideo: true,
     },
     {
       id: "19",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183283/EZ%20Website%20-%20Creative/BTS/Photos/Danny_fowga4.jpg",
+      src: distributionName + "/Creative/BTS/Danny_fowga4.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183283/EZ%20Website%20-%20Creative/BTS/Photos/Danny_fowga4.jpg",
       alt: "Danny!",
@@ -1077,7 +1192,7 @@ export const btsData = {
     },
     {
       id: "20",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_750,q_70/v1712183244/EZ%20Website%20-%20Creative/BTS/Photos/Chris_CEO_qiaopi.jpg",
+      src: distributionName + "/Creative/BTS/Chris_CEO_qiaopi.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_17/v1712183244/EZ%20Website%20-%20Creative/BTS/Photos/Chris_CEO_qiaopi.jpg",
       alt: "Chris CEO",
