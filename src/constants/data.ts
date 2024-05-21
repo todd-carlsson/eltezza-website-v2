@@ -62,13 +62,13 @@ export const landingPageData = {
   ] as Array<CarouselData>,
   creative: [
     {
-      id: "1",
+      id: "7",
       src: distributionName + "/Landing+Page/Creative/Copy_of_V_mjlm08.jpg",
       badge: "Advertising Imagery",
       isVideo: false,
     },
     {
-      id: "2",
+      id: "8",
       src:
         distributionName +
         "/Landing+Page/Creative/Rinse_Content_Final_Version_gk9vl8.mp4",
@@ -76,7 +76,7 @@ export const landingPageData = {
       isVideo: true,
     },
     {
-      id: "3",
+      id: "9",
       src:
         distributionName +
         "/Landing+Page/Creative/Copy_of_No_Ugly_2_vd5xg1.jpg",
@@ -84,7 +84,7 @@ export const landingPageData = {
       isVideo: false,
     },
     {
-      id: "4",
+      id: "10",
       src:
         distributionName +
         "/Landing+Page/Creative/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
@@ -92,7 +92,7 @@ export const landingPageData = {
       isVideo: true,
     },
     {
-      id: "4",
+      id: "11",
       src:
         distributionName + "/Landing+Page/Creative/Copy_of_Jarrah_pujknc.jpg",
       badge: "Advertising Imagery",
@@ -100,14 +100,14 @@ export const landingPageData = {
     },
 
     {
-      id: "5",
+      id: "12",
       src:
         distributionName + "/Landing+Page/Creative/Redbull_Zoomed_gfb6hv.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
-      id: "6",
+      id: "13",
       src:
         distributionName +
         "/Landing+Page/Creative/Greenhill_Seltzers_1_bouwy7.jpg",
@@ -115,14 +115,14 @@ export const landingPageData = {
       isVideo: false,
     },
     {
-      id: "7",
+      id: "14",
       src:
         distributionName + "/Landing+Page/Creative/Kiwiblue_Zoomed_jtmk4o.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
-      id: "8",
+      id: "15",
       src:
         distributionName +
         "/Landing+Page/Creative/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
@@ -130,7 +130,7 @@ export const landingPageData = {
       isVideo: true,
     },
     {
-      id: "9",
+      id: "16",
       src:
         distributionName +
         "/Landing+Page/Creative/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
@@ -138,13 +138,13 @@ export const landingPageData = {
       isVideo: false,
     },
     {
-      id: "10",
+      id: "17",
       src: distributionName + "/Landing+Page/Creative/Honey_Soy_1x1_zptjyf.mp4",
       badge: "Promotional Video",
       isVideo: true,
     },
     {
-      id: "11",
+      id: "18",
       src:
         distributionName +
         "/Landing+Page/Creative/Goju_Content_Reel_dhbmn7.mp4",
@@ -152,7 +152,7 @@ export const landingPageData = {
       isVideo: true,
     },
     {
-      id: "12",
+      id: "19",
       src:
         distributionName + "/Landing+Page/Creative/Nev_Reel_Final_rdt49z.mp4",
       badge: "Promotional Video",
