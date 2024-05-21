@@ -587,13 +587,13 @@ export const featuredReviewData = {
     review:
       "Excellent team to deal with. They have collaborated with us on a lot of aspects including social media, ads, and a fresh re-brand, this has enabled us to become more recognizable as we aim to further expand to new locations. Most importantly they enjoy what they do.",
     name: "Paul Leang, Director of Formosa Pacific Limited",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_100/v1712725782/EZ%20Website%20-%20Design/Featured%20Review%20Image/Paul_fbfqqr.png",
+    src: distributionName + "/Design/Feat_Review/Paul_fbfqqr.png",
   } satisfies FeaturedReviewData,
   creative: {
     review:
       "We engaged Eltezza for the animation of a corporate project for one of Australia's well-known brands, and it was an absolute pleasure. They comprehended the brief exceptionally well and executed it with precision. The client was extremely satisfied!",
     name: "Arielle Thomas, CinemaThom",
-    src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_100/v1712725682/EZ%20Website%20-%20Creative/Featured%20Review%20Image/Arielle_hwmabn.png",
+    src: distributionName + "/Creative/Feat_Review/Arielle_hwmabn.png",
   } satisfies FeaturedReviewData,
 };
 
