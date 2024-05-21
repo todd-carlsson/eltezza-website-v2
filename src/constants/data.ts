@@ -846,7 +846,9 @@ export const teamData = {
     {
       id: "1",
       name: "Chris Teneza",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1715647107/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
+      src:
+        distributionName +
+        "/Creative/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1715647107/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
       position: "Creative Director",
@@ -854,7 +856,9 @@ export const teamData = {
     {
       id: "2",
       name: "Mo Eltayeb",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709569/EZ%20Website%20-%20Design/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
+      src:
+        distributionName +
+        "/Creative/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709569/EZ%20Website%20-%20Design/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
       position: "Managing Director",
@@ -862,7 +866,9 @@ export const teamData = {
     {
       id: "3",
       name: "Pradeep Chhetri",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709592/EZ%20Website%20-%20Design/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
+      src:
+        distributionName +
+        "/Creative/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709592/EZ%20Website%20-%20Design/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
       position: "Account Manager",
@@ -870,7 +876,9 @@ export const teamData = {
     {
       id: "4",
       name: "Danilo Herrera",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709515/EZ%20Website%20-%20Design/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
+      src:
+        distributionName +
+        "/Creative/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709515/EZ%20Website%20-%20Design/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
       position: "Business Strategist",
@@ -878,7 +886,9 @@ export const teamData = {
     {
       id: "5",
       name: "Ilyas Megarbi",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1713331517/EZ%20Website%20-%20Design/Team/Ilyas_Megarbi_-_Graphic_Designer_agv0jc.jpg",
+      src:
+        distributionName +
+        "/Creative/Team/Ilyas_Megarbi_-_Graphic_Designer_agv0jc.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1713331517/EZ%20Website%20-%20Design/Team/Ilyas_Megarbi_-_Graphic_Designer_agv0jc.jpg",
       position: "Graphic Designer",
@@ -886,7 +896,9 @@ export const teamData = {
     {
       id: "6",
       name: "King Raffy",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712709685/EZ%20Website%20-%20Creative/Team/King_Raffy_-_Visual_Designer_bxau6w.jpg",
+      src:
+        distributionName +
+        "/Creative/Team/King_Raffy_-_Visual_Designer_bxau6w.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709685/EZ%20Website%20-%20Creative/Team/King_Raffy_-_Visual_Designer_bxau6w.jpg",
       position: "Visual Designer",
