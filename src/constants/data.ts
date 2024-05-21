@@ -326,20 +326,25 @@ export const creativeHeroData = {
   video: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/video/upload/q_40/v1711497920/EZ%20Website%20-%20Creative/Work%20Section/Eatkinda_Website_Video_dqohbd.mp4",
+      src:
+        distributionName +
+        "/Creative/Hero/video/Eatkinda_Website_Video_dqohbd.mp4",
       thumbnail:
-        "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712187412/EZ%20Website%20-%20Creative/Work%20Section%20THUMBNAILS/EatKinda_TN_yclerg.jpg",
+        distributionName + "/Creative/Hero/video/EatKinda_TN_yclerg.jpg",
     },
   ] satisfies Array<CreativeHeroVideoData>,
   images: [
     {
       id: "1",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712095539/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
+      src:
+        distributionName + "/Creative/Hero/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
       alt: "EatKinda Freezer",
     },
     {
       id: "2",
-      src: "https://res.cloudinary.com/dsxzhd4c2/image/upload/v1712095540/EZ%20Website%20-%20Creative/Hero%20Section/EatKinda_-_Available_Woowlorths_Final_1.5x_zfnn1v.jpg",
+      src:
+        distributionName +
+        "/Creative/Hero/EatKinda_-_Available_Woowlorths_Final_1.5x_zfnn1v.jpg",
       alt: "EatKinda available at Woolworths",
     },
   ] satisfies Array<CreativeHeroImgData>,
