@@ -21,14 +21,14 @@ export const DesignHero = memo(function DesignHero({
         orientation="vertical"
         content={leftData}
         imgWidth={"100%"}
-        time={13}
+        duration={13}
       />
       <Marquee
         className={styles.designHeroMarquee}
         orientation="vertical"
         content={rightData}
         imgWidth={"100%"}
-        time={13}
+        duration={13}
       />
       <div className={styles.blurBottom} />
       <div className={styles.orangeOrbSmall} />
