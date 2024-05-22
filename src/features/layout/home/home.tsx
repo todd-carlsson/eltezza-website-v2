@@ -80,6 +80,7 @@ export function HomeComponent() {
                 title="design"
                 logo={logos.design}
                 content={landingPageData.design}
+                duration={16}
                 tags={pageTags.design}
                 buttonVariant={ButtonVariant.homeOrange}
               />
@@ -91,6 +92,7 @@ export function HomeComponent() {
                 title="creative"
                 logo={logos.creative}
                 content={landingPageData.creative}
+                duration={29}
                 tags={pageTags.creative}
                 buttonVariant={ButtonVariant.homePurple}
               />

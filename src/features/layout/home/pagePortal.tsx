@@ -11,6 +11,7 @@ import useWindowSize from "@/hooks/useWindowSize";
 interface PagePortalProps {
   title: string;
   content: Array<CarouselData>;
+  duration: number;
   tags: Array<string>;
   buttonVariant: ButtonVariant;
   logo: string;
@@ -19,6 +20,7 @@ interface PagePortalProps {
 export default function PagePortal({
   title,
   content,
+  duration,
   tags,
   buttonVariant,
   logo,
@@ -86,6 +88,7 @@ export default function PagePortal({
             orientation="horizontal"
             content={content}
             imgHeight={250}
+            duration={duration}
           />
           <div className={styles.portalBottom}>
             <div className={styles.tagListContainer}>

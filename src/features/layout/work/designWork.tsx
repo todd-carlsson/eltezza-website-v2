@@ -25,7 +25,7 @@ export function DesignWork({ content }: WorkProps) {
           orientation="horizontal"
           content={content}
           imgHeight={350}
-          time={23}
+          duration={23}
           drag
         />
       </div>
