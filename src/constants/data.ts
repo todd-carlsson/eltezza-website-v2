@@ -857,7 +857,7 @@ export const teamData = {
       name: "Aileen Banzagales",
       src:
         distributionName +
-        "/Design/Team/Aileen Benzagales - Graphic Designer.jpg",
+        "/Design/Team/Aileen+Banzagales+-+Graphic+Designer.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1713243560/EZ%20Website%20-%20Design/Team/Aileen_Banzagles_-_Graphic_Designer_oompl5.jpg",
       position: "Graphic Designer",
