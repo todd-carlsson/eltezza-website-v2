@@ -2,7 +2,7 @@ import { TeamData } from "@/types";
 import Image from "next/image";
 import styles from "./team.module.scss";
 import { memo } from "react";
-import ProgressiveImage from "react-progressive-graceful-image";
+import { motion } from "framer-motion";
 
 interface TeamMemberProps {
   member: TeamData;
@@ -15,20 +15,34 @@ export const TeamMember = memo(function TeamMember({
   index,
   color,
 }: TeamMemberProps) {
+  const variant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
   return (
     <div className={styles.memberContainer}>
-      <ProgressiveImage src={member.src} placeholder={member.placeholder}>
-        {(src) => (
-          <Image
-            key={member.id}
-            className={styles.teamImg}
-            src={src}
-            alt={member.name}
-            width={1300}
-            height={1800}
-          />
-        )}
-      </ProgressiveImage>
+      <motion.div
+        variants={variant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <Image
+          key={member.id}
+          className={styles.teamImg}
+          src={member.src}
+          alt={member.name}
+          width={1300}
+          height={1800}
+        />
+      </motion.div>
       <p className={styles.memberName}>{member.name}</p>
       <div className={styles.lineThrough} />
       <div
