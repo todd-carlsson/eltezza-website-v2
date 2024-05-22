@@ -17,7 +17,7 @@ interface MarqueeProps {
   content: Array<CarouselData>;
   orientation: "vertical" | "horizontal";
   badgeSize?: "small" | "large";
-  time?: number;
+  duration?: number;
   className?: string;
   isReversed?: boolean;
   imgWidth?: number | string;
@@ -29,7 +29,7 @@ export function Marquee({
   content,
   orientation,
   badgeSize = "large",
-  time = 20,
+  duration = 20,
   className,
   isReversed = false,
   imgWidth,
@@ -88,7 +88,7 @@ export function Marquee({
 
     const xControls = animate(x, getFinalPosition(), {
       ease: "linear",
-      duration: time,
+      duration: duration,
       repeat: Infinity,
       repeatType: "loop",
       repeatDelay: 0,
@@ -96,7 +96,7 @@ export function Marquee({
 
     const yControls = animate(y, getFinalPosition(), {
       ease: "linear",
-      duration: time,
+      duration: duration,
       repeat: Infinity,
       repeatType: "loop",
       repeatDelay: 0,
@@ -105,7 +105,7 @@ export function Marquee({
       xControls.stop();
       yControls.stop();
     };
-  }, [height, isReversed, orientation, time, width, x, y]);
+  }, [height, isReversed, orientation, duration, width, x, y]);
 
   function getTop() {
     if (orientation === "vertical") {
