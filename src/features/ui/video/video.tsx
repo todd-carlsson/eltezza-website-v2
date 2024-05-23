@@ -42,7 +42,7 @@ export function VideoUI({
         // webkit Policy
         player.controls = false;
         player.playsinline = true;
-        player.muted = true;
+        player.muted = muted;
         player.setAttribute("muted", ""); // leave no stones unturned :)
         player.autoplay = autoplay;
 
@@ -63,7 +63,7 @@ export function VideoUI({
         }, 0);
       }
     }
-  }, [autoplay]);
+  }, [autoplay, muted]);
 
   useEffect(() => {
     if (isInView && autoplay) {
