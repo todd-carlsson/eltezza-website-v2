@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
 /* eslint-disable @next/next/no-img-element */
+import { useInView } from "framer-motion";
 import React, { useRef, useState, useEffect, HtmlHTMLAttributes } from "react";
 
 interface VideoUIProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -25,6 +26,9 @@ export function VideoUI({
   const videoParentRef = useRef<
     HTMLVideoElement | HtmlHTMLAttributes<HTMLAllCollection> | undefined
   >(undefined);
+
+  const isInView = useInView(videoParentRef);
+
   const [shouldUseImage, setShouldUseImage] = useState(false);
   useEffect(() => {
     // check if user agent is safari and we have the ref to the container <div />
@@ -40,7 +44,7 @@ export function VideoUI({
         player.playsinline = true;
         player.muted = true;
         player.setAttribute("muted", ""); // leave no stones unturned :)
-        player.autoplay = true;
+        player.autoplay = autoplay;
 
         // Let's wait for an event loop tick and be async.
         setTimeout(() => {
@@ -59,7 +63,13 @@ export function VideoUI({
         }, 0);
       }
     }
-  }, []);
+  }, [autoplay]);
+
+  useEffect(() => {
+    if (isInView && autoplay) {
+      videoParentRef.current.children[0].play();
+    } else videoParentRef.current.children[0].pause();
+  }, [isInView, autoplay]);
 
   return shouldUseImage ? (
     <img src={src} alt="Muted Video" {...props} />
