@@ -49,7 +49,7 @@ export function VideoUI({
         // Let's wait for an event loop tick and be async.
         setTimeout(() => {
           // player.play() might return a promise but it's not guaranteed crossbrowser.
-          const promise = player.play();
+          const promise = isInView ? player.play() : player.pause();
           // let's play safe to ensure that if we do have a promise
           if (promise.then) {
             promise
@@ -63,13 +63,7 @@ export function VideoUI({
         }, 0);
       }
     }
-  }, [autoplay, muted]);
-
-  useEffect(() => {
-    if (isInView && autoplay && videoParentRef.current) {
-      videoParentRef?.current.children[0].play();
-    } else videoParentRef?.current.children[0].pause();
-  }, [isInView, autoplay]);
+  }, [autoplay, muted, isInView]);
 
   return shouldUseImage ? (
     <img src={src} alt="Muted Video" {...props} />
