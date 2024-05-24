@@ -66,7 +66,7 @@ export function VideoUI({
   }, [autoplay, muted]);
 
   useEffect(() => {
-    if (isInView && autoplay) {
+    if (isInView && autoplay && videoParentRef.current) {
       videoParentRef?.current.children[0].play();
     } else videoParentRef?.current.children[0].pause();
   }, [isInView, autoplay]);
