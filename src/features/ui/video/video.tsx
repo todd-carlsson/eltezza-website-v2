@@ -67,8 +67,8 @@ export function VideoUI({
 
   useEffect(() => {
     if (isInView && autoplay) {
-      videoParentRef.current.children[0].play();
-    } else videoParentRef.current.children[0].pause();
+      videoParentRef?.current.children[0].play();
+    } else videoParentRef?.current.children[0].pause();
   }, [isInView, autoplay]);
 
   return shouldUseImage ? (
