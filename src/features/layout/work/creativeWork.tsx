@@ -64,7 +64,7 @@ export function CreativeWork({ content }: CreativeWorkProps) {
         </h1>
         <p className={styles.workDescription}>
           <span className={styles.purpleUnderline}>Hover </span>
-          your cursor on the cards below to play the videos.
+          or tap on the cards below to play the videos.
         </p>
       </div>
       <div className={styles.creativeGrid}>
