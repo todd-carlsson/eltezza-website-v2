@@ -13,8 +13,22 @@ interface DetailsProps {
 export default function Details({ color }: DetailsProps) {
   return (
     <div className={styles.details}>
-      <p className={styles.detailsDescription}>{contactFormText.email}</p>
-      <p className={styles.detailsDescription}>{contactFormText.phone}</p>
+      <a
+        href={`mailto:${contactFormText.email}`}
+        className={styles.detailsLink}
+      >
+        <span className={styles.detailsDescription}>
+          {contactFormText.email}
+        </span>
+      </a>
+      <a
+        href={`tel:+${contactFormText.phone.replace(/\s/g, "")}`}
+        className={styles.detailsLink}
+      >
+        <span className={styles.detailsDescription}>
+          {contactFormText.phone}
+        </span>
+      </a>
       <div className={styles.socialLinks}>
         <a href={socialLinks.facebook} target="_blank">
           <FaFacebookSquare
