@@ -133,8 +133,13 @@
     gap: 1rem;
     position: relative;
 
-    .detailsDescription {
-      font-family: var(--font-source-sans);
+    .detailsLink {
+      width: fit-content;
+
+      .detailsDescription {
+        font-family: var(--font-source-sans);
+        text-decoration: underline;
+      }
     }
 
     .socialLinks {
