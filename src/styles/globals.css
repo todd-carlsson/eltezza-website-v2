@@ -13,9 +13,8 @@
   --vertical-marquee-height: 775px;
 }
 
-/* 
-:root:has(.noScroll) {
-  overflow: hidden;
+/* :root:has(.noScroll) {
+  overflow-y: hidden;
 }
 
 @media screen and (width <= 1200px) {
