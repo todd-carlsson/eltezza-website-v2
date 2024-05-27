@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "./team.module.scss";
 import { memo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { IoMail } from "react-icons/io5";
+import { contactFormText } from "@/constants";
 
 interface TeamMemberProps {
   member: TeamData;
@@ -56,14 +58,13 @@ export const TeamMember = memo(function TeamMember({
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className={styles.memberEmailContainer}
-              // onMouseOver={hoverHandler}
-              // onMouseLeave={onMouseLeave}
             >
               <a
                 className={styles.memberEmail}
-                href={`mailto:${member.email ? member.email : "hello@eltezza.com"}`}
+                href={`mailto:${member.email ? member.email : contactFormText.email}`}
               >
-                {member.email ? member.email : "hello@eltezza.com"}
+                <IoMail size={24} />
+                {member.email ? member.email : contactFormText.email}
               </a>
             </motion.div>
           )}
