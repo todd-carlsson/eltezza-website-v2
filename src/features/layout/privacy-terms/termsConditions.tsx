@@ -6,7 +6,7 @@ import { contactFormText, termsAndConditions } from "@/constants";
 import { useIsPresent, motion } from "framer-motion";
 import { useRouter } from "next/router";
 
-function TermsConditions() {
+export function TermsConditions() {
   const isPresent = useIsPresent();
   const router = useRouter();
   return (
@@ -157,5 +157,3 @@ function TermsConditions() {
     </motion.div>
   );
 }
-
-export default TermsConditions;

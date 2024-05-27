@@ -1,5 +1,5 @@
 import { metaData } from "@/constants";
-import TermsConditions from "@/features/layout/privacy-terms/termsConditions";
+import { TermsConditions } from "@/features/layout";
 import MetaData from "@/metadata";
 import React from "react";
 
