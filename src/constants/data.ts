@@ -857,6 +857,7 @@ export const teamData = {
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709619/EZ%20Website%20-%20Design/Team/Shay_Gillanders_-_Visual_Designer_ap1gci.jpg",
       position: "Visual Designer",
+      email: "gillanders@eltezza.com",
     },
     {
       id: "8",
