@@ -49,9 +49,30 @@
 
       .imageContainer {
         overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        .memberEmailContainer {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 800;
+
+          .memberEmail {
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            opacity: 1;
+          }
+        }
 
         .imageWrapper {
           transition: transform 1.5s cubic-bezier(0, 0, 0.1, 1);
+          overflow: hidden;
 
           .teamImg {
             width: 100%;

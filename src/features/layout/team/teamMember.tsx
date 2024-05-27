@@ -1,8 +1,8 @@
 import { TeamData } from "@/types";
 import Image from "next/image";
 import styles from "./team.module.scss";
-import { memo } from "react";
-import { motion } from "framer-motion";
+import { memo, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 interface TeamMemberProps {
   member: TeamData;
@@ -31,6 +31,13 @@ export const TeamMember = memo(function TeamMember({
       scale: 1.1,
     },
   };
+  const [isHovered, setIsHovered] = useState(false);
+  function hoverHandler() {
+    setIsHovered(true);
+  }
+  function onMouseLeave() {
+    setIsHovered(false);
+  }
   return (
     <div className={styles.memberContainer}>
       <motion.div
@@ -39,10 +46,32 @@ export const TeamMember = memo(function TeamMember({
         whileInView="visible"
         viewport={{ once: true }}
         className={styles.imageContainer}
+        onMouseOver={hoverHandler}
+        onMouseLeave={onMouseLeave}
       >
+        <AnimatePresence>
+          {isHovered && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className={styles.memberEmailContainer}
+              // onMouseOver={hoverHandler}
+              // onMouseLeave={onMouseLeave}
+            >
+              <a
+                className={styles.memberEmail}
+                href={`mailto:${member.email ? member.email : "hello@eltezza.com"}`}
+              >
+                {member.email ? member.email : "hello@eltezza.com"}
+              </a>
+            </motion.div>
+          )}
+        </AnimatePresence>
         <motion.div
           variants={variant}
           whileHover="hover"
+          animate={isHovered ? "hover" : ""}
           className={styles.imageWrapper}
         >
           <Image
