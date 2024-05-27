@@ -791,6 +791,7 @@ export const teamData = {
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1715647107/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
       position: "Creative Director",
+      email: "teneza@eltezza.com",
     },
     {
       id: "2",
@@ -801,6 +802,7 @@ export const teamData = {
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709569/EZ%20Website%20-%20Design/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
       position: "Managing Director",
+      email: "eltayeb@eltezza.com",
     },
     {
       id: "3",
@@ -811,6 +813,7 @@ export const teamData = {
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709592/EZ%20Website%20-%20Design/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
       position: "Account Manager",
+      email: "chhetri@eltezza.com",
     },
     {
       id: "4",
@@ -821,6 +824,7 @@ export const teamData = {
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709515/EZ%20Website%20-%20Design/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
       position: "Business Strategist",
+      email: "herrera@eltezza.com",
     },
     {
       id: "5",
@@ -831,6 +835,7 @@ export const teamData = {
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1715732923/EZ%20Website%20-%20Design/Team/Elisa_Hickton_-_Content_Producer_mjkeyq.jpg",
       position: "Content Producer",
+      email: "hickton@eltezza.com",
     },
     {
       id: "6",
@@ -841,6 +846,7 @@ export const teamData = {
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1715919824/EZ%20Website%20-%20Design/Team/Todd_Carlsson_-_Web_Developer_wnk07m.jpg",
       position: "Web Developer",
+      email: "carlsson@eltezza.com",
     },
     {
       id: "7",
@@ -883,6 +889,7 @@ export const teamData = {
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1715647107/EZ%20Website%20-%20Design/Team/Chris_Teneza_-_Creative_Director_ziruf9.jpg",
       position: "Creative Director",
+      email: "teneza@eltezza.com",
     },
     {
       id: "2",
@@ -893,6 +900,7 @@ export const teamData = {
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709569/EZ%20Website%20-%20Design/Team/Mo_Eltayeb_-_Managing_Director_nfrqnm.jpg",
       position: "Managing Director",
+      email: "eltayeb@eltezza.com",
     },
     {
       id: "3",
@@ -903,6 +911,7 @@ export const teamData = {
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709592/EZ%20Website%20-%20Design/Team/Pradeep_Chhetri_-_Account_Manager_gibk0f.jpg",
       position: "Account Manager",
+      email: "chhetri@eltezza.com",
     },
     {
       id: "4",
@@ -913,6 +922,7 @@ export const teamData = {
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709515/EZ%20Website%20-%20Design/Team/Danilo_Herrera_-_Business_Strategist_gcgqi1.jpg",
       position: "Business Strategist",
+      email: "herrera@eltezza.com",
     },
     {
       id: "5",

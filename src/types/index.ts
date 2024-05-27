@@ -26,6 +26,7 @@ export type TeamData = {
   src: string;
   placeholder?: string;
   position: string;
+  email?: string;
 };
 
 export type CreativeHeroImgData = {
