@@ -47,10 +47,19 @@
       gap: 1rem;
       text-transform: uppercase;
 
-      .teamImg {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+      .imageContainer {
+        overflow: hidden;
+
+        .imageWrapper {
+          transition: transform 1.5s cubic-bezier(0, 0, 0.1, 1);
+
+          .teamImg {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            cursor: pointer;
+          }
+        }
       }
 
       .memberName {

@@ -26,6 +26,10 @@ export const TeamMember = memo(function TeamMember({
         delay: 0.325,
       },
     },
+    hover: {
+      opacity: 0.6,
+      scale: 1.1,
+    },
   };
   return (
     <div className={styles.memberContainer}>
@@ -34,15 +38,22 @@ export const TeamMember = memo(function TeamMember({
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
+        className={styles.imageContainer}
       >
-        <Image
-          key={member.id}
-          className={styles.teamImg}
-          src={member.src}
-          alt={member.name}
-          width={1300}
-          height={1800}
-        />
+        <motion.div
+          variants={variant}
+          whileHover="hover"
+          className={styles.imageWrapper}
+        >
+          <Image
+            key={member.id}
+            className={styles.teamImg}
+            src={member.src}
+            alt={member.name}
+            width={1300}
+            height={1800}
+          />
+        </motion.div>
       </motion.div>
       <p className={styles.memberName}>{member.name}</p>
       <div className={styles.lineThrough} />
