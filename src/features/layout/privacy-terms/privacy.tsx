@@ -3,10 +3,14 @@ import styles from "./privacyTerms.module.scss";
 import Link from "next/link";
 import { Button, ButtonVariant } from "@/features/ui";
 import { IoMdExit } from "react-icons/io";
+import { useIsPresent, motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 export function Privacy() {
+  const isPresent = useIsPresent();
+  const router = useRouter();
   return (
-    <div className={styles.container}>
+    <motion.div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.intro}>
           <h1 className={styles.introTitle}>
@@ -142,6 +146,22 @@ export function Privacy() {
           <p>{privacyPolicy.contact.conclusion}</p>
         </div>
       </div>
-    </div>
+      <motion.div
+        initial={{ scaleX: 1 }}
+        animate={{
+          scaleX: 0,
+          transition: { duration: 0.5, ease: "circOut" },
+        }}
+        exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
+        style={{
+          originX: isPresent ? 0 : 1,
+          backgroundColor:
+            router.pathname === "/creative"
+              ? "var(--adobe-purple)"
+              : "var(--ez-orange)",
+        }}
+        className={styles.privacyScreen}
+      />
+    </motion.div>
   );
 }

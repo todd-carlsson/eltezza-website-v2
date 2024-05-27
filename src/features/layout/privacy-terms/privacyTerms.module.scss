@@ -68,4 +68,10 @@
       text-decoration: underline;
     }
   }
+
+  .privacyScreen {
+    position: fixed;
+    inset: 0;
+    z-index: 850;
+  }
 }
