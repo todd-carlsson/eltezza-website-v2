@@ -287,3 +287,142 @@ export const socialLinks = {
   instagram: "https://www.instagram.com/eltezzacreative/",
   linkedin: "https://www.linkedin.com/company/eltezza/",
 };
+
+export const privacyPolicy = {
+  introduction: `Eltezza ("we", "our", "us") is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your personal information in accordance with New Zealand's Privacy Act 2020. By engaging with our services, you agree to the practices described in this policy.`,
+  infoWeCollect: {
+    title: "Information We Collect",
+    subTitle: "We may collect the following types of personal information:",
+    info: [
+      "Contact Information: Name, email address, phone number, and physical address.",
+      "Business Information: Details about your business and your role within it.",
+      "Communications: Any communications you have with us via email, phone, or other means.",
+      "Website Usage Data: Information about your interactions with our website, including IP address, browser type, and pages visited.",
+    ],
+  },
+  howWeCollectInfo: {
+    title: "How We Collect Information",
+    subTitle: "We collect personal information in several ways, including:",
+    info: [
+      "Directly from you: When you contact us via phone, email, or through our website.",
+      "Automatically: When you visit our website, through cookies and similar tracking technologies.",
+      "Third Parties: From third-party sources, such as social media platforms and public databases, where you have consented to such collection.",
+    ],
+  },
+  useOfInfo: {
+    title: "Use of Personal Information",
+    subTitle: "We use your personal information for the following purposes:",
+    info: [
+      "Service Delivery: To provide and manage our creative service",
+      "Communication: To respond to your inquiries, provide updates, and offer information about our services.",
+      "Marketing: To send you promotional materials and other information that may be of interest to you.",
+      "Improvement of Services: To analyze and improve our website and services.",
+      "Compliance: To comply with legal obligations and protect our legal rights.",
+    ],
+  },
+  sharingOfInfo: {
+    title: "Sharing of Personal Information",
+    subTitle:
+      "We do not sell or rent your personal information to third parties. We may share your information with:",
+    info: [
+      "Service Providers: Third-party companies that perform services on our behalf, such as hosting providers and marketing agencies.",
+      "Legal Authorities: When required by law or to protect our rights.",
+    ],
+  },
+  dataSecurity: {
+    title: "Data Security",
+    description:
+      "We take reasonable steps to protect your personal information from unauthorized access, use, or disclosure. This includes implementing physical, electronic, and procedural safeguards.",
+  },
+  yourRights: {
+    title: "Your Rights",
+    subTitle: "You have the right to:",
+    info: [
+      "Access: Request a copy of the personal information we hold about you.",
+      "Correction: Request corrections to any inaccurate or incomplete personal information.",
+      "Deletion: Request the deletion of your personal information, subject to legal and contractual restrictions.",
+      "Objection: Object to the processing of your personal information for certain purposes.",
+    ],
+  },
+  changesToPolicy: {
+    title: "Changes to This Privacy Policy",
+    description:
+      "We may update this Privacy Policy from time to time. Changes will be posted on our website, and the revised policy will take effect from the date of posting.",
+  },
+  contact: {
+    title: "Contact Us",
+    subTitle:
+      "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:",
+    conclusion:
+      "Thank you for trusting Eltezza with your personal information. We are committed to protecting your privacy and providing you with the highest level of service.",
+  },
+};
+
+export const termsAndConditions = {
+  introduction: `Welcome to Eltezza ("we", "our", "us"). These Terms and Conditions ("Terms") govern your use of our website and services. By accessing or using our website and services, you agree to comply with and be bound by these Terms.`,
+  services: {
+    title: "Services",
+    description:
+      "Eltezza is a creative agency providing various services, including but not limited to branding, design, marketing, and digital solutions. The scope and specifics of the services will be detailed in individual contracts with our clients.",
+  },
+  useOfWebsite: {
+    title: "Use of Our Website",
+    subTitle: "By using our website, you agree to the following:",
+    info: [
+      "You will use the website only for lawful purposes.",
+      "You will not engage in any activity that disrupts or interferes with the website's functionality.",
+      "You will not attempt to gain unauthorized access to any part of the website.",
+    ],
+  },
+  intellectualProperty: {
+    title: "Intellectual Property",
+    description:
+      "All content on our website, including text, graphics, logos, images, and software, is the property of Eltezza or our licensors and is protected by copyright and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written permission.",
+  },
+  userContent: {
+    title: "User Content",
+    description:
+      "If you submit any content to our website or services, including but not limited to comments, feedback, and suggestions, you grant Eltezza a non-exclusive, royalty-free, perpetual, and irrevocable license to use, reproduce, modify, and distribute such content in any form and media.",
+  },
+  confidentiality: {
+    title: "Confidentiality",
+    description:
+      "Both parties agree to keep confidential all non-public information disclosed during the provision of services. This includes business plans, financial information, marketing strategies, and any other proprietary information.",
+  },
+  paymentTerms: {
+    title: "Payment Terms",
+    description:
+      "Payment terms for our services will be specified in individual contracts. Invoices are due upon receipt unless otherwise agreed in writing. Late payments may incur interest charges.",
+  },
+  limitationLiability: {
+    title: "Limitation of Liability",
+    description:
+      "To the fullest extent permitted by law, Eltezza shall not be liable for any indirect, incidental, special, or consequential damages, including but not limited to loss of profits, revenue, data, or use, arising out of or in connection with our services or these Terms.",
+  },
+  warranties: {
+    title: "Warranties and Disclaimers",
+    description: `We provide our services on an "as-is" and "as-available" basis. We make no warranties or representations, express or implied, about the accuracy, reliability, or completeness of our services. We disclaim all warranties of merchantability, fitness for a particular purpose, and non-infringement.`,
+  },
+  termination: {
+    title: "Termination",
+    description:
+      "We reserve the right to terminate or suspend your access to our website and services at our sole discretion, without notice, if you violate these Terms or for any other reason.",
+  },
+  governingLaw: {
+    title: "Governing Law",
+    description:
+      "These Terms are governed by and construed in accordance with the laws of New Zealand. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of New Zealand.",
+  },
+  changesToTerms: {
+    title: "Changes to These Terms",
+    description:
+      "We may update these Terms from time to time. Changes will be posted on our website, and your continued use of our website and services after such changes constitutes your acceptance of the new Terms.",
+  },
+  contact: {
+    title: "Contact Us",
+    subTitle:
+      "If you have any questions or concerns about these Terms, please contact us at:",
+    conclusion:
+      "Thank you for choosing Eltezza. We look forward to providing you with exceptional creative services.",
+  },
+};
