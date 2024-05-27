@@ -12,4 +12,4 @@ export * from "./contact";
 export * from "./form";
 export * from "./portal";
 export * from "./reviews";
-export * from "./privacy";
+export * from "./privacy-terms";

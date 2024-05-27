@@ -1,5 +1,5 @@
 import { contactFormText, privacyPolicy } from "@/constants";
-import styles from "./privacy.module.scss";
+import styles from "./privacyTerms.module.scss";
 import Link from "next/link";
 import { Button, ButtonVariant } from "@/features/ui";
 import { IoMdExit } from "react-icons/io";
