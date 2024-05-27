@@ -1,26 +1,31 @@
 import { contactFormText, privacyPolicy } from "@/constants";
 import styles from "./privacyTerms.module.scss";
 import Link from "next/link";
-import { Button, ButtonVariant } from "@/features/ui";
-import { IoMdExit } from "react-icons/io";
 import { useIsPresent, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 export function Privacy() {
   const isPresent = useIsPresent();
   const router = useRouter();
   return (
     <motion.div className={styles.container}>
+      <div className={styles.logoContainer}>
+        <Link href="/">
+          <Image
+            src="/images/eltezza-home-logo.png"
+            alt="Eltezza"
+            width={131}
+            height={22}
+            className={styles.logo}
+          />
+        </Link>
+      </div>
       <div className={styles.wrapper}>
         <div className={styles.intro}>
           <h1 className={styles.introTitle}>
-            Eltezza Privacy <span className="textGradient">Policy</span>
+            Privacy <span className="textGradient">Policy</span>
           </h1>
-          <Link href="/">
-            <Button className={styles.homeButton} variant={ButtonVariant.main}>
-              Go Home <IoMdExit size={24} />
-            </Button>
-          </Link>
         </div>
         {/* Intro */}
         <div className={styles.section}>
