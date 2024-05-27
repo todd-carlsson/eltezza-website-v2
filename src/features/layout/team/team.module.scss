@@ -61,14 +61,16 @@
           justify-content: center;
           align-items: center;
           z-index: 800;
+          text-transform: lowercase;
 
           .memberEmail {
             display: flex;
             align-items: center;
             text-align: center;
             gap: 0.5rem;
-            font-size: 1.25rem;
+            font-size: 100%;
             font-weight: 600;
+            color: #fff;
             opacity: 1;
             position: relative;
 

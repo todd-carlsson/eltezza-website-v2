@@ -29,7 +29,7 @@ export const TeamMember = memo(function TeamMember({
       },
     },
     hover: {
-      opacity: 0.6,
+      opacity: 0.45,
       scale: 1.1,
     },
   };
@@ -63,7 +63,7 @@ export const TeamMember = memo(function TeamMember({
                 className={styles.memberEmail}
                 href={`mailto:${member.email ? member.email : contactFormText.email}`}
               >
-                <IoMail size={24} />
+                <IoMail size={22} />
                 {member.email ? member.email : contactFormText.email}
               </a>
             </motion.div>
