@@ -1,8 +1,10 @@
 import { TeamData } from "@/types";
 import Image from "next/image";
 import styles from "./team.module.scss";
-import { memo } from "react";
-import { motion } from "framer-motion";
+import { memo, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { IoMail } from "react-icons/io5";
+import { contactFormText } from "@/constants";
 
 interface TeamMemberProps {
   member: TeamData;
@@ -26,7 +28,18 @@ export const TeamMember = memo(function TeamMember({
         delay: 0.325,
       },
     },
+    hover: {
+      opacity: 0.6,
+      scale: 1.1,
+    },
   };
+  const [isHovered, setIsHovered] = useState(false);
+  function hoverHandler() {
+    setIsHovered(true);
+  }
+  function onMouseLeave() {
+    setIsHovered(false);
+  }
   return (
     <div className={styles.memberContainer}>
       <motion.div
@@ -34,15 +47,43 @@ export const TeamMember = memo(function TeamMember({
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
+        className={styles.imageContainer}
+        onMouseOver={hoverHandler}
+        onMouseLeave={onMouseLeave}
       >
-        <Image
-          key={member.id}
-          className={styles.teamImg}
-          src={member.src}
-          alt={member.name}
-          width={1300}
-          height={1800}
-        />
+        <AnimatePresence>
+          {isHovered && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className={styles.memberEmailContainer}
+            >
+              <a
+                className={styles.memberEmail}
+                href={`mailto:${member.email ? member.email : contactFormText.email}`}
+              >
+                <IoMail size={24} />
+                {member.email ? member.email : contactFormText.email}
+              </a>
+            </motion.div>
+          )}
+        </AnimatePresence>
+        <motion.div
+          variants={variant}
+          whileHover="hover"
+          animate={isHovered ? "hover" : ""}
+          className={styles.imageWrapper}
+        >
+          <Image
+            key={member.id}
+            className={styles.teamImg}
+            src={member.src}
+            alt={member.name}
+            width={1300}
+            height={1800}
+          />
+        </motion.div>
       </motion.div>
       <p className={styles.memberName}>{member.name}</p>
       <div className={styles.lineThrough} />
