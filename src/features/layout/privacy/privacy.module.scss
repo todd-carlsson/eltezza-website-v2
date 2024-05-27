@@ -1,7 +1,7 @@
-.privacyPolicyContainer {
+.container {
   width: 100%;
 
-  .privacyPolicy {
+  .wrapper {
     width: 100%;
     padding: 2rem 20vw;
     display: flex;
@@ -44,10 +44,10 @@
       }
     }
 
-    .policySection {
+    .section {
       padding-bottom: 2rem;
 
-      .policySubTitle {
+      .subTitle {
         font-size: 2rem;
         width: fit-content;
         border-bottom: 3px solid var(--ez-orange);
@@ -55,16 +55,16 @@
       }
     }
 
-    .privacyList {
+    .list {
       list-style: disc;
 
-      .privacyListItem {
+      .listItem {
         list-style: inherit;
         margin: 0.5rem 2rem;
       }
     }
 
-    .policyLink {
+    .link {
       text-decoration: underline;
     }
   }

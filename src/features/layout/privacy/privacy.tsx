@@ -6,8 +6,8 @@ import { IoMdExit } from "react-icons/io";
 
 export function Privacy() {
   return (
-    <div className={styles.privacyPolicyContainer}>
-      <div className={styles.privacyPolicy}>
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
         <div className={styles.intro}>
           <h1 className={styles.introTitle}>
             Eltezza Privacy <span className="textGradient">Policy</span>
@@ -19,97 +19,90 @@ export function Privacy() {
           </Link>
         </div>
         {/* Intro */}
-        <div className={styles.policySection}>
-          <h2 className={styles.policySubTitle}>Introduction</h2>
+        <div className={styles.section}>
+          <h2 className={styles.subTitle}>Introduction</h2>
           <p>{privacyPolicy.introduction}</p>
         </div>
         {/* Info we collect */}
-        <div className={styles.policySection}>
-          <h2 className={styles.policySubTitle}>
+        <div className={styles.section}>
+          <h2 className={styles.subTitle}>
             {privacyPolicy.infoWeCollect.title}
           </h2>
           <p>{privacyPolicy.infoWeCollect.subTitle}</p>
-          <ul className={styles.privacyList}>
+          <ul className={styles.list}>
             {privacyPolicy.infoWeCollect.info.map((item, i) => (
-              <li className={styles.privacyListItem} key={i}>
+              <li className={styles.listItem} key={i}>
                 {item}
               </li>
             ))}
           </ul>
         </div>
         {/* How we collect info */}
-        <div className={styles.policySection}>
-          <h2 className={styles.policySubTitle}>
+        <div className={styles.section}>
+          <h2 className={styles.subTitle}>
             {privacyPolicy.howWeCollectInfo.title}
           </h2>
           <p>{privacyPolicy.howWeCollectInfo.subTitle}</p>
-          <ul className={styles.privacyList}>
+          <ul className={styles.list}>
             {privacyPolicy.howWeCollectInfo.info.map((item, i) => (
-              <li className={styles.privacyListItem} key={i}>
+              <li className={styles.listItem} key={i}>
                 {item}
               </li>
             ))}
           </ul>
         </div>
         {/* Use of personal info */}
-        <div className={styles.policySection}>
-          <h2 className={styles.policySubTitle}>
-            {privacyPolicy.useOfInfo.title}
-          </h2>
+        <div className={styles.section}>
+          <h2 className={styles.subTitle}>{privacyPolicy.useOfInfo.title}</h2>
           <p>{privacyPolicy.useOfInfo.subTitle}</p>
-          <ul className={styles.privacyList}>
+          <ul className={styles.list}>
             {privacyPolicy.useOfInfo.info.map((item, i) => (
-              <li className={styles.privacyListItem} key={i}>
+              <li className={styles.listItem} key={i}>
                 {item}
               </li>
             ))}
           </ul>
         </div>
         {/* Sharing of personal info */}
-        <div className={styles.policySection}>
-          <h2 className={styles.policySubTitle}>
+        <div className={styles.section}>
+          <h2 className={styles.subTitle}>
             {privacyPolicy.sharingOfInfo.title}
           </h2>
           <p>{privacyPolicy.sharingOfInfo.subTitle}</p>
-          <ul className={styles.privacyList}>
+          <ul className={styles.list}>
             {privacyPolicy.sharingOfInfo.info.map((item, i) => (
-              <li className={styles.privacyListItem} key={i}>
+              <li className={styles.listItem} key={i}>
                 {item}
               </li>
             ))}
           </ul>
         </div>
         {/* Data security */}
-        <div className={styles.policySection}>
-          <h2 className={styles.policySubTitle}>
+        <div className={styles.section}>
+          <h2 className={styles.subTitle}>
             {privacyPolicy.dataSecurity.title}
           </h2>
           <p>{privacyPolicy.dataSecurity.description}</p>
         </div>
         {/* Your rights */}
-        <div className={styles.policySection}>
-          <h2 className={styles.policySubTitle}>
-            {privacyPolicy.yourRights.title}
-          </h2>
+        <div className={styles.section}>
+          <h2 className={styles.subTitle}>{privacyPolicy.yourRights.title}</h2>
           <p>{privacyPolicy.yourRights.subTitle}</p>
-          <ul className={styles.privacyList}>
+          <ul className={styles.list}>
             {privacyPolicy.yourRights.info.map((item, i) => (
-              <li className={styles.privacyListItem} key={i}>
+              <li className={styles.listItem} key={i}>
                 {item}
               </li>
             ))}
           </ul>
           <p>
             To exercise these rights, please contact us at{" "}
-            <a
-              className={styles.policyLink}
-              href={`mailto:${contactFormText.email}`}
-            >
+            <a className={styles.link} href={`mailto:${contactFormText.email}`}>
               {contactFormText.email}
             </a>{" "}
             or call us at{" "}
             <a
-              className={styles.policyLink}
+              className={styles.link}
               href={`tel:+${contactFormText.phone.replace(/\s/g, "")}`}
             >
               {contactFormText.phone}
@@ -118,33 +111,28 @@ export function Privacy() {
           </p>
         </div>
         {/* Changes to Policy */}
-        <div className={styles.policySection}>
-          <h2 className={styles.policySubTitle}>
+        <div className={styles.section}>
+          <h2 className={styles.subTitle}>
             {privacyPolicy.changesToPolicy.title}
           </h2>
           <p>{privacyPolicy.changesToPolicy.description}</p>
         </div>
         {/* Contact Us*/}
-        <div className={styles.policySection}>
-          <h2 className={styles.policySubTitle}>
-            {privacyPolicy.contact.title}
-          </h2>
+        <div className={styles.section}>
+          <h2 className={styles.subTitle}>{privacyPolicy.contact.title}</h2>
           <p>{privacyPolicy.contact.subTitle}</p>
           <br />
           <h3>Eltezza</h3>
           <div>
             Email:{" "}
-            <a
-              className={styles.policyLink}
-              href={`mailto:${contactFormText.email}`}
-            >
+            <a className={styles.link} href={`mailto:${contactFormText.email}`}>
               {contactFormText.email}
             </a>
           </div>
           <div>
             Phone:{" "}
             <a
-              className={styles.policyLink}
+              className={styles.link}
               href={`mailto:${contactFormText.phone.replace(/\s/g, "")}`}
             >
               {contactFormText.phone}
