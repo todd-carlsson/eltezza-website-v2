@@ -17,6 +17,7 @@ export default function Home() {
       <MetaData
         data={metaData.home}
         imageData={[...landingPageData.design, ...landingPageData.creative]}
+        scroll={false}
       />
       <main className={classNames(styles.main, inter.className)}>
         <HomeComponent />

@@ -6,11 +6,9 @@ import { ButtonVariant } from "@/features/ui";
 import { landingPageData, logos, pageTags } from "@/constants";
 import classNames from "classnames";
 import uuid from "react-uuid";
-import useWindowSize from "@/hooks/useWindowSize";
 
 export function HomeComponent() {
   const [isDualPage, setIsDualPage] = useState(false);
-  const [windowWidth] = useWindowSize();
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,7 +18,6 @@ export function HomeComponent() {
 
   return (
     <>
-      <style>{`body { overflow-y: ${windowWidth <= 1200 ? "scroll" : "hidden"}; }`}</style>
       <div className={classNames(styles.homeContainer)}>
         <motion.div
           initial={{ opacity: 0, y: "-100vh", x: "-100vw" }}
