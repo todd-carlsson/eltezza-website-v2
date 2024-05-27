@@ -1,0 +1,77 @@
+.container {
+  width: 100%;
+
+  .wrapper {
+    width: 100%;
+    padding: 2rem 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    @media screen and (width <=950px) {
+      padding: 2rem var(--content-padding);
+    }
+
+    @media screen and (width <=850px) {
+      padding: 2rem var(--content-padding-sm);
+    }
+
+    .intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media screen and (width <= 1400px) {
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      @media screen and (width <=850px) {
+        align-items: flex-start;
+      }
+
+      .introTitle {
+        font-size: 3.25rem;
+        line-height: 120%;
+      }
+
+      .homeButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+    }
+
+    .section {
+      padding-bottom: 2rem;
+
+      .subTitle {
+        font-size: 2rem;
+        width: fit-content;
+        border-bottom: 3px solid var(--ez-orange);
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .list {
+      list-style: disc;
+
+      .listItem {
+        list-style: inherit;
+        margin: 0.5rem 2rem;
+      }
+    }
+
+    .link {
+      text-decoration: underline;
+    }
+  }
+
+  .privacyScreen {
+    position: fixed;
+    inset: 0;
+    z-index: 850;
+  }
+}
