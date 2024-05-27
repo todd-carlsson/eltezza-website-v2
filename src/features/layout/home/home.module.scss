@@ -142,7 +142,6 @@
         justify-content: center;
         align-items: center;
         font-size: 3rem;
-        overflow-y: scroll;
 
         @media screen and (width <=1200px) {
           width: 100vw;
@@ -150,6 +149,10 @@
           height: fit-content;
           flex-direction: column;
           position: relative;
+        }
+
+        @media screen and (height <=550px) {
+          overflow-y: scroll;
         }
 
         .pagePortalTitle {
