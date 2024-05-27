@@ -291,7 +291,8 @@ export const socialLinks = {
 export const privacyPolicy = {
   introduction: `Eltezza ("we", "our", "us") is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your personal information in accordance with New Zealand's Privacy Act 2020. By engaging with our services, you agree to the practices described in this policy.`,
   infoWeCollect: {
-    title: "We may collect the following types of personal information:",
+    title: "Information We Collect",
+    subTitle: "We may collect the following types of personal information:",
     info: [
       "Contact Information: Name, email address, phone number, and physical address.",
       "Business Information: Details about your business and your role within it.",
@@ -300,7 +301,8 @@ export const privacyPolicy = {
     ],
   },
   howWeCollectInfo: {
-    title: "We collect personal information in several ways, including:",
+    title: "How We Collect Information",
+    subTitle: "We collect personal information in several ways, including:",
     info: [
       "Directly from you: When you contact us via phone, email, or through our website.",
       "Automatically: When you visit our website, through cookies and similar tracking technologies.",
@@ -308,7 +310,8 @@ export const privacyPolicy = {
     ],
   },
   useOfInfo: {
-    title: "We use your personal information for the following purposes:",
+    title: "Use of Personal Information",
+    subTitle: "We use your personal information for the following purposes:",
     info: [
       "Service Delivery: To provide and manage our creative service",
       "Communication: To respond to your inquiries, provide updates, and offer information about our services.",
@@ -318,17 +321,22 @@ export const privacyPolicy = {
     ],
   },
   sharingOfInfo: {
-    title:
+    title: "Sharing of Personal Information",
+    subTitle:
       "We do not sell or rent your personal information to third parties. We may share your information with:",
     info: [
       "Service Providers: Third-party companies that perform services on our behalf, such as hosting providers and marketing agencies.",
       "Legal Authorities: When required by law or to protect our rights.",
     ],
   },
-  dataSecurity:
-    "We take reasonable steps to protect your personal information from unauthorized access, use, or disclosure. This includes implementing physical, electronic, and procedural safeguards.",
+  dataSecurity: {
+    title: "Data Security",
+    description:
+      "We take reasonable steps to protect your personal information from unauthorized access, use, or disclosure. This includes implementing physical, electronic, and procedural safeguards.",
+  },
   yourRights: {
-    title: "You have the right to:",
+    title: "Your Rights",
+    subTitle: "You have the right to:",
     info: [
       "Access: Request a copy of the personal information we hold about you.",
       "Correction: Request corrections to any inaccurate or incomplete personal information.",
@@ -336,10 +344,14 @@ export const privacyPolicy = {
       "Objection: Object to the processing of your personal information for certain purposes.",
     ],
   },
-  changesToPolicy:
-    "We may update this Privacy Policy from time to time. Changes will be posted on our website, and the revised policy will take effect from the date of posting.",
+  changesToPolicy: {
+    title: "Changes to This Privacy Policy",
+    description:
+      "We may update this Privacy Policy from time to time. Changes will be posted on our website, and the revised policy will take effect from the date of posting.",
+  },
   contact: {
-    title:
+    title: "Contact Us",
+    subTitle:
       "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:",
     conclusion:
       "Thank you for trusting Eltezza with your personal information. We are committed to protecting your privacy and providing you with the highest level of service.",
