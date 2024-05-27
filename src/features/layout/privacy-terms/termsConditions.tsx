@@ -129,7 +129,7 @@ export function TermsConditions() {
             Phone:{" "}
             <a
               className={styles.link}
-              href={`mailto:${contactFormText.phone.replace(/\s/g, "")}`}
+              href={`tel+:${contactFormText.phone.replace(/\s/g, "")}`}
             >
               {contactFormText.phone}
             </a>
