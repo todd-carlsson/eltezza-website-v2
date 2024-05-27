@@ -1,18 +1,22 @@
 import React from "react";
 import { BtsData, CarouselData, MetaDataType } from "./types";
 import Head from "next/head";
+import useWindowSize from "./hooks/useWindowSize";
 
 interface MetaDataProps {
   data: MetaDataType;
   favIconColor?: "purple" | "orange";
   imageData?: Array<BtsData | CarouselData>;
+  scroll?: boolean;
 }
 
 export default function MetaData({
   data,
   favIconColor = "orange",
   imageData,
+  scroll = true,
 }: MetaDataProps) {
+  const [windowWidth] = useWindowSize();
   return (
     <Head>
       <title>{data.title}</title>
@@ -37,17 +41,21 @@ export default function MetaData({
         rel="manifest"
         href={`favicon-${favIconColor}/site.webmanifest`}
       ></link>
-      {imageData?.map((item) => {
-        if (!item.isVideo) {
-          return (
-            <link key={item.id} rel="preload" as="image" href={item.src} />
-          );
-        } else {
-          return (
-            <link key={item.id} rel="preload" as="video" href={item.src} />
-          );
-        }
-      })}
+      {!scroll && (
+        <style>{`body { overflow-y: ${windowWidth <= 1200 ? "scroll" : "hidden"}; }`}</style>
+      )}
+      {imageData &&
+        imageData.map((item) => {
+          if (!item.isVideo) {
+            return (
+              <link key={item.id} rel="preload" as="image" href={item.src} />
+            );
+          } else {
+            return (
+              <link key={item.id} rel="preload" as="video" href={item.src} />
+            );
+          }
+        })}
       <meta property="og:title" content={data.title} key="title" />
       <meta name="description" content={data.description} key="description" />
       {/* Open Graph / Facebook */}
