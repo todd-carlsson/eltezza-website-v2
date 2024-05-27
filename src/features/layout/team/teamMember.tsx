@@ -29,7 +29,7 @@ export const TeamMember = memo(function TeamMember({
       },
     },
     hover: {
-      opacity: 0.6,
+      opacity: 0.45,
       scale: 1.1,
     },
   };
