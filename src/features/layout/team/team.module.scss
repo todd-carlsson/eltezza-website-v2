@@ -3,7 +3,7 @@
   max-width: var(--max-width);
   padding: 0 var(--content-padding);
 
-  @media screen and (width <= 800px) {
+  @media screen and (width <=800px) {
     padding: 0 var(--content-padding-sm);
   }
 
@@ -17,11 +17,11 @@
       font-family: var(--font-source-sans);
       max-width: 50%;
 
-      @media screen and (width <= 800px) {
+      @media screen and (width <=800px) {
         max-width: none;
       }
 
-      @media screen and (width <= 500px) {
+      @media screen and (width <=500px) {
         font-size: 0.85rem;
       }
     }
@@ -33,11 +33,11 @@
     gap: 3.25rem 2rem;
     margin-top: 60px;
 
-    @media screen and (width <= 1050px) {
+    @media screen and (width <=1050px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (width <= 720px) {
+    @media screen and (width <=720px) {
       grid-template-columns: 1fr;
     }
 
@@ -47,10 +47,63 @@
       gap: 1rem;
       text-transform: uppercase;
 
-      .teamImg {
-        width: 100%;
+      .imageContainer {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: auto;
-        object-fit: cover;
+
+        .memberEmailContainer {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 800;
+
+          .memberEmail {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            opacity: 1;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              display: block;
+              margin-top: 2rem;
+              left: 50%;
+              width: 0;
+              height: 3px;
+              background: #fff;
+              transition:
+                width 0.2s ease-in-out,
+                left 0.2s ease-in-out;
+            }
+
+            &:hover::after {
+              width: 100%;
+              left: 0;
+            }
+          }
+        }
+
+        .imageWrapper {
+          transition: transform 1.5s cubic-bezier(0, 0, 0.1, 1);
+          overflow: hidden;
+
+          .teamImg {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            cursor: pointer;
+          }
+        }
       }
 
       .memberName {
