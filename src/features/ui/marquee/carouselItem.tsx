@@ -49,20 +49,6 @@ export function CarouselItem({
         />
       ) : ChromeDetect() ? (
         <div className={styles.carouselVideoContainer}>
-          {data.thumbnail && (
-            <Image
-              className={styles.thumbnail}
-              loading="eager"
-              src={data.thumbnail}
-              alt={data.alt ? data.alt : "image"}
-              height={300}
-              width={300}
-              style={{
-                width: width ? width : "auto",
-                height: height ? height : "auto",
-              }}
-            />
-          )}
           <video
             src={data.src}
             className={styles.carouselCardVideo}
@@ -76,9 +62,6 @@ export function CarouselItem({
             muted
             playsInline
           ></video>
-        </div>
-      ) : (
-        <div className={styles.carouselVideoContainer}>
           {data.thumbnail && (
             <Image
               className={styles.thumbnail}
@@ -93,6 +76,9 @@ export function CarouselItem({
               }}
             />
           )}
+        </div>
+      ) : (
+        <div className={styles.carouselVideoContainer}>
           <VideoUI
             src={data.src}
             className={styles.carouselCardVideo}
@@ -101,6 +87,20 @@ export function CarouselItem({
               height: height ? height : "auto",
             }}
           />
+          {data.thumbnail && (
+            <Image
+              className={styles.thumbnail}
+              loading="eager"
+              src={data.thumbnail}
+              alt={data.alt ? data.alt : "image"}
+              height={300}
+              width={300}
+              style={{
+                width: width ? width : "auto",
+                height: height ? height : "auto",
+              }}
+            />
+          )}
         </div>
       )}
     </div>
