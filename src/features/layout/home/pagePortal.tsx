@@ -99,7 +99,7 @@ export default function PagePortal({
                 </>
               ))}
             </div>
-            <Link href={`/${title}`}>
+            <Link href={`/${title}`} scroll={false} shallow>
               <Button className={styles.homeButton} variant={buttonVariant}>
                 Enter
               </Button>

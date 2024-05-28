@@ -70,11 +70,21 @@ export function Contact({ text, onOpen, isOpen }: ContactProps) {
       </div>
       <div className={styles.orangeOrb} />
       <div className={styles.policyLinks}>
-        <Link href="/privacy-policy" className={styles.link}>
+        <Link
+          href="/privacy-policy"
+          scroll={false}
+          shallow
+          className={styles.link}
+        >
           Privacy Policy
         </Link>
         |
-        <Link href="/terms-and-conditions" className={styles.link}>
+        <Link
+          href="/terms-and-conditions"
+          scroll={false}
+          shallow
+          className={styles.link}
+        >
           Terms & Conditions
         </Link>
       </div>
