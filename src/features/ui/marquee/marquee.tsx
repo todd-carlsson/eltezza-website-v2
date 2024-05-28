@@ -86,7 +86,7 @@ export function Marquee({
       } else return 0;
     };
 
-    const xControls = animate(x, getFinalPosition(), {
+    const xControls = animate(x, [0, getFinalPosition()], {
       ease: "linear",
       duration: duration,
       repeat: Infinity,
@@ -94,7 +94,7 @@ export function Marquee({
       repeatDelay: 0,
     });
 
-    const yControls = animate(y, getFinalPosition(), {
+    const yControls = animate(y, [0, getFinalPosition()], {
       ease: "linear",
       duration: duration,
       repeat: Infinity,
