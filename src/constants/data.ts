@@ -78,6 +78,9 @@ export const landingPageData = {
       src:
         distributionName +
         "/Landing+Page/Creative/Rinse_Content_Final_Version_gk9vl8.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/Rinse_Content_Final_Version_gk9vl8_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -94,6 +97,9 @@ export const landingPageData = {
       src:
         distributionName +
         "/Landing+Page/Creative/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/REVISED_Remarkable_Video_Wide_ozrqog_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -109,6 +115,9 @@ export const landingPageData = {
       id: "12",
       src:
         distributionName + "/Landing+Page/Creative/Redbull_Zoomed_gfb6hv.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/Redbull_Zoomed_gfb6hv_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -124,6 +133,9 @@ export const landingPageData = {
       id: "14",
       src:
         distributionName + "/Landing+Page/Creative/Kiwiblue_Zoomed_jtmk4o.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/Kiwiblue_Zoomed_jtmk4o_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -132,6 +144,9 @@ export const landingPageData = {
       src:
         distributionName +
         "/Landing+Page/Creative/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/NEW_PEAQ_Launch_Video_1_vcfcud_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -146,6 +161,9 @@ export const landingPageData = {
     {
       id: "17",
       src: distributionName + "/Landing+Page/Creative/Honey_Soy_1x1_zptjyf.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/Honey_Soy_1x1_zptjyf_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -154,6 +172,9 @@ export const landingPageData = {
       src:
         distributionName +
         "/Landing+Page/Creative/Goju_Content_Reel_dhbmn7.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/Goju_Content_Reel_dhbmn7_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -161,6 +182,9 @@ export const landingPageData = {
       id: "19",
       src:
         distributionName + "/Landing+Page/Creative/Nev_Reel_Final_rdt49z.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/Nev_Reel_Final_rdt49z_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
