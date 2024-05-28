@@ -63,7 +63,7 @@ export const TeamMember = memo(function TeamMember({
                 className={styles.memberEmail}
                 href={`mailto:${member.email ? member.email : contactFormText.email}`}
               >
-                <IoMail size={22} />
+                <IoMail size={22} color={"var(--ez-orange)"} />
                 {member.email ? member.email : contactFormText.email}
               </a>
             </motion.div>
