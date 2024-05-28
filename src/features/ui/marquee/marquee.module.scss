@@ -58,4 +58,26 @@
     z-index: -1;
     will-change: transform;
   }
+
+  .carouselVideoContainer {
+    display: inline-block;
+    position: relative;
+
+    .thumbnail {
+      object-fit: cover;
+      object-position: 50% 50%;
+      position: relative;
+      z-index: -2;
+      will-change: transform;
+    }
+
+    .carouselCardVideo {
+      object-fit: cover;
+      object-position: 50% 50%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      will-change: transform;
+    }
+  }
 }

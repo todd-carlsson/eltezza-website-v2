@@ -223,6 +223,7 @@ export const designMarqueeRightData = [
       distributionName +
       "/Design/Marquee+Right/What_they_know_about_steves_reel_ifxohz.mp4",
     thumbnail:
+      distributionName +
       "/Design/Marquee+Right/What_they_know_about_steves_reel_ifxohz_THUMBNAIL.jpg",
     alt: "What they know about steves reel",
     isVideo: true,
@@ -233,6 +234,7 @@ export const designMarqueeRightData = [
       distributionName +
       "/Design/Marquee+Right/Ikaika_Motivational_Reel_k6l7dy.mp4",
     thumbnail:
+      distributionName +
       "/Design/Marquee+Right/Ikaika_Motivational_Reel_k6l7dy_THUMBNAIL.jpg",
     alt: "Ikaika Motivational Reel",
     isVideo: true,

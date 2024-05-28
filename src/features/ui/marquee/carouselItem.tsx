@@ -48,28 +48,60 @@ export function CarouselItem({
           }}
         />
       ) : ChromeDetect() ? (
-        <video
-          src={data.src}
-          className={styles.carouselCardImg}
-          style={{
-            width: width ? width : "auto",
-            height: height ? height : "auto",
-          }}
-          preload="metadata"
-          autoPlay
-          loop
-          muted
-          playsInline
-        ></video>
+        <div className={styles.carouselVideoContainer}>
+          {data.thumbnail && (
+            <Image
+              className={styles.thumbnail}
+              loading="eager"
+              src={data.thumbnail}
+              alt={data.alt ? data.alt : "image"}
+              height={300}
+              width={300}
+              style={{
+                width: width ? width : "auto",
+                height: height ? height : "auto",
+              }}
+            />
+          )}
+          <video
+            src={data.src}
+            className={styles.carouselCardVideo}
+            style={{
+              width: width ? width : "auto",
+              height: height ? height : "auto",
+            }}
+            preload="metadata"
+            autoPlay
+            loop
+            muted
+            playsInline
+          ></video>
+        </div>
       ) : (
-        <VideoUI
-          src={data.src}
-          className={styles.carouselCardImg}
-          style={{
-            width: width ? width : "auto",
-            height: height ? height : "auto",
-          }}
-        />
+        <div className={styles.carouselVideoContainer}>
+          {data.thumbnail && (
+            <Image
+              className={styles.thumbnail}
+              loading="eager"
+              src={data.thumbnail}
+              alt={data.alt ? data.alt : "image"}
+              height={300}
+              width={300}
+              style={{
+                width: width ? width : "auto",
+                height: height ? height : "auto",
+              }}
+            />
+          )}
+          <VideoUI
+            src={data.src}
+            className={styles.carouselCardVideo}
+            style={{
+              width: width ? width : "auto",
+              height: height ? height : "auto",
+            }}
+          />
+        </div>
       )}
     </div>
   );
