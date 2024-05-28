@@ -47,7 +47,21 @@ export function CarouselItem({
             height: height ? height : "auto",
           }}
         />
-      ) : ChromeDetect() === false ? (
+      ) : ChromeDetect() ? (
+        <video
+          src={data.src}
+          className={styles.carouselCardImg}
+          style={{
+            width: width ? width : "auto",
+            height: height ? height : "auto",
+          }}
+          preload="metadata"
+          autoPlay
+          loop
+          muted
+          playsInline
+        ></video>
+      ) : (
         <VideoUI
           src={data.src}
           className={styles.carouselCardImg}
@@ -56,19 +70,6 @@ export function CarouselItem({
             height: height ? height : "auto",
           }}
         />
-      ) : (
-        <video
-          src={data.src}
-          className={styles.carouselCardImg}
-          style={{
-            width: width ? width : "auto",
-            height: height ? height : "auto",
-          }}
-          autoPlay
-          loop
-          muted
-          playsInline
-        ></video>
       )}
     </div>
   );

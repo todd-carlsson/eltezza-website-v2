@@ -56,5 +56,6 @@
     object-position: 50% 50%;
     position: relative;
     z-index: -1;
+    will-change: transform;
   }
 }
