@@ -142,7 +142,7 @@ export function Privacy() {
             Phone:{" "}
             <a
               className={styles.link}
-              href={`tel+:${contactFormText.phone.replace(/\s/g, "")}`}
+              href={`tel:+${contactFormText.phone.replace(/\s/g, "")}`}
             >
               {contactFormText.phone}
             </a>
