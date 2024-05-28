@@ -5,6 +5,7 @@ import { CarouselData } from "@/types";
 import { Badge } from "../badge";
 import React from "react";
 import { VideoUI } from "../video";
+import ChromeDetect from "@/utils/chromeDetect";
 
 interface CarouselItemProps extends React.HTMLAttributes<HTMLDivElement> {
   data: CarouselData;
@@ -46,6 +47,18 @@ export function CarouselItem({
             height: height ? height : "auto",
           }}
         />
+      ) : ChromeDetect() ? (
+        <video
+          src={data.src}
+          className={styles.carouselCardImg}
+          style={{
+            width: width ? width : "auto",
+            height: height ? height : "auto",
+          }}
+          autoPlay
+          loop
+          muted
+        ></video>
       ) : (
         <VideoUI
           src={data.src}
