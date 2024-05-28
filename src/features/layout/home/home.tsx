@@ -6,6 +6,7 @@ import { ButtonVariant } from "@/features/ui";
 import { landingPageData, logos, pageTags } from "@/constants";
 import classNames from "classnames";
 import uuid from "react-uuid";
+import Link from "next/link";
 
 export function HomeComponent() {
   const [isDualPage, setIsDualPage] = useState(false);
@@ -115,6 +116,21 @@ export function HomeComponent() {
           }}
           className={styles.purpleOrb}
         />
+        {isDualPage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { delay: 1 } }}
+            className={styles.policyLinks}
+          >
+            <Link href="/privacy-policy" className={styles.link}>
+              Privacy Policy
+            </Link>
+            |
+            <Link href="/terms-and-conditions" className={styles.link}>
+              Terms & Conditions
+            </Link>
+          </motion.div>
+        )}
       </div>
     </>
   );

@@ -43,6 +43,48 @@
     @include orb(var(--adobe-purple), right);
   }
 
+  .policyLinks {
+    display: flex;
+    gap: 0.75rem;
+    position: absolute;
+    font-size: 0.75rem;
+    bottom: 28px;
+    left: 0;
+    width: 100vw;
+    justify-content: center;
+    padding-right: 0;
+    z-index: 900;
+
+    @media screen and (width <=1200px) {
+      bottom: 1rem;
+    }
+
+    .link {
+      color: #fff;
+      width: fit-content;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        margin-top: 0.25rem;
+        left: 50%;
+        width: 0;
+        height: 1px;
+        background: #fff;
+        transition:
+          width 0.2s ease-in-out,
+          left 0.2s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+
   .homeWrapper {
     display: flex;
     justify-content: center;
@@ -85,6 +127,7 @@
       @media screen and (width <=1200px) {
         flex-direction: column;
         height: auto;
+        margin-bottom: 1rem;
       }
 
       .divider {
