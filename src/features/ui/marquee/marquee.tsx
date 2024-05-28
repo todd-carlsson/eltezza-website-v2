@@ -81,7 +81,7 @@ export function Marquee({
         return -width / 2 - 8;
       } else if (orientation === "vertical") {
         if (!isReversed) {
-          return -height / 2 + 8;
+          return -height / 2 - 8;
         } else return height / 2 - 8;
       } else return 0;
     };
