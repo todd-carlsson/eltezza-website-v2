@@ -12,6 +12,7 @@ export type CarouselData = {
   alt?: string;
   badge?: string;
   isVideo: boolean;
+  thumbnail?: string;
 };
 
 export type FeaturedReviewData = {
