@@ -47,28 +47,61 @@ export function CarouselItem({
             height: height ? height : "auto",
           }}
         />
-      ) : ChromeDetect() === false ? (
-        <VideoUI
-          src={data.src}
-          className={styles.carouselCardImg}
-          style={{
-            width: width ? width : "auto",
-            height: height ? height : "auto",
-          }}
-        />
+      ) : ChromeDetect() ? (
+        <div className={styles.carouselVideoContainer}>
+          <video
+            src={data.src}
+            className={styles.carouselCardVideo}
+            style={{
+              width: width ? width : "auto",
+              height: height ? height : "auto",
+            }}
+            preload="metadata"
+            autoPlay
+            loop
+            muted
+            playsInline
+          ></video>
+          {data.thumbnail && (
+            <Image
+              className={styles.thumbnail}
+              loading="eager"
+              src={data.thumbnail}
+              alt={data.alt ? data.alt : "image"}
+              height={300}
+              width={300}
+              style={{
+                width: width ? width : "auto",
+                height: height ? height : "auto",
+              }}
+            />
+          )}
+        </div>
       ) : (
-        <video
-          src={data.src}
-          className={styles.carouselCardImg}
-          style={{
-            width: width ? width : "auto",
-            height: height ? height : "auto",
-          }}
-          autoPlay
-          loop
-          muted
-          playsInline
-        ></video>
+        <div className={styles.carouselVideoContainer}>
+          <VideoUI
+            src={data.src}
+            className={styles.carouselCardVideo}
+            style={{
+              width: width ? width : "auto",
+              height: height ? height : "auto",
+            }}
+          />
+          {data.thumbnail && (
+            <Image
+              className={styles.thumbnail}
+              loading="eager"
+              src={data.thumbnail}
+              alt={data.alt ? data.alt : "image"}
+              height={300}
+              width={300}
+              style={{
+                width: width ? width : "auto",
+                height: height ? height : "auto",
+              }}
+            />
+          )}
+        </div>
       )}
     </div>
   );

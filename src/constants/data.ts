@@ -34,6 +34,9 @@ export const landingPageData = {
       src:
         distributionName +
         "/Landing+Page/Design/Ikaika_Motivational_Reel_k6l7dy.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Design/Ikaika_Motivational_Reel_k6l7dy_THUMBNAIL.jpg",
       badge: "Reels",
       isVideo: true,
     },
@@ -56,6 +59,9 @@ export const landingPageData = {
       src:
         distributionName +
         "/Landing+Page/Design/Oreo_Reel_super_final_rlocdk.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Design/Oreo_Reel_super_final_rlocdk_THUMBNAIL.jpg",
       badge: "Reels",
       isVideo: true,
     },
@@ -72,6 +78,9 @@ export const landingPageData = {
       src:
         distributionName +
         "/Landing+Page/Creative/Rinse_Content_Final_Version_gk9vl8.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/Rinse_Content_Final_Version_gk9vl8_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -88,6 +97,9 @@ export const landingPageData = {
       src:
         distributionName +
         "/Landing+Page/Creative/REVISED_Remarkable_Video_Wide_ozrqog.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/REVISED_Remarkable_Video_Wide_ozrqog_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -103,6 +115,9 @@ export const landingPageData = {
       id: "12",
       src:
         distributionName + "/Landing+Page/Creative/Redbull_Zoomed_gfb6hv.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/Redbull_Zoomed_gfb6hv_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -118,6 +133,9 @@ export const landingPageData = {
       id: "14",
       src:
         distributionName + "/Landing+Page/Creative/Kiwiblue_Zoomed_jtmk4o.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/Kiwiblue_Zoomed_jtmk4o_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -126,6 +144,9 @@ export const landingPageData = {
       src:
         distributionName +
         "/Landing+Page/Creative/NEW_PEAQ_Launch_Video_1_vcfcud.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/NEW_PEAQ_Launch_Video_1_vcfcud_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -140,6 +161,9 @@ export const landingPageData = {
     {
       id: "17",
       src: distributionName + "/Landing+Page/Creative/Honey_Soy_1x1_zptjyf.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/Honey_Soy_1x1_zptjyf_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -148,6 +172,9 @@ export const landingPageData = {
       src:
         distributionName +
         "/Landing+Page/Creative/Goju_Content_Reel_dhbmn7.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/Goju_Content_Reel_dhbmn7_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -155,6 +182,9 @@ export const landingPageData = {
       id: "19",
       src:
         distributionName + "/Landing+Page/Creative/Nev_Reel_Final_rdt49z.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Creative/Nev_Reel_Final_rdt49z_THUMBNAIL.jpg",
       badge: "Promotional Video",
       isVideo: true,
     },
@@ -203,6 +233,9 @@ export const designMarqueeRightData = [
     src:
       distributionName +
       "/Design/Marquee+Right/Tonkotsu_Ramen_on_Fire_Reel_mpqmrp.mp4",
+    thumbnail:
+      distributionName +
+      "/Design/Marquee+Right/Tonkotsu_Ramen_on_Fire_Reel_mpqmrp_THUMBNAIL.jpg",
     alt: "Tonkotsu Ramen on Fire Reel",
     isVideo: true,
   },
@@ -219,6 +252,9 @@ export const designMarqueeRightData = [
     src:
       distributionName +
       "/Design/Marquee+Right/What_they_know_about_steves_reel_ifxohz.mp4",
+    thumbnail:
+      distributionName +
+      "/Design/Marquee+Right/What_they_know_about_steves_reel_ifxohz_THUMBNAIL.jpg",
     alt: "What they know about steves reel",
     isVideo: true,
   },
@@ -227,6 +263,9 @@ export const designMarqueeRightData = [
     src:
       distributionName +
       "/Design/Marquee+Right/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    thumbnail:
+      distributionName +
+      "/Design/Marquee+Right/Ikaika_Motivational_Reel_k6l7dy_THUMBNAIL.jpg",
     alt: "Ikaika Motivational Reel",
     isVideo: true,
   },
@@ -250,6 +289,9 @@ export const designCarouselData = [
   {
     id: "3",
     src: distributionName + "/Design/Work/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    thumbnail:
+      distributionName +
+      "/Design/Work/Ikaika_Motivational_Reel_k6l7dy_THUMBNAIL.jpg",
     alt: "Ikaika Motivational Reel",
     badge: "Reels",
     isVideo: true,
@@ -271,6 +313,9 @@ export const designCarouselData = [
   {
     id: "6",
     src: distributionName + "/Design/Work/Oreo_Reel_super_final_rlocdk.mp4",
+    thumbnail:
+      distributionName +
+      "/Design/Work/Oreo_Reel_super_final_rlocdk_THUMBNAIL.jpg",
     alt: "Oreo Reel",
     badge: "Reels",
     isVideo: true,
@@ -294,6 +339,9 @@ export const designCarouselData = [
     src:
       distributionName +
       "/Design/Work/What_they_know_about_steves_reel_ifxohz.mp4",
+    thumbnail:
+      distributionName +
+      "/Design/Work/What_they_know_about_steves_reel_ifxohz_THUMBNAIL.jpg",
     alt: "What they know about Steve's Reel",
     badge: "Reels",
     isVideo: true,
