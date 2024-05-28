@@ -34,6 +34,9 @@ export const landingPageData = {
       src:
         distributionName +
         "/Landing+Page/Design/Ikaika_Motivational_Reel_k6l7dy.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Design/Ikaika_Motivational_Reel_k6l7dy_THUMBNAIL.jpg",
       badge: "Reels",
       isVideo: true,
     },
@@ -56,6 +59,9 @@ export const landingPageData = {
       src:
         distributionName +
         "/Landing+Page/Design/Oreo_Reel_super_final_rlocdk.mp4",
+      thumbnail:
+        distributionName +
+        "/Landing+Page/Design/Oreo_Reel_super_final_rlocdk_THUMBNAIL.jpg",
       badge: "Reels",
       isVideo: true,
     },
