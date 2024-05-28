@@ -32,11 +32,51 @@
   width: 100%;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 100px;
   padding: 120px 0;
   margin-bottom: 65px;
+
+  .policyLinks {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    padding-right: 0;
+    position: relative;
+    margin-top: 1.5rem;
+    z-index: 800;
+
+    .link {
+      color: #fff;
+      position: relative;
+      width: fit-content;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        margin-top: 0.25rem;
+        left: 50%;
+        width: 0;
+        height: 1px;
+        background: #fff;
+        transition:
+          width 0.2s ease-in-out,
+          left 0.2s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
 
   .orangeOrb {
     @include orb(var(--ez-orange), right);

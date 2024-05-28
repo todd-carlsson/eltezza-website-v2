@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./contact.module.scss";
 import { Button, ButtonVariant } from "@/features/ui";
+import Link from "next/link";
 
 interface ContactProps {
   text: "design" | "create";
@@ -68,6 +69,15 @@ export function Contact({ text, onOpen, isOpen }: ContactProps) {
         </Button>
       </div>
       <div className={styles.orangeOrb} />
+      <div className={styles.policyLinks}>
+        <Link href="/privacy-policy" className={styles.link}>
+          Privacy Policy
+        </Link>
+        |
+        <Link href="/terms-and-conditions" className={styles.link}>
+          Terms & Conditions
+        </Link>
+      </div>
     </section>
   );
 }
