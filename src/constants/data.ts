@@ -289,6 +289,9 @@ export const designCarouselData = [
   {
     id: "3",
     src: distributionName + "/Design/Work/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    thumbnail:
+      distributionName +
+      "/Design/Work/Ikaika_Motivational_Reel_k6l7dy_THUMBNAIL.jpg",
     alt: "Ikaika Motivational Reel",
     badge: "Reels",
     isVideo: true,
@@ -310,6 +313,9 @@ export const designCarouselData = [
   {
     id: "6",
     src: distributionName + "/Design/Work/Oreo_Reel_super_final_rlocdk.mp4",
+    thumbnail:
+      distributionName +
+      "/Design/Work/Oreo_Reel_super_final_rlocdk_THUMBNAIL.jpg",
     alt: "Oreo Reel",
     badge: "Reels",
     isVideo: true,
@@ -333,6 +339,9 @@ export const designCarouselData = [
     src:
       distributionName +
       "/Design/Work/What_they_know_about_steves_reel_ifxohz.mp4",
+    thumbnail:
+      distributionName +
+      "/Design/Work/What_they_know_about_steves_reel_ifxohz_THUMBNAIL.jpg",
     alt: "What they know about Steve's Reel",
     badge: "Reels",
     isVideo: true,
