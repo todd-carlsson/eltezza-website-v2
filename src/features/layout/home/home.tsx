@@ -116,15 +116,21 @@ export function HomeComponent() {
           }}
           className={styles.purpleOrb}
         />
-        <div className={styles.policyLinks}>
-          <Link href="/privacy-policy" className={styles.link}>
-            Privacy Policy
-          </Link>
-          |
-          <Link href="/terms-and-conditions" className={styles.link}>
-            Terms & Conditions
-          </Link>
-        </div>
+        {isDualPage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { delay: 1 } }}
+            className={styles.policyLinks}
+          >
+            <Link href="/privacy-policy" className={styles.link}>
+              Privacy Policy
+            </Link>
+            |
+            <Link href="/terms-and-conditions" className={styles.link}>
+              Terms & Conditions
+            </Link>
+          </motion.div>
+        )}
       </div>
     </>
   );
