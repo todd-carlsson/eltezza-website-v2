@@ -1,40 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A creative agency website built with [Next.js](https://nextjs.org/) and [Framer Motion](https://www.framer.com/motion/).
 
-## Getting Started
+<p>
 
-First, run the development server:
+<p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[Technologies](#-technologies) •
+[Link](#-link) •
+[Features](#-features) •
+[Pages](#-pages) •
+[Links](#-links)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</p>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 🔧 Technologies
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+![Next.js](https://img.shields.io/badge/-Next.js-05122A?style=for-the-badge&logo=next.js)&nbsp;
+![React](https://img.shields.io/badge/-React-05122A?style=for-the-badge&logo=react)&nbsp;
+![Typescript](https://img.shields.io/badge/-Typescript-05122A?style=for-the-badge&logo=typescript)&nbsp;
+![SCSS](https://img.shields.io/badge/-SCSS-05122A?style=for-the-badge&logo=sass)&nbsp;
+![Framer Motion](https://img.shields.io/badge/-Framer_Motion-05122A?style=for-the-badge&logo=framer)&nbsp;
+![React Hook Form](https://img.shields.io/badge/-React_Hook_Form-05122A?style=for-the-badge&logo=reacthookform)&nbsp;
+![Zod](https://img.shields.io/badge/-Zod-05122A?style=for-the-badge&logo=zod)&nbsp;
+![Storybook](https://img.shields.io/badge/-Storybook-05122A?style=for-the-badge&logo=storybook)&nbsp;
+![Docker](https://img.shields.io/badge/-Docker-05122A?style=for-the-badge&logo=docker)&nbsp;
+![Nginx](https://img.shields.io/badge/-Nginx-05122A?style=for-the-badge&logo=nginx)&nbsp;
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## ✨ Link
 
-## Learn More
+You can visit [eltezza.com](https://www.eltezza.com/) to see the website.
 
-To learn more about Next.js, take a look at the following resources:
+## 🧩 Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js Pages Router
+- Framer Motion animations
+- SCSS modules for styling
+- Fully responsive
+- Page Transitions with Framer Motion
+- Custom marquees with Framer Motion
+- Custom video component to adapt for webkit/Safari
+- Custom scroll spy hook for tracking sections on navigation bar
+- Linting with Eslint
+- Format with Prettier
+- Husky and Lint-staged for Pre-committing
+- Github Actions Docker build and push for easy redeployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📃 Pages
 
-## Deploy on Vercel
+- Main (index)
+- Design
+- Creative
+- Privacy Policy
+- Terms and Conditions
+- Custom 404 Not Found Page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔗 Links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p>
+  <a href="https://github.com/todd-carlsson">
+    <img src="https://img.shields.io/badge/Github-000?style=flat&logo=github&logoColor=white"/>
+  </a>
+  <a href="https://www.linkedin.com/in/todd-carlsson-4181502a2/">
+    <img src="https://img.shields.io/badge/linkedin-0A66C2?style=flat&logo=linkedin&logoColor=white"/>
+  </a>
+</p>
+
+<p align="right">(<a href="#top">BACK TO TOP🔝</a>)</p>
