@@ -29,15 +29,15 @@ A creative agency website built with [Next.js](https://nextjs.org/) and [Framer 
 
 <h1>Landing Page</h1>
 
-![Landing](https://d5st4psppqx3d.cloudfront.net/misc/eltezza_landingPage_screenrecording.gif)
+![Landing](https://d5st4psppqx3d.cloudfront.net/misc/eltezza_landingPage_screenrecording.webp)
 
 <h1>Design Page</h1>
 
-![Design](https://d5st4psppqx3d.cloudfront.net/misc/eltezza_design_screenrecording.gif)
+![Design](https://d5st4psppqx3d.cloudfront.net/misc/eltezza_design_screenrecording.webp)
 
 <h1>Creative Page</h1>
 
-![Creative](https://d5st4psppqx3d.cloudfront.net/misc/eltezza_creative_screenrecording.gif)
+![Creative](https://d5st4psppqx3d.cloudfront.net/misc/eltezza_creative_screenrecording.webp)
 
 ## ✨ Website
 
