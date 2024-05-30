@@ -255,6 +255,7 @@
       position: relative;
       z-index: 800;
       animation: rotate 15s linear infinite;
+      will-change: transform;
 
       @media (prefers-reduced-motion) {
         animation: none;
