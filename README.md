@@ -30,7 +30,7 @@ A creative agency website built with [Next.js](https://nextjs.org/) and [Framer 
 <h1>Landing Page</h1>
 
 <img 
-  src="https://d5st4psppqx3d.cloudfront.net/misc/eltezza_landingPage_screenrecording.gif" 
+  src="./public/images/screenRecordings/eltezza_landingPage_screenrecording.gif" 
   alt="Landing Page Screen Recording" 
   loading="lazy"
 />
@@ -38,7 +38,7 @@ A creative agency website built with [Next.js](https://nextjs.org/) and [Framer 
 <h1>Design Page</h1>
 
 <img 
-  src="https://d5st4psppqx3d.cloudfront.net/misc/eltezza_design_screenrecording.gif" 
+  src="./public/images/screenRecordings/eltezza_design_screenrecording.gif" 
   alt="Landing Page Screen Recording" 
   loading="lazy"
 />
@@ -46,7 +46,7 @@ A creative agency website built with [Next.js](https://nextjs.org/) and [Framer 
 <h1>Creative Page</h1>
 
 <img 
-  src="https://d5st4psppqx3d.cloudfront.net/misc/eltezza_creative_screenrecording.gif" 
+  src="./public/images/screenRecordings/eltezza_creative_screenrecording.gif" 
   alt="Landing Page Screen Recording" 
   loading="lazy"
 />
