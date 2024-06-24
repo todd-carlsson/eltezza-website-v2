@@ -67,6 +67,8 @@
       object-fit: cover;
       object-position: 50% 50%;
       position: relative;
+      box-sizing: border-box;
+      border: 2px solid transparent;
       z-index: -2;
       will-change: transform;
     }
