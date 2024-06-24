@@ -337,6 +337,14 @@ export const designCarouselData = [
   },
   {
     id: "8",
+    src: distributionName + "/Design/Work/3_dISH_1_tp0sxi.mp4",
+    thumbnail: distributionName + "/Design/Work/3_dISH_1_tp0sxi_THUMBNAIL.jpg",
+    alt: "3 Dish",
+    badge: "Reels",
+    isVideo: true,
+  },
+  {
+    id: "8",
     src: distributionName + "/Design/Work/peak_performance_sgqk8g.jpg",
     alt: "Peak Performance",
     badge: "Social Media",
