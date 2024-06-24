@@ -23,6 +23,14 @@ export const landingPageData = {
     },
     {
       id: "2",
+      src: distributionName + "/Landing+Page/Design/3_dISH_1_tp0sxi.mp4",
+      thumbnail:
+        distributionName + "/Landing+Page/Design/3_dISH_1_tp0sxi_THUMBNAIL.jpg",
+      badge: "Reels",
+      isVideo: true,
+    },
+    {
+      id: "3",
       src:
         distributionName +
         "/Landing+Page/Design/black_pearl_branding_ypwjz5.jpg",
@@ -30,7 +38,7 @@ export const landingPageData = {
       isVideo: false,
     },
     {
-      id: "3",
+      id: "4",
       src:
         distributionName +
         "/Landing+Page/Design/Ikaika_Motivational_Reel_k6l7dy.mp4",
@@ -41,21 +49,21 @@ export const landingPageData = {
       isVideo: true,
     },
     {
-      id: "4",
+      id: "5",
       src:
         distributionName + "/Landing+Page/Design/peak_performance_sgqk8g.jpg",
       badge: "Social Media",
       isVideo: false,
     },
     {
-      id: "5",
+      id: "6",
       src:
         distributionName + "/Landing+Page/Design/Shareable_Giveaway_hiz45d.jpg",
       badge: "Social Media",
       isVideo: false,
     },
     {
-      id: "6",
+      id: "7",
       src:
         distributionName +
         "/Landing+Page/Design/Oreo_Reel_super_final_rlocdk.mp4",
@@ -326,6 +334,14 @@ export const designCarouselData = [
     alt: "Steve's Tyre Service",
     badge: "Social Media",
     isVideo: false,
+  },
+  {
+    id: "8",
+    src: distributionName + "/Design/Work/3_dISH_1_tp0sxi.mp4",
+    thumbnail: distributionName + "/Design/Work/3_dISH_1_tp0sxi_THUMBNAIL.jpg",
+    alt: "3 Dish",
+    badge: "Reels",
+    isVideo: true,
   },
   {
     id: "8",
