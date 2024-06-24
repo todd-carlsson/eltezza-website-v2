@@ -24,6 +24,8 @@ export const landingPageData = {
     {
       id: "2",
       src: distributionName + "/Landing+Page/Design/3_dISH_1_tp0sxi.mp4",
+      thumbnail:
+        distributionName + "/Landing+Page/Design/3_dISH_1_tp0sxi_THUMBNAIL.jpg",
       badge: "Reels",
       isVideo: true,
     },
