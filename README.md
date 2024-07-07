@@ -8,6 +8,7 @@ A creative agency website built with [Next.js](https://nextjs.org/) and [Framer 
 [Website](#-website) •
 [Features](#-features) •
 [Pages](#-pages) •
+[Disclaimer](#-disclaimer) •
 [Links](#-links)
 
 </p>
@@ -66,6 +67,11 @@ You can visit [eltezza.com](https://www.eltezza.com/) to see the website.
 - Privacy Policy
 - Terms and Conditions
 - Custom 404 Not Found Page
+
+## ⚠️ Disclaimer
+
+This is NOT a template to use for any public or commercial website. You can borrow ideas & code from this GitHub repository but you cannot use any material such as images/videos, logos etc.
+Any reproduction or use of any of the contents of this website without the express written consent of Eltezza Ltd is prohibited.
 
 ## 🔗 Links
 
