@@ -392,7 +392,7 @@ export const creativeHeroData = {
       id: "1",
       src:
         distributionName +
-        "/Creative/Hero/video/Eatkinda_Website_Video_dqohbd.mp4",
+        "/Creative/Hero/video/Eatkinda_Draft_6_Latest_Final_1_b2dnri.mp4",
       thumbnail:
         distributionName + "/Creative/Hero/video/EatKinda_TN_yclerg.jpg",
     },
@@ -526,10 +526,10 @@ export const creativeWorkData = [
     id: "9",
     srcHighQuality:
       distributionName +
-      "/Creative/Work/Eatkinda/Eatkinda_Website_Video_dqohbd.mp4",
+      "/Creative/Work/Eatkinda/Eatkinda_Draft_6_Latest_Final_1_b2dnri.mp4",
     src:
       distributionName +
-      "/Creative/Work/Eatkinda/Eatkinda_Website_Video_dqohbd_LOWRES.mp4",
+      "/Creative/Work/Eatkinda/Eatkinda_Draft_6_Latest_Final_1_b2dnri_LOWRES.mp4",
     thumbnail:
       distributionName + "/Creative/Work/Eatkinda/EatKinda_TN_yclerg.jpg",
     size: "large",
