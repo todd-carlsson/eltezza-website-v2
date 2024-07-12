@@ -67,10 +67,7 @@ export default function CreativePage() {
           description={headerDescription.creative}
           tags={pageTags.creative}
         />
-        <CreativeHero
-          video={creativeHeroData.video}
-          images={creativeHeroData.images}
-        />
+        <CreativeHero content={creativeHeroData} />
       </div>
       <CreativeWork content={creativeWorkData} />
       <Services content={services.creative} color={color} />

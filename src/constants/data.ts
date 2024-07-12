@@ -2,6 +2,7 @@ import {
   BrandsData,
   BtsData,
   CarouselData,
+  CreativeHeroData,
   CreativeHeroImgData,
   CreativeHeroVideoData,
   CreativeWorkData,
@@ -386,33 +387,56 @@ export const designCarouselData = [
 ] satisfies Array<CarouselData>;
 
 // CREATIVE PAGE DATA
-export const creativeHeroData = {
-  video: [
-    {
+export const creativeHeroData = [
+  {
+    video: {
       id: "1",
       src:
         distributionName +
         "/Creative/Hero/video/Eatkinda_Draft_6_Latest_Final_1_b2dnri.mp4",
       thumbnail:
         distributionName + "/Creative/Hero/video/EatKinda_TN_yclerg.jpg",
-    },
-  ] satisfies Array<CreativeHeroVideoData>,
-  images: [
-    {
-      id: "1",
-      src:
-        distributionName + "/Creative/Hero/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
-      alt: "EatKinda Freezer",
-    },
-    {
+    } satisfies CreativeHeroVideoData,
+    images: [
+      {
+        id: "1",
+        src:
+          distributionName +
+          "/Creative/Hero/EatKinda_-_Freezer_1.5x_vnwdlp.jpg",
+        alt: "EatKinda Freezer",
+      },
+      {
+        id: "2",
+        src:
+          distributionName +
+          "/Creative/Hero/EatKinda_-_Available_Woowlorths_Final_1.5x_zfnn1v.jpg",
+        alt: "EatKinda available at Woolworths",
+      },
+    ] satisfies Array<CreativeHeroImgData>,
+  },
+  {
+    video: {
       id: "2",
       src:
         distributionName +
-        "/Creative/Hero/EatKinda_-_Available_Woowlorths_Final_1.5x_zfnn1v.jpg",
-      alt: "EatKinda available at Woolworths",
-    },
-  ] satisfies Array<CreativeHeroImgData>,
-};
+        "/Creative/Hero/Rinse/video/Rinse_Content_Final_Version_gk9vl8_LOWRES.mp4",
+      thumbnail:
+        distributionName + "/Creative/Hero/Rinse/video/Rinse_TN_nuwajl.jpg",
+    } satisfies CreativeHeroVideoData,
+    images: [
+      {
+        id: "2",
+        src: distributionName + "/Creative/Hero/Rinse/Rinse_img1.png",
+        alt: "Rinse Cans",
+      },
+      {
+        id: "3",
+        src: distributionName + "/Creative/Hero/Rinse/Rinse_img2.jpg",
+        alt: "Rinse at the table",
+      },
+    ] satisfies Array<CreativeHeroImgData>,
+  },
+] satisfies CreativeHeroData[];
 
 export const creativeWorkData = [
   {

@@ -129,6 +129,33 @@
     top: 0;
   }
 
+  .line {
+    border-radius: 3px;
+    height: 100%;
+    position: absolute;
+    left: -24px;
+    width: 5px;
+    background-color: var(--heightened-grey);
+
+    .progress {
+      border-radius: inherit;
+      position: absolute;
+      bottom: 0;
+      width: inherit;
+      background-color: var(--adobe-purple);
+    }
+
+    @keyframes animate-progress {
+      0% {
+        height: 0%;
+      }
+
+      100% {
+        height: 100%;
+      }
+    }
+  }
+
   .purpleOrb {
     @include orb(
       var(--adobe-purple),
@@ -165,7 +192,6 @@
 
   .creativeImg {
     width: 100%;
-    height: auto;
     border-radius: 12px;
     object-fit: cover;
     position: relative;

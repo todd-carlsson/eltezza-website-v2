@@ -42,6 +42,11 @@ export type CreativeHeroVideoData = {
   thumbnail: string;
 };
 
+export type CreativeHeroData = {
+  video: CreativeHeroVideoData;
+  images: CreativeHeroImgData[];
+};
+
 export type CreativeWorkData = {
   id: string;
   srcHighQuality: string;
