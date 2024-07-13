@@ -19,7 +19,7 @@ interface CreativeHeroProps {
 export function CreativeHero({ content }: CreativeHeroProps) {
   const [activeId, setActiveId] = useState(0);
   const [progressBarRef, { height }] = useMeasure();
-  const CONTENT_CHANGE_INTERVAL = 6000;
+  const CONTENT_CHANGE_INTERVAL = 7000;
 
   const y = useMotionValue(0);
 
@@ -35,7 +35,7 @@ export function CreativeHero({ content }: CreativeHeroProps) {
       ease: "linear",
       duration: CONTENT_CHANGE_INTERVAL / 1000,
       repeat: Infinity,
-      repeatDelay: 0.5,
+      repeatDelay: 0.1,
     });
 
     return () => {
@@ -44,7 +44,22 @@ export function CreativeHero({ content }: CreativeHeroProps) {
   }, [y, height]);
 
   return (
-    <div className={styles.creativeHeroContainer}>
+    <motion.div
+      key={activeId}
+      className={styles.creativeHeroContainer}
+      initial={{
+        opacity: 0,
+        bottom: -20,
+      }}
+      animate={{
+        opacity: 1,
+        bottom: 0,
+        transition: {
+          duration: 0.8,
+          type: "easeIn",
+        },
+      }}
+    >
       <motion.div className={styles.line}>
         <motion.div
           className={styles.progress}
@@ -54,7 +69,7 @@ export function CreativeHero({ content }: CreativeHeroProps) {
       </motion.div>
       <div className={styles.purpleOrb} />
 
-      <div
+      <motion.div
         key={content[activeId].video.id}
         className={classNames(styles.creativeHeroVideo, styles.gridColSpanTwo)}
       >
@@ -65,7 +80,7 @@ export function CreativeHero({ content }: CreativeHeroProps) {
             styles.gridColSpanTwo,
           )}
         />
-      </div>
+      </motion.div>
 
       {content[activeId].images.map((item) => (
         <Image
@@ -78,6 +93,6 @@ export function CreativeHero({ content }: CreativeHeroProps) {
         />
       ))}
       <div className={styles.purpleOrbSmall} />
-    </div>
+    </motion.div>
   );
 }
