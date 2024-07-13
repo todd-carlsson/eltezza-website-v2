@@ -4,6 +4,13 @@ import { CreativeHeroData } from "@/types";
 import classNames from "classnames";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import {
+  animate,
+  motion,
+  useMotionValue,
+  useMotionValueEvent,
+} from "framer-motion";
+import useMeasure from "react-use-measure";
 
 interface CreativeHeroProps {
   content: Array<CreativeHeroData>;
@@ -11,19 +18,40 @@ interface CreativeHeroProps {
 
 export function CreativeHero({ content }: CreativeHeroProps) {
   const [activeId, setActiveId] = useState(0);
+  const [progressBarRef, { height }] = useMeasure();
   const CONTENT_CHANGE_INTERVAL = 6000;
 
-  useEffect(() => {
-    setTimeout(() => {
+  const y = useMotionValue(0);
+
+  useMotionValueEvent(y, "change", (latest) => {
+    console.log(latest);
+    if (latest === -height) {
       setActiveId(activeId === content.length - 1 ? 0 : activeId + 1);
-    }, CONTENT_CHANGE_INTERVAL);
-  }, [activeId, content.length]);
+    }
+  });
+
+  useEffect(() => {
+    const yControls = animate(y, [0, -height * 2 + height], {
+      ease: "linear",
+      duration: CONTENT_CHANGE_INTERVAL / 1000,
+      repeat: Infinity,
+      repeatDelay: 0.5,
+    });
+
+    return () => {
+      yControls.stop();
+    };
+  }, [y, height]);
 
   return (
     <div className={styles.creativeHeroContainer}>
-      <div className={styles.line}>
-        <div className={styles.progress} />
-      </div>
+      <motion.div className={styles.line}>
+        <motion.div
+          className={styles.progress}
+          ref={progressBarRef}
+          style={{ y, bottom: -height }}
+        />
+      </motion.div>
       <div className={styles.purpleOrb} />
 
       <div
