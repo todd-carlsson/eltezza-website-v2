@@ -21,6 +21,21 @@ export function CreativeHero({ content }: CreativeHeroProps) {
   const [progressBarRef, { height }] = useMeasure();
   const CONTENT_CHANGE_INTERVAL = 7000;
 
+  const fadeInVariants = {
+    initial: {
+      opacity: 0,
+      bottom: -20,
+    },
+    animate: {
+      opacity: 1,
+      bottom: 0,
+      transition: {
+        duration: 0.8,
+        type: "easeIn",
+      },
+    },
+  };
+
   const y = useMotionValue(0);
 
   useMotionValueEvent(y, "change", (latest) => {
@@ -33,7 +48,7 @@ export function CreativeHero({ content }: CreativeHeroProps) {
   });
 
   useEffect(() => {
-    const yControls = animate(y, [0, -height * 2 + height], {
+    const yControls = animate(y, [0, -height], {
       ease: "linear",
       duration: CONTENT_CHANGE_INTERVAL / 1000,
       repeat: Infinity,
@@ -49,20 +64,11 @@ export function CreativeHero({ content }: CreativeHeroProps) {
     <motion.div
       key={activeId}
       className={styles.creativeHeroContainer}
-      initial={{
-        opacity: 0,
-        bottom: -20,
-      }}
-      animate={{
-        opacity: 1,
-        bottom: 0,
-        transition: {
-          duration: 0.8,
-          type: "easeIn",
-        },
-      }}
+      variants={fadeInVariants}
+      initial="initial"
+      animate="animate"
     >
-      <motion.div className={styles.line}>
+      <motion.div className={styles.progressBar}>
         <motion.div
           className={styles.progress}
           ref={progressBarRef}
