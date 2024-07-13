@@ -41,11 +41,12 @@
 .heroContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: var(--max-width);
   padding: 0 var(--content-padding);
+  margin-top: 100px;
   position: relative;
-  top: 100px;
 }
 
 @media screen and (width <= 800px) {
