@@ -77,6 +77,7 @@ export function CreativeHero({ content }: CreativeHeroProps) {
       >
         <VideoUI
           src={content[activeId].video.src}
+          thumbnail={content[activeId].video.thumbnail}
           className={classNames(
             styles.creativeHeroVideo,
             styles.gridColSpanTwo,
