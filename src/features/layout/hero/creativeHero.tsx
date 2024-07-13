@@ -26,7 +26,9 @@ export function CreativeHero({ content }: CreativeHeroProps) {
   useMotionValueEvent(y, "change", (latest) => {
     console.log(latest);
     if (latest === -height) {
-      setActiveId(activeId === content.length - 1 ? 0 : activeId + 1);
+      setTimeout(() => {
+        setActiveId(activeId === content.length - 1 ? 0 : activeId + 1);
+      }, 500);
     }
   });
 
@@ -35,7 +37,7 @@ export function CreativeHero({ content }: CreativeHeroProps) {
       ease: "linear",
       duration: CONTENT_CHANGE_INTERVAL / 1000,
       repeat: Infinity,
-      repeatDelay: 0.1,
+      repeatDelay: 0.55,
     });
 
     return () => {
