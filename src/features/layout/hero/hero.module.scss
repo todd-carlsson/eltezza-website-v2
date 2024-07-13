@@ -138,6 +138,10 @@
     background-color: var(--heightened-grey);
     overflow: hidden;
 
+    @media screen and (width <=1075px) {
+      display: none;
+    }
+
     .progress {
       border-radius: inherit;
       position: absolute;
