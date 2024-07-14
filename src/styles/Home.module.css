@@ -41,7 +41,6 @@
 .heroContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   max-width: var(--max-width);
   padding: 0 var(--content-padding);
