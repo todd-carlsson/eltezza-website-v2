@@ -45,7 +45,6 @@
   align-items: center;
   max-width: var(--max-width);
   padding: 0 var(--content-padding);
-  margin-top: 100px;
   position: relative;
   top: 100px;
 }
