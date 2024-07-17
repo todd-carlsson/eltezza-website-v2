@@ -30,7 +30,7 @@
 
 .homeContainer {
   width: 100%;
-  min-height: 100lvh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@
     font-size: 0.75rem;
     bottom: 28px;
     left: 0;
-    width: 100vw;
+    width: 100lvw;
     justify-content: center;
     padding-right: 0;
     z-index: 900;
@@ -99,7 +99,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      height: 100svh;
+      height: 100dvh;
       width: max-content;
       position: fixed;
       top: 0;
