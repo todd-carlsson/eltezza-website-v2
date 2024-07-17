@@ -9,11 +9,11 @@
     display: block;
 
     @media screen and (width <= 800px) {
-      font-size: 10vw;
+      font-size: 10lvw;
     }
 
     @media screen and (width <= 400px) {
-      font-size: 11vw;
+      font-size: 11lvw;
     }
 
     .titleBreak {
@@ -92,7 +92,7 @@
     display: flex;
     justify-content: center;
     margin-top: 3rem;
-    scroll-margin-top: 50vh;
+    scroll-margin-top: 50lvh;
 
     @media screen and (width > 1050px) {
       display: none;
