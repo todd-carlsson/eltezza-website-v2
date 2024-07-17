@@ -62,20 +62,20 @@
       background: #fff;
 
       @media screen and (width <=1400px) {
-        height: 50vw;
+        height: 50lvw;
         width: auto;
-        max-width: 50vw;
+        max-width: 50lvw;
       }
 
       @media screen and (width <=900px) {
-        max-height: 70vh;
+        max-height: 70lvh;
       }
 
       @media screen and (width <=800px) {
         width: 100%;
-        min-width: calc(100vw - var(--content-padding-sm) * 2);
+        min-width: calc(100lvw - var(--content-padding-sm) * 2);
         min-height: 400px;
-        max-height: 100vh;
+        max-height: 100lvh;
         margin-left: 0;
       }
     }
@@ -104,7 +104,7 @@
     }
 
     .mainImgCreative {
-      width: 15vw;
+      width: 15lvw;
       height: auto;
       max-width: 235px;
 
@@ -163,34 +163,34 @@
         white-space: nowrap;
         text-align: left;
         align-self: center;
-        font-size: clamp(3rem, -0.5556rem + 7.1111vw, 7rem);
+        font-size: clamp(3rem, -0.5556rem + 7.1111lvw, 7rem);
 
         @media screen and (width <=800px) {
-          font-size: clamp(4rem, 10vw, 7rem);
+          font-size: clamp(4rem, 10lvw, 7rem);
         }
 
         @media screen and (width <=500px) {
-          font-size: clamp(3rem, 4vw, 4rem);
+          font-size: clamp(3rem, 4lvw, 4rem);
         }
 
         @media screen and (width <=400px) {
-          font-size: clamp(2.35rem, 5vw, 3.8rem);
+          font-size: clamp(2.35rem, 5lvw, 3.8rem);
         }
       }
 
       .designBtsText {
-        font-size: clamp(2.15rem, 4.25vw, 7rem);
+        font-size: clamp(2.15rem, 4.25lvw, 7rem);
 
         @media screen and (width <=800px) {
-          font-size: clamp(4rem, 10vw, 6rem);
+          font-size: clamp(4rem, 10lvw, 6rem);
         }
 
         @media screen and (width <=500px) {
-          font-size: clamp(3rem, 4vw, 4rem);
+          font-size: clamp(3rem, 4lvw, 4rem);
         }
 
         @media screen and (width <=400px) {
-          font-size: clamp(2.35rem, 5vw, 3.8rem);
+          font-size: clamp(2.35rem, 5lvw, 3.8rem);
         }
       }
     }

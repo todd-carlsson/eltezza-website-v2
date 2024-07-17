@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  max-width: 100vw;
+  max-width: 100lvw;
   overflow-x: hidden;
   color: #fff;
   background-color: #000;
@@ -78,7 +78,7 @@ button {
 
 @media screen and (width <=420px) {
   .largeText {
-    font-size: clamp(2.75rem, 12vw, 4rem);
+    font-size: clamp(2.75rem, 12lvw, 4rem);
   }
 }
 
