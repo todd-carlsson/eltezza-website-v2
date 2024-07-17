@@ -70,7 +70,7 @@
 
       @media screen and (width <= 1250px) {
         white-space: normal;
-        font-size: clamp(2.5rem, 4.75vw, 4rem);
+        font-size: clamp(2.5rem, 4.75lvw, 4rem);
       }
 
       @media screen and (width <= 1000px) {
@@ -78,7 +78,7 @@
       }
 
       @media screen and (width <= 400px) {
-        font-size: clamp(1.9rem, 4vw, 2.5rem);
+        font-size: clamp(1.9rem, 4lvw, 2.5rem);
       }
     }
 
@@ -118,7 +118,7 @@
     .descriptionFaq {
       @include description(max-content, 1rem);
 
-      width: calc(100vw - var(--content-padding) * 2);
+      width: calc(100lvw - var(--content-padding) * 2);
       display: inline-block;
       position: absolute;
       margin-right: var(--content-padding);

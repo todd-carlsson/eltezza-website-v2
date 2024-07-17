@@ -1,6 +1,6 @@
 @mixin orb($color, $direction) {
-  width: 100vh;
-  height: 100vh;
+  width: 100svh;
+  height: 100svh;
   background-color: $color;
   border-radius: 50%;
   filter: blur(140px);
@@ -15,22 +15,22 @@
   will-change: transform;
 
   @media screen and (width <=1100px) {
-    width: 70vw;
-    height: 70vw;
-    top: 25vh;
+    width: 70svw;
+    height: 70svw;
+    top: 25svh;
     #{$direction}: -35%;
   }
 
   @media screen and (width <=550px) {
-    width: 70vw;
-    height: 100vw;
+    width: 70svw;
+    height: 100svw;
     #{$direction}: -40%;
   }
 }
 
 .homeContainer {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100lvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +99,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      height: 100vh;
+      height: 100svh;
       width: max-content;
       position: fixed;
       top: 0;
@@ -111,11 +111,11 @@
         line-height: 100%;
 
         @media screen and (width <=1000px) {
-          font-size: clamp(4rem, 10vw, 6rem);
+          font-size: clamp(4rem, 10lvw, 6rem);
         }
 
         @media screen and (width <=415px) {
-          font-size: clamp(2.75rem, 10vw, 5rem);
+          font-size: clamp(2.75rem, 10lvw, 5rem);
         }
       }
     }
@@ -131,7 +131,7 @@
       }
 
       .divider {
-        height: calc(100vh - 82px);
+        height: calc(100lvh - 82px);
         background-color: #fff;
         width: 2px;
         opacity: 0.5;
@@ -179,15 +179,15 @@
 
       /* PAGE PORTAL */
       .pagePortalContainer {
-        width: calc(50vw - 2px);
-        height: 100vh;
+        width: calc(50lvw - 2px);
+        height: 100lvh;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 3rem;
 
         @media screen and (width <=1200px) {
-          width: 100vw;
+          width: 100lvw;
           padding: 4rem 0;
           height: fit-content;
           flex-direction: column;
@@ -216,7 +216,7 @@
             cursor: default;
 
             @media screen and (width <=800px) {
-              font-size: clamp(4rem, 10vw, 6rem);
+              font-size: clamp(4rem, 10lvw, 6rem);
             }
           }
         }
@@ -264,7 +264,7 @@
               }
 
               @media screen and (width <=600px) {
-                font-size: 2.25vw;
+                font-size: 2.25lvw;
               }
             }
 

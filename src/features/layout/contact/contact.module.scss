@@ -1,6 +1,6 @@
 @mixin orb($color, $direction) {
-  width: 50vw;
-  height: 50vw;
+  width: 50lvw;
+  height: 50lvw;
   max-width: 1500px;
   max-height: calc(100% + 120px);
   background-color: $color;
@@ -16,14 +16,14 @@
   will-change: transform;
 
   @media screen and (width <=1100px) {
-    width: 70vw;
-    height: 70vw;
+    width: 70lvw;
+    height: 70lvw;
     #{$direction}: -35%;
   }
 
   @media screen and (width <=550px) {
-    width: 70vw;
-    height: 100vw;
+    width: 70lvw;
+    height: 100lvw;
     #{$direction}: -40%;
   }
 }
@@ -114,11 +114,11 @@
       text-align: center;
 
       @media screen and (width <=1100px) {
-        font-size: clamp(3rem, 8vw, 5.5rem);
+        font-size: clamp(3rem, 8lvw, 5.5rem);
       }
 
       @media screen and (width <=550px) {
-        font-size: clamp(2rem, 9vw, 3rem);
+        font-size: clamp(2rem, 9lvw, 3rem);
         line-height: 120%;
       }
     }
@@ -135,7 +135,7 @@
       text-align: center;
 
       @media screen and (width <=1100px) {
-        font-size: clamp(0.75rem, 8vw, 1rem);
+        font-size: clamp(0.75rem, 8lvw, 1rem);
         padding: 0 var(--content-padding-sm);
       }
 
@@ -155,7 +155,7 @@
       margin: 2rem 0;
 
       @media screen and (width <=1000px) {
-        font-size: clamp(0.75rem, 8vw, 1rem);
+        font-size: clamp(0.75rem, 8lvw, 1rem);
       }
     }
   }
