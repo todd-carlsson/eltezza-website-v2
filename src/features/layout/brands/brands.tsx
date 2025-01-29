@@ -32,7 +32,7 @@ export function Brands({ content, columns }: BrandsProps) {
       >
         {content.map((brand) => (
           <Image
-            key={brand.id}
+            key={brand.brand}
             className={styles.brandLogo}
             src={brand.src}
             alt={brand.brand}

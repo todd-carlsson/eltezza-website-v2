@@ -87,7 +87,7 @@ export function Reviews({ content, page }: ReviewsProps) {
           }}
         >
           {content.map((item, i) => (
-            <SwiperSlide key={item.id}>
+            <SwiperSlide key={item.name}>
               <Review
                 review={item}
                 index={i}
@@ -109,7 +109,7 @@ export function Reviews({ content, page }: ReviewsProps) {
         </h1>
         <div className={styles.reviewsContainer}>
           {content.slice(0, paginationCount).map((item, i) => (
-            <Review key={item.id} review={item} index={i} page={page} />
+            <Review key={item.name} review={item} index={i} page={page} />
           ))}
         </div>
         <div className={styles.buttonContainer} ref={scrollDiv}>

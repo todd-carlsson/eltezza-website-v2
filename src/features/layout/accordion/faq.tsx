@@ -50,12 +50,12 @@ export function Faq({ content, color }: AccordionProps) {
         {content.map((item) => (
           <div
             className={classNames(styles.accordionSection, styles.faqSection)}
-            key={item.id}
-            onMouseOver={() => hoverHandler(item.id)}
+            key={item.title}
+            onMouseOver={() => hoverHandler(item.title)}
             onMouseLeave={() => hoverHandler("-1")}
             style={{
               backgroundColor:
-                active === item.id || windowWidth <= 1000
+                active === item.title || windowWidth <= 1000
                   ? `var(${color})`
                   : "#000",
             }}
@@ -71,7 +71,7 @@ export function Faq({ content, color }: AccordionProps) {
                 item.wrap ? "" : styles.noWrap,
               )}
               style={{
-                color: getTitleColor(item.id),
+                color: getTitleColor(item.title),
               }}
             >
               {item.title}
@@ -82,13 +82,13 @@ export function Faq({ content, color }: AccordionProps) {
                 y: windowWidth > 1000 ? -20 : 0,
               }}
               animate={{
-                opacity: active === item.id || windowWidth <= 1000 ? 1 : 0,
-                y: getDescriptionAnimation(item.id),
+                opacity: active === item.title || windowWidth <= 1000 ? 1 : 0,
+                y: getDescriptionAnimation(item.title),
               }}
               className={classNames(styles.descriptionFaq)}
               style={{
                 color: color === "--adobe-purple" ? "#fff" : "#000",
-                position: getDescriptionPosition(item.id),
+                position: getDescriptionPosition(item.title),
               }}
             >
               {item.description}

@@ -42,12 +42,12 @@ export const CreativeVideo = memo(function CreativeVideo({
         styles.creativeVideoContainer,
         getVideoColumnSize(video.size),
       )}
-      key={video.id}
+      key={video.src}
     >
       {/* FULL SCREEN VIDEO */}
       <Portal root="video-root">
         <AnimatePresence>
-          {openedVideo === video.id && (
+          {openedVideo === video.src && (
             <FullScreenVideo video={video} removeFullVideo={removeFullVideo} />
           )}
         </AnimatePresence>
@@ -55,19 +55,19 @@ export const CreativeVideo = memo(function CreativeVideo({
       {/* THUMBNAIL */}
       <motion.img
         initial={{ opacity: 0 }}
-        animate={{ opacity: hoveredVideo !== video.id ? 1 : 0 }}
+        animate={{ opacity: hoveredVideo !== video.src ? 1 : 0 }}
         className={classNames(styles.videoThumbail)}
         src={video.thumbnail}
         alt={video.src}
         loading="lazy"
         decoding="async"
-        onClick={() => openFullVideo(video.id)}
-        onMouseEnter={() => playVideo(video.id)}
-        onMouseLeave={() => pauseVideo(video.id)}
+        onClick={() => openFullVideo(video.src)}
+        onMouseEnter={() => playVideo(video.src)}
+        onMouseLeave={() => pauseVideo(video.src)}
       />
       {/* VIDEO DETAILS TEXT */}
       <VideoDetails
-        hoveredVideo={hoveredVideo === video.id ? hoveredVideo : null}
+        hoveredVideo={hoveredVideo === video.src ? hoveredVideo : null}
         video={video}
       />
       {/* VIDEO */}
@@ -75,14 +75,14 @@ export const CreativeVideo = memo(function CreativeVideo({
         className={classNames(styles.creativeVideo)}
         poster={video.thumbnail}
         src={video.src}
-        onMouseEnter={() => playVideo(video.id)}
-        onMouseLeave={() => pauseVideo(video.id)}
+        onMouseEnter={() => playVideo(video.src)}
+        onMouseLeave={() => pauseVideo(video.src)}
         ref={(node) => {
           const map = getMap();
           if (node) {
-            map.set(video.id, node);
+            map.set(video.src, node);
           } else {
-            map.delete(video.id);
+            map.delete(video.src);
           }
         }}
         muted

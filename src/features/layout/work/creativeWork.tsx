@@ -70,14 +70,14 @@ export function CreativeWork({ content }: CreativeWorkProps) {
       <div className={styles.creativeGrid}>
         {content.map((item) => (
           <CreativeVideo
-            key={item.id}
+            key={item.src}
             video={item}
-            hoveredVideo={hoveredVideo === item.id ? hoveredVideo : null}
+            hoveredVideo={hoveredVideo === item.src ? hoveredVideo : null}
             pauseVideo={pauseVideo}
             playVideo={playVideo}
             openFullVideo={openFullVideo}
             removeFullVideo={removeFullVideo}
-            openedVideo={openedVideo === item.id ? openedVideo : null}
+            openedVideo={openedVideo === item.src ? openedVideo : null}
             getMap={getMap}
           />
         ))}
