@@ -187,10 +187,9 @@ export const designMarqueeLeftData = [
     isVideo: false,
   },
   {
-    src: distributionName + "/Design/Marquee+Right/Greenscreen_Reel.mp4",
+    src: distributionName + "/Design/Marquee+Left/Greenscreen_Reel.mp4",
     thumbnail:
-      distributionName +
-      "/Design/Marquee+Right/Greenscreen_Reel.mp4_THUMBNAIL.jpg",
+      distributionName + "/Design/Marquee+Left/Greenscreen_Reel_THUMBNAIL.jpg",
     alt: "Black Pearl Green Screen Reel",
     isVideo: true,
   },
@@ -198,6 +197,14 @@ export const designMarqueeLeftData = [
     src: distributionName + "/Design/Marquee+Left/lokl_gym_branding_b0kavo.jpg",
     alt: "LOKL Gym",
     isVideo: false,
+  },
+  {
+    src: distributionName + "/Design/Marquee+Left/SV-5_Max_Reel_Set_up_V1.mp4",
+    thumbnail:
+      distributionName +
+      "/Design/Marquee+Left/SV-5 Max Reel Set up V1_THUMBNAIL.jpg",
+    alt: "Black Pearl Green Screen Reel",
+    isVideo: true,
   },
   {
     src:
@@ -287,6 +294,14 @@ export const designCarouselData = [
     isVideo: false,
   },
   {
+    src: distributionName + "/Design/Work/Call_to_action_by_Trish_zmp58b.mp4",
+    thumbnail:
+      distributionName + "/Design/Work/Call to action by Trish_THUMBNAIL.jpg",
+    alt: "Youm Reel Trish",
+    badge: "Reels",
+    isVideo: true,
+  },
+  {
     src: distributionName + "/Design/Work/uptania_branding_pvkykm.jpg",
     alt: "Uptania Branding",
     badge: "Branding",
@@ -336,6 +351,17 @@ export const designCarouselData = [
     alt: "Good Earth Tours Branding",
     badge: "Branding",
     isVideo: false,
+  },
+  {
+    src:
+      distributionName +
+      "/Design/Work/250106_Eltezza_Black_Pearl_01_bq6czd.mp4",
+    thumbnail:
+      distributionName +
+      "/Design/Work/250106 Eltezza Black Pearl 01_THUMBNAIL.jpg",
+    alt: "Good Earth Tours Branding",
+    badge: "Reels",
+    isVideo: true,
   },
   {
     src: distributionName + "/Design/Work/black_pearl_social_media_oi1slb.jpg",
