@@ -370,6 +370,16 @@ export const designCarouselData = [
     isVideo: false,
   },
   {
+    src:
+      distributionName + "/Design/Work/New_Radio_Warant_for_Cause_d6dykc.mp4",
+    thumbnail:
+      distributionName +
+      "/Design/Work/New Radio Warant for Cause_THUMBNAIL.jpg",
+    alt: "New Radio Warant for Cause",
+    badge: "Reels",
+    isVideo: true,
+  },
+  {
     src: distributionName + "/Design/Work/Shareable_Giveaway_hiz45d.jpg",
     alt: "Black Pearl Shareable Giveaway",
     badge: "Social Media",
