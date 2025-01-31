@@ -21,9 +21,12 @@ export const landingPageData = {
       isVideo: false,
     },
     {
-      src: distributionName + "/Landing+Page/Design/3_dISH_1_tp0sxi.mp4",
+      src:
+        distributionName +
+        "/Landing+Page/Design/Why_Choose_Us_Reel_Final_dkyoxy.mp4",
       thumbnail:
-        distributionName + "/Landing+Page/Design/3_dISH_1_tp0sxi_THUMBNAIL.jpg",
+        distributionName +
+        "/Landing+Page/Design/Why+Choose+Us+Reel+Final_THUMBNAIL.jpg",
       badge: "Reels",
       isVideo: true,
     },
@@ -37,10 +40,10 @@ export const landingPageData = {
     {
       src:
         distributionName +
-        "/Landing+Page/Design/Ikaika_Motivational_Reel_k6l7dy.mp4",
+        "/Landing+Page/Design/SV-5_Max_Reel_Set_up_V1_zzhx72.mp4",
       thumbnail:
         distributionName +
-        "/Landing+Page/Design/Ikaika_Motivational_Reel_k6l7dy_THUMBNAIL.jpg",
+        "/Landing+Page/Design/SV-5+Max+Reel+Set+up+V1_THUMBNAIL.jpg",
       badge: "Reels",
       isVideo: true,
     },
