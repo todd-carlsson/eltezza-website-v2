@@ -48,11 +48,11 @@ export default function MetaData({
         imageData.map((item) => {
           if (!item.isVideo) {
             return (
-              <link key={item.id} rel="preload" as="image" href={item.src} />
+              <link key={item.src} rel="preload" as="image" href={item.src} />
             );
           } else {
             return (
-              <link key={item.id} rel="preload" as="video" href={item.src} />
+              <link key={item.src} rel="preload" as="video" href={item.src} />
             );
           }
         })}

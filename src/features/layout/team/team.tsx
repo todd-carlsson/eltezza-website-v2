@@ -66,7 +66,7 @@ export function Team({ content, description, color }: TeamProps) {
       </div>
       <div className={styles.teamGrid}>
         {content.slice(0, paginationCount).map((item, i) => (
-          <TeamMember key={item.id} member={item} index={i} color={color} />
+          <TeamMember key={item.name} member={item} index={i} color={color} />
         ))}
       </div>
       <div className={styles.buttonContainer} ref={scrollDiv}>

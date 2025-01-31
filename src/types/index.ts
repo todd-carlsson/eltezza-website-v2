@@ -7,7 +7,6 @@ export type MetaDataType = {
 };
 
 export type CarouselData = {
-  id: string;
   src: string;
   alt?: string;
   badge?: string;
@@ -22,7 +21,6 @@ export type FeaturedReviewData = {
 };
 
 export type TeamData = {
-  id: string;
   name: string;
   src: string;
   placeholder?: string;
@@ -31,19 +29,16 @@ export type TeamData = {
 };
 
 export type CreativeHeroImgData = {
-  id: string;
   src: string;
   alt: string;
 };
 
 export type CreativeHeroVideoData = {
-  id: string;
   src: string;
   thumbnail: string;
 };
 
 export type CreativeWorkData = {
-  id: string;
   srcHighQuality: string;
   src: string;
   thumbnail: string;
@@ -53,7 +48,6 @@ export type CreativeWorkData = {
 };
 
 export type BrandsData = {
-  id: string;
   brand: string;
   src: string;
   maxWidth?: number;
@@ -61,7 +55,6 @@ export type BrandsData = {
 };
 
 export type BtsData = {
-  id: string;
   src: string;
   placeholder?: string;
   alt: string;
@@ -69,14 +62,12 @@ export type BtsData = {
 };
 
 export type AccordionData = {
-  id: string;
   title: string;
   description: string;
   wrap: boolean;
 };
 
 export type TestimonialsData = {
-  id: string;
   review: string;
   name: string;
   role: string;

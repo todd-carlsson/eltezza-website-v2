@@ -17,7 +17,7 @@ export function VideoDetails({ hoveredVideo, video }: VideoDetailsProps) {
             opacity: 0,
           }}
           animate={{
-            y: hoveredVideo === video.id ? 0 : 10,
+            y: hoveredVideo === video.src ? 0 : 10,
             opacity: 1,
             transition: {
               duration: 0.17,
@@ -33,7 +33,7 @@ export function VideoDetails({ hoveredVideo, video }: VideoDetailsProps) {
             width: 0,
           }}
           animate={{
-            width: hoveredVideo === video.id ? 50 : 0,
+            width: hoveredVideo === video.src ? 50 : 0,
           }}
         />
       </div>
@@ -43,7 +43,7 @@ export function VideoDetails({ hoveredVideo, video }: VideoDetailsProps) {
           opacity: 0,
         }}
         animate={{
-          y: hoveredVideo === video.id ? 0 : -10,
+          y: hoveredVideo === video.src ? 0 : -10,
           opacity: 1,
           transition: {
             duration: 0.17,
