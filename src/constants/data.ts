@@ -213,12 +213,11 @@ export const designMarqueeRightData = [
   },
   {
     src:
-      distributionName +
-      "/Design/Marquee+Right/Tonkotsu_Ramen_on_Fire_Reel_mpqmrp.mp4",
+      distributionName + "/Design/Marquee+Right/Oztent_Set_Up_Reels_aqnubl.mp4",
     thumbnail:
       distributionName +
-      "/Design/Marquee+Right/Tonkotsu_Ramen_on_Fire_Reel_mpqmrp_THUMBNAIL.jpg",
-    alt: "Tonkotsu Ramen on Fire Reel",
+      "/Design/Marquee+Right/Oztent+Set+Up+Reels_THUMBNAIL.jpg",
+    alt: "Oztent set up",
     isVideo: true,
   },
   {
@@ -231,21 +230,19 @@ export const designMarqueeRightData = [
   {
     src:
       distributionName +
-      "/Design/Marquee+Right/What_they_know_about_steves_reel_ifxohz.mp4",
+      "/Design/Marquee+Right/Nikita_Subbed_Reel_Final_b0ak9w.mp4",
     thumbnail:
       distributionName +
-      "/Design/Marquee+Right/What_they_know_about_steves_reel_ifxohz_THUMBNAIL.jpg",
-    alt: "What they know about steves reel",
+      "/Design/Marquee+Right/Nikita+Subbed+Reel+Final_THUMBNAIL.jpg",
+    alt: "Nikita Youm",
     isVideo: true,
   },
   {
-    src:
-      distributionName +
-      "/Design/Marquee+Right/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    src: distributionName + "/Design/Marquee+Right/Greenscreen_Reel_hgcbhw.mp4",
     thumbnail:
       distributionName +
-      "/Design/Marquee+Right/Ikaika_Motivational_Reel_k6l7dy_THUMBNAIL.jpg",
-    alt: "Ikaika Motivational Reel",
+      "/Design/Marquee+Right/Greenscreen_Reel_hgcbhw_THUMBNAIL.jpg",
+    alt: "Green screen Black Pearl",
     isVideo: true,
   },
 ] satisfies Array<CarouselData>;
