@@ -264,11 +264,10 @@ export const designCarouselData = [
     isVideo: false,
   },
   {
-    src: distributionName + "/Design/Work/Ikaika_Motivational_Reel_k6l7dy.mp4",
+    src: distributionName + "/Design/Work/SV-5_Max_Reel_Set_up_V1_zzhx72.mp4",
     thumbnail:
-      distributionName +
-      "/Design/Work/Ikaika_Motivational_Reel_k6l7dy_THUMBNAIL.jpg",
-    alt: "Ikaika Motivational Reel",
+      distributionName + "/Design/Work/SV-5+Max+Reel+Set+up+V1_THUMBNAIL.jpg",
+    alt: "Oztent SV-5 set up",
     badge: "Reels",
     isVideo: true,
   },
@@ -300,9 +299,10 @@ export const designCarouselData = [
     isVideo: false,
   },
   {
-    src: distributionName + "/Design/Work/3_dISH_1_tp0sxi.mp4",
-    thumbnail: distributionName + "/Design/Work/3_dISH_1_tp0sxi_THUMBNAIL.jpg",
-    alt: "3 Dish",
+    src: distributionName + "/Design/Work/Why_Choose_Us_Reel_Final_dkyoxy.mp4",
+    thumbnail:
+      distributionName + "/Design/Work/Why+Choose+Us+Reel+Final_THUMBNAIL.jpg",
+    alt: "Why Choose Us",
     badge: "Reels",
     isVideo: true,
   },
@@ -313,13 +313,10 @@ export const designCarouselData = [
     isVideo: false,
   },
   {
-    src:
-      distributionName +
-      "/Design/Work/What_they_know_about_steves_reel_ifxohz.mp4",
+    src: distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq.mp4",
     thumbnail:
-      distributionName +
-      "/Design/Work/What_they_know_about_steves_reel_ifxohz_THUMBNAIL.jpg",
-    alt: "What they know about Steve's Reel",
+      distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
+    alt: "One Stop shop Steve's",
     badge: "Reels",
     isVideo: true,
   },
