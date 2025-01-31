@@ -76,7 +76,7 @@ export const TeamMember = memo(function TeamMember({
           className={styles.imageWrapper}
         >
           <Image
-            key={member.id}
+            key={member.name}
             className={styles.teamImg}
             src={member.src}
             alt={member.name}

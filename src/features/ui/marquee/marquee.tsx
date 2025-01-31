@@ -145,7 +145,7 @@ export function Marquee({
       >
         {content.map((item) => (
           <CarouselItem
-            key={item.id}
+            key={item.src}
             badgeSize={badgeSize}
             data={item}
             width={imgWidth}
@@ -154,7 +154,7 @@ export function Marquee({
         ))}
         {content.map((item) => (
           <CarouselItem
-            key={item.id}
+            key={item.src}
             badgeSize={badgeSize}
             aria-hidden
             data={item}

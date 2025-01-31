@@ -15,7 +15,7 @@ export function CreativeHero({ video, images }: CreativeHeroProps) {
       <div className={styles.purpleOrb} />
       {video.map((item) => (
         <div
-          key={item.id}
+          key={item.src}
           className={classNames(
             styles.creativeHeroVideo,
             styles.gridColSpanTwo,
@@ -35,7 +35,7 @@ export function CreativeHero({ video, images }: CreativeHeroProps) {
           className={styles.creativeImg}
           width={250}
           height={250}
-          key={item.id}
+          key={item.src}
           src={item.src}
           alt={item.alt}
         />

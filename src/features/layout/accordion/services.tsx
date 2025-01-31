@@ -37,12 +37,12 @@ export function Services({ content, color }: AccordionProps) {
         {content.map((item) => (
           <div
             className={classNames(styles.accordionSection)}
-            key={item.id}
-            onMouseOver={() => hoverHandler(item.id)}
+            key={item.title}
+            onMouseOver={() => hoverHandler(item.title)}
             onMouseLeave={() => hoverHandler("-1")}
             style={{
               backgroundColor:
-                active === item.id || windowWidth <= 1000
+                active === item.title || windowWidth <= 1000
                   ? `var(${color})`
                   : "#000",
             }}
@@ -53,7 +53,7 @@ export function Services({ content, color }: AccordionProps) {
                 item.wrap ? "" : styles.noWrap,
               )}
               style={{
-                color: getTitleColor(item.id),
+                color: getTitleColor(item.title),
               }}
             >
               {item.title}
@@ -64,7 +64,7 @@ export function Services({ content, color }: AccordionProps) {
                 y: 0,
               }}
               animate={{
-                opacity: active === item.id || windowWidth <= 1000 ? 1 : 0,
+                opacity: active === item.title || windowWidth <= 1000 ? 1 : 0,
               }}
               className={classNames(styles.descriptionServices)}
               style={{
