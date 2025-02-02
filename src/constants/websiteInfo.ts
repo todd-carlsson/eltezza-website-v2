@@ -59,37 +59,37 @@ export const services = {
   design: [
     {
       id: "1",
+      title: "SOCIAL MEDIA",
+      description:
+        "We start by creating a unique social media kit that aligns with your brand. Our team then curates high-quality, purposeful content strategies. We actively participate in the content collection to guarantee your social channels capture attention. With this, we then leverage our expertise and deliver captivating, scroll-stopping content.",
+      wrap: false,
+    },
+    {
+      id: "2",
       title: "WEB DEVELOPMENT",
       description:
         "From coding to launch, our web development team is your path to a digital masterpiece. Empower your business with a website that impresses and converts.",
       wrap: true,
     },
     {
-      id: "2",
+      id: "3",
       title: "WEB DESIGN",
       description:
         "Our web design services blend aesthetics with user experience because we understand first impressions matter, and your website is your introduction.",
       wrap: false,
     },
     {
-      id: "3",
+      id: "4",
       title: "BRANDING",
       description:
         "Our expert team specializes in the art of crafting distinctive and unforgettable brand identities. This includes the creation of unique logos, compelling messaging, and captivating visual elements.",
       wrap: false,
     },
     {
-      id: "4",
+      id: "5",
       title: "GRAPHIC DESIGN",
       description:
         "Our designs at Eltezza are not just visually pleasing; they're strategically crafted to meet your objectives. We work hand in hand with you to create attention-grabbing assets that get your message across effectively.",
-      wrap: false,
-    },
-    {
-      id: "5",
-      title: "SOCIAL MEDIA",
-      description:
-        "We start by creating a unique social media kit that aligns with your brand. Our team then curates high-quality, purposeful content strategies. We actively participate in the content collection to guarantee your social channels capture attention. With this, we then leverage our expertise and deliver captivating, scroll-stopping content.",
       wrap: false,
     },
   ],
