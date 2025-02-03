@@ -50,10 +50,6 @@ export default function MetaData({
             return (
               <link key={item.src} rel="preload" as="image" href={item.src} />
             );
-          } else {
-            return (
-              <link key={item.src} rel="preload" as="video" href={item.src} />
-            );
           }
         })}
       <meta property="og:title" content={data.title} key="title" />
