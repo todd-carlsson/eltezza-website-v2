@@ -88,6 +88,10 @@ export function Contact({ text, onOpen, isOpen }: ContactProps) {
           Terms & Conditions
         </Link>
       </div>
+      <p className={styles.copyrightInfo}>
+        <span className={styles.copyrightSymbol}>&#169;</span>
+        Eltezza Ltd 2025
+      </p>
     </section>
   );
 }
