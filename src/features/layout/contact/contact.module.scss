@@ -76,6 +76,19 @@
     }
   }
 
+  .copyrightInfo {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+
+    .copyrightSymbol {
+      font-size: 1rem;
+      margin-right: 0.25rem;
+      position: relative;
+      top: 1px;
+    }
+  }
+
   .orangeOrb {
     @include orb(var(--ez-orange), right);
   }
