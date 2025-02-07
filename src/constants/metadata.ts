@@ -38,6 +38,13 @@ export const metaData = {
     link: "https://eltezza.com/terms-and-conditons",
     image: distributionName + "/riseabovethenoise_ffeyu4.jpg",
   },
+  adFunnel: {
+    title: "Eltezza | Design & Creative Services",
+    description:
+      "Welcome to Eltezza: home to two distinct yet intertwined identities. Our studio creates captivating narratives, while our agency arm delivers tangible results, shaping the future of brand engagement.",
+    link: "https://eltezza.com/landing-funnel",
+    image: distributionName + "/riseabovethenoise_ffeyu4.jpg",
+  },
   error: {
     title: "Page Not Found | Eltezza",
     description:
