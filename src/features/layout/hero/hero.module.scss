@@ -242,3 +242,41 @@
     }
   }
 }
+
+// FUNNEL HERO SECTION
+.funnelHero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--content-padding);
+
+  .funnelHeroText {
+    text-align: left;
+
+    .funnelHeroHeading {
+      font-size: 3rem;
+      font-weight: 300;
+
+      .boldWord {
+        font-weight: 900;
+      }
+    }
+
+    .funnelHeroSubHeading {
+      margin-top: 1rem;
+    }
+  }
+
+  .funnelButtonContainer {
+    width: 75px;
+
+    .funnelApplyButton {
+      color: #fff;
+      position: relative;
+      text-align: center;
+      width: auto;
+    }
+  }
+}
