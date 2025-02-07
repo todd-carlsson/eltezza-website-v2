@@ -1,4 +1,4 @@
-import { FunnelHero } from "@/features/layout/hero/funnelHero";
+import { FunnelHero } from "@/features/layout";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/Home.module.css";
