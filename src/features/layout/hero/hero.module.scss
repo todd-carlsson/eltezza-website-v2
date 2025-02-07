@@ -246,11 +246,10 @@
 // FUNNEL HERO SECTION
 .funnelHero {
   width: 100%;
-  height: 100vh;
+  height: 100lvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 var(--content-padding);
 
   .funnelHeroText {
     text-align: left;
@@ -265,7 +264,7 @@
     }
 
     .funnelHeroSubHeading {
-      margin-top: 1rem;
+      margin-top: 0.75rem;
     }
   }
 

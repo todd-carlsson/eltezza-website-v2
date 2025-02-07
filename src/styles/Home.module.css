@@ -73,7 +73,13 @@
 }
 
 @media (width <=850px) {
-  .logoContainer {
+  .logoContainer,
+  .funnelContainer {
     padding: 0 var(--content-padding-sm);
   }
+}
+
+.funnelContainer {
+  width: 100%;
+  padding: 0 var(--content-padding);
 }

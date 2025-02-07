@@ -17,7 +17,9 @@ function LandingFunnel() {
           />
         </Link>
       </div>
-      <FunnelHero />
+      <section className={styles.funnelContainer}>
+        <FunnelHero />
+      </section>
     </>
   );
 }
