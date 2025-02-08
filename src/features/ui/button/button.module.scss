@@ -77,3 +77,23 @@
     var(--adobe-purple) 100%
   );
 }
+
+.applyOrange {
+  color: #fff;
+  background-color: var(--ez-orange);
+  font-weight: 800;
+  position: relative;
+  font-size: 0.8rem;
+  width: auto;
+  padding: 0.75rem 1.25rem;
+}
+
+.applyPurple {
+  color: #fff;
+  background-color: var(--adobe-purple);
+  font-weight: 800;
+  position: relative;
+  font-size: 0.8rem;
+  width: auto;
+  padding: 0.75rem 1.25rem;
+}

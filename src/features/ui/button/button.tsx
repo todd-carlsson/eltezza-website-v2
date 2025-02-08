@@ -1,5 +1,3 @@
-"use client";
-
 import React, { forwardRef, useState } from "react";
 import styles from "./button.module.scss";
 import classNames from "classnames";
@@ -14,6 +12,8 @@ const enum ButtonVariant {
   homeOrange = "homeOrange",
   homePurple = "homePurple",
   gradient = "gradient",
+  applyOrange = "applyOrange",
+  applyPurple = "applyPurple",
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -47,6 +47,8 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           [styles.homeOrange]: variant === ButtonVariant.homeOrange,
           [styles.homePurple]: variant === ButtonVariant.homePurple,
           [styles.gradient]: variant === ButtonVariant.gradient,
+          [styles.applyOrange]: variant === ButtonVariant.applyOrange,
+          [styles.applyPurple]: variant === ButtonVariant.applyPurple,
         })}
         type={type}
         ref={ref}
