@@ -1,6 +1,4 @@
-import { FunnelHero } from "@/features/layout";
-import Image from "next/image";
-import Link from "next/link";
+import { FunnelHeader, FunnelHero } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
 import MetaData from "@/metadata";
 import { metaData } from "@/constants";
@@ -31,17 +29,7 @@ function LandingFunnel() {
         }}
         className={styles.funnelPageContainer}
       >
-        <div className={styles.logoContainer}>
-          <Link href="/">
-            <Image
-              src="/images/eltezza_gradientLogo.svg"
-              alt="Eltezza"
-              width={164}
-              height={56}
-              className={styles.logo}
-            />
-          </Link>
-        </div>
+        <FunnelHeader />
         <section className={styles.funnelContentContainer}>
           <FunnelHero />
         </section>
