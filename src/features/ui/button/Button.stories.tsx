@@ -70,3 +70,19 @@ export const GradientDisabled: Story = {
     disabled: true,
   },
 };
+
+/**Apply Orange state */
+export const ApplyOrange: Story = {
+  args: {
+    children: "Test Button 123",
+    variant: ButtonVariant.applyOrange,
+  },
+};
+
+/**Apply Orange state */
+export const ApplyPurple: Story = {
+  args: {
+    children: "Test Button 123",
+    variant: ButtonVariant.applyPurple,
+  },
+};
