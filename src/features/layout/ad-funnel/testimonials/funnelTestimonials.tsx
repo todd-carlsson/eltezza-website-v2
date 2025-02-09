@@ -4,7 +4,13 @@ export function FunnelTestimonials() {
   return (
     <div className={styles.testimonialsSection}>
       <div>
-        <h2>We partner with incredible businesses doing big things.</h2>
+        <h2 className={styles.testimonialsIntroText}>
+          We partner with
+          <span className={styles.purpleUnderline}> incredible</span>
+        </h2>
+        <h2 className={styles.testimonialsIntroText}>
+          businesses doing big things.
+        </h2>
       </div>
     </div>
   );

@@ -1,3 +1,27 @@
 .testimonialsSection {
   width: 100%;
+
+  .testimonialsIntroText {
+    position: relative;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 2rem;
+
+    .purpleUnderline {
+      position: relative;
+      z-index: -1;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 98%;
+        height: 17px;
+        left: -2px;
+        bottom: 1px;
+        z-index: -1;
+        background: var(--adobe-purple);
+      }
+    }
+  }
 }

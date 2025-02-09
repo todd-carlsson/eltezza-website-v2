@@ -6,6 +6,7 @@ import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { Scroll } from "@/utils/scroll";
+import { FunnelTestimonials } from "@/features/layout/ad-funnel/testimonials";
 
 function LandingFunnel() {
   const router = useRouter();
@@ -32,6 +33,7 @@ function LandingFunnel() {
         <FunnelHeader />
         <section className={styles.funnelContentContainer}>
           <FunnelHero />
+          <FunnelTestimonials />
         </section>
         <motion.div
           initial={{ scaleX: 1 }}
