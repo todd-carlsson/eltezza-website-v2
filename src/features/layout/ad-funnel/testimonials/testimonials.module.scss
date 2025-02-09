@@ -29,6 +29,7 @@
 
   .testimonialsContainer {
     margin-top: 85px;
+    padding: 0 70px;
 
     .testimonial {
       display: flex;
@@ -41,7 +42,7 @@
         max-width: 50%;
 
         .testimonialText {
-          font-size: 1.25rem;
+          font-size: 1.3rem;
           font-weight: 300;
         }
       }
