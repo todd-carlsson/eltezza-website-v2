@@ -1,11 +1,12 @@
 import { FunnelHeader, FunnelHero } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
 import MetaData from "@/metadata";
-import { metaData } from "@/constants";
+import { funnelTestimonials, metaData } from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { Scroll } from "@/utils/scroll";
+import { FunnelTestimonials } from "@/features/layout/ad-funnel/testimonials";
 
 function LandingFunnel() {
   const router = useRouter();
@@ -32,6 +33,7 @@ function LandingFunnel() {
         <FunnelHeader />
         <section className={styles.funnelContentContainer}>
           <FunnelHero />
+          <FunnelTestimonials content={funnelTestimonials} />
         </section>
         <motion.div
           initial={{ scaleX: 1 }}

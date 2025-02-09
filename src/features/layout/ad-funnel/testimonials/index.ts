@@ -1,0 +1,1 @@
+export { FunnelTestimonials } from "./funnelTestimonials";
