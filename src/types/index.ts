@@ -73,7 +73,8 @@ export type TestimonialsData = {
   role: string;
 };
 
-export type FunnelTestimonials = {
+export type FunnelTestimonialsData = {
+  id: number;
   review: string;
   videoLink: string;
   thumbnail: string;

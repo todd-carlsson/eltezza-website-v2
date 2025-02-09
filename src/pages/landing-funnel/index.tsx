@@ -1,7 +1,7 @@
 import { FunnelHeader, FunnelHero } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
 import MetaData from "@/metadata";
-import { metaData } from "@/constants";
+import { funnelTestimonials, metaData } from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -33,7 +33,7 @@ function LandingFunnel() {
         <FunnelHeader />
         <section className={styles.funnelContentContainer}>
           <FunnelHero />
-          <FunnelTestimonials />
+          <FunnelTestimonials content={funnelTestimonials} />
         </section>
         <motion.div
           initial={{ scaleX: 1 }}
