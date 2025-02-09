@@ -6,6 +6,7 @@ import {
   CreativeHeroVideoData,
   CreativeWorkData,
   FeaturedReviewData,
+  FunnelTestimonialsData,
   TeamData,
   TestimonialsData,
 } from "@/types";
@@ -1134,3 +1135,25 @@ export const btsData = {
     },
   ] satisfies Array<BtsData>,
 };
+
+// FUNNEL PAGE DATA
+export const funnelTestimonials = [
+  {
+    id: 1,
+    review:
+      "“You guys have completely revamped our marketing & customer awareness.”",
+    videoLink: distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq.mp4",
+    thumbnail:
+      distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
+    borderColor: "--adobe-purple",
+  },
+  {
+    id: 2,
+    review:
+      "We get it.... it's hard. But that's why we're here. Hear from more business owners that were once in your position.",
+    videoLink: distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq.mp4",
+    thumbnail:
+      distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
+    borderColor: "--ez-orange",
+  },
+] satisfies Array<FunnelTestimonialsData>;
