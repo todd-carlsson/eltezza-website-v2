@@ -72,3 +72,10 @@ export type TestimonialsData = {
   name: string;
   role: string;
 };
+
+export type FunnelTestimonials = {
+  review: string;
+  videoLink: string;
+  thumbnail: string;
+  borderColor: "--ez-orange" | "--adobe-purple";
+};
