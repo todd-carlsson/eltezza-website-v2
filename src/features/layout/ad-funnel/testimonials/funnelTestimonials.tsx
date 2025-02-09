@@ -7,7 +7,7 @@ interface FunnelTestimonialsProps {
 
 export function FunnelTestimonials({ content }: FunnelTestimonialsProps) {
   return (
-    <div className={styles.testimonialsSection}>
+    <section className={styles.testimonialsSection}>
       <div className={styles.testimonialsIntroContainer}>
         <h2 className={styles.testimonialsIntroText}>
           We partner with
@@ -35,6 +35,6 @@ export function FunnelTestimonials({ content }: FunnelTestimonialsProps) {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

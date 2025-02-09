@@ -31,10 +31,10 @@ function LandingFunnel() {
         className={styles.funnelPageContainer}
       >
         <FunnelHeader />
-        <section className={styles.funnelContentContainer}>
+        <div className={styles.funnelContentContainer}>
           <FunnelHero />
           <FunnelTestimonials content={funnelTestimonials} />
-        </section>
+        </div>
         <motion.div
           initial={{ scaleX: 1 }}
           animate={{
