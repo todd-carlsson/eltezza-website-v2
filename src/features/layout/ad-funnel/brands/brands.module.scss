@@ -22,4 +22,35 @@
       }
     }
   }
+
+  // GRID
+  .brandsGridContainer {
+    background-color: #fff;
+    padding: 80px var(--content-padding);
+    display: grid;
+    place-items: center;
+    grid-row-gap: 150px;
+    width: 100%;
+    position: relative;
+    grid-template-columns: repeat(6, 1fr);
+
+    @media (width <=1300px) {
+      grid-column-gap: 3rem;
+    }
+
+    @media (width <=768px) {
+      grid-row-gap: 70px;
+    }
+
+    @media (width <=400px) {
+      grid-row-gap: 1%;
+    }
+
+    .brandLogo {
+      width: 100%;
+      max-width: 120px;
+      position: relative;
+      height: fit-content;
+    }
+  }
 }

@@ -52,6 +52,7 @@ export type BrandsData = {
   src: string;
   maxWidth?: number;
   width?: string;
+  needsColorInvert?: boolean;
 };
 
 export type BtsData = {
