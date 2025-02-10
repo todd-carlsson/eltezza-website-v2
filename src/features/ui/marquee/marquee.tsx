@@ -12,7 +12,6 @@ import {
 import { CarouselData } from "@/types";
 import useMeasure from "react-use-measure";
 import { useEffect, useState } from "react";
-import { checkIfVideoOrImage } from "@/utils/checkFileName";
 
 interface MarqueeProps {
   content: Array<CarouselData>;
@@ -145,7 +144,6 @@ export function Marquee({
         }}
       >
         {content.map((item) => {
-          const fileType = checkIfVideoOrImage(item.src);
           return (
             <CarouselItem
               key={item.src}
@@ -153,12 +151,10 @@ export function Marquee({
               data={item}
               width={imgWidth}
               height={imgHeight}
-              fileType={fileType}
             ></CarouselItem>
           );
         })}
         {content.map((item) => {
-          const fileType = checkIfVideoOrImage(item.src);
           return (
             <CarouselItem
               key={item.src}
@@ -167,7 +163,6 @@ export function Marquee({
               data={item}
               width={imgWidth}
               height={imgHeight}
-              fileType={fileType}
             ></CarouselItem>
           );
         })}
