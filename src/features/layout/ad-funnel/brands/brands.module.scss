@@ -34,7 +34,7 @@
     position: relative;
     grid-template-columns: repeat(6, 1fr);
 
-    @media (width <=1028px) {
+    @media (width <=1300px) {
       grid-column-gap: 3rem;
     }
 

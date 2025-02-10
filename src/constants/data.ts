@@ -1295,8 +1295,8 @@ export const funnelBrands = [
   {
     brand: "Fernglen Farm",
     src: "/images/brandImages/Fernglen-Farm_logo.svg",
-    maxWidth: 123,
-    width: "93%",
+    maxWidth: 100,
+    width: "83%",
     needsColorInvert: false,
   },
   {
