@@ -1,3 +1,16 @@
 .servicesContainer {
   width: 100%;
+  padding: 150px 0;
+
+  .servicesIntro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2rem;
+
+    .servicesIntroHeading {
+      font-size: 2rem;
+    }
+  }
 }
