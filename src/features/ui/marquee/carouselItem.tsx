@@ -11,6 +11,7 @@ interface CarouselItemProps extends React.HTMLAttributes<HTMLDivElement> {
   badgeSize?: "small" | "large";
   width?: number | string;
   height?: number | string;
+  fileType: "video" | "image" | undefined;
 }
 
 export function CarouselItem({
@@ -18,6 +19,7 @@ export function CarouselItem({
   badgeSize = "large",
   width,
   height,
+  fileType,
   ...props
 }: CarouselItemProps) {
   return (
@@ -33,7 +35,7 @@ export function CarouselItem({
           {data.badge}
         </Badge>
       )}
-      {!data.isVideo ? (
+      {fileType === "image" ? (
         <Image
           className={styles.carouselCardImg}
           loading="eager"

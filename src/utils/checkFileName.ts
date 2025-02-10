@@ -1,8 +1,6 @@
 import { distributionNameType, distributionName } from "@/constants";
 
-type FileTypes = ".mp4" | ".mov" | ".jpg" | ".jpeg" | ".png" | ".svg";
 type Mp4File = `${distributionNameType}/${string}.mp4`;
-type File = `${distributionNameType}/${string}${FileTypes}`;
 
 export function ensureMp4File(filename: string): Mp4File {
   if (!filename.endsWith(".mp4")) {
@@ -15,9 +13,16 @@ export function ensureMp4File(filename: string): Mp4File {
 }
 
 export function checkIfVideoOrImage(
-  filename: File,
+  filename: string,
 ): "video" | "image" | undefined {
   if (filename.endsWith(".mp4") || filename.endsWith(".mov")) {
     return "video";
-  } else return "image";
+  } else if (
+    filename.endsWith(".jpg") ||
+    filename.endsWith(".png") ||
+    filename.endsWith(".svg") ||
+    filename.endsWith(".jpeg")
+  ) {
+    return "image";
+  } else return undefined;
 }
