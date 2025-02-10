@@ -1,0 +1,1 @@
+export { FunnelBrands } from "./funnelBrands";
