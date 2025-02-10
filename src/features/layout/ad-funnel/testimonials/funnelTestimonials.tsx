@@ -18,7 +18,6 @@ export function FunnelTestimonials({ content }: FunnelTestimonialsProps) {
           businesses doing big things.
         </h2>
       </div>
-
       <Testimonial content={content} />
     </section>
   );
