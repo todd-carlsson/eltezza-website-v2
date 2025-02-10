@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { Scroll } from "@/utils/scroll";
 import { FunnelTestimonials } from "@/features/layout/ad-funnel/testimonials";
 import { FunnelBrands } from "@/features/layout/ad-funnel/brands";
+import { FunnelServices } from "@/features/layout/ad-funnel/services";
 
 function LandingFunnel() {
   const router = useRouter();
@@ -36,6 +37,7 @@ function LandingFunnel() {
           <FunnelHero />
           <FunnelTestimonials content={funnelTestimonials} />
           <FunnelBrands content={funnelBrands} />
+          <FunnelServices />
         </div>
         <motion.div
           initial={{ scaleX: 1 }}
