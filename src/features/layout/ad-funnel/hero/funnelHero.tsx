@@ -3,7 +3,7 @@ import styles from "./hero.module.scss";
 
 export function FunnelHero() {
   return (
-    <div className={styles.funnelHero}>
+    <section className={styles.funnelHero}>
       <div className={styles.funnelHeroText}>
         <h1 className={styles.funnelHeroHeading}>We help build brands that </h1>
         <h1 className={styles.funnelHeroHeading}>
@@ -18,6 +18,6 @@ export function FunnelHero() {
       <div className={styles.funnelButtonContainer}>
         <Button variant={ButtonVariant.applyOrange}>Apply now</Button>
       </div>
-    </div>
+    </section>
   );
 }

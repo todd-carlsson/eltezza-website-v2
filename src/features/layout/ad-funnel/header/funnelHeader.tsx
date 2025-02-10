@@ -4,7 +4,7 @@ import styles from "./header.module.scss";
 
 export function FunnelHeader() {
   return (
-    <div className={styles.logoContainer}>
+    <header className={styles.logoContainer}>
       <Link href="/">
         <Image
           src="/images/eltezza_gradientLogo.svg"
@@ -14,6 +14,6 @@ export function FunnelHeader() {
           className={styles.logo}
         />
       </Link>
-    </div>
+    </header>
   );
 }

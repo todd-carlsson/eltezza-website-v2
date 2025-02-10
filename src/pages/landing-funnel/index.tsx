@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { Scroll } from "@/utils/scroll";
 import { FunnelTestimonials } from "@/features/layout/ad-funnel/testimonials";
+import { FunnelBrands } from "@/features/layout/ad-funnel/brands";
 
 function LandingFunnel() {
   const router = useRouter();
@@ -31,10 +32,11 @@ function LandingFunnel() {
         className={styles.funnelPageContainer}
       >
         <FunnelHeader />
-        <section className={styles.funnelContentContainer}>
+        <div className={styles.funnelContentContainer}>
           <FunnelHero />
           <FunnelTestimonials content={funnelTestimonials} />
-        </section>
+          <FunnelBrands />
+        </div>
         <motion.div
           initial={{ scaleX: 1 }}
           animate={{
