@@ -1,6 +1,6 @@
 // METADATA
 
-const distributionName = "https://d5st4psppqx3d.cloudfront.net";
+import { distributionName } from "./websiteInfo";
 
 export const metaData = {
   design: {
