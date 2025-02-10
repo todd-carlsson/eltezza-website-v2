@@ -12,6 +12,7 @@ import {
 import { CarouselData } from "@/types";
 import useMeasure from "react-use-measure";
 import { useEffect, useState } from "react";
+import { checkIfVideoOrImage } from "@/utils/checkFileName";
 
 interface MarqueeProps {
   content: Array<CarouselData>;
@@ -143,25 +144,33 @@ export function Marquee({
           touchAction: "pan-y",
         }}
       >
-        {content.map((item) => (
-          <CarouselItem
-            key={item.src}
-            badgeSize={badgeSize}
-            data={item}
-            width={imgWidth}
-            height={imgHeight}
-          ></CarouselItem>
-        ))}
-        {content.map((item) => (
-          <CarouselItem
-            key={item.src}
-            badgeSize={badgeSize}
-            aria-hidden
-            data={item}
-            width={imgWidth}
-            height={imgHeight}
-          ></CarouselItem>
-        ))}
+        {content.map((item) => {
+          const fileType = checkIfVideoOrImage(item.src);
+          return (
+            <CarouselItem
+              key={item.src}
+              badgeSize={badgeSize}
+              data={item}
+              width={imgWidth}
+              height={imgHeight}
+              fileType={fileType}
+            ></CarouselItem>
+          );
+        })}
+        {content.map((item) => {
+          const fileType = checkIfVideoOrImage(item.src);
+          return (
+            <CarouselItem
+              key={item.src}
+              badgeSize={badgeSize}
+              aria-hidden
+              data={item}
+              width={imgWidth}
+              height={imgHeight}
+              fileType={fileType}
+            ></CarouselItem>
+          );
+        })}
       </motion.div>
     </motion.div>
   );

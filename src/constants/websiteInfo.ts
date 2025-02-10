@@ -1,3 +1,7 @@
+// DISTRIBUTION NAME FOR CLOUDFRONT
+export const distributionName = "https://d5st4psppqx3d.cloudfront.net";
+export type distributionNameType = "https://d5st4psppqx3d.cloudfront.net";
+
 // WEBSITE INFO
 export const pageTags = {
   design: ["Web Development", "Branding & Design", "Social Media"],

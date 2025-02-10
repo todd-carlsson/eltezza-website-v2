@@ -11,7 +11,7 @@ import {
   TestimonialsData,
 } from "@/types";
 
-const distributionName = "https://d5st4psppqx3d.cloudfront.net";
+import { distributionName } from "./websiteInfo";
 
 // HOME PAGE DATA
 export const landingPageData = {
