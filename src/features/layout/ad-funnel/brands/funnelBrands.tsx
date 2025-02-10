@@ -1,7 +1,13 @@
 import Image from "next/image";
 import styles from "./brands.module.scss";
+import { BrandsGrid } from "./brandsGrid";
+import { BrandsData } from "@/types";
 
-export function FunnelBrands() {
+interface FunnelBrandsProps {
+  content: Array<BrandsData>;
+}
+
+export function FunnelBrands({ content }: FunnelBrandsProps) {
   return (
     <section className={styles.brandsSection}>
       <div className={styles.brandsBanner}>
@@ -17,6 +23,7 @@ export function FunnelBrands() {
           />
         </div>
       </div>
+      <BrandsGrid content={content} />
     </section>
   );
 }
