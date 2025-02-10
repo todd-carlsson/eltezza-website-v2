@@ -6,6 +6,8 @@
   align-items: center;
   padding: 0 var(--content-padding);
   position: absolute;
+  top: 0;
+  z-index: 999;
 
   @media (width <=850px) {
     padding: 0 var(--content-padding-sm);
