@@ -1,3 +1,21 @@
 .partnershipSection {
-  width: 100%;
+  width: 100vw;
+  padding: 140px 0;
+  background-color: var(--adobe-purple);
+
+  .partnershipContainer {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .firstBox {
+      background-color: #000;
+      padding: 40px;
+    }
+
+    .secondBox {
+      background-color: #fff;
+    }
+  }
 }
