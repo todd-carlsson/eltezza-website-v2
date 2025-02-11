@@ -1,0 +1,1 @@
+export { FunnelPartnership } from "./funnelPartnership";

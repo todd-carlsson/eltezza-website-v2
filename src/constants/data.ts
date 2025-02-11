@@ -6,6 +6,7 @@ import {
   CreativeHeroVideoData,
   CreativeWorkData,
   FeaturedReviewData,
+  FunnelPartnershipData,
   FunnelServicesData,
   FunnelTestimonialsData,
   TeamData,
@@ -1326,3 +1327,31 @@ export const funnelServices = [
       "We've spent tens of thousands on Meta ads with our clients, so we know what works. Our ads get the right people looking and buying.",
   },
 ] satisfies Array<FunnelServicesData>;
+
+export const funnelPartnership = {
+  firstBox: [
+    {
+      description: "You are wanting to grow\n your business",
+    },
+    {
+      description: "Create content that reflects\n the quality of your brand.",
+    },
+    {
+      description: "Run ads that don't just get\n seen—they convert.",
+    },
+    {
+      description: "You're after reliable comms\n & real support.",
+    },
+  ] satisfies Array<FunnelPartnershipData>,
+  secondBox: [
+    {
+      description: "You're not wanting to \n grow your business",
+    },
+    {
+      description: "You're expecting\n instantaneous results",
+    },
+    {
+      description: "You're cool with blending\n in instead of standing out.",
+    },
+  ] satisfies Array<FunnelPartnershipData>,
+};
