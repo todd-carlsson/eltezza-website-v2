@@ -81,3 +81,8 @@ export type FunnelTestimonialsData = {
   thumbnail: string;
   borderColor: "--ez-orange" | "--adobe-purple";
 };
+
+export type FunnelServicesData = {
+  title: string;
+  description: string;
+};
