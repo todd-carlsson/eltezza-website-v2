@@ -1192,8 +1192,8 @@ export const funnelBrands = [
   {
     brand: "Al Brown",
     src: "/images/brandImages/Al-Brown_logo.svg",
-    maxWidth: 110,
-    width: "85%",
+    maxWidth: 80,
+    width: "65%",
     needsColorInvert: false,
   },
   {
