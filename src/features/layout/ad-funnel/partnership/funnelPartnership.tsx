@@ -3,8 +3,9 @@ import styles from "./partnership.module.scss";
 import { FaCheck } from "react-icons/fa";
 import { AiOutlineStop } from "react-icons/ai";
 import { Button, ButtonVariant } from "@/features/ui";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import useMeasure from "react-use-measure";
+import { useRef } from "react";
 
 interface FunnelPartnershipProps {
   firstBox: Array<FunnelPartnershipData>;
@@ -17,6 +18,8 @@ export function FunnelPartnership({
 }: FunnelPartnershipProps) {
   const [firsBoxRef, { width: firstBoxWidth }] = useMeasure();
   const [secondBoxRef, { width: secondBoxWidth }] = useMeasure();
+  const containerRef = useRef(null);
+  const isInView = useInView(containerRef);
 
   const firstBoxVariant = {
     hidden: {
@@ -43,13 +46,13 @@ export function FunnelPartnership({
   };
   return (
     <section className={styles.partnershipSection}>
-      <div className={styles.partnershipContainer}>
+      <div className={styles.partnershipContainer} ref={containerRef}>
         <motion.div
           className={styles.firstBox}
           ref={firsBoxRef}
           variants={firstBoxVariant}
           initial="hidden"
-          whileInView="visible"
+          animate={isInView ? "visible" : "hidden"}
         >
           <h3 className={styles.boxHeading}>
             WE SHOULD WORK <br /> TOGETHER IF...
@@ -69,7 +72,7 @@ export function FunnelPartnership({
           variants={secondBoxVariant}
           ref={secondBoxRef}
           initial="hidden"
-          whileInView="visible"
+          animate={isInView ? "visible" : "hidden"}
         >
           <h3 className={styles.boxHeading}>
             LET&apos;S NOT WORK
