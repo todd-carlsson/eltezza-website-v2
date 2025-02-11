@@ -3,6 +3,8 @@ import styles from "./partnership.module.scss";
 import { FaCheck } from "react-icons/fa";
 import { AiOutlineStop } from "react-icons/ai";
 import { Button, ButtonVariant } from "@/features/ui";
+import { motion } from "framer-motion";
+import useMeasure from "react-use-measure";
 
 interface FunnelPartnershipProps {
   firstBox: Array<FunnelPartnershipData>;
@@ -13,10 +15,42 @@ export function FunnelPartnership({
   firstBox,
   secondBox,
 }: FunnelPartnershipProps) {
+  const [firsBoxRef, { width: firstBoxWidth }] = useMeasure();
+  const [secondBoxRef, { width: secondBoxWidth }] = useMeasure();
+
+  const firstBoxVariant = {
+    hidden: {
+      x: firstBoxWidth / 2,
+    },
+    visible: {
+      x: 0,
+      transition: {
+        delay: 0.5,
+      },
+    },
+  };
+  const secondBoxVariant = {
+    hidden: {
+      x: -secondBoxWidth / 2,
+    },
+    visible: {
+      x: 0,
+      transition: {
+        duration: 0.2,
+        delay: 0.5,
+      },
+    },
+  };
   return (
     <section className={styles.partnershipSection}>
       <div className={styles.partnershipContainer}>
-        <div className={styles.firstBox}>
+        <motion.div
+          className={styles.firstBox}
+          ref={firsBoxRef}
+          variants={firstBoxVariant}
+          initial="hidden"
+          whileInView="visible"
+        >
           <h3 className={styles.boxHeading}>
             WE SHOULD WORK <br /> TOGETHER IF...
           </h3>
@@ -29,8 +63,14 @@ export function FunnelPartnership({
           <div className={styles.buttonContainer}>
             <Button variant={ButtonVariant.applyPurple}>Apply Now</Button>
           </div>
-        </div>
-        <div className={styles.secondBox}>
+        </motion.div>
+        <motion.div
+          className={styles.secondBox}
+          variants={secondBoxVariant}
+          ref={secondBoxRef}
+          initial="hidden"
+          whileInView="visible"
+        >
           <h3 className={styles.boxHeading}>
             LET&apos;S NOT WORK
             <br /> TOGETHER IF...
@@ -45,7 +85,7 @@ export function FunnelPartnership({
               <p className={styles.boxItemText}>{item.description}</p>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
