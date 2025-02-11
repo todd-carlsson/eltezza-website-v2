@@ -6,6 +6,7 @@ import {
   CreativeHeroVideoData,
   CreativeWorkData,
   FeaturedReviewData,
+  FunnelServicesData,
   FunnelTestimonialsData,
   TeamData,
   TestimonialsData,
@@ -1307,3 +1308,21 @@ export const funnelBrands = [
     needsColorInvert: false,
   },
 ] satisfies Array<BrandsData>;
+
+export const funnelServices = [
+  {
+    title: "SOCIAL MEDIA MANAGEMENT",
+    description:
+      "Our clients have seen their revenue grow exponentially just by showing up the right way online.",
+  },
+  {
+    title: "CONTENT \nPRODUCTION",
+    description:
+      "Backed by years of research on audience hooks and retention, we shoot, edit, and deliver content that actually works",
+  },
+  {
+    title: "ADS \nMANAGEMENT",
+    description:
+      "We've spent tens of thousands on Meta ads with our clients, so we know what works. Our ads get the right people looking and buying.",
+  },
+] satisfies Array<FunnelServicesData>;
