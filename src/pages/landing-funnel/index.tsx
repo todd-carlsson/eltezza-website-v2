@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 import MetaData from "@/metadata";
 import {
   funnelBrands,
+  funnelPartnership,
   funnelServices,
   funnelTestimonials,
   metaData,
@@ -46,7 +47,10 @@ function LandingFunnel() {
           <FunnelTestimonials content={funnelTestimonials} />
           <FunnelBrands content={funnelBrands} />
           <FunnelServices content={funnelServices} />
-          <FunnelPartnership />
+          <FunnelPartnership
+            firstBox={funnelPartnership.firstBox}
+            secondBox={funnelPartnership.secondBox}
+          />
         </div>
         <motion.div
           initial={{ scaleX: 1 }}

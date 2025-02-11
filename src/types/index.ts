@@ -86,3 +86,7 @@ export type FunnelServicesData = {
   title: string;
   description: string;
 };
+
+export type FunnelPartnershipData = {
+  description: string;
+};
