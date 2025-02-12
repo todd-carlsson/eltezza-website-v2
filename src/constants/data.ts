@@ -1174,8 +1174,8 @@ export const funnelBrands = [
   {
     brand: "Juluwarlu",
     src: "/images/brandImages/Juluwarlu_logo.svg",
-    maxWidth: 137,
-    width: "95%",
+    maxWidth: 132,
+    width: "113%",
   },
   {
     brand: "Nibblish",
@@ -1312,7 +1312,7 @@ export const funnelBrands = [
 
 export const funnelServices = [
   {
-    title: "SOCIAL MEDIA MANAGEMENT",
+    title: "SOCIAL MEDIA \nMANAGEMENT",
     description:
       "Our clients have seen their revenue grow exponentially just by showing up the right way online.",
   },

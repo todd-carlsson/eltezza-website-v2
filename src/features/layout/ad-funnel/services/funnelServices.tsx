@@ -1,7 +1,6 @@
 import { Button, ButtonVariant } from "@/features/ui";
 import styles from "./services.module.scss";
 import { FunnelServicesData } from "@/types";
-import classNames from "classnames";
 
 interface FunnelServicesProps {
   content: Array<FunnelServicesData>;
@@ -18,14 +17,7 @@ export function FunnelServices({ content }: FunnelServicesProps) {
         {content.map((item, i) => (
           <div key={item.title} className={styles.servicesText}>
             <div className={styles.servicesHeadingContainer}>
-              <span
-                className={classNames(
-                  styles.servicesNumber,
-                  i + 1 === 1 ? styles.servicesNumberAbsolute : null,
-                )}
-              >
-                {i + 1}
-              </span>
+              <span className={styles.servicesNumber}>{i + 1}</span>
               <h3 className={styles.servicesHeading}>{item.title}</h3>
             </div>
             <p>{item.description}</p>
