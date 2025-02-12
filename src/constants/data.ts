@@ -1180,20 +1180,20 @@ export const funnelBrands = [
   {
     brand: "Nibblish",
     src: "/images/brandImages/Nibblish_logo.svg",
-    maxWidth: 116,
-    width: "95%",
+    maxWidth: 104,
+    width: "86%",
   },
   {
     brand: "Rinse",
     src: "/images/brandImages/Rinse_logo.svg",
-    maxWidth: 112,
+    maxWidth: 102,
     width: "88%",
   },
   {
     brand: "Al Brown",
     src: "/images/brandImages/Al-Brown_logo.svg",
     maxWidth: 80,
-    width: "65%",
+    width: "85%",
     needsColorInvert: false,
   },
   {
@@ -1205,26 +1205,26 @@ export const funnelBrands = [
   {
     brand: "Auckland Museum",
     src: "/images/brandImages/AM_logo.svg",
-    maxWidth: 130,
-    width: "105%",
+    maxWidth: 180,
+    width: "115%",
   },
   {
     brand: "Oztent",
     src: "/images/brandImages/Oztent_logo.svg",
-    maxWidth: 110,
+    maxWidth: 95,
     width: "85%",
     needsColorInvert: false,
   },
   {
     brand: "Remarkable Cream",
     src: "/images/brandImages/RemarkableCream_logo.svg",
-    maxWidth: 129,
+    maxWidth: 115,
     width: "105%",
   },
   {
     brand: "Maunder Roofing",
     src: "/images/brandImages/Maunder-Roofing_logo.svg",
-    maxWidth: 110,
+    maxWidth: 155,
     width: "85%",
     needsColorInvert: false,
   },
@@ -1255,13 +1255,13 @@ export const funnelBrands = [
   {
     brand: "Goju",
     src: "/images/brandImages/Goju_logo.svg",
-    maxWidth: 72,
+    maxWidth: 95,
     width: "55%",
   },
   {
     brand: "Greenhill Seltzers",
     src: "/images/brandImages/Greenhill_logo.svg",
-    maxWidth: 125,
+    maxWidth: 110,
   },
   {
     brand: "Robert Embroideries",
@@ -1272,14 +1272,14 @@ export const funnelBrands = [
   {
     brand: "ASB Classic",
     src: "/images/brandImages/ASB-Classic_logo.svg",
-    maxWidth: 90,
+    maxWidth: 70,
     width: "75%",
     needsColorInvert: false,
   },
   {
     brand: "EatKinda",
     src: "/images/brandImages/EatKinda_logo.svg",
-    maxWidth: 123,
+    maxWidth: 107,
     width: "93%",
   },
   {
@@ -1297,14 +1297,14 @@ export const funnelBrands = [
   {
     brand: "Fernglen Farm",
     src: "/images/brandImages/Fernglen-Farm_logo.svg",
-    maxWidth: 100,
+    maxWidth: 130,
     width: "83%",
     needsColorInvert: false,
   },
   {
     brand: "Proper Crisps",
     src: "/images/brandImages/Proper-Crisps_logo.svg",
-    maxWidth: 123,
+    maxWidth: 117,
     width: "93%",
     needsColorInvert: false,
   },
