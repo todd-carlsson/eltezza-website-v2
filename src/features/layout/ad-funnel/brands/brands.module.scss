@@ -26,10 +26,10 @@
   // GRID
   .brandsGridContainer {
     background-color: #fff;
-    padding: 80px var(--content-padding);
+    padding: var(--content-padding);
     display: grid;
     place-items: center;
-    grid-row-gap: 150px;
+    grid-row-gap: 130px;
     width: 100%;
     position: relative;
     grid-template-columns: repeat(6, 1fr);
