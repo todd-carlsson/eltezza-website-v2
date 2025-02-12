@@ -29,6 +29,8 @@
     width: 75px;
     margin-top: 1.8rem;
 
-    // font-size: clamp(1rem, 1vw, 3.25rem);
+    .applyButton {
+      font-size: clamp(1rem, 0.75vw, 2rem);
+    }
   }
 }
