@@ -15,11 +15,10 @@
   }
 
   .services {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
     margin-top: 2rem;
-    gap: 2rem;
+    grid-gap: 2rem;
 
     .servicesText {
       display: flex;
@@ -39,12 +38,6 @@
           font-weight: 600;
           position: relative;
           top: 3px;
-        }
-
-        .servicesNumberAbsolute {
-          position: absolute;
-          left: -30px;
-          top: calc(50% - 28px);
         }
 
         .servicesHeading {

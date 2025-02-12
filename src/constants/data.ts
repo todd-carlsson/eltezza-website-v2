@@ -1174,19 +1174,19 @@ export const funnelBrands = [
   {
     brand: "Juluwarlu",
     src: "/images/brandImages/Juluwarlu_logo.svg",
-    maxWidth: 137,
-    width: "95%",
+    maxWidth: 132,
+    width: "113%",
   },
   {
     brand: "Nibblish",
     src: "/images/brandImages/Nibblish_logo.svg",
-    maxWidth: 116,
-    width: "95%",
+    maxWidth: 104,
+    width: "86%",
   },
   {
     brand: "Rinse",
     src: "/images/brandImages/Rinse_logo.svg",
-    maxWidth: 112,
+    maxWidth: 102,
     width: "88%",
   },
   {
@@ -1205,27 +1205,27 @@ export const funnelBrands = [
   {
     brand: "Auckland Museum",
     src: "/images/brandImages/AM_logo.svg",
-    maxWidth: 130,
-    width: "105%",
+    maxWidth: 180,
+    width: "155%",
   },
   {
     brand: "Oztent",
     src: "/images/brandImages/Oztent_logo.svg",
-    maxWidth: 110,
-    width: "85%",
+    maxWidth: 95,
+    width: "77%",
     needsColorInvert: false,
   },
   {
     brand: "Remarkable Cream",
     src: "/images/brandImages/RemarkableCream_logo.svg",
-    maxWidth: 129,
-    width: "105%",
+    maxWidth: 115,
+    width: "96%",
   },
   {
     brand: "Maunder Roofing",
     src: "/images/brandImages/Maunder-Roofing_logo.svg",
-    maxWidth: 110,
-    width: "85%",
+    maxWidth: 155,
+    width: "130%",
     needsColorInvert: false,
   },
   {
@@ -1255,13 +1255,14 @@ export const funnelBrands = [
   {
     brand: "Goju",
     src: "/images/brandImages/Goju_logo.svg",
-    maxWidth: 72,
-    width: "55%",
+    maxWidth: 95,
+    width: "85%",
   },
   {
     brand: "Greenhill Seltzers",
     src: "/images/brandImages/Greenhill_logo.svg",
-    maxWidth: 125,
+    maxWidth: 110,
+    width: "85%",
   },
   {
     brand: "Robert Embroideries",
@@ -1272,14 +1273,14 @@ export const funnelBrands = [
   {
     brand: "ASB Classic",
     src: "/images/brandImages/ASB-Classic_logo.svg",
-    maxWidth: 90,
-    width: "75%",
+    maxWidth: 70,
+    width: "57%",
     needsColorInvert: false,
   },
   {
     brand: "EatKinda",
     src: "/images/brandImages/EatKinda_logo.svg",
-    maxWidth: 123,
+    maxWidth: 107,
     width: "93%",
   },
   {
@@ -1291,28 +1292,28 @@ export const funnelBrands = [
     brand: "Youm",
     src: "/images/brandImages/Youm_logo.svg",
     maxWidth: 123,
-    width: "93%",
+    width: "103%",
     needsColorInvert: false,
   },
   {
     brand: "Fernglen Farm",
     src: "/images/brandImages/Fernglen-Farm_logo.svg",
-    maxWidth: 100,
-    width: "83%",
+    maxWidth: 130,
+    width: "107%",
     needsColorInvert: false,
   },
   {
     brand: "Proper Crisps",
     src: "/images/brandImages/Proper-Crisps_logo.svg",
-    maxWidth: 123,
-    width: "93%",
+    maxWidth: 117,
+    width: "98%",
     needsColorInvert: false,
   },
 ] satisfies Array<BrandsData>;
 
 export const funnelServices = [
   {
-    title: "SOCIAL MEDIA MANAGEMENT",
+    title: "SOCIAL MEDIA \nMANAGEMENT",
     description:
       "Our clients have seen their revenue grow exponentially just by showing up the right way online.",
   },

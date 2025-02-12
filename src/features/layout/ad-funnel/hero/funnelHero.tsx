@@ -16,7 +16,12 @@ export function FunnelHero() {
         </p>
       </div>
       <div className={styles.funnelButtonContainer}>
-        <Button variant={ButtonVariant.applyOrange}>Apply now</Button>
+        <Button
+          variant={ButtonVariant.applyOrange}
+          className={styles.applyButton}
+        >
+          Apply now
+        </Button>
       </div>
     </section>
   );
