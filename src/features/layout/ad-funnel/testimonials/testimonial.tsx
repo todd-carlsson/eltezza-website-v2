@@ -1,5 +1,6 @@
 import { FunnelTestimonialsData } from "@/types";
 import styles from "./testimonials.module.scss";
+import { boldText } from "@/utils/boldText";
 
 interface TestimonialProps {
   content: Array<FunnelTestimonialsData>;
@@ -18,7 +19,7 @@ export function Testimonial({ content }: TestimonialProps) {
             className={styles.testimonialTextContainer}
             style={{ borderLeft: ` 8px solid var(${item.borderColor})` }}
           >
-            <h4 className={styles.testimonialText}>{item.review}</h4>
+            <h4 className={styles.testimonialText}>{boldText(item.review)}</h4>
           </div>
           <video src={item.videoLink}></video>
         </div>
