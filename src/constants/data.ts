@@ -1152,7 +1152,7 @@ export const funnelTestimonials = [
   {
     id: 2,
     review:
-      "We get it.... it's hard. But that's why we're here.\n\n Hear from more business owners that were once in your position.",
+      "We get it.... it's hard. **But that's why we're here.**\n\n Hear from more business owners that were once in your position.",
     videoLink: distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq.mp4",
     thumbnail:
       distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
