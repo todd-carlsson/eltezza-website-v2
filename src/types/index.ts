@@ -104,3 +104,10 @@ export interface VideoControlsProps {
 export type FunnelWorkData = Omit<CreativeWorkData, "size"> & {
   image?: string;
 };
+
+export type FunnelWorkVideos = {
+  promotional: FunnelWorkData[];
+  organic: FunnelWorkData[];
+  productFocused: FunnelWorkData[];
+  ugc: FunnelWorkData[];
+};

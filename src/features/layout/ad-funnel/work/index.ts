@@ -1,1 +1,1 @@
-export { FunnelWork } from "./funnelWork";
+export { FunnelVideoGallery } from "./funnelWork";
