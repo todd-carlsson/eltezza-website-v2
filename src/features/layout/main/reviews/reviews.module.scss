@@ -3,7 +3,6 @@
   margin-top: 20px;
   padding: 120px 0;
   user-select: none;
-  cursor: pointer;
 
   .reviewsTitle {
     display: block;
@@ -25,8 +24,14 @@
     }
   }
 
+  .reviewsTitleSmall {
+    padding-left: var(--content-padding);
+    font-size: 2.5rem;
+  }
+
   .slider {
     margin-top: 60px;
+    cursor: pointer;
   }
 
   .reviewsContainer {
