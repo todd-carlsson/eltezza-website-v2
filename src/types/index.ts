@@ -90,3 +90,13 @@ export type FunnelServicesData = {
 export type FunnelPartnershipData = {
   description: string;
 };
+
+export interface VideoControlsProps {
+  hoveredVideo: string | null;
+  pauseVideo: (itemId: string) => void;
+  playVideo: (itemId: string) => void;
+  openFullVideo: (itemId: string) => void;
+  removeFullVideo: () => void;
+  openedVideo: string | null;
+  getMap: () => Map<string, HTMLVideoElement>;
+}

@@ -2,20 +2,13 @@ import classNames from "classnames";
 import styles from "../work.module.scss";
 import { Portal } from "../../portal";
 import { AnimatePresence, motion } from "framer-motion";
-import { CreativeWorkData } from "@/types";
+import { CreativeWorkData, VideoControlsProps } from "@/types";
 import { VideoDetails } from "./videoDetails";
 import FullScreenVideo from "./fullScreenVideo";
 import { memo } from "react";
 
-interface CreativeVideoProps {
+interface CreativeVideoProps extends VideoControlsProps {
   video: CreativeWorkData;
-  hoveredVideo: string | null;
-  pauseVideo: (itemId: string) => void;
-  playVideo: (itemId: string) => void;
-  openFullVideo: (itemId: string) => void;
-  removeFullVideo: () => void;
-  openedVideo: string | null;
-  getMap: () => Map<string, HTMLVideoElement>;
 }
 
 export const CreativeVideo = memo(function CreativeVideo({
