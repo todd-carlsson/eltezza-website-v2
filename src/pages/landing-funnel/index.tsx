@@ -1,4 +1,4 @@
-import { FunnelHeader, FunnelHero } from "@/features/layout";
+import { FunnelHeader, FunnelHero, Reviews } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
 import MetaData from "@/metadata";
 import {
@@ -7,6 +7,7 @@ import {
   funnelServices,
   funnelTestimonials,
   metaData,
+  testimonialsData,
 } from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
@@ -52,6 +53,11 @@ function LandingFunnel() {
             secondBox={funnelPartnership.secondBox}
           />
         </div>
+        <Reviews
+          content={testimonialsData}
+          page="design"
+          headingTextSize="small"
+        />
         <motion.div
           initial={{ scaleX: 1 }}
           animate={{
