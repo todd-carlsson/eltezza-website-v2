@@ -11,9 +11,14 @@ import classNames from "classnames";
 interface ReviewsProps {
   content: Array<TestimonialsData>;
   page: "design" | "creative";
+  headingTextSize?: "large" | "small";
 }
 
-export function Reviews({ content, page }: ReviewsProps) {
+export function Reviews({
+  content,
+  page,
+  headingTextSize = "large",
+}: ReviewsProps) {
   /* !IMPORTANT! */
   /* THIS FUNCTION RETURNS A DIFFERENT COMPONENT BASED ON WINDOW WIDTH, 
   BE SURE TO UPDATE THE CORRECT COMPONENT */
@@ -56,9 +61,15 @@ export function Reviews({ content, page }: ReviewsProps) {
   if (windowWidth > 1000) {
     return (
       <section id="reviews" className={styles.reviews}>
-        <h1 className={classNames(styles.reviewsTitle, "largeText")}>
-          Hear it from our <span className="textGradient">partners</span>
-        </h1>
+        {headingTextSize === "large" ? (
+          <h1 className={classNames(styles.reviewsTitle, "largeText")}>
+            Hear it from our <span className="textGradient">partners</span>
+          </h1>
+        ) : (
+          <h1 className={styles.reviewsTitleSmall}>
+            Hear it from our partners.
+          </h1>
+        )}
         <Swiper
           slidesPerView={3}
           className={styles.slider}

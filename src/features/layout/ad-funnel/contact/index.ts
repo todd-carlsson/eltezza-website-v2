@@ -1,0 +1,1 @@
+export { FunnelContact } from "./funnelContact";
