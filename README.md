@@ -54,6 +54,7 @@ You can visit [eltezza.com](https://www.eltezza.com/) to see the website.
 - Custom marquees with Framer Motion
 - Custom video component to adapt for webkit/Safari
 - Custom scroll spy hook for tracking sections on navigation bar
+- Custom video controls hook for pausing and playing videos on hover
 - Linting with Eslint
 - Format with Prettier
 - Husky and Lint-staged for Pre-committing
@@ -66,6 +67,7 @@ You can visit [eltezza.com](https://www.eltezza.com/) to see the website.
 - Creative
 - Privacy Policy
 - Terms and Conditions
+- Landing Funnel (For running Ads)
 - Custom 404 Not Found Page
 
 ## ⚠️ Disclaimer
