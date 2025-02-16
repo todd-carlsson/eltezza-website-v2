@@ -9,6 +9,7 @@ import {
   FunnelPartnershipData,
   FunnelServicesData,
   FunnelTestimonialsData,
+  FunnelWorkData,
   TeamData,
   TestimonialsData,
 } from "@/types";
@@ -1355,4 +1356,144 @@ export const funnelPartnership = {
       description: "You're cool with blending\n in instead of standing out.",
     },
   ] satisfies Array<FunnelPartnershipData>,
+};
+
+export const funnelWorkVideos = {
+  promotional: [
+    {
+      srcHighQuality:
+        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Goju",
+      campaign: "Need some pep in your step?",
+      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+    },
+    {
+      srcHighQuality:
+        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Goju",
+      campaign: "Need some pep in your step?",
+      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+    },
+    {
+      srcHighQuality:
+        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Goju",
+      campaign: "Need some pep in your step?",
+      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+    },
+  ] satisfies Array<FunnelWorkData>,
+  organic: [
+    {
+      srcHighQuality:
+        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Goju",
+      campaign: "Need some pep in your step?",
+      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+    },
+    {
+      srcHighQuality:
+        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Goju",
+      campaign: "Need some pep in your step?",
+      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+    },
+    {
+      srcHighQuality:
+        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Goju",
+      campaign: "Need some pep in your step?",
+      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+    },
+  ] satisfies Array<FunnelWorkData>,
+  productFocused: [
+    {
+      srcHighQuality:
+        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Goju",
+      campaign: "Need some pep in your step?",
+      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+    },
+    {
+      srcHighQuality:
+        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Goju",
+      campaign: "Need some pep in your step?",
+      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+    },
+    {
+      srcHighQuality:
+        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Goju",
+      campaign: "Need some pep in your step?",
+      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+    },
+  ] satisfies Array<FunnelWorkData>,
+  ugc: [
+    {
+      srcHighQuality:
+        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Goju",
+      campaign: "Need some pep in your step?",
+    },
+    {
+      srcHighQuality:
+        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Goju",
+      campaign: "Need some pep in your step?",
+    },
+    {
+      srcHighQuality:
+        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+      src:
+        distributionName +
+        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
+      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Goju",
+      campaign: "Need some pep in your step?",
+    },
+  ] satisfies Array<FunnelWorkData>,
 };

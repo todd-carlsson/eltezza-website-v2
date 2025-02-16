@@ -100,3 +100,7 @@ export interface VideoControlsProps {
   openedVideo: string | null;
   getMap: () => Map<string, HTMLVideoElement>;
 }
+
+export type FunnelWorkData = Omit<CreativeWorkData, "size"> & {
+  image?: string;
+};
