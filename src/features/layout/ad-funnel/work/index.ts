@@ -1,0 +1,1 @@
+export { FunnelWork } from "./funnelWork";
