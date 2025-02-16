@@ -290,6 +290,7 @@ export const socialLinks = {
   facebook: "https://www.facebook.com/eltezzaltd",
   instagram: "https://www.instagram.com/eltezzacreative/",
   linkedin: "https://www.linkedin.com/company/eltezza/",
+  twitter: "https://twitter.com/EltezzaCreative/",
 };
 
 export const privacyPolicy = {
