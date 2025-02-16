@@ -1,4 +1,9 @@
-import { FunnelHeader, FunnelHero, Reviews } from "@/features/layout";
+import {
+  FunnelContact,
+  FunnelHeader,
+  FunnelHero,
+  Reviews,
+} from "@/features/layout";
 import styles from "@/styles/Home.module.css";
 import MetaData from "@/metadata";
 import {
@@ -58,6 +63,7 @@ function LandingFunnel() {
           page="design"
           headingTextSize="small"
         />
+        <FunnelContact />
         <motion.div
           initial={{ scaleX: 1 }}
           animate={{
