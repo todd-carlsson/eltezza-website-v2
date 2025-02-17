@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { CreativeWorkData } from "@/types";
 
 interface FullScreenVideoProps {
-  video: CreativeWorkData;
+  video: Omit<CreativeWorkData, "size"> &
+    Partial<Pick<CreativeWorkData, "size">>;
   removeFullVideo: () => void;
 }
 

@@ -90,3 +90,24 @@ export type FunnelServicesData = {
 export type FunnelPartnershipData = {
   description: string;
 };
+
+export interface VideoControlsProps {
+  hoveredVideo: string | null;
+  pauseVideo: (itemId: string) => void;
+  playVideo: (itemId: string) => void;
+  openFullVideo: (itemId: string) => void;
+  removeFullVideo: () => void;
+  openedVideo: string | null;
+  getMap: () => Map<string, HTMLVideoElement>;
+}
+
+export type FunnelWorkData = Omit<CreativeWorkData, "size"> & {
+  image?: string;
+};
+
+export type FunnelWorkVideos = {
+  promotional: FunnelWorkData[];
+  organic: FunnelWorkData[];
+  productFocused: FunnelWorkData[];
+  ugc: FunnelWorkData[];
+};

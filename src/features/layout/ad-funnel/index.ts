@@ -5,3 +5,4 @@ export * from "./brands";
 export * from "./services";
 export * from "./partnership";
 export * from "./contact";
+export * from "./work";

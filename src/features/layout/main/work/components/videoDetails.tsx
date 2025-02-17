@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 
 interface VideoDetailsProps {
   hoveredVideo: string | null;
-  video: CreativeWorkData;
+  video: Omit<CreativeWorkData, "size"> &
+    Partial<Pick<CreativeWorkData, "size">>;
 }
 
 export function VideoDetails({ hoveredVideo, video }: VideoDetailsProps) {
