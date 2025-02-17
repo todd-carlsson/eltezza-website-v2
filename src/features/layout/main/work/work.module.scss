@@ -77,86 +77,87 @@
     .creativeVideoContainer {
       position: relative;
       width: 100%;
-
-      .creativeVideo {
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        border-radius: 12px;
-        opacity: 0.5;
-        position: relative;
-        z-index: 60;
-      }
-
-      .videoThumbail {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 12px;
-        cursor: pointer;
-        z-index: 90;
-        object-fit: cover;
-      }
-
-      // TEXT DETAILS
-
-      .videoDetails {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.75rem;
-        z-index: 80;
-        text-transform: uppercase;
-        font-weight: 500;
-        text-align: center;
-        padding: 0.5rem;
-
-        .clientContainer {
-          width: fit-content;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 0.75rem;
-          justify-content: center;
-        }
-
-        .clientName {
-          font-size: 1.75rem;
-          font-weight: 800;
-
-          @media screen and (width <=1200px) {
-            font-size: clamp(1.25rem, 6lvw, 0.5rem);
-          }
-
-          @media screen and (width <=500px) {
-            font-size: clamp(0.8rem, 6lvw, 0.5rem);
-          }
-        }
-
-        .campaignName {
-          font-size: 0.85rem;
-
-          @media screen and (width <=1200px) {
-            font-size: clamp(0.75rem, 6lvw, 0.3rem);
-          }
-
-          @media screen and (width <=500px) {
-            font-size: clamp(0.6rem, 6lvw, 0.3rem);
-          }
-        }
-
-        .lineThrough {
-          width: 65px;
-          height: 4px;
-          background-color: var(--adobe-purple);
-          border: none;
-        }
-      }
     }
+  }
+}
+
+// BASE VIDEO
+.creativeVideo {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 12px;
+  opacity: 0.5;
+  position: relative;
+  z-index: 60;
+}
+
+.videoThumbail {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 90;
+  object-fit: cover;
+}
+
+// TEXT DETAILS
+
+.videoDetails {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 80;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5rem;
+
+  .clientContainer {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .clientName {
+    font-size: 1.75rem;
+    font-weight: 800;
+
+    @media screen and (width <=1200px) {
+      font-size: clamp(1.25rem, 6lvw, 0.5rem);
+    }
+
+    @media screen and (width <=500px) {
+      font-size: clamp(0.8rem, 6lvw, 0.5rem);
+    }
+  }
+
+  .campaignName {
+    font-size: 0.85rem;
+
+    @media screen and (width <=1200px) {
+      font-size: clamp(0.75rem, 6lvw, 0.3rem);
+    }
+
+    @media screen and (width <=500px) {
+      font-size: clamp(0.6rem, 6lvw, 0.3rem);
+    }
+  }
+
+  .lineThrough {
+    width: 65px;
+    height: 4px;
+    background-color: var(--adobe-purple);
+    border: none;
   }
 }
 

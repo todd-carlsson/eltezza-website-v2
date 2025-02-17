@@ -1,60 +1,23 @@
 import { CreativeWorkData } from "@/types";
 import styles from "./work.module.scss";
-import { useCallback, useRef, useState } from "react";
 import { CreativeVideo } from "./components/creativeVideo";
 import classNames from "classnames";
+import { useVideoControls } from "@/hooks/useVideoControls";
 
 interface CreativeWorkProps {
   content: Array<CreativeWorkData>;
 }
 
 export function CreativeWork({ content }: CreativeWorkProps) {
-  const itemsRef = useRef<null | Map<string, HTMLVideoElement>>(null);
-  const [hoveredVideo, setHoveredVideo] = useState<null | string>(null);
-  const [openedVideo, setOpenedVideo] = useState<null | string>(null);
-
-  const getMap = useCallback(() => {
-    if (!itemsRef.current) {
-      // Initialize the Map on first usage.
-      itemsRef.current = new Map();
-    }
-    return itemsRef.current;
-  }, []);
-
-  const openFullVideo = useCallback((itemId: string) => {
-    return setOpenedVideo(itemId);
-  }, []);
-
-  const removeFullVideo = useCallback(() => {
-    return setOpenedVideo(null);
-  }, []);
-
-  const playVideo = useCallback(
-    (itemId: string) => {
-      setHoveredVideo(itemId);
-      const map = getMap();
-      if (map !== null) {
-        const node = map.get(itemId);
-        node !== undefined && node.play();
-      }
-    },
-    [getMap],
-  );
-
-  const pauseVideo = useCallback(
-    (itemId: string) => {
-      setHoveredVideo(null);
-      const map = getMap();
-      if (map !== null) {
-        const node = map.get(itemId);
-        if (node !== undefined) {
-          node.pause();
-          node.currentTime = 0;
-        }
-      }
-    },
-    [getMap],
-  );
+  const {
+    hoveredVideo,
+    openedVideo,
+    playVideo,
+    pauseVideo,
+    openFullVideo,
+    removeFullVideo,
+    getMap,
+  } = useVideoControls();
 
   return (
     <section id="work" className={styles.workSectionCreative}>

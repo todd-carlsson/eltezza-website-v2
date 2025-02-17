@@ -2,6 +2,7 @@ import {
   FunnelContact,
   FunnelHeader,
   FunnelHero,
+  FunnelVideoGallery,
   Reviews,
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
@@ -11,6 +12,7 @@ import {
   funnelPartnership,
   funnelServices,
   funnelTestimonials,
+  funnelWorkVideos,
   metaData,
   testimonialsData,
 } from "@/constants";
@@ -57,6 +59,7 @@ function LandingFunnel() {
             firstBox={funnelPartnership.firstBox}
             secondBox={funnelPartnership.secondBox}
           />
+          <FunnelVideoGallery content={funnelWorkVideos} />
         </div>
         <Reviews
           content={testimonialsData}
