@@ -1362,14 +1362,16 @@ export const funnelWorkVideos = {
   promotional: [
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+        distributionName + "/Creative/Work/KiwiBlue/Kiwiblue_Zoomed_jtmk4o.mp4",
       src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
-      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+        "/Creative/Work/KiwiBlue/Kiwiblue_Zoomed_jtmk4o_LOWRES.mp4",
+      thumbnail:
+        distributionName + "/Creative/Work/KiwiBlue/Kiwi_Blue_NT_qutbbd.jpg",
+      client: "Kiwi Blue",
+      campaign: "Out of the blue",
+      image:
+        distributionName + "/Creative/Work/KiwiBlue/Kiwi_Blue_NT_qutbbd.jpg",
     },
     {
       srcHighQuality:
@@ -1384,14 +1386,17 @@ export const funnelWorkVideos = {
     },
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+        distributionName +
+        "/Creative/Work/Innerbloom/Innerbloom_Zoomed_kozcl5.mp4",
       src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
-      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+        "/Creative/Work/Innerbloom/Innerbloom_Zoomed_kozcl5_LOWRES.mp4",
+      thumbnail:
+        distributionName + "/Creative/Work/Innerbloom/Innerbloom_TN_r25fo4.jpg",
+      client: "Innerbloom",
+      campaign: "My only one",
+      image:
+        distributionName + "/Creative/Work/Innerbloom/Innerbloom_TN_r25fo4.jpg",
     },
   ] satisfies Array<FunnelWorkData>,
   organic: [

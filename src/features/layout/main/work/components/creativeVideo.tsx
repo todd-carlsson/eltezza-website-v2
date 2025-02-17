@@ -25,7 +25,6 @@ export const CreativeVideo = memo(function CreativeVideo(
         styles.creativeVideoContainer,
         getVideoColumnSize(props.video.size),
       )}
-      key={props.video.src}
     >
       <BaseCreativeVideo {...props} />
     </div>
