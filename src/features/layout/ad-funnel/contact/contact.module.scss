@@ -7,6 +7,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (width <=1000px) {
+      display: none;
+    }
+
     .topSectionText {
       display: flex;
       flex-direction: column;
