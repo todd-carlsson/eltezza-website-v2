@@ -37,15 +37,45 @@
     margin-top: 85px;
     padding: 0 70px;
 
+    @media (width <=960px) {
+      padding: 0;
+    }
+
+    .rowReverse {
+      flex-direction: row-reverse;
+    }
+
+    .row {
+      flex-direction: row;
+    }
+
     .testimonial {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
+      @media (width <=960px) {
+        flex-direction: column-reverse;
+      }
+
+      .orangeBorder {
+        border-left: 8px solid var(--ez-orange);
+      }
+
+      .purpleBorder {
+        border-left: 8px solid var(--adobe-purple);
+      }
+
       .testimonialTextContainer {
         height: fit-content;
         padding: 0 2rem;
         max-width: 50%;
+
+        @media (width <=960px) {
+          border-left: none;
+          padding: 0;
+          max-width: none;
+        }
 
         .testimonialText {
           font-size: 1.5rem;

@@ -16,6 +16,7 @@
 
     @media (width <=960px) {
       text-align: center;
+      white-space: nowrap;
     }
 
     .funnelHeroHeading {
@@ -31,7 +32,7 @@
       }
 
       @media (width <=400px) {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
       }
 
       .boldWord {
@@ -42,6 +43,7 @@
     .funnelHeroSubHeading {
       margin-top: 0.75rem;
       font-size: clamp(1.25rem, 1vw, 3.25rem);
+      white-space: wrap;
 
       @media (width <=960px) {
         font-size: clamp(1rem, 1vw, 2.25rem);
@@ -52,7 +54,7 @@
       }
 
       @media (width <=400px) {
-        font-size: 1rem;
+        font-size: 0.75rem;
       }
     }
   }
@@ -62,6 +64,18 @@
 
     .applyButton {
       font-size: clamp(1rem, 0.75vw, 2rem);
+
+      @media (width <=960px) {
+        font-size: clamp(1rem, 1vw, 2.25rem);
+      }
+
+      @media (width <=768px) {
+        font-size: clamp(1rem, 1vw, 1.25rem);
+      }
+
+      @media (width <=400px) {
+        font-size: 0.75rem;
+      }
     }
   }
 }
