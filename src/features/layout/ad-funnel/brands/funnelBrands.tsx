@@ -17,6 +17,7 @@ export function FunnelBrands({ content }: FunnelBrandsProps) {
           </h4>
           <Image
             src="/images/eltezza-logo-rotated.svg"
+            className={styles.eltezzaLogo}
             width={117}
             height={211}
             alt="Eltezza"

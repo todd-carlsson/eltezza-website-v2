@@ -17,8 +17,28 @@
       max-width: var(--max-width);
       width: 100%;
 
+      @media (width <=768px) {
+        flex-direction: column;
+        padding: 0;
+        padding-top: var(--content-padding-sm);
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      .eltezzaLogo {
+        position: relative;
+
+        @media (width <=768px) {
+          transform: rotate(90deg);
+        }
+      }
+
       .brandsBannerText {
         font-size: 1.5rem;
+
+        @media (width <=768px) {
+          font-size: 1.25rem;
+        }
       }
     }
   }
@@ -33,17 +53,15 @@
     width: 100%;
     position: relative;
     grid-template-columns: repeat(6, 1fr);
+    height: auto;
 
     @media (width <=1300px) {
       grid-column-gap: 3rem;
+      padding: var(--content-padding-sm);
     }
 
     @media (width <=768px) {
-      grid-row-gap: 70px;
-    }
-
-    @media (width <=400px) {
-      grid-row-gap: 1%;
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .brandLogo {
