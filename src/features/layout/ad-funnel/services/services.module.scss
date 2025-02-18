@@ -9,8 +9,18 @@
     border-bottom: 2px solid #fff;
     padding-bottom: 2rem;
 
+    @media (width <=960px) {
+      justify-content: center;
+    }
+
     .servicesIntroHeading {
       font-size: 2.25rem;
+    }
+
+    .servicesButton {
+      @media (width <=960px) {
+        display: none;
+      }
     }
   }
 
@@ -63,6 +73,10 @@
           position: relative;
           height: 100%;
           font-weight: 600;
+
+          @media (width <=960px) {
+            white-space: nowrap;
+          }
         }
       }
     }

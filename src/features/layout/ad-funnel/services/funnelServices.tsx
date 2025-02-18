@@ -11,7 +11,12 @@ export function FunnelServices({ content }: FunnelServicesProps) {
     <section className={styles.servicesContainer}>
       <div className={styles.servicesIntro}>
         <h2 className={styles.servicesIntroHeading}>Our bread & butter 🧈</h2>
-        <Button variant={ButtonVariant.applyPurple}>Apply Now</Button>
+        <Button
+          variant={ButtonVariant.applyPurple}
+          className={styles.servicesButton}
+        >
+          Apply Now
+        </Button>
       </div>
       <div className={styles.services}>
         {content.map((item, i) => (
