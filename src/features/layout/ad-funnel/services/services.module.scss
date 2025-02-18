@@ -20,12 +20,21 @@
     margin-top: 2rem;
     grid-gap: 2rem;
 
+    @media (width <=960px) {
+      display: flex;
+      flex-direction: column;
+    }
+
     .servicesText {
       display: flex;
       flex-direction: column;
       gap: 1rem;
       position: relative;
       white-space: pre-line;
+
+      @media (width <=1300px) {
+        white-space: wrap;
+      }
 
       &:nth-child(2) {
         justify-self: center;
