@@ -68,7 +68,7 @@
   padding: 0 var(--content-padding);
 }
 
-@media (width <=850px) {
+@media (width <=1000px) {
   .funnelContentContainer {
     padding: 0 var(--content-padding-sm);
   }

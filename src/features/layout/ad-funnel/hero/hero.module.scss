@@ -7,12 +7,33 @@
   flex-direction: column;
   justify-content: center;
 
+  @media (width <=960px) {
+    align-items: center;
+  }
+
   .funnelHeroText {
     text-align: left;
+
+    @media (width <=960px) {
+      text-align: center;
+      white-space: nowrap;
+    }
 
     .funnelHeroHeading {
       font-size: clamp(3.5rem, 4.25vw, 5.5rem);
       font-weight: 300;
+
+      @media (width <=960px) {
+        font-size: clamp(2rem, 3vw, 4rem);
+      }
+
+      @media (width <=768px) {
+        font-size: clamp(1.5rem, 6vw, 2.8rem);
+      }
+
+      @media (width <=400px) {
+        font-size: 1.25rem;
+      }
 
       .boldWord {
         font-weight: 900;
@@ -22,15 +43,39 @@
     .funnelHeroSubHeading {
       margin-top: 0.75rem;
       font-size: clamp(1.25rem, 1vw, 3.25rem);
+      white-space: wrap;
+
+      @media (width <=960px) {
+        font-size: clamp(1rem, 1vw, 2.25rem);
+      }
+
+      @media (width <=768px) {
+        font-size: clamp(1rem, 1vw, 1.25rem);
+      }
+
+      @media (width <=400px) {
+        font-size: 0.75rem;
+      }
     }
   }
 
   .funnelButtonContainer {
-    width: 75px;
     margin-top: 1.8rem;
 
     .applyButton {
       font-size: clamp(1rem, 0.75vw, 2rem);
+
+      @media (width <=960px) {
+        font-size: clamp(1rem, 1vw, 2.25rem);
+      }
+
+      @media (width <=768px) {
+        font-size: clamp(1rem, 1vw, 1.25rem);
+      }
+
+      @media (width <=400px) {
+        font-size: 0.75rem;
+      }
     }
   }
 }

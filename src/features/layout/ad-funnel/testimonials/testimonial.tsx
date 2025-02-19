@@ -1,29 +1,37 @@
 import { FunnelTestimonialsData } from "@/types";
 import styles from "./testimonials.module.scss";
 import { boldText } from "@/utils/boldText";
+import classNames from "classnames";
 
 interface TestimonialProps {
-  content: Array<FunnelTestimonialsData>;
+  item: FunnelTestimonialsData;
+  index: number;
 }
 
-export function Testimonial({ content }: TestimonialProps) {
+export function Testimonial({ item, index }: TestimonialProps) {
   return (
     <div className={styles.testimonialsContainer}>
-      {content.map((item, i) => (
+      <div
+        key={item.id}
+        className={classNames(
+          styles.testimonial,
+          index % 2 ? styles.rowReverse : styles.row,
+        )}
+        // style={{ flexDirection: index % 2 ? "row-reverse" : "row" }}
+      >
         <div
-          key={item.id}
-          className={styles.testimonial}
-          style={{ flexDirection: i % 2 ? "row-reverse" : "row" }}
+          className={classNames(
+            styles.testimonialTextContainer,
+            item.borderColor === "--ez-orange"
+              ? styles.orangeBorder
+              : styles.purpleBorder,
+          )}
+          // style={{ borderLeft: ` 8px solid var(${item.borderColor})` }}
         >
-          <div
-            className={styles.testimonialTextContainer}
-            style={{ borderLeft: ` 8px solid var(${item.borderColor})` }}
-          >
-            <h4 className={styles.testimonialText}>{boldText(item.review)}</h4>
-          </div>
-          <video src={item.videoLink}></video>
+          <h4 className={styles.testimonialText}>{boldText(item.review)}</h4>
         </div>
-      ))}
+        <video src={item.videoLink} className={styles.testimonialVideo}></video>
+      </div>
     </div>
   );
 }

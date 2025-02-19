@@ -9,6 +9,10 @@
   top: 0;
   z-index: 999;
 
+  @media (width <=960px) {
+    justify-content: center;
+  }
+
   @media (width <=850px) {
     padding: 0 var(--content-padding-sm);
   }
