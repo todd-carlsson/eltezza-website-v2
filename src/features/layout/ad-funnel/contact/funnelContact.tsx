@@ -67,7 +67,7 @@ export function FunnelContact() {
           <p>&copy; 2025 Eltezza. All Rights Reserved.</p>
           <div className={styles.pageLinks}>
             <Link href="/privacy-policy">Privacy Policy</Link>
-            <Link href="/terms-and-conditions">Terms & Conditions</Link>
+            <Link href="/terms-and-conditions">Terms of Service</Link>
           </div>
         </div>
       </div>
