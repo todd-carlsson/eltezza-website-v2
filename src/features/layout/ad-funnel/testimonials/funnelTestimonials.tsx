@@ -16,7 +16,9 @@ export function FunnelTestimonials({ content }: FunnelTestimonialsProps) {
           <br /> businesses doing big things.
         </h2>
       </div>
-      <Testimonial content={content} />
+      {content.map((item, i) => (
+        <Testimonial key={item.id} item={item} index={i} />
+      ))}
     </section>
   );
 }

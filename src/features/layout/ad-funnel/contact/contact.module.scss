@@ -2,10 +2,18 @@
   width: 100%;
   padding: 0 var(--content-padding);
 
+  @media (width <=1000px) {
+    padding: 0 var(--content-padding-sm);
+  }
+
   .topSection {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (width <=1000px) {
+      display: none;
+    }
 
     .topSectionText {
       display: flex;
@@ -42,6 +50,10 @@
         gap: 0.5rem;
         position: relative;
         right: -3px;
+
+        @media (width <=400px) {
+          gap: 0;
+        }
       }
     }
 
@@ -51,12 +63,28 @@
       margin-bottom: 100px;
       display: flex;
       align-items: center;
+      gap: 1.5rem;
       justify-content: space-between;
+
+      @media (width <=500px) {
+        font-size: 0.85rem;
+      }
 
       .pageLinks {
         display: flex;
         align-items: center;
         gap: 2rem;
+
+        @media (width <=1000px) {
+          flex-direction: column;
+          gap: 0.25rem;
+          align-items: flex-end;
+          white-space: nowrap;
+        }
+
+        @media (width <=500px) {
+          font-size: 0.75rem;
+        }
       }
     }
   }
