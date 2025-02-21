@@ -1145,6 +1145,7 @@ export const funnelTestimonials = [
     id: 1,
     review:
       "“You guys have completely revamped our marketing & customer awareness.”",
+    author: "Steven & James Deans - Automotive Business",
     videoLink: distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq.mp4",
     thumbnail:
       distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",

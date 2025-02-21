@@ -81,6 +81,24 @@
           font-size: 1.5rem;
           font-weight: 300;
           white-space: pre-line;
+
+          @media (width <=960px) {
+            font-size: 1rem;
+            margin-top: 3rem;
+            text-align: center;
+          }
+        }
+
+        .testimonialAuthor {
+          font-size: 0.85rem;
+          font-weight: 200;
+          font-style: italic;
+          margin-top: 1rem;
+          display: none;
+
+          @media (width <=960px) {
+            display: block;
+          }
         }
       }
 

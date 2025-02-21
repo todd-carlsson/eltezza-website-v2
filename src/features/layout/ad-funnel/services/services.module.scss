@@ -39,6 +39,18 @@
       flex-direction: column;
     }
 
+    .servicesButtonMobile {
+      width: fit-content;
+      align-self: center;
+      margin-top: 3rem;
+      font-size: 1rem;
+      display: none;
+
+      @media (width <=960px) {
+        display: block;
+      }
+    }
+
     .servicesText {
       display: flex;
       flex-direction: column;
@@ -66,6 +78,10 @@
         display: flex;
         font-size: 1.6rem;
 
+        @media (width <=960px) {
+          align-items: center;
+        }
+
         .servicesNumber {
           color: var(--adobe-purple);
           padding: 0 1rem;
@@ -74,6 +90,10 @@
           font-weight: 600;
           position: relative;
           top: 3px;
+
+          @media (width <=960px) {
+            top: 0;
+          }
         }
 
         .servicesHeading {

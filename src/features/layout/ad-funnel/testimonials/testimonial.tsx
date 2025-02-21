@@ -17,7 +17,6 @@ export function Testimonial({ item, index }: TestimonialProps) {
           styles.testimonial,
           index % 2 ? styles.rowReverse : styles.row,
         )}
-        // style={{ flexDirection: index % 2 ? "row-reverse" : "row" }}
       >
         <div
           className={classNames(
@@ -26,9 +25,11 @@ export function Testimonial({ item, index }: TestimonialProps) {
               ? styles.orangeBorder
               : styles.purpleBorder,
           )}
-          // style={{ borderLeft: ` 8px solid var(${item.borderColor})` }}
         >
           <h4 className={styles.testimonialText}>{boldText(item.review)}</h4>
+          {item.author && (
+            <p className={styles.testimonialAuthor}>{item.author}</p>
+          )}
         </div>
         <video src={item.videoLink} className={styles.testimonialVideo}></video>
       </div>

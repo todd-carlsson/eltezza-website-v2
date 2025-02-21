@@ -13,10 +13,10 @@ export function Privacy() {
       <div className={styles.logoContainer}>
         <Link href="/">
           <Image
-            src="/images/eltezza-home-logo.png"
+            src="/images/eltezza-logo.svg"
             alt="Eltezza"
-            width={131}
-            height={22}
+            width={132}
+            height={24}
             className={styles.logo}
           />
         </Link>

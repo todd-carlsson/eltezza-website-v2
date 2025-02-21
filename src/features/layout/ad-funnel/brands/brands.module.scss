@@ -16,20 +16,21 @@
       padding: 0 var(--content-padding);
       max-width: var(--max-width);
       width: 100%;
+      min-height: 250px;
 
       @media (width <=768px) {
         flex-direction: column;
-        padding: 0;
-        padding-top: var(--content-padding-sm);
+        padding: var(--content-padding-sm) 0;
         text-align: center;
         white-space: nowrap;
       }
 
       .eltezzaLogo {
         position: relative;
+        transform: rotate(270deg);
 
         @media (width <=768px) {
-          transform: rotate(90deg);
+          transform: rotate(0deg);
         }
       }
 

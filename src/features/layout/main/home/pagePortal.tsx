@@ -49,7 +49,7 @@ export default function PagePortal({
         exit={{ opacity: 0 }}
       >
         <Image
-          src="/images/eltezza-home-logo.png"
+          src="/images/eltezza-logo.svg"
           alt="Eltezza"
           width={124}
           height={20}

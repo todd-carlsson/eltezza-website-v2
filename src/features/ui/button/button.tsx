@@ -14,6 +14,7 @@ const enum ButtonVariant {
   gradient = "gradient",
   applyOrange = "applyOrange",
   applyPurple = "applyPurple",
+  applyWhite = "applyWhite",
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -49,6 +50,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           [styles.gradient]: variant === ButtonVariant.gradient,
           [styles.applyOrange]: variant === ButtonVariant.applyOrange,
           [styles.applyPurple]: variant === ButtonVariant.applyPurple,
+          [styles.applyWhite]: variant === ButtonVariant.applyWhite,
         })}
         type={type}
         ref={ref}
