@@ -59,7 +59,7 @@ export function FunnelPartnership({
           </h3>
           {firstBox.map((item) => (
             <div key={item.description} className={styles.boxItemContainer}>
-              <FaCheck color="#fff" size={18} />
+              <FaCheck color="#fff" className={styles.icon} />
               <p className={styles.boxItemText}>{item.description}</p>
             </div>
           ))}
@@ -82,13 +82,22 @@ export function FunnelPartnership({
             <div key={item.description} className={styles.boxItemContainer}>
               <AiOutlineStop
                 color="#000"
-                size={34}
                 style={{ transform: "rotate(90deg)" }}
+                className={styles.iconStop}
+                size={34}
               />
               <p className={styles.boxItemText}>{item.description}</p>
             </div>
           ))}
         </motion.div>
+      </div>
+      <div className={styles.buttonMobileContainer}>
+        <Button
+          className={styles.buttonMobile}
+          variant={ButtonVariant.applyWhite}
+        >
+          Apply Now
+        </Button>
       </div>
     </section>
   );
