@@ -15,6 +15,10 @@
 
     .servicesIntroHeading {
       font-size: 2.25rem;
+
+      @media (width <=960px) {
+        font-size: 1.25rem;
+      }
     }
 
     .servicesButton {
@@ -44,6 +48,10 @@
 
       @media (width <=1300px) {
         white-space: wrap;
+      }
+
+      @media (width <=960px) {
+        font-size: 0.85rem;
       }
 
       &:nth-child(2) {
@@ -76,6 +84,7 @@
 
           @media (width <=960px) {
             white-space: nowrap;
+            font-size: clamp(1.15rem, 1.5vw, 1.5rem);
           }
         }
       }

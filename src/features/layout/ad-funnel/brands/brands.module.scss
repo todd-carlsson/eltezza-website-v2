@@ -57,7 +57,7 @@
 
     @media (width <=1300px) {
       grid-column-gap: 3rem;
-      padding: var(--content-padding-sm);
+      padding: var(--content-padding) var(--content-padding-sm);
     }
 
     @media (width <=768px) {

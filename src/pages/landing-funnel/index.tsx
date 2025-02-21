@@ -14,7 +14,8 @@ import {
   funnelTestimonials,
   // funnelWorkVideos,
   metaData,
-  testimonialsData,
+  funnelReviewsData,
+  funnelBrandsMobile,
 } from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
@@ -53,7 +54,10 @@ function LandingFunnel() {
         <div className={styles.funnelContentContainer}>
           <FunnelHero />
           <FunnelTestimonials content={funnelTestimonials} />
-          <FunnelBrands content={funnelBrands} />
+          <FunnelBrands
+            content={funnelBrands}
+            mobileContent={funnelBrandsMobile}
+          />
           <FunnelServices content={funnelServices} />
           <FunnelPartnership
             firstBox={funnelPartnership.firstBox}
@@ -62,7 +66,7 @@ function LandingFunnel() {
           {/* <FunnelVideoGallery content={funnelWorkVideos} /> */}
         </div>
         <Reviews
-          content={testimonialsData}
+          content={funnelReviewsData}
           page="design"
           headingTextSize="small"
         />
