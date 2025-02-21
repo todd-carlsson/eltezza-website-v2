@@ -5,9 +5,10 @@ import useWindowSize from "@/hooks/useWindowSize";
 
 interface BrandsGridProps {
   content: Array<BrandsData>;
+  mobileContent: Array<BrandsData>;
 }
 
-export function BrandsGrid({ content }: BrandsGridProps) {
+export function BrandsGrid({ content, mobileContent }: BrandsGridProps) {
   const [windowWidth] = useWindowSize();
   function getMaxWidth(maxWidth: number | undefined) {
     if (windowWidth > 500) {
@@ -18,21 +19,37 @@ export function BrandsGrid({ content }: BrandsGridProps) {
   }
   return (
     <div className={styles.brandsGridContainer}>
-      {content.map((brand) => (
-        <Image
-          key={brand.brand}
-          className={styles.brandLogo}
-          src={brand.src}
-          alt={brand.brand}
-          width={brand.maxWidth || 150}
-          height={150}
-          style={{
-            maxWidth: getMaxWidth(brand.maxWidth),
-            width: brand.width,
-            filter: brand.needsColorInvert !== false ? "invert(1)" : "",
-          }}
-        />
-      ))}
+      {windowWidth > 768
+        ? content.map((brand) => (
+            <Image
+              key={brand.brand}
+              className={styles.brandLogo}
+              src={brand.src}
+              alt={brand.brand}
+              width={brand.maxWidth || 150}
+              height={150}
+              style={{
+                maxWidth: getMaxWidth(brand.maxWidth),
+                width: brand.width,
+                filter: brand.needsColorInvert !== false ? "invert(1)" : "",
+              }}
+            />
+          ))
+        : mobileContent.map((brand) => (
+            <Image
+              key={brand.brand}
+              className={styles.brandLogo}
+              src={brand.src}
+              alt={brand.brand}
+              width={brand.maxWidth || 150}
+              height={150}
+              style={{
+                maxWidth: getMaxWidth(brand.maxWidth),
+                width: brand.width,
+                filter: brand.needsColorInvert !== false ? "invert(1)" : "",
+              }}
+            />
+          ))}
     </div>
   );
 }

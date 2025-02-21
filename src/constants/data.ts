@@ -1312,6 +1312,85 @@ export const funnelBrands = [
   },
 ] satisfies Array<BrandsData>;
 
+export const funnelBrandsMobile = [
+  {
+    brand: "Kmart",
+    src: "/images/brandImages/Kmart_Australia_logo.svg",
+  },
+  {
+    brand: "ASB Classic",
+    src: "/images/brandImages/ASB-Classic_logo.svg",
+    maxWidth: 70,
+    width: "57%",
+    needsColorInvert: false,
+  },
+  {
+    brand: "Juluwarlu",
+    src: "/images/brandImages/Juluwarlu_logo.svg",
+    maxWidth: 132,
+    width: "113%",
+  },
+  {
+    brand: "Cutly",
+    src: "/images/brandImages/Cutly_logo.svg",
+    maxWidth: 110,
+    width: "85%",
+  },
+  {
+    brand: "Al Brown",
+    src: "/images/brandImages/Al-Brown_logo.svg",
+    maxWidth: 80,
+    width: "65%",
+    needsColorInvert: false,
+  },
+  {
+    brand: "Remarkable Cream",
+    src: "/images/brandImages/RemarkableCream_logo.svg",
+    maxWidth: 115,
+    width: "96%",
+  },
+  {
+    brand: "Robert Embroideries",
+    src: "/images/brandImages/Robert_logo.svg",
+    maxWidth: 90,
+    width: "75%",
+  },
+  {
+    brand: "Fernglen Farm",
+    src: "/images/brandImages/Fernglen-Farm_logo.svg",
+    maxWidth: 130,
+    width: "107%",
+    needsColorInvert: false,
+  },
+  {
+    brand: "Proper Crisps",
+    src: "/images/brandImages/Proper-Crisps_logo.svg",
+    maxWidth: 117,
+    width: "98%",
+    needsColorInvert: false,
+  },
+  {
+    brand: "EatKinda",
+    src: "/images/brandImages/EatKinda_logo.svg",
+    maxWidth: 107,
+    width: "93%",
+  },
+  {
+    brand: "Oztent",
+    src: "/images/brandImages/Oztent_logo.svg",
+    maxWidth: 95,
+    width: "77%",
+    needsColorInvert: false,
+  },
+  {
+    brand: "Youm",
+    src: "/images/brandImages/Youm_logo.svg",
+    maxWidth: 123,
+    width: "103%",
+    needsColorInvert: false,
+  },
+] satisfies Array<BrandsData>;
+
 export const funnelServices = [
   {
     title: "SOCIAL MEDIA \nMANAGEMENT",

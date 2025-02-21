@@ -5,9 +5,10 @@ import { BrandsData } from "@/types";
 
 interface FunnelBrandsProps {
   content: Array<BrandsData>;
+  mobileContent: Array<BrandsData>;
 }
 
-export function FunnelBrands({ content }: FunnelBrandsProps) {
+export function FunnelBrands({ content, mobileContent }: FunnelBrandsProps) {
   return (
     <section className={styles.brandsSection}>
       <div className={styles.brandsBanner}>
@@ -24,7 +25,7 @@ export function FunnelBrands({ content }: FunnelBrandsProps) {
           />
         </div>
       </div>
-      <BrandsGrid content={content} />
+      <BrandsGrid content={content} mobileContent={mobileContent} />
     </section>
   );
 }
