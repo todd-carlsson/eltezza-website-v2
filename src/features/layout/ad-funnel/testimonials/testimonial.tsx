@@ -27,6 +27,9 @@ export function Testimonial({ item, index }: TestimonialProps) {
           )}
         >
           <h4 className={styles.testimonialText}>{boldText(item.review)}</h4>
+          {item.author && (
+            <p className={styles.testimonialAuthor}>{item.author}</p>
+          )}
         </div>
         <video src={item.videoLink} className={styles.testimonialVideo}></video>
       </div>
