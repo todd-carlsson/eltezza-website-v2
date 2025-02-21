@@ -28,6 +28,12 @@ export function FunnelServices({ content }: FunnelServicesProps) {
             <p>{item.description}</p>
           </div>
         ))}
+        <Button
+          variant={ButtonVariant.applyPurple}
+          className={styles.servicesButtonMobile}
+        >
+          Apply Now
+        </Button>
       </div>
     </section>
   );
