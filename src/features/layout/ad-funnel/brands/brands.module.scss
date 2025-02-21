@@ -16,12 +16,11 @@
       padding: 0 var(--content-padding);
       max-width: var(--max-width);
       width: 100%;
-      min-height: 220px;
+      min-height: 255px;
 
       @media (width <=768px) {
         flex-direction: column;
-        padding: 0;
-        padding-top: var(--content-padding-sm);
+        padding: var(--content-padding-sm) 0;
         text-align: center;
         white-space: nowrap;
       }
