@@ -14,7 +14,7 @@ import {
   funnelTestimonials,
   // funnelWorkVideos,
   metaData,
-  testimonialsData,
+  funnelReviewsData,
 } from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
@@ -62,7 +62,7 @@ function LandingFunnel() {
           {/* <FunnelVideoGallery content={funnelWorkVideos} /> */}
         </div>
         <Reviews
-          content={testimonialsData}
+          content={funnelReviewsData}
           page="design"
           headingTextSize="small"
         />
