@@ -16,6 +16,7 @@
       padding: 0 var(--content-padding);
       max-width: var(--max-width);
       width: 100%;
+      min-height: 220px;
 
       @media (width <=768px) {
         flex-direction: column;
@@ -27,9 +28,10 @@
 
       .eltezzaLogo {
         position: relative;
+        transform: rotate(270deg);
 
         @media (width <=768px) {
-          transform: rotate(90deg);
+          transform: rotate(0deg);
         }
       }
 

@@ -17,10 +17,10 @@ export function FunnelBrands({ content, mobileContent }: FunnelBrandsProps) {
             We help brands scale, increasing <br /> revenue by as much as 5x
           </h4>
           <Image
-            src="/images/eltezza-logo-rotated.svg"
+            src="/images/eltezza-logo.svg"
             className={styles.eltezzaLogo}
-            width={117}
-            height={211}
+            width={211}
+            height={117}
             alt="Eltezza"
           />
         </div>
