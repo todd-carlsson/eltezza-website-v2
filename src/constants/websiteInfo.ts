@@ -431,3 +431,5 @@ export const termsAndConditions = {
       "Thank you for choosing Eltezza. We look forward to providing you with exceptional creative services.",
   },
 };
+
+export const calendlyLink = "https://calendly.com/moeltayeb/30min";
