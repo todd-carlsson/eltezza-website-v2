@@ -1,7 +1,11 @@
 import { Button, ButtonVariant } from "@/features/ui";
 import styles from "./hero.module.scss";
 
-export function FunnelHero() {
+interface FunnelHeroProps {
+  onOpen: () => void;
+}
+
+export function FunnelHero({ onOpen }: FunnelHeroProps) {
   return (
     <section className={styles.funnelHero}>
       <div className={styles.funnelHeroText}>
@@ -17,6 +21,7 @@ export function FunnelHero() {
       </div>
       <div className={styles.funnelButtonContainer}>
         <Button
+          onClick={onOpen}
           variant={ButtonVariant.applyOrange}
           className={styles.applyButton}
         >

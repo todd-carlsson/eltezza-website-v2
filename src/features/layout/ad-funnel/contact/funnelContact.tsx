@@ -6,7 +6,11 @@ import { LiaFacebookSquare, LiaLinkedin, LiaInstagram } from "react-icons/lia";
 import { FaXTwitter } from "react-icons/fa6";
 import { socialLinks } from "@/constants";
 
-export function FunnelContact() {
+interface FunnelContactProps {
+  onOpen: () => void;
+}
+
+export function FunnelContact({ onOpen }: FunnelContactProps) {
   return (
     <section className={styles.contactSection}>
       <div className={styles.topSection}>
@@ -23,7 +27,9 @@ export function FunnelContact() {
             we can build together!
           </p>
         </div>
-        <Button variant={ButtonVariant.applyOrange}>APPLY NOW</Button>
+        <Button onClick={onOpen} variant={ButtonVariant.applyOrange}>
+          APPLY NOW
+        </Button>
       </div>
       <div className={styles.bottomSection}>
         <div className={styles.bottomSectionLinks}>

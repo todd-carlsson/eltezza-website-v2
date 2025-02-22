@@ -10,11 +10,13 @@ import { useRef } from "react";
 interface FunnelPartnershipProps {
   firstBox: Array<FunnelPartnershipData>;
   secondBox: Array<FunnelPartnershipData>;
+  onOpen: () => void;
 }
 
 export function FunnelPartnership({
   firstBox,
   secondBox,
+  onOpen,
 }: FunnelPartnershipProps) {
   const [firsBoxRef, { width: firstBoxWidth }] = useMeasure();
   const [secondBoxRef, { width: secondBoxWidth }] = useMeasure();
@@ -64,7 +66,9 @@ export function FunnelPartnership({
             </div>
           ))}
           <div className={styles.buttonContainer}>
-            <Button variant={ButtonVariant.applyPurple}>Apply Now</Button>
+            <Button onClick={onOpen} variant={ButtonVariant.applyPurple}>
+              Apply Now
+            </Button>
           </div>
         </motion.div>
         <motion.div
@@ -93,6 +97,7 @@ export function FunnelPartnership({
       </div>
       <div className={styles.buttonMobileContainer}>
         <Button
+          onClick={onOpen}
           className={styles.buttonMobile}
           variant={ButtonVariant.applyWhite}
         >
