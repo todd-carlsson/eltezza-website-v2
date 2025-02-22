@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { useEffect } from "react";
 import styles from "./calendlyEmbed.module.scss";
+import { FaRegCircleXmark } from "react-icons/fa6";
 
 interface CalendlyEmbedProps {
   url: string;
@@ -8,7 +9,11 @@ interface CalendlyEmbedProps {
   showModal: boolean;
 }
 
-export const CalendlyEmbed = ({ url, showModal }: CalendlyEmbedProps) => {
+export const CalendlyEmbed = ({
+  url,
+  showModal,
+  onClose,
+}: CalendlyEmbedProps) => {
   useEffect(() => {
     const observer = new MutationObserver(() => {
       if (document.head) {
@@ -34,7 +39,7 @@ export const CalendlyEmbed = ({ url, showModal }: CalendlyEmbedProps) => {
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [showModal]);
 
   return (
     <>
@@ -49,7 +54,13 @@ export const CalendlyEmbed = ({ url, showModal }: CalendlyEmbedProps) => {
             backdropFilter: "blur(5px)",
             backgroundColor: "rgba(0,0,0,0.6)",
           }}
-        ></div>
+        >
+          <FaRegCircleXmark
+            size={50}
+            className={styles.exitIcon}
+            onClick={onClose}
+          />
+        </div>
       )}
     </>
   );
