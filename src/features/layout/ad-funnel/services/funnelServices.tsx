@@ -4,14 +4,16 @@ import { FunnelServicesData } from "@/types";
 
 interface FunnelServicesProps {
   content: Array<FunnelServicesData>;
+  onOpen: () => void;
 }
 
-export function FunnelServices({ content }: FunnelServicesProps) {
+export function FunnelServices({ content, onOpen }: FunnelServicesProps) {
   return (
     <section className={styles.servicesContainer}>
       <div className={styles.servicesIntro}>
         <h2 className={styles.servicesIntroHeading}>Our bread & butter 🧈</h2>
         <Button
+          onClick={onOpen}
           variant={ButtonVariant.applyPurple}
           className={styles.servicesButton}
         >
@@ -29,6 +31,7 @@ export function FunnelServices({ content }: FunnelServicesProps) {
           </div>
         ))}
         <Button
+          onClick={onOpen}
           variant={ButtonVariant.applyPurple}
           className={styles.servicesButtonMobile}
         >

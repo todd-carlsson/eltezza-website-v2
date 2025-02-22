@@ -77,8 +77,9 @@ function LandingFunnel() {
             content={funnelBrands}
             mobileContent={funnelBrandsMobile}
           />
-          <FunnelServices content={funnelServices} />
+          <FunnelServices content={funnelServices} onOpen={onOpen} />
           <FunnelPartnership
+            onOpen={onOpen}
             firstBox={funnelPartnership.firstBox}
             secondBox={funnelPartnership.secondBox}
           />
@@ -89,7 +90,7 @@ function LandingFunnel() {
           page="design"
           headingTextSize="small"
         />
-        <FunnelContact />
+        <FunnelContact onOpen={onOpen} />
         <motion.div
           initial={{ scaleX: 1 }}
           animate={{

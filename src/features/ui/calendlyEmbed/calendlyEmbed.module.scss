@@ -7,7 +7,7 @@
 }
 
 .exitIcon {
-  top: 70px;
+  top: 20px;
   position: relative;
   right: calc(-100vw + 75px);
   cursor: pointer;
@@ -16,7 +16,7 @@
 
   @media (width<=649px) {
     color: #000;
-    background-color: #fff;
+    top: 70px;
     border-radius: 25px;
     right: calc(0vw - 5px);
   }
