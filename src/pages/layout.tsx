@@ -9,6 +9,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 
   return (
     <>
+      <div id="calendly-root" />
       {router.pathname === "/creative" || router.pathname === "/design" ? (
         <>
           <div id="contact-root" />
