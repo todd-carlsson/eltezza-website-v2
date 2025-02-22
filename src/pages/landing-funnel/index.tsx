@@ -2,6 +2,7 @@ import {
   FunnelContact,
   FunnelHeader,
   FunnelHero,
+  Portal,
   // FunnelVideoGallery,
   Reviews,
 } from "@/features/layout";
@@ -16,10 +17,11 @@ import {
   metaData,
   funnelReviewsData,
   funnelBrandsMobile,
+  calendlyLink,
 } from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Scroll } from "@/utils/scroll";
 import {
   FunnelTestimonials,
@@ -27,14 +29,24 @@ import {
   FunnelServices,
   FunnelPartnership,
 } from "@/features/layout";
+import { CalendlyEmbed } from "@/features/ui";
 
 function LandingFunnel() {
   const router = useRouter();
   const isPresent = useIsPresent();
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     Scroll(0, "auto");
   }, []);
+
+  function onOpen() {
+    setShowModal(true);
+  }
+  function onClose() {
+    setShowModal(false);
+  }
+
   return (
     <>
       <MetaData data={metaData.adFunnel} />
@@ -51,8 +63,15 @@ function LandingFunnel() {
         className={styles.funnelPageContainer}
       >
         <FunnelHeader />
+        <Portal root="calendly-root">
+          <CalendlyEmbed
+            url={calendlyLink}
+            onClose={onClose}
+            showModal={showModal}
+          />
+        </Portal>
         <div className={styles.funnelContentContainer}>
-          <FunnelHero />
+          <FunnelHero onOpen={onOpen} />
           <FunnelTestimonials content={funnelTestimonials} />
           <FunnelBrands
             content={funnelBrands}
