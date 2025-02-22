@@ -21,7 +21,13 @@ export const CalendlyScreen = ({ url }: CalendlyScreenProps) => {
     <div
       className={classNames("calendly-inline-widget", styles.calendlyEmbed)}
       data-url={url}
-      style={{ position: "fixed" }}
+      style={{
+        position: "fixed",
+        width: "100%",
+        zIndex: "9999",
+        backdropFilter: "blur(5px)",
+        backgroundColor: "rgba(0,0,0,0.6)",
+      }}
     ></div>
   );
 };

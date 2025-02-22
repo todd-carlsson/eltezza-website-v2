@@ -1,5 +1,6 @@
-import { Button, ButtonVariant } from "@/features/ui";
+import { Button, ButtonVariant, CalendlyEmbed } from "@/features/ui";
 import styles from "./hero.module.scss";
+import { calendlyLink } from "@/constants";
 
 export function FunnelHero() {
   return (
@@ -16,6 +17,7 @@ export function FunnelHero() {
         </p>
       </div>
       <div className={styles.funnelButtonContainer}>
+        <CalendlyEmbed url={calendlyLink} />
         <Button
           variant={ButtonVariant.applyOrange}
           className={styles.applyButton}
