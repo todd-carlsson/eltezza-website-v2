@@ -44,22 +44,31 @@ export const CalendlyEmbed = ({
   return (
     <>
       {showModal && (
-        <div
-          className={classNames("calendly-inline-widget", styles.calendlyEmbed)}
-          data-url={url}
-          style={{
-            position: "fixed",
-            width: "100%",
-            zIndex: "9999",
-            backdropFilter: "blur(5px)",
-            backgroundColor: "rgba(0,0,0,0.6)",
-          }}
-        >
-          <FaRegCircleXmark
-            size={50}
-            className={styles.exitIcon}
-            onClick={onClose}
-          />
+        <div className={styles.calendlyContainer}>
+          <div className={styles.exitContainer}>
+            <div className={styles.exitWrapper}>
+              <FaRegCircleXmark
+                size={50}
+                color="#fff"
+                className={styles.exitIcon}
+                onClick={onClose}
+              />
+            </div>
+          </div>
+          <div
+            className={classNames(
+              "calendly-inline-widget",
+              styles.calendlyEmbed,
+            )}
+            data-url={url}
+            style={{
+              position: "fixed",
+              width: "100%",
+              zIndex: "9999",
+              backdropFilter: "blur(5px)",
+              backgroundColor: "rgba(0,0,0,0.6)",
+            }}
+          ></div>
         </div>
       )}
     </>
