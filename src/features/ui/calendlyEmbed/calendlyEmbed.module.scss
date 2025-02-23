@@ -1,3 +1,12 @@
+.calendlyContainer {
+  position: fixed;
+  z-index: 9999;
+
+  @media (width<=649px) {
+    margin-top: 55px;
+  }
+}
+
 .calendlyEmbed {
   height: 100svh;
   width: 100%;
@@ -6,16 +15,45 @@
   overflow: scroll;
 }
 
-.exitIcon {
-  position: absolute;
+.exitContainer {
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  left: 0;
   top: 0;
-  right: 15px;
-  cursor: pointer;
-  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  z-index: 99999;
+  background-color: rgba($color: #000, $alpha: 60%);
+  backdrop-filter: blur(3px);
 
   @media (width<=649px) {
-    position: relative;
-    border-radius: 25px;
-    right: calc(0vw - 5px);
+    // position: relative;
+    // top: -100%;
+  }
+
+  .exitWrapper {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (width<=998px) {
+      max-width: 678px;
+      position: fixed;
+    }
+
+    @media (width<=649px) {
+      justify-content: flex-start;
+      max-width: none;
+    }
+
+    .exitIcon {
+      cursor: pointer;
+      z-index: 9999;
+      border-radius: 25px;
+      background-color: rgba($color: #000, $alpha: 60%);
+      backdrop-filter: blur(3px);
+    }
   }
 }
