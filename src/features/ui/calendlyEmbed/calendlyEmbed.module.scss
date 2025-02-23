@@ -1,5 +1,5 @@
 .calendlyEmbed {
-  height: 100lvh;
+  height: 100svh;
   width: 100%;
   position: fixed;
   z-index: 9999;
@@ -15,7 +15,6 @@
 
   @media (width<=649px) {
     position: relative;
-    top: 0;
     border-radius: 25px;
     right: calc(0vw - 5px);
   }
