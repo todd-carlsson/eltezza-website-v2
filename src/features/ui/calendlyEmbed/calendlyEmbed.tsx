@@ -57,6 +57,7 @@ export const CalendlyEmbed = ({
         >
           <FaRegCircleXmark
             size={50}
+            color="#fff"
             className={styles.exitIcon}
             onClick={onClose}
           />
