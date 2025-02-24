@@ -49,6 +49,8 @@
     }
 
     .exitIcon {
+      position: relative;
+      top: 1px;
       cursor: pointer;
       z-index: 9999;
       border-radius: 25px;
