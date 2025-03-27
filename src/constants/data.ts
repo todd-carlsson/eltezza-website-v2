@@ -1231,10 +1231,11 @@ export const funnelBrands = [
     needsColorInvert: false,
   },
   {
-    brand: "Bee+",
-    src: "/images/brandImages/Bee_logo.svg",
-    maxWidth: 91,
-    width: "75%",
+    brand: "eg.",
+    src: "/images/brandImages/Eg_logo.svg",
+    maxWidth: 120,
+    width: "150%",
+    needsColorInvert: false,
   },
   {
     brand: "Constructo",
