@@ -1233,8 +1233,8 @@ export const funnelBrands = [
   {
     brand: "eg.",
     src: "/images/brandImages/Eg_logo.svg",
-    maxWidth: 120,
-    width: "150%",
+    maxWidth: 150,
+    width: "120%",
     needsColorInvert: false,
   },
   {
