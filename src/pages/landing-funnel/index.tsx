@@ -3,7 +3,7 @@ import {
   FunnelHeader,
   FunnelHero,
   Portal,
-  // FunnelVideoGallery,
+  FunnelVideoGallery,
   Reviews,
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
@@ -13,7 +13,7 @@ import {
   funnelPartnership,
   funnelServices,
   funnelTestimonials,
-  // funnelWorkVideos,
+  funnelWorkVideos,
   metaData,
   funnelReviewsData,
   funnelBrandsMobile,
@@ -83,7 +83,7 @@ function LandingFunnel() {
             firstBox={funnelPartnership.firstBox}
             secondBox={funnelPartnership.secondBox}
           />
-          {/* <FunnelVideoGallery content={funnelWorkVideos} /> */}
+          <FunnelVideoGallery content={funnelWorkVideos} />
         </div>
         <Reviews
           content={funnelReviewsData}

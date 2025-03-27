@@ -36,8 +36,8 @@ export function FunnelVideoGallery({ content }: FunnelVideoGalleryProps) {
             <Image
               src={item.image}
               alt={item.campaign}
-              width={200}
-              height={500}
+              width={2000}
+              height={2000}
               className={styles.campaignImage}
             />
           ) : null}

@@ -1443,19 +1443,6 @@ export const funnelWorkVideos = {
   promotional: [
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/KiwiBlue/Kiwiblue_Zoomed_jtmk4o.mp4",
-      src:
-        distributionName +
-        "/Creative/Work/KiwiBlue/Kiwiblue_Zoomed_jtmk4o_LOWRES.mp4",
-      thumbnail:
-        distributionName + "/Creative/Work/KiwiBlue/Kiwi_Blue_NT_qutbbd.jpg",
-      client: "Kiwi Blue",
-      campaign: "Out of the blue",
-      image:
-        distributionName + "/Creative/Work/KiwiBlue/Kiwi_Blue_NT_qutbbd.jpg",
-    },
-    {
-      srcHighQuality:
         distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
       src:
         distributionName +
@@ -1468,16 +1455,34 @@ export const funnelWorkVideos = {
     {
       srcHighQuality:
         distributionName +
-        "/Creative/Work/Innerbloom/Innerbloom_Zoomed_kozcl5.mp4",
+        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x.mp4",
       src:
         distributionName +
-        "/Creative/Work/Innerbloom/Innerbloom_Zoomed_kozcl5_LOWRES.mp4",
+        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x_LOWRES.mp4",
       thumbnail:
-        distributionName + "/Creative/Work/Innerbloom/Innerbloom_TN_r25fo4.jpg",
-      client: "Innerbloom",
-      campaign: "My only one",
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x_Thumbnail.jpg",
+      client: "Fernglen Farm",
+      campaign: "Sheep milk my g",
       image:
-        distributionName + "/Creative/Work/Innerbloom/Innerbloom_TN_r25fo4.jpg",
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen+Farm+-+Advertising+Image.jpg",
+    },
+    {
+      srcHighQuality:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Reel_Bottle_Flip_Final_ukyuvw.mp4",
+      src:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Reel_Bottle_Flip_Final_ukyuvw_LOWRES.mp4",
+      thumbnail:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/ReelBottleFlip_Thumbnail.jpg",
+      client: "Proper Crisps",
+      campaign: "Taste the Battle",
+      image:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Proper+Crisps+_+Al+brown+-+Static+Cretaive+-+Revision+4.jpg",
     },
   ] satisfies Array<FunnelWorkData>,
   organic: [
