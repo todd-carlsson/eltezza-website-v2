@@ -1443,14 +1443,19 @@ export const funnelWorkVideos = {
   promotional: [
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj.mp4",
       src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
-      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+        "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj_LOWRES.mp4",
+      thumbnail:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj_Thumbnail.jpg",
+      client: "Remarkable Cream",
+      campaign: "Half Sugar",
+      image:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Lifestyle+Image+2+-+Bottle+Grab.jpg",
     },
     {
       srcHighQuality:
@@ -1504,9 +1509,11 @@ export const funnelWorkVideos = {
         distributionName +
         "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
       thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
-      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+      client: "Oztent",
+      campaign: "Malamoo",
+      image:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Organic/Oztent/Chilling+by+tent.jpg",
     },
     {
       srcHighQuality:

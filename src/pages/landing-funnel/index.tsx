@@ -83,7 +83,15 @@ function LandingFunnel() {
             firstBox={funnelPartnership.firstBox}
             secondBox={funnelPartnership.secondBox}
           />
-          <FunnelVideoGallery content={funnelWorkVideos} />
+          <FunnelVideoGallery
+            content={funnelWorkVideos.promotional}
+            heading="Promotional Videos"
+          />
+          <FunnelVideoGallery
+            content={funnelWorkVideos.organic}
+            heading="Organic Content"
+            lineColor="--ez-orange"
+          />
         </div>
         <Reviews
           content={funnelReviewsData}

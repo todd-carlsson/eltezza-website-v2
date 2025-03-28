@@ -1,14 +1,20 @@
 import { useVideoControls } from "@/hooks/useVideoControls";
 import styles from "./work.module.scss";
-import { FunnelWorkVideos } from "@/types";
+import { FunnelWorkData } from "@/types";
 import { VideoItem } from "./videoItem";
 import Image from "next/image";
 
 interface FunnelVideoGalleryProps {
-  content: FunnelWorkVideos;
+  content: FunnelWorkData[];
+  heading: string;
+  lineColor?: "--ez-orange" | "--adobe-purple";
 }
 
-export function FunnelVideoGallery({ content }: FunnelVideoGalleryProps) {
+export function FunnelVideoGallery({
+  content,
+  heading,
+  lineColor = "--adobe-purple",
+}: FunnelVideoGalleryProps) {
   const {
     hoveredVideo,
     openedVideo,
@@ -19,30 +25,34 @@ export function FunnelVideoGallery({ content }: FunnelVideoGalleryProps) {
     getMap,
   } = useVideoControls();
   return (
-    <section className={styles.workSection}>
-      {content.promotional.map((item) => (
-        <div key={item.src}>
-          <VideoItem
-            video={item}
-            hoveredVideo={hoveredVideo === item.src ? hoveredVideo : null}
-            pauseVideo={pauseVideo}
-            playVideo={playVideo}
-            openFullVideo={openFullVideo}
-            removeFullVideo={removeFullVideo}
-            openedVideo={openedVideo === item.src ? openedVideo : null}
-            getMap={getMap}
-          />
-          {item.image ? (
-            <Image
-              src={item.image}
-              alt={item.campaign}
-              width={2000}
-              height={2000}
-              className={styles.campaignImage}
+    <div className={styles.workSectionContainer}>
+      <h1 className={styles.heading}>{heading}</h1>
+      <div className={styles.workSection}>
+        {content.map((item) => (
+          <div key={item.src}>
+            <VideoItem
+              video={item}
+              hoveredVideo={hoveredVideo === item.src ? hoveredVideo : null}
+              pauseVideo={pauseVideo}
+              playVideo={playVideo}
+              openFullVideo={openFullVideo}
+              removeFullVideo={removeFullVideo}
+              openedVideo={openedVideo === item.src ? openedVideo : null}
+              getMap={getMap}
+              lineColor={lineColor}
             />
-          ) : null}
-        </div>
-      ))}
-    </section>
+            {item.image ? (
+              <Image
+                src={item.image}
+                alt={item.campaign}
+                width={2000}
+                height={2000}
+                className={styles.campaignImage}
+              />
+            ) : null}
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }

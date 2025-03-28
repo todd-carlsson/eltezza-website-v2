@@ -10,10 +10,10 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <>
       <div id="calendly-root" />
+      <div id="video-root" />
       {router.pathname === "/creative" || router.pathname === "/design" ? (
         <>
           <div id="contact-root" />
-          <div id="video-root" />
           <Header
             page={router.pathname === "/design" ? "design" : "creative"}
             color={
