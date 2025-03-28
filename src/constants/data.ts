@@ -1484,7 +1484,7 @@ export const funnelWorkVideos = {
       client: "Proper Crisps",
       image:
         distributionName +
-        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Proper+Crisps+_+Al+brown+-+Static+Cretaive+-+Revision+4.jpg",
+        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Face-off.jpg",
     },
   ] satisfies Array<FunnelWorkData>,
   organic: [
