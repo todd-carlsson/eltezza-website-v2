@@ -1,22 +1,30 @@
-.workSection {
-  // width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  position: relative;
+.workSectionContainer {
+  margin: 60px 0;
 
-  .videoContainer {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
   }
 
-  .campaignImage {
-    width: 100%;
-    object-fit: cover;
-    height: fit-content;
-    margin-top: 40px;
-    border-radius: 10px;
+  .workSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    position: relative;
+
+    .videoContainer {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .campaignImage {
+      width: 100%;
+      object-fit: cover;
+      height: fit-content;
+      margin-top: 40px;
+      border-radius: 10px;
+    }
   }
 }

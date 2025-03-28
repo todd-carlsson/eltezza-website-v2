@@ -1443,143 +1443,133 @@ export const funnelWorkVideos = {
   promotional: [
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/KiwiBlue/Kiwiblue_Zoomed_jtmk4o.mp4",
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj.mp4",
       src:
         distributionName +
-        "/Creative/Work/KiwiBlue/Kiwiblue_Zoomed_jtmk4o_LOWRES.mp4",
+        "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj_LOWRES.mp4",
       thumbnail:
-        distributionName + "/Creative/Work/KiwiBlue/Kiwi_Blue_NT_qutbbd.jpg",
-      client: "Kiwi Blue",
-      campaign: "Out of the blue",
-      image:
-        distributionName + "/Creative/Work/KiwiBlue/Kiwi_Blue_NT_qutbbd.jpg",
-    },
-    {
-      srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
-      src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
-      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+        "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj_Thumbnail.jpg",
+      client: "Remarkable Cream",
+      image:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Lifestyle+Image+2+-+Bottle+Grab.jpg",
     },
     {
       srcHighQuality:
         distributionName +
-        "/Creative/Work/Innerbloom/Innerbloom_Zoomed_kozcl5.mp4",
+        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x.mp4",
       src:
         distributionName +
-        "/Creative/Work/Innerbloom/Innerbloom_Zoomed_kozcl5_LOWRES.mp4",
+        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x_LOWRES.mp4",
       thumbnail:
-        distributionName + "/Creative/Work/Innerbloom/Innerbloom_TN_r25fo4.jpg",
-      client: "Innerbloom",
-      campaign: "My only one",
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x_Thumbnail.jpg",
+      client: "Fernglen Farm",
       image:
-        distributionName + "/Creative/Work/Innerbloom/Innerbloom_TN_r25fo4.jpg",
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen+Farm+-+Advertising+Image.jpg",
+    },
+    {
+      srcHighQuality:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Reel_Bottle_Flip_Final_ukyuvw.mp4",
+      src:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Reel_Bottle_Flip_Final_ukyuvw_LOWRES.mp4",
+      thumbnail:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/ReelBottleFlip_Thumbnail.jpg",
+      client: "Proper Crisps",
+      image:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Face-off.jpg",
     },
   ] satisfies Array<FunnelWorkData>,
   organic: [
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+        distributionName +
+        "/Ad_Funnel/Work_Section/Organic/Steves/Steves_New_Jingle_Video_lk6amh.mp4",
       src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
-      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+        "/Ad_Funnel/Work_Section/Organic/Steves/Steves_New_Jingle_Video_lk6amh_LOWRES.mp4",
+      thumbnail:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Organic/Steves/Steves_New_Jingle_Video_lk6amh_Thumbnail.jpg",
+      client: "Steve's Tyre Service",
+      image:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Organic/Steves/Meet+staff+-+Hadley.jpg",
     },
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+        distributionName +
+        "/Ad_Funnel/Work_Section/Organic/Oztent/Malamoo_set_up_vn3trg.mp4",
       src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
-      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+        "/Ad_Funnel/Work_Section/Organic/Oztent/Malamoo_set_up_vn3trg_LOWRES.mp4",
+      thumbnail:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Organic/Oztent/Malamoo_set_up_vn3trg_Thumbnail.jpg",
+      client: "Oztent",
+      image:
+        distributionName +
+        "/Ad_Funnel/Work_Section/Organic/Oztent/Chilling+by+tent.jpg",
     },
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+        distributionName +
+        "/Ad_Funnel/Work_Section/Organic/BlackPearl/Oreo_Reel_super_final_rlocdk.mp4",
       src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
-      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-    },
-  ] satisfies Array<FunnelWorkData>,
-  productFocused: [
-    {
-      srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
-      src:
+        "/Ad_Funnel/Work_Section/Organic/BlackPearl/Oreo_Reel_super_final_rlocdk_LOWRES.mp4",
+      thumbnail:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
-      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-    },
-    {
-      srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
-      src:
+        "/Ad_Funnel/Work_Section/Organic/BlackPearl/Oreo_Reel_super_final_rlocdk_THUMBNAIL.jpg",
+      client: "Black Pearl",
+      image:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
-      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-    },
-    {
-      srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
-      src:
-        distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
-      image: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
+        "/Ad_Funnel/Work_Section/Organic/BlackPearl/Blackpearl+image.jpg",
     },
   ] satisfies Array<FunnelWorkData>,
   ugc: [
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+        distributionName +
+        "/Ad_Funnel/Work_Section/UGC/Peaq/Final_ver_UGC_video_v9phqw.mp4",
       src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
+        "/Ad_Funnel/Work_Section/UGC/Peaq/Final_ver_UGC_video_v9phqw_LOWRES.mov",
+      thumbnail:
+        distributionName +
+        "/Ad_Funnel/Work_Section/UGC/Peaq/Final+ver+UGC+video_Thumbnail.jpg",
+      client: "PEAQ",
     },
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+        distributionName +
+        "/Ad_Funnel/Work_Section/UGC/BlackPearl/Jhamei_Reel_FB_f4nfyn.mp4",
       src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
+        "/Ad_Funnel/Work_Section/UGC/BlackPearl/Jhamei_Reel_FB_f4nfyn_LOWRES.mp4",
+      thumbnail:
+        distributionName +
+        "/Ad_Funnel/Work_Section/UGC/BlackPearl/Jhamei+Reel+FB_Thumbnail.jpg",
+      client: "Black Pearl Cafe",
     },
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+        distributionName +
+        "/Ad_Funnel/Work_Section/UGC/ProperCrisps/Karen_-_Final_UGC_b254gl.mp4",
       src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
+        "/Ad_Funnel/Work_Section/UGC/ProperCrisps/Karen_-_Final_UGC_b254gl_LOWRES.mov",
+      thumbnail:
+        distributionName +
+        "/Ad_Funnel/Work_Section/UGC/ProperCrisps/Karen+-+Final+UGC_Thumbnail.jpg",
+      client: "Proper Crisps",
     },
   ] satisfies Array<FunnelWorkData>,
 };
@@ -1625,5 +1615,11 @@ export const funnelReviewsData = [
       "Great company to deal with. Made everything easy to understand, and worked with us around our busy schedule. Always bright, bubbly, friendly, and willing to lend a hand if we got stuck. Not to mention that they customized our website to develop something that truly reflected what we wanted for our business. We have no hesitations in recommending Eltezza.",
     name: "Sean Cupples",
     role: "Director of Cupples Construction",
+  },
+  {
+    review:
+      "We have been working with Eltezza for a while now and it has been great. Great team, really easy to work and communicate with.",
+    name: "Hayden Ryan",
+    role: "General Manager of Heatrite",
   },
 ] satisfies Array<TestimonialsData>;

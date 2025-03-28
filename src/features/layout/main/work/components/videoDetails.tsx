@@ -6,9 +6,14 @@ interface VideoDetailsProps {
   hoveredVideo: string | null;
   video: Omit<CreativeWorkData, "size"> &
     Partial<Pick<CreativeWorkData, "size">>;
+  lineColor?: "--ez-orange" | "--adobe-purple";
 }
 
-export function VideoDetails({ hoveredVideo, video }: VideoDetailsProps) {
+export function VideoDetails({
+  hoveredVideo,
+  video,
+  lineColor = "--adobe-purple",
+}: VideoDetailsProps) {
   return (
     <motion.div className={styles.videoDetails}>
       <div className={styles.clientContainer}>
@@ -36,24 +41,27 @@ export function VideoDetails({ hoveredVideo, video }: VideoDetailsProps) {
           animate={{
             width: hoveredVideo === video.src ? 50 : 0,
           }}
+          style={{ backgroundColor: `var(${lineColor})` }}
         />
       </div>
-      <motion.div
-        initial={{
-          y: -10,
-          opacity: 0,
-        }}
-        animate={{
-          y: hoveredVideo === video.src ? 0 : -10,
-          opacity: 1,
-          transition: {
-            duration: 0.17,
-          },
-        }}
-        className={styles.campaignName}
-      >
-        {video.campaign}
-      </motion.div>
+      {video.campaign && (
+        <motion.div
+          initial={{
+            y: -10,
+            opacity: 0,
+          }}
+          animate={{
+            y: hoveredVideo === video.src ? 0 : -10,
+            opacity: 1,
+            transition: {
+              duration: 0.17,
+            },
+          }}
+          className={styles.campaignName}
+        >
+          {video.campaign}
+        </motion.div>
+      )}
     </motion.div>
   );
 }

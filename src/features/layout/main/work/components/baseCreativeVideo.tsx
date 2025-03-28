@@ -8,6 +8,7 @@ import styles from "../work.module.scss";
 
 interface BaseCreativeVideoProps extends VideoControlsProps {
   video: CreativeWorkData | FunnelWorkData;
+  lineColor?: "--ez-orange" | "--adobe-purple";
 }
 
 export const BaseCreativeVideo = memo(function BaseCreativeVideo({
@@ -19,6 +20,7 @@ export const BaseCreativeVideo = memo(function BaseCreativeVideo({
   removeFullVideo,
   openedVideo,
   getMap,
+  lineColor,
 }: BaseCreativeVideoProps) {
   return (
     <>
@@ -49,6 +51,7 @@ export const BaseCreativeVideo = memo(function BaseCreativeVideo({
       <VideoDetails
         hoveredVideo={hoveredVideo === video.src ? hoveredVideo : null}
         video={video}
+        lineColor={lineColor}
       />
 
       {/* VIDEO */}

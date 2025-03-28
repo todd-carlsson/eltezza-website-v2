@@ -73,3 +73,16 @@
     padding: 0 var(--content-padding-sm);
   }
 }
+
+.funnelVideoGallerySection {
+  margin-top: 60px;
+}
+
+.funnelGalleryHeading {
+  font-size: 2.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.funnelGallerySubHeading {
+  font-size: 1.25rem;
+}
