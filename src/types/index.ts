@@ -44,7 +44,7 @@ export type CreativeWorkData = {
   thumbnail: string;
   size: "small" | "medium" | "large";
   client: string;
-  campaign: string;
+  campaign?: string;
 };
 
 export type BrandsData = {

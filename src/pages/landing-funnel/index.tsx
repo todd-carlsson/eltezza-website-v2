@@ -3,7 +3,7 @@ import {
   FunnelHeader,
   FunnelHero,
   Portal,
-  // FunnelVideoGallery,
+  FunnelVideoGallery,
   Reviews,
 } from "@/features/layout";
 import styles from "@/styles/Home.module.css";
@@ -13,7 +13,7 @@ import {
   funnelPartnership,
   funnelServices,
   funnelTestimonials,
-  // funnelWorkVideos,
+  funnelWorkVideos,
   metaData,
   funnelReviewsData,
   funnelBrandsMobile,
@@ -83,7 +83,26 @@ function LandingFunnel() {
             firstBox={funnelPartnership.firstBox}
             secondBox={funnelPartnership.secondBox}
           />
-          {/* <FunnelVideoGallery content={funnelWorkVideos} /> */}
+          <section className={styles.funnelVideoGallerySection}>
+            <h1 className={styles.funnelGalleryHeading}>
+              Not just seen - saved, shared
+              <br /> & remembered.
+            </h1>
+            <p className={styles.funnelGallerySubHeading}>Portfolio Showcase</p>
+            <FunnelVideoGallery
+              content={funnelWorkVideos.promotional}
+              heading="Promotional Videos"
+            />
+            <FunnelVideoGallery
+              content={funnelWorkVideos.organic}
+              heading="Organic Content"
+              lineColor="--ez-orange"
+            />
+            <FunnelVideoGallery
+              content={funnelWorkVideos.ugc}
+              heading="UGC Content"
+            />
+          </section>
         </div>
         <Reviews
           content={funnelReviewsData}
