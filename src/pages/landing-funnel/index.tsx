@@ -92,6 +92,10 @@ function LandingFunnel() {
             heading="Organic Content"
             lineColor="--ez-orange"
           />
+          <FunnelVideoGallery
+            content={funnelWorkVideos.ugc}
+            heading="UGC Content"
+          />
         </div>
         <Reviews
           content={funnelReviewsData}

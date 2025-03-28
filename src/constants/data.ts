@@ -1452,7 +1452,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj_Thumbnail.jpg",
       client: "Remarkable Cream",
-      campaign: "Half Sugar",
       image:
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Lifestyle+Image+2+-+Bottle+Grab.jpg",
@@ -1468,7 +1467,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x_Thumbnail.jpg",
       client: "Fernglen Farm",
-      campaign: "Sheep milk my g",
       image:
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen+Farm+-+Advertising+Image.jpg",
@@ -1484,7 +1482,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/ReelBottleFlip_Thumbnail.jpg",
       client: "Proper Crisps",
-      campaign: "Taste the Battle",
       image:
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Proper+Crisps+_+Al+brown+-+Static+Cretaive+-+Revision+4.jpg",
@@ -1502,7 +1499,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Steves/Steves_New_Jingle_Video_lk6amh_Thumbnail.jpg",
       client: "Steve's Tyre Service",
-      campaign: "Better grip on life",
       image:
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Steves/Meet+staff+-+Hadley.jpg",
@@ -1518,7 +1514,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Oztent/Malamoo_set_up_vn3trg_Thumbnail.jpg",
       client: "Oztent",
-      campaign: "Malamoo",
       image:
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Oztent/Chilling+by+tent.jpg",
@@ -1534,7 +1529,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/BlackPearl/Oreo_Reel_super_final_rlocdk_THUMBNAIL.jpg",
       client: "Black Pearl",
-      campaign: "Drink",
       image:
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/BlackPearl/Blackpearl+image.jpg",
@@ -1543,33 +1537,39 @@ export const funnelWorkVideos = {
   ugc: [
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+        distributionName +
+        "/Ad_Funnel/Work_Section/UGC/Peaq/Final_ver_UGC_video_v9phqw.mp4",
       src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
+        "/Ad_Funnel/Work_Section/UGC/Peaq/Final_ver_UGC_video_v9phqw_LOWRES.mov",
+      thumbnail:
+        distributionName +
+        "/Ad_Funnel/Work_Section/UGC/Peaq/Final+ver+UGC+video_Thumbnail.jpg",
+      client: "PEAQ",
     },
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+        distributionName +
+        "/Ad_Funnel/Work_Section/UGC/BlackPearl/Jhamei_Reel_FB_f4nfyn.mp4",
       src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
+        "/Ad_Funnel/Work_Section/UGC/BlackPearl/Jhamei_Reel_FB_f4nfyn_LOWRES.mp4",
+      thumbnail:
+        distributionName +
+        "/Ad_Funnel/Work_Section/UGC/BlackPearl/Jhamei+Reel+FB_Thumbnail.jpg",
+      client: "Black Pearl Cafe",
     },
     {
       srcHighQuality:
-        distributionName + "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7.mp4",
+        distributionName +
+        "/Ad_Funnel/Work_Section/UGC/ProperCrisps/Karen_-_Final_UGC_b254gl.mp4",
       src:
         distributionName +
-        "/Creative/Work/Goju/Goju_Content_Reel_dhbmn7_LOWRES.mp4",
-      thumbnail: distributionName + "/Creative/Work/Goju/Go_Ju_TN_irpemp.jpg",
-      client: "Goju",
-      campaign: "Need some pep in your step?",
+        "/Ad_Funnel/Work_Section/UGC/ProperCrisps/Karen_-_Final_UGC_b254gl_LOWRES.mov",
+      thumbnail:
+        distributionName +
+        "/Ad_Funnel/Work_Section/UGC/ProperCrisps/Karen+-+Final+UGC_Thumbnail.jpg",
+      client: "Proper Crisps",
     },
   ] satisfies Array<FunnelWorkData>,
 };

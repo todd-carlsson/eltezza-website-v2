@@ -44,7 +44,7 @@ export function FunnelVideoGallery({
             {item.image ? (
               <Image
                 src={item.image}
-                alt={item.campaign}
+                alt={item.image}
                 width={2000}
                 height={2000}
                 className={styles.campaignImage}
