@@ -9,7 +9,7 @@
   .workSection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 3rem;
     position: relative;
 
     .videoContainer {
@@ -23,7 +23,7 @@
       width: 100%;
       object-fit: cover;
       height: fit-content;
-      margin-top: 40px;
+      margin-top: 3rem;
       border-radius: 10px;
     }
   }
