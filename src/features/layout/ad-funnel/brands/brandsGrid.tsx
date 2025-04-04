@@ -19,37 +19,39 @@ export function BrandsGrid({ content, mobileContent }: BrandsGridProps) {
   }
   return (
     <div className={styles.brandsGridContainer}>
-      {windowWidth > 768
-        ? content.map((brand) => (
-            <Image
-              key={brand.brand}
-              className={styles.brandLogo}
-              src={brand.src}
-              alt={brand.brand}
-              width={brand.maxWidth || 150}
-              height={150}
-              style={{
-                maxWidth: getMaxWidth(brand.maxWidth),
-                width: brand.width,
-                filter: brand.needsColorInvert !== false ? "invert(1)" : "",
-              }}
-            />
-          ))
-        : mobileContent.map((brand) => (
-            <Image
-              key={brand.brand}
-              className={styles.brandLogo}
-              src={brand.src}
-              alt={brand.brand}
-              width={brand.maxWidth || 150}
-              height={150}
-              style={{
-                maxWidth: getMaxWidth(brand.maxWidth),
-                width: brand.width,
-                filter: brand.needsColorInvert !== false ? "invert(1)" : "",
-              }}
-            />
-          ))}
+      <div className={styles.brandsGrid}>
+        {windowWidth > 768
+          ? content.map((brand) => (
+              <Image
+                key={brand.brand}
+                className={styles.brandLogo}
+                src={brand.src}
+                alt={brand.brand}
+                width={brand.maxWidth || 150}
+                height={150}
+                style={{
+                  maxWidth: getMaxWidth(brand.maxWidth),
+                  width: brand.width,
+                  filter: brand.needsColorInvert !== false ? "invert(1)" : "",
+                }}
+              />
+            ))
+          : mobileContent.map((brand) => (
+              <Image
+                key={brand.brand}
+                className={styles.brandLogo}
+                src={brand.src}
+                alt={brand.brand}
+                width={brand.maxWidth || 150}
+                height={150}
+                style={{
+                  maxWidth: getMaxWidth(brand.maxWidth),
+                  width: brand.width,
+                  filter: brand.needsColorInvert !== false ? "invert(1)" : "",
+                }}
+              />
+            ))}
+      </div>
     </div>
   );
 }
