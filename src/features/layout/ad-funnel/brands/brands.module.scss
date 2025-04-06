@@ -13,9 +13,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 var(--content-padding);
-      max-width: var(--max-width);
+      padding: 0 calc(var(--content-padding) + 50px);
+      padding-right: calc(var(--content-padding) + 25px);
       width: 100%;
+      max-width: calc(var(--max-width) * 1.25);
       min-height: 250px;
 
       @media (width <=768px) {
@@ -47,29 +48,37 @@
   // GRID
   .brandsGridContainer {
     background-color: #fff;
-    padding: var(--content-padding);
-    display: grid;
-    place-items: center;
-    grid-row-gap: 130px;
     width: 100%;
     position: relative;
-    grid-template-columns: repeat(6, 1fr);
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    @media (width <=1300px) {
-      grid-column-gap: 3rem;
-      padding: var(--content-padding) var(--content-padding-sm);
-    }
-
-    @media (width <=768px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .brandLogo {
+    .brandsGrid {
+      padding: var(--content-padding);
+      display: grid;
+      place-items: center;
+      grid-row-gap: 130px;
+      grid-template-columns: repeat(6, 1fr);
+      height: auto;
       width: 100%;
-      max-width: 120px;
-      position: relative;
-      height: fit-content;
+      max-width: calc(var(--max-width) * 1.25);
+
+      @media (width <=1300px) {
+        grid-column-gap: 3rem;
+        padding: var(--content-padding) var(--content-padding-sm);
+      }
+
+      @media (width <=768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .brandLogo {
+        width: 100%;
+        max-width: 120px;
+        position: relative;
+        height: fit-content;
+      }
     }
   }
 }

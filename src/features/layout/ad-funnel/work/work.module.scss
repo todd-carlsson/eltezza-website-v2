@@ -4,26 +4,42 @@
   .heading {
     font-size: 2.5rem;
     margin-bottom: 40px;
+
+    @media (width <=1250px) {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+    }
   }
 
   .workSection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 3rem;
     position: relative;
+
+    @media (width <=1250px) {
+      gap: 1.5rem;
+    }
+
+    @media (width <=800px) {
+      grid-template-columns: 1fr;
+    }
 
     .videoContainer {
       width: 100%;
       position: relative;
       display: flex;
       flex-direction: column;
+
+      &:last-child:nth-child(3n - 3) {
+        grid-column-end: 4;
+      }
     }
 
     .campaignImage {
       width: 100%;
       object-fit: cover;
       height: fit-content;
-      margin-top: 40px;
+      margin-top: 3rem;
       border-radius: 10px;
     }
   }
