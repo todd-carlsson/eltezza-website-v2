@@ -86,3 +86,13 @@
 .funnelGallerySubHeading {
   font-size: 1.25rem;
 }
+
+@media (width <=1250px) {
+  .funnelGalleryHeading {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+  }
+
+  .funnelGallerySubHeading {
+    font-size: clamp(0.8rem, 2vw, 1.75rem);
+  }
+}
