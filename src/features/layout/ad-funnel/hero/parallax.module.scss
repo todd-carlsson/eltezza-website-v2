@@ -1,7 +1,5 @@
 .container {
-  height: 300vh;
-
-  // padding-top: 10rem;
+  height: 275vh;
   padding-bottom: 10rem;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
@@ -11,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-self: auto;
-  perspective: 1000px;
+  perspective: 1250px;
   transform-style: preserve-3d;
 
   @media (width<=1700px) {
@@ -41,36 +39,4 @@
 .reverse {
   flex-direction: row-reverse;
   direction: rtl;
-}
-
-.header {
-  max-width: 80rem;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5rem 1rem;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-.headerTitle {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-
-  @media (width >= 768px) {
-    font-size: 4.5rem;
-  }
-}
-
-.headerSubtitle {
-  max-width: 42rem;
-  font-size: 1rem;
-  margin-top: 2rem;
-  color: #e5e5e5;
-
-  @media (width >= 768px) {
-    font-size: 1.25rem;
-  }
 }

@@ -19,7 +19,7 @@ export const Card = ({
       key={product.title}
       className={classNames(styles.productCard, styles.groupProduct)}
     >
-      <Link href={product.link} className={styles.productLink}>
+      <Link href={product.link} className={styles.productLink} target="_blank">
         <Image
           src={product.thumbnail}
           height="600"

@@ -1628,36 +1628,36 @@ export const funnelReviewsData = [
 export const funnelHeroImages = [
   {
     title: "Kochi",
-    link: "https://gomoonbeam.com",
+    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/kochi_Top-down.jpg",
   },
   {
     title: "Youm",
-    link: "https://cursor.so",
+    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/Team+Intro+-+Megan.jpg",
   },
   {
     title: "Proper Crisps",
-    link: "https://userogue.com",
+    link: "https://www.eltezza.com",
     thumbnail:
       distributionName + "/Ad_Funnel/images/proper-crisps-tennisball.jpg",
   },
 
   {
     title: "Proper Crisps",
-    link: "https://editorially.org",
+    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/propercrisps-tennis1.jpg",
   },
   {
     title: "Oztent",
-    link: "https://editrix.ai",
+    link: "https://www.eltezza.com",
     thumbnail:
       distributionName +
       "/Ad_Funnel/images/NEW+_+Oztent+-+March+Sale+-+Bunker+Pro.jpg",
   },
   {
     title: "Remarkable Cream",
-    link: "https://app.pixelperfect.quest",
+    link: "https://www.eltezza.com",
     thumbnail:
       distributionName +
       "/Ad_Funnel/images/Lifestyle+Image+2+-+Bottle+Grab.jpg",
@@ -1665,52 +1665,52 @@ export const funnelHeroImages = [
 
   {
     title: "Youm",
-    link: "https://algochurn.com",
+    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/Google+Review.jpg",
   },
   {
     title: "Fernglen Farm",
-    link: "https://ui.aceternity.com",
+    link: "https://www.eltezza.com",
     thumbnail:
       distributionName +
       "/Ad_Funnel/images/Fernglen+Farm+-+Advertising+Image.jpg",
   },
   {
     title: "Eatkinda",
-    link: "https://tailwindmasterkit.com",
+    link: "https://www.eltezza.com",
     thumbnail:
       distributionName + "/Ad_Funnel/images/EatKinda+-+Freezer+(1.5x).jpg",
   },
   {
     title: "Kochi",
-    link: "https://smartbridgetech.com",
+    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/Close-up+Burger.jpg",
   },
   {
     title: "Oztent",
-    link: "https://renderwork.studio",
+    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/Chilling+by+tent.jpg",
   },
 
   {
     title: "Proper Crisps",
-    link: "https://cremedigital.com",
+    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/propercrips-kombat.jpg",
   },
   {
     title: "Black Pearl",
-    link: "https://goldenbellsacademy.com",
+    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/blackpearl.jpg",
   },
   {
     title: "Invoker Labs",
-    link: "https://invoker.lol",
+    link: "https://www.eltezza.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/invoker.png",
   },
   {
     title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
+    link: "https://www.eltezza.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
   },
