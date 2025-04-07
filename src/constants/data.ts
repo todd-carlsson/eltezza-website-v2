@@ -6,6 +6,7 @@ import {
   CreativeHeroVideoData,
   CreativeWorkData,
   FeaturedReviewData,
+  FunnelHeroContent,
   FunnelPartnershipData,
   FunnelServicesData,
   FunnelTestimonialsData,
@@ -1713,4 +1714,4 @@ export const funnelHeroImages = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
   },
-];
+] satisfies Array<FunnelHeroContent>;

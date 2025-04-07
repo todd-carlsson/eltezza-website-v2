@@ -74,6 +74,12 @@ export type TestimonialsData = {
   role: string;
 };
 
+export type FunnelHeroContent = {
+  title: string;
+  link: string;
+  thumbnail: string;
+};
+
 export type FunnelTestimonialsData = {
   id: number;
   review: string;

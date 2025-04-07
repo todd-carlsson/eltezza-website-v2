@@ -1,5 +1,5 @@
 // FUNNEL HERO SECTION
-.funnelHero {
+.header {
   width: 100%;
   max-width: var(--max-width);
   height: 100lvh;
@@ -11,7 +11,7 @@
     align-items: center;
   }
 
-  .funnelHeroText {
+  .headerText {
     text-align: left;
 
     @media (width <=960px) {
@@ -19,7 +19,7 @@
       white-space: nowrap;
     }
 
-    .funnelHeroHeading {
+    .headerHeading {
       font-size: clamp(3.5rem, 4.25vw, 5.5rem);
       font-weight: 300;
 
@@ -40,7 +40,7 @@
       }
     }
 
-    .funnelHeroSubHeading {
+    .headerSubHeading {
       margin-top: 0.75rem;
       font-size: clamp(1.25rem, 1vw, 3.25rem);
       white-space: wrap;
@@ -59,7 +59,7 @@
     }
   }
 
-  .funnelButtonContainer {
+  .buttonContainer {
     margin-top: 1.8rem;
 
     .applyButton {
@@ -78,4 +78,64 @@
       }
     }
   }
+}
+
+// CARD COMPONENT
+
+.productCard {
+  height: 24rem;
+
+  // Changed from 30 rem width
+  width: auto;
+  position: relative;
+
+  // flex-shrink: 0;
+}
+
+.productLink {
+  display: block;
+  transition: box-shadow 0.3s ease;
+}
+
+.groupProduct:hover .productLink {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+.productImage {
+  object-fit: cover;
+  object-position: left top;
+
+  // Changed from absolute positioning + height & width 100%
+  position: relative;
+  height: 24rem;
+  width: auto;
+  inset: 0;
+}
+
+.productOverlay {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: black;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.groupProduct:hover .productOverlay {
+  opacity: 0.8;
+}
+
+.productTitle {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  opacity: 0;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.groupProduct:hover .productTitle {
+  opacity: 1;
 }

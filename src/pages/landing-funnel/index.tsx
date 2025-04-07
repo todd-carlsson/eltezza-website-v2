@@ -1,7 +1,6 @@
 import {
   FunnelContact,
   FunnelHeader,
-  // FunnelHero,
   Portal,
   FunnelVideoGallery,
   Reviews,
@@ -73,8 +72,7 @@ function LandingFunnel() {
           />
         </Portal>
         <div className={styles.funnelContentContainer}>
-          {/* <FunnelHero onOpen={onOpen} /> */}
-          <HeroParallax products={funnelHeroImages} />
+          <HeroParallax products={funnelHeroImages} onOpen={onOpen} />
           <FunnelTestimonials content={funnelTestimonials} />
           <FunnelBrands
             content={funnelBrands}

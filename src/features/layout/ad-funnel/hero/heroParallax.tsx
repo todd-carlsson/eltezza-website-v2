@@ -1,25 +1,17 @@
 import React from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  useSpring,
-  MotionValue,
-} from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import classNames from "classnames";
 import styles from "./parallax.module.scss";
+import { Card } from "./components/card";
+import { FunnelHeroContent } from "@/types";
+import { Header } from "./components/funnelHero";
 
-export const HeroParallax = ({
-  products,
-}: {
-  products: {
-    title: string;
-    link: string;
-    thumbnail: string;
-  }[];
-}) => {
+interface HeroParallaxProps {
+  products: FunnelHeroContent[];
+  onOpen: () => void;
+}
+
+export const HeroParallax = ({ products, onOpen }: HeroParallaxProps) => {
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
@@ -57,7 +49,7 @@ export const HeroParallax = ({
   );
   return (
     <div ref={ref} className={styles.container}>
-      <Header />
+      <Header onOpen={onOpen} />
       <motion.div
         style={{
           rotateX,
@@ -68,7 +60,7 @@ export const HeroParallax = ({
       >
         <motion.div className={classNames(styles.productRow, styles.reverse)}>
           {firstRow.map((product) => (
-            <ProductCard
+            <Card
               product={product}
               translate={translateX}
               key={product.title}
@@ -77,7 +69,7 @@ export const HeroParallax = ({
         </motion.div>
         <motion.div className={styles.productRow}>
           {secondRow.map((product) => (
-            <ProductCard
+            <Card
               product={product}
               translate={translateXReverse}
               key={product.title}
@@ -86,7 +78,7 @@ export const HeroParallax = ({
         </motion.div>
         <motion.div className={classNames(styles.productRow, styles.reverse)}>
           {thirdRow.map((product) => (
-            <ProductCard
+            <Card
               product={product}
               translate={translateX}
               key={product.title}
@@ -98,50 +90,17 @@ export const HeroParallax = ({
   );
 };
 
-export const Header = () => {
-  return (
-    <div className={styles.header}>
-      <h1 className={styles.headerTitle}>
-        The Ultimate <br /> development studio
-      </h1>
-      <p className={styles.headerSubtitle}>
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
-      </p>
-    </div>
-  );
-};
-
-export const ProductCard = ({
-  product,
-  translate,
-}: {
-  product: {
-    title: string;
-    link: string;
-    thumbnail: string;
-  };
-  translate: MotionValue<number>;
-}) => {
-  return (
-    <motion.div
-      style={{ x: translate }}
-      whileHover={{ y: -20 }}
-      key={product.title}
-      className={classNames(styles.productCard, styles.groupProduct)}
-    >
-      <Link href={product.link} className={styles.productLink}>
-        <Image
-          src={product.thumbnail}
-          height="600"
-          width="600"
-          className={styles.productImage}
-          alt={product.title}
-        />
-      </Link>
-      <div className={styles.productOverlay}></div>
-      <h2 className={styles.productTitle}>{product.title}</h2>
-    </motion.div>
-  );
-};
+// export const Header = () => {
+//   return (
+//     <div className={styles.header}>
+//       <h1 className={styles.headerTitle}>
+//         The Ultimate <br /> development studio
+//       </h1>
+//       <p className={styles.headerSubtitle}>
+//         We build beautiful products with the latest technologies and frameworks.
+//         We are a team of passionate developers and designers that love to build
+//         amazing products.
+//       </p>
+//     </div>
+//   );
+// };
