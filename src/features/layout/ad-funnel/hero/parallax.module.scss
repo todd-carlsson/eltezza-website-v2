@@ -1,0 +1,111 @@
+.container {
+  height: 400vh;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: auto;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.productRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+  gap: 5rem;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  direction: rtl;
+}
+
+.header {
+  max-width: 80rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5rem 1rem;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.headerTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+
+  @media (width >= 768px) {
+    font-size: 4.5rem;
+  }
+}
+
+.headerSubtitle {
+  max-width: 42rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  color: #e5e5e5;
+
+  @media (width >= 768px) {
+    font-size: 1.25rem;
+  }
+}
+
+.productCard {
+  height: 24rem;
+  width: 30rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.productLink {
+  display: block;
+  transition: box-shadow 0.3s ease;
+}
+
+.groupProduct:hover .productLink {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+.productImage {
+  object-fit: cover;
+  object-position: left top;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+}
+
+.productOverlay {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: black;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.groupProduct:hover .productOverlay {
+  opacity: 0.8;
+}
+
+.productTitle {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  opacity: 0;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.groupProduct:hover .productTitle {
+  opacity: 1;
+}

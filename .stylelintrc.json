@@ -1,8 +1,7 @@
 {
   "extends": [
     "stylelint-config-standard-scss",
-    "stylelint-prettier/recommended",
-    "stylelint-config-tailwindcss"
+    "stylelint-prettier/recommended"
   ],
   "rules": {
     "selector-class-pattern": "^([a-z][a-zA-Z]*)(-[a-z][a-zA-Z]*)*$|^([a-z][a-zA-Z]*)+$",
@@ -12,11 +11,5 @@
         "ignoreProperties": ["composes"]
       }
     ]
-  },
-  "at-rule-no-unknown": [
-      true,
-      {
-        "ignoreAtRules": ["tailwind", "apply", "variants", "responsive", "screen"]
-      }
-    ]
+  }
 }
