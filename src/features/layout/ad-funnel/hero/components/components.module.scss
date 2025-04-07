@@ -2,10 +2,13 @@
 .header {
   width: 100%;
   max-width: var(--max-width);
+  padding: 0 var(--content-padding);
   height: 100lvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: absolute;
+  top: 0;
 
   @media (width <=960px) {
     align-items: center;
@@ -61,6 +64,8 @@
 
   .buttonContainer {
     margin-top: 1.8rem;
+    position: relative;
+    z-index: 999999;
 
     .applyButton {
       font-size: clamp(1rem, 0.75vw, 2rem);

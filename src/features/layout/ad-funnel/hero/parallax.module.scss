@@ -1,11 +1,13 @@
 .container {
   height: 300vh;
-  padding-top: 10rem;
+
+  // padding-top: 10rem;
   padding-bottom: 10rem;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-self: auto;
@@ -18,6 +20,14 @@
 
   @media (width <=768px) {
     height: 350vh;
+  }
+
+  .containerGap {
+    height: 75vh;
+
+    @media (width <=768px) {
+      height: 55vh;
+    }
   }
 }
 

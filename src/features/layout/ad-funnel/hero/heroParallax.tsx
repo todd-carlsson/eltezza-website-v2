@@ -48,59 +48,47 @@ export const HeroParallax = ({ products, onOpen }: HeroParallaxProps) => {
     springConfig,
   );
   return (
-    <div ref={ref} className={styles.container}>
+    <>
       <Header onOpen={onOpen} />
-      <motion.div
-        style={{
-          rotateX,
-          rotateZ,
-          translateY,
-          opacity,
-        }}
-      >
-        <motion.div className={classNames(styles.productRow, styles.reverse)}>
-          {firstRow.map((product) => (
-            <Card
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
-          ))}
+      <section ref={ref} className={styles.container}>
+        <div className={styles.containerGap} />
+        <motion.div
+          style={{
+            rotateX,
+            rotateZ,
+            translateY,
+            opacity,
+          }}
+        >
+          <motion.div className={classNames(styles.productRow, styles.reverse)}>
+            {firstRow.map((product) => (
+              <Card
+                product={product}
+                translate={translateX}
+                key={product.title}
+              />
+            ))}
+          </motion.div>
+          <motion.div className={styles.productRow}>
+            {secondRow.map((product) => (
+              <Card
+                product={product}
+                translate={translateXReverse}
+                key={product.title}
+              />
+            ))}
+          </motion.div>
+          <motion.div className={classNames(styles.productRow, styles.reverse)}>
+            {thirdRow.map((product) => (
+              <Card
+                product={product}
+                translate={translateX}
+                key={product.title}
+              />
+            ))}
+          </motion.div>
         </motion.div>
-        <motion.div className={styles.productRow}>
-          {secondRow.map((product) => (
-            <Card
-              product={product}
-              translate={translateXReverse}
-              key={product.title}
-            />
-          ))}
-        </motion.div>
-        <motion.div className={classNames(styles.productRow, styles.reverse)}>
-          {thirdRow.map((product) => (
-            <Card
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
-          ))}
-        </motion.div>
-      </motion.div>
-    </div>
+      </section>
+    </>
   );
 };
-
-// export const Header = () => {
-//   return (
-//     <div className={styles.header}>
-//       <h1 className={styles.headerTitle}>
-//         The Ultimate <br /> development studio
-//       </h1>
-//       <p className={styles.headerSubtitle}>
-//         We build beautiful products with the latest technologies and frameworks.
-//         We are a team of passionate developers and designers that love to build
-//         amazing products.
-//       </p>
-//     </div>
-//   );
-// };

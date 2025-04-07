@@ -7,7 +7,7 @@ interface HeaderProps {
 
 export function Header({ onOpen }: HeaderProps) {
   return (
-    <section className={styles.header}>
+    <div className={styles.header}>
       <div className={styles.headerText}>
         <h1 className={styles.headerHeading}>We help build brands that </h1>
         <h1 className={styles.headerHeading}>
@@ -28,6 +28,6 @@ export function Header({ onOpen }: HeaderProps) {
           Apply now
         </Button>
       </div>
-    </section>
+    </div>
   );
 }
