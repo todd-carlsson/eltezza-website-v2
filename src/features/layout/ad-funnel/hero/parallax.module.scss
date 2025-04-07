@@ -1,5 +1,5 @@
 .container {
-  height: 400vh;
+  height: 300vh;
   padding-top: 10rem;
   padding-bottom: 10rem;
   overflow: hidden;
@@ -11,6 +11,14 @@
   align-self: auto;
   perspective: 1000px;
   transform-style: preserve-3d;
+
+  @media (width<=1700px) {
+    height: 400vh;
+  }
+
+  @media (width <=768px) {
+    height: 350vh;
+  }
 }
 
 .productRow {
