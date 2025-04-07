@@ -67,9 +67,12 @@
 
 .productCard {
   height: 24rem;
-  width: 30rem;
+
+  // Changed from 30 rem width
+  width: auto;
   position: relative;
-  flex-shrink: 0;
+
+  // flex-shrink: 0;
 }
 
 .productLink {
@@ -84,9 +87,11 @@
 .productImage {
   object-fit: cover;
   object-position: left top;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+
+  // Changed from absolute positioning + height & width 100%
+  position: relative;
+  height: 24rem;
+  width: auto;
   inset: 0;
 }
 
