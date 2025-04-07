@@ -1626,85 +1626,80 @@ export const funnelReviewsData = [
 
 export const funnelHeroImages = [
   {
-    title: "Moonbeam",
+    title: "Kochi",
     link: "https://gomoonbeam.com",
-    thumbnail:
-      "https://d5st4psppqx3d.cloudfront.net/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Lifestyle+Image+2+-+Bottle+Grab.jpg",
+    thumbnail: distributionName + "/Ad_Funnel/images/kochi_Top-down.jpg",
   },
   {
-    title: "Cursor",
+    title: "Youm",
     link: "https://cursor.so",
-    thumbnail:
-      "https://d5st4psppqx3d.cloudfront.net/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen+Farm+-+Advertising+Image.jpg",
+    thumbnail: distributionName + "/Ad_Funnel/images/Team+Intro+-+Megan.jpg",
   },
   {
-    title: "Rogue",
+    title: "Proper Crisps",
     link: "https://userogue.com",
     thumbnail:
-      "https://d5st4psppqx3d.cloudfront.net/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Face-off.jpg",
+      distributionName + "/Ad_Funnel/images/proper-crisps-tennisball.jpg",
   },
 
   {
-    title: "Editorially",
+    title: "Proper Crisps",
     link: "https://editorially.org",
-    thumbnail:
-      "https://d5st4psppqx3d.cloudfront.net/Ad_Funnel/Work_Section/Organic/Steves/Meet+staff+-+Hadley.jpg",
+    thumbnail: distributionName + "/Ad_Funnel/images/propercrisps-tennis1.jpg",
   },
   {
-    title: "Editrix AI",
+    title: "Oztent",
     link: "https://editrix.ai",
     thumbnail:
-      "https://d5st4psppqx3d.cloudfront.net/Ad_Funnel/Work_Section/Organic/Oztent/Chilling+by+tent.jpg",
+      distributionName +
+      "/Ad_Funnel/images/NEW+_+Oztent+-+March+Sale+-+Bunker+Pro.jpg",
   },
   {
-    title: "Pixel Perfect",
+    title: "Remarkable Cream",
     link: "https://app.pixelperfect.quest",
     thumbnail:
-      "https://d5st4psppqx3d.cloudfront.net/Ad_Funnel/Work_Section/Organic/BlackPearl/Blackpearl+image.jpg",
+      distributionName +
+      "/Ad_Funnel/images/Lifestyle+Image+2+-+Bottle+Grab.jpg",
   },
 
   {
-    title: "Algochurn",
+    title: "Youm",
     link: "https://algochurn.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+    thumbnail: distributionName + "/Ad_Funnel/images/Google+Review.jpg",
   },
   {
-    title: "Aceternity UI",
+    title: "Fernglen Farm",
     link: "https://ui.aceternity.com",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+      distributionName +
+      "/Ad_Funnel/images/Fernglen+Farm+-+Advertising+Image.jpg",
   },
   {
-    title: "Tailwind Master Kit",
+    title: "Eatkinda",
     link: "https://tailwindmasterkit.com",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+      distributionName + "/Ad_Funnel/images/EatKinda+-+Freezer+(1.5x).jpg",
   },
   {
-    title: "SmartBridge",
+    title: "Kochi",
     link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+    thumbnail: distributionName + "/Ad_Funnel/images/Close-up+Burger.jpg",
   },
   {
-    title: "Renderwork Studio",
+    title: "Oztent",
     link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+    thumbnail: distributionName + "/Ad_Funnel/images/Chilling+by+tent.jpg",
   },
 
   {
-    title: "Creme Digital",
+    title: "Proper Crisps",
     link: "https://cremedigital.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+    thumbnail: distributionName + "/Ad_Funnel/images/propercrips-kombat.jpg",
   },
   {
-    title: "Golden Bells Academy",
+    title: "Black Pearl",
     link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+    thumbnail: distributionName + "/Ad_Funnel/images/blackpearl.jpg",
   },
   {
     title: "Invoker Labs",
