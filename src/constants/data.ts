@@ -6,6 +6,7 @@ import {
   CreativeHeroVideoData,
   CreativeWorkData,
   FeaturedReviewData,
+  FunnelHeroContent,
   FunnelPartnershipData,
   FunnelServicesData,
   FunnelTestimonialsData,
@@ -1452,9 +1453,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj_Thumbnail.jpg",
       client: "Remarkable Cream",
-      image:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Lifestyle+Image+2+-+Bottle+Grab.jpg",
     },
     {
       srcHighQuality:
@@ -1467,9 +1465,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x_Thumbnail.jpg",
       client: "Fernglen Farm",
-      image:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen+Farm+-+Advertising+Image.jpg",
     },
     {
       srcHighQuality:
@@ -1482,9 +1477,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/ReelBottleFlip_Thumbnail.jpg",
       client: "Proper Crisps",
-      image:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Face-off.jpg",
     },
   ] satisfies Array<FunnelWorkData>,
   organic: [
@@ -1499,9 +1491,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Steves/Steves_New_Jingle_Video_lk6amh_Thumbnail.jpg",
       client: "Steve's Tyre Service",
-      image:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Organic/Steves/Meet+staff+-+Hadley.jpg",
     },
     {
       srcHighQuality:
@@ -1514,9 +1503,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Oztent/Malamoo_set_up_vn3trg_Thumbnail.jpg",
       client: "Oztent",
-      image:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Organic/Oztent/Chilling+by+tent.jpg",
     },
     {
       srcHighQuality:
@@ -1529,9 +1515,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/BlackPearl/Oreo_Reel_super_final_rlocdk_THUMBNAIL.jpg",
       client: "Black Pearl",
-      image:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Organic/BlackPearl/Blackpearl+image.jpg",
     },
   ] satisfies Array<FunnelWorkData>,
   ugc: [
@@ -1623,3 +1606,94 @@ export const funnelReviewsData = [
     role: "General Manager of Heatrite",
   },
 ] satisfies Array<TestimonialsData>;
+
+export const funnelHeroImages = [
+  {
+    title: "Kochi",
+    link: "https://www.eltezza.com",
+    thumbnail: distributionName + "/Ad_Funnel/images/kochi_Top-down.jpg",
+  },
+  {
+    title: "Youm",
+    link: "https://www.eltezza.com",
+    thumbnail: distributionName + "/Ad_Funnel/images/Team+Intro+-+Megan.jpg",
+  },
+  {
+    title: "Proper Crisps",
+    link: "https://www.eltezza.com",
+    thumbnail:
+      distributionName + "/Ad_Funnel/images/proper-crisps-tennisball.jpg",
+  },
+
+  {
+    title: "Proper Crisps",
+    link: "https://www.eltezza.com",
+    thumbnail: distributionName + "/Ad_Funnel/images/propercrisps-tennis1.jpg",
+  },
+  {
+    title: "Oztent",
+    link: "https://www.eltezza.com",
+    thumbnail:
+      distributionName +
+      "/Ad_Funnel/images/NEW+_+Oztent+-+March+Sale+-+Bunker+Pro.jpg",
+  },
+  {
+    title: "Remarkable Cream",
+    link: "https://www.eltezza.com",
+    thumbnail:
+      distributionName +
+      "/Ad_Funnel/images/Lifestyle+Image+2+-+Bottle+Grab.jpg",
+  },
+
+  {
+    title: "Youm",
+    link: "https://www.eltezza.com",
+    thumbnail: distributionName + "/Ad_Funnel/images/Google+Review.jpg",
+  },
+  {
+    title: "Fernglen Farm",
+    link: "https://www.eltezza.com",
+    thumbnail:
+      distributionName +
+      "/Ad_Funnel/images/Fernglen+Farm+-+Advertising+Image.jpg",
+  },
+  {
+    title: "Eatkinda",
+    link: "https://www.eltezza.com",
+    thumbnail:
+      distributionName + "/Ad_Funnel/images/EatKinda+-+Freezer+(1.5x).jpg",
+  },
+  {
+    title: "Kochi",
+    link: "https://www.eltezza.com",
+    thumbnail: distributionName + "/Ad_Funnel/images/Close-up+Burger.jpg",
+  },
+  {
+    title: "Oztent",
+    link: "https://www.eltezza.com",
+    thumbnail: distributionName + "/Ad_Funnel/images/Chilling+by+tent.jpg",
+  },
+
+  {
+    title: "Proper Crisps",
+    link: "https://www.eltezza.com",
+    thumbnail: distributionName + "/Ad_Funnel/images/propercrips-kombat.jpg",
+  },
+  {
+    title: "Black Pearl",
+    link: "https://www.eltezza.com",
+    thumbnail: distributionName + "/Ad_Funnel/images/blackpearl.jpg",
+  },
+  {
+    title: "Invoker Labs",
+    link: "https://www.eltezza.com",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+  },
+  {
+    title: "E Free Invoice",
+    link: "https://www.eltezza.com",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+  },
+] satisfies Array<FunnelHeroContent>;

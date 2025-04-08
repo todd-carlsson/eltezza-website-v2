@@ -1,0 +1,42 @@
+.container {
+  height: 275vh;
+  padding-bottom: 10rem;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-self: auto;
+  perspective: 1250px;
+  transform-style: preserve-3d;
+
+  @media (width<=1700px) {
+    height: 400vh;
+  }
+
+  @media (width <=768px) {
+    height: 350vh;
+  }
+
+  .containerGap {
+    height: 75vh;
+
+    @media (width <=768px) {
+      height: 55vh;
+    }
+  }
+}
+
+.productRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+  gap: 5rem;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  direction: rtl;
+}
