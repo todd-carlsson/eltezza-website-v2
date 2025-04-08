@@ -1685,15 +1685,16 @@ export const funnelHeroImages = [
     thumbnail: distributionName + "/Ad_Funnel/images/blackpearl.jpg",
   },
   {
-    title: "Invoker Labs",
+    title: "Al Brown",
     link: "https://www.eltezza.com",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+      distributionName +
+      "/Ad_Funnel/images/Habanero+Mustard+(ketchup+in+bg).jpg",
   },
   {
-    title: "E Free Invoice",
+    title: "Maunder Roofing",
     link: "https://www.eltezza.com",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+      distributionName + "/Ad_Funnel/images/If+you+see+us%2C+say+hi.jpg",
   },
 ] satisfies Array<FunnelHeroContent>;
