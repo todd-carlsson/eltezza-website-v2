@@ -85,7 +85,7 @@ function LandingFunnel() {
           <section className={styles.funnelVideoGallerySection}>
             <h1 className={styles.funnelGalleryHeading}>
               Not just seen - saved, shared
-              <br /> & remembered.
+              <br className={styles.galleryHeadingBreak} /> & remembered.
             </h1>
             <p className={styles.funnelGallerySubHeading}>Portfolio Showcase</p>
             <FunnelVideoGallery
