@@ -1453,9 +1453,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj_Thumbnail.jpg",
       client: "Remarkable Cream",
-      image:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Lifestyle+Image+2+-+Bottle+Grab.jpg",
     },
     {
       srcHighQuality:
@@ -1468,9 +1465,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x_Thumbnail.jpg",
       client: "Fernglen Farm",
-      image:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen+Farm+-+Advertising+Image.jpg",
     },
     {
       srcHighQuality:
@@ -1483,9 +1477,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/ReelBottleFlip_Thumbnail.jpg",
       client: "Proper Crisps",
-      image:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Face-off.jpg",
     },
   ] satisfies Array<FunnelWorkData>,
   organic: [
@@ -1500,9 +1491,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Steves/Steves_New_Jingle_Video_lk6amh_Thumbnail.jpg",
       client: "Steve's Tyre Service",
-      image:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Organic/Steves/Meet+staff+-+Hadley.jpg",
     },
     {
       srcHighQuality:
@@ -1515,9 +1503,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Oztent/Malamoo_set_up_vn3trg_Thumbnail.jpg",
       client: "Oztent",
-      image:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Organic/Oztent/Chilling+by+tent.jpg",
     },
     {
       srcHighQuality:
@@ -1530,9 +1515,6 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/BlackPearl/Oreo_Reel_super_final_rlocdk_THUMBNAIL.jpg",
       client: "Black Pearl",
-      image:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Organic/BlackPearl/Blackpearl+image.jpg",
     },
   ] satisfies Array<FunnelWorkData>,
   ugc: [

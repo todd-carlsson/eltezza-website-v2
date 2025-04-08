@@ -2,7 +2,6 @@ import { useVideoControls } from "@/hooks/useVideoControls";
 import styles from "./work.module.scss";
 import { FunnelWorkData } from "@/types";
 import { VideoItem } from "./videoItem";
-import Image from "next/image";
 
 interface FunnelVideoGalleryProps {
   content: FunnelWorkData[];
@@ -41,15 +40,6 @@ export function FunnelVideoGallery({
               getMap={getMap}
               lineColor={lineColor}
             />
-            {item.image ? (
-              <Image
-                src={item.image}
-                alt={item.image}
-                width={2000}
-                height={2000}
-                className={styles.campaignImage}
-              />
-            ) : null}
           </div>
         ))}
       </div>
