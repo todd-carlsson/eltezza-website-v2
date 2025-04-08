@@ -74,6 +74,12 @@ export type TestimonialsData = {
   role: string;
 };
 
+export type FunnelHeroContent = {
+  title: string;
+  link: string;
+  thumbnail: string;
+};
+
 export type FunnelTestimonialsData = {
   id: number;
   review: string;
@@ -102,9 +108,7 @@ export interface VideoControlsProps {
   getMap: () => Map<string, HTMLVideoElement>;
 }
 
-export type FunnelWorkData = Omit<CreativeWorkData, "size"> & {
-  image?: string;
-};
+export type FunnelWorkData = Omit<CreativeWorkData, "size">;
 
 export type FunnelWorkVideos = {
   promotional: FunnelWorkData[];

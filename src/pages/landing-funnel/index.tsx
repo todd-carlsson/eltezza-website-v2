@@ -1,11 +1,16 @@
 import {
   FunnelContact,
   FunnelHeader,
-  FunnelHero,
   Portal,
   FunnelVideoGallery,
   Reviews,
+  FunnelTestimonials,
+  FunnelBrands,
+  FunnelServices,
+  FunnelPartnership,
+  HeroParallax,
 } from "@/features/layout";
+import { CalendlyEmbed } from "@/features/ui";
 import styles from "@/styles/Home.module.css";
 import MetaData from "@/metadata";
 import {
@@ -18,18 +23,12 @@ import {
   funnelReviewsData,
   funnelBrandsMobile,
   calendlyLink,
+  funnelHeroImages,
 } from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Scroll } from "@/utils/scroll";
-import {
-  FunnelTestimonials,
-  FunnelBrands,
-  FunnelServices,
-  FunnelPartnership,
-} from "@/features/layout";
-import { CalendlyEmbed } from "@/features/ui";
 
 function LandingFunnel() {
   const router = useRouter();
@@ -71,7 +70,7 @@ function LandingFunnel() {
           />
         </Portal>
         <div className={styles.funnelContentContainer}>
-          <FunnelHero onOpen={onOpen} />
+          <HeroParallax products={funnelHeroImages} onOpen={onOpen} />
           <FunnelTestimonials content={funnelTestimonials} />
           <FunnelBrands
             content={funnelBrands}

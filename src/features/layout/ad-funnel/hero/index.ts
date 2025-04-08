@@ -1,1 +1,1 @@
-export { FunnelHero } from "./funnelHero";
+export { HeroParallax } from "./heroParallax";
