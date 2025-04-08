@@ -97,11 +97,6 @@
   // flex-shrink: 0;
 }
 
-.productLink {
-  display: block;
-  transition: box-shadow 0.3s ease;
-}
-
 .groupProduct:hover .productLink {
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
 }
@@ -115,6 +110,9 @@
   height: 24rem;
   width: auto;
   inset: 0;
+  display: block;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .productOverlay {

@@ -76,7 +76,6 @@ export type TestimonialsData = {
 
 export type FunnelHeroContent = {
   title: string;
-  link: string;
   thumbnail: string;
 };
 
