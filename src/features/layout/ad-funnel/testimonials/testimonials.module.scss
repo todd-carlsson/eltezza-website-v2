@@ -70,7 +70,11 @@
       .testimonialTextContainer {
         height: fit-content;
         padding: 0 2rem;
-        max-width: 50%;
+        max-width: 40%;
+
+        @media (width <=1200px) {
+          max-width: 50%;
+        }
 
         @media (width <=960px) {
           border-left: none;

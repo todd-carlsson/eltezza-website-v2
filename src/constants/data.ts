@@ -1145,7 +1145,7 @@ export const funnelTestimonials = [
   {
     id: 1,
     review: "“The growth has been significant”",
-    author: "Steven & James Deans \nSteve's Tyre Service & Autocare",
+    author: "Steven Deans & James Deans \nSteve's Tyre Service & Autocare",
     srcId: 1073790562,
     thumbnail:
       distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
