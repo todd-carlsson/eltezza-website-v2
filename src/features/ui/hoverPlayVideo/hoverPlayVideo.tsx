@@ -1,18 +1,18 @@
 import { CreativeWorkData, FunnelWorkData, VideoControlsProps } from "@/types";
 import { memo } from "react";
-import { Portal } from "../../portal";
+import { Portal } from "@/features/layout";
 import { AnimatePresence, motion } from "framer-motion";
 import { FullScreen } from "@/features/ui";
 import { VideoDetails } from "./videoDetails";
-import styles from "../work.module.scss";
+import styles from "./video.module.scss";
 
-interface BaseCreativeVideoProps extends VideoControlsProps {
+interface HoverPlayVideoProps extends VideoControlsProps {
   video: CreativeWorkData | FunnelWorkData;
   lineColor?: "--ez-orange" | "--adobe-purple";
   children: React.ReactNode;
 }
 
-export const BaseCreativeVideo = memo(function BaseCreativeVideo({
+export const HoverPlayVideo = memo(function HoverPlayVideo({
   video,
   hoveredVideo,
   pauseVideo,
@@ -23,7 +23,7 @@ export const BaseCreativeVideo = memo(function BaseCreativeVideo({
   getMap,
   lineColor,
   children,
-}: BaseCreativeVideoProps) {
+}: HoverPlayVideoProps) {
   return (
     <>
       {/* FULL SCREEN VIDEO */}
