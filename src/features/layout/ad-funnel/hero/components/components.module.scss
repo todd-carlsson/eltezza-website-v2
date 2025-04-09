@@ -46,7 +46,7 @@
     .headerSubHeading {
       margin-top: 0.75rem;
       font-size: clamp(1.25rem, 1vw, 3.25rem);
-      white-space: wrap;
+      white-space: pre-wrap;
 
       @media (width <=960px) {
         font-size: clamp(1rem, 1vw, 2.25rem);
