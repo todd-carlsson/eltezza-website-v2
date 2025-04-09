@@ -1144,19 +1144,18 @@ export const btsData = {
 export const funnelTestimonials = [
   {
     id: 1,
-    review:
-      "“You guys have completely revamped our marketing & customer awareness.”",
-    author: "Steven & James Deans - Automotive Business",
-    videoLink: distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq.mp4",
+    review: "“The growth has been significant”",
+    author: "Steven & James Deans \nSteve's Tyre Service & Autocare",
+    srcId: 1073790562,
     thumbnail:
       distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
     borderColor: "--adobe-purple",
   },
   {
     id: 2,
-    review:
-      "We get it.... it's hard. **But that's why we're here.**\n\n Hear from more business owners that were once in your position.",
-    videoLink: distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq.mp4",
+    review: "“They've helped us tell our story and freshen up our socials”",
+    author: "Brent Jaslarz & Craig Seton \nYoum - Mortgage Advisers",
+    srcId: 1073790823,
     thumbnail:
       distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
     borderColor: "--ez-orange",
@@ -1444,9 +1443,6 @@ export const funnelWorkVideos = {
   promotional: [
     {
       srcId: 1073449123,
-      srcHighQuality:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj.mp4",
       src:
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj_LOWRES.mp4",
@@ -1457,9 +1453,6 @@ export const funnelWorkVideos = {
     },
     {
       srcId: 1073443268,
-      srcHighQuality:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x.mp4",
       src:
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x_LOWRES.mp4",
@@ -1470,9 +1463,6 @@ export const funnelWorkVideos = {
     },
     {
       srcId: 1073448819,
-      srcHighQuality:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Reel_Bottle_Flip_Final_ukyuvw.mp4",
       src:
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Reel_Bottle_Flip_Final_ukyuvw_LOWRES.mp4",
@@ -1485,9 +1475,6 @@ export const funnelWorkVideos = {
   organic: [
     {
       srcId: 1073451481,
-      srcHighQuality:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Organic/Steves/Steves_New_Jingle_Video_lk6amh.mp4",
       src:
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Steves/Steves_New_Jingle_Video_lk6amh_LOWRES.mp4",
@@ -1498,9 +1485,6 @@ export const funnelWorkVideos = {
     },
     {
       srcId: 1073448323,
-      srcHighQuality:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Organic/Oztent/Malamoo_set_up_vn3trg.mp4",
       src:
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Oztent/Malamoo_set_up_vn3trg_LOWRES.mp4",
@@ -1511,9 +1495,6 @@ export const funnelWorkVideos = {
     },
     {
       srcId: 1073448454,
-      srcHighQuality:
-        distributionName +
-        "/Ad_Funnel/Work_Section/Organic/BlackPearl/Oreo_Reel_super_final_rlocdk.mp4",
       src:
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/BlackPearl/Oreo_Reel_super_final_rlocdk_LOWRES.mp4",
@@ -1526,9 +1507,6 @@ export const funnelWorkVideos = {
   ugc: [
     {
       srcId: 1073443702,
-      srcHighQuality:
-        distributionName +
-        "/Ad_Funnel/Work_Section/UGC/Peaq/Final_ver_UGC_video_v9phqw.mp4",
       src:
         distributionName +
         "/Ad_Funnel/Work_Section/UGC/Peaq/Final_ver_UGC_video_v9phqw_LOWRES.mov",
@@ -1539,9 +1517,6 @@ export const funnelWorkVideos = {
     },
     {
       srcId: 1073447014,
-      srcHighQuality:
-        distributionName +
-        "/Ad_Funnel/Work_Section/UGC/BlackPearl/Jhamei_Reel_FB_f4nfyn.mp4",
       src:
         distributionName +
         "/Ad_Funnel/Work_Section/UGC/BlackPearl/Jhamei_Reel_FB_f4nfyn_LOWRES.mp4",
@@ -1552,9 +1527,6 @@ export const funnelWorkVideos = {
     },
     {
       srcId: 1073447207,
-      srcHighQuality:
-        distributionName +
-        "/Ad_Funnel/Work_Section/UGC/ProperCrisps/Karen_-_Final_UGC_b254gl.mp4",
       src:
         distributionName +
         "/Ad_Funnel/Work_Section/UGC/ProperCrisps/Karen_-_Final_UGC_b254gl_LOWRES.mov",

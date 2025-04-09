@@ -2,6 +2,7 @@ import { FunnelTestimonialsData } from "@/types";
 import styles from "./testimonials.module.scss";
 import { boldText } from "@/utils/boldText";
 import classNames from "classnames";
+import { VimeoPlayer } from "@/features/ui";
 
 interface TestimonialProps {
   item: FunnelTestimonialsData;
@@ -31,7 +32,9 @@ export function Testimonial({ item, index }: TestimonialProps) {
             <p className={styles.testimonialAuthor}>{item.author}</p>
           )}
         </div>
-        <video src={item.videoLink} className={styles.testimonialVideo}></video>
+
+        <VimeoPlayer srcId={item.srcId} className={styles.testimonialVideo} />
+        {/* <video src={item.srcId} className={styles.testimonialVideo}></video> */}
       </div>
     </div>
   );
