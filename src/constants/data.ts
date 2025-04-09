@@ -1146,7 +1146,7 @@ export const funnelTestimonials = [
     id: 1,
     review: "“The growth has been significant”",
     author: "Steven Deans & James Deans \nSteve's Tyre Service & Autocare",
-    srcId: 1073790562,
+    srcId: 1074123022,
     thumbnail:
       distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
     borderColor: "--adobe-purple",
@@ -1155,7 +1155,7 @@ export const funnelTestimonials = [
     id: 2,
     review: "“They've helped us tell our story and freshen up our socials”",
     author: "Brent Jaslarz & Craig Seton \nYoum - Mortgage Advisers",
-    srcId: 1073790823,
+    srcId: 1074123161,
     thumbnail:
       distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
     borderColor: "--ez-orange",
