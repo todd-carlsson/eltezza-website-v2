@@ -60,26 +60,28 @@ export const HoverPlayVideo = memo(function HoverPlayVideo({
       />
 
       {/* VIDEO */}
-      <video
-        className={styles.creativeVideo}
-        poster={video.thumbnail}
-        src={video.src}
-        onMouseEnter={() => playVideo(video.src)}
-        onMouseLeave={() => pauseVideo(video.src)}
-        ref={(node) => {
-          const map = getMap();
-          if (node) {
-            map.set(video.src, node);
-          } else {
-            map.delete(video.src);
-          }
-        }}
-        muted
-        loop
-        preload="metadata"
-      >
-        <source src={video.src} type="video/mp4" />
-      </video>
+      {openedVideo !== video.src && (
+        <video
+          className={styles.creativeVideo}
+          poster={video.thumbnail}
+          src={video.src}
+          onMouseEnter={() => playVideo(video.src)}
+          onMouseLeave={() => pauseVideo(video.src)}
+          ref={(node) => {
+            const map = getMap();
+            if (node) {
+              map.set(video.src, node);
+            } else {
+              map.delete(video.src);
+            }
+          }}
+          muted
+          loop
+          preload="metadata"
+        >
+          <source src={video.src} type="video/mp4" />
+        </video>
+      )}
     </>
   );
 });
