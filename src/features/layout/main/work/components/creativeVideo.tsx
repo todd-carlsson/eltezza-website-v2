@@ -1,9 +1,9 @@
 import styles from "../work.module.scss";
 import { CreativeWorkData, VideoControlsProps } from "@/types";
 import { memo } from "react";
-import { BaseCreativeVideo } from "./baseCreativeVideo";
 import classNames from "classnames";
 import Video from "./video";
+import { HoverPlayVideo } from "@/features/ui";
 
 interface CreativeVideoProps extends VideoControlsProps {
   video: CreativeWorkData;
@@ -27,9 +27,9 @@ export const CreativeVideo = memo(function CreativeVideo(
         getVideoColumnSize(props.video.size),
       )}
     >
-      <BaseCreativeVideo {...props}>
+      <HoverPlayVideo {...props}>
         <Video video={props.video} />
-      </BaseCreativeVideo>
+      </HoverPlayVideo>
     </div>
   );
 });
