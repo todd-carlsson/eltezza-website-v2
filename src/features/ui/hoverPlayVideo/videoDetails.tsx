@@ -1,5 +1,5 @@
 import { CreativeWorkData, FunnelWorkData } from "@/types";
-import styles from "../work.module.scss";
+import styles from "./video.module.scss";
 import { motion } from "framer-motion";
 
 interface VideoDetailsProps {
