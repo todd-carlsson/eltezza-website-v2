@@ -1,6 +1,7 @@
 import { FunnelWorkData, VideoControlsProps } from "@/types";
 import styles from "./work.module.scss";
 import { BaseCreativeVideo } from "../../main";
+import { VimeoPlayer } from "@/features/ui";
 
 interface VideoItemProps extends VideoControlsProps {
   video: FunnelWorkData;
@@ -10,7 +11,9 @@ interface VideoItemProps extends VideoControlsProps {
 export function VideoItem(props: VideoItemProps) {
   return (
     <div className={styles.videoContainer}>
-      <BaseCreativeVideo {...props} />
+      <BaseCreativeVideo {...props}>
+        <VimeoPlayer srcId={props.video.srcId} />
+      </BaseCreativeVideo>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import styles from "./vimeoPlayer.module.scss";
+
 interface VimeoPlayerProps {
   srcId: number;
   title?: string;
@@ -5,7 +7,7 @@ interface VimeoPlayerProps {
 
 export function VimeoPlayer({ srcId, title }: VimeoPlayerProps) {
   return (
-    <div style={{ padding: "177.78% 0 0 0", position: "relative" }}>
+    <div className={styles.container}>
       <iframe
         src={`https://player.vimeo.com/video/${srcId}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
         frameBorder="0"

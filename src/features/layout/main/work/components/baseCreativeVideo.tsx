@@ -5,11 +5,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FullScreen } from "@/features/ui";
 import { VideoDetails } from "./videoDetails";
 import styles from "../work.module.scss";
-import Video from "./video";
 
 interface BaseCreativeVideoProps extends VideoControlsProps {
   video: CreativeWorkData | FunnelWorkData;
   lineColor?: "--ez-orange" | "--adobe-purple";
+  children: React.ReactNode;
 }
 
 export const BaseCreativeVideo = memo(function BaseCreativeVideo({
@@ -22,6 +22,7 @@ export const BaseCreativeVideo = memo(function BaseCreativeVideo({
   openedVideo,
   getMap,
   lineColor,
+  children,
 }: BaseCreativeVideoProps) {
   return (
     <>
@@ -30,7 +31,8 @@ export const BaseCreativeVideo = memo(function BaseCreativeVideo({
         <AnimatePresence>
           {openedVideo === video.src && (
             <FullScreen removeFullVideo={removeFullVideo}>
-              <Video video={video} />
+              {/* Add video component as children to this component */}
+              {children}
             </FullScreen>
           )}
         </AnimatePresence>
