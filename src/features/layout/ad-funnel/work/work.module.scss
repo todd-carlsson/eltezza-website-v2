@@ -26,6 +26,11 @@
 
     .videoContainer {
       width: 100%;
+      height: 100%;
+
+      // Og height is 720px, og width is 404px. Multiply by 1.5 to get max width & max height
+      max-height: 1080px;
+      max-width: 606px;
       position: relative;
       display: flex;
       flex-direction: column;

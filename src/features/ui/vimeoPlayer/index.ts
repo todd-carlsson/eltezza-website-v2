@@ -1,0 +1,1 @@
+export { VimeoPlayer } from "./vimeoPlayer";

@@ -3,6 +3,7 @@ import { CreativeWorkData, VideoControlsProps } from "@/types";
 import { memo } from "react";
 import { BaseCreativeVideo } from "./baseCreativeVideo";
 import classNames from "classnames";
+import Video from "./video";
 
 interface CreativeVideoProps extends VideoControlsProps {
   video: CreativeWorkData;
@@ -26,7 +27,9 @@ export const CreativeVideo = memo(function CreativeVideo(
         getVideoColumnSize(props.video.size),
       )}
     >
-      <BaseCreativeVideo {...props} />
+      <BaseCreativeVideo {...props}>
+        <Video video={props.video} />
+      </BaseCreativeVideo>
     </div>
   );
 });

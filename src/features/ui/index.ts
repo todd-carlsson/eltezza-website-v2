@@ -6,3 +6,5 @@ export * from "./input";
 export * from "./textarea";
 export * from "./video";
 export * from "./calendlyEmbed";
+export * from "./vimeoPlayer";
+export * from "./fullScreen";

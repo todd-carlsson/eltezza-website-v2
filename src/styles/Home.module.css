@@ -83,6 +83,10 @@
   margin-bottom: 0.65rem;
 }
 
+.galleryHeadingBreak {
+  display: block;
+}
+
 .funnelGallerySubHeading {
   font-size: 1.25rem;
 }
@@ -94,5 +98,9 @@
 
   .funnelGallerySubHeading {
     font-size: clamp(0.8rem, 2vw, 1.75rem);
+  }
+
+  .galleryHeadingBreak {
+    display: none;
   }
 }
