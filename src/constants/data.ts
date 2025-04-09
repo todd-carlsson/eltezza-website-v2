@@ -1144,9 +1144,8 @@ export const btsData = {
 export const funnelTestimonials = [
   {
     id: 1,
-    review:
-      "“You guys have completely revamped our marketing & customer awareness.”",
-    author: "Steven & James Deans - Automotive Business",
+    review: "“The growth has been significant”",
+    author: "Steven & James Deans \nSteve's Tyre Service & Autocare",
     srcId: 1073790562,
     thumbnail:
       distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
@@ -1154,8 +1153,8 @@ export const funnelTestimonials = [
   },
   {
     id: 2,
-    review:
-      "We get it.... it's hard. **But that's why we're here.**\n\n Hear from more business owners that were once in your position.",
+    review: "“They've helped us tell our story and freshen up our socials”",
+    author: "Brent Jaslarz & Craig Seton \nYoum - Mortgage Advisers",
     srcId: 1073790823,
     thumbnail:
       distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
