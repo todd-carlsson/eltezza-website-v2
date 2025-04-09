@@ -29,6 +29,7 @@ import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Scroll } from "@/utils/scroll";
+import Script from "next/script";
 
 function LandingFunnel() {
   const router = useRouter();
@@ -126,6 +127,7 @@ function LandingFunnel() {
           className={styles.privacyScreen}
         />
       </motion.div>
+      <Script src="https://player.vimeo.com/api/player.js"></Script>
     </>
   );
 }
