@@ -25,9 +25,9 @@ export function useVideoControls() {
       setHoveredVideo(itemId);
       const map = getMap();
       const node = map.get(itemId);
-      if (node) node.play();
+      if (node && openedVideo !== itemId) node.play();
     },
-    [getMap],
+    [getMap, openedVideo],
   );
 
   const pauseVideo = useCallback(

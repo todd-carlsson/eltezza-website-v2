@@ -34,7 +34,6 @@ export function Testimonial({ item, index }: TestimonialProps) {
         </div>
 
         <VimeoPlayer srcId={item.srcId} className={styles.testimonialVideo} />
-        {/* <video src={item.srcId} className={styles.testimonialVideo}></video> */}
       </div>
     </div>
   );
