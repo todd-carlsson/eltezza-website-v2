@@ -127,7 +127,9 @@
 }
 
 .groupProduct:hover .productOverlay {
-  opacity: 0.8;
+  @media (width >=960px) {
+    opacity: 0.8;
+  }
 }
 
 .productTitle {
@@ -140,5 +142,7 @@
 }
 
 .groupProduct:hover .productTitle {
-  opacity: 1;
+  @media (width >=960px) {
+    opacity: 1;
+  }
 }

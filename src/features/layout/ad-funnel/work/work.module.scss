@@ -38,6 +38,12 @@
       &:last-child:nth-child(3n - 3) {
         grid-column-end: 4;
       }
+
+      .vimeoVideo {
+        padding: 0%, 0, 0;
+        width: 100%;
+        max-height: none;
+      }
     }
   }
 }
