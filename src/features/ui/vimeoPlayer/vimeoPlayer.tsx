@@ -1,13 +1,14 @@
 import styles from "./vimeoPlayer.module.scss";
+import classNames from "classnames";
 
-interface VimeoPlayerProps {
+interface VimeoPlayerProps extends React.HTMLAttributes<HTMLDivElement> {
   srcId: number;
   title?: string;
 }
 
-export function VimeoPlayer({ srcId, title }: VimeoPlayerProps) {
+export function VimeoPlayer({ srcId, title, className }: VimeoPlayerProps) {
   return (
-    <div className={styles.container}>
+    <div className={classNames(styles.container, className)}>
       <iframe
         src={`https://player.vimeo.com/video/${srcId}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
         frameBorder="0"

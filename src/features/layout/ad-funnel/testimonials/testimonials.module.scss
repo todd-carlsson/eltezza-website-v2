@@ -37,7 +37,7 @@
     margin-top: 85px;
     padding: 0 70px;
 
-    @media (width <=960px) {
+    @media (width <=1400px) {
       padding: 0;
     }
 
@@ -53,6 +53,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 2.25rem;
 
       @media (width <=960px) {
         flex-direction: column-reverse;
@@ -94,16 +95,25 @@
           font-weight: 200;
           font-style: italic;
           margin-top: 1rem;
-          display: none;
+          white-space: pre-line;
 
           @media (width <=960px) {
-            display: block;
+            text-align: center;
           }
         }
       }
 
       .testimonialVideo {
         width: auto;
+        width: 35lvw;
+        height: 25lvh;
+        padding: 45% 0 0;
+
+        @media (width <=960px) {
+          width: 90lvw;
+          height: 80lvh;
+          padding: 2% 0 0;
+        }
       }
     }
   }

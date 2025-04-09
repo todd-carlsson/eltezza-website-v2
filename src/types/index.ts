@@ -83,7 +83,7 @@ export type FunnelTestimonialsData = {
   id: number;
   review: string;
   author?: string;
-  videoLink: string;
+  srcId: number;
   thumbnail: string;
   borderColor: "--ez-orange" | "--adobe-purple";
 };
@@ -107,7 +107,10 @@ export interface VideoControlsProps {
   getMap: () => Map<string, HTMLVideoElement>;
 }
 
-export type FunnelWorkData = Omit<CreativeWorkData, "size"> & {
+export type FunnelWorkData = Omit<
+  CreativeWorkData,
+  "size" | "srcHighQuality"
+> & {
   // From the Vimeo url. Example: https://vimeo.com/1073451481 - srcId is 1073451481
   srcId: number;
 };

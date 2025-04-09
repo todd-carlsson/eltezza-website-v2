@@ -1,11 +1,12 @@
-import { CreativeWorkData } from "@/types";
+import { CreativeWorkData, FunnelWorkData } from "@/types";
 import styles from "../work.module.scss";
 import { motion } from "framer-motion";
 
 interface VideoDetailsProps {
   hoveredVideo: string | null;
-  video: Omit<CreativeWorkData, "size"> &
-    Partial<Pick<CreativeWorkData, "size">>;
+  video:
+    | (Omit<CreativeWorkData, "size"> & Partial<Pick<CreativeWorkData, "size">>)
+    | FunnelWorkData;
   lineColor?: "--ez-orange" | "--adobe-purple";
 }
 
