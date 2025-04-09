@@ -2,9 +2,10 @@ import { CreativeWorkData, FunnelWorkData, VideoControlsProps } from "@/types";
 import { memo } from "react";
 import { Portal } from "../../portal";
 import { AnimatePresence, motion } from "framer-motion";
-import FullScreenVideo from "./fullScreenVideo";
+import { FullScreen } from "@/features/ui";
 import { VideoDetails } from "./videoDetails";
 import styles from "../work.module.scss";
+import Video from "./video";
 
 interface BaseCreativeVideoProps extends VideoControlsProps {
   video: CreativeWorkData | FunnelWorkData;
@@ -28,7 +29,9 @@ export const BaseCreativeVideo = memo(function BaseCreativeVideo({
       <Portal root="video-root">
         <AnimatePresence>
           {openedVideo === video.src && (
-            <FullScreenVideo video={video} removeFullVideo={removeFullVideo} />
+            <FullScreen removeFullVideo={removeFullVideo}>
+              <Video video={video} />
+            </FullScreen>
           )}
         </AnimatePresence>
       </Portal>
