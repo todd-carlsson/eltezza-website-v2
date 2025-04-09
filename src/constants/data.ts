@@ -1443,6 +1443,7 @@ export const funnelPartnership = {
 export const funnelWorkVideos = {
   promotional: [
     {
+      srcId: 1073449123,
       srcHighQuality:
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj.mp4",
@@ -1455,6 +1456,7 @@ export const funnelWorkVideos = {
       client: "Remarkable Cream",
     },
     {
+      srcId: 1073443268,
       srcHighQuality:
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x.mp4",
@@ -1467,6 +1469,7 @@ export const funnelWorkVideos = {
       client: "Fernglen Farm",
     },
     {
+      srcId: 1073448819,
       srcHighQuality:
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/Reel_Bottle_Flip_Final_ukyuvw.mp4",
@@ -1481,6 +1484,7 @@ export const funnelWorkVideos = {
   ] satisfies Array<FunnelWorkData>,
   organic: [
     {
+      srcId: 1073451481,
       srcHighQuality:
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Steves/Steves_New_Jingle_Video_lk6amh.mp4",
@@ -1493,6 +1497,7 @@ export const funnelWorkVideos = {
       client: "Steve's Tyre Service",
     },
     {
+      srcId: 1073448323,
       srcHighQuality:
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Oztent/Malamoo_set_up_vn3trg.mp4",
@@ -1505,6 +1510,7 @@ export const funnelWorkVideos = {
       client: "Oztent",
     },
     {
+      srcId: 1073448454,
       srcHighQuality:
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/BlackPearl/Oreo_Reel_super_final_rlocdk.mp4",
@@ -1519,6 +1525,7 @@ export const funnelWorkVideos = {
   ] satisfies Array<FunnelWorkData>,
   ugc: [
     {
+      srcId: 1073443702,
       srcHighQuality:
         distributionName +
         "/Ad_Funnel/Work_Section/UGC/Peaq/Final_ver_UGC_video_v9phqw.mp4",
@@ -1531,6 +1538,7 @@ export const funnelWorkVideos = {
       client: "PEAQ",
     },
     {
+      srcId: 1073447014,
       srcHighQuality:
         distributionName +
         "/Ad_Funnel/Work_Section/UGC/BlackPearl/Jhamei_Reel_FB_f4nfyn.mp4",
@@ -1543,6 +1551,7 @@ export const funnelWorkVideos = {
       client: "Black Pearl Cafe",
     },
     {
+      srcId: 1073447207,
       srcHighQuality:
         distributionName +
         "/Ad_Funnel/Work_Section/UGC/ProperCrisps/Karen_-_Final_UGC_b254gl.mp4",
@@ -1610,36 +1619,30 @@ export const funnelReviewsData = [
 export const funnelHeroImages = [
   {
     title: "Kochi",
-    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/kochi_Top-down.jpg",
   },
   {
     title: "Youm",
-    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/Team+Intro+-+Megan.jpg",
   },
   {
     title: "Proper Crisps",
-    link: "https://www.eltezza.com",
     thumbnail:
       distributionName + "/Ad_Funnel/images/proper-crisps-tennisball.jpg",
   },
 
   {
     title: "Proper Crisps",
-    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/propercrisps-tennis1.jpg",
   },
   {
     title: "Oztent",
-    link: "https://www.eltezza.com",
     thumbnail:
       distributionName +
       "/Ad_Funnel/images/NEW+_+Oztent+-+March+Sale+-+Bunker+Pro.jpg",
   },
   {
     title: "Remarkable Cream",
-    link: "https://www.eltezza.com",
     thumbnail:
       distributionName +
       "/Ad_Funnel/images/Lifestyle+Image+2+-+Bottle+Grab.jpg",
@@ -1647,53 +1650,44 @@ export const funnelHeroImages = [
 
   {
     title: "Youm",
-    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/Google+Review.jpg",
   },
   {
     title: "Fernglen Farm",
-    link: "https://www.eltezza.com",
     thumbnail:
       distributionName +
       "/Ad_Funnel/images/Fernglen+Farm+-+Advertising+Image.jpg",
   },
   {
     title: "Eatkinda",
-    link: "https://www.eltezza.com",
     thumbnail:
       distributionName + "/Ad_Funnel/images/EatKinda+-+Freezer+(1.5x).jpg",
   },
   {
     title: "Kochi",
-    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/Close-up+Burger.jpg",
   },
   {
     title: "Oztent",
-    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/Chilling+by+tent.jpg",
   },
 
   {
     title: "Proper Crisps",
-    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/propercrips-kombat.jpg",
   },
   {
     title: "Black Pearl",
-    link: "https://www.eltezza.com",
     thumbnail: distributionName + "/Ad_Funnel/images/blackpearl.jpg",
   },
   {
     title: "Al Brown",
-    link: "https://www.eltezza.com",
     thumbnail:
       distributionName +
       "/Ad_Funnel/images/Habanero+Mustard+(ketchup+in+bg).jpg",
   },
   {
     title: "Maunder Roofing",
-    link: "https://www.eltezza.com",
     thumbnail:
       distributionName + "/Ad_Funnel/images/If+you+see+us%2C+say+hi.jpg",
   },

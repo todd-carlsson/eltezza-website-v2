@@ -23,11 +23,6 @@ const nextConfig = {
         hostname: "d5st4psppqx3d.cloudfront.net",
         port: '',
       },
-      {
-        protocol: "https",
-        hostname: "aceternity.com",
-        port: '',
-      },
     ],
   },
 };

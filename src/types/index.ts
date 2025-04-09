@@ -76,7 +76,6 @@ export type TestimonialsData = {
 
 export type FunnelHeroContent = {
   title: string;
-  link: string;
   thumbnail: string;
 };
 
@@ -108,7 +107,10 @@ export interface VideoControlsProps {
   getMap: () => Map<string, HTMLVideoElement>;
 }
 
-export type FunnelWorkData = Omit<CreativeWorkData, "size">;
+export type FunnelWorkData = Omit<CreativeWorkData, "size"> & {
+  // From the Vimeo url. Example: https://vimeo.com/1073451481 - srcId is 1073451481
+  srcId: number;
+};
 
 export type FunnelWorkVideos = {
   promotional: FunnelWorkData[];

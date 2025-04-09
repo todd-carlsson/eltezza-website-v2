@@ -1,18 +1,13 @@
 import { IoMdExit } from "react-icons/io";
-import styles from "../work.module.scss";
+import styles from "./fullScreen.module.scss";
 import { motion } from "framer-motion";
-import { CreativeWorkData } from "@/types";
 
-interface FullScreenVideoProps {
-  video: Omit<CreativeWorkData, "size"> &
-    Partial<Pick<CreativeWorkData, "size">>;
+interface FullScreenProps {
   removeFullVideo: () => void;
+  children: React.ReactNode;
 }
 
-export default function FullScreenVideo({
-  video,
-  removeFullVideo,
-}: FullScreenVideoProps) {
+export function FullScreen({ children, removeFullVideo }: FullScreenProps) {
   const animateUp = {
     hidden: {
       y: "100%",
@@ -59,18 +54,7 @@ export default function FullScreenVideo({
         <div className={styles.exit} onClick={removeFullVideo}>
           <IoMdExit size={50} style={{ cursor: "pointer" }} />
         </div>
-        <motion.video
-          variants={animateUp}
-          initial="hidden"
-          animate="visible"
-          exit="exit"
-          className={styles.creativeVideoFull}
-          poster={video.thumbnail}
-          src={video.srcHighQuality}
-          controls
-          preload="metadata"
-          playsInline
-        ></motion.video>
+        {children}
       </motion.div>
     </motion.div>
   );
