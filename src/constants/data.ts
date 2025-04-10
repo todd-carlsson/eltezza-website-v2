@@ -1590,22 +1590,17 @@ export const funnelReviewsData = [
 
 export const funnelHeroImages = [
   {
-    title: "Kochi",
-    thumbnail: distributionName + "/Ad_Funnel/images/kochi_Top-down.jpg",
-  },
-  {
     title: "Youm",
     thumbnail: distributionName + "/Ad_Funnel/images/Team+Intro+-+Megan.jpg",
+  },
+  {
+    title: "Kochi",
+    thumbnail: distributionName + "/Ad_Funnel/images/kochi_Top-down.jpg",
   },
   {
     title: "Proper Crisps",
     thumbnail:
       distributionName + "/Ad_Funnel/images/proper-crisps-tennisball.jpg",
-  },
-
-  {
-    title: "Proper Crisps",
-    thumbnail: distributionName + "/Ad_Funnel/images/propercrisps-tennis1.jpg",
   },
   {
     title: "Oztent",
@@ -1614,12 +1609,15 @@ export const funnelHeroImages = [
       "/Ad_Funnel/images/NEW+_+Oztent+-+March+Sale+-+Bunker+Pro.jpg",
   },
   {
+    title: "Proper Crisps",
+    thumbnail: distributionName + "/Ad_Funnel/images/propercrisps-tennis1.jpg",
+  },
+  {
     title: "Remarkable Cream",
     thumbnail:
       distributionName +
       "/Ad_Funnel/images/Lifestyle+Image+2+-+Bottle+Grab.jpg",
   },
-
   {
     title: "Youm",
     thumbnail: distributionName + "/Ad_Funnel/images/Google+Review.jpg",
