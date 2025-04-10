@@ -14,7 +14,8 @@ export function FunnelBrands({ content, mobileContent }: FunnelBrandsProps) {
       <div className={styles.brandsBanner}>
         <div className={styles.brandsBannerContainer}>
           <h4 className={styles.brandsBannerText}>
-            We help brands scale, increasing <br /> revenue by as much as 5x
+            We work with businesses of all sizes <br />
+            to increase revenue by as much as 5x
           </h4>
           <Image
             src="/images/eltezza-logo.svg"

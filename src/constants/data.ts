@@ -1146,7 +1146,7 @@ export const funnelTestimonials = [
     id: 1,
     review: "“The growth has been significant”",
     author: "Steven Deans & James Deans \nSteve's Tyre Service & Autocare",
-    srcId: 1073790562,
+    srcId: 1074123022,
     thumbnail:
       distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
     borderColor: "--adobe-purple",
@@ -1155,7 +1155,7 @@ export const funnelTestimonials = [
     id: 2,
     review: "“They've helped us tell our story and freshen up our socials”",
     author: "Brent Jaslarz & Craig Seton \nYoum - Mortgage Advisers",
-    srcId: 1073790823,
+    srcId: 1074123161,
     thumbnail:
       distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
     borderColor: "--ez-orange",
@@ -1590,22 +1590,17 @@ export const funnelReviewsData = [
 
 export const funnelHeroImages = [
   {
-    title: "Kochi",
-    thumbnail: distributionName + "/Ad_Funnel/images/kochi_Top-down.jpg",
-  },
-  {
     title: "Youm",
     thumbnail: distributionName + "/Ad_Funnel/images/Team+Intro+-+Megan.jpg",
+  },
+  {
+    title: "Kochi",
+    thumbnail: distributionName + "/Ad_Funnel/images/kochi_Top-down.jpg",
   },
   {
     title: "Proper Crisps",
     thumbnail:
       distributionName + "/Ad_Funnel/images/proper-crisps-tennisball.jpg",
-  },
-
-  {
-    title: "Proper Crisps",
-    thumbnail: distributionName + "/Ad_Funnel/images/propercrisps-tennis1.jpg",
   },
   {
     title: "Oztent",
@@ -1614,12 +1609,15 @@ export const funnelHeroImages = [
       "/Ad_Funnel/images/NEW+_+Oztent+-+March+Sale+-+Bunker+Pro.jpg",
   },
   {
+    title: "Proper Crisps",
+    thumbnail: distributionName + "/Ad_Funnel/images/propercrisps-tennis1.jpg",
+  },
+  {
     title: "Remarkable Cream",
     thumbnail:
       distributionName +
       "/Ad_Funnel/images/Lifestyle+Image+2+-+Bottle+Grab.jpg",
   },
-
   {
     title: "Youm",
     thumbnail: distributionName + "/Ad_Funnel/images/Google+Review.jpg",
