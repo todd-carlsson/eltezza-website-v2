@@ -19,7 +19,12 @@
       max-width: calc(var(--max-width) * 1.25);
       min-height: 250px;
 
-      @media (width <=768px) {
+      @media (width <=1400px) {
+        padding: 0 calc(var(--content-padding-sm) + 70px);
+        padding-right: calc(var(--content-padding-sm));
+      }
+
+      @media (width <=968px) {
         flex-direction: column;
         padding: var(--content-padding-sm) 0;
         text-align: center;
@@ -30,7 +35,7 @@
         position: relative;
         transform: rotate(270deg);
 
-        @media (width <=768px) {
+        @media (width <=968px) {
           transform: rotate(0deg);
         }
       }
@@ -39,7 +44,7 @@
         font-size: 1.5rem;
 
         @media (width <=768px) {
-          font-size: 1.25rem;
+          font-size: 1rem;
         }
       }
     }
