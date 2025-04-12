@@ -43,6 +43,7 @@ export function FullScreen({ children, removeFullVideo }: FullScreenProps) {
         }}
         onClick={removeFullVideo}
         className={styles.opacLayer}
+        aria-label="Close Full Screen"
       />
       <motion.div
         variants={animateUp}
