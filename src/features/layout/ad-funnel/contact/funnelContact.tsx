@@ -5,6 +5,7 @@ import Image from "next/image";
 import { LiaFacebookSquare, LiaLinkedin, LiaInstagram } from "react-icons/lia";
 import { FaXTwitter } from "react-icons/fa6";
 import { socialLinks } from "@/constants";
+import { Scroll } from "@/utils/scroll";
 
 interface FunnelContactProps {
   onOpen: () => void;
@@ -33,15 +34,15 @@ export function FunnelContact({ onOpen }: FunnelContactProps) {
       </div>
       <div className={styles.bottomSection}>
         <div className={styles.bottomSectionLinks}>
-          <Link href="/">
-            <Image
-              src="/images/eltezza_gradientLogo.svg"
-              alt="Eltezza"
-              width={164}
-              height={56}
-              className={styles.logo}
-            />
-          </Link>
+          <Image
+            src="/images/eltezza_gradientLogo.svg"
+            alt="Eltezza"
+            width={164}
+            height={56}
+            className={styles.logo}
+            onClick={() => Scroll(0, "smooth")}
+            aria-label="Scroll to top"
+          />
           <div className={styles.socialLinks}>
             <a href={socialLinks.twitter} target="_blank" aria-label="Twitter">
               <FaXTwitter size={30} />

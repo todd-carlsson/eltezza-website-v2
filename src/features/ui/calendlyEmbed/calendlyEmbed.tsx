@@ -52,6 +52,7 @@ export const CalendlyEmbed = ({
                 color="#fff"
                 className={styles.exitIcon}
                 onClick={onClose}
+                aria-label="Close Calendly Form"
               />
             </div>
           </div>
