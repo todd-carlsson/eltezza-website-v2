@@ -43,6 +43,9 @@ export const HoverPlayVideo = memo(function HoverPlayVideo({
         initial={{ opacity: 0 }}
         animate={{ opacity: hoveredVideo !== video.src ? 1 : 0 }}
         className={styles.videoThumbail}
+        style={{
+          position: openedVideo === video.src ? "relative" : "absolute",
+        }}
         src={video.thumbnail}
         alt={video.src}
         loading="lazy"
