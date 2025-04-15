@@ -25,7 +25,7 @@ export function Header({ onOpen }: HeaderProps) {
           variant={ButtonVariant.applyOrange}
           className={styles.applyButton}
         >
-          Apply now
+          Book a Call
         </Button>
       </div>
     </div>
