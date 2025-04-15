@@ -67,7 +67,7 @@ export function FunnelPartnership({
           ))}
           <div className={styles.buttonContainer}>
             <Button onClick={onOpen} variant={ButtonVariant.applyPurple}>
-              Apply Now
+              Book a Call
             </Button>
           </div>
         </motion.div>
@@ -101,7 +101,7 @@ export function FunnelPartnership({
           className={styles.buttonMobile}
           variant={ButtonVariant.applyWhite}
         >
-          Apply Now
+          Book a Call
         </Button>
       </div>
     </section>
