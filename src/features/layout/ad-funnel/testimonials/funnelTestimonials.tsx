@@ -11,8 +11,8 @@ export function FunnelTestimonials({ content }: FunnelTestimonialsProps) {
     <section className={styles.testimonialsSection}>
       <div className={styles.testimonialsIntroContainer}>
         <h2 className={styles.testimonialsIntroText}>
-          Hear it from our
-          <span className={styles.purpleUnderline}> clients</span>
+          Hear it from our{" "}
+          <span className={styles.purpleUnderline}>clients</span>
         </h2>
       </div>
       {content.map((item, i) => (
