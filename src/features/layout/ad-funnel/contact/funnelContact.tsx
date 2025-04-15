@@ -29,7 +29,7 @@ export function FunnelContact({ onOpen }: FunnelContactProps) {
           </p>
         </div>
         <Button onClick={onOpen} variant={ButtonVariant.applyOrange}>
-          APPLY NOW
+          Book a Call
         </Button>
       </div>
       <div className={styles.bottomSection}>

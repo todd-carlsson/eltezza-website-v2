@@ -17,7 +17,7 @@ export function FunnelServices({ content, onOpen }: FunnelServicesProps) {
           variant={ButtonVariant.applyPurple}
           className={styles.servicesButton}
         >
-          Apply Now
+          Book a Call
         </Button>
       </div>
       <div className={styles.services}>
@@ -35,7 +35,7 @@ export function FunnelServices({ content, onOpen }: FunnelServicesProps) {
           variant={ButtonVariant.applyPurple}
           className={styles.servicesButtonMobile}
         >
-          Apply Now
+          Book a Call
         </Button>
       </div>
     </section>
