@@ -1339,6 +1339,7 @@ export const funnelBrandsMobile = [
     src: "/images/brandImages/Cutly_logo.svg",
     maxWidth: 110,
     width: "85%",
+    needsColorInvert: false,
   },
   {
     brand: "Al Brown",
