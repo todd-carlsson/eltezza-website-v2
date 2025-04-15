@@ -41,6 +41,7 @@ export function Brands({ content, columns }: BrandsProps) {
             style={{
               maxWidth: getMaxWidth(brand.maxWidth),
               width: brand.width,
+              filter: brand.needsColorInvert === true ? "invert(1)" : "",
             }}
           />
         ))}

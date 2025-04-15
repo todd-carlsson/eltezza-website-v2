@@ -11,9 +11,8 @@ export function FunnelTestimonials({ content }: FunnelTestimonialsProps) {
     <section className={styles.testimonialsSection}>
       <div className={styles.testimonialsIntroContainer}>
         <h2 className={styles.testimonialsIntroText}>
-          We partner with
-          <span className={styles.purpleUnderline}> incredible</span>
-          <br /> businesses doing big things.
+          Hear it from our
+          <span className={styles.purpleUnderline}> clients</span>
         </h2>
       </div>
       {content.map((item, i) => (
