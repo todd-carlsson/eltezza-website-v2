@@ -642,6 +642,7 @@ export const brandsData = {
       src: "/images/brandImages/Cutly_logo.svg",
       maxWidth: 110,
       width: "85%",
+      needsColorInvert: true,
     },
     {
       brand: "Juluwarlu",
@@ -1172,6 +1173,7 @@ export const funnelBrands = [
     src: "/images/brandImages/Cutly_logo.svg",
     maxWidth: 110,
     width: "85%",
+    needsColorInvert: false,
   },
   {
     brand: "Juluwarlu",
