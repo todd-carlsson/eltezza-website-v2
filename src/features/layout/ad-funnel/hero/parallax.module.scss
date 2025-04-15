@@ -1,5 +1,5 @@
 .container {
-  height: 275vh;
+  height: calc(100vh + 112rem);
   padding-bottom: 10rem;
   margin-bottom: 8rem;
   overflow: hidden;
@@ -13,12 +13,8 @@
   perspective: 1250px;
   transform-style: preserve-3d;
 
-  @media (width<=1700px) {
-    height: 350vh;
-  }
-
   @media (width <=768px) {
-    height: 295vh;
+    height: calc(100vh + 97rem);
   }
 
   .containerGap {
