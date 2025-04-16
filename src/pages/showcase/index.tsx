@@ -30,6 +30,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Scroll } from "@/utils/scroll";
 import Script from "next/script";
+import { hotjar } from "react-hotjar";
 
 function LandingFunnel() {
   const router = useRouter();
@@ -38,10 +39,15 @@ function LandingFunnel() {
 
   useEffect(() => {
     Scroll(0, "auto");
+    hotjar.initialize({
+      id: process.env.HOTJAR_ID ? parseInt(process.env.HOTJAR_ID) : 0,
+      sv: 6,
+    });
   }, []);
 
   function onOpen() {
     setShowModal(true);
+    hotjar.event("button-click");
   }
   function onClose() {
     setShowModal(false);
