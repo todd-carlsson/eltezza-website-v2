@@ -1,6 +1,7 @@
 import { Button, ButtonVariant } from "@/features/ui";
 import styles from "./services.module.scss";
 import { FunnelServicesData } from "@/types";
+import { calendlyButtonText } from "@/constants";
 
 interface FunnelServicesProps {
   content: Array<FunnelServicesData>;
@@ -17,7 +18,7 @@ export function FunnelServices({ content, onOpen }: FunnelServicesProps) {
           variant={ButtonVariant.applyPurple}
           className={styles.servicesButton}
         >
-          Book a Call
+          {calendlyButtonText}
         </Button>
       </div>
       <div className={styles.services}>
@@ -35,7 +36,7 @@ export function FunnelServices({ content, onOpen }: FunnelServicesProps) {
           variant={ButtonVariant.applyPurple}
           className={styles.servicesButtonMobile}
         >
-          Book a Call
+          {calendlyButtonText}
         </Button>
       </div>
     </section>
