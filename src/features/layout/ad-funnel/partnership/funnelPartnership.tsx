@@ -6,6 +6,7 @@ import { Button, ButtonVariant } from "@/features/ui";
 import { motion, useInView } from "framer-motion";
 import useMeasure from "react-use-measure";
 import { useRef } from "react";
+import { calendlyButtonText } from "@/constants";
 
 interface FunnelPartnershipProps {
   firstBox: Array<FunnelPartnershipData>;
@@ -67,7 +68,7 @@ export function FunnelPartnership({
           ))}
           <div className={styles.buttonContainer}>
             <Button onClick={onOpen} variant={ButtonVariant.applyPurple}>
-              Book a Call
+              {calendlyButtonText}
             </Button>
           </div>
         </motion.div>
@@ -101,7 +102,7 @@ export function FunnelPartnership({
           className={styles.buttonMobile}
           variant={ButtonVariant.applyWhite}
         >
-          Book a Call
+          {calendlyButtonText}
         </Button>
       </div>
     </section>

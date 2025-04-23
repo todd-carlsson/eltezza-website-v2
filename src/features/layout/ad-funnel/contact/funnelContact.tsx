@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { LiaFacebookSquare, LiaLinkedin, LiaInstagram } from "react-icons/lia";
 import { FaXTwitter } from "react-icons/fa6";
-import { socialLinks } from "@/constants";
+import { calendlyButtonText, socialLinks } from "@/constants";
 import { Scroll } from "@/utils/scroll";
 
 interface FunnelContactProps {
@@ -29,7 +29,7 @@ export function FunnelContact({ onOpen }: FunnelContactProps) {
           </p>
         </div>
         <Button onClick={onOpen} variant={ButtonVariant.applyOrange}>
-          Book a Call
+          {calendlyButtonText}
         </Button>
       </div>
       <div className={styles.bottomSection}>
