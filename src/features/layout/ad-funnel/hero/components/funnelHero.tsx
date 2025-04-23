@@ -1,5 +1,6 @@
 import { Button, ButtonVariant } from "@/features/ui";
 import styles from "./components.module.scss";
+import { calendlyButtonText } from "@/constants";
 
 interface HeaderProps {
   onOpen: () => void;
@@ -25,7 +26,7 @@ export function Header({ onOpen }: HeaderProps) {
           variant={ButtonVariant.applyOrange}
           className={styles.applyButton}
         >
-          Book a Call
+          {calendlyButtonText}
         </Button>
       </div>
     </div>
