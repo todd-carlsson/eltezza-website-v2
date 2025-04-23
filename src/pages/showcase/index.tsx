@@ -72,12 +72,12 @@ function LandingFunnel() {
         </Portal>
         <div className={styles.funnelContentContainer}>
           <HeroParallax products={funnelHeroImages} onOpen={onOpen} />
+          <FunnelServices content={funnelServices} onOpen={onOpen} />
           <FunnelTestimonials content={funnelTestimonials} />
           <FunnelBrands
             content={funnelBrands}
             mobileContent={funnelBrandsMobile}
           />
-          <FunnelServices content={funnelServices} onOpen={onOpen} />
           <FunnelPartnership
             onOpen={onOpen}
             firstBox={funnelPartnership.firstBox}
