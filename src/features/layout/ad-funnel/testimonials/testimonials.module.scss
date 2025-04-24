@@ -41,6 +41,10 @@
       padding: 0;
     }
 
+    @media (width <=960px) {
+      margin-top: 0;
+    }
+
     .rowReverse {
       flex-direction: row-reverse;
     }
