@@ -434,4 +434,4 @@ export const termsAndConditions = {
 
 export const calendlyLink = "https://calendly.com/moeltayeb/30min";
 
-export const calendlyButtonText = "Let's Chat";
+export const calendlyButtonText = "Book a free call";
