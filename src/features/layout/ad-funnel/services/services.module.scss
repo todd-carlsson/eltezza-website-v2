@@ -1,114 +1,120 @@
 .servicesContainer {
-  width: 100%;
-  padding: 0 0 300px;
+  width: 100vw;
+  background-color: var(--adobe-purple);
+  margin-bottom: 200px;
 
-  @media (width <=960px) {
-    padding: 0 0 135px;
-  }
-
-  .servicesIntro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #fff;
-    padding-bottom: 2rem;
+  .servicesWrap {
+    width: 100%;
+    padding: 115px var(--content-padding) 115px;
 
     @media (width <=960px) {
-      justify-content: center;
+      padding: 115px var(--content-padding-sm) 115px;
     }
 
-    .servicesIntroHeading {
-      font-size: 2.25rem;
-
-      @media (width <=960px) {
-        font-size: 1.25rem;
-      }
-    }
-
-    .servicesButton {
-      @media (width <=960px) {
-        display: none;
-      }
-    }
-  }
-
-  .services {
-    display: grid;
-    grid-auto-flow: column;
-    margin-top: 2rem;
-    grid-gap: 2rem;
-
-    @media (width <=960px) {
+    .servicesIntro {
       display: flex;
-      flex-direction: column;
-    }
-
-    .servicesButtonMobile {
-      width: fit-content;
-      align-self: center;
-      margin-top: 3rem;
-      font-size: 1rem;
-      display: none;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 2rem;
 
       @media (width <=960px) {
-        display: block;
-      }
-    }
-
-    .servicesText {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      position: relative;
-      white-space: pre-line;
-
-      @media (width <=1300px) {
-        white-space: wrap;
+        justify-content: center;
       }
 
-      @media (width <=960px) {
-        font-size: 0.85rem;
-      }
-
-      &:nth-child(2) {
-        justify-self: center;
-      }
-
-      &:nth-child(3) {
-        justify-self: end;
-      }
-
-      .servicesHeadingContainer {
-        display: flex;
-        font-size: 1.6rem;
+      .servicesIntroHeading {
+        font-size: 2.25rem;
 
         @media (width <=960px) {
-          align-items: center;
+          font-size: 1.25rem;
+        }
+      }
+
+      .servicesButton {
+        @media (width <=960px) {
+          display: none;
+        }
+      }
+    }
+
+    .services {
+      display: grid;
+      grid-auto-flow: column;
+      margin-top: 2rem;
+      grid-gap: 2rem;
+
+      @media (width <=960px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .servicesButtonMobile {
+        width: fit-content;
+        align-self: center;
+        margin-top: 3rem;
+        font-size: 1rem;
+        display: none;
+
+        @media (width <=960px) {
+          display: block;
+        }
+      }
+
+      .servicesText {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: relative;
+        white-space: pre-line;
+
+        @media (width <=1300px) {
+          white-space: wrap;
         }
 
-        .servicesNumber {
-          color: var(--adobe-purple);
-          padding: 0 1rem;
-          padding-left: 0;
-          display: inline-block;
-          font-weight: 600;
-          position: relative;
-          top: 3px;
+        @media (width <=960px) {
+          font-size: 0.85rem;
+        }
+
+        &:nth-child(2) {
+          justify-self: center;
+        }
+
+        &:nth-child(3) {
+          justify-self: end;
+        }
+
+        .servicesHeadingContainer {
+          display: flex;
+          font-size: 1.6rem;
 
           @media (width <=960px) {
-            top: 0;
+            align-items: center;
           }
-        }
 
-        .servicesHeading {
-          white-space: pre-line;
-          position: relative;
-          height: 100%;
-          font-weight: 600;
+          .servicesNumber {
+            color: #fff;
+            padding: 0 1rem;
+            padding-left: 0;
+            display: inline-block;
+            font-weight: 600;
+            position: relative;
+            top: 3px;
 
-          @media (width <=960px) {
-            white-space: nowrap;
-            font-size: clamp(1.15rem, 1.5vw, 1.5rem);
+            @media (width <=960px) {
+              top: 0;
+            }
+          }
+
+          .servicesHeading {
+            white-space: pre-line;
+            position: relative;
+            height: 100%;
+            font-weight: 600;
+
+            @media (width <=960px) {
+              white-space: nowrap;
+              font-size: clamp(1.15rem, 1.5vw, 1.5rem);
+            }
           }
         }
       }
