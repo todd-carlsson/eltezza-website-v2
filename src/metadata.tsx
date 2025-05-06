@@ -1,7 +1,8 @@
 import React from "react";
-import { BtsData, CarouselData, MetaDataType } from "./types";
+import { BtsData, CarouselData, MetaDataType } from "@/types";
 import Head from "next/head";
-import useWindowSize from "./hooks/useWindowSize";
+import useWindowSize from "@/hooks/useWindowSize";
+import { FB_PIXEL_ID } from "@/lib/fpixel";
 
 interface MetaDataProps {
   data: MetaDataType;
@@ -69,6 +70,15 @@ export default function MetaData({
       <meta property="twitter:image" content={data.image} />
 
       {/* Meta Tags Generated with https://metatags.io */}
+      <noscript>
+        <img
+          alt=""
+          height="1"
+          width="1"
+          style={{ display: "none" }}
+          src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+        />
+      </noscript>
     </Head>
   );
 }

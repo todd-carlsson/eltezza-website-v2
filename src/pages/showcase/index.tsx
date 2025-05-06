@@ -30,6 +30,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Scroll } from "@/utils/scroll";
 import Script from "next/script";
+import * as fbq from "@/lib/fpixel";
 
 function LandingFunnel() {
   const router = useRouter();
@@ -42,6 +43,7 @@ function LandingFunnel() {
 
   function onOpen() {
     setShowModal(true);
+    fbq.event("Schedule");
   }
   function onClose() {
     setShowModal(false);
