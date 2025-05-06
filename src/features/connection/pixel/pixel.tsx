@@ -14,11 +14,11 @@ export const Pixel = () => {
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           '');
-          fbq('init', '379942584174026');
+          fbq('init', '529877731908882');
           fbq('track', 'PageView');
           </script>
           <noscript><img height="1" width="1" style="display:none"
-          src="https://www.facebook.com/tr?id=379942584174026&ev=PageView&noscript=1"
+          src="https://www.facebook.com/tr?id=529877731908882&ev=PageView&noscript=1"
           /></noscript>
         `;
     document.head.appendChild(script);
