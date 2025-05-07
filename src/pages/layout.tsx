@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { ReactNode } from "react";
 import styles from "@/styles/Home.module.css";
 import { AnimatePresence, motion } from "framer-motion";
+import { FacebookPixel } from "@/features/connection";
 
 export default function Layout({ children }: { children: ReactNode }) {
   const router = useRouter();
@@ -34,6 +35,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           {children}
         </motion.div>
       </AnimatePresence>
+      <FacebookPixel />
     </>
   );
 }
