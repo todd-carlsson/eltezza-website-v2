@@ -1148,8 +1148,6 @@ export const funnelTestimonials = [
     review: "“The growth has been significant”",
     author: "Steven Deans & James Deans \nSteve's Tyre Service & Autocare",
     srcId: 1074123022,
-    thumbnail:
-      distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
     borderColor: "--adobe-purple",
   },
   {
@@ -1157,9 +1155,14 @@ export const funnelTestimonials = [
     review: "“They've helped us tell our story and freshen up our socials”",
     author: "Brent Jaslarz & Craig Seton \nYoum - Mortgage Advisers",
     srcId: 1074123161,
-    thumbnail:
-      distributionName + "/Design/Work/One_Stop_Shop_Reel_diqtcq_THUMBNAIL.jpg",
     borderColor: "--ez-orange",
+  },
+  {
+    id: 3,
+    review: "“You've helped me get comfortable in front of the camera”",
+    author: "Nicky Robèrt \nRobèrt Embroideries",
+    srcId: 1082370766,
+    borderColor: "--adobe-purple",
   },
 ] satisfies Array<FunnelTestimonialsData>;
 
