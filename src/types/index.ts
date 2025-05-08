@@ -84,7 +84,6 @@ export type FunnelTestimonialsData = {
   review: string;
   author?: string;
   srcId: number;
-  thumbnail: string;
   borderColor: "--ez-orange" | "--adobe-purple";
 };
 
