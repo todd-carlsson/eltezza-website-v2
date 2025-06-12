@@ -1503,10 +1503,10 @@ export const funnelWorkVideos = {
       srcId: 1092634495,
       src:
         distributionName +
-        "/Ad_Funnel/Work_Section/Organic/eg/eg_THUMBNAIL.jpg",
+        "/Ad_Funnel/Work_Section/Organic/eg/eg._-_little_savanna_collab_LOWRES.mp4",
       thumbnail:
         distributionName +
-        "/Ad_Funnel/Work_Section/Organic/eg/eg._-_little_savanna_collab_LOWRES.mp4",
+        "/Ad_Funnel/Work_Section/Organic/eg/eg_THUMBNAIL.jpg",
       client: "eg.",
     },
   ] satisfies Array<FunnelWorkData>,
