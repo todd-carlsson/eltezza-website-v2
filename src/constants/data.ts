@@ -1506,7 +1506,7 @@ export const funnelWorkVideos = {
         "/Ad_Funnel/Work_Section/Organic/eg/eg._-_little_savanna_collab_LOWRES.mp4",
       thumbnail:
         distributionName +
-        "/Ad_Funnel/Work_Section/Organic/eg/eg_THUMBNAIL.jpg",
+        "/Ad_Funnel/Work_Section/Organic/eg/eg_thumbnailcover.jpg",
       client: "eg.",
     },
   ] satisfies Array<FunnelWorkData>,
