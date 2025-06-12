@@ -1500,14 +1500,14 @@ export const funnelWorkVideos = {
       client: "Oztent",
     },
     {
-      srcId: 1074135938,
+      srcId: 1092634495,
       src:
         distributionName +
-        "/Ad_Funnel/Work_Section/Organic/MaunderRoofing/Why_Choose_Us_tx1jh6_LOWRES.mp4",
+        "/Ad_Funnel/Work_Section/Organic/eg/eg_THUMBNAIL.jpg",
       thumbnail:
         distributionName +
-        "/Ad_Funnel/Work_Section/Organic/MaunderRoofing/Why_Choose_Us_Reel_Final_dkyoxy_THUMBNAIL.jpg",
-      client: "Maunder Roofing",
+        "/Ad_Funnel/Work_Section/Organic/eg/eg._-_little_savanna_collab_LOWRES.mp4",
+      client: "eg.",
     },
   ] satisfies Array<FunnelWorkData>,
   ugc: [
