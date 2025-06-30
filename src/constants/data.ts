@@ -1249,10 +1249,11 @@ export const funnelBrands = [
     width: "80%",
   },
   {
-    brand: "Ikaika",
-    src: "/images/brandImages/Ikaika_logo.svg",
+    brand: "Heatrite",
+    src: "/images/brandImages/Heatrite_logo.svg",
     maxWidth: 150,
     width: "123%",
+    needsColorInvert: false,
   },
   {
     brand: "Steve's Tyre Service",
