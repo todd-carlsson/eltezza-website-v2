@@ -29,6 +29,11 @@ export function Header({ onOpen }: HeaderProps) {
           {calendlyButtonText}
         </Button>
       </div>
+      <div className={styles.arrowContainer}>
+        <div className={styles.chevron}></div>
+        <div className={styles.chevron}></div>
+        <div className={styles.chevron}></div>
+      </div>
     </div>
   );
 }
