@@ -1,6 +1,7 @@
 import { Button, ButtonVariant } from "@/features/ui";
 import styles from "./components.module.scss";
 import { calendlyButtonText } from "@/constants";
+import { ScrollIcon } from "./scrollIcon";
 
 interface HeaderProps {
   onOpen: () => void;
@@ -30,9 +31,7 @@ export function Header({ onOpen }: HeaderProps) {
         </Button>
       </div>
       <div className={styles.arrowContainer}>
-        <div className={styles.chevron}></div>
-        <div className={styles.chevron}></div>
-        <div className={styles.chevron}></div>
+        <ScrollIcon type="exThree" />
       </div>
     </div>
   );

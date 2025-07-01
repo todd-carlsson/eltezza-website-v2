@@ -221,3 +221,159 @@
     opacity: 1;
   }
 }
+
+// Scroll Icon
+
+.scrollIcon {
+  position: absolute;
+  z-index: 9999;
+  width: 2em;
+  height: 4em;
+  border: 0.25em solid #fff;
+  border-radius: 2em;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.exOne .wheel {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: #fff;
+  transform: translate(-50%, 0);
+  border-radius: 0.6em;
+  animation: ex-one-wheel 1s ease-in-out infinite;
+}
+
+@keyframes ex-one-wheel {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+
+  20%,
+  70% {
+    opacity: 1;
+  }
+
+  90%,
+  100% {
+    transform: translate(-50%, 150%);
+    opacity: 0;
+  }
+}
+
+.exTwo .wheel {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  width: 0.6em;
+  height: 1.5em;
+  border: 0.1em solid #fff;
+  transform: translate(-50%, 0);
+  border-radius: 0.6em;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -100% 0 0;
+    background-image: linear-gradient(0deg, #fff 2px, transparent 1px);
+    background-size: 100% 6px;
+    opacity: 0.5;
+    animation: ex-two-wheel 1s ease-in-out infinite;
+  }
+}
+
+@keyframes ex-two-wheel {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+
+  40%,
+  50% {
+    opacity: 0.8;
+  }
+
+  90%,
+  100% {
+    transform: translateY(50%);
+    opacity: 0.5;
+  }
+}
+
+.exThree .wheel {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: #fff;
+  transform: translate(-50%, 0);
+  border-radius: 0.6em;
+  animation: ex-three-wheel 1s ease-in-out infinite;
+}
+
+@keyframes ex-three-wheel {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, 50%);
+  }
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  width: 0.4em;
+  height: 1em;
+  transform: translateX(-50%);
+  opacity: 0.3;
+  animation: ex-three-wheel-opacity 1s ease-in-out infinite;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 0.4em;
+    height: 0.4em;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    box-sizing: border-box;
+  }
+}
+
+.up {
+  top: 10%;
+
+  &::before,
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
+.down {
+  top: 45%;
+
+  &::before,
+  &::after {
+    transform: rotate(-135deg);
+  }
+}
+
+@keyframes ex-three-wheel-opacity {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+}
