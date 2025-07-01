@@ -71,7 +71,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9999;
     width: 100%;
     height: 100vh;
 
@@ -84,6 +83,7 @@
       opacity: 0;
       transform: scale(0.3);
       animation: move-chevron 3s ease-out infinite;
+      z-index: 9999;
     }
 
     .chevron:first-child {
