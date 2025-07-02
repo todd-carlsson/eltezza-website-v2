@@ -31,7 +31,7 @@ export function Header({ onOpen }: HeaderProps) {
         </Button>
       </div>
       <div className={styles.arrowContainer}>
-        <ScrollIcon type="exThree" />
+        <ScrollIcon type="exOne" />
       </div>
     </div>
   );
