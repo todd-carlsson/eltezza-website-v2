@@ -229,10 +229,14 @@
   z-index: 9999;
   width: 2em;
   height: 4em;
-  border: 0.25em solid #fff;
+  border: 0.17em solid #fff;
   border-radius: 2em;
   bottom: 20px;
   cursor: pointer;
+
+  @media (width <= 960px) {
+    bottom: 17vh;
+  }
 }
 
 .exOne .wheel {
