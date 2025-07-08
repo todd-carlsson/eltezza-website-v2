@@ -10,14 +10,14 @@
   position: absolute;
   top: 0;
 
-  @media (width <=960px) {
+  @media (width <=1064px) {
     align-items: center;
   }
 
   .headerText {
     text-align: left;
 
-    @media (width <=960px) {
+    @media (width <=1064px) {
       text-align: center;
       white-space: nowrap;
     }
@@ -26,7 +26,7 @@
       font-size: clamp(3.5rem, 4.25vw, 5.5rem);
       font-weight: 300;
 
-      @media (width <=960px) {
+      @media (width <=1064px) {
         font-size: clamp(2rem, 3vw, 4rem);
       }
 
@@ -48,16 +48,16 @@
       font-size: clamp(1.25rem, 1vw, 3.25rem);
       white-space: pre-wrap;
 
-      @media (width <=960px) {
-        font-size: clamp(1rem, 1vw, 2.25rem);
+      @media (width <=1064px) {
+        font-size: clamp(0.85rem, 0.9vw, 2.25rem);
       }
 
       @media (width <=768px) {
-        font-size: clamp(1rem, 1vw, 1.25rem);
+        font-size: clamp(0.85rem, 0.9vw, 1.15rem);
       }
 
       @media (width <=400px) {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
       }
     }
   }
