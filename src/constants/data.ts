@@ -1365,10 +1365,10 @@ export const funnelBrandsMobile = [
     width: "75%",
   },
   {
-    brand: "Fernglen Farm",
-    src: "/images/brandImages/Fernglen-Farm_logo.svg",
-    maxWidth: 130,
-    width: "107%",
+    brand: "eg.",
+    src: "/images/brandImages/Eg_logo.svg",
+    maxWidth: 150,
+    width: "120%",
     needsColorInvert: false,
   },
   {
