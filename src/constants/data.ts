@@ -1404,17 +1404,17 @@ export const funnelServices = [
   {
     title: "SOCIAL MEDIA \nMANAGEMENT",
     description:
-      "Our clients have seen their revenue\n grow exponentially just by showing up\n the right way online.",
+      "Our clients grow fast just by showing up\n the right way online.",
   },
   {
     title: "CONTENT \nPRODUCTION",
     description:
-      "Backed by years of research on audience\n hooks and retention, we shoot, edit, and\n deliver content that actually works",
+      "We shoot, edit, and deliver scroll-\n stopping content built to retain.",
   },
   {
     title: "ADS \nMANAGEMENT",
     description:
-      "We've spent tens of thousands on Meta ads—\nso we know what works. Our ads attract the\n right buyers.",
+      "We've blown thousands on Meta so \nyou don't have to. Our ads convert — \n simple.",
   },
 ] satisfies Array<FunnelServicesData>;
 

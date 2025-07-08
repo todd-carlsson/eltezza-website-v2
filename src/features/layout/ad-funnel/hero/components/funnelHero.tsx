@@ -20,7 +20,8 @@ export function Header({ onOpen }: HeaderProps) {
           <span className={styles.boldWord}>remembered</span>.
         </h1>
         <p className={styles.headerSubHeading}>
-          Scaling brands with killer content and high-performing ads.
+          Scaling brands through content, ads, and a creative crew that works
+          like your in-house team — without the overhead.
         </p>
       </div>
       <div className={styles.buttonContainer}>

@@ -49,15 +49,15 @@
       white-space: pre-wrap;
 
       @media (width <=1064px) {
-        font-size: clamp(1rem, 1vw, 2.25rem);
+        font-size: clamp(0.85rem, 0.9vw, 2.25rem);
       }
 
       @media (width <=768px) {
-        font-size: clamp(1rem, 1vw, 1.25rem);
+        font-size: clamp(0.85rem, 0.9vw, 1.15rem);
       }
 
       @media (width <=400px) {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
       }
     }
   }
