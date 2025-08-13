@@ -7,5 +7,5 @@ services:
     ports:
       - "3000:3000"
     env_file:
-      - .env            # Store private vars like SECRET_API_KEY, etc.
+    - path: .env         # Store private vars like SECRET_API_KEY, etc.
     pull_policy: always  # Always pull the latest image
