@@ -281,7 +281,7 @@ export const contactFormText = {
     "Ready to turn your ideas into digital masterpieces? Let's chat over coffee!",
   submitted:
     "Your connection means the world to us, and we can't wait to explore how we can make your experience even better. Whether you have questions, ideas, or just want to chat, we're here for you.",
-  error: "Something went wrong, please try again.",
+  error: "Something went wrong, please try again later.",
   email: "hello@eltezza.com",
   phone: "06 213 8994",
 };
