@@ -22,8 +22,5 @@ jobs:
       - name: Push Docker image
         run: docker push ghcr.io/todd-carlsson/eltezza-website:latest
 
-      - name: Trigger Dokploy Deploy Webhook
-        run: |
-          curl -X POST \
-            -H "Content-Type: application/json" \
-            "${{ secrets.DOKPLOY_WEBHOOK_URL }}"
+      - name: Trigger deployment webhook
+        run: curl -X POST ${{secrets.DEPLOYMENT_WEBHOOK_URL}}
