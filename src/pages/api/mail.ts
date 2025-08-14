@@ -6,9 +6,7 @@ type Data = {
   name: string;
 };
 
-mail.setApiKey(
-  process.env.SENDGRID_API_KEY ? process.env.SENDGRID_API_KEY : "",
-);
+mail.setApiKey(process.env.SENDGRID_API_KEY!);
 
 export const config = {
   api: {
