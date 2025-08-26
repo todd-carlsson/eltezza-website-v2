@@ -17,7 +17,10 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Props>,
 ) {
-  console.log("API key length:", process.env.RESEND_API_KEY?.length);
+  console.log(
+    "User attempting to contact ",
+    !!process.env.RESEND_API_KEY?.length,
+  );
 
   const resend = new Resend(process.env.RESEND_API_KEY!);
   try {
@@ -37,6 +40,7 @@ export default async function handler(
     });
 
     if (error) {
+      console.error("Error sending email:", error);
       return res.status(500).json({
         error: error?.message ? error.message : "Error sending email",
       });
