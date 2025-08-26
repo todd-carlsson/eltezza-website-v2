@@ -1,14 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import mail from "@sendgrid/mail";
+import { Resend } from "resend";
 
 type Data = {
-  name: string;
+  id?: string;
+  error?: string;
 };
-
-mail.setApiKey(
-  process.env.SENDGRID_API_KEY ? process.env.SENDGRID_API_KEY : "",
-);
 
 export const config = {
   api: {
@@ -20,30 +17,29 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>,
 ) {
+  const resend = new Resend(process.env.RESEND_API_KEY!);
   try {
     const body = await JSON.parse(req.body);
-    const message = `
-  Name: ${body.fullName}\r\n
-  Email: ${body.email}\r\n
-  Subject: ${body.subject}\r\n
-  Message: ${body.message}\r\n
-  `;
-
-    const data = {
+    const { data, error } = await resend.emails.send({
+      from: "Eltezza Website <onboarding@resend.dev>",
       to: "eltezza.ltd@gmail.com",
-      from: "hello@eltezza.com",
       subject: `[CONTACT FORM]: ${body.subject}`,
-      text: message,
-      html: message.replace(/\r\n/g, "<br>"),
-    };
+      html: `
+        <div>
+          <p><strong>Name:</strong> ${body.fullName}</p>
+          <p><strong>Email:</strong> ${body.email}</p>
+          <p><strong>Subject:</strong> ${body.subject}</p>
+          <p><strong>Message:</strong> ${body.message}</p>
+        </div>
+      `,
+    });
 
-    await mail.send(data);
+    if (error) {
+      return res.status(500).json({ error: error?.message });
+    }
 
-    // @ts-expect-error Error is unknown
-    return res.status(200).json({ error: "" });
-  } catch (error) {
-    console.log(error);
-    // @ts-expect-error Just for the error checking
-    return res.status(500).json({ error: error.message });
+    return res.status(200).json({ id: data?.id });
+  } catch (error: unknown) {
+    return res.status(500).json({ error: "Internal Server error" });
   }
 }
