@@ -9,3 +9,6 @@ services:
     env_file:
     - path: .env         # Store private vars like SECRET_API_KEY, etc.
     pull_policy: always  # Always pull the latest image
+    args:
+      RESEND_API_KEY: ${RESEND_API_KEY}
+      NEXT_PUBLIC_FACEBOOK_PIXEL_ID: ${NEXT_PUBLIC_FACEBOOK_PIXEL_ID}
