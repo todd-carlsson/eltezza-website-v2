@@ -21,8 +21,8 @@ export default async function handler(
   try {
     const body = await JSON.parse(req.body);
     const { data, error } = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: "toddguitarc@gmail.com",
+      from: "Eltezza Website <onboarding@resend.dev>",
+      to: "eltezza.ltd@gmail.com",
       subject: `[CONTACT FORM]: ${body.subject}`,
       html: `
         <div>
