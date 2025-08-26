@@ -17,7 +17,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Props>,
 ) {
-  console.log("SENDGRID_API_KEY length:", process.env.SENDGRID_API_KEY?.length);
+  console.log("API key length:", process.env.RESEND_API_KEY?.length);
 
   const resend = new Resend(process.env.RESEND_API_KEY!);
   try {
