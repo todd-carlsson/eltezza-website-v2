@@ -2,7 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Resend } from "resend";
 
-type Data = {
+type Props = {
   id?: string;
   error?: string;
 };
@@ -15,7 +15,7 @@ export const config = {
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>,
+  res: NextApiResponse<Props>,
 ) {
   const resend = new Resend(process.env.RESEND_API_KEY!);
   try {
@@ -35,7 +35,11 @@ export default async function handler(
     });
 
     if (error) {
-      return res.status(500).json({ error: error?.message });
+      return res
+        .status(400)
+        .json({
+          error: error?.message ? error.message : "Error sending email",
+        });
     }
 
     return res.status(200).json({ id: data?.id });
