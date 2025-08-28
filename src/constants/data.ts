@@ -1627,7 +1627,9 @@ export const funnelHeroImages = [
   },
   {
     title: "Youm",
-    thumbnail: distributionName + "/Ad_Funnel/images/Google+Review.jpg",
+    thumbnail:
+      distributionName +
+      "/Ad_Funnel/images/Youm+-+August+Posts+-+Should+I+break+my+fixed+rate_.jpg",
   },
   {
     title: "Fernglen Farm",
@@ -1648,14 +1650,17 @@ export const funnelHeroImages = [
     title: "Oztent",
     thumbnail: distributionName + "/Ad_Funnel/images/Chilling+by+tent.jpg",
   },
-
+  {
+    title: "Heatrite",
+    thumbnail: distributionName + "/Ad_Funnel/images/Meet+Darrell.jpg",
+  },
   {
     title: "Proper Crisps",
     thumbnail: distributionName + "/Ad_Funnel/images/propercrips-kombat.jpg",
   },
   {
-    title: "Black Pearl",
-    thumbnail: distributionName + "/Ad_Funnel/images/blackpearl.jpg",
+    title: ".eg",
+    thumbnail: distributionName + "/Ad_Funnel/images/On+the+way+to+you.jpg",
   },
   {
     title: "Al Brown",
