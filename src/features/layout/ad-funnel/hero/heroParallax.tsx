@@ -14,7 +14,7 @@ interface HeroParallaxProps {
 export const HeroParallax = ({ products, onOpen }: HeroParallaxProps) => {
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 11);
-  const thirdRow = products.slice(11, 15);
+  const thirdRow = products.slice(11, 16);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
