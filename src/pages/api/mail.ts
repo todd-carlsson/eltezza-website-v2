@@ -18,7 +18,7 @@ export default async function handler(
   res: NextApiResponse<Props>,
 ) {
   console.log(
-    "User attempting to contact ",
+    "User attempting to contact: ",
     !!process.env.RESEND_API_KEY?.length,
   );
 
@@ -26,8 +26,8 @@ export default async function handler(
   try {
     const body = await JSON.parse(req.body);
     const { data, error } = await resend.emails.send({
-      from: "Eltezza Website <onboarding@resend.dev>",
-      to: "toddguitarc@gmail.com",
+      from: "Eltezza Website <email@eltezza.com>",
+      to: "Mohamed10id@gmail.com",
       subject: `[CONTACT FORM]: ${body.subject}`,
       html: `
         <div>
