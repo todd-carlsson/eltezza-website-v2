@@ -1,26 +1,117 @@
-import { Inter } from "next/font/google";
+import {
+  FunnelContact,
+  FunnelHeader,
+  Portal,
+  FunnelVideoGallery,
+  Reviews,
+  FunnelTestimonials,
+  FunnelBrands,
+  FunnelServices,
+  FunnelPartnership,
+  HeroParallax,
+} from "@/features/layout";
+import { CalendlyEmbed } from "@/features/ui";
 import styles from "@/styles/Home.module.css";
-import { HomeComponent } from "@/features/layout";
-import classNames from "classnames";
 import MetaData from "@/metadata";
-import { landingPageData, metaData } from "@/constants";
+import {
+  funnelBrands,
+  funnelPartnership,
+  funnelServices,
+  funnelTestimonials,
+  funnelWorkVideos,
+  metaData,
+  funnelReviewsData,
+  funnelBrandsMobile,
+  calendlyLink,
+  funnelHeroImages,
+} from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { Scroll } from "@/utils/scroll";
+import Script from "next/script";
+import * as fbq from "@/lib/fpixel";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
-  const isPresent = useIsPresent();
+function LandingFunnel() {
   const router = useRouter();
+  const isPresent = useIsPresent();
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    Scroll(0, "auto");
+  }, []);
+
+  function onOpen() {
+    setShowModal(true);
+    fbq.event("Purchase", { currency: "USD", value: 10 });
+  }
+  function onClose() {
+    setShowModal(false);
+  }
+
   return (
     <>
-      <MetaData
-        data={metaData.home}
-        imageData={[...landingPageData.design, ...landingPageData.creative]}
-        scroll={false}
-      />
-      <main className={classNames(styles.main, inter.className)}>
-        <HomeComponent />
+      <MetaData data={metaData.home} />
+      <motion.div
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+          transition: {
+            delay: 0.5,
+          },
+        }}
+        className={styles.funnelPageContainer}
+      >
+        <FunnelHeader />
+        <Portal root="calendly-root">
+          <CalendlyEmbed
+            url={calendlyLink}
+            onClose={onClose}
+            showModal={showModal}
+          />
+        </Portal>
+        <div className={styles.funnelContentContainer}>
+          <HeroParallax products={funnelHeroImages} onOpen={onOpen} />
+          <FunnelServices content={funnelServices} onOpen={onOpen} />
+          <FunnelTestimonials content={funnelTestimonials} />
+          <FunnelBrands
+            content={funnelBrands}
+            mobileContent={funnelBrandsMobile}
+          />
+          <FunnelPartnership
+            onOpen={onOpen}
+            firstBox={funnelPartnership.firstBox}
+            secondBox={funnelPartnership.secondBox}
+          />
+          <section className={styles.funnelVideoGallerySection}>
+            <h1 className={styles.funnelGalleryHeading}>
+              Not just seen - saved, shared
+              <br className={styles.galleryHeadingBreak} /> & remembered.
+            </h1>
+            <p className={styles.funnelGallerySubHeading}>Portfolio Showcase</p>
+            <FunnelVideoGallery
+              content={funnelWorkVideos.promotional}
+              heading="Promotional Videos"
+            />
+            <FunnelVideoGallery
+              content={funnelWorkVideos.organic}
+              heading="Organic Content"
+              lineColor="--ez-orange"
+            />
+            <FunnelVideoGallery
+              content={funnelWorkVideos.ugc}
+              heading="UGC Content"
+            />
+          </section>
+        </div>
+        <Reviews
+          content={funnelReviewsData}
+          page="design"
+          headingTextSize="small"
+        />
+        <FunnelContact onOpen={onOpen} />
         <motion.div
           initial={{ scaleX: 1 }}
           animate={{
@@ -37,7 +128,9 @@ export default function Home() {
           }}
           className={styles.privacyScreen}
         />
-      </main>
+      </motion.div>
+      <Script src="https://player.vimeo.com/api/player.js"></Script>
     </>
   );
 }
+export default LandingFunnel;
