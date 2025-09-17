@@ -2,6 +2,7 @@
   width: 100%;
   max-width: var(--max-width);
   padding: 0 var(--content-padding);
+  margin-bottom: 100px;
 
   @media screen and (width <=800px) {
     padding: 0 var(--content-padding-sm);
