@@ -24,8 +24,11 @@
     .memberContainer {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
-      text-transform: uppercase;
+      font-size: clamp(0.9rem, 1.75vw, 1.25rem);
+
+      @media screen and (width <=1350px) {
+        font-size: 1rem;
+      }
 
       .imageContainer {
         overflow: hidden;
@@ -34,6 +37,7 @@
         justify-content: center;
         align-items: center;
         height: auto;
+        margin-bottom: 1rem;
 
         .memberEmailContainer {
           position: absolute;
@@ -93,15 +97,14 @@
         color: #fff;
       }
 
-      .lineThrough {
-        height: 1px;
-        width: 100%;
-        background: #fff;
-      }
-
       .positionContainer {
         display: flex;
         justify-content: space-between;
+
+        .memberPosition {
+          font-family: var(--font-poppins);
+          font-style: italic;
+        }
       }
     }
   }

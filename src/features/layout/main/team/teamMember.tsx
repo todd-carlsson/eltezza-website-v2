@@ -14,7 +14,6 @@ interface TeamMemberProps {
 
 export const TeamMember = memo(function TeamMember({
   member,
-  index,
   color,
 }: TeamMemberProps) {
   const variant = {
@@ -86,15 +85,13 @@ export const TeamMember = memo(function TeamMember({
         </motion.div>
       </motion.div>
       <p className={styles.memberName}>{member.name}</p>
-      <div className={styles.lineThrough} />
       <div
         className={styles.positionContainer}
         style={{
           color: color.slice(0, 2) === "--" ? `var(${color})` : color,
         }}
       >
-        <p>{member.position}</p>
-        <p>0{index + 1}</p>
+        <p className={styles.memberPosition}>{member.position}</p>
       </div>
     </div>
   );
