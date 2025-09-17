@@ -7,26 +7,6 @@
     padding: 0 var(--content-padding-sm);
   }
 
-  .textContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 120px;
-
-    .teamDescription {
-      font-family: var(--font-source-sans);
-      max-width: 50%;
-
-      @media screen and (width <=800px) {
-        max-width: none;
-      }
-
-      @media screen and (width <=500px) {
-        font-size: 0.85rem;
-      }
-    }
-  }
-
   .teamGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

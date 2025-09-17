@@ -74,11 +74,18 @@ export default function DesignPage() {
       <BTS content={btsData.design} page={page} />
       <Brands content={brandsData.design} columns={4} />
       <Process content={ourProcess.design} color={color} />
-      <Team
-        description={teamDescription.design}
-        content={teamData.design}
-        color={color}
-      />
+      <div className={styles.teamTextContainer}>
+        <h1
+          className="largeText"
+          style={{
+            textAlign: "left",
+          }}
+        >
+          THE <span className="textGradient">TEAM</span>
+        </h1>
+        <p className={styles.teamDescription}>{teamDescription.design}</p>
+      </div>
+      <Team content={teamData.design} color={color} />
       <Reviews content={testimonialsData} page={page} />
       <Faq content={faqs.design} color={color} />
       <Contact onOpen={onOpen} text={page} isOpen={showModal} />

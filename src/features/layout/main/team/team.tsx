@@ -7,11 +7,10 @@ import { Button, ButtonVariant } from "@/features/ui";
 
 interface TeamProps {
   content: Array<TeamData>;
-  description: string;
   color: string;
 }
 
-export function Team({ content, description, color }: TeamProps) {
+export function Team({ content, color }: TeamProps) {
   const [windowWidth] = useWindowSize();
   const [paginationCount, setPaginationCount] = useState(
     windowWidth > 1050 ? content.length : 3,
@@ -53,17 +52,6 @@ export function Team({ content, description, color }: TeamProps) {
 
   return (
     <section id="about" className={styles.teamSection}>
-      <div className={styles.textContainer}>
-        <h1
-          className="largeText"
-          style={{
-            textAlign: "left",
-          }}
-        >
-          THE <span className="textGradient">TEAM</span>
-        </h1>
-        <p className={styles.teamDescription}>{description}</p>
-      </div>
       <div className={styles.teamGrid}>
         {content.slice(0, paginationCount).map((item, i) => (
           <TeamMember key={item.name} member={item} index={i} color={color} />

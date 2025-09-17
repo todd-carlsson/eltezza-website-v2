@@ -9,6 +9,7 @@ import {
   FunnelServices,
   FunnelPartnership,
   HeroParallax,
+  Team,
 } from "@/features/layout";
 import { CalendlyEmbed } from "@/features/ui";
 import styles from "@/styles/Home.module.css";
@@ -24,6 +25,7 @@ import {
   funnelBrandsMobile,
   calendlyLink,
   funnelHeroImages,
+  teamData,
 } from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
@@ -85,6 +87,10 @@ function LandingFunnel() {
             firstBox={funnelPartnership.firstBox}
             secondBox={funnelPartnership.secondBox}
           />
+          <div className={styles.basicTeamTextContainer}>
+            <h1 className={styles.basicTeamHeading}>Meet the team</h1>
+          </div>
+          <Team content={teamData.home} color="--ez-orange" />
           <section className={styles.funnelVideoGallerySection}>
             <h1 className={styles.funnelGalleryHeading}>
               Not just seen - saved, shared

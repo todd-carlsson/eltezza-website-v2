@@ -105,3 +105,56 @@
     display: none;
   }
 }
+
+/* TEAM SECTION */
+
+.teamTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 0 calc(var(--content-padding) + 60px);
+  padding-top: 120px;
+}
+
+.teamDescription {
+  font-family: var(--font-source-sans);
+  max-width: 50%;
+}
+
+@media screen and (width <=800px) {
+  .teamDescription {
+    max-width: none;
+  }
+
+  .teamTextContainer {
+    padding: 0 calc(var(--content-padding-sm) + 60px);
+  }
+}
+
+@media screen and (width <=500px) {
+  .teamDescription {
+    font-size: 0.85rem;
+  }
+}
+
+.basicTeamTextContainer {
+  width: 100%;
+  padding: 60px var(--content-padding);
+  padding-bottom: 20px;
+}
+
+.basicTeamHeading {
+  font-size: 3rem;
+}
+
+@media screen and (width <=800px) {
+  .basicTeamTextContainer {
+    padding: 60px 30px;
+    padding-bottom: 20px;
+  }
+
+  .basicTeamHeading {
+    font-size: 2rem;
+  }
+}

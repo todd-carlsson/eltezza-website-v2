@@ -77,11 +77,18 @@ export default function CreativePage() {
       <BTS content={btsData.creative} page={page} />
       <Brands content={brandsData.creative} columns={3} />
       <Process content={ourProcess.creative} color={color} />
-      <Team
-        description={teamDescription.creative}
-        content={teamData.creative}
-        color={"rgb(132, 90, 255)"}
-      />
+      <div className={styles.teamTextContainer}>
+        <h1
+          className="largeText"
+          style={{
+            textAlign: "left",
+          }}
+        >
+          THE <span className="textGradient">TEAM</span>
+        </h1>
+        <p className={styles.teamDescription}>{teamDescription.creative}</p>
+      </div>
+      <Team content={teamData.creative} color={"rgb(132, 90, 255)"} />
       <Reviews content={testimonialsData} page={page} />
       <Faq content={faqs.creative} color={color} />
       <Contact text="create" onOpen={onOpen} isOpen={showModal} />
