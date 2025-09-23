@@ -961,13 +961,14 @@ export const teamData = {
       email: "carlsson@eltezza.com",
     },
     {
-      name: "Aileen Banzagales",
+      name: "Shay Gillanders",
       src:
         distributionName +
-        "/Design/Team/Aileen+Banzagales+-+Graphic+Designer.jpg",
+        "/Design/Team/Shay_Gillanders_-_Visual_Designer_ap1gci.jpg",
       placeholder:
-        "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1713243560/EZ%20Website%20-%20Design/Team/Aileen_Banzagles_-_Graphic_Designer_oompl5.jpg",
-      position: "Graphic Designer",
+        "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1712709619/EZ%20Website%20-%20Design/Team/Shay_Gillanders_-_Visual_Designer_ap1gci.jpg",
+      position: "Visual Designer",
+      email: "gillanders@eltezza.com",
     },
   ] satisfies Array<TeamData>,
 };
