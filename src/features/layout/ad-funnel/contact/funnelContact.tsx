@@ -71,7 +71,7 @@ export function FunnelContact({ onOpen }: FunnelContactProps) {
           </div>
         </div>
         <div className={styles.copyrightFooter}>
-          <p>&copy; 2025 Eltezza. All Rights Reserved.</p>
+          <p>&copy; 2026 Eltezza. All Rights Reserved.</p>
           <div className={styles.pageLinks}>
             <Link href="/privacy-policy">Privacy Policy</Link>
             <Link href="/terms-and-conditions">Terms of Service</Link>
