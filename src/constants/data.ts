@@ -1659,80 +1659,78 @@ export const funnelReviewsData = [
 
 export const funnelHeroImages = [
   {
-    title: "Youm",
-    thumbnail: distributionName + "/Ad_Funnel/images/Team+Intro+-+Megan.jpg",
-  },
-  {
-    title: "Kochi",
-    thumbnail: distributionName + "/Ad_Funnel/images/kochi_Top-down.jpg",
-  },
-  {
     title: "Proper Crisps",
     thumbnail:
-      distributionName + "/Ad_Funnel/images/proper-crisps-tennisball.jpg",
+      distributionName + "/Ad_Funnel/images/Jan-2026/proper-crisps-duo.jpg",
   },
   {
-    title: "Oztent",
+    title: "Streetwise Coffee",
     thumbnail:
-      distributionName +
-      "/Ad_Funnel/images/NEW+_+Oztent+-+March+Sale+-+Bunker+Pro.jpg",
-  },
-  {
-    title: "Proper Crisps",
-    thumbnail: distributionName + "/Ad_Funnel/images/propercrisps-tennis1.jpg",
-  },
-  {
-    title: "Remarkable Cream",
-    thumbnail:
-      distributionName +
-      "/Ad_Funnel/images/Lifestyle+Image+2+-+Bottle+Grab.jpg",
-  },
-  {
-    title: "Youm",
-    thumbnail:
-      distributionName +
-      "/Ad_Funnel/images/Youm+-+August+Posts+-+Should+I+break+my+fixed+rate_.jpg",
-  },
-  {
-    title: "Fernglen Farm",
-    thumbnail:
-      distributionName +
-      "/Ad_Funnel/images/Fernglen+Farm+-+Advertising+Image.jpg",
+      distributionName + "/Ad_Funnel/images/Jan-2026/A-Frames+-+Hot.jpg",
   },
   {
     title: "Eatkinda",
     thumbnail:
-      distributionName + "/Ad_Funnel/images/EatKinda+-+Freezer+(1.5x).jpg",
-  },
-  {
-    title: "Kochi",
-    thumbnail: distributionName + "/Ad_Funnel/images/Close-up+Burger.jpg",
+      distributionName +
+      "/Ad_Funnel/images/Jan-2026/EatKinda+-+Available+%40+Woolowrths+Final+(1x).jpg",
   },
   {
     title: "Oztent",
-    thumbnail: distributionName + "/Ad_Funnel/images/Chilling+by+tent.jpg",
-  },
-  {
-    title: "Heatrite",
-    thumbnail: distributionName + "/Ad_Funnel/images/Meet+Darrell.jpg",
+    thumbnail:
+      distributionName + "/Ad_Funnel/images/Jan-2026/Setup+Carousel+1.jpg",
   },
   {
     title: "Proper Crisps",
-    thumbnail: distributionName + "/Ad_Funnel/images/propercrips-kombat.jpg",
+    thumbnail:
+      distributionName +
+      "/Ad_Funnel/images/Jan-2026/Habanero+Mustard+(ketchup+in+bg).jpg",
+  },
+  {
+    title: "Eatkinda",
+    thumbnail:
+      distributionName +
+      "/Ad_Funnel/images/Jan-2026/EatKinda+-+Freezer+(1.5x).jpg",
+  },
+  {
+    title: "Glasseye Creek",
+    thumbnail:
+      distributionName + "/Ad_Funnel/images/Jan-2026/Smoked+Chilli.jpg",
+  },
+  {
+    title: "Streetwise Coffee",
+    thumbnail:
+      distributionName + "/Ad_Funnel/images/Jan-2026/A-Frames+-+Iced.jpg",
+  },
+  {
+    title: "Oztent",
+    thumbnail:
+      distributionName + "/Ad_Funnel/images/Jan-2026/Setup+Carousel+3.jpg",
+  },
+  {
+    title: "Glasseye Creek",
+    thumbnail: distributionName + "/Ad_Funnel/images/Jan-2026/Wild+Meat.jpg",
+  },
+  {
+    title: "Heatrite",
+    thumbnail: distributionName + "/Ad_Funnel/images/2025/Meet+Darrell.jpg",
+  },
+  {
+    title: "Proper Crisps",
+    thumbnail:
+      distributionName + "/Ad_Funnel/images/2025/propercrips-kombat.jpg",
+  },
+  {
+    title: "Kochi",
+    thumbnail: distributionName + "/Ad_Funnel/images/2025/kochi_Top-down.jpg",
   },
   {
     title: ".eg",
-    thumbnail: distributionName + "/Ad_Funnel/images/On+the+way+to+you.jpg",
-  },
-  {
-    title: "Al Brown",
     thumbnail:
-      distributionName +
-      "/Ad_Funnel/images/Habanero+Mustard+(ketchup+in+bg).jpg",
+      distributionName + "/Ad_Funnel/images/2025/On+the+way+to+you.jpg",
   },
   {
     title: "Maunder Roofing",
     thumbnail:
-      distributionName + "/Ad_Funnel/images/If+you+see+us%2C+say+hi.jpg",
+      distributionName + "/Ad_Funnel/images/2025/If+you+see+us%2C+say+hi.jpg",
   },
 ] satisfies Array<FunnelHeroContent>;
