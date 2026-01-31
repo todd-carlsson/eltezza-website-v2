@@ -1659,9 +1659,10 @@ export const funnelReviewsData = [
 
 export const funnelHeroImages = [
   {
-    title: "Proper Crisps",
+    title: "Fernglen Farm",
     thumbnail:
-      distributionName + "/Ad_Funnel/images/Jan-2026/proper-crisps-duo.jpg",
+      distributionName +
+      "/Ad_Funnel/images/2025/Fernglen+Farm+-+Advertising+Image.jpg",
   },
   {
     title: "Streetwise Coffee",
