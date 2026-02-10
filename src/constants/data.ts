@@ -957,7 +957,7 @@ export const teamData = {
         "/Design/Team/Todd_Carlsson_-_Web_Developer_wnk07m.jpg",
       placeholder:
         "https://res.cloudinary.com/dsxzhd4c2/image/upload/c_scale,h_20/v1715919824/EZ%20Website%20-%20Design/Team/Todd_Carlsson_-_Web_Developer_wnk07m.jpg",
-      position: "Web Developer",
+      position: "Web/Software Developer",
       email: "carlsson@eltezza.com",
     },
     {
