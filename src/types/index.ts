@@ -127,3 +127,5 @@ declare global {
     fbq: (event: string, name: string, options?: object) => void;
   }
 }
+
+export * from "./highlight-types";
