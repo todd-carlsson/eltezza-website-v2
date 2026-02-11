@@ -1,11 +1,21 @@
 import { highlightsData } from "@/constants";
+import { HighlightProject } from "@/types";
 
 function addDash(str: string) {
   return str.split(" ").join("-").toLowerCase();
 }
 
-export default function ProjectPage() {
-  return <div>ProjectPage</div>;
+interface HighlightPageProps {
+  data: HighlightProject;
+}
+
+export default function ProjectPage({ data }: HighlightPageProps) {
+  return (
+    <div>
+      <h1>{data.name}</h1>
+      <p>{data.description}</p>
+    </div>
+  );
 }
 
 // Static paths for all project URLs
