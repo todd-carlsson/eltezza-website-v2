@@ -43,7 +43,7 @@ function LandingFunnel() {
 
   function onOpen() {
     setShowModal(true);
-    fbq.event("Purchase", { currency: "USD", value: 10 });
+    fbq.event("Calendly Modal Open");
   }
   function onClose() {
     setShowModal(false);
