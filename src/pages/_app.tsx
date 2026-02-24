@@ -47,15 +47,6 @@ export default function App({ Component, pageProps }: AppProps) {
           `,
         }}
       />
-        <Script
-        id="fb-pixel-pageview"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            fbq('track', 'PageView');
-          `,
-        }}
-      />
         <Component {...pageProps} />
       </Layout>
     </main>
