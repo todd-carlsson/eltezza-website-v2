@@ -16,7 +16,7 @@ export const FacebookPixel = () => {
   return (
     <div>
       <Script
-        id="fb-pixel"
+        id="fb-pixel-pageview"
         src="/scripts/pixel.js"
         strategy="afterInteractive"
         onLoad={() => setLoaded(true)}
