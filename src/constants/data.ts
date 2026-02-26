@@ -1670,10 +1670,10 @@ export const funnelHeroImages = [
       distributionName + "/Ad_Funnel/images/Jan-2026/A-Frames+-+Hot.jpg",
   },
   {
-    title: "Eatkinda",
+    title: "Oppo",
     thumbnail:
       distributionName +
-      "/Ad_Funnel/images/Jan-2026/EatKinda+-+Available+%40+Woolowrths+Final+(1x).jpg",
+      "/Ad_Funnel/images/Feb-2026/Oppo.jpg",
   },
   {
     title: "Oztent",
@@ -1708,8 +1708,8 @@ export const funnelHeroImages = [
       distributionName + "/Ad_Funnel/images/Jan-2026/Setup+Carousel+3.jpg",
   },
   {
-    title: "Glasseye Creek",
-    thumbnail: distributionName + "/Ad_Funnel/images/Jan-2026/Wild+Meat.jpg",
+    title: "Brut",
+    thumbnail: distributionName + "/Ad_Funnel/images/Feb-2026/Brut.jpg",
   },
   {
     title: "Heatrite",
