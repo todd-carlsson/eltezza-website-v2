@@ -1521,14 +1521,14 @@ export const funnelWorkVideos = {
       client: "Remarkable Cream",
     },
     {
-      srcId: 1073443268,
+      srcId: 1168305350,
       src:
         distributionName +
-        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x_LOWRES.mp4",
+        "/Ad_Funnel/Work_Section/Promotional/brut/brut_-_i_do_it_all!+(240p).mp4",
       thumbnail:
         distributionName +
-        "/Ad_Funnel/Work_Section/Promotional/FernglenFarm/Fernglen_Reel_V2_clvm4x_Thumbnail.jpg",
-      client: "Fernglen Farm",
+        "/Ad_Funnel/Work_Section/Promotional/brut/brut_-_i_do_it_all_THUMBNAIL.jpg",
+      client: "Brut",
     },
     {
       srcId: 1073448819,
