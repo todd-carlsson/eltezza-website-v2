@@ -1249,8 +1249,9 @@ export const funnelBrands = [
   {
     brand: "Nibblish",
     src: "/images/brandImages/Nibblish_logo.svg",
-    maxWidth: 104,
-    width: "86%",
+    maxWidth: 108,
+    width: "90%",
+    needsColorInvert: false,
   },
   {
     brand: "Rinse",
@@ -1324,10 +1325,11 @@ export const funnelBrands = [
     width: "106%",
   },
   {
-    brand: "Goju",
-    src: "/images/brandImages/Goju_logo.svg",
-    maxWidth: 95,
-    width: "85%",
+    brand: "Streetwise Coffee",
+    src: "/images/brandImages/Streetwise_logo.svg",
+    maxWidth: 140,
+    width: "180%",
+    needsColorInvert: false,
   },
   {
     brand: "Greenhill Seltzers",
@@ -1671,9 +1673,7 @@ export const funnelHeroImages = [
   },
   {
     title: "Oppo",
-    thumbnail:
-      distributionName +
-      "/Ad_Funnel/images/Feb-2026/Oppo.jpg",
+    thumbnail: distributionName + "/Ad_Funnel/images/Feb-2026/Oppo.jpg",
   },
   {
     title: "Oztent",
