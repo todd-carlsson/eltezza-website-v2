@@ -25,8 +25,9 @@ jobs:
       - name: Trigger deployment webhook
         run: |
           curl --fail --show-error --silent \
-               --max-time 10 \
-               --retry 3 \
+               --connect-timeout 10 \
+               --max-time 30 \
+               --retry 5 \
                --retry-delay 5 \
                -X POST ${{ secrets.DEPLOYMENT_WEBHOOK_URL }}
 
@@ -40,7 +41,10 @@ jobs:
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
         run: |
           curl --fail --silent --show-error \
-               --max-time 10 \
+               --connect-timeout 10 \
+               --max-time 30 \
+               --retry 5 \
+               --retry-delay 5 \
                -H "Authorization: Bearer $NTFY_TOKEN" \
                -H "Title: 🚨 GitHub Action Failed" \
                -H "Priority: urgent" \
