@@ -1478,7 +1478,7 @@ export const funnelServices = [
   {
     title: "ADS \nMANAGEMENT",
     description:
-      "We've blown thousands on Meta so \nyou don't have to. Our ads convert — \n simple.",
+      "We've blown hundreds of thousands \non Meta so you don't have to. Our ads convert — \n simple.",
   },
 ] satisfies Array<FunnelServicesData>;
 
