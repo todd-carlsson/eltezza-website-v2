@@ -121,11 +121,4 @@ export type FunnelWorkVideos = {
   ugc: FunnelWorkData[];
 };
 
-// For Facebook Pixel
-declare global {
-  interface Window {
-    fbq: (event: string, name: string, options?: object) => void;
-  }
-}
-
 export * from "./highlight-types";

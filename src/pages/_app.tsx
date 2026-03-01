@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import { poppins, sourceSans } from "@/fonts";
 import Layout from "./layout";
 import classNames from "classnames";
-import { Hotjar } from "@/features/connection";
+import { Hotjar, VimeoTrackingProvider } from "@/features/connection";
 import * as fbq from "@/lib/fpixel";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -28,6 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <main className={classNames(poppins.variable, sourceSans.variable)}>
       <Layout>
         <Hotjar />
+        <VimeoTrackingProvider />
         <Component {...pageProps} />
       </Layout>
     </main>
