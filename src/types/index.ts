@@ -112,6 +112,7 @@ export type FunnelWorkData = Omit<
 > & {
   // From the Vimeo url. Example: https://vimeo.com/1073451481 - srcId is 1073451481
   srcId: number;
+  title: string;
 };
 
 export type FunnelWorkVideos = {

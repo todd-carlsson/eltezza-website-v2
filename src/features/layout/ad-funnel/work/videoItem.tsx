@@ -14,7 +14,7 @@ export function VideoItem(props: VideoItemProps) {
     <div className={styles.videoContainer}>
       {windowWith >= 1000 ? (
         <HoverPlayVideo {...props}>
-          <VimeoPlayer srcId={props.video.srcId} />
+          <VimeoPlayer srcId={props.video.srcId} title={props.video.title} />
         </HoverPlayVideo>
       ) : (
         <VimeoPlayer srcId={props.video.srcId} className={styles.vimeoVideo} />

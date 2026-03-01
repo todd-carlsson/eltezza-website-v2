@@ -10,6 +10,7 @@ export function VimeoPlayer({ srcId, title, className }: VimeoPlayerProps) {
   return (
     <div className={classNames(styles.container, className)}>
       <iframe
+        id={srcId.toString()}
         src={`https://player.vimeo.com/video/${srcId}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"

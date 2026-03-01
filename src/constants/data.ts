@@ -1521,6 +1521,7 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/RemarkableCream/Remarkable_Cream_With_Star_Reel_yf2yzj_Thumbnail.jpg",
       client: "Remarkable Cream",
+      title: "Remarkable Cream - Half Sugar",
     },
     {
       srcId: 1168305350,
@@ -1531,6 +1532,7 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/brut/brut_-_i_do_it_all_THUMBNAIL.jpg",
       client: "Brut",
+      title: "Brut - I do it ALL!",
     },
     {
       srcId: 1073448819,
@@ -1541,6 +1543,7 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Promotional/ProperCrisps/ReelBottleFlip_Thumbnail.jpg",
       client: "Proper Crisps",
+      title: "Proper Crisps x Al Brown - Taste The Battle",
     },
   ] satisfies Array<FunnelWorkData>,
   organic: [
@@ -1553,6 +1556,7 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/MaunderRoofing/Why_Choose_Us_Reel_Final_dkyoxy_THUMBNAIL.jpg",
       client: "Maunder Roofing",
+      title: "Maunder Roofing - Reel",
     },
     {
       srcId: 1073448323,
@@ -1563,6 +1567,7 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/Oztent/Malamoo_set_up_vn3trg_Thumbnail.jpg",
       client: "Oztent",
+      title: "Oztent Malamoo - Beach Setup",
     },
     {
       srcId: 1092634495,
@@ -1573,6 +1578,7 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/Organic/eg/eg_thumbnailcover.jpg",
       client: "eg.",
+      title: "eg. - Little Savanna Collab",
     },
   ] satisfies Array<FunnelWorkData>,
   ugc: [
@@ -1585,6 +1591,7 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/UGC/Peaq/Final+ver+UGC+video_Thumbnail.jpg",
       client: "PEAQ",
+      title: "PEAQ - UGC",
     },
     {
       srcId: 1073447014,
@@ -1595,6 +1602,7 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/UGC/BlackPearl/Jhamei+Reel+FB_Thumbnail.jpg",
       client: "Black Pearl Cafe",
+      title: "Black Pearl UGC",
     },
     {
       srcId: 1073447207,
@@ -1605,6 +1613,7 @@ export const funnelWorkVideos = {
         distributionName +
         "/Ad_Funnel/Work_Section/UGC/ProperCrisps/Karen+-+Final+UGC_Thumbnail.jpg",
       client: "Proper Crisps",
+      title: "Proper Crisps UGC",
     },
   ] satisfies Array<FunnelWorkData>,
 };
