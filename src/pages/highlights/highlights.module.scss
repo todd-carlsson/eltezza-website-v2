@@ -1,0 +1,76 @@
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(
+      circle at 20% 30%,
+      rgb(80 0 255 / 15%),
+      transparent 40%
+    ),
+    radial-gradient(circle at 80% 70%, rgb(0 120 255 / 15%), transparent 40%),
+    #0a0a0a;
+  color: white;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.mediaStack {
+  display: flex;
+  overflow-x: hidden;
+  gap: 2rem;
+  width: 100%;
+}
+
+.mediaItem {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 30px 60px rgb(0 0 0 / 50%);
+  object-fit: cover;
+  max-height: 80vh;
+}
+
+.rightContainer {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 6rem;
+
+  .right {
+    position: fixed;
+  }
+}
+
+.textContainer {
+  max-width: 480px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgb(255 255 255 / 70%);
+}

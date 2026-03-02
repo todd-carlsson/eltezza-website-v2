@@ -1,29 +1,34 @@
 import { HighlightData, HighlightProject } from "@/types";
+import { distributionName } from "./websiteInfo";
 
 export const properCrisps = {
   gallery: [
     {
-      name: "Photo",
-      description: "A single photo that captures the essence of the moment.",
+      name: "1: Post Production",
+      description: "Color grading, sound design, and cinematic finishing.",
       images: [
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        distributionName +
+          "/highlights-page/proper-crisps/Face-off+(zoomed).jpg",
       ],
       videos: [],
     },
 
     {
-      name: "Photos",
-      description: "Photos that capture the essence of the moment.",
+      name: "2: Campaign Launch",
+      description: "Digital rollout across multiple platforms.",
       images: [
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        distributionName +
+          "/highlights-page/proper-crisps/Face-off+(zoomed).jpg",
+        distributionName +
+          "/highlights-page/proper-crisps/Face-off+(zoomed).jpg",
+        distributionName +
+          "/highlights-page/proper-crisps/Face-off+(zoomed).jpg",
       ],
       videos: [],
     },
     {
-      name: "Videography",
-      description: "Videography",
+      name: "3: Brand Identity",
+      description: "Visual language, typography, and motion system.",
       images: [],
       videos: ["https://www.youtube.com/embed/dQw4w9WgXcQ"],
     },
@@ -31,7 +36,8 @@ export const properCrisps = {
       name: "Photo",
       description: "A single photo that captures the essence of the moment.",
       images: [
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        distributionName +
+          "/highlights-page/proper-crisps/Face-off+(zoomed).jpg",
       ],
       videos: [],
     },
