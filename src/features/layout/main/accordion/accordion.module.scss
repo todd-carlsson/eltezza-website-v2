@@ -122,6 +122,7 @@
       display: inline-block;
       position: absolute;
       margin-right: var(--content-padding);
+      white-space: pre-line;
 
       @media screen and (width <= 1000px) {
         width: auto;

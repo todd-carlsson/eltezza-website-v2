@@ -7,10 +7,10 @@ import useWindowSize from "@/hooks/useWindowSize";
 
 interface AccordionProps {
   content: Array<AccordionData>;
-  color: "--ez-orange" | "--adobe-purple";
+  color?: "--ez-orange" | "--adobe-purple";
 }
 
-export function Faq({ content, color }: AccordionProps) {
+export function Faq({ content, color = "--ez-orange" }: AccordionProps) {
   const [active, setActive] = useState<string>("-1");
   const [windowWidth] = useWindowSize();
 

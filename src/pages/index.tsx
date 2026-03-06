@@ -10,6 +10,7 @@ import {
   FunnelPartnership,
   HeroParallax,
   Team,
+  Faq,
 } from "@/features/layout";
 import { CalendlyEmbed } from "@/features/ui";
 import styles from "@/styles/Home.module.css";
@@ -26,6 +27,7 @@ import {
   calendlyLink,
   funnelHeroImages,
   teamData,
+  faqs,
 } from "@/constants";
 import { motion, useIsPresent } from "framer-motion";
 import { useRouter } from "next/router";
@@ -111,6 +113,7 @@ function LandingFunnel() {
             />
           </section>
         </div>
+        <Faq content={faqs.home} color="--adobe-purple" />
         <Reviews
           content={funnelReviewsData}
           page="design"

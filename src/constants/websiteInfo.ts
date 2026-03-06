@@ -273,6 +273,43 @@ export const faqs = {
       wrap: false,
     },
   ],
+  home: [
+    {
+      id: "1",
+      title: "Who do you work with?",
+      description:
+        "We work with brands that actually want to grow.\n \n Mostly FMCG, retail, hospitality and service businesses - but honestly, industry matters less than drive. If you're serious about growth and scaling your brand, we'll get along.\n \n If you're just testing the waters, probably not.",
+      wrap: false,
+    },
+    {
+      id: "2",
+      title: "Can you work with our internal team?",
+      description:
+        "Yep - that's actually our favourite setup.\n \n We slot in alongside founders, marketers or sales teams to make strategy and execution click.\n \n No drama, no ego, just aligned output.",
+      wrap: false,
+    },
+    {
+      id: "3",
+      title: "Do you handle paid media or just creative?",
+      description:
+        "We do it all.\n \n Creative, strategy, paid campaigns, optimisation, reporting - the full growth engine.\n \n Everything we produce is designed to turn attention into results.\n (Ad spend is always separate and transparent, don't worry.)",
+      wrap: false,
+    },
+    {
+      id: "4",
+      title: "How quickly will we see results?",
+      description:
+        "Quick wins happen in weeks - data, leads, traction.\n \n Big-picture brand stuff builds over months.\n \n We don't do hype. We do systems that scale - and actually last.",
+      wrap: false,
+    },
+    {
+      id: "5",
+      title: "What if results aren't where they should be?",
+      description:
+        "We set clear KPIs from the start and track everything.\n \n If something isn't working, we tweak fast.\n \n Growth isn't static, and neither are we.",
+      wrap: false,
+    },
+  ],
 };
 
 export const contactFormText = {
