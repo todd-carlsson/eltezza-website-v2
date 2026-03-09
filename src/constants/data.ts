@@ -1214,16 +1214,17 @@ export const funnelTestimonials = [
   },
   {
     id: 2,
-    review: "“They've helped us tell our story and freshen up our socials”",
-    author: "Brent Jaslarz & Craig Seton \nYoum - Mortgage Advisers",
-    srcId: 1074123161,
+    review:
+      "“Eltezza are always on top of their game, delivering sharp campaigns backed by real results. We would definitely recommend Eltezza.”",
+    author: "Darrell Bowater & Hayden Ryan \n Heatrite",
+    srcId: 1171580295,
     borderColor: "--ez-orange",
   },
   {
     id: 3,
-    review: "“You've helped me get comfortable in front of the camera”",
-    author: "Nicky Robèrt \nRobèrt Embroideries",
-    srcId: 1082370766,
+    review: "“They've helped us tell our story and freshen up our socials”",
+    author: "Brent Jaslarz & Craig Seton \nYoum - Mortgage Advisers",
+    srcId: 1074123161,
     borderColor: "--adobe-purple",
   },
 ] satisfies Array<FunnelTestimonialsData>;
