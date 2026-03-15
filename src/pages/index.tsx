@@ -3,6 +3,7 @@ import {
   FunnelHeader,
   Portal,
   FunnelVideoGallery,
+  Reviews,
   FunnelTestimonials,
   FunnelBrands,
   FunnelServices,
@@ -21,6 +22,7 @@ import {
   funnelTestimonials,
   funnelWorkVideos,
   metaData,
+  funnelReviewsData,
   funnelBrandsMobile,
   calendlyLink,
   funnelHeroImages,
@@ -31,8 +33,6 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Scroll } from "@/utils/scroll";
 import * as fbq from "@/lib/fpixel";
-import { ReactGoogleReviews } from "react-google-reviews";
-import "react-google-reviews/dist/index.css";
 
 function LandingFunnel() {
   const [showModal, setShowModal] = useState(false);
@@ -48,8 +48,6 @@ function LandingFunnel() {
   function onClose() {
     setShowModal(false);
   }
-
-  const featurableId = "5bf86e2f-084c-4cf1-8cee-6cbae0ba1937";
 
   return (
     <>
@@ -113,22 +111,10 @@ function LandingFunnel() {
           </section>
         </div>
         <Faq content={faqs.home} color="--adobe-purple" />
-        <ReactGoogleReviews
-          layout="carousel"
-          featurableId={featurableId}
-          theme="dark"
-          carouselStyle={{
-            width: "100%",
-            margin: "100px 0px",
-            maxWidth: "none",
-          }}
-          reviewCardDarkStyle={{
-            background: "#000",
-          }}
-          carouselBtnDarkStyle={{
-            color: "#fff",
-            background: "#000",
-          }}
+        <Reviews
+          content={funnelReviewsData}
+          page="design"
+          headingTextSize="small"
         />
         <FunnelContact onOpen={onOpen} />
       </motion.div>
