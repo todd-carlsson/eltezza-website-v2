@@ -1207,7 +1207,8 @@ export const btsData = {
 export const funnelTestimonials = [
   {
     id: 1,
-    review: "“The growth has been significant”",
+    review:
+      "“Since working with Eltezza, **our social media presence and sales have grown significantly.** They bring great ideas, produce excellent content, and make the whole process easy for our team.”",
     author: "Steven Deans & James Deans \nSteve's Tyre Service & Autocare",
     srcId: 1074123022,
     borderColor: "--adobe-purple",
@@ -1215,14 +1216,15 @@ export const funnelTestimonials = [
   {
     id: 2,
     review:
-      "“Eltezza are always on top of their game, delivering sharp campaigns backed by real results. We would definitely recommend Eltezza.”",
+      "“Eltezza are always on top of their game, **delivering sharp campaigns backed by real results.** We would definitely recommend Eltezza.”",
     author: "Darrell Bowater & Hayden Ryan \n Heatrite",
     srcId: 1171580295,
     borderColor: "--ez-orange",
   },
   {
     id: 3,
-    review: "“They've helped us tell our story and freshen up our socials”",
+    review:
+      "“Since working with Eltezza, our visibility has increased significantly. We're being mentioned more often and have **built a much stronger online presence.**”",
     author: "Brent Jaslarz & Craig Seton \nYoum - Mortgage Advisers",
     srcId: 1074123161,
     borderColor: "--adobe-purple",
