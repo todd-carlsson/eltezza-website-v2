@@ -3,7 +3,6 @@ import {
   FunnelHeader,
   Portal,
   FunnelVideoGallery,
-  Reviews,
   FunnelTestimonials,
   FunnelBrands,
   FunnelServices,
@@ -22,22 +21,20 @@ import {
   funnelTestimonials,
   funnelWorkVideos,
   metaData,
-  funnelReviewsData,
   funnelBrandsMobile,
   calendlyLink,
   funnelHeroImages,
   teamData,
   faqs,
 } from "@/constants";
-import { motion, useIsPresent } from "framer-motion";
-import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Scroll } from "@/utils/scroll";
 import * as fbq from "@/lib/fpixel";
+import { ReactGoogleReviews } from "react-google-reviews";
+import "react-google-reviews/dist/index.css";
 
 function LandingFunnel() {
-  const router = useRouter();
-  const isPresent = useIsPresent();
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
@@ -51,6 +48,8 @@ function LandingFunnel() {
   function onClose() {
     setShowModal(false);
   }
+
+  const featurableId = "5bf86e2f-084c-4cf1-8cee-6cbae0ba1937";
 
   return (
     <>
@@ -114,28 +113,24 @@ function LandingFunnel() {
           </section>
         </div>
         <Faq content={faqs.home} color="--adobe-purple" />
-        <Reviews
-          content={funnelReviewsData}
-          page="design"
-          headingTextSize="small"
+        <ReactGoogleReviews
+          layout="carousel"
+          featurableId={featurableId}
+          theme="dark"
+          carouselStyle={{
+            width: "100%",
+            margin: "100px 0px",
+            maxWidth: "none",
+          }}
+          reviewCardDarkStyle={{
+            background: "#000",
+          }}
+          carouselBtnDarkStyle={{
+            color: "#fff",
+            background: "#000",
+          }}
         />
         <FunnelContact onOpen={onOpen} />
-        <motion.div
-          initial={{ scaleX: 1 }}
-          animate={{
-            scaleX: 0,
-            transition: { duration: 0.5, ease: "circOut" },
-          }}
-          exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
-          style={{
-            originX: isPresent ? 0 : 1,
-            backgroundColor:
-              router.pathname === "/creative"
-                ? "var(--adobe-purple)"
-                : "var(--ez-orange)",
-          }}
-          className={styles.privacyScreen}
-        />
       </motion.div>
     </>
   );
