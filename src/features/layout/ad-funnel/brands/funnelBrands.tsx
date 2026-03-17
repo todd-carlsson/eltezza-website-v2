@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./brands.module.scss";
 import { BrandsGrid } from "./brandsGrid";
 import { BrandsData } from "@/types";
@@ -17,13 +16,6 @@ export function FunnelBrands({ content, mobileContent }: FunnelBrandsProps) {
             We work with businesses of all sizes in NZ <br />
             to increase revenue by as much as 5x
           </h4>
-          <Image
-            src="/images/eltezza-logo.svg"
-            className={styles.eltezzaLogo}
-            width={171}
-            height={94}
-            alt="Eltezza"
-          />
         </div>
       </div>
       <BrandsGrid content={content} mobileContent={mobileContent} />
