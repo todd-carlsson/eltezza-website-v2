@@ -2,12 +2,23 @@ import { Button, ButtonVariant } from "@/features/ui";
 import styles from "./components.module.scss";
 import { calendlyButtonText } from "@/constants";
 import { ScrollIcon } from "./scrollIcon";
+import { FormModal, Portal } from "@/features/layout/main";
+import { useState } from "react";
 
 interface HeaderProps {
   onOpen: () => void;
 }
 
 export function Header({ onOpen }: HeaderProps) {
+  const color = "--ez-orange";
+  const [showModal, setShowModal] = useState(false);
+  function onFormOpen() {
+    setShowModal(true);
+  }
+  function onFormClose() {
+    setShowModal(false);
+  }
+
   return (
     <div className={styles.header}>
       <div className={styles.headerText}>
@@ -24,6 +35,9 @@ export function Header({ onOpen }: HeaderProps) {
           like your in-house team — without the overhead.
         </p>
       </div>
+      <Portal root="contact-root">
+        <FormModal onClose={onFormClose} showModal={showModal} color={color} />
+      </Portal>
       <div className={styles.buttonContainer}>
         <Button
           onClick={onOpen}
@@ -33,7 +47,7 @@ export function Header({ onOpen }: HeaderProps) {
           {calendlyButtonText}
         </Button>
         <Button
-          onClick={onOpen}
+          onClick={onFormOpen}
           variant={ButtonVariant.applyPurple}
           className={styles.applyButton}
         >
