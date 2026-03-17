@@ -81,6 +81,7 @@
 .applyOrange {
   color: #fff;
   background-color: var(--ez-orange);
+  transition: all 0.3s ease-in-out;
   font-weight: 600;
   position: relative;
   font-size: 0.8rem;
@@ -90,11 +91,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    background-color: var(--ez-orange-darkened);
+  }
 }
 
 .applyPurple {
   color: #fff;
   background-color: var(--adobe-purple);
+  transition: all 0.3 ease-in-out;
   font-weight: 600;
   position: relative;
   font-size: 0.8rem;
@@ -104,6 +110,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    background-color: var(--adobe-purple-darkened);
+  }
 }
 
 .applyWhite {

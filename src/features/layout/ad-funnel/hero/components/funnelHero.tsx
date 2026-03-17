@@ -32,6 +32,13 @@ export function Header({ onOpen }: HeaderProps) {
         >
           {calendlyButtonText}
         </Button>
+        <Button
+          onClick={onOpen}
+          variant={ButtonVariant.applyPurple}
+          className={styles.applyButton}
+        >
+          Get in Touch
+        </Button>
       </div>
       <div className={styles.arrowContainer}>
         <ScrollIcon type="exOne" />

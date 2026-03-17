@@ -1,8 +1,10 @@
 :root {
-  --ez-orange: #ff6947;
+  --ez-orange: rgb(255 105 71);
+  --ez-orange-darkened: rgb(219 69 35);
   --equinox-blue: #40434e;
   --heightened-grey: #a2a7a5;
-  --adobe-purple: #5f34e0;
+  --adobe-purple: rgb(95 52 224);
+  --adobe-purple-darkened: rgb(69 28 192);
   --salty-green: #3fe0a6;
   --salmon-pink: #ff9093;
   --gray-text: #e5e7eb99;

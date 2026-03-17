@@ -138,9 +138,15 @@
   }
 
   .buttonContainer {
+    display: flex;
+    gap: 1rem;
     margin-top: 1.8rem;
     position: relative;
     z-index: 99;
+
+    @media (width <=960px) {
+      flex-direction: column;
+    }
 
     .applyButton {
       font-size: clamp(1rem, 0.75vw, 2rem);
